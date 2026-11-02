@@ -1,0 +1,1 @@
+../../.agent/workflows/seo-wordpress.md

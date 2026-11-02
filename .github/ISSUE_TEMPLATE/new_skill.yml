@@ -1,0 +1,43 @@
+name: 💡 Proposta de Nova Skill
+description: Sugira ou envie uma nova skill para o ecossistema Super IA Projects.
+title: "[Skill]: <Nome da Skill>"
+labels: ["skill", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por sugerir uma nova skill! Por favor, forneça o máximo de detalhes para que possamos avaliar a inclusão no catálogo.
+  - type: input
+    id: skill_name
+    attributes:
+      label: Nome da Skill
+      description: Nome em formato kebab-case (ex: `stripe-checkout`, `seo-auditor`).
+      placeholder: ex: supabase-rls-builder
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição e Gatilhos (YAML frontmatter)
+      description: Quando o agente deve ativar essa skill? Quais as palavras-chave?
+      placeholder: "Use when creating or auditing Supabase Row Level Security policies..."
+    validations:
+      required: true
+  - type: textarea
+    id: problem_solved
+    attributes:
+      label: Qual problema essa skill resolve?
+      description: Explique como essa habilidade melhora a produtividade ou precisão dos agentes.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist de Qualidade (TDD para Skills)
+      options:
+        - label: A skill é modular e atômica (não é uma mega-skill genérica).
+          required: true
+        - label: Não contém caminhos absolutos de máquinas locais (`/Users/...`).
+          required: true
+        - label: Se possui scripts executáveis, eles estão dentro de `scripts/`.
+          required: false

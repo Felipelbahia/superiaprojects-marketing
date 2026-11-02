@@ -1,0 +1,1 @@
+../../.agent/workflows/geral-navegador-de-skills.md

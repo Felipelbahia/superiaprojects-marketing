@@ -1,0 +1,1 @@
+../../.agent/workflows/social-conceito-de-thumbnail.md

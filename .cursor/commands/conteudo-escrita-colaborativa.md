@@ -1,0 +1,1 @@
+../../.agent/workflows/conteudo-escrita-colaborativa.md

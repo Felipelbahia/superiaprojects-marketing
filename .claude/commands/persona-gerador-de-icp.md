@@ -1,0 +1,1 @@
+../../.agent/workflows/persona-gerador-de-icp.md

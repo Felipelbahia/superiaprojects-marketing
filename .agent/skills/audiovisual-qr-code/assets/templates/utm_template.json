@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UTM Parameter Template",
+  "description": "Standard schema and default configuration for UTM tracking parameters in QR codes.",
+  "parameters": {
+    "utm_source": {
+      "type": "string",
+      "required": true,
+      "description": "Identifies which site, platform, or physical collateral sent the traffic (e.g. flyer, banner, magazine, packaging, standee)."
+    },
+    "utm_medium": {
+      "type": "string",
+      "required": true,
+      "description": "Identifies what type of link was used (e.g. qr, print, cpc, display, offline)."
+    },
+    "utm_campaign": {
+      "type": "string",
+      "required": true,
+      "description": "Identifies a specific product promotion or strategic campaign (e.g. spring_launch, webinar_q1, event_2026)."
+    },
+    "utm_content": {
+      "type": "string",
+      "required": false,
+      "description": "Identifies specific creative variations, physical placements, or sizes (e.g. table_tent_a, roll_up_entrance, a5_flyer)."
+    },
+    "utm_term": {
+      "type": "string",
+      "required": false,
+      "description": "Identifies search terms or audience targeting keywords."
+    }
+  },
+  "conventions": {
+    "casing": "lowercase_with_underscores",
+    "forbidden_chars": [" ", "?", "&", "#", "/"],
+    "defaults": {
+      "utm_source": "qr",
+      "utm_medium": "print",
+      "utm_campaign": "marketing_campaign"
+    }
+  }
+}

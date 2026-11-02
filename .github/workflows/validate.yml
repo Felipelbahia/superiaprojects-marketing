@@ -1,0 +1,29 @@
+name: Validate Multi-AI Entrypoints
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  validate:
+    name: Validate Entrypoints & Catalog
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check Multi-AI Entrypoints (Symlinks & Frontmatter)
+        run: |
+          python3 .agent/scripts/sync_entrypoints.py --check
+
+      - name: Test Catalog Generation
+        run: |
+          python3 .agent/scripts/generate_catalog.py

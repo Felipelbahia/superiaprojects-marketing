@@ -1,0 +1,1 @@
+../../.agent/workflows/conteudo-briefing-de-seo.md

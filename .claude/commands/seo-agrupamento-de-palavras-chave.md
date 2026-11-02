@@ -1,0 +1,1 @@
+../../.agent/workflows/seo-agrupamento-de-palavras-chave.md

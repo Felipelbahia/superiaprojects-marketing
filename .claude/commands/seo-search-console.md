@@ -1,0 +1,1 @@
+../../.agent/workflows/seo-search-console.md

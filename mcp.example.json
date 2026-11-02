@@ -1,0 +1,45 @@
+{
+  "mcpServers": {
+    "firecrawl": {
+      "type": "http",
+      "url": "https://mcp.firecrawl.dev/YOUR_FIRECRAWL_API_KEY/v2/mcp",
+      "description": "Web scraping avançado, buscas de concorrentes, extração de páginas e SERP em Markdown."
+    },
+    "notion": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@notionhq/mcp-server"],
+      "env": {
+        "NOTION_API_KEY": "YOUR_NOTION_INTEGRATION_TOKEN"
+      },
+      "description": "Sincronização de briefings, calendários de conteúdo e bases de conhecimento no Notion."
+    },
+    "context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@context7/mcp-server"],
+      "description": "Documentação técnica oficial e versionada de ferramentas, APIs e SDKs."
+    },
+    "stitch": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@stitch/mcp-server"],
+      "description": "Geração e prototipagem de telas, variantes de Landing Pages e Design Systems."
+    },
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "description": "Depuração visual, auditoria de páginas de conversão e Core Web Vitals (LCP/INP)."
+    },
+    "supabase": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@supabase/mcp-server"],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "YOUR_SUPABASE_PERSONAL_ACCESS_TOKEN"
+      },
+      "description": "Gerenciamento de banco de dados para métricas, leads e analytics de campanhas."
+    }
+  }
+}

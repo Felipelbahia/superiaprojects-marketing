@@ -1,0 +1,1 @@
+../../.agent/workflows/email-otimizacao-de-assunto.md

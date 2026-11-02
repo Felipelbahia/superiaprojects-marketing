@@ -1,0 +1,1 @@
+../../.agent/agents/email-wizard.md

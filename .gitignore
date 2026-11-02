@@ -1,0 +1,60 @@
+# Dependencies & Cache
+node_modules/
+.temp_ag_kit/
+antigravity-doc
+tests/
+__pycache__/
+*.pyc
+.venv/
+*.log
+
+# macOS System Files
+.DS_Store
+
+# MCP Configurations (contêm chaves e tokens locais)
+.mcp.json
+opencode.json
+.cursor/mcp.json
+.vscode/mcp.json
+.gemini/settings.json
+.codex/config.toml
+.zed/settings.json
+config/mcporter.json
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Temporary / Local Output & Test Assets
+assets/testes/
+.firecrawl/
+Output/
+
+# ==============================================================================
+# PRIVACIDADE E SEGURANÇA MÁXIMA (ZERO DATA LEAKS)
+# ==============================================================================
+# Pastas de clientes reais, campanhas e saídas de conteúdo
+clients/
+content/
+projetos/
+reports/
+inputs/
+Inputs/
+
+# Planos e histórico de execução de agentes locais
+.agent/plans/
+plans/
+execution-loops/
+handoffs/
+
+# Memória de longo prazo interna (contém caminhos e decisões privadas)
+memory.md
+
+# Regras locais personalizadas da máquina (usar CLAUDE.example.md como template)
+/CLAUDE.md
+/GEMINI.md
+/AGENTS.md
+/.agent/rules/
+/.claude/CLAUDE.md
+/.cursorrules

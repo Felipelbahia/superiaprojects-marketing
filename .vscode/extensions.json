@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "anthropic.claude-code",
+    "kilocode.kilo-code",
+    "johnpapa.vscode-peacock",
+    "pkief.material-icon-theme",
+    "mechatroner.rainbow-csv",
+    "cweijan.vscode-office",
+    "tomoki1207.pdf",
+    "jasdeepkhalsa.html-md-converter-vscode",
+    "rangav.vscode-thunder-client",
+    "pranaygp.vscode-css-peek",
+    "svelte.svelte-vscode",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-azuretools.vscode-docker"
+  ]
+}

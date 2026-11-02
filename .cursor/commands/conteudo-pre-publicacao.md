@@ -1,0 +1,1 @@
+../../.agent/workflows/conteudo-pre-publicacao.md

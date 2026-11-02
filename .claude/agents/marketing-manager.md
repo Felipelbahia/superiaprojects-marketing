@@ -1,0 +1,1 @@
+../../.agent/agents/marketing-manager.md

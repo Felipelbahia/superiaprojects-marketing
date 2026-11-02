@@ -1,0 +1,53 @@
+{
+  "skill_name": "pr-assessoria-de-imprensa",
+  "version": "1.0.0",
+  "test_cases": [
+    {
+      "id": "TC-01",
+      "name": "Rejeição de Pauta Fraca / Autopromoção Vazia",
+      "prompt": "Quero mandar um press release para a Exame e Valor dizendo que lançamos a versão 2.1 do nosso aplicativo com novo design do botão de login e comemorando 1 ano de empresa.",
+      "expected_behavior": "A IA deve acionar a Fase 1 (Filtro Newsworthy), vetar o disparo imediato do release e explicar ao usuário que features menores e aniversários comuns não são notícia para veículos Tier 1. Deve propor reformulação da pauta com dados de uso ou histórias reais de clientes.",
+      "assertions": [
+        "rejeita disparo de feature menor como notícia Tier 1",
+        "aplica teste da remoção da marca",
+        "oferece redirecionamento para 1 dos 4 arquétipos de história"
+      ]
+    },
+    {
+      "id": "TC-02",
+      "name": "Estruturação de Data PR com Dados Proprietários",
+      "prompt": "Temos uma base de 40 mil médicos usando nossa plataforma e descobrimos que 73% deles gastam mais de 2 horas por dia com burocracia de guias de convênio. Quero uma pauta para veículos de saúde e economia.",
+      "expected_behavior": "A IA deve reconhecer imediatamente o arquétipo de Data PR (Fase 2), enquadrar a pauta no Template 2 de pirâmide invertida com lead dos 5 Ws em 50-75 palavras, aspas executivas com visão de mercado e sem clichês, e gerar o email de pitch individualizado em 3 frases.",
+      "assertions": [
+        "identifica arquétipo Data PR",
+        "press release segue estritamente pirâmide invertida",
+        "lead responde aos 5 Ws em 50 a 75 palavras",
+        "aspas executivas contêm visão substantiva sem jargões como revolucionário"
+      ]
+    },
+    {
+      "id": "TC-03",
+      "name": "Email de Pitch Individualizado para Repórter",
+      "prompt": "Escreva um email de abordagem para o repórter que cobre inovação no InfoMoney para sugerir nossa pauta de automação hospitalar.",
+      "expected_behavior": "A IA deve gerar um email com menos de 150 palavras, seguindo a fórmula das 3 frases (gancho contextual com matéria dele, fato novo exclusivo e oferta clara de entrevista/dados), sem anexos e com linha de assunto preditiva.",
+      "assertions": [
+        "total de palavras inferior a 150",
+        "estrutura em 3 parágrafos curtos",
+        "nenhum anexo de PDF ou imagem pesada no primeiro contato",
+        "linha de assunto antecipa manchete jornalística"
+      ]
+    },
+    {
+      "id": "TC-04",
+      "name": "Comunicação de Crise nos Primeiros 60 Minutos",
+      "prompt": "Nosso sistema de pagamento caiu há 20 minutos e usuários no Twitter estão reclamando que não conseguem pagar. Escreva uma nota oficial urgente.",
+      "expected_behavior": "A IA deve ativar o protocolo de crise, gerar um Holding Statement objetivo reconhecendo a instabilidade, afirmando que o time está apurando e marcando hora específica para a próxima atualização. Não deve especular sobre causas técnicas não confirmadas.",
+      "assertions": [
+        "holding statement publicado nos primeiros 60 min",
+        "define horário preciso para próxima atualização",
+        "não especula sobre causas técnicas antes da apuração",
+        "isolar porta-voz único institucional"
+      ]
+    }
+  ]
+}

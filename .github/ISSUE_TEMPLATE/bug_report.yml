@@ -1,0 +1,37 @@
+name: 🐛 Reportar Bug em Agente ou Skill
+description: Informe um comportamento inesperado, erro de execução ou falha de regra.
+title: "[Bug]: <Descrição Resumida do Problema>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por nos ajudar a manter a qualidade das regras e skills do Super IA Projects!
+  - type: input
+    id: environment
+    attributes:
+      label: Ambiente / Ferramenta Utilizada
+      description: Onde ocorreu o problema? (ex: Claude Code, Google Antigravity, Cursor, etc.)
+      placeholder: ex: Claude Code v1.2 / macOS
+    validations:
+      required: true
+  - type: input
+    id: affected_component
+    attributes:
+      label: Agente, Skill ou Script Afetado
+      placeholder: ex: frontend-specialist ou sync_rules.py
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Comportamento Observado vs. Esperado
+      description: O que o agente fez de errado e o que ele deveria ter feito?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs ou Mensagens de Erro
+      description: Cole a saída do terminal ou mensagens de erro relevantes.
+      render: shell

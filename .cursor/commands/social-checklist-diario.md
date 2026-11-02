@@ -1,0 +1,1 @@
+../../.agent/workflows/social-checklist-diario.md
