@@ -173,11 +173,10 @@ The skill produces:
 User: "Update the meta descriptions for all posts in the 'tutorials' category to be more compelling"
 
 Claude will:
-1. Run `analyze_seo.py` to fetch posts and identify SEO issues
-2. Analyze each post's content and current SEO data
-3. Generate optimized titles, descriptions, and keyphrases
-4. Create a `changes.json` file with the improvements
-5. Run `preview_changes.py` to show before/after comparison
-6. Ask for confirmation
-7. Run `yoast_batch_updater.py --apply` to apply changes
-8. Report results with success/failure counts
+1. Buscar os posts e o SEO atual direto via WPGraphQL (query aos campos Yoast)
+2. Analisar o conteúdo e os dados de SEO de cada post
+3. Gerar títulos, descrições e keyphrases otimizados
+4. Montar o preview antes/depois para cada post
+5. Pedir confirmação
+6. Aplicar as mudanças via mutation WPGraphQL
+7. Reportar sucesso/falha por post

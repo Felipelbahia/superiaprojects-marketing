@@ -180,7 +180,6 @@ Redes sociais, LinkedIn, carrossel, YouTube e arte para posts.
 | Workflow | [`/social-otimizacao-de-titulo-de-video`](workflows/social-otimizacao-de-titulo-de-video.md) | Títulos de vídeo para CTR e SEO. |
 | Workflow | [`/social-youtube-para-notas`](workflows/social-youtube-para-notas.md) | Resume vídeos do YouTube em notas (aponta para a skill). |
 | Workflow | [`/social-seo-de-youtube`](workflows/social-seo-de-youtube.md) | SEO de vídeos do YouTube. |
-| Workflow | [`/social-youtube-para-markdown`](workflows/social-youtube-para-markdown.md) | Extrai vídeo ou transcrição do YouTube para Markdown. |
 | Workflow | [`/social-transcricao-de-youtube`](workflows/social-transcricao-de-youtube.md) | Baixa a transcrição de um vídeo do YouTube. |
 
 ### Especialistas
@@ -564,7 +563,6 @@ Requisitos e gestão de produto.
 | Skill | [`produto-prd`](skills/produto-prd/SKILL.md) | PRD, histórias de usuário e métricas de produto. |
 | Workflow | [`/produto-agile`](workflows/produto-agile.md) | Gestão ágil de produto e Scrum (aponta para a skill). |
 | Workflow | [`/produto-planejamento-de-sprint`](workflows/produto-planejamento-de-sprint.md) | Planeja sprints ágeis: meta, estimativa e capacidade. |
-| Workflow | [`/produto-planejamento-de-funcionalidade`](workflows/produto-planejamento-de-funcionalidade.md) | Plano de implementação de uma funcionalidade depois da pesquisa. |
 | Workflow | [`/produto-prd`](workflows/produto-prd.md) | Gera um PRD completo (aponta para a skill). |
 | Workflow | [`/produto-prd-estrategia-gtm`](workflows/produto-prd-estrategia-gtm.md) | Define o GTM dentro do PRD (v0.9). |
 | Workflow | [`/produto-levantamento-de-requisitos`](workflows/produto-levantamento-de-requisitos.md) | Levantamento de requisitos, histórias e escopo. |
@@ -650,7 +648,6 @@ Vale para tudo: anti-slop, LGPD, rotinas e utilitários.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Workflow | [`/geral-triagem-de-capturas`](workflows/geral-triagem-de-capturas.md) | Processa capturas do Drafts Pro e classifica por intenção. |
 | Workflow | [`/geral-briefing-matinal`](workflows/geral-briefing-matinal.md) | Briefing matinal de marketing e prioridades de conteúdo. |
 | Workflow | [`/geral-execucao-autonoma`](workflows/geral-execucao-autonoma.md) | Execução autônoma de metas complexas em 5 fases. |
 | Workflow | [`/geral-revisao-mensal`](workflows/geral-revisao-mensal.md) | Revisão mensal de marketing. |
@@ -659,7 +656,6 @@ Vale para tudo: anti-slop, LGPD, rotinas e utilitários.
 | Workflow | [`/geral-priorizacao-esforco-impacto`](workflows/geral-priorizacao-esforco-impacto.md) | Prioriza backlog por esforço e impacto. |
 | Workflow | [`/geral-mapa-de-stakeholders`](workflows/geral-mapa-de-stakeholders.md) | Estrutura de equipe e mapa de stakeholders. |
 | Workflow | [`/geral-revisao-semanal`](workflows/geral-revisao-semanal.md) | Revisão semanal de marketing. |
-| Workflow | [`/geral-porta-de-entrada`](workflows/geral-porta-de-entrada.md) | Porta de entrada: triagem de pedidos de trabalho. |
 
 ### Coordenação
 
