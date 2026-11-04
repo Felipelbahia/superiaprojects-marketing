@@ -1,6 +1,6 @@
 # Etapa 5: Desejo (com o Sexy Canvas)
 
-Detalha a etapa 5 do `brand-builder`. A etapa usa a skill `revenue-sexy-canvas` (Sexy Canvas, André Diamand) **como consultora**: ela dá parecer e encaminhamento sobre os 14 motores emocionais; **nunca entrega a peça**. Quem executa é a skill da etapa de destino. O agente `sexy-canvas-strategist` pode conduzir o parecer.
+Detalha a etapa 5 do `brand-builder`. A etapa usa a skill `revenue-sexy-canvas` (Sexy Canvas, André Diamand) **como consultora**: ela dá parecer e encaminhamento sobre os 14 motores emocionais; **nunca entrega a peça**. Quem executa é a skill da etapa de destino. O agente `revenue-parecer-sexy-canvas` pode conduzir o parecer.
 
 **Origem (E5, 2026-10-20):** procedimento escrito para o `brand-builder` a partir do protocolo da skill `revenue-sexy-canvas` (`SKILL.md`, `references/03-protocolo-consultivo.md` e `references/10-erros-do-consultor.md`, dentro da pasta dessa skill). A escala, a regra de evidência e o teste de apelo são do Canvas; o mapa de forças e lacunas, o peso do público por persona e o portão de desejo são adaptações `[derivado]`.
 

@@ -21,7 +21,7 @@ related_skills:
   - signup-flow-cro
   - popup-cro
 agents:
-  - conversion-optimizer
+  - site-otimizacao-de-conversao
 mcp_integrations:
   optional:
     - google-analytics

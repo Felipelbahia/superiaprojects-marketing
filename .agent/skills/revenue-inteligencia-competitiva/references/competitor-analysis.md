@@ -11,10 +11,10 @@ Strategic competitive intelligence for positioning and differentiation.
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Competitive research | `researcher` | Analysis request |
-| SEO gap analysis | `attraction-specialist` | Content planning |
-| Battlecard creation | `sales-enabler` | Sales enablement |
-| Positioning strategy | `planner` | Strategic planning |
+| Competitive research | `revenue-pesquisa-de-mercado` | Analysis request |
+| SEO gap analysis | `growth-atracao-de-leads` | Content planning |
+| Battlecard creation | `vendas-habilitacao-comercial` | Sales enablement |
+| Positioning strategy | `revenue-planejamento-de-campanha` | Strategic planning |
 
 ## Lead Scoring: Competitor Mentions
 
@@ -269,9 +269,9 @@ Where you want to be
 - `vendas-pipeline` - Use battlecards in qualification
 
 ### Agents
-- `researcher` - Competitive intelligence
-- `attraction-specialist` - SEO gap analysis
-- `sales-enabler` - Battlecard creation
+- `revenue-pesquisa-de-mercado` - Competitive intelligence
+- `growth-atracao-de-leads` - SEO gap analysis
+- `vendas-habilitacao-comercial` - Battlecard creation
 
 ## Sales Handoff: Competitor Context
 

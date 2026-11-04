@@ -148,10 +148,10 @@ Load these files first:
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Data compilation | `researcher` | Monthly review |
-| Funnel analysis | `lead-qualifier` | Conversion review |
-| Insights narrative | `copywriter` | Report writing |
-| Recommendations | `planner` | Strategy planning |
+| Data compilation | `revenue-pesquisa-de-mercado` | Monthly review |
+| Funnel analysis | `vendas-qualificacao-de-leads` | Conversion review |
+| Insights narrative | `copy-redacao-publicitaria` | Report writing |
+| Recommendations | `revenue-planejamento-de-campanha` | Strategy planning |
 
 ---
 

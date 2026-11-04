@@ -159,8 +159,8 @@ argument-hint: [task]
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Results analysis | `researcher` | Deep insights |
-| Report formatting | `copywriter` | Summary writing |
+| Results analysis | `revenue-pesquisa-de-mercado` | Deep insights |
+| Report formatting | `copy-redacao-publicitaria` | Summary writing |
 
 ---
 

@@ -64,14 +64,14 @@
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Lead research | `researcher` | New lead assigned |
-| Lead scoring | `lead-qualifier` | New lead or engagement |
-| Prospect company analysis | `researcher` | Pre-call prep |
-| Lead generation | `attraction-specialist` | Pipeline building |
-| Pitch customization | `sales-enabler` | Meeting scheduled |
-| Objection scripts | `sales-enabler` | Post-call request |
-| Case study matching | `sales-enabler` | Industry/use case match |
-| Proposal generation | `copywriter` | Deal at proposal stage |
-| Follow-up sequences | `email-wizard` | Post-meeting |
-| Lost deal analysis | `researcher` | Deal marked lost |
-| Competitive intel | `researcher` | Competitor mentioned |
+| Lead research | `revenue-pesquisa-de-mercado` | New lead assigned |
+| Lead scoring | `vendas-qualificacao-de-leads` | New lead or engagement |
+| Prospect company analysis | `revenue-pesquisa-de-mercado` | Pre-call prep |
+| Lead generation | `growth-atracao-de-leads` | Pipeline building |
+| Pitch customization | `vendas-habilitacao-comercial` | Meeting scheduled |
+| Objection scripts | `vendas-habilitacao-comercial` | Post-call request |
+| Case study matching | `vendas-habilitacao-comercial` | Industry/use case match |
+| Proposal generation | `copy-redacao-publicitaria` | Deal at proposal stage |
+| Follow-up sequences | `email-orquestracao-de-campanhas` | Post-meeting |
+| Lost deal analysis | `revenue-pesquisa-de-mercado` | Deal marked lost |
+| Competitive intel | `revenue-pesquisa-de-mercado` | Competitor mentioned |

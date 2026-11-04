@@ -174,7 +174,7 @@ NEXT_QUARTER_START=$(date -v+1m +%Y-%m-01 2>/dev/null || date -d "+1 month" +%Y-
    - Define success metrics and KPIs
 
 2. **Research Phase**
-   - Delegate to `researcher` agent for competitive analysis
+   - Delegate to `revenue-pesquisa-de-mercado` agent for competitive analysis
    - Analyze market trends and opportunities
    - Review past campaign performance
 
@@ -244,10 +244,10 @@ NEXT_QUARTER_START=$(date -v+1m +%Y-%m-01 2>/dev/null || date -d "+1 month" +%Y-
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Competitive research | `researcher` | Market analysis |
-| Content planning | `copywriter` | Asset creation |
-| Timeline creation | `planner` | Schedule development |
-| Channel strategy | `attraction-specialist` | Distribution planning |
+| Competitive research | `revenue-pesquisa-de-mercado` | Market analysis |
+| Content planning | `copy-redacao-publicitaria` | Asset creation |
+| Timeline creation | `revenue-planejamento-de-campanha` | Schedule development |
+| Channel strategy | `growth-atracao-de-leads` | Distribution planning |
 
 ---
 

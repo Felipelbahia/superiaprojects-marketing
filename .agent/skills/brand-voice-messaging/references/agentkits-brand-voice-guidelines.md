@@ -207,9 +207,9 @@ github.com/aitytech/agentkits-marketing
 The hardest part of marketing for technical founders isn't the strategy—it's the execution.
 
 AgentKits gives you 18 specialized marketing agents:
-- attraction-specialist for lead gen
+- growth-atracao-de-leads for lead gen
 - copywriter for landing pages
-- email-wizard for sequences
+- email-orquestracao-de-campanhas for sequences
 
 All in your terminal. All open source.
 

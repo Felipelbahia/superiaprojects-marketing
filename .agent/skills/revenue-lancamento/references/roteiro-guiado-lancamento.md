@@ -160,9 +160,9 @@ argument-hint: [product-or-feature-to-launch]
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Launch planning | `planner` | Primary task |
-| Launch copy | `copywriter` | Asset creation |
-| Email sequences | `email-wizard` | Automation |
+| Launch planning | `revenue-planejamento-de-campanha` | Primary task |
+| Launch copy | `copy-redacao-publicitaria` | Asset creation |
+| Email sequences | `email-orquestracao-de-campanhas` | Automation |
 
 ---
 

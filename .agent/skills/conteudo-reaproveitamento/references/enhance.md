@@ -132,10 +132,10 @@ argument-hint: "[url-or-content] - Interactive mode, user will be asked for all 
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Copy enhancement | `copywriter` | Primary task |
-| Brand review | `brand-voice-guardian` | Tone consistency |
-| CRO check | `conversion-optimizer` | Conversion elements |
-| Psychology review | `brainstormer` | Persuasion elements |
+| Copy enhancement | `copy-redacao-publicitaria` | Primary task |
+| Brand review | `brand-guardiao-de-voz` | Tone consistency |
+| CRO check | `site-otimizacao-de-conversao` | Conversion elements |
+| Psychology review | `conteudo-brainstorm` | Persuasion elements |
 
 ---
 

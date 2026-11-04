@@ -147,10 +147,10 @@ Load these files first:
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Content ideas | `brainstormer` | Content gaps |
-| Copy creation | `copywriter` | Post drafting |
-| Engagement strategy | `brainstormer` | Community building |
-| Performance review | `researcher` | Daily metrics |
+| Content ideas | `conteudo-brainstorm` | Content gaps |
+| Copy creation | `copy-redacao-publicitaria` | Post drafting |
+| Engagement strategy | `conteudo-brainstorm` | Community building |
+| Performance review | `revenue-pesquisa-de-mercado` | Daily metrics |
 
 ---
 

@@ -143,10 +143,10 @@ argument-hint: "[copy-to-edit] - Interactive mode, user will be asked for all pa
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Copy editing | `copywriter` | Primary task |
-| Voice review | `brand-voice-guardian` | Tone consistency |
-| CRO check | `conversion-optimizer` | Persuasion elements |
-| SEO review | `seo-specialist` | Keyword optimization |
+| Copy editing | `copy-redacao-publicitaria` | Primary task |
+| Voice review | `brand-guardiao-de-voz` | Tone consistency |
+| CRO check | `site-otimizacao-de-conversao` | Persuasion elements |
+| SEO review | `seo-otimizacao-de-busca` | Keyword optimization |
 
 ---
 

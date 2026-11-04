@@ -1,1 +1,0 @@
-../../.agent/agents/b2b-sales-director.md

@@ -305,10 +305,10 @@ Preview: [Extends curiosity]
 
 | Task | Agent | Notes |
 |------|-------|-------|
-| Content creation | `copywriter` | Apply all standards |
-| SEO optimization | `seo-specialist` | Keyword integration |
-| Quality review | `brand-voice-guardian` | Voice consistency |
-| CRO review | `conversion-optimizer` | CTA effectiveness |
+| Content creation | `copy-redacao-publicitaria` | Apply all standards |
+| SEO optimization | `seo-otimizacao-de-busca` | Keyword integration |
+| Quality review | `brand-guardiao-de-voz` | Voice consistency |
+| CRO review | `site-otimizacao-de-conversao` | CTA effectiveness |
 
 ---
 

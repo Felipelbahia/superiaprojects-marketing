@@ -131,9 +131,9 @@ argument-hint: "[prospect-company] [use-case]"
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Prospect research | `researcher` | Data gathering |
-| Pitch creation | `sales-enabler` | Primary task |
-| Copy polish | `copywriter` | Narrative refinement |
+| Prospect research | `revenue-pesquisa-de-mercado` | Data gathering |
+| Pitch creation | `vendas-habilitacao-comercial` | Primary task |
+| Copy polish | `copy-redacao-publicitaria` | Narrative refinement |
 
 ---
 

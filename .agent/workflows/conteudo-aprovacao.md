@@ -146,10 +146,10 @@ Load these files first:
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Content creation | `copywriter` | Draft stage |
-| SEO review | `attraction-specialist` | Optimization |
-| Quality check | `researcher` | Fact verification |
-| Final polish | `copywriter` | Revisions |
+| Content creation | `copy-redacao-publicitaria` | Draft stage |
+| SEO review | `growth-atracao-de-leads` | Optimization |
+| Quality check | `revenue-pesquisa-de-mercado` | Fact verification |
+| Final polish | `copy-redacao-publicitaria` | Revisions |
 
 ---
 
@@ -254,4 +254,4 @@ Save workflow to: `./docs/workflows/approval-[content-type]-[YYYY-MM-DD].md`
 After approval workflow, consider:
 - `/content:blog` - Create content using workflow
 - `/brand:voice` - Define brand voice guidelines
-- `/docs-manager` - Document management
+- `/geral-gestao-de-documentacao` - Document management

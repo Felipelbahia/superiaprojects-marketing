@@ -1,0 +1,1 @@
+../../.agent/agents/copy-redacao-publicitaria.md

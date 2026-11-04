@@ -218,9 +218,9 @@ argument-hint: [topic]
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Content writing | `copywriter` | Primary task |
-| SEO optimization | `seo-specialist` | Technical SEO |
-| Keyword research | `attraction-specialist` | Topic research |
+| Content writing | `copy-redacao-publicitaria` | Primary task |
+| SEO optimization | `seo-otimizacao-de-busca` | Technical SEO |
+| Keyword research | `growth-atracao-de-leads` | Topic research |
 
 ---
 

@@ -19,7 +19,7 @@ related_skills:
   - form-cro
   - onboarding-cro
 agents:
-  - conversion-optimizer
+  - site-otimizacao-de-conversao
 mcp_integrations:
   optional:
     - google-analytics

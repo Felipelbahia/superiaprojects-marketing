@@ -109,7 +109,7 @@ argument-hint: "[user-request] - Interactive mode, user will be asked for all pa
    - Identify key messages
 
 2. **Rapid Creation**
-   - Generate copy using `copywriter` agent
+   - Generate copy using `copy-redacao-publicitaria` agent
    - Focus on speed and quality
    - Apply tone and platform context
 
@@ -129,9 +129,9 @@ argument-hint: "[user-request] - Interactive mode, user will be asked for all pa
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Copy creation | `copywriter` | Primary task |
-| Voice check | `brand-voice-guardian` | Brand alignment |
-| CRO review | `conversion-optimizer` | CTAs and hooks |
+| Copy creation | `copy-redacao-publicitaria` | Primary task |
+| Voice check | `brand-guardiao-de-voz` | Brand alignment |
+| CRO review | `site-otimizacao-de-conversao` | CTAs and hooks |
 
 ---
 

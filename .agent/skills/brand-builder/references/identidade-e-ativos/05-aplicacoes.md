@@ -30,7 +30,7 @@
 
 | Aplicação | Pontos de atenção | Onde se liga |
 |---|---|---|
-| **Site e landing pages** | Cabeçalho com logo principal; favicon do símbolo; tokens do design system; modo claro e escuro | `brand-design-system`, agente `web-builder` |
+| **Site e landing pages** | Cabeçalho com logo principal; favicon do símbolo; tokens do design system; modo claro e escuro | `brand-design-system`, agente `site-construcao-web` |
 | **E-mail (marketing e transacional)** | Cabeçalho e rodapé; pilha de sistema aprovada (clientes de e-mail ignoram fonte própria); versão do logo legível em fundo escuro do cliente de e-mail; assinatura padrão | `email-copy`, `email-newsletter`, `email-entregabilidade` |
 | **Redes sociais** | Avatar com o símbolo; capa; destaques; modelos de post e de carrossel; zona segura; tratamento de imagem | `social-carrossel`, `social-direcao-de-arte-ia`, `social-linkedin` |
 | **Anúncios** | Logo pequeno e legível; texto sobre imagem com contraste; zona segura por posicionamento; variações por formato | `ads-criativos`, `ads-multiplataforma/references/platform-specs.md` |

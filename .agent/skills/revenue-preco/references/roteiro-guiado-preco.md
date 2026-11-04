@@ -154,9 +154,9 @@ argument-hint: [product-or-pricing-challenge]
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Strategy design | `planner` | Primary task |
-| Market research | `researcher` | Competitive analysis |
-| Page optimization | `conversion-optimizer` | Pricing page CRO |
+| Strategy design | `revenue-planejamento-de-campanha` | Primary task |
+| Market research | `revenue-pesquisa-de-mercado` | Competitive analysis |
+| Page optimization | `site-otimizacao-de-conversao` | Pricing page CRO |
 
 ---
 

@@ -22,7 +22,7 @@ related_skills:
   - copywriting
   - onboarding-cro
 agents:
-  - email-wizard
+  - email-orquestracao-de-campanhas
   - copywriter
 mcp_integrations:
   optional:

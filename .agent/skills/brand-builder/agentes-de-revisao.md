@@ -1,13 +1,13 @@
 # Agentes de revisão da marca (criados na etapa 8 ou 9)
 
-Origem: pedido do usuário no projeto Futuro Mercado (2026-10-23): "crie [os agentes de revisão] com o nome da marca, ex.: `brand-voice-guardian-Futuro-Mercado`; a skill que vai criar tem que personalizar na hora da criação".
+Origem: pedido do usuário no projeto Futuro Mercado (2026-10-23): "crie [os agentes de revisão] com o nome da marca, ex.: `brand-guardiao-de-voz-Futuro-Mercado`; a skill que vai criar tem que personalizar na hora da criação".
 
 ## O que são
 Revisores que conferem peça nova contra o kit **daquela marca**. Existem dois, e um não faz o trabalho do outro:
 
 | Agente | Nome | Revisa | Lê |
 |---|---|---|---|
-| Voz e conteúdo | `brand-voice-guardian-<Marca>` | Texto: voz, "o que NÃO comunicar", fontes de número, metadados, séries, regras de conteúdo | `brand-voice*.md`, `ativacao/conteudo.md`, pilares, personas, mensagens, posicionamento, `STANDARDS.md` |
+| Voz e conteúdo | `brand-guardiao-de-voz-<Marca>` | Texto: voz, "o que NÃO comunicar", fontes de número, metadados, séries, regras de conteúdo | `brand-voice*.md`, `ativacao/conteudo.md`, pilares, personas, mensagens, posicionamento, `STANDARDS.md` |
 | Identidade e kit | `brand-identity-guardian-<Marca>` | Visual e arquivo: cor, fonte, logo, imagem, proporção, contraste, política de imagem e de IA | `identidade-e-ativos.md`, `registro-de-decisoes.md`, `tokens.json`, `visual-style.md`, direção visual, logo e modelos |
 
 Quem cria a peça é outro agente ou o usuário; o revisor **entrega parecer com evidência e não escreve a peça**.
@@ -16,7 +16,7 @@ Quem cria a peça é outro agente ou o usuário; o revisor **entrega parecer com
 No fim da etapa 8 (as regras de conteúdo já existem) ou na etapa 9, **perguntando antes ao usuário** (regra 10 da skill): objetivo (conferir peça nova contra o kit antes de aprovar), opcional, recomendação (criar quando a produção é feita por agentes de IA) e custo (um arquivo por agente, mais teste). Pré-requisitos: voz aprovada (etapa 4); para o agente de identidade, também `identidade-e-ativos.md` ou, no mínimo, `tokens.json` e direção visual.
 
 ## Nome
-`<função>-<Marca>`, com a marca escrita como o usuário escreve e espaços trocados por hífen: `brand-voice-guardian-Futuro-Mercado`, `brand-identity-guardian-Futuro-Mercado`. O campo `name` do arquivo é igual ao nome do arquivo.
+`<função>-<Marca>`, com a marca escrita como o usuário escreve e espaços trocados por hífen: `brand-guardiao-de-voz-Futuro-Mercado`, `brand-identity-guardian-Futuro-Mercado`. O campo `name` do arquivo é igual ao nome do arquivo.
 
 ## Onde ficam (regra do projeto)
 Arquivo em `.agent/agents/<nome>.md` do projeto da marca, com link simbólico em `.claude/agents/<nome>.md` (`ln -s "../../.agent/agents/<nome>.md" ".claude/agents/<nome>.md"`), como o 0 Mkt faz com os agentes. Se o projeto tem registro de agentes ou ficha central, registrar lá. Agente de marca vive **no projeto da marca**, não na pasta global.
@@ -46,7 +46,7 @@ O agente tem `version` no frontmatter. Quando um arquivo-fonte muda (nova voz, n
 ## Modelo de agente de voz (esqueleto; substituir `{{...}}`)
 ```
 ---
-name: brand-voice-guardian-{{Marca}}
+name: brand-guardiao-de-voz-{{Marca}}
 version: "1.0.0"
 brand: {{Marca}}
 description: "Revisor de voz e conteúdo da marca {{Marca}}. Use antes de uma peça entrar na esteira de aprovação ou quando o usuário pedir para conferir se um texto soa como a {{Marca}}. ... não escreve a peça. Exemplos: <example>...</example>"
@@ -59,4 +59,4 @@ Você é o revisor de voz e de conteúdo da {{Marca}} ({{descritor}}; frase: "{{
 ## Como revisar  -> metadados, voz, "nunca comunicar", número e prova, série e pilar, gancho e chamada, anti-slop, revisão externa
 ## Parecer (formato fixo)  ## Limites
 ```
-Os agentes `brand-voice-guardian-Futuro-Mercado` e `brand-identity-guardian-Futuro-Mercado` (em `Projetos/Futuro Mercado/Marketing - FM/.agent/agents/`) são os exemplos prontos; usar como referência de estrutura e de profundidade, nunca copiar o conteúdo de uma marca para outra.
+Os agentes `brand-guardiao-de-voz-Futuro-Mercado` e `brand-identity-guardian-Futuro-Mercado` (em `Projetos/Futuro Mercado/Marketing - FM/.agent/agents/`) são os exemplos prontos; usar como referência de estrutura e de profundidade, nunca copiar o conteúdo de uma marca para outra.

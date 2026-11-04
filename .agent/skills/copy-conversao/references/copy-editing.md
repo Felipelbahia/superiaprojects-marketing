@@ -21,7 +21,7 @@ related_skills:
   - brand-essence
 agents:
   - copywriter
-  - brand-voice-guardian
+  - brand-guardiao-de-voz
 mcp_integrations:
   optional: []
 success_metrics:

@@ -19,7 +19,7 @@ related_skills:
   - marketing-psychology
   - marketing-fundamentals
 agents:
-  - brainstormer
+  - conteudo-brainstorm
   - planner
 mcp_integrations:
   optional: []

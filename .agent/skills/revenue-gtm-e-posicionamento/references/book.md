@@ -134,9 +134,9 @@ argument-hint: [brand-name]
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Brand book creation | `copywriter` | Primary task |
-| Visual specs | `docs-manager` | Asset documentation |
-| Voice guidelines | `brand-voice-guardian` | Consistency |
+| Brand book creation | `copy-redacao-publicitaria` | Primary task |
+| Visual specs | `geral-gestao-de-documentacao` | Asset documentation |
+| Voice guidelines | `brand-guardiao-de-voz` | Consistency |
 
 ---
 

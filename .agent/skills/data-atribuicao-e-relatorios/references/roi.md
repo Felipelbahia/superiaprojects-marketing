@@ -180,9 +180,9 @@ echo "ROI Analysis Date: $CURRENT_DATE"
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| ROI analysis | `upsell-maximizer` | Revenue calculation |
-| Data compilation | `researcher` | Cost gathering |
-| Projections | `planner` | Scenario modeling |
+| ROI analysis | `growth-expansao-de-receita` | Revenue calculation |
+| Data compilation | `revenue-pesquisa-de-mercado` | Cost gathering |
+| Projections | `revenue-planejamento-de-campanha` | Scenario modeling |
 
 ---
 

@@ -159,9 +159,9 @@ argument-hint: [product-or-goal]
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Idea generation | `brainstormer` | Primary task |
-| Implementation planning | `planner` | Roadmap creation |
-| Channel research | `researcher` | Competitive context |
+| Idea generation | `conteudo-brainstorm` | Primary task |
+| Implementation planning | `revenue-planejamento-de-campanha` | Roadmap creation |
+| Channel research | `revenue-pesquisa-de-mercado` | Competitive context |
 
 ---
 

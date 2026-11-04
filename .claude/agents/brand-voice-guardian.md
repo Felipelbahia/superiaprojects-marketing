@@ -1,1 +1,0 @@
-../../.agent/agents/brand-voice-guardian.md

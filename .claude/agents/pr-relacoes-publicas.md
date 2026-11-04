@@ -1,0 +1,1 @@
+../../.agent/agents/pr-relacoes-publicas.md

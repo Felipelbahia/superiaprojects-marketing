@@ -146,10 +146,10 @@ Load these files first:
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Hypothesis creation | `brainstormer` | Test ideation |
-| Copy variants | `copywriter` | Content testing |
-| Analysis | `researcher` | Results review |
-| Recommendations | `planner` | Next steps |
+| Hypothesis creation | `conteudo-brainstorm` | Test ideation |
+| Copy variants | `copy-redacao-publicitaria` | Content testing |
+| Analysis | `revenue-pesquisa-de-mercado` | Results review |
+| Recommendations | `revenue-planejamento-de-campanha` | Next steps |
 
 ---
 

@@ -22,7 +22,7 @@ related_skills:
   - content-strategy
 agents:
   - researcher
-  - brainstormer
+  - conteudo-brainstorm
   - planner
 mcp_integrations:
   optional:
@@ -162,10 +162,10 @@ Apply marketing fundamentals when:
 
 | Agent | How They Use This Skill |
 |-------|------------------------|
-| `brainstormer` | Campaign ideation based on psychology |
-| `planner` | Full-funnel campaign planning |
-| `copywriter` | Messaging aligned with positioning |
-| `lead-qualifier` | Understanding buyer journey stage |
+| `conteudo-brainstorm` | Campaign ideation based on psychology |
+| `revenue-planejamento-de-campanha` | Full-funnel campaign planning |
+| `copy-redacao-publicitaria` | Messaging aligned with positioning |
+| `vendas-qualificacao-de-leads` | Understanding buyer journey stage |
 
 ## Anti-Patterns to Avoid
 

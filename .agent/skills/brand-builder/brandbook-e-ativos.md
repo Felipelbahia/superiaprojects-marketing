@@ -123,9 +123,9 @@ Os mesmos campos valem em qualquer profundidade; acrescenta-se estrutura de past
 | Tarefa | Quem | Quando |
 |---|---|---|
 | Montar o brandbook | `brand-builder` (esta skill) | Tarefa principal |
-| Documentar especificações visuais | agente `docs-manager` | Documentação de ativos |
-| Conferir consistência de voz | agente `brand-voice-guardian` | Depois de pronto, e ao revisar peças novas |
-| Organizar ativos | agente `project-manager` | Inventário e organização |
+| Documentar especificações visuais | agente `geral-gestao-de-documentacao` | Documentação de ativos |
+| Conferir consistência de voz | agente `brand-guardiao-de-voz` | Depois de pronto, e ao revisar peças novas |
+| Organizar ativos | agente `geral-coordenacao-de-campanhas` | Inventário e organização |
 
 ## 9. Onde salvar
 Tudo na raiz da marca (regra 5 do `SKILL.md`): o brandbook em `_brands/<marca>/brandbook.md`; o inventário, quando pedido, em `_brands/<marca>/ativos/inventario.md` (modo 0 Mkt) ou em `<projeto>/assets/inventario.md` (modo Projeto, conforme o mapa de destinos). Nunca em `content/` (o conteúdo produzido vai lá; a marca não). Em marca com projeto próprio, a raiz é a pasta de marca do projeto, com confirmação do usuário.
@@ -157,6 +157,6 @@ O `brandbook.md` tem uma seção **"Lacunas reunidas"**: uma linha por assunto, 
 Antes de fechar a etapa 9, listar a pasta da marca e conferir (1) se **a lógica dos nomes** faz sentido (numeração coerente, sufixo de versão só onde há versão, nenhum nome sem sufixo que seja versão antiga) e (2) se **cada arquivo está onde faz sentido** (apoio, comparações e material bruto fora da raiz). Apresentar a proposta ao usuário; mover arquivo só com aprovação, pois muda links em outros arquivos e nas regras do projeto.
 
 ## Depois do brandbook
-- Conferir peças novas: `brand-voice-guardian`.
+- Conferir peças novas: `brand-guardiao-de-voz`.
 - Mensagens: `references` de `brand-voice-messaging` (`casa-de-mensagens.md`).
-- Sites e landing pages com a marca: agente `web-builder`.
+- Sites e landing pages com a marca: agente `site-construcao-web`.

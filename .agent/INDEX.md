@@ -65,8 +65,8 @@ Identidade da marca: essência, público, voz, visual, nome e som.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`art-director`](agents/art-director.md) | Diretor de Arte Sênior, neurodesign, estética de agência internacional e rigor visual. |
-| Agente | [`brand-voice-guardian`](agents/brand-voice-guardian.md) | Revisa se o conteúdo respeita voz, tom e estilo da marca. |
+| Agente | [`brand-direcao-de-arte`](agents/brand-direcao-de-arte.md) | Diretor de Arte Sênior, neurodesign, estética de agência internacional e rigor visual. |
+| Agente | [`brand-guardiao-de-voz`](agents/brand-guardiao-de-voz.md) | Revisa se o conteúdo respeita voz, tom e estilo da marca. |
 
 ## conteudo
 
@@ -111,8 +111,8 @@ O quê: planejar, pesquisar e produzir o conteúdo. Anda junto com Copy (o como)
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`brainstormer`](agents/brainstormer.md) | Ideação de campanhas e conceitos criativos. |
-| Agente | [`content-creator`](agents/content-creator.md) | Criação de conteúdo para todos os formatos de marketing. |
+| Agente | [`conteudo-brainstorm`](agents/conteudo-brainstorm.md) | Ideação de campanhas e conceitos criativos. |
+| Agente | [`conteudo-criacao-multiformato`](agents/conteudo-criacao-multiformato.md) | Criação de conteúdo para todos os formatos de marketing. |
 
 ## copy
 
@@ -150,7 +150,7 @@ O como: textos, métodos de persuasão e hooks que revisam e explicam o conteúd
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`copywriter`](agents/copywriter.md) | Copy de conversão para páginas, redes, e-mails e anúncios. |
+| Agente | [`copy-redacao-publicitaria`](agents/copy-redacao-publicitaria.md) | Copy de conversão para páginas, redes, e-mails e anúncios. |
 
 ## social
 
@@ -186,7 +186,7 @@ Redes sociais, LinkedIn, carrossel, YouTube e arte para posts.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`social-media-strategist`](agents/social-media-strategist.md) | Calendário, carrosséis e distribuição em redes e comunidades. |
+| Agente | [`social-estrategia-de-redes`](agents/social-estrategia-de-redes.md) | Calendário, carrosséis e distribuição em redes e comunidades. |
 
 ## pr
 
@@ -202,7 +202,7 @@ Imprensa e reputação.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`pr-specialist`](agents/pr-specialist.md) | Assessoria de imprensa, press releases, pitches e crise de reputação. |
+| Agente | [`pr-relacoes-publicas`](agents/pr-relacoes-publicas.md) | Assessoria de imprensa, press releases, pitches e crise de reputação. |
 
 ## seo
 
@@ -250,7 +250,7 @@ Busca orgânica, busca com IA (GEO), lojas de app e podcast.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`seo-specialist`](agents/seo-specialist.md) | Otimização para busca: on-page, técnico e SERP. |
+| Agente | [`seo-otimizacao-de-busca`](agents/seo-otimizacao-de-busca.md) | Otimização para busca: on-page, técnico e SERP. |
 
 ## ads
 
@@ -283,7 +283,7 @@ Anúncios pagos: contas, criativos, texto e análise.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`paid-traffic-specialist`](agents/paid-traffic-specialist.md) | Tráfego pago: Google, Meta, TikTok, LinkedIn, CAC e ROAS. |
+| Agente | [`ads-trafego-pago`](agents/ads-trafego-pago.md) | Tráfego pago: Google, Meta, TikTok, LinkedIn, CAC e ROAS. |
 
 ## email
 
@@ -310,7 +310,7 @@ E-mail marketing: texto, automação, newsletter e entregabilidade.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`email-wizard`](agents/email-wizard.md) | Sequências, personalização, horário de envio e testes A/B de e-mail. |
+| Agente | [`email-orquestracao-de-campanhas`](agents/email-orquestracao-de-campanhas.md) | Sequências, personalização, horário de envio e testes A/B de e-mail. |
 
 ## vendas
 
@@ -347,9 +347,9 @@ Prospecção, funil comercial, CRM e materiais de venda.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`b2b-sales-director`](agents/b2b-sales-director.md) | Vendas B2B complexas, MEDDIC, cadências outbound e compliance comercial. |
-| Agente | [`lead-qualifier`](agents/lead-qualifier.md) | Pontuação de leads, intenção e próximos passos comerciais. |
-| Agente | [`sales-enabler`](agents/sales-enabler.md) | Materiais de venda, objeções, cases e prova social. |
+| Agente | [`vendas-direcao-b2b`](agents/vendas-direcao-b2b.md) | Vendas B2B complexas, MEDDIC, cadências outbound e compliance comercial. |
+| Agente | [`vendas-qualificacao-de-leads`](agents/vendas-qualificacao-de-leads.md) | Pontuação de leads, intenção e próximos passos comerciais. |
+| Agente | [`vendas-habilitacao-comercial`](agents/vendas-habilitacao-comercial.md) | Materiais de venda, objeções, cases e prova social. |
 
 ## site
 
@@ -391,8 +391,8 @@ Sites e landing pages: estrutura, interface, conversão e código front-end.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`conversion-optimizer`](agents/conversion-optimizer.md) | Revisa páginas, e-mails e anúncios para conversão. |
-| Agente | [`web-builder`](agents/web-builder.md) | Constrói sites e landing pages de conversão das marcas de _brands/. |
+| Agente | [`site-otimizacao-de-conversao`](agents/site-otimizacao-de-conversao.md) | Revisa páginas, e-mails e anúncios para conversão. |
+| Agente | [`site-construcao-web`](agents/site-construcao-web.md) | Constrói sites e landing pages de conversão das marcas de _brands/. |
 
 ## data
 
@@ -429,7 +429,7 @@ Dados: medição, atribuição, relatórios, funil e coortes.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`analytics-specialist`](agents/analytics-specialist.md) | Análise de dados de marketing e insights de desempenho. |
+| Agente | [`data-analise-de-desempenho`](agents/data-analise-de-desempenho.md) | Análise de dados de marketing e insights de desempenho. |
 
 ## growth
 
@@ -461,10 +461,10 @@ Crescimento: frameworks, experimentos, testes A/B, indicação e retenção.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`attraction-specialist`](agents/attraction-specialist.md) | Geração de leads e topo de funil: palavras-chave, SEO programático, landing pages. |
-| Agente | [`continuity-specialist`](agents/continuity-specialist.md) | Retenção, churn, reengajamento, NPS e depoimentos. |
-| Agente | [`growth-specialist`](agents/growth-specialist.md) | Growth hacking e aquisição de usuários. |
-| Agente | [`upsell-maximizer`](agents/upsell-maximizer.md) | Expansão de receita: upsell, recomendação e adoção de funcionalidades. |
+| Agente | [`growth-atracao-de-leads`](agents/growth-atracao-de-leads.md) | Geração de leads e topo de funil: palavras-chave, SEO programático, landing pages. |
+| Agente | [`growth-retencao-de-clientes`](agents/growth-retencao-de-clientes.md) | Retenção, churn, reengajamento, NPS e depoimentos. |
+| Agente | [`growth-aquisicao-de-usuarios`](agents/growth-aquisicao-de-usuarios.md) | Growth hacking e aquisição de usuários. |
+| Agente | [`growth-expansao-de-receita`](agents/growth-expansao-de-receita.md) | Expansão de receita: upsell, recomendação e adoção de funcionalidades. |
 
 ## revenue
 
@@ -520,15 +520,15 @@ Receita: campanhas, mercado, oferta, preço, lançamento e decisão.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`marketing-strategist`](agents/marketing-strategist.md) | Orquestra a estratégia geral de marketing. |
-| Agente | [`planner`](agents/planner.md) | Planos de marketing, cronograma, orçamento e calendário de conteúdo. |
+| Agente | [`revenue-orquestracao-de-estrategia`](agents/revenue-orquestracao-de-estrategia.md) | Orquestra a estratégia geral de marketing. |
+| Agente | [`revenue-planejamento-de-campanha`](agents/revenue-planejamento-de-campanha.md) | Planos de marketing, cronograma, orçamento e calendário de conteúdo. |
 
 ### Especialistas
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`researcher`](agents/researcher.md) | Pesquisa de mercado, concorrência e público. |
-| Agente | [`sexy-canvas-strategist`](agents/sexy-canvas-strategist.md) | Parecer consultivo pelo Sexy Canvas; entrega opinião e encaminhamento, não a peça. |
+| Agente | [`revenue-pesquisa-de-mercado`](agents/revenue-pesquisa-de-mercado.md) | Pesquisa de mercado, concorrência e público. |
+| Agente | [`revenue-parecer-sexy-canvas`](agents/revenue-parecer-sexy-canvas.md) | Parecer consultivo pelo Sexy Canvas; entrega opinião e encaminhamento, não a peça. |
 
 ## persona
 
@@ -549,7 +549,7 @@ Quem é o cliente: persona, ICP, pesquisa e descoberta.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`persona-builder`](agents/persona-builder.md) | Descoberta interativa de cliente para construir personas. |
+| Agente | [`persona-descoberta-interativa`](agents/persona-descoberta-interativa.md) | Descoberta interativa de cliente para construir personas. |
 
 ## produto
 
@@ -620,8 +620,8 @@ Requisitos e gestão de produto.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`audiovisual-producer`](agents/audiovisual-producer.md) | Roteiros de vídeo, VSL, hooks de retenção, áudio e vídeo programático. |
-| Agente | [`pitch-deck-creator`](agents/pitch-deck-creator.md) | Pitch decks para investidores e apresentações executivas. |
+| Agente | [`audiovisual-producao-de-video`](agents/audiovisual-producao-de-video.md) | Roteiros de vídeo, VSL, hooks de retenção, áudio e vídeo programático. |
+| Agente | [`audiovisual-criacao-de-pitch-deck`](agents/audiovisual-criacao-de-pitch-deck.md) | Pitch decks para investidores e apresentações executivas. |
 
 ## geral
 
@@ -661,14 +661,14 @@ Vale para tudo: anti-slop, LGPD, rotinas e utilitários.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`command-helper`](agents/command-helper.md) | Sugere o comando ou agente certo a partir da intenção do usuário. |
-| Agente | [`docs-manager`](agents/docs-manager.md) | Documentação de marketing, guias de marca e relatórios de documentação. |
-| Agente | [`project-manager`](agents/project-manager.md) | Acompanhamento e coordenação de campanhas e prazos. |
+| Agente | [`geral-navegador-de-comandos`](agents/geral-navegador-de-comandos.md) | Sugere o comando ou agente certo a partir da intenção do usuário. |
+| Agente | [`geral-gestao-de-documentacao`](agents/geral-gestao-de-documentacao.md) | Documentação de marketing, guias de marca e relatórios de documentação. |
+| Agente | [`geral-coordenacao-de-campanhas`](agents/geral-coordenacao-de-campanhas.md) | Acompanhamento e coordenação de campanhas e prazos. |
 
 ### Personas revisoras
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`marketing-manager`](agents/marketing-manager.md) | Revisa conteúdo como gerente de marketing de empresa média (38 anos). |
-| Agente | [`solopreneur`](agents/solopreneur.md) | Revisa conteúdo como profissional independente (32 anos). |
-| Agente | [`startup-founder`](agents/startup-founder.md) | Revisa conteúdo como fundador de startup em estágio inicial (28 anos). |
+| Agente | [`geral-persona-gerente-de-marketing`](agents/geral-persona-gerente-de-marketing.md) | Revisa conteúdo como gerente de marketing de empresa média (38 anos). |
+| Agente | [`geral-persona-solopreneur`](agents/geral-persona-solopreneur.md) | Revisa conteúdo como profissional independente (32 anos). |
+| Agente | [`geral-persona-fundador-startup`](agents/geral-persona-fundador-startup.md) | Revisa conteúdo como fundador de startup em estágio inicial (28 anos). |

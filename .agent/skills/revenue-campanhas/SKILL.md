@@ -206,7 +206,7 @@ Cada receita é a ordem de skills para um tipo de entrega. Antes de qualquer uma
 4. Design e interface: [site-interface-de-conversao](../site-interface-de-conversao/SKILL.md).
 5. Salvar em `content/<marca>/campaigns/`.
 
-**Para entregar a página pronta** (marca, design a partir dos tokens, código com autorização, teste no navegador e revisão de conversão), use o workflow [site-construcao-de-landing-page](../../workflows/site-construcao-de-landing-page.md), conduzido pelo agente [web-builder](../../agents/web-builder.md); a página é salva em `content/<marca>/landing-pages/`. Site de várias páginas: [site-construcao-de-site](../../workflows/site-construcao-de-site.md) e a skill [site-arquitetura](../site-arquitetura/SKILL.md).
+**Para entregar a página pronta** (marca, design a partir dos tokens, código com autorização, teste no navegador e revisão de conversão), use o workflow [site-construcao-de-landing-page](../../workflows/site-construcao-de-landing-page.md), conduzido pelo agente [site-construcao-web](../../agents/site-construcao-web.md); a página é salva em `content/<marca>/landing-pages/`. Site de várias páginas: [site-construcao-de-site](../../workflows/site-construcao-de-site.md) e a skill [site-arquitetura](../site-arquitetura/SKILL.md).
 
 ### Receita 4: Sequência de nutrição e onboarding (e-mail)
 1. Marca.

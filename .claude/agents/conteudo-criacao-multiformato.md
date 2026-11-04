@@ -1,0 +1,1 @@
+../../.agent/agents/conteudo-criacao-multiformato.md

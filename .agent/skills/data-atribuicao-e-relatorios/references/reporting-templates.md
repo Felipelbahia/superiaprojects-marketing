@@ -11,10 +11,10 @@ Client-ready reporting frameworks aligned with `vendas-pipeline` and `crm-workfl
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Data compilation | `researcher` | Report generation |
-| Funnel analysis | `lead-qualifier` | Conversion review |
-| Insights narrative | `copywriter` | Executive summary |
-| Recommendations | `planner` | Strategy planning |
+| Data compilation | `revenue-pesquisa-de-mercado` | Report generation |
+| Funnel analysis | `vendas-qualificacao-de-leads` | Conversion review |
+| Insights narrative | `copy-redacao-publicitaria` | Executive summary |
+| Recommendations | `revenue-planejamento-de-campanha` | Strategy planning |
 
 ## Data Privacy Note
 

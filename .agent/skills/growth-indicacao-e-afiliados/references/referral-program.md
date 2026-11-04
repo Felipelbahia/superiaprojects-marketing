@@ -19,8 +19,8 @@ related_skills:
   - email-sequence
   - marketing-psychology
 agents:
-  - continuity-specialist
-  - upsell-maximizer
+  - growth-retencao-de-clientes
+  - growth-expansao-de-receita
 mcp_integrations:
   optional: []
 success_metrics:

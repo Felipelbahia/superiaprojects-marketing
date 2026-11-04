@@ -20,8 +20,8 @@ related_skills:
   - schema-markup
   - competitor-alternatives
 agents:
-  - attraction-specialist
-  - seo-specialist
+  - growth-atracao-de-leads
+  - seo-otimizacao-de-busca
 mcp_integrations:
   optional:
     - google-search-console

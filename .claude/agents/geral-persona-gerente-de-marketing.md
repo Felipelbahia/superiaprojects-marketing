@@ -1,0 +1,1 @@
+../../.agent/agents/geral-persona-gerente-de-marketing.md

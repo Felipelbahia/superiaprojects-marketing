@@ -1,1 +1,0 @@
-../../.agent/agents/pitch-deck-creator.md

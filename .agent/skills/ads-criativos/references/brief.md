@@ -138,10 +138,10 @@ argument-hint: "[campaign-name] - Interactive mode, user will be asked for all p
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Messaging strategy | `copywriter` | Key messages |
-| Campaign structure | `planner` | Timeline planning |
-| Audience insights | `researcher` | Persona development |
-| Brand alignment | `brand-voice-guardian` | Voice/tone review |
+| Messaging strategy | `copy-redacao-publicitaria` | Key messages |
+| Campaign structure | `revenue-planejamento-de-campanha` | Timeline planning |
+| Audience insights | `revenue-pesquisa-de-mercado` | Persona development |
+| Brand alignment | `brand-guardiao-de-voz` | Voice/tone review |
 
 ---
 

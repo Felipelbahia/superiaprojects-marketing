@@ -133,10 +133,10 @@ argument-hint: "[timeframe] - Interactive mode, user will be asked for all param
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Content strategy | `planner` | Calendar structure |
-| Content ideas | `brainstormer` | Topic generation |
-| Copy creation | `copywriter` | Content drafting |
-| Coordination | `project-manager` | Timeline management |
+| Content strategy | `revenue-planejamento-de-campanha` | Calendar structure |
+| Content ideas | `conteudo-brainstorm` | Topic generation |
+| Copy creation | `copy-redacao-publicitaria` | Content drafting |
+| Coordination | `geral-coordenacao-de-campanhas` | Timeline management |
 
 ---
 

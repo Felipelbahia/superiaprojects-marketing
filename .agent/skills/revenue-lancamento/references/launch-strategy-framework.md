@@ -24,7 +24,7 @@ related_skills:
   - email-sequence
 agents:
   - planner
-  - project-manager
+  - geral-coordenacao-de-campanhas
   - copywriter
 mcp_integrations:
   optional:

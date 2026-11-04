@@ -147,9 +147,9 @@ Load these files first:
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Sequence design | `email-wizard` | Primary task |
-| Copy creation | `copywriter` | Email content |
-| Segment targeting | `lead-qualifier` | Entry criteria |
+| Sequence design | `email-orquestracao-de-campanhas` | Primary task |
+| Copy creation | `copy-redacao-publicitaria` | Email content |
+| Segment targeting | `vendas-qualificacao-de-leads` | Entry criteria |
 
 ---
 

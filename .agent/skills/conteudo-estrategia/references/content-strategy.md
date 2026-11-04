@@ -22,7 +22,7 @@ related_skills:
 agents:
   - planner
   - copywriter
-  - attraction-specialist
+  - growth-atracao-de-leads
 mcp_integrations:
   optional:
     - notion
@@ -144,10 +144,10 @@ Content pillars are the main themes your content revolves around.
 
 | Agent | How They Use This Skill |
 |-------|------------------------|
-| `planner` | Building content calendars and editorial plans |
-| `copywriter` | Creating content aligned with strategy |
-| `attraction-specialist` | SEO-optimized content creation |
-| `email-wizard` | Email content aligned with nurture goals |
+| `revenue-planejamento-de-campanha` | Building content calendars and editorial plans |
+| `copy-redacao-publicitaria` | Creating content aligned with strategy |
+| `growth-atracao-de-leads` | SEO-optimized content creation |
+| `email-orquestracao-de-campanhas` | Email content aligned with nurture goals |
 
 ## Anti-Patterns to Avoid
 

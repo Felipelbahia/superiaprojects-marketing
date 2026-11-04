@@ -1,1 +1,0 @@
-../../.agent/agents/sexy-canvas-strategist.md

@@ -167,12 +167,12 @@ Load these files first:
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Website/SEO audit | `attraction-specialist` | Technical review |
-| Content analysis | `researcher` | Content inventory |
-| Funnel analysis | `lead-qualifier` | Conversion review |
-| Email audit | `email-wizard` | Email program |
-| Social audit | `researcher` | Social presence |
-| Competitive context | `researcher` | Market position |
+| Website/SEO audit | `growth-atracao-de-leads` | Technical review |
+| Content analysis | `revenue-pesquisa-de-mercado` | Content inventory |
+| Funnel analysis | `vendas-qualificacao-de-leads` | Conversion review |
+| Email audit | `email-orquestracao-de-campanhas` | Email program |
+| Social audit | `revenue-pesquisa-de-mercado` | Social presence |
+| Competitive context | `revenue-pesquisa-de-mercado` | Market position |
 
 ---
 

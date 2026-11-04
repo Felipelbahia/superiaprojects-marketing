@@ -49,8 +49,8 @@ Apresentar a proposta de plano:
 ### Plano de Execução
 | # | Etapa | Skill / Ferramenta | Risco / Ponto Crítico |
 |---|---|---|---|
-| 1 | Mapeamento de contexto e personas | persona-builder | Alinhamento com brand-voice |
-| 2 | Redação da sequência de e-mails | email-wizard | Filtro anti-slop mandatório |
+| 1 | Mapeamento de contexto e personas | persona-descoberta-interativa | Alinhamento com brand-voice |
+| 2 | Redação da sequência de e-mails | email-orquestracao-de-campanhas | Filtro anti-slop mandatório |
 | 3 | Revisão e salvamento estruturado | file-creator | content/<marca>/email/ |
 ```
 

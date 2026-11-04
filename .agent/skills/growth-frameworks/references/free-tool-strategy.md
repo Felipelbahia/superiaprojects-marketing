@@ -21,8 +21,8 @@ related_skills:
   - content-strategy
   - programmatic-seo
 agents:
-  - attraction-specialist
-  - brainstormer
+  - growth-atracao-de-leads
+  - conteudo-brainstorm
 mcp_integrations:
   optional:
     - google-search-console

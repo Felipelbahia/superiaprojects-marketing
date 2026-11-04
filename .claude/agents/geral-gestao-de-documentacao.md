@@ -1,0 +1,1 @@
+../../.agent/agents/geral-gestao-de-documentacao.md

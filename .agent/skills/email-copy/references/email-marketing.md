@@ -21,7 +21,7 @@ related_skills:
   - copywriting
   - analytics-attribution
 agents:
-  - email-wizard
+  - email-orquestracao-de-campanhas
   - copywriter
 mcp_integrations:
   optional:
@@ -154,10 +154,10 @@ Preview: [Extends subject curiosity] (90-100 chars)
 
 | Agent | How They Use This Skill |
 |-------|------------------------|
-| `email-wizard` | Sequence design, automation setup |
-| `copywriter` | Email copy creation |
-| `lead-qualifier` | Segmentation criteria, triggers |
-| `continuity-specialist` | Re-engagement strategies |
+| `email-orquestracao-de-campanhas` | Sequence design, automation setup |
+| `copy-redacao-publicitaria` | Email copy creation |
+| `vendas-qualificacao-de-leads` | Segmentation criteria, triggers |
+| `growth-retencao-de-clientes` | Re-engagement strategies |
 
 ## Anti-Patterns to Avoid
 

@@ -22,7 +22,7 @@ related_skills:
   - ab-test-setup
   - paid-advertising
 agents:
-  - project-manager
+  - geral-coordenacao-de-campanhas
   - researcher
 mcp_integrations:
   optional:
@@ -140,10 +140,10 @@ Apply analytics expertise when:
 
 | Agent | How They Use This Skill |
 |-------|------------------------|
-| `researcher` | Compiling performance data, competitive benchmarks |
-| `lead-qualifier` | Funnel conversion analysis, lead source quality |
-| `planner` | Budget allocation based on channel ROI |
-| `project-manager` | Campaign performance tracking |
+| `revenue-pesquisa-de-mercado` | Compiling performance data, competitive benchmarks |
+| `vendas-qualificacao-de-leads` | Funnel conversion analysis, lead source quality |
+| `revenue-planejamento-de-campanha` | Budget allocation based on channel ROI |
+| `geral-coordenacao-de-campanhas` | Campaign performance tracking |
 
 ## Anti-Patterns to Avoid
 

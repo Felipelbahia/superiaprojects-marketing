@@ -146,9 +146,9 @@ argument-hint: [product-or-audience]
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Tool ideation | `brainstormer` | Concept generation |
-| Strategy design | `attraction-specialist` | Primary task |
-| SEO planning | `seo-specialist` | Complete scope |
+| Tool ideation | `conteudo-brainstorm` | Concept generation |
+| Strategy design | `growth-atracao-de-leads` | Primary task |
+| SEO planning | `seo-otimizacao-de-busca` | Complete scope |
 
 ---
 

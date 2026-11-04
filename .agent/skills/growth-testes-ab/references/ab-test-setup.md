@@ -21,7 +21,7 @@ related_skills:
   - page-cro
   - analytics-attribution
 agents:
-  - conversion-optimizer
+  - site-otimizacao-de-conversao
   - researcher
 mcp_integrations:
   optional:

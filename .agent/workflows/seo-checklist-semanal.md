@@ -151,10 +151,10 @@ Load these files first:
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Keyword research | `attraction-specialist` | Content planning |
-| Technical audit | `attraction-specialist` | Site health |
-| Content gaps | `researcher` | Competitor analysis |
-| Performance analysis | `researcher` | Rankings review |
+| Keyword research | `growth-atracao-de-leads` | Content planning |
+| Technical audit | `growth-atracao-de-leads` | Site health |
+| Content gaps | `revenue-pesquisa-de-mercado` | Competitor analysis |
+| Performance analysis | `revenue-pesquisa-de-mercado` | Rankings review |
 
 ---
 

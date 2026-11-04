@@ -105,4 +105,4 @@ Publicar na internet só se o usuário pedir explicitamente, e nesse caso usando
 
 Perguntar ao usuário: **"Quer que eu gere um vídeo de anúncio automático para esta campanha (TikTok/Reels/Meta)?"**
 
-Se sim, usar o workflow/skill de produção audiovisual já existente no hub (ver agente `audiovisual-producer` e as skills `audiovisual-*`), seguindo o padrão de pedido em linguagem natural ("crie um vídeo de 16:9 e outro de 9:16 para esta campanha"), sem inventar ferramentas, pacotes npm ou IDs de composição de outro projeto.
+Se sim, usar o workflow/skill de produção audiovisual já existente no hub (ver agente `audiovisual-producao-de-video` e as skills `audiovisual-*`), seguindo o padrão de pedido em linguagem natural ("crie um vídeo de 16:9 e outro de 9:16 para esta campanha"), sem inventar ferramentas, pacotes npm ou IDs de composição de outro projeto.

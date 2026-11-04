@@ -178,9 +178,9 @@ echo "Analysis Date: $CURRENT_DATE"
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Funnel analysis | `lead-qualifier` | Conversion analysis |
-| Optimization ideas | `conversion-optimizer` | Drop-off investigation |
-| Test hypotheses | `brainstormer` | A/B test planning |
+| Funnel analysis | `vendas-qualificacao-de-leads` | Conversion analysis |
+| Optimization ideas | `site-otimizacao-de-conversao` | Drop-off investigation |
+| Test hypotheses | `conteudo-brainstorm` | A/B test planning |
 
 ---
 

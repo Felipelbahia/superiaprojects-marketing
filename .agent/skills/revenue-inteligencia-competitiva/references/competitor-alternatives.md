@@ -20,7 +20,7 @@ related_skills:
   - copywriting
   - programmatic-seo
 agents:
-  - attraction-specialist
+  - growth-atracao-de-leads
   - researcher
 mcp_integrations:
   optional:

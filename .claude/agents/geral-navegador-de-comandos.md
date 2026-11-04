@@ -1,0 +1,1 @@
+../../.agent/agents/geral-navegador-de-comandos.md

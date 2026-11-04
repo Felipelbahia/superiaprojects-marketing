@@ -12,11 +12,11 @@ Proven templates for executing different campaign types.
 
 | Campaign Type | Best For | Timeline | Agents |
 |---------------|----------|----------|--------|
-| Product Launch | New products/features | 4-8 weeks | planner, copywriter, email-wizard |
-| Lead Generation | Pipeline building | Ongoing | attraction-specialist, lead-qualifier |
-| Brand Awareness | Market entry, refresh | 8-12 weeks | brainstormer, copywriter |
-| Retention | Reduce churn | Ongoing | continuity-specialist, email-wizard |
-| Event Promotion | Webinars, conferences | 4-6 weeks | planner, email-wizard |
+| Product Launch | New products/features | 4-8 weeks | planner, copywriter, email-orquestracao-de-campanhas |
+| Lead Generation | Pipeline building | Ongoing | growth-atracao-de-leads, vendas-qualificacao-de-leads |
+| Brand Awareness | Market entry, refresh | 8-12 weeks | conteudo-brainstorm, copywriter |
+| Retention | Reduce churn | Ongoing | growth-retencao-de-clientes, email-orquestracao-de-campanhas |
+| Event Promotion | Webinars, conferences | 4-6 weeks | planner, email-orquestracao-de-campanhas |
 | Seasonal | Holiday, quarterly | 2-4 weeks | copywriter, planner |
 
 ---
@@ -26,12 +26,12 @@ Proven templates for executing different campaign types.
 ### Overview
 **Goal:** Generate awareness and conversions for new product/feature
 **Timeline:** 4-8 weeks
-**Agents:** `planner`, `copywriter`, `email-wizard`, `attraction-specialist`
+**Agents:** `revenue-planejamento-de-campanha`, `copy-redacao-publicitaria`, `email-orquestracao-de-campanhas`, `growth-atracao-de-leads`
 
 ### Phase 1: Pre-Launch (Weeks 1-2)
 
 **Research & Planning:**
-- [ ] Market research with `researcher`
+- [ ] Market research with `revenue-pesquisa-de-mercado`
 - [ ] Competitive analysis
 - [ ] Positioning development
 - [ ] Campaign plan creation
@@ -97,23 +97,23 @@ Proven templates for executing different campaign types.
 ### Overview
 **Goal:** Build qualified pipeline consistently
 **Timeline:** Ongoing program
-**Agents:** `attraction-specialist`, `lead-qualifier`, `email-wizard`
+**Agents:** `growth-atracao-de-leads`, `vendas-qualificacao-de-leads`, `email-orquestracao-de-campanhas`
 
 ### Content Engine
 
 **TOFU Content (Attract):**
 | Type | Frequency | Owner |
 |------|-----------|-------|
-| Blog posts | 2-4/month | `copywriter` |
-| Social content | Daily | `copywriter` |
-| SEO pages | As needed | `attraction-specialist` |
+| Blog posts | 2-4/month | `copy-redacao-publicitaria` |
+| Social content | Daily | `copy-redacao-publicitaria` |
+| SEO pages | As needed | `growth-atracao-de-leads` |
 
 **MOFU Content (Convert):**
 | Type | Frequency | Owner |
 |------|-----------|-------|
-| Lead magnets | 1/quarter | `copywriter` |
-| Webinars | 1/month | `planner` |
-| Case studies | 2/quarter | `sales-enabler` |
+| Lead magnets | 1/quarter | `copy-redacao-publicitaria` |
+| Webinars | 1/month | `revenue-planejamento-de-campanha` |
+| Case studies | 2/quarter | `vendas-habilitacao-comercial` |
 
 ### Lead Capture
 
@@ -165,7 +165,7 @@ Proven templates for executing different campaign types.
 ### Overview
 **Goal:** Increase brand recognition and recall
 **Timeline:** 8-12 week campaign
-**Agents:** `brainstormer`, `copywriter`, `researcher`
+**Agents:** `conteudo-brainstorm`, `copy-redacao-publicitaria`, `revenue-pesquisa-de-mercado`
 
 ### Strategy Development
 
@@ -211,7 +211,7 @@ Proven templates for executing different campaign types.
 ### Overview
 **Goal:** Reduce churn, increase LTV
 **Timeline:** Ongoing program
-**Agents:** `continuity-specialist`, `email-wizard`, `upsell-maximizer`
+**Agents:** `growth-retencao-de-clientes`, `email-orquestracao-de-campanhas`, `growth-expansao-de-receita`
 
 ### Churn Signals
 
@@ -252,7 +252,7 @@ Proven templates for executing different campaign types.
 ### Overview
 **Goal:** Drive registrations and attendance
 **Timeline:** 4-6 weeks pre-event
-**Agents:** `planner`, `email-wizard`, `copywriter`
+**Agents:** `revenue-planejamento-de-campanha`, `email-orquestracao-de-campanhas`, `copy-redacao-publicitaria`
 
 ### Timeline
 
@@ -303,11 +303,11 @@ Proven templates for executing different campaign types.
 
 | Campaign Type | Lead Agent | Supporting Agents |
 |---------------|------------|-------------------|
-| Product Launch | `planner` | copywriter, email-wizard, attraction-specialist |
-| Lead Generation | `attraction-specialist` | lead-qualifier, email-wizard, copywriter |
-| Brand Awareness | `brainstormer` | copywriter, researcher |
-| Retention | `continuity-specialist` | email-wizard, upsell-maximizer |
-| Event Promotion | `planner` | email-wizard, copywriter |
+| Product Launch | `revenue-planejamento-de-campanha` | copywriter, email-orquestracao-de-campanhas, growth-atracao-de-leads |
+| Lead Generation | `growth-atracao-de-leads` | vendas-qualificacao-de-leads, email-orquestracao-de-campanhas, copywriter |
+| Brand Awareness | `conteudo-brainstorm` | copywriter, researcher |
+| Retention | `growth-retencao-de-clientes` | email-orquestracao-de-campanhas, growth-expansao-de-receita |
+| Event Promotion | `revenue-planejamento-de-campanha` | email-orquestracao-de-campanhas, copywriter |
 
 ---
 

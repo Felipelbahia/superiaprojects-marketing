@@ -6,7 +6,7 @@ argument-hint: "[marca] [tipo de site] [metas]"
 
 # Build Site
 
-Procedimento com **portões de aprovação**, para site de **mais de uma página** (institucional, SaaS, blog, loja, negócio local). Uma página só: use [build-landing-page](build-landing-page.md). O agente que conduz é o [web-builder](../agents/web-builder.md).
+Procedimento com **portões de aprovação**, para site de **mais de uma página** (institucional, SaaS, blog, loja, negócio local). Uma página só: use [build-landing-page](build-landing-page.md). O agente que conduz é o [site-construcao-web](../agents/site-construcao-web.md).
 
 ## Antes de tudo
 

@@ -21,7 +21,7 @@ related_skills:
   - form-cro
   - copywriting
 agents:
-  - conversion-optimizer
+  - site-otimizacao-de-conversao
   - copywriter
 mcp_integrations:
   optional:

@@ -20,8 +20,8 @@ related_skills:
   - seo-mastery
   - programmatic-seo
 agents:
-  - seo-specialist
-  - attraction-specialist
+  - seo-otimizacao-de-busca
+  - growth-atracao-de-leads
 mcp_integrations:
   optional:
     - google-search-console

@@ -22,7 +22,7 @@ related_skills:
   - page-cro
 agents:
   - researcher
-  - upsell-maximizer
+  - growth-expansao-de-receita
 mcp_integrations:
   optional: []
 success_metrics:

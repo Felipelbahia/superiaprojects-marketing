@@ -6,7 +6,7 @@ description: Use when a written piece (post, caption, email, landing page, headl
 # Sexy Canvas — Texto
 
 ## Overview
-Ensina a **reconhecer** os 14 itens num texto e a **adaptar** termos e estruturas sem mudar o sentido. A teoria, a escala, o protocolo A1–A5 e o teste de apelo ficam no núcleo `revenue-sexy-canvas`. **Não escreve o texto final**: devolve parecer e handoff para o redator (ex.: skills de copy, agentes `copywriter`/`content-creator`).
+Ensina a **reconhecer** os 14 itens num texto e a **adaptar** termos e estruturas sem mudar o sentido. A teoria, a escala, o protocolo A1–A5 e o teste de apelo ficam no núcleo `revenue-sexy-canvas`. **Não escreve o texto final**: devolve parecer e handoff para o redator (ex.: skills de copy, agentes `copy-redacao-publicitaria`/`conteudo-criacao-multiformato`).
 
 ## Antes de usar
 1. Ler `../revenue-sexy-canvas/SKILL.md` e `../revenue-sexy-canvas/references/03-protocolo-consultivo.md`.

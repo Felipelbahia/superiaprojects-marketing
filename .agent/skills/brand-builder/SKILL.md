@@ -86,7 +86,7 @@ Na profundidade longa, as etapas 4, 6 e 8 passam por um **portão de desejo** op
 | Etapa 5: procedimento do Sexy Canvas (visão dos 14, auditoria com evidência, apostas, teste de apelo, handoff) | `desejo.md` |
 | Rubrica 0-10 do fechamento | `qa-rubric.md` |
 | Registro de fontes de números (projeto novo: criar e explicar; existente: montar e explicar como atualizar) | `registro-de-fontes.md` |
-| Agentes de revisão da marca (`brand-voice-guardian-<Marca>`, `brand-identity-guardian-<Marca>`), criados e **personalizados na hora** | `agentes-de-revisao.md` |
+| Agentes de revisão da marca (`brand-guardiao-de-voz-<Marca>`, `brand-identity-guardian-<Marca>`), criados e **personalizados na hora** | `agentes-de-revisao.md` |
 | Regras de uso do logo, cor para impressão (CMYK, Pantone), tipografia, imagem, aplicações e governança de ativos (guia por capítulos; começar pelo índice) | `references/identidade-e-ativos/00-indice.md` |
 | Etapa 9: brandbook único (profundidade curta ou longa), perguntas de configuração e gestão de ativos (inventário, organização, auditoria, governança) | `brandbook-e-ativos.md` |
 | Skills a reaproveitar por referência | final do `catalog.md` |

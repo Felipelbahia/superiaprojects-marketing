@@ -134,9 +134,9 @@ argument-hint: "[action] [asset-type]"
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Asset organization | `project-manager` | Primary task |
-| Compliance review | `brand-voice-guardian` | Quality check |
-| Documentation | `docs-manager` | Usage guides |
+| Asset organization | `geral-coordenacao-de-campanhas` | Primary task |
+| Compliance review | `brand-guardiao-de-voz` | Quality check |
+| Documentation | `geral-gestao-de-documentacao` | Usage guides |
 
 ---
 

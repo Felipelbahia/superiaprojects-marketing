@@ -11,10 +11,10 @@ Comprehensive SEO audit framework for systematic optimization.
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Technical audit | `attraction-specialist` | Site health check |
-| Content gaps | `researcher` | Competitor analysis |
-| Keyword research | `attraction-specialist` | Content planning |
-| Reporting | `planner` | Monthly review |
+| Technical audit | `growth-atracao-de-leads` | Site health check |
+| Content gaps | `revenue-pesquisa-de-mercado` | Competitor analysis |
+| Keyword research | `growth-atracao-de-leads` | Content planning |
+| Reporting | `revenue-planejamento-de-campanha` | Monthly review |
 
 ## SEO → Lead Generation Connection
 

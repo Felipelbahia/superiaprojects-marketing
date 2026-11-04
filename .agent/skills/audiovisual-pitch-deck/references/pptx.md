@@ -17,8 +17,8 @@ related_skills:
   - document-skills/docx
   - document-skills/pdf
 agents:
-  - docs-manager
-  - sales-enabler
+  - geral-gestao-de-documentacao
+  - vendas-habilitacao-comercial
 mcp_integrations:
   optional: []
 success_metrics: []

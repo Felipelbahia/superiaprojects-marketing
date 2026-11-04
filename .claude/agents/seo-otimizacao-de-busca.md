@@ -1,0 +1,1 @@
+../../.agent/agents/seo-otimizacao-de-busca.md

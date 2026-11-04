@@ -22,8 +22,8 @@ related_skills:
   - page-cro
   - copywriting
 agents:
-  - conversion-optimizer
-  - upsell-maximizer
+  - site-otimizacao-de-conversao
+  - growth-expansao-de-receita
 mcp_integrations:
   optional:
     - google-analytics

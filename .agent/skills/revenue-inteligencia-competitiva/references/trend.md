@@ -173,9 +173,9 @@ echo "Trend Analysis Date: $CURRENT_DATE"
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Primary research | `researcher` | Data collection |
-| Strategic implications | `planner` | Impact assessment |
-| Competitive context | `attraction-specialist` | Market positioning |
+| Primary research | `revenue-pesquisa-de-mercado` | Data collection |
+| Strategic implications | `revenue-planejamento-de-campanha` | Impact assessment |
+| Competitive context | `growth-atracao-de-leads` | Market positioning |
 
 ---
 

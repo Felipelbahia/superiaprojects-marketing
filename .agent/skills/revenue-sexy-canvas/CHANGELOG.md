@@ -28,7 +28,7 @@ Origem: teste com agentes independentes (`execution-loops/2026_10_15/Sexy Canvas
 ### Alterado
 - `03-protocolo-consultivo.md`: polaridade `−` permitida com grau 0 quando a peça causa o atrito do polo negativo; teto de grau 3 quando a evidência é só descrição (briefing, roteiro, lista de funcionalidades); a escala e os graus são sempre `[derivado]` (um parecer havia rotulado a régua como `[PES]`); checagem de datas da peça contra a data de hoje.
 - `SKILL.md`: o anti-slop exige abrir e aplicar `.agent/workflows/ai-slop-detector.md` (os agentes de teste só "revisaram de cabeça"); nova regra 10 sobre datas e fatos.
-- Agente `sexy-canvas-strategist`: mesmo ajuste do anti-slop.
+- Agente `revenue-parecer-sexy-canvas`: mesmo ajuste do anti-slop.
 
 ### Observação
 Edição no lugar, porque a skill nasceu na mesma sessão e o histórico fica neste changelog; a calibração continua em arquivos `-vN`.
@@ -39,7 +39,7 @@ Edição no lugar, porque a skill nasceu na mesma sessão e o histórico fica ne
 - Skill-núcleo `sexy-canvas` (consultiva): os 14 itens, teoria, metodologia reconstruída, protocolo A1–A5, regras de aplicação, matriz de combinações, banco de casos, mapa de fontes.
 - Lentes externas STEPPS e Hook; autochecagem do consultor a partir dos "7 pecados" de IA, UX, marketing e startups.
 - Skills por meio: `sexy-canvas-texto`, `sexy-canvas-visual`, `sexy-canvas-produto`.
-- Agente `sexy-canvas-strategist`.
+- Agente `revenue-parecer-sexy-canvas`.
 - Régua de calibração v1 (`references/11-calibracao-v1.md`), sem casos.
 
 ### Decisões do Brainstorm (execution-loops/2026_10_15/Sexy Canvas)

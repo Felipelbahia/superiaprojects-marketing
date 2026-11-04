@@ -194,9 +194,9 @@ echo "Report Date: $CURRENT_DATE"
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Data compilation | `researcher` | Report generation |
-| Analysis | `lead-qualifier` | Performance review |
-| Insights | `planner` | Recommendations |
+| Data compilation | `revenue-pesquisa-de-mercado` | Report generation |
+| Analysis | `vendas-qualificacao-de-leads` | Performance review |
+| Insights | `revenue-planejamento-de-campanha` | Recommendations |
 
 ---
 

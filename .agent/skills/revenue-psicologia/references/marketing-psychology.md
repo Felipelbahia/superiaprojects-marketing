@@ -23,9 +23,9 @@ related_skills:
   - copywriting
   - page-cro
 agents:
-  - brainstormer
+  - conteudo-brainstorm
   - copywriter
-  - conversion-optimizer
+  - site-otimizacao-de-conversao
 mcp_integrations:
   optional: []
 success_metrics:

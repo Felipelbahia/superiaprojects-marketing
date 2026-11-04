@@ -1,1 +1,0 @@
-../../.agent/agents/startup-founder.md

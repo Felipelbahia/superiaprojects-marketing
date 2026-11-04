@@ -12,7 +12,7 @@
 | **Guardião do guia** | Mantém o arquivo vigente, responde dúvidas, recebe pedidos de exceção |
 | **Aprovadores por tipo de peça** | Conferem peças conforme a tabela 6.2 |
 | **Quem produz** | Usa o kit, o modelo e o checklist de peça (capítulo 5) |
-| **Revisão automática de consistência** | Agente `brand-voice-guardian` confere voz e consistência de peças novas contra `_brands/<marca>/` |
+| **Revisão automática de consistência** | Agente `brand-guardiao-de-voz` confere voz e consistência de peças novas contra `_brands/<marca>/` |
 
 Em marca pessoal ou time pequeno, uma pessoa acumula papéis; registrar quem.
 

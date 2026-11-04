@@ -20,8 +20,8 @@ related_skills:
   - signup-flow-cro
   - email-sequence
 agents:
-  - conversion-optimizer
-  - continuity-specialist
+  - site-otimizacao-de-conversao
+  - growth-retencao-de-clientes
 mcp_integrations:
   optional:
     - google-analytics

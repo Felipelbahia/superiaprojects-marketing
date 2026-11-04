@@ -130,7 +130,7 @@ Conforme o formato da peça:
 O assistente pode ser acionado diretamente com:
 > *"Execute a esteira conteudo-linha-de-producao para a marca [MARCA] no canal [Reels/Shorts/Carrossel] com objetivo de [SAVE/SHARE/FOLLOW/LEAD] a partir do concorrente [URL/CSV/Tópico]."*
 
-Ou selecionando o agente `content-creator` e aplicando o fluxo acima passo a passo.
+Ou selecionando o agente `conteudo-criacao-multiformato` e aplicando o fluxo acima passo a passo.
 
 ## Outras referências
 

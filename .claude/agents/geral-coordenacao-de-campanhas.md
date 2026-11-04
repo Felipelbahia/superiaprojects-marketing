@@ -1,0 +1,1 @@
+../../.agent/agents/geral-coordenacao-de-campanhas.md

@@ -23,16 +23,16 @@ Conta com um script helper nativo em Python (`search_openverse.py`) com **zero d
 
 ## 🎯 Quando Usar
 
-- **Anúncios Pagos & Mídia de Performance (`ads-criativos` / `paid-traffic-specialist`)**:
+- **Anúncios Pagos & Mídia de Performance (`ads-criativos` / `ads-trafego-pago`)**:
   - Encontrar fotos autênticas, sem cara de banco de imagem artificial ou "IA slop".
   - Garantir licenças 100% liberadas para fins comerciais (`--commercial`).
-- **Criativos para Redes Sociais (`social-carrossel` / `social-media-strategist`)**:
+- **Criativos para Redes Sociais (`social-carrossel` / `social-estrategia-de-redes`)**:
   - Formato vertical 9:16 para Reels e Stories (`--aspect-ratio tall`).
   - Formato quadrado 1:1 para Feed do Instagram/LinkedIn (`--aspect-ratio square`).
 - **Landing Pages & Banners de Blog (`site-interface-de-conversao` / `conteudo-post-de-blog`)**:
   - Hero banners horizontais 16:9 (`--aspect-ratio wide`).
   - Ilustrações e ícones vetoriais SVG (`--extension svg` ou `--category illustration`).
-- **Produção Audiovisual & Podcasts (`audiovisual-producer` / `audiovisual-podcast-e-audio`)**:
+- **Produção Audiovisual & Podcasts (`audiovisual-producao-de-video` / `audiovisual-podcast-e-audio`)**:
   - Efeitos sonoros e trilhas de fundo para vídeos e podcasts (`--type audio`).
 - **Atribuição Legal Rigorosa (Compliance & LGPD)**:
   - Obter instantaneamente o texto oficial de crédito Creative Commons pronto para colar no rodapé de artigos ou descrições de vídeos.
@@ -146,13 +146,13 @@ graph TD
 
 Quando um agente do repositório precisar de fotos ou referências visuais para um conteúdo:
 
-1. **`art-director`**:
+1. **`brand-direcao-de-arte`**:
    - Utilize para encontrar referências de iluminação, composições fotográficas autênticas e acervos históricos de museus (Smithsonian, Met, Cleveland Museum).
-2. **`paid-traffic-specialist`**:
+2. **`ads-trafego-pago`**:
    - Execute sempre com `--commercial` para alimentar criativos de Google Ads e Meta Ads com segurança jurídica.
-3. **`social-media-strategist`**:
+3. **`social-estrategia-de-redes`**:
    - Combine `--aspect-ratio tall` para Stories/Reels e `--aspect-ratio square` para carrosséis de feed.
-4. **`content-creator`**:
+4. **`conteudo-criacao-multiformato`**:
    - Incorpore o markdown gerado diretamente no arquivo de post (`content/<marca>/<canal>/YYYY-MM-DD - Demanda/`), incluindo a imagem e os créditos no rodapé.
 
 ---

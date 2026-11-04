@@ -21,8 +21,8 @@ related_skills:
   - ab-test-setup
   - copywriting
 agents:
-  - conversion-optimizer
-  - attraction-specialist
+  - site-otimizacao-de-conversao
+  - growth-atracao-de-leads
 mcp_integrations:
   optional:
     - google-analytics

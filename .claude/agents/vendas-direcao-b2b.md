@@ -1,0 +1,1 @@
+../../.agent/agents/vendas-direcao-b2b.md

@@ -145,9 +145,9 @@ argument-hint: [market-or-industry]
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Data gathering | `researcher` | Primary task |
-| Competitor analysis | `attraction-specialist` | Competitive focus |
-| Trend synthesis | `brainstormer` | Opportunity identification |
+| Data gathering | `revenue-pesquisa-de-mercado` | Primary task |
+| Competitor analysis | `growth-atracao-de-leads` | Competitive focus |
+| Trend synthesis | `conteudo-brainstorm` | Opportunity identification |
 
 ---
 

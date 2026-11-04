@@ -132,9 +132,9 @@ argument-hint: [segment-criteria-or-name]
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Segment definition | `lead-qualifier` | Primary task |
-| Engagement analysis | `continuity-specialist` | Behavioral data |
-| Campaign strategy | `email-wizard` | Automation setup |
+| Segment definition | `vendas-qualificacao-de-leads` | Primary task |
+| Engagement analysis | `growth-retencao-de-clientes` | Behavioral data |
+| Campaign strategy | `email-orquestracao-de-campanhas` | Automation setup |
 
 ---
 

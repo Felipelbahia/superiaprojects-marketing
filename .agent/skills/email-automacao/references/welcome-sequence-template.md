@@ -211,10 +211,10 @@ You've been using AgentKits for a week. Time to level up.
 
 **Meet your marketing team:**
 
-🎯 **attraction-specialist** - Lead gen & SEO
-📧 **email-wizard** - Email sequences
+🎯 **growth-atracao-de-leads** - Lead gen & SEO
+📧 **email-orquestracao-de-campanhas** - Email sequences
 📝 **copywriter** - High-converting copy
-📊 **conversion-optimizer** - CRO expert
+📊 **site-otimizacao-de-conversao** - CRO expert
 
 **Try agent delegation:**
 "Use the copywriter agent to write landing page copy for [your product]"

@@ -279,16 +279,16 @@ Subscriber → Lead → MQL → SQL → Opportunity → Customer → Advocate
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Lead scoring review | `lead-qualifier` | Weekly audit |
-| Segment analysis | `lead-qualifier` | Monthly review |
-| Sequence creation | `email-wizard` | New campaign |
-| Re-engagement copy | `copywriter` | Win-back campaign |
-| Churn analysis | `continuity-specialist` | At-risk segment |
-| Upsell opportunities | `upsell-maximizer` | Customer review |
-| Data enrichment | `researcher` | New leads batch |
-| Lead generation | `attraction-specialist` | Pipeline building |
-| Sales enablement | `sales-enabler` | MQL → SQL handoff |
-| Competitive intel | `researcher` | Market analysis |
+| Lead scoring review | `vendas-qualificacao-de-leads` | Weekly audit |
+| Segment analysis | `vendas-qualificacao-de-leads` | Monthly review |
+| Sequence creation | `email-orquestracao-de-campanhas` | New campaign |
+| Re-engagement copy | `copy-redacao-publicitaria` | Win-back campaign |
+| Churn analysis | `growth-retencao-de-clientes` | At-risk segment |
+| Upsell opportunities | `growth-expansao-de-receita` | Customer review |
+| Data enrichment | `revenue-pesquisa-de-mercado` | New leads batch |
+| Lead generation | `growth-atracao-de-leads` | Pipeline building |
+| Sales enablement | `vendas-habilitacao-comercial` | MQL → SQL handoff |
+| Competitive intel | `revenue-pesquisa-de-mercado` | Market analysis |
 
 ## Outras referências
 

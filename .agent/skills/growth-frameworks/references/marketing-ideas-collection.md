@@ -20,7 +20,7 @@ related_skills:
   - content-strategy
   - social-media
 agents:
-  - brainstormer
+  - conteudo-brainstorm
   - planner
   - researcher
 mcp_integrations:

@@ -150,10 +150,10 @@ Load these files first:
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Copy review | `copywriter` | Content QA |
-| Landing page | `attraction-specialist` | Page optimization |
-| Lead routing | `lead-qualifier` | CRM setup |
-| Sales alignment | `sales-enabler` | Handoff prep |
+| Copy review | `copy-redacao-publicitaria` | Content QA |
+| Landing page | `growth-atracao-de-leads` | Page optimization |
+| Lead routing | `vendas-qualificacao-de-leads` | CRM setup |
+| Sales alignment | `vendas-habilitacao-comercial` | Handoff prep |
 
 ---
 

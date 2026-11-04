@@ -136,9 +136,9 @@ Subscriber → Lead → MQL → SQL → Opportunity → Customer → Advocate
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Stage assessment | `lead-qualifier` | Primary task |
-| Progression tactics | `email-wizard` | Nurture planning |
-| Playbook creation | `sales-enabler` | Complete scope |
+| Stage assessment | `vendas-qualificacao-de-leads` | Primary task |
+| Progression tactics | `email-orquestracao-de-campanhas` | Nurture planning |
+| Playbook creation | `vendas-habilitacao-comercial` | Complete scope |
 
 ---
 

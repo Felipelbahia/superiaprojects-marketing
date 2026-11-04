@@ -1,0 +1,1 @@
+../../.agent/agents/geral-persona-fundador-startup.md

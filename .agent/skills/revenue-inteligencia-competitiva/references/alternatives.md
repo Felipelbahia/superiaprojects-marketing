@@ -149,9 +149,9 @@ Load these files first:
 
 | Task | Agent | Trigger |
 |------|-------|---------|
-| Competitor research | `researcher` | Data gathering |
-| Page copy | `copywriter` | Primary task |
-| SEO optimization | `seo-specialist` | Complete scope |
+| Competitor research | `revenue-pesquisa-de-mercado` | Data gathering |
+| Page copy | `copy-redacao-publicitaria` | Primary task |
+| SEO optimization | `seo-otimizacao-de-busca` | Complete scope |
 
 ---
 

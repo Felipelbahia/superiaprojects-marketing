@@ -356,7 +356,7 @@ Se alguma resposta é não, falta especificidade. Rodar também a autocrítica d
 - **Salvar onde:** dentro do `brand-builder`, a saída vira o `brand-voice.md` da marca, em `_brands/<marca>/` (nunca em `docs/brand/`). Fora dele, em um arquivo de perfil de voz acessível.
 - **Antes de produzir:** rodar a extração primeiro, salvar o perfil e referenciá-lo em toda tarefa de conteúdo.
 - **Usar o perfil em:** `copy-conversao` (landing e textos de venda), `conteudo-reaproveitamento` (adaptar para outros canais), `email-copy` e `email-automacao` (sequências), `conteudo-estrategia` (isca digital e pilares).
-- **Revisão de consistência depois:** agente `brand-voice-guardian`.
+- **Revisão de consistência depois:** agente `brand-guardiao-de-voz`.
 - **Texto com cara de IA:** `geral-anti-slop`.
 - **Voz ao escrever com IA** (rascunho primeiro, as 3 perguntas do leitor): `brand-voice.md` desta mesma pasta de referências.
 - **Exemplo de resultado:** `sample-output-brand-voice.md`.
