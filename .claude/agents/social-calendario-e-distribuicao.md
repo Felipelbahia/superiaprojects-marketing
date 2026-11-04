@@ -1,0 +1,1 @@
+../../.agent/agents/social-calendario-e-distribuicao.md

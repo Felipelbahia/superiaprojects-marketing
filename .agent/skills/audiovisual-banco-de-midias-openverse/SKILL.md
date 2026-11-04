@@ -26,7 +26,7 @@ Conta com um script helper nativo em Python (`search_openverse.py`) com **zero d
 - **Anúncios Pagos & Mídia de Performance (`ads-criativos` / `ads-trafego-pago`)**:
   - Encontrar fotos autênticas, sem cara de banco de imagem artificial ou "IA slop".
   - Garantir licenças 100% liberadas para fins comerciais (`--commercial`).
-- **Criativos para Redes Sociais (`social-carrossel` / `social-estrategia-de-redes`)**:
+- **Criativos para Redes Sociais (`social-carrossel` / `social-calendario-e-distribuicao`)**:
   - Formato vertical 9:16 para Reels e Stories (`--aspect-ratio tall`).
   - Formato quadrado 1:1 para Feed do Instagram/LinkedIn (`--aspect-ratio square`).
 - **Landing Pages & Banners de Blog (`site-interface-de-conversao` / `conteudo-post-de-blog`)**:
@@ -150,7 +150,7 @@ Quando um agente do repositório precisar de fotos ou referências visuais para 
    - Utilize para encontrar referências de iluminação, composições fotográficas autênticas e acervos históricos de museus (Smithsonian, Met, Cleveland Museum).
 2. **`ads-trafego-pago`**:
    - Execute sempre com `--commercial` para alimentar criativos de Google Ads e Meta Ads com segurança jurídica.
-3. **`social-estrategia-de-redes`**:
+3. **`social-calendario-e-distribuicao`**:
    - Combine `--aspect-ratio tall` para Stories/Reels e `--aspect-ratio square` para carrosséis de feed.
 4. **`conteudo-criacao-multiformato`**:
    - Incorpore o markdown gerado diretamente no arquivo de post (`content/<marca>/<canal>/YYYY-MM-DD - Demanda/`), incluindo a imagem e os créditos no rodapé.

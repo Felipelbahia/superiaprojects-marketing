@@ -7,7 +7,7 @@ description: |
 
   <example>
   Context: O usuário precisa de um roteiro dinâmico para Reels com foco em reter o público nos primeiros 3 segundos.
-  user: "Preciso de um roteiro para um vídeo curto no Reels ensinando automação de CRM para a plus-pr."
+  user: "Preciso de um roteiro para um vídeo curto no Reels ensinando automação de CRM para a <marca>."
   assistant: "Vou acionar o audiovisual-producao-de-video para estruturar o roteiro com ganchos visuais e verbais nos primeiros 3 segundos, pattern interrupts e CTA final."
   <commentary>
   Demanda de roteirização e retenção para vídeo curto, acionando o produtor audiovisual especializado.
@@ -16,7 +16,7 @@ description: |
 
   <example>
   Context: O usuário quer estruturar uma Video Sales Letter (VSL) de 15 minutos para lançamento de produto.
-  user: "Como estruturar a VSL do novo produto da experimentacao com prova social e mecanismo único?"
+  user: "Como estruturar a VSL do novo produto da <marca> com prova social e mecanismo único?"
   assistant: "Acionando o audiovisual-producao-de-video para construir a estrutura em 5 atos da VSL, integrando o mecanismo único e ritmo narrativo cinematográfico."
   <commentary>
   Demanda de direct response audiovisual e narrativa persuasiva de alta conversão.

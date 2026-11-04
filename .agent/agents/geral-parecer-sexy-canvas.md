@@ -1,5 +1,5 @@
 ---
-name: revenue-parecer-sexy-canvas
+name: geral-parecer-sexy-canvas
 version: "0.1.0"
 description: Use when the user wants a consultative read of a text, video, image, product or idea through the Sexy Canvas (audit, suggest, adapt, direct before creating, or a "view of the 14"), or asks why something does not attract, convert or engage. Delivers an opinion and a handoff, never the final piece.
 model: sonnet

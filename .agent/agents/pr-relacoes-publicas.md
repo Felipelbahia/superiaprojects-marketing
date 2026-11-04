@@ -7,7 +7,7 @@ description: |
 
   <example>
   Context: A startup está lançando uma nova funcionalidade com IA e precisa divulgar para portais de negócios e tecnologia.
-  user: "Preciso de um press release anunciando a nova funcionalidade da pr-pulse para enviar ao Startupi e NeoFeed."
+  user: "Preciso de um press release anunciando a nova funcionalidade da <marca> para enviar ao Startupi e NeoFeed."
   assistant: "Vou acionar o pr-relacoes-publicas para redigir o press release com gancho factual e ângulo noticioso, estruturado no padrão de redação jornalística e dados de mercado."
   <commentary>
   Demanda de assessoria de imprensa e redação jornalística institucional delegada ao especialista de PR.

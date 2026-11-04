@@ -186,7 +186,7 @@ Redes sociais, LinkedIn, carrossel, YouTube e arte para posts.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Agente | [`social-estrategia-de-redes`](agents/social-estrategia-de-redes.md) | Calendário, carrosséis e distribuição em redes e comunidades. |
+| Agente | [`social-calendario-e-distribuicao`](agents/social-calendario-e-distribuicao.md) | Calendário, carrosséis e distribuição em redes e comunidades. |
 
 ## pr
 
@@ -528,7 +528,7 @@ Receita: campanhas, mercado, oferta, preço, lançamento e decisão.
 | Tipo | Nome | O que faz |
 |---|---|---|
 | Agente | [`revenue-pesquisa-de-mercado`](agents/revenue-pesquisa-de-mercado.md) | Pesquisa de mercado, concorrência e público. |
-| Agente | [`revenue-parecer-sexy-canvas`](agents/revenue-parecer-sexy-canvas.md) | Parecer consultivo pelo Sexy Canvas; entrega opinião e encaminhamento, não a peça. |
+| Agente | [`geral-parecer-sexy-canvas`](agents/geral-parecer-sexy-canvas.md) | Parecer consultivo pelo Sexy Canvas; entrega opinião e encaminhamento, não a peça. |
 
 ## persona
 

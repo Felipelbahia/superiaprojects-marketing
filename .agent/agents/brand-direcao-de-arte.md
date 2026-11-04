@@ -16,7 +16,7 @@ description: |
 
   <example>
   Context: O usuário quer prompts de imagem refinados para gerar assets visuais no Midjourney e Flux sem visual clichê de IA.
-  user: "Gere os prompts de imagem para o novo produto da plus-pr com estética minimalista e profissional."
+  user: "Gere os prompts de imagem para o novo produto da <marca> com estética minimalista e profissional."
   assistant: "Acionando o brand-direcao-de-arte para aplicar o filtro anti-slop visual, construir a atmosfera e gerar os prompts calibrados para Midjourney, Flux e ChatGPT Image com contraste e respiro profissional."
   <commentary>
   Demanda de engenharia estética de prompts de IA generativa com rigor de diretor de arte.

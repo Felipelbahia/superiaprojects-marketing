@@ -1,1 +1,0 @@
-../../.agent/agents/revenue-parecer-sexy-canvas.md

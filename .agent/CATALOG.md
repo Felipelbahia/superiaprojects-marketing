@@ -372,7 +372,7 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Data Handling](#data-handling) (`1`)
 - [Geo (Local)](#geo-local) (`1` recursos)
   - [Fundamentals](#fundamentals) (`1`)
-- [Geral (Local)](#geral-local) (`22` recursos)
+- [Geral (Local)](#geral-local) (`23` recursos)
   - [Anti Slop](#anti-slop) (`2`)
   - [Arquitetura De Projeto](#arquitetura-de-projeto) (`1`)
   - [Briefing Matinal](#briefing-matinal) (`1`)
@@ -385,6 +385,7 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Mapa De Stakeholders](#mapa-de-stakeholders) (`1`)
   - [Navegador De Comandos](#navegador-de-comandos) (`1`)
   - [Navegador De Skills](#navegador-de-skills) (`1`)
+  - [Parecer Sexy Canvas](#parecer-sexy-canvas) (`1`)
   - [Persona Fundador Startup](#persona-fundador-startup) (`1`)
   - [Persona Gerente De Marketing](#persona-gerente-de-marketing) (`1`)
   - [Persona Solopreneur](#persona-solopreneur) (`1`)
@@ -650,7 +651,7 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Code Review](#code-review) (`1`)
 - [Responsive (Local)](#responsive-local) (`1` recursos)
   - [Design](#design) (`1`)
-- [Revenue (Local)](#revenue-local) (`25` recursos)
+- [Revenue (Local)](#revenue-local) (`24` recursos)
   - [Analise Competitiva](#analise-competitiva) (`1`)
   - [Campanhas](#campanhas) (`2`)
   - [Checklist De Lancamento De Campanha](#checklist-de-lancamento-de-campanha) (`1`)
@@ -664,7 +665,6 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Monitoramento De Preco Concorrente](#monitoramento-de-preco-concorrente) (`1`)
   - [Oferta](#oferta) (`1`)
   - [Orquestracao De Estrategia](#orquestracao-de-estrategia) (`1`)
-  - [Parecer Sexy Canvas](#parecer-sexy-canvas) (`1`)
   - [Pesquisa De Mercado](#pesquisa-de-mercado) (`1`)
   - [Planejamento De Campanha](#planejamento-de-campanha) (`1`)
   - [Plano De Lancamento](#plano-de-lancamento) (`1`)
@@ -771,13 +771,13 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Fix](#fix) (`1`)
 - [Social (Local)](#social-local) (`17` recursos)
   - [Analise De Desempenho](#analise-de-desempenho) (`1`)
+  - [Calendario E Distribuicao](#calendario-e-distribuicao) (`1`)
   - [Carrossel](#carrossel) (`1`)
   - [Checklist Diario](#checklist-diario) (`1`)
   - [Conceito De Thumbnail](#conceito-de-thumbnail) (`1`)
   - [Conversao Para Formato Curto](#conversao-para-formato-curto) (`1`)
   - [Direcao De Arte Ia](#direcao-de-arte-ia) (`1`)
   - [Estrategia](#estrategia) (`1`)
-  - [Estrategia De Redes](#estrategia-de-redes) (`1`)
   - [Instagram Api](#instagram-api) (`1`)
   - [Leitura De Post Twitter](#leitura-de-post-twitter) (`1`)
   - [Linkedin](#linkedin) (`1`)
@@ -990,7 +990,7 @@ Total de recursos nesta macro-área: `9`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="ads-trafego-pago"></a>**`@ads-trafego-pago`** | `Agent` | `Super IA Marketing` | Especialista em gestão de tráfego pago, mídia de performance e aquisição de clientes. Use quando precisar planejar, estruturar, analisar ou otimizar campanhas de anúncios em Google Ads, Meta Ads (Facebook/Instagram), TikTok Ads, LinkedIn Ads ou redes alternativas, com foco em CAC, ROAS e escala rentável.\\n\\n<example>\\nContext: O usuário precisa estruturar uma campanha de lançamento de infoproduto ou SaaS no Meta Ads.\\nuser: \"Como devo estruturar a campanha de tráfego pago para o lançamento da plus-pr no Meta?\"\\nassistant: \"Vou acionar o ads-trafego-pago para desenhar a arquitetura de campanha no Meta Ads com distribuição CBO, públicos Broad e testes de criativos.\"\\n<commentary>\\nA demanda exige estratégia avançada de tráfego pago, delegando ao especialista de mídia de performance.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: O CPA de uma campanha de Google Search subiu e o usuário precisa de um plano de otimização.\\nuser: \"Nosso custo por lead no Google Ads dobrou esta semana. Pode auditar os termos de busca?\"\\nassistant: \"Acionando o ads-trafego-pago para conduzir uma auditoria de Search Term Mining e Quality Score no Google Ads.\"\\n<commentary>\\nDiagnóstico de performance e redução de desperdício em mídia paga.\\n</commentary>\\n</example> |
+| <a id="ads-trafego-pago"></a>**`@ads-trafego-pago`** | `Agent` | `Super IA Marketing` | Especialista em gestão de tráfego pago, mídia de performance e aquisição de clientes. Use quando precisar planejar, estruturar, analisar ou otimizar campanhas de anúncios em Google Ads, Meta Ads (Facebook/Instagram), TikTok Ads, LinkedIn Ads ou redes alternativas, com foco em CAC, ROAS e escala rentável.\\n\\n<example>\\nContext: O usuário precisa estruturar uma campanha de lançamento de infoproduto ou SaaS no Meta Ads.\\nuser: \"Como devo estruturar a campanha de tráfego pago para o lançamento da <marca> no Meta?\"\\nassistant: \"Vou acionar o ads-trafego-pago para desenhar a arquitetura de campanha no Meta Ads com distribuição CBO, públicos Broad e testes de criativos.\"\\n<commentary>\\nA demanda exige estratégia avançada de tráfego pago, delegando ao especialista de mídia de performance.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: O CPA de uma campanha de Google Search subiu e o usuário precisa de um plano de otimização.\\nuser: \"Nosso custo por lead no Google Ads dobrou esta semana. Pode auditar os termos de busca?\"\\nassistant: \"Acionando o ads-trafego-pago para conduzir uma auditoria de Search Term Mining e Quality Score no Google Ads.\"\\n<commentary>\\nDiagnóstico de performance e redução de desperdício em mídia paga.\\n</commentary>\\n</example> |
 
 ---
 
@@ -1200,7 +1200,7 @@ Total de recursos nesta macro-área: `25`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="audiovisual-criacao-de-pitch-deck"></a>**`@audiovisual-criacao-de-pitch-deck`** | `Agent` | `Super IA Marketing` | Especialista em apresentações executivas, pitch decks de captação de investimento e narrativa de negócios. Use quando precisar estruturar decks para investidores (Venture Capital / Anjos), apresentações comerciais de alto impacto para C-Levels, keynotes institucionais ou slides automatizados via código (Slidev). <example> Context: O fundador precisa preparar o pitch deck para rodada Seed da startup. user: "Preciso montar o pitch deck de captação da experimentacao para fundos de VC." assistant: "Vou acionar o audiovisual-criacao-de-pitch-deck para estruturar o deck na narrativa padrão de 10-12 slides (Problema, Solução, Mercado, Tração, Time, Ask) com foco no modelo YC." <commentary> Demanda de fundraising e apresentação executiva para investidores delegada ao audiovisual-criacao-de-pitch-deck. </commentary> </example> <example> Context: O time precisa de uma apresentação comercial técnica em formato Slidev com código interativo. user: "Crie uma apresentação técnica para diretoria da plus-pr com slides interativos usando Slidev." assistant: "Acionando o audiovisual-criacao-de-pitch-deck para gerar o arquivo Markdown formatado para renderização Slidev com layout limpo e suporte a componentes." <commentary> Apresentação técnica moderna com ferramenta de slides por código. </commentary> </example> |
+| <a id="audiovisual-criacao-de-pitch-deck"></a>**`@audiovisual-criacao-de-pitch-deck`** | `Agent` | `Super IA Marketing` | Especialista em apresentações executivas, pitch decks de captação de investimento e narrativa de negócios. Use quando precisar estruturar decks para investidores (Venture Capital / Anjos), apresentações comerciais de alto impacto para C-Levels, keynotes institucionais ou slides automatizados via código (Slidev). <example> Context: O fundador precisa preparar o pitch deck para rodada Seed da startup. user: "Preciso montar o pitch deck de captação da <marca> para fundos de VC." assistant: "Vou acionar o audiovisual-criacao-de-pitch-deck para estruturar o deck na narrativa padrão de 10-12 slides (Problema, Solução, Mercado, Tração, Time, Ask) com foco no modelo YC." <commentary> Demanda de fundraising e apresentação executiva para investidores delegada ao audiovisual-criacao-de-pitch-deck. </commentary> </example> <example> Context: O time precisa de uma apresentação comercial técnica em formato Slidev com código interativo. user: "Crie uma apresentação técnica para diretoria da <marca> com slides interativos usando Slidev." assistant: "Acionando o audiovisual-criacao-de-pitch-deck para gerar o arquivo Markdown formatado para renderização Slidev com layout limpo e suporte a componentes." <commentary> Apresentação técnica moderna com ferramenta de slides por código. </commentary> </example> |
 
 ### <a id="download-de-video"></a>Download De Video
 
@@ -1266,7 +1266,7 @@ Total de recursos nesta macro-área: `25`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="audiovisual-producao-de-video"></a>**`@audiovisual-producao-de-video`** | `Agent` | `Super IA Marketing` | Produtor audiovisual e diretor criativo especializado em roteirização, engenharia de áudio, ganchos de alta retenção para vídeos curtos (Reels/TikTok/Shorts), VSLs de alta conversão, processamento de mídia e animação com código. Use quando precisar criar roteiros de vídeo, planejar hooks visuais e narrativos, masterizar podcasts ou orquestrar produções de vídeo programático. <example> Context: O usuário precisa de um roteiro dinâmico para Reels com foco em reter o público nos primeiros 3 segundos. user: "Preciso de um roteiro para um vídeo curto no Reels ensinando automação de CRM para a plus-pr." assistant: "Vou acionar o audiovisual-producao-de-video para estruturar o roteiro com ganchos visuais e verbais nos primeiros 3 segundos, pattern interrupts e CTA final." <commentary> Demanda de roteirização e retenção para vídeo curto, acionando o produtor audiovisual especializado. </commentary> </example> <example> Context: O usuário quer estruturar uma Video Sales Letter (VSL) de 15 minutos para lançamento de produto. user: "Como estruturar a VSL do novo produto da experimentacao com prova social e mecanismo único?" assistant: "Acionando o audiovisual-producao-de-video para construir a estrutura em 5 atos da VSL, integrando o mecanismo único e ritmo narrativo cinematográfico." <commentary> Demanda de direct response audiovisual e narrativa persuasiva de alta conversão. </commentary> </example> |
+| <a id="audiovisual-producao-de-video"></a>**`@audiovisual-producao-de-video`** | `Agent` | `Super IA Marketing` | Produtor audiovisual e diretor criativo especializado em roteirização, engenharia de áudio, ganchos de alta retenção para vídeos curtos (Reels/TikTok/Shorts), VSLs de alta conversão, processamento de mídia e animação com código. Use quando precisar criar roteiros de vídeo, planejar hooks visuais e narrativos, masterizar podcasts ou orquestrar produções de vídeo programático. <example> Context: O usuário precisa de um roteiro dinâmico para Reels com foco em reter o público nos primeiros 3 segundos. user: "Preciso de um roteiro para um vídeo curto no Reels ensinando automação de CRM para a <marca>." assistant: "Vou acionar o audiovisual-producao-de-video para estruturar o roteiro com ganchos visuais e verbais nos primeiros 3 segundos, pattern interrupts e CTA final." <commentary> Demanda de roteirização e retenção para vídeo curto, acionando o produtor audiovisual especializado. </commentary> </example> <example> Context: O usuário quer estruturar uma Video Sales Letter (VSL) de 15 minutos para lançamento de produto. user: "Como estruturar a VSL do novo produto da <marca> com prova social e mecanismo único?" assistant: "Acionando o audiovisual-producao-de-video para construir a estrutura em 5 atos da VSL, integrando o mecanismo único e ritmo narrativo cinematográfico." <commentary> Demanda de direct response audiovisual e narrativa persuasiva de alta conversão. </commentary> </example> |
 
 ### <a id="qr-code"></a>Qr Code
 
@@ -1478,7 +1478,7 @@ Total de recursos nesta macro-área: `12`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="brand-direcao-de-arte"></a>**`@brand-direcao-de-arte`** | `Agent` | `Super IA Marketing` | Diretor de Arte Sênior e Especialista em Branding com padrão de agência internacional (estilo Apple, Nike, Stripe, Airbnb, Notion). Especialista em neurodesign, hierarquia visual, psicologia das cores, tipografia contemporânea e direção estética para redes sociais, apresentações, landing pages e identidades de marca. Use quando precisar definir conceitos visuais de alto impacto, conceber direção de arte multiformato, gerar prompts de imagem multi-engine (Midjourney, Flux, ChatGPT, SD) ou conduzir auditoria e autocrítica estética intransigente. <example> Context: O usuário precisa de uma direção de arte impactante para a campanha de lançamento de um novo recurso. user: "Preciso criar a direção visual para o lançamento da nova funcionalidade da PR Pulse no Instagram e landing page." assistant: "Vou acionar o brand-direcao-de-arte para conceber o conceito criativo, estruturar 3 caminhos visuais divergentes, definir paleta funcional e tipografia moderna, orquestrando as skills de carrossel e landing page." <commentary> Demanda de concepção estética, direção de arte e consistência visual multiformato. </commentary> </example> <example> Context: O usuário quer prompts de imagem refinados para gerar assets visuais no Midjourney e Flux sem visual clichê de IA. user: "Gere os prompts de imagem para o novo produto da plus-pr com estética minimalista e profissional." assistant: "Acionando o brand-direcao-de-arte para aplicar o filtro anti-slop visual, construir a atmosfera e gerar os prompts calibrados para Midjourney, Flux e ChatGPT Image com contraste e respiro profissional." <commentary> Demanda de engenharia estética de prompts de IA generativa com rigor de diretor de arte. </commentary> </example> |
+| <a id="brand-direcao-de-arte"></a>**`@brand-direcao-de-arte`** | `Agent` | `Super IA Marketing` | Diretor de Arte Sênior e Especialista em Branding com padrão de agência internacional (estilo Apple, Nike, Stripe, Airbnb, Notion). Especialista em neurodesign, hierarquia visual, psicologia das cores, tipografia contemporânea e direção estética para redes sociais, apresentações, landing pages e identidades de marca. Use quando precisar definir conceitos visuais de alto impacto, conceber direção de arte multiformato, gerar prompts de imagem multi-engine (Midjourney, Flux, ChatGPT, SD) ou conduzir auditoria e autocrítica estética intransigente. <example> Context: O usuário precisa de uma direção de arte impactante para a campanha de lançamento de um novo recurso. user: "Preciso criar a direção visual para o lançamento da nova funcionalidade da PR Pulse no Instagram e landing page." assistant: "Vou acionar o brand-direcao-de-arte para conceber o conceito criativo, estruturar 3 caminhos visuais divergentes, definir paleta funcional e tipografia moderna, orquestrando as skills de carrossel e landing page." <commentary> Demanda de concepção estética, direção de arte e consistência visual multiformato. </commentary> </example> <example> Context: O usuário quer prompts de imagem refinados para gerar assets visuais no Midjourney e Flux sem visual clichê de IA. user: "Gere os prompts de imagem para o novo produto da <marca> com estética minimalista e profissional." assistant: "Acionando o brand-direcao-de-arte para aplicar o filtro anti-slop visual, construir a atmosfera e gerar os prompts calibrados para Midjourney, Flux e ChatGPT Image com contraste e respiro profissional." <commentary> Demanda de engenharia estética de prompts de IA generativa com rigor de diretor de arte. </commentary> </example> |
 
 ### <a id="essence"></a>Essence
 
@@ -3005,7 +3005,7 @@ Total de recursos nesta macro-área: `1`
 
 ## <a id="geral-local"></a>Geral (Local)
 
-Total de recursos nesta macro-área: `22`
+Total de recursos nesta macro-área: `23`
 
 ### <a id="anti-slop"></a>Anti Slop
 
@@ -3072,13 +3072,19 @@ Total de recursos nesta macro-área: `22`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="geral-navegador-de-comandos"></a>**`@geral-navegador-de-comandos`** | `Agent` | `Super IA Marketing` | Assistente de comando inteligente que entende a intenção do usuário e sugere comandos relevantes. Os usuários descrevem o que desejam fazer e o agente recomenda os melhores comandos/agentes. Não há necessidade de memorizar comandos. Exemplos: <exemplo>Contexto: O usuário não sabe qual comando usar. usuário: \"Quero escrever uma postagem no blog\" assistente: \"Vou usar o agente geral-navegador-de-comandos para encontrar o melhor comando para sua tarefa.\" <commentary>A descoberta de comandos requer a compreensão da intenção e a correspondência com os comandos disponíveis.</commentary></example> |
+| <a id="geral-navegador-de-comandos"></a>**`@geral-navegador-de-comandos`** | `Agent` | `Super IA Marketing` | Assistente de comandos: entende a intenção do usuário e sugere o workflow, skill ou agente certo. Não é preciso memorizar nomes. Examples: <example>Context: User doesn't know which command to use. user: \"Quero escrever um post de blog\" assistant: \"Vou usar o geral-navegador-de-comandos para achar o melhor comando para essa tarefa.\" <commentary>Descoberta de comando exige entender a intenção e casar com o que existe no .agent/.</commentary></example> |
 
 ### <a id="navegador-de-skills"></a>Navegador De Skills
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
 | <a id="geral-navegador-de-skills"></a>**`/geral-navegador-de-skills`** | `Workflow` | `Super IA Marketing` | Guia inteligente para as skills reais do catálogo do hub Super IA Projects - Marketing. Recomenda a skill certa para cada pedido, sugere combinações de skills e ajuda a descobrir capacidades que o usuário talvez não conheça. |
+
+### <a id="parecer-sexy-canvas"></a>Parecer Sexy Canvas
+
+| Recurso | Tipo | Origem | Descrição e Aplicação |
+| :--- | :--- | :--- | :--- |
+| <a id="geral-parecer-sexy-canvas"></a>**`@geral-parecer-sexy-canvas`** | `Agent` | `Super IA Marketing` | Utilize quando o usuário deseja uma leitura consultiva de um texto, vídeo, imagem, produto ou ideia através do Sexy Canvas (auditar, sugerir, adaptar, direcionar antes de criar, ou uma “visão dos 14”), ou perguntar por que algo não atrai, converte ou engaja. Fornece uma opinião e uma transferência, nunca a peça final. |
 
 ### <a id="persona-fundador-startup"></a>Persona Fundador Startup
 
@@ -4314,7 +4320,7 @@ Total de recursos nesta macro-área: `3`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="pr-relacoes-publicas"></a>**`@pr-relacoes-publicas`** | `Agent` | `Super IA Marketing` | Especialista em Relações Públicas (PR), assessoria de imprensa e gestão de reputação institucional. Use quando precisar redigir press releases de alto interesse jornalístico, construir pitches para a imprensa, montar listas de mídia segmentadas, gerenciar crises de imagem ou articular pautas em veículos de comunicação de massa e nicho. <example> Context: A startup está lançando uma nova funcionalidade com IA e precisa divulgar para portais de negócios e tecnologia. user: "Preciso de um press release anunciando a nova funcionalidade da pr-pulse para enviar ao Startupi e NeoFeed." assistant: "Vou acionar o pr-relacoes-publicas para redigir o press release com gancho factual e ângulo noticioso, estruturado no padrão de redação jornalística e dados de mercado." <commentary> Demanda de assessoria de imprensa e redação jornalística institucional delegada ao especialista de PR. </commentary> </example> <example> Context: O usuário precisa de um pitch personalizado para apresentar o fundador como fonte para uma matéria de tendências. user: "Como abordo jornalistas do Valor Econômico para sugerir uma pauta sobre monitoramento de marca em tempo real?" assistant: "Acionando o pr-relacoes-publicas para elaborar um email-pitch conciso, com tese provocativa, estatísticas exclusivas e oferta de porta-voz." <commentary> Estratégia de pitching para veículos de alta relevância com foco em autoridade institucional. </commentary> </example> |
+| <a id="pr-relacoes-publicas"></a>**`@pr-relacoes-publicas`** | `Agent` | `Super IA Marketing` | Especialista em Relações Públicas (PR), assessoria de imprensa e gestão de reputação institucional. Use quando precisar redigir press releases de alto interesse jornalístico, construir pitches para a imprensa, montar listas de mídia segmentadas, gerenciar crises de imagem ou articular pautas em veículos de comunicação de massa e nicho. <example> Context: A startup está lançando uma nova funcionalidade com IA e precisa divulgar para portais de negócios e tecnologia. user: "Preciso de um press release anunciando a nova funcionalidade da <marca> para enviar ao Startupi e NeoFeed." assistant: "Vou acionar o pr-relacoes-publicas para redigir o press release com gancho factual e ângulo noticioso, estruturado no padrão de redação jornalística e dados de mercado." <commentary> Demanda de assessoria de imprensa e redação jornalística institucional delegada ao especialista de PR. </commentary> </example> <example> Context: O usuário precisa de um pitch personalizado para apresentar o fundador como fonte para uma matéria de tendências. user: "Como abordo jornalistas do Valor Econômico para sugerir uma pauta sobre monitoramento de marca em tempo real?" assistant: "Acionando o pr-relacoes-publicas para elaborar um email-pitch conciso, com tese provocativa, estatísticas exclusivas e oferta de porta-voz." <commentary> Estratégia de pitching para veículos de alta relevância com foco em autoridade institucional. </commentary> </example> |
 
 ---
 
@@ -4723,7 +4729,7 @@ Total de recursos nesta macro-área: `1`
 
 ## <a id="revenue-local"></a>Revenue (Local)
 
-Total de recursos nesta macro-área: `25`
+Total de recursos nesta macro-área: `24`
 
 ### <a id="analise-competitiva"></a>Analise Competitiva
 
@@ -4804,12 +4810,6 @@ Total de recursos nesta macro-área: `25`
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
 | <a id="revenue-orquestracao-de-estrategia"></a>**`@revenue-orquestracao-de-estrategia`** | `Agent` | `Super IA Marketing` | Orquestrador geral da estratégia de marketing que coordena todas as atividades de marketing. |
-
-### <a id="parecer-sexy-canvas"></a>Parecer Sexy Canvas
-
-| Recurso | Tipo | Origem | Descrição e Aplicação |
-| :--- | :--- | :--- | :--- |
-| <a id="revenue-parecer-sexy-canvas"></a>**`@revenue-parecer-sexy-canvas`** | `Agent` | `Super IA Marketing` | Utilize quando o usuário deseja uma leitura consultiva de um texto, vídeo, imagem, produto ou ideia através do Sexy Canvas (auditar, sugerir, adaptar, direcionar antes de criar, ou uma “visão dos 14”), ou perguntar por que algo não atrai, converte ou engaja. Fornece uma opinião e uma transferência, nunca a peça final. |
 
 ### <a id="pesquisa-de-mercado"></a>Pesquisa De Mercado
 
@@ -5450,6 +5450,12 @@ Total de recursos nesta macro-área: `17`
 | :--- | :--- | :--- | :--- |
 | <a id="social-analise-de-desempenho"></a>**`/social-analise-de-desempenho`** | `Workflow` | `Super IA Marketing` | Analisa o desempenho da campanha de mídia social em todas as plataformas com métricas de engajamento, cálculos de ROI e insights de público para decisões de marketing baseadas em dados |
 
+### <a id="calendario-e-distribuicao"></a>Calendario E Distribuicao
+
+| Recurso | Tipo | Origem | Descrição e Aplicação |
+| :--- | :--- | :--- | :--- |
+| <a id="social-calendario-e-distribuicao"></a>**`@social-calendario-e-distribuicao`** | `Agent` | `Super IA Marketing` | Estrategista sênior de redes sociais, distribuição orgânica e comunidades. Use quando precisar planejar calendários editoriais, criar carrosséis de alta retenção no Instagram e LinkedIn, estruturar estratégias de crescimento em canais sociais e engajar audiências com conteúdo nativo.\\n\\n<example>\\nContext: O usuário precisa de uma sequência de carrosséis para o LinkedIn para gerar autoridade B2B.\\nuser: \"Preciso de um carrossel educativo para o LinkedIn da <marca> sobre monitoramento de marca.\"\\nassistant: \"Vou acionar o social-calendario-e-distribuicao para estruturar o carrossel lâmina a lâmina, definindo hook de capa, payoff e save-bait com foco em retenção.\"\\n<commentary>\\nDemanda de estratégia de redes sociais e carrossel de autoridade.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: O usuário quer um calendário editorial mensal omnichannel.\\nuser: \"Pode planejar a grade de conteúdo do Instagram e LinkedIn da <marca> para o próximo mês?\"\\nassistant: \"Acionando o social-calendario-e-distribuicao para desenhar o calendário editorial omnichannel alinhado aos pilares de conteúdo da marca.\"\\n<commentary>\\nPlanejamento de distribuição e linhas editoriais em mídias sociais.\\n</commentary>\\n</example> |
+
 ### <a id="carrossel"></a>Carrossel
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
@@ -5485,12 +5491,6 @@ Total de recursos nesta macro-área: `17`
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
 | <a id="social-estrategia"></a>**`social-estrategia`** | `Skill` | `Super IA Marketing` | Omnichannel social media strategy, content planning, platform-native distribution (LinkedIn, X/Twitter, Instagram), algorithmic retention mechanics, social listening, influencer partnerships and Reddit, X and Bluesky playbooks. NÃO use para LinkedIn orgânico (use social-linkedin), anúncios pagos (use ads-multiplataforma, ads-meta ou ads-analise-de-desempenho) nem carrosséis (use social-carrossel). |
-
-### <a id="estrategia-de-redes"></a>Estrategia De Redes
-
-| Recurso | Tipo | Origem | Descrição e Aplicação |
-| :--- | :--- | :--- | :--- |
-| <a id="social-estrategia-de-redes"></a>**`@social-estrategia-de-redes`** | `Agent` | `Super IA Marketing` | Estrategista sênior de redes sociais, distribuição orgânica e comunidades. Use quando precisar planejar calendários editoriais, criar carrosséis de alta retenção no Instagram e LinkedIn, estruturar estratégias de crescimento em canais sociais e engajar audiências com conteúdo nativo.\\n\\n<example>\\nContext: O usuário precisa de uma sequência de carrosséis para o LinkedIn para gerar autoridade B2B.\\nuser: \"Preciso de um carrossel educativo para o LinkedIn da plus-pr sobre monitoramento de marca.\"\\nassistant: \"Vou acionar o social-estrategia-de-redes para estruturar o carrossel lâmina a lâmina, definindo hook de capa, payoff e save-bait com foco em retenção.\"\\n<commentary>\\nDemanda de estratégia de redes sociais e carrossel de autoridade.\\n</commentary>\\n</example>\\n\\n<example>\\nContext: O usuário quer um calendário editorial mensal omnichannel.\\nuser: \"Pode planejar a grade de conteúdo do Instagram e LinkedIn da experimentacao para o próximo mês?\"\\nassistant: \"Acionando o social-estrategia-de-redes para desenhar o calendário editorial omnichannel alinhado aos pilares de conteúdo da marca.\"\\n<commentary>\\nPlanejamento de distribuição e linhas editoriais em mídias sociais.\\n</commentary>\\n</example> |
 
 ### <a id="instagram-api"></a>Instagram Api
 
@@ -6081,7 +6081,7 @@ Total de recursos nesta macro-área: `15`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="vendas-direcao-b2b"></a>**`@vendas-direcao-b2b`** | `Agent` | `Super IA Marketing` | Diretor de vendas B2B, RevOps e conformidade comercial. Use quando precisar estruturar processos de vendas consultivas complexas, implementar metodologias de qualificação (MEDDIC, BANT, SPIN), arquitetar esteiras de outbound, gerenciar riscos de fechamento de negócios e assegurar compliance regulatório (LGPD/GDPR e contratos). <example> Context: O time comercial precisa estruturar um processo de vendas enterprise com múltiplos tomadores de decisão. user: "Como estruturo o funil de vendas complexas da plus-pr para fechar contratos anuais acima de R$ 50k?" assistant: "Vou acionar o vendas-direcao-b2b para desenhar a régua de qualificação MEDDIC, mapear o Economic Buyer e arquitetar a cadência de follow-up multicanal." <commentary> Demanda de estratégia e governança de vendas B2B complexas delegada ao diretor comercial. </commentary> </example> <example> Context: O usuário precisa de uma cadência de prospecção fria para diretores de marketing respeitando normas de privacidade. user: "Crie uma cadência de outbound cold email de 4 toques para a plus-pr em conformidade com a LGPD." assistant: "Acionando o vendas-direcao-b2b para redigir a cadência com foco em dor de negócio, personalização sem atrito e mecanismo claro de opt-out conforme LGPD." <commentary> Outbound B2B combinado com rigor de conformidade e governança. </commentary> </example> |
+| <a id="vendas-direcao-b2b"></a>**`@vendas-direcao-b2b`** | `Agent` | `Super IA Marketing` | Diretor de vendas B2B, RevOps e conformidade comercial. Use quando precisar estruturar processos de vendas consultivas complexas, implementar metodologias de qualificação (MEDDIC, BANT, SPIN), arquitetar esteiras de outbound, gerenciar riscos de fechamento de negócios e assegurar compliance regulatório (LGPD/GDPR e contratos). <example> Context: O time comercial precisa estruturar um processo de vendas enterprise com múltiplos tomadores de decisão. user: "Como estruturo o funil de vendas complexas da <marca> para fechar contratos anuais acima de R$ 50k?" assistant: "Vou acionar o vendas-direcao-b2b para desenhar a régua de qualificação MEDDIC, mapear o Economic Buyer e arquitetar a cadência de follow-up multicanal." <commentary> Demanda de estratégia e governança de vendas B2B complexas delegada ao diretor comercial. </commentary> </example> <example> Context: O usuário precisa de uma cadência de prospecção fria para diretores de marketing respeitando normas de privacidade. user: "Crie uma cadência de outbound cold email de 4 toques para a <marca> em conformidade com a LGPD." assistant: "Acionando o vendas-direcao-b2b para redigir a cadência com foco em dor de negócio, personalização sem atrito e mecanismo claro de opt-out conforme LGPD." <commentary> Outbound B2B combinado com rigor de conformidade e governança. </commentary> </example> |
 
 ### <a id="habilitacao-comercial"></a>Habilitacao Comercial
 

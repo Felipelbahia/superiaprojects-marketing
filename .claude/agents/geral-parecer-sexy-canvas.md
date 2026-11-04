@@ -1,0 +1,1 @@
+../../.agent/agents/geral-parecer-sexy-canvas.md

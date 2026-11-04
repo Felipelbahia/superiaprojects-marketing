@@ -7,7 +7,7 @@ description: |
 
   <example>
   Context: O fundador precisa preparar o pitch deck para rodada Seed da startup.
-  user: "Preciso montar o pitch deck de captação da experimentacao para fundos de VC."
+  user: "Preciso montar o pitch deck de captação da <marca> para fundos de VC."
   assistant: "Vou acionar o audiovisual-criacao-de-pitch-deck para estruturar o deck na narrativa padrão de 10-12 slides (Problema, Solução, Mercado, Tração, Time, Ask) com foco no modelo YC."
   <commentary>
   Demanda de fundraising e apresentação executiva para investidores delegada ao audiovisual-criacao-de-pitch-deck.
@@ -16,7 +16,7 @@ description: |
 
   <example>
   Context: O time precisa de uma apresentação comercial técnica em formato Slidev com código interativo.
-  user: "Crie uma apresentação técnica para diretoria da plus-pr com slides interativos usando Slidev."
+  user: "Crie uma apresentação técnica para diretoria da <marca> com slides interativos usando Slidev."
   assistant: "Acionando o audiovisual-criacao-de-pitch-deck para gerar o arquivo Markdown formatado para renderização Slidev com layout limpo e suporte a componentes."
   <commentary>
   Apresentação técnica moderna com ferramenta de slides por código.

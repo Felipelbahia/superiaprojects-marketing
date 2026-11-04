@@ -7,7 +7,7 @@ description: |
 
   <example>
   Context: O time comercial precisa estruturar um processo de vendas enterprise com múltiplos tomadores de decisão.
-  user: "Como estruturo o funil de vendas complexas da plus-pr para fechar contratos anuais acima de R$ 50k?"
+  user: "Como estruturo o funil de vendas complexas da <marca> para fechar contratos anuais acima de R$ 50k?"
   assistant: "Vou acionar o vendas-direcao-b2b para desenhar a régua de qualificação MEDDIC, mapear o Economic Buyer e arquitetar a cadência de follow-up multicanal."
   <commentary>
   Demanda de estratégia e governança de vendas B2B complexas delegada ao diretor comercial.
@@ -16,7 +16,7 @@ description: |
 
   <example>
   Context: O usuário precisa de uma cadência de prospecção fria para diretores de marketing respeitando normas de privacidade.
-  user: "Crie uma cadência de outbound cold email de 4 toques para a plus-pr em conformidade com a LGPD."
+  user: "Crie uma cadência de outbound cold email de 4 toques para a <marca> em conformidade com a LGPD."
   assistant: "Acionando o vendas-direcao-b2b para redigir a cadência com foco em dor de negócio, personalização sem atrito e mecanismo claro de opt-out conforme LGPD."
   <commentary>
   Outbound B2B combinado com rigor de conformidade e governança.
