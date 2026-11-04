@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Nativa do Projeto
 name: brand-visual-direction
 description: "Use para decidir direção visual, mood, estilo de imagem, intenção de cor e tipografia e visual de vídeo antes do design system (etapa 6 do brand-builder). Gatilhos: \"direção visual\", \"moodboard\", \"como a marca deve parecer\", \"tendências visuais\". NÃO use para gerar tokens e componentes (use brand-design-system), extrair ou aplicar um visual-style.md (use brand-visual-style) nem para conceito de anúncio (use ads-criativos)."
+author: Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Brand Visual Direction
 
 ## Overview

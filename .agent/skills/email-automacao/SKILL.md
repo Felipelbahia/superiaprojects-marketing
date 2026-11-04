@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: email-automacao
 description: Arquiteto de jornadas automatizadas de email e automações de ciclo de vida em CRMs (ActiveCampaign, HubSpot, Customer.io). Estrutura Welcome Series em 5 etapas, esteiras de onboarding e ativação de produto SaaS, fluxos de recuperação de carrinho abandonado, automações de reengajamento e Sunset Policy contra contatos inativos. NÃO use para estágios do contato, lead scoring e higiene de dados no CRM (use vendas-crm), copy de email (use email-copy), entregabilidade e DNS (use email-entregabilidade), prospecção fria (use vendas-cold-email) nem newsletters (use email-newsletter).
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
   vertical: Email / Lifecycle Automation
 ---
-
 # Lifecycle Email Automator: Jornadas Automatizadas e Ciclo de Vida do Lead
 
 O **Lifecycle Email Automator** é a skill técnica dedicada ao desenho, implementação e otimização de fluxos automáticos de email baseados em tempo e comportamento do usuário (*Event-Driven Automations*). Enquanto campanhas pontuais (*broadcasts*) dependem de esforço manual contínuo, as automações de ciclo de vida operam em segundo plano 24 horas por dia, nutrindo leads frios, ativando novos usuários de software e recuperando vendas perdidas com máxima precisão de timing.

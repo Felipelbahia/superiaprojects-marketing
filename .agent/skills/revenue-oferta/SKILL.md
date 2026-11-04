@@ -1,13 +1,16 @@
 ---
+# Source: https://acquisition.com/books/100m-offers
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: revenue-oferta
 description: "Use para montar uma oferta irresistível pelo método de Alex Hormozi (\"$100M Offers\"): equação de valor, empilhamento de bônus, garantia (inversão de risco), escassez, nome pela fórmula M-A-G-I-C, e bibliotecas de headlines, CTAs e objeções. Gatilhos: \"oferta irresistível\", \"Grand Slam Offer\", \"empilhar bônus\", \"garantia\", \"quebrar objeção\". NÃO use para definir preço e pacotes de SaaS (use revenue-preco), copy completa de página (use copy-landing-page) nem roteiro de VSL (use copy-vsl)."
+author: Alex Hormozi & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Alex Hormozi & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: copy-conversao, revenue-preco, copy-landing-page, copy-vsl
 ---
-
 # Grand Slam Offer Architect ($100M Offers)
 
 > Create offers so compelling, unique, and value-stacked that prospects feel stupid saying no. Based on Alex Hormozi’s proven framework, this skill guides value equation optimization, bonus stacking, risk reversal engineering, and high-converting offer naming.

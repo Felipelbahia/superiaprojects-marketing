@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-conteudo
 description: "Use when writing search-optimized blog posts, pillar pages, comparison guides, or how-tos; creating SEO briefs; using Google's E-E-A-T guidelines. Do NOT use for keyword research and topic clusters (use seo-palavras-chave) or programmatic SEO at scale (use seo-programatico)."
+author: ClawFu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: seo-geo, seo-on-page, seo-schema-markup
 ---
-
 # SEO Content Writer
 
 > Write search-optimized content that ranks on Google using proven frameworks from Ahrefs, Moz, and Google's E-E-A-T guidelines—create helpful, people-first content that satisfies both search engines, generative engines, and human readers.

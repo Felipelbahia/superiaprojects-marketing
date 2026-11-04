@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: brand-design-system
 description: "Use para montar o design system da marca como site de referência mais DESIGN.md (paleta com modo escuro, tipografia, espaço, forma, movimento, componentes e tokens), a partir da direção visual aprovada (etapa 7 do brand-builder). Gatilhos: \"design system da marca\", \"DESIGN.md\", \"tokens da marca\". NÃO use para decidir o estilo (use brand-visual-direction) nem para escrever o código de componentes em Tailwind e React (use site-tailwind-design-system)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Brand Design System
 
 ## Overview

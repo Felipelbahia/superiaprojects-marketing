@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: persona-icp
 description: "Use para construir personas, perfil de cliente ideal (ICP), mapa de Jobs-to-be-Done, gatilhos de compra, roteiros de voz do cliente, pesquisa de público e pontuação de aderência ao ICP. Gatilhos: \"persona\", \"ICP\", \"cliente ideal\", \"JTBD\", \"segmentar público\". NÃO use para validar hipótese de produto com entrevistas (use persona-descoberta-de-clientes), analisar saturação de público em anúncios (use ads-analise-de-desempenho) nem montar cadência de prospecção (use vendas-cold-email)."
+author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: revenue-gtm-e-posicionamento, copy-conversao, discovery-interviews-surveys
 ---
-
 # Buyer Persona & ICP Architect
 
 > Construct deeply researched, commercially actionable buyer personas and Ideal Customer Profiles (ICPs). Uncover the Jobs-to-be-Done (JTBD), emotional triggers, internal frustrations, and decision criteria that drive purchase velocity.

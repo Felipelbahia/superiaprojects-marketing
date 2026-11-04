@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: conteudo-briefing
 description: Generate comprehensive content briefs for writers, ensuring clarity, alignment, and strategic content creation across all formats.
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Content Brief Generator
 
 A comprehensive skill for creating detailed content briefs that guide writers, ensure consistency, and align content with business goals.

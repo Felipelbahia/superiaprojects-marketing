@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: conteudo-estrategia
 description: "Use para planejar o conteúdo de uma marca: estratégia e playbook, pilares editoriais, calendário editorial, formatos, distribuição, geração de ideias a partir do posicionamento, análise de lacunas de conteúdo contra concorrentes e guia de estilo. Gatilhos: \"teia de conteúdo\", \"webfluence\", \"isca digital\", \"lead magnet\", \"estratégia de conteúdo\", \"calendário editorial\", \"pilares de conteúdo\", \"ideias de conteúdo\", \"onde distribuir\", \"lacuna de conteúdo\", \"guia de estilo\". NÃO use para reaproveitar um conteúdo em vários formatos (use conteudo-reaproveitamento), para pesquisa de palavras-chave (use seo-palavras-chave), para a campanha completa (use revenue-campanhas) nem para tendências de redes (use conteudo-tendencias)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Estratégia de Conteúdo
 
 Reúne os guias de planejamento de conteúdo que estavam dentro de `conteudo-reaproveitamento` e, desde a R16b, o Webfluence (teia de conteúdo) e o guia de iscas digitais. O texto base é inglês.

@@ -1,12 +1,15 @@
 ---
+# Source: https://github.com/vercel
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Vanilla de Terceiros
 name: site-react-desempenho
 description: "Use ao escrever, revisar ou refatorar CÓDIGO React e Next.js para desempenho (cascatas de requisições, tamanho do bundle, servidor, re-renderizações, hidratação), com 66 regras da Vercel por prioridade. NÃO use para copy ou design de página (use copy-landing-page e site-interface-de-conversao), para componentes e tokens Tailwind (use site-tailwind-design-system) nem para padrões de composição de componentes (use site-react-composicao). Escrever código de aplicação exige autorização explícita (regra 1.5)."
+author: Vercel Engineering
 license: MIT
 metadata:
-  author: vercel
+  author: Vercel Engineering
   version: 1.0.0
 ---
-
 # Vercel React Best Practices
 
 Comprehensive performance optimization guide for React and Next.js applications, maintained by Vercel. Contains 66 rules across 8 categories, prioritized by impact to guide automated refactoring and code generation.

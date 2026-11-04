@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: copy-landing-page
 description: "Design, write, and optimize high-converting landing pages. Section-by-section copywriting architecture (Hero, Problem, Solution, Features/Benefits, Social Proof, Objection Killing, Risk Reversal, FAQ, Final CTA) and CRO diagnostic audits. NÃO use para posicionamento e pesquisa de voz do cliente (use copy-saas), para cartas de venda e persuasão de resposta direta (use copy-conversao), para auditar a conversão de uma página pronta (use site-cro), para desenhar a interface (use site-interface-de-conversao), para isca digital e portão de e-mail (use conteudo-estrategia) nem para roteiro de VSL (use copy-vsl)."
+author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: copy-conversao, copy-saas, site-cro, geral-anti-slop
 ---
-
 # Landing Page Copywriter & CRO Architect
 
 > Architect, write, and optimize high-converting landing pages. From attention-grabbing hero sections to frictionless checkout paths, this skill guides section-by-section wireframing, message-to-market matching, and conversion rate optimization (CRO).

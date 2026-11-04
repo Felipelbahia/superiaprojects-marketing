@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: site-interface-de-conversao
 description: "Use para desenhar a interface de uma página ou site de conversão: hierarquia visual, cor e contraste (60-30-10, WCAG AA), tipografia, espaçamento, componentes, movimento, versão para celular e checklist de acessibilidade. Gatilhos: \"design da landing page\", \"hierarquia visual\", \"paleta e contraste\", \"layout\", \"UI\", \"UX\", \"acessibilidade\". NÃO use para planejar a estrutura do site, URLs e navegação (use site-arquitetura), para auditoria de conversão de uma página pronta (use site-cro), para o texto da página (use copy-landing-page), para identidade visual da marca (use brand-visual-direction e brand-design-system), para código de componentes (use site-tailwind-design-system e site-react-desempenho) nem para alterar uma página existente sem duplicar o que já há (use site-auditoria-de-interface)."
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # UI & UX Conversion Designer
 
 Orienta o design de interfaces elegantes, funcionais e orientadas a conversão: princípios visuais, acessibilidade e celular. A identidade da marca (`_brands/<marca>/style-guide.md`, e `design-system/tokens.json` quando existir) **vence** qualquer regra genérica daqui.

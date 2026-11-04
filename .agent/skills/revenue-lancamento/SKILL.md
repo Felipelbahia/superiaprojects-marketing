@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Nativa do Projeto
 name: revenue-lancamento
 description: "Use para planejar o lançamento de qualquer produto, serviço, curso ou funcionalidade: escolher o tipo de lançamento, montar o plano de pré-lançamento, lançamento e pós-lançamento, definir canais próprios, alugados e emprestados (ORB), lançar em fases (interno, alfa, beta, acesso antecipado e geral), usar Product Hunt e lista de espera, ou montar o lançamento como evento (fórmula de Jeff Walker). Gatilhos: \"plano de lançamento\", \"lançar meu curso\", \"lançar produto\", \"abertura de carrinho\", \"lista de espera\", \"Product Hunt\", \"anunciar funcionalidade\". NÃO use para lançar API, SDK ou ferramenta para desenvolvedores, com níveis (tiers) e documentação (use revenue-lancamento-tecnico), para posicionamento, categoria e pré-mortem (use revenue-gtm-e-posicionamento), para campanha multicanal com UTM e calendário (use revenue-campanhas), para oferta, bônus e garantia (use revenue-oferta) nem para o texto de e-mails e páginas de venda (use email-copy e copy-landing-page)."
+author: Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Lançamento de Produto
 
 Guia para planejar um lançamento de qualquer tipo de produto. Reúne três enfoques que servem para produto digital, curso, serviço ou funcionalidade nova. Os arquivos vieram do `revenue-lancamento-tecnico` (2026-10-20), onde estavam fora do assunto: aquela skill trata de lançamento técnico (API, SDK, ferramenta para desenvolvedores).

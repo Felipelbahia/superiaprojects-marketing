@@ -44,6 +44,7 @@ Inputs/
 
 # Planos e histórico de execução de agentes locais
 .agent/plans/
+.agent/vendor/
 plans/
 execution-loops/
 handoffs/

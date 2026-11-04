@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: revenue-gtm-e-posicionamento
 description: "Go-To-Market (GTM) strategy, product marketing management (PMM), Category Design, Value Proposition Canvas, STP Framework (Segmentation, Targeting, Positioning), Pre-Mortem analysis, and cross-functional launch orchestration."
+author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: revenue-inteligencia-competitiva, persona-icp, revenue-preco, copy-conversao
 ---
-
 # Go-To-Market (GTM) & Product Marketing Architect
 
 > Orchestrate high-impact product launches, design new market categories, structure defensible positioning using the Value Proposition Canvas and STP frameworks, and de-risk commercial execution through pre-mortem diagnostics.

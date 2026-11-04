@@ -1,12 +1,15 @@
 ---
+# Source: https://github.com/fal-ai
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Vanilla de Terceiros
 name: audiovisual-imagem-flux-api
 description: BFL FLUX API integration guide covering endpoints, async polling patterns, rate limiting, error handling, webhooks, and regional endpoints with Python and TypeScript code examples.
+author: Black Forest Labs & Fal.ai
 license: MIT
 metadata:
-  author: Black Forest Labs
+  author: Black Forest Labs & Fal.ai
   version: 1.0.0
 ---
-
 # BFL API Integration Guide
 
 Use this skill when integrating BFL FLUX APIs into applications for image generation, editing, and processing.

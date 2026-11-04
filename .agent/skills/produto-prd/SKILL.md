@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: produto-prd
 description: "Use para escrever PRD (documento de requisitos de produto), histórias de usuário, métricas de produto e a etapa v0.9 de go-to-market do PRD. Gatilhos: \"criar um PRD\", \"requisitos do produto\", \"documentar uma funcionalidade\", \"especificação de produto\". NÃO use para plano de lançamento (use revenue-lancamento, ou revenue-lancamento-tecnico se for produto técnico), estratégia de go-to-market e posicionamento (use revenue-gtm-e-posicionamento) nem pesquisa com clientes (use persona-descoberta-de-clientes)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # PRD Generator
 
 ## Overview

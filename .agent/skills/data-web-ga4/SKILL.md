@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: data-web-ga4
 description: Especialista em arquitetura de dados web, engenharia de tracking, implementação avançada de GA4, Google Tag Manager (Web e Server-Side), Consent Mode v2 e modelagem de eventos em BigQuery.
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Web Analytics Architect - Diretrizes Operacionais
 
 Esta skill orienta a concepção, implementação técnica, padronização e governança de arquiteturas de mensuração web, incluindo Google Analytics 4 (GA4), Google Tag Manager (GTM Client-Side e Server-Side), dataLayer, Enhanced Conversions e integração com BigQuery.

@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: growth-frameworks
 description: "Especialista em estratégia de crescimento: métricas AARRR, growth loops, Product-Led Growth (PLG), Lean Canvas, métricas de startup, geração de demanda e ideias e táticas de marketing. NÃO use para retenção e saúde de clientes (use growth-retencao-e-churn), crise de reputação (use pr-assessoria-de-imprensa), psicologia do consumidor (use revenue-psicologia) nem decisões e modelos mentais (use revenue-modelos-mentais)."
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Growth Frameworks Strategist - Diretrizes Operacionais
 
 Esta skill orienta o planejamento estratégico e a execução de iniciativas de crescimento sustentável para negócios digitais e SaaS, combinando frameworks de métricas (AARRR, Startup Metrics), motores de tração perpétua (Growth Loops, PLG) e modelos mentais executivos para tomada de decisão sob incerteza.

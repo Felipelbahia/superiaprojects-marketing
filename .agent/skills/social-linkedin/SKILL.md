@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: social-linkedin
 description: "Use para criar presença e autoridade orgânica no LinkedIn: auditar e reescrever o perfil, escrever posts e carrosséis de alto desempenho, usar fórmulas de post e montar um sistema de conteúdo de liderança de pensamento que gera leads inbound. Gatilhos: \"post de LinkedIn\", \"perfil do LinkedIn\", \"headline\", \"liderança de pensamento\", \"conteúdo para LinkedIn\", \"autoridade no LinkedIn\". NÃO use para anúncios no LinkedIn (use ads-multiplataforma), para estratégia de várias redes ao mesmo tempo (use social-estrategia) nem para prospecção por mensagem direta (use vendas-cold-email)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # LinkedIn Orgânico
 
 Reúne em um só lugar os quatro guias de LinkedIn que estavam dentro de `social-estrategia`. O texto base dos guias é inglês.

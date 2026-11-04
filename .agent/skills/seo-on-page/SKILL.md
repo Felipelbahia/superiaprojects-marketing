@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-on-page
 description: "Use when auditing on-page SEO factors, title tags, meta descriptions, headings, internal link architectures, content quality, E-E-A-T signals, content freshness and decay, or diagnosing why a page dropped in search rankings. Do NOT use for backlinks, link building or domain authority (use seo-autoridade-e-backlinks)."
+author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: seo-conteudo, seo-tecnico, seo-geo
 ---
-
 # On-Page SEO Auditor
 
 > Comprehensive on-page audit framework for evaluating content quality, title/header optimization, internal linking architectures, E-E-A-T signals, backlink profile health, and content decay diagnosis.

@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-programatico
 description: "Use para criar páginas de SEO em escala a partir de modelos e dados (SEO programático): páginas de comparação, de localidade, de integração, de glossário, diretórios e templates com padrões de título, links internos e schema, sem cair em conteúdo raso. Gatilhos: \"SEO programático\", \"páginas em escala\", \"template de página\", \"centenas de páginas\", \"páginas de cidade ou de categoria\". NÃO use para escrever um artigo único otimizado (use seo-conteudo), para auditar uma página (use seo-on-page) nem para diagnóstico técnico de indexação (use seo-tecnico)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # SEO Programático
 
 Reúne os três guias de páginas em escala que estavam dentro de `seo-conteudo`. O texto base é inglês, exceto onde indicado.

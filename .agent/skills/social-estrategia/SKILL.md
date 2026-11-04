@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: social-estrategia
 description: "Omnichannel social media strategy, content planning, platform-native distribution (LinkedIn, X/Twitter, Instagram), algorithmic retention mechanics, social listening, influencer partnerships and Reddit, X and Bluesky playbooks. NÃO use para LinkedIn orgânico (use social-linkedin), anúncios pagos (use ads-multiplataforma, ads-meta ou ads-analise-de-desempenho) nem carrosséis (use social-carrossel)."
+author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: social-carrossel, viral-carousel, copy-hooks-video-curto, geral-anti-slop
 ---
-
 # Social Media Strategist & Organic Growth Architect
 
 > Plan, write, and execute platform-native social media strategies across LinkedIn, X (Twitter), and Instagram. Leverage algorithmic mechanics (dwell time, bookmarks, comment velocity) and authentic engagement loops to build loyal audiences and drive pipeline.

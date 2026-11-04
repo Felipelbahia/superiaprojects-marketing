@@ -1,12 +1,15 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-podcast
 description: "Optimize podcast content for search engines using transcripts, structured show notes, and strategic keyword targeting to drive organic discovery. Use when: Launching a new podcast and planning for discoverability; Adding transcripts to existing episodes for SEO benefit; Optimizing show notes for search traffic; Building topical authority through podcast content; Increasing organic traffic to podcast landing pages"
+author: ClawFu & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Podcast SEO
 
 > Optimize podcast content for search engines using transcripts, structured show notes, and strategic keyword targeting to drive organic discovery.

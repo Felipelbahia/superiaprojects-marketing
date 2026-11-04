@@ -1,13 +1,16 @@
 ---
+# Source: https://8ps.com
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: copy-vsl
 description: "Video Sales Letter (VSL) copywriting, direct response video scripts, Conrado Adolpho's 8-part VSL framework, universal objection handling, slide-by-slide pacing, and visual text-on-screen retention cues."
+author: Conrado Adolpho, Jon Benson & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Conrado Adolpho, Jon Benson & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: copy-conversao, copy-landing-page, copy-hooks-video-curto, geral-anti-slop
 ---
-
 # Video Sales Letter (VSL) Scriptwriter
 
 > Script high-converting Video Sales Letters (VSLs) and direct-response video presentations. Combines Conrado Adolpho’s proven 8-part sales letter framework with Jon Benson’s ugly-slide retention mechanics and universal objection elimination to drive massive video-to-purchase conversions.

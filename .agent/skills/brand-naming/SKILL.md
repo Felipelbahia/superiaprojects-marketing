@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: brand-naming
 description: "Use para criar e validar nomes de marca, produto e empresa pelo protocolo dos 6 portões (briefing, geração, fonético, jurídico, AEO e narrativa). Gatilhos: \"nome da marca\", \"naming\", \"rebranding de nome\", \"nome para a empresa\". NÃO use para reposicionar uma marca que já tem nome (use brand-essence) nem para confirmar registro de marca (o portão jurídico indica a busca; quem confirma é o INPI ou um advogado)."
+author: ClawFu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: brand-builder, brand-essence, brand-visual-direction, revenue-gtm-e-posicionamento
 ---
-
 # Arquiteto de Nomes de Marca (Protocolo dos 6 Portões)
 
 > Em 2026, dar nome a uma marca é engenharia, não palpite criativo. Um bom nome precisa ser lido por máquinas (tokenização eficiente em LLMs e mecanismos de resposta), defensável juridicamente em várias jurisdições, fácil de falar para assistentes de voz e carregado de narrativa.

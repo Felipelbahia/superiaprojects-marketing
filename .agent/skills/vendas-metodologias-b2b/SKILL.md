@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: vendas-metodologias-b2b
 description: Especialista em metodologias consagradas de vendas consultivas e negociação complexa B2B (Challenger Sale, SPIN Selling, Sandler System e Never Split the Difference).
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # B2B Sales Methodologies - Diretrizes Operacionais
 
 Esta skill orienta a condução científica de ciclos de vendas consultivas B2B de alto ticket, aplicando as 4 metodologias mais comprovadas do mercado para qualificar, diagnosticar dor, desafiar o status quo do cliente e conduzir negociações de alto impacto.

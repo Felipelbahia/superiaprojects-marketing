@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: ads-analise-de-desempenho
 description: O cérebro financeiro e analítico do tráfego pago. Aloca verba entre múltiplos canais (Google, Meta, LinkedIn) baseado em MER/CAC, audita e diagnostica desvios de CPA, caça desperdícios orçamentários (Wasted Spend), implementa regras de corte automático (Auto-Pause), projeta ROAS e gera parâmetros de rastreamento UTM padronizados. Use para decidir onde e quanto investir em mídia paga e para analisar, comparar e vigiar o resultado de Google e Meta juntos (estratégia, diagnóstico, orçamento, pacing e relatório). NÃO use para montar o plano ou o brief de uma campanha (use revenue-campanhas), relatório executivo e modelagem de atribuição para a liderança (use data-atribuicao-e-relatorios), criação de anúncios (use ads-criativos ou ads-copy-de-anuncio) nem configuração de contas (use ads-google ou ads-meta).
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
   vertical: Advertising / Media Analytics
 ---
-
 # Paid Media Analytics: Inteligência Financeira, Lances e Atribuição
 
 O **Paid Media Analytics** é a skill técnica dedicada à governança de dados, alocação de capital, automação de regras e modelagem de atribuição para operações de tráfego pago multicanal. Ele atua como o **cérebro financeiro da mídia paga**, garantindo que cada centavo investido gere retorno mensurável e que desvios de custo (CPA/ROAS) sejam diagnosticados e corrigidos antes de comprometer o caixa do negócio.

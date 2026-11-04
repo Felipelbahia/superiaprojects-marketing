@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: persona-descoberta-de-clientes
 description: "Use para validar ideia, problema e solução com clientes: Mom Test, entrevista de problema e de solução, Customer Development (Steve Blank), descoberta contínua de produto (Teresa Torres) e pesquisas (surveys). Gatilhos: \"validar ideia\", \"entrevista com clientes\", \"Mom Test\", \"descoberta de produto\". NÃO use para definir ICP e personas (use persona-icp), gravar entrevista de podcast (use audiovisual-podcast-e-audio) nem pesquisar preço (use revenue-preco)."
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Customer Discovery & Validator - Diretrizes Operacionais
 
 Esta skill orienta a condução científica de pesquisas de mercado com clientes, estruturação de entrevistas de validação de hipóteses imunes a vieses (seguindo a metodologia *The Mom Test* de Rob Fitzpatrick), mapeamento de dores reais no *Product Discovery* e refinamento cirúrgico do Perfil de Cliente Ideal (ICP).

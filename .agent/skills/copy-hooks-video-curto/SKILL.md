@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: copy-hooks-video-curto
 description: "Use when: escrever, planejar ou revisar o hook (primeiros 3 segundos) de um Reel, TikTok ou Short, tanto a fala (segmentação, promessa, loop aberto, quadro mental, nostalgia, 'funciona mesmo que', matriz going-viral de objetivo único e emoção primária high-arousal) quanto o que aparece na tela (frame 0 em movimento, texto grande, funciona no mudo, técnica de payoff postergado); diagnosticar por que um vídeo curto flopou; implementar conversão comentário -> DM sem link público. Complementa vsl-conrado-framework.md."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Retenção em Vídeo Curto — Adaptação do Framework de VSL & Matriz Going-Viral
 
 > Uma VSL longa tem ~20 etapas construindo confiança até o CTA. Um vídeo curto não tem esse tempo — o objetivo aqui não é fechar venda dentro do vídeo, é reter atenção e gerar identificação/curiosidade suficiente para a pessoa assistir até o fim (e ir para o link/bio quando fizer sentido). Por isso, só uma fração pequena do framework original é aplicável — o resto (Jornada do Herói completa, Oferta, Preço, Bônus, Garantia, 3 Opções) exige tempo que vídeo curto não tem e, se forçado, quebra o ritmo.

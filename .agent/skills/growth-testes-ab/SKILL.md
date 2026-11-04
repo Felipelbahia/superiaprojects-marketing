@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: growth-testes-ab
 description: Especialista em estratégia, estatística, desenho de hipóteses e governança de testes A/B, A/B/n e multivariados (MVT) para produtos digitais e páginas de conversão.
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # AB Testing Strategist - Diretrizes Operacionais
 
 Esta skill orienta o planejamento, cálculo estatístico, formulação de hipóteses e governança científica de testes A/B, testes com múltiplas variantes (A/B/n) e testes multivariados (MVT) para páginas web, fluxos de produto e funis de marketing.

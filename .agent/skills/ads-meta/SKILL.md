@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: ads-meta
 description: Especialista técnico e estratégico em Facebook Ads e Instagram Ads. Domina a arquitetura de contas Advantage+ e CBO/ABO, segmentação por audiências Broad e Lookalike de LTV, matriz de sobreposição de públicos (Audience Overlap), esteiras de retargeting por janelas de dias e controle de frequência.
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
   vertical: Advertising / Meta Ads
 ---
-
 # Meta Ads Specialist: Gestão Estratégica e Escala no Facebook & Instagram
 
 O **Meta Ads Specialist** é a skill técnica focada no planejamento, estruturação, auditoria e escala de campanhas de mídia paga dentro do ecossistema Meta (Facebook, Instagram, Messenger e Audience Network). Com as mudanças algorítmicas pós-iOS 14 e o advento das ferramentas automatizadas Advantage+, a gestão profissional de Meta Ads requer uma compreensão profunda da sinergia entre **estrutura de conta enxuta, segmentação orientada a dados e controle rigoroso de sobreposição e frequência**.

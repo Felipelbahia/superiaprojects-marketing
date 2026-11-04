@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Nativa do Projeto
 name: geral-anti-slop
 description: Detects and removes AI writing patterns from text. Use when polishing drafts, cleaning AI-generated content, or ensuring writing sounds authentically human. Invoke with "run through slop detector", "clean this up", or "remove AI fingerprints".
+author: Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # AI Slop Detector
 
 ## What This Does

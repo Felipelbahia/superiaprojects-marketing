@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/anthropics/anthropic-quickstarts
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: revenue-campanhas
 description: >
   Planejamento integrado de campanhas de marketing digital e roteamento para a skill especialista de cada frente (conteúdo, social, email, SEO, GEO, mídia paga, métricas, lançamento). Gera parâmetros UTM e valida a campanha antes do lançamento. Use para planejar uma campanha que atravessa vários canais, montar o calendário, definir o rastreamento UTM ou destravar uma campanha parada. NÃO use para executar o trabalho de um canal específico (use a skill especialista da tabela de rotas, por exemplo seo-conteudo, social-estrategia, email-copy, ads-analise-de-desempenho ou revenue-gtm-e-posicionamento).
+author: Claude Skills & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Claude Skills & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Marketing Campaign Execution
 
 Plan, execute, and measure digital marketing campaigns across content, social, email, and analytics.

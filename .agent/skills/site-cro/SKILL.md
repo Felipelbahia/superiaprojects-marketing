@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: site-cro
 description: "Use para auditar e otimizar a conversão de uma página que já existe (landing page, home, preços, formulário, popup, cadastro): modelo LIFT, auditoria com nota, casamento anúncio × página, checklist de 15 pontos e ideias de teste. Gatilhos: \"a página não converte\", \"auditoria de CRO\", \"revisar a landing\", \"otimizar formulário\", \"popup de saída\", \"atrito no cadastro\". NÃO use para escrever o texto da página (use copy-landing-page), desenhar a interface (use site-interface-de-conversao), planejar o teste A/B e a estatística (use growth-testes-ab), gatilhos mentais (use revenue-psicologia) nem alterar uma página sem duplicar o que existe (use site-auditoria-de-interface)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
   vertical: Analytics & CRO / Conversion Rate Optimization
 ---
-
 # CRO Page Auditor: Otimização Heurística de Conversão e Eliminação de Atrito
 
 O **CRO Page Auditor** é a skill técnica dedicada à análise qualitativa, auditoria comportamental e otimização sistemática de páginas de destino (Landing Pages, Homepages, Páginas de Preços/Planos e Checkout). O objetivo central do CRO não é atrair mais tráfego, mas **extrair a máxima receita e leads qualificados do tráfego já existente**, identificando e removendo bloqueios cognitivos, fricção técnica e ansiedade do usuário.

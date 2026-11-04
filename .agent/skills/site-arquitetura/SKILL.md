@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: site-arquitetura
 description: "Use para planejar ou reestruturar a estrutura de um site: hierarquia de páginas, mapa do site (sitemap visual), padrão de URLs, menu, rodapé, breadcrumbs, navegação no celular e plano de links internos. Traz modelos prontos por tipo de site (SaaS, blog, e-commerce, documentação, híbrido, negócio local). Gatilhos: \"estrutura do site\", \"mapa do site\", \"arquitetura de informação\", \"menu do site\", \"URLs\", \"breadcrumb\", \"links internos\", \"planejar o site\". NÃO use para sitemap XML e rastreamento (use seo-tecnico), para páginas em escala por template (use seo-programatico), para dados estruturados (use seo-schema-markup), para o design visual das páginas (use site-interface-de-conversao) nem para o texto da página (use copy-landing-page)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Arquitetura de Site
 
 Primeiro passo de quem vai criar ou reestruturar um site: decidir **quais páginas existem, como se chamam, onde ficam e como se ligam**, antes de desenhar ou escrever qualquer uma. Os guias são em inglês; a entrega ao usuário sai em português.

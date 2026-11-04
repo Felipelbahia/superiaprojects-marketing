@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: data-funil-e-coortes
 description: Especialista em análise de queda de funil (drop-off), matriz de retenção por coortes, ativação de usuários, otimização de onboarding e CRO de paywalls.
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Funnel & Cohort Analyst - Diretrizes Operacionais
 
 Esta skill orienta o diagnóstico profundo de funis de conversão, análise longitudinal de retenção através de matrizes de coorte, aceleração do Time-to-Value (TTV) no onboarding e otimização de telas de paywall e upgrade em produtos digitais e plataformas SaaS.

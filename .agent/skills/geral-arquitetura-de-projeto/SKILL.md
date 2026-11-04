@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Nativa do Projeto
 name: geral-arquitetura-de-projeto
 description: Use when creating or reorganizing a marketing project's folders, when deciding where a piece (brand file, post, press pitch, monitoring report, asset, data, reference, plan) must be saved, or when a skill needs the project's destination map before writing a file.
+author: Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Arquitetura de projeto de marketing (onde cada coisa mora)
 
 ## Visão geral

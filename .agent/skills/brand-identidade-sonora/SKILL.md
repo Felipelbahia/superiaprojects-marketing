@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: brand-identidade-sonora
 description: "Use para definir a identidade sonora de uma marca: logo sonoro (1 a 3 segundos), estética de voz, moodboard de áudio e diretrizes de trilha, efeitos e silêncio para vídeo, podcast, aplicativo e eventos (etapa 8, uso audiovisual, do brand-builder). Gatilhos: \"logo sonoro\", \"identidade sonora\", \"trilha da marca\", \"sonic branding\". NÃO use para editar, mixar ou masterizar áudio (use audiovisual-podcast-e-audio), para transcrever (use audiovisual-transcricao), para gerar voz sintética ou produzir vídeo (projeto Edição de Vídeo com IA) nem para a identidade visual (use brand-visual-direction e brand-design-system)."
+author: ClawFu & Soundstripe & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu & Soundstripe & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: brand-builder, brand-visual-direction, conteudo-linha-de-producao, copy-hooks-video-curto, copy-vsl
 ---
-
 # Sonic Branding Strategist
 
 > Sound drives up to 96% greater brand recall than visual elements alone. Strategic sonic branding transforms generic background audio into an unmistakable acoustic identity that triggers instant emotional connection, increases trust, and establishes cognitive stickiness across Reels, YouTube videos, podcasts, and digital products.

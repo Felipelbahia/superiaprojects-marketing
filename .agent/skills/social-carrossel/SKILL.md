@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Nativa do Projeto
 name: social-carrossel
 description: "Planeja e redige copy lâmina a lâmina para carrosséis de Instagram e LinkedIn otimizados para renderização em modelos de imagem de IA. Aplica teto rígido de ~25 palavras de corpo por lâmina, gancho agressivo no slide 1, entrega de valor imediata no slide 2 (sem enrolação), 1 ideia por lâmina com metáfora visual tangível, slide de salvamento (Save-Bait) com checklist/matriz, frase screenshotable e modo de auditoria com scorecard de 7 regras. Conecta dinamicamente com as marcas de _brands/."
+author: Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Carousel Copy — Redação e Estruturação de Carrosséis para Modelos de Imagem de IA
 
 > **Princípio Central:** O copy decide a estrutura e o ritmo do carrossel; o modelo de imagem de IA apenas materializa visualmente o plano. Nunca gere imagens sem antes ter o plano lâmina a lâmina fechado, validado e com teto rigoroso de palavras.

@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: email-newsletter
 description: Writing coach that extracts educational content from your daily experiences and turns it into publish-ready newsletter drafts, combined with editorial playbooks, newsletter growth strategies, curation frameworks, and industry templates (Tech, Fintech, HR, Sales, Ops).
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: newsletter, newsletter-creation-curation
 ---
-
 # Newsletter Brainstorm - Writing Coach
 
 ## RESOURCES

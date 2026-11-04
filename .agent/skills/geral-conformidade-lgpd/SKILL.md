@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: geral-conformidade-lgpd
 description: "Use para conformidade de marketing digital: LGPD e GDPR, consentimento (Consent Mode v2), formulários de captura, revisão de contratos, NDAs de influenciadores e análise de termos de uso. É triagem para orientar o trabalho de marketing; a decisão jurídica final é de advogado. Gatilhos: \"LGPD\", \"GDPR\", \"consentimento\", \"política de privacidade\", \"NDA\", \"contrato de influenciador\". NÃO use para implementar tags e eventos de rastreamento (use data-web-ga4) nem para regras de e-mail e entregabilidade (use email-entregabilidade)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Marketing Compliance, LGPD & GDPR (Antigravity Kit)
 
 > Guia mestre de governança, conformidade regulatória e proteção de dados para operações de tráfego, captura de leads, automação de e-mail e parcerias comerciais no Hub `0 Mkt`.

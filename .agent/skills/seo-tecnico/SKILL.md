@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-tecnico
 description: "Use when performing technical SEO audits, diagnosing crawling or indexing issues, auditing Core Web Vitals (LCP, INP, CLS), configuring robots.txt (including AI crawlers like GPTBot), validating XML sitemaps, fixing HTTP status codes, or diagnosing site speed drops. Do NOT use for backlinks or link building (use seo-autoridade-e-backlinks)."
+author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: seo-on-page, seo-schema-markup, seo-conteudo
 ---
-
 # Technical SEO Checker
 
 > Comprehensive technical audit framework covering crawlability, indexability, Core Web Vitals, server response codes, XML sitemaps, robots.txt directives, and modern AI crawler governance.

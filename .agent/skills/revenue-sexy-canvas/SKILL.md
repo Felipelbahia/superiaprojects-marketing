@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Nativa do Projeto
 name: revenue-sexy-canvas
 description: "Framework mestre de psicologia de consumo e desejos humanos baseado na metodologia Sexy Canvas de André Diamand (7 pecados capitais + 7 elementos da criança interior). Aplica auditoria, adaptação e eletrificação de apelo emocional para produtos, textos de copywriting, criativos visuais e roteiros. Use para: diagnosticar por que uma oferta não engaja ou não converte, amplificar o desejo de compra, enriquecer produtos com dopamina e auditar peças sob a lente dos 14 motores emocionais. NÃO use para escrever a peça final (o Canvas só dá parecer e handoff; use copy-conversao, brand-voice-messaging ou a skill que executa), para psicologia geral de persuasão e vieses (use revenue-psicologia) nem para decisões de negócio (use revenue-modelos-mentais). Dentro do brand-builder, o procedimento da etapa 5 está em brand-builder/desejo.md."
+author: Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Sexy Canvas Master (Psicologia de Desejos & Conversão)
 
 > Sistema consultivo e diagnóstico unificado dos 14 motores emocionais humanos (7 Pecados Capitais + 7 Elementos da Criança Interior) criado por André Diamand, integrando auditoria e calibração para Produtos, Textos (Copywriting) e Criativos Visuais.

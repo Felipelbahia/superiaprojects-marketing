@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: vendas-prospeccao-de-leads
 description: "Use para encontrar e preparar prospectos B2B antes do contato: achar decisores por cargo, porte e setor, montar lista de leads, enriquecer contatos (e-mail, telefone, tecnologia usada), conferir e-mails antes do envio e monitorar sinais de compra como rodada de investimento, vagas abertas e troca de tecnologia. Gatilhos: \"ache decisores\", \"lista de prospects\", \"pesquisa de leads\", \"enriquecer contatos\", \"sinais de compra\", \"quem está contratando\", \"Apollo\". NÃO use para escrever o e-mail frio ou a cadência (use vendas-cold-email), pontuar e rotear leads ou limpar o CRM (use vendas-crm), nem para qualificar um negócio com MEDDIC ou BANT (use vendas-pipeline)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Vendas: prospecção de leads
 
 Guia para a etapa que vem **antes** do e-mail frio: descobrir quem abordar, com que dado e em que momento. Os três arquivos estavam dentro de `vendas-cold-email` (2026-10-20), cuja descrição trata de escrever e sequenciar mensagens e não mencionava busca de leads.

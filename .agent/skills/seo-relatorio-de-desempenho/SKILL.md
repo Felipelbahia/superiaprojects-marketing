@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-relatorio-de-desempenho
 description: "Comprehensive SEO & GEO performance tracking, executive reporting, anomaly detection, ranking volatility alerts, and KPI analytics across Google, Bing, and generative AI search engines (Perplexity, SearchGPT, Claude, Gemini)."
+author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: seo-conteudo, seo-geo, seo-tecnico, seo-on-page
 ---
-
 # SEO Performance Reporter & Rank Tracker
 
 > Monitor keyword positions across traditional and AI-generated search results, generate executive performance dashboards, track organic KPIs, and detect traffic anomalies and ranking crashes before they impact business revenue.

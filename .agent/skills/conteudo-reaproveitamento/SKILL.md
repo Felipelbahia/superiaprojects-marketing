@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: conteudo-reaproveitamento
 description: "One-to-many content multiplication engine. Transform long-form assets (podcasts, webinars, whitepapers, pillar articles) into high-performing social posts, email newsletters, carousels, and video scripts using semantic content architectures. NÃO use para estratégia e calendário de conteúdo (use conteudo-estrategia) nem para escrever um artigo de blog (use conteudo-post-de-blog)."
+author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: seo-conteudo, conteudo-post-de-blog, social-estrategia, geral-anti-slop
 ---
-
 # Content Repurposer & Multiplication Engine
 
 > Transform single high-effort assets into multi-channel content ecosystems. Use the 1-to-Many Repurposing Pyramid to extract text posts, threads, carousels, newsletters, and video scripts from long-form audio, video, interviews, and cornerstone articles without diluting message quality.

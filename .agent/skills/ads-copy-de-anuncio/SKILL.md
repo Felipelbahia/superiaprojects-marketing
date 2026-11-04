@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: ads-copy-de-anuncio
 description: Redator especializado em copywriting de alta conversão para mídia paga e tráfego direto. Produz títulos e descrições para Google Search (RSA), textos primários curtos e longos para Meta Ads, roteiros dinâmicos para TikTok Ads e anúncios corporativos para LinkedIn Ads, com matriz multivariada de testes de copy.
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
   vertical: Advertising / Copywriting
 ---
-
 # Paid Ad Copywriter: Redação Persuasiva para Mídia Paga
 
 O **Paid Ad Copywriter** é a skill técnica dedicada à criação de textos de anúncios de alta conversão para plataformas de mídia paga (Google Ads, Meta Ads, LinkedIn Ads, TikTok Ads). Diferente do copywriting orgânico ou institucional, o texto para tráfego pago opera sob restrições severas de espaço (limites de caracteres), filtros agressivos de atenção do usuário e concorrência direta no leilão.

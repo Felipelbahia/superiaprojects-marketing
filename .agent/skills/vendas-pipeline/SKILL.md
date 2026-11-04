@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: vendas-pipeline
 description: Especialista em orquestração de pipeline comercial B2B, qualificação rigorosa (MEDDIC e BANT), previsão de receita (Forecasting), gestão de risco de negócios, preparação de reuniões de descoberta, passagem de bastão de Vendas para Sucesso do Cliente e comissionamento de vendas (OTE, aceleradores, cota). NÃO use para materiais de venda como deck, case, depoimento, script de demo, objeções e RFP (use vendas-materiais-de-venda), QBR e renovação de contrato (use growth-retencao-e-churn), pontuação de leads, higiene de CRM e RevOps (use vendas-crm), técnicas de conversação e negociação (use vendas-metodologias-b2b), cold email e cadências de prospecção (use vendas-cold-email), automação de email e réguas de nutrição (use email-automacao) nem atribuição de marketing (use data-atribuicao-e-relatorios).
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Sales Pipeline Orchestrator - Diretrizes Operacionais
 
 Esta skill orienta a gestão sistemática do funil de vendas B2B, governança de dados no CRM, frameworks de qualificação para contas enterprise (MEDDIC/BANT), modelos preditivos de fechamento (Forecasting), auditoria de riscos em negócios abertos e alinhamento de RevOps. QBR e renovações contratuais ficam com `growth-retencao-e-churn`.

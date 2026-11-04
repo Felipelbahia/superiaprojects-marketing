@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: social-youtube-para-notas
 description: Process YouTube videos into summarized Obsidian notes. Use when given a YouTube URL to summarize, extract insights, or turn videos into notes. Triggers on "summarize this video", "process this YouTube", "what's this video about", or any YouTube URL shared for processing.
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # YouTube Processor
 
 ## What This Does

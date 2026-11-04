@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-palavras-chave
 description: "Use para pesquisar palavras-chave e intenção de busca: levantar termos, agrupar por tema e intenção, montar clusters de tópicos, analisar a página de resultados (SERP) de uma palavra e achar lacunas de conteúdo, com ou sem a extensão Keywords Everywhere. Gatilhos: \"pesquisa de palavras-chave\", \"keyword research\", \"intenção de busca\", \"cluster de tópicos\", \"o que o Google mostra para esta busca\", \"volume e dificuldade\". NÃO use para escrever o artigo (use seo-conteudo), para SEO programático (use seo-programatico), para auditar uma página (use seo-on-page) nem para tendências de conteúdo em redes sociais (use conteudo-tendencias)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Pesquisa de Palavras-Chave
 
 Reúne os seis guias de pesquisa de palavras-chave que estavam dentro de `seo-conteudo`. O texto base é inglês.

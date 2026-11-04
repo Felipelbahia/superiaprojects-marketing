@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: brand-audience
 description: "Use para definir ou refazer personas, segmentos, jobs to be done, objeções e hábitos de mídia de uma marca (etapa 3 do brand-builder). Gatilhos: \"persona da marca\", \"público da marca\", \"personas finas\". NÃO use para ICP, pontuação de aderência e JTBD de produto em geral (use persona-icp) nem para validar ideia com entrevistas (use persona-descoberta-de-clientes)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Brand Audience
 
 ## Overview

@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: growth-indicacao-e-afiliados
 description: "Use para desenhar programa de indicação de clientes (recompensa nos dois lados), programa de afiliados e parceiros, modelo de comissão e embaixadores, e para calcular o coeficiente viral (K-factor). Gatilhos: \"programa de indicação\", \"afiliados\", \"comissão\", \"embaixadores\", \"K-factor\", \"loop viral\". NÃO use para estratégia geral de growth (AARRR, North Star, experimentos ICE: use growth-frameworks), retenção e churn (use growth-retencao-e-churn) nem copy de anúncio (use ads-copy-de-anuncio)."
+author: Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: copy-conversao, revenue-gtm-e-posicionamento, revenue-oferta, growth-retencao-e-churn
 ---
-
 # Referral & Affiliate Growth Architect
 
 > Turn satisfied customers and external distribution partners into primary acquisition channels. Guides the design, launch, and optimization of two-sided referral programs, viral coefficient ($K$-factor) loops, recurring affiliate commission architectures, and partner recruitment funnels.

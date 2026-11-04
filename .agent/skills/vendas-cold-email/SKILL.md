@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: vendas-cold-email
 description: Especialista em prospecção ativa B2B via cold email e cadências outbound. Domina a personalização em 4 níveis (icebreakers contextuais), estrutura de emails curtos de alto impacto, cadências de follow-up multitoque sem passivo-agressividade, CTAs de baixo atrito e infraestrutura de caixas secundárias. NÃO use para encontrar decisores, montar lista de leads, enriquecer contatos ou monitorar sinais de compra (use vendas-prospeccao-de-leads), nem para pontuar e rotear leads no CRM (use vendas-crm).
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
   vertical: Email / Cold Outreach
 ---
-
 # Cold Outreach Specialist: Prospecção Ativa B2B de Alta Resposta
 
 O **Cold Outreach Specialist** é a skill técnica dedicada ao planejamento, redação e estruturação de cadências de prospecção fria (*Cold Email*) para o mercado corporativo (B2B, Enterprise e Mid-Market). Em um cenário saturado de automações genéricas e filtros corporativos agressivos, esta skill prioriza **relevância contextual, concisão extrema e foco no interesse do tomador de decisão**, transformando contatos frios em conversas comerciais qualificadas.

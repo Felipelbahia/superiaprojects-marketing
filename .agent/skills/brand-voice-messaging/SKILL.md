@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: brand-voice-messaging
 description: "Use para definir ou refazer tom de voz, vocabulário, \"o que NÃO comunicar\", mensagens e pilares de conteúdo de uma marca (etapa 4 do brand-builder), ou extrair a voz de textos existentes. Gatilhos: \"tom de voz\", \"brand voice\", \"pilares de conteúdo\", \"o que não comunicar\". NÃO use para escrever a peça (use copy-conversao), planejar calendário e formatos (use conteudo-estrategia) nem limpar texto com cara de IA (use geral-anti-slop)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Brand Voice & Messaging
 
 ## Overview

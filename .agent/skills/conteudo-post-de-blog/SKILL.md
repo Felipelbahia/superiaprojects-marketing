@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: conteudo-post-de-blog
 description: Transform brain dumps into polished blog posts in the brand's own voice. Use when the user wants to write a blog post with scattered ideas, talking points, and conclusions that need organization into a cohesive, conversational narrative.
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Blog Writer
 
 Transform unstructured brain dumps into polished blog posts na voz da marca.

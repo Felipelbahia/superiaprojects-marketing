@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: brand-essence
 description: "Use para definir ou aprofundar essência, crenças, história de origem, inimigo, posicionamento, categoria e arquétipo de uma marca (etapas 1 e 2 do brand-builder). Gatilhos: \"propósito\", \"posicionamento da marca\", \"Primal Branding\", \"arquétipo\". NÃO use para posicionar produto no mercado com GTM, categoria e proposta de valor de lançamento (use revenue-gtm-e-posicionamento) nem para analisar concorrentes (use revenue-inteligencia-competitiva)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Brand Essence
 
 ## Overview

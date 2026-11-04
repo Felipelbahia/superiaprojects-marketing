@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Nativa do Projeto
 name: social-direcao-de-arte-ia
 description: "Direção de arte e injeção automática de Design System em prompts de modelos de imagem de IA (ChatGPT/GPT Image 2, FLUX, Midjourney) para carrosséis em proporção 4:5 (1080x1350). Implementa o Workflow do Slide Âncora (geração de 3 variantes do hook e do primeiro slide de valor; travamento do vencedor como imagem de referência anexada para clonar layout, paleta e consistência estética nas lâminas seguintes), checklist de qualidade de 7 pontos e conexão dinâmica com as marcas de _brands/."
+author: Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Design Taste — Direção de Arte e Injeção de Design System para Carrosséis via IA
 
 > **Princípio Central:** Modelos de imagem de IA não possuem bom gosto espontâneo. Sem direcionamento explícito, eles misturam tipografias incompatíveis, cores saturadas sem critério e layouts sufocados. O `social-direcao-de-arte-ia` atua como Diretor de Arte: injeta as regras visuais da marca ativa e o Workflow do Slide Âncora diretamente na estrutura de cada prompt.

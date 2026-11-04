@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: revenue-lancamento-tecnico
 description: "Use para planejar o lançamento de API, SDK, ferramenta para desenvolvedores ou produto técnico: níveis de lançamento (tiers), preparação de desenvolvedores (documentação, exemplos, SDK), mensagens de lançamento e métricas. Gatilhos: \"lançar API\", \"lançamento GA/beta\", \"release técnico\", \"preparar desenvolvedores\". NÃO use para lançar curso, produto digital ou funcionalidade comum (use revenue-lancamento), para posicionamento e estratégia de go-to-market (use revenue-gtm-e-posicionamento), campanha multicanal (use revenue-campanhas) nem PRD (use produto-prd)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Technical Launch Planner
 
 ## Overview

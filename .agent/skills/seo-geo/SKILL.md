@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-geo
 description: "Use when optimizing content for Generative Engine Optimization (GEO), AI citations, Perplexity, Google AI Overviews, SearchGPT, Claude, or Gemini; making brand content quotable by LLMs; or establishing entity authority in Knowledge Graphs. Do NOT use for creating new content from scratch with research and expert quotes (use conteudo-pesquisa), for keyword-driven SEO articles (use seo-conteudo) or for structured data markup (use seo-schema-markup)."
+author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: seo-conteudo, seo-on-page, seo-schema-markup
 ---
-
 # GEO Content Optimizer (Generative Engine Optimization)
 
 > Optimize digital content to maximize citations, mentions, and source inclusion across AI search engines and answer engines—including Perplexity AI, Google AI Overviews, OpenAI SearchGPT, Claude, and Gemini.

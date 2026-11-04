@@ -1,12 +1,15 @@
 ---
+# Source: https://github.com/vercel
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Vanilla de Terceiros
 name: site-react-composicao
 description: "Use ao refatorar componentes React com excesso de props booleanas, ao montar bibliotecas de componentes flexíveis ou projetar APIs reutilizáveis (componentes compostos, render props, context providers, mudanças do React 19). NÃO use para desempenho React/Next.js (use site-react-desempenho), tokens e variantes Tailwind (use site-tailwind-design-system), nem para copy ou design de página. Escrever código de aplicação exige autorização explícita (regra 1.5)."
+author: Vercel Engineering
 license: MIT
 metadata:
-  author: vercel
+  author: Vercel Engineering
   version: 1.0.0
 ---
-
 # React Composition Patterns
 
 Composition patterns for building flexible, maintainable React components. Avoid

@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: data-atribuicao-e-relatorios
 description: Especialista em modelagem de atribuição multi-canal, geração de relatórios executivos de marketing, auditoria de saúde de contas e dashboards automatizados para liderança. Use para contar o resultado do marketing em todos os canais. NÃO use para decidir alocação de verba, pausar anúncios ou projetar ROAS de campanha (use ads-analise-de-desempenho), engenharia de tags GTM e dataLayer (use data-web-ga4), coortes e retenção in-app (use data-funil-e-coortes) nem execução de testes A/B (use growth-testes-ab).
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Marketing Attribution & Reporter - Diretrizes Operacionais
 
 Esta skill orienta a análise comparativa de modelos de atribuição multi-toque (MTA), consolidação de métricas executivas de marketing (CAC, ROAS, LTV, MER), produção de relatórios narrativos de alta densidade e envio de alertas estruturados de desempenho para Slack e WhatsApp.

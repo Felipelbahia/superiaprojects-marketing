@@ -1,12 +1,15 @@
 ---
+# Source: https://github.com/vercel
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Vanilla de Terceiros
 name: site-diretrizes-web-codigo
 description: "Use para revisar CÓDIGO de interface contra as Web Interface Guidelines da Vercel (acessibilidade, UX, boas práticas), com saída terse em arquivo:linha. Busca a lista atual online a cada uso: precisa de acesso à internet. Gatilhos: \"revise minha UI\", \"cheque acessibilidade do código\", \"audite o design do site\". NÃO use para auditar a conversão de uma página (use site-cro), desenhar a interface (use site-interface-de-conversao) nem alterar página existente sem duplicar o que há (use site-auditoria-de-interface)."
+author: Vercel Engineering
 license: MIT
 metadata:
-  author: vercel
+  author: Vercel Engineering
   version: 1.0.0
 ---
-
 # Web Interface Guidelines
 
 Review files for compliance with Web Interface Guidelines.

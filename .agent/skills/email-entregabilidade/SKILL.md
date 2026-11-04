@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: email-entregabilidade
 description: Engenheiro de infraestrutura técnica e proteção de entregabilidade de email (Inbox Placement). Audita e configura registros de DNS (SPF, DKIM 2048-bit, DMARC com política p=reject, BIMI), gerencia aquecimento gradual (Warm-up de 21 dias), higiene profunda de listas contra spam traps e monitora reputação no Google Postmaster Tools.
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
   vertical: Email / Deliverability & Infrastructure
 ---
-
 # Email Deliverability Guardian: Infraestrutura, Autenticação e Reputação
 
 O **Email Deliverability Guardian** é a skill técnica focada na física invisível do envio de emails e na garantia de que as mensagens alcancem a **caixa de entrada primária (*Inbox Placement*)** dos principais provedores (Google Workspace/Gmail, Microsoft 365/Outlook, Yahoo, Apple Mail). A melhor estratégia de copywriting e o funil mais sofisticado tornam-se inúteis se os disparos caírem na pasta de spam ou forem rejeitados na camada de transporte (*SMTP Drop*).

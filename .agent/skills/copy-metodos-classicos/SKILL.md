@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: copy-metodos-classicos
 description: "Use para aplicar o método de um livro clássico de copywriting, persuasão e marketing a uma peça ou estratégia: Gary Halbert (Boron Letters), David Ogilvy, Eugene Schwartz (5 níveis de consciência), Dan Kennedy, Russell Brunson (Expert Secrets), Heath (Made to Stick), Seth Godin (Permission Marketing e Purple Cow) e StoryBrand. Gatilhos: \"nível de consciência\", \"método Halbert\", \"estilo Ogilvy\", \"StoryBrand\", \"copy de resposta direta\", \"ideia que gruda\". NÃO use para escrever a copy final de conversão com frameworks práticos (use copy-conversao), para landing page (use copy-landing-page), para roteiro de VSL (use copy-vsl) nem para psicologia de consumo (use revenue-psicologia)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Métodos de Copywriting
 
 Biblioteca de dez livros de método que estavam dentro de `copy-conversao`. Cada guia resume os princípios do livro e como aplicá-los. O texto base é inglês.

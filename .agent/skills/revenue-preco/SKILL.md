@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: revenue-preco
 description: "Use para definir preço e pacotes de SaaS e produto digital: preço por valor, pesquisa de preço (Van Westendorp, MaxDiff), planos Good-Better-Best, freemium vs teste grátis, validação de disposição a pagar, quando subir preço e preço enterprise. Gatilhos: \"quanto cobrar\", \"planos e preços\", \"página de preços\", \"freemium\", \"aumentar preço\". NÃO use para montar oferta, bônus e garantia (use revenue-oferta) nem para rodar teste A/B de preço (use growth-testes-ab)."
+author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: revenue-gtm-e-posicionamento, persona-icp, copy-conversao
 ---
-
 # Pricing Strategist & Monetization Architect
 
 > Architect, validate, and optimize monetization models for SaaS and digital products. Design value-based pricing tiers, determine willingness-to-pay using econometric models (Van Westendorp, Gabor-Granger), select defensible value metrics, and engineer expansion loops that drive Net Revenue Retention (NRR).

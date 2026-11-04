@@ -1,12 +1,15 @@
 ---
+# Source: https://github.com/fal-ai
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: audiovisual-imagem-flux-prompts
 description: Comprehensive guide for BFL FLUX image generation models. Covers prompting, T2I, I2I, structured JSON, hex colors, typography, multi-reference editing, and model-specific best practices for FLUX.2 and FLUX.1 families.
+author: Black Forest Labs / Modificado por Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
-  author: Black Forest Labs
+  author: Black Forest Labs / Modificado por Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # FLUX Best Practices
 
 Use this skill when generating prompts for any BFL FLUX model to ensure optimal image quality and accurate prompt interpretation.

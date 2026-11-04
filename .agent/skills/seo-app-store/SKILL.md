@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-app-store
 description: "Especialista em App Store Optimization (ASO) para Apple App Store e Google Play Store. Abrange pesquisa de palavras-chave mobile, otimização de metadados visuais e textuais, Custom Product Pages (CPP), testes A/B de ícones e screenshots, conversão de downloads e gestão de avaliações. Use para: ranquear aplicativos nas buscas mobile, otimizar fichas de lojas, estruturar lançamentos de apps e maximizar taxas de instalação orgânica."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # App Store Optimization (ASO) Master
 
 > Arquitetura técnica e estratégica para maximizar a visibilidade orgânica e as taxas de conversão de downloads na Apple App Store (iOS) e Google Play Store (Android).

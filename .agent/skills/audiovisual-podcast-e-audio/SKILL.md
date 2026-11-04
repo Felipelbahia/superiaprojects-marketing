@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: audiovisual-podcast-e-audio
 description: Especialista em pós-produção de áudio, mixagem e masterização de podcasts, conformidade ACX para audiobooks, transcrição com Whisper, direção de locução e sound design. Logo sonoro e identidade de áudio de marca ficam em brand-identidade-sonora.
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Podcast & Audio Engineer - Diretrizes Operacionais
 
 Esta skill orienta a engenharia, restauração, mixagem, masterização e automação de áudio para podcasts corporativos, videoaulas, audiobooks e identidades sonoras de marca, estabelecendo padrões técnicos rigorosos de sonoridade (LUFS), clareza vocal e transcrição fonética com IA.

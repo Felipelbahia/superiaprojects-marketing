@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: vendas-materiais-de-venda
 description: "Use para criar os materiais que o time comercial usa para fechar negócio (em inglês, sales enablement): deck de vendas, one-pager, pitch personalizado para um prospecto, script de demonstração por tipo de call, mapa de objeções e respostas, case de sucesso, coleta de depoimentos e resposta a RFP/RFI. Gatilhos: \"faça um case\", \"preciso de um depoimento\", \"responda esta RFP\", \"script de demo\", \"objeções de preço\", \"one-pager\", \"pitch para esta empresa\". NÃO use para qualificar leads, prever receita ou gerir negócios no funil (use vendas-pipeline), técnicas de conversa e negociação (use vendas-metodologias-b2b), deck de investidor (use audiovisual-pitch-deck), battlecard de concorrente (use revenue-inteligencia-competitiva) nem cold email (use vendas-cold-email)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Vendas: materiais de venda
 
 Em inglês isso se chama *sales enablement*: tudo o que o vendedor leva para a conversa (apresentação, folha resumo, roteiro de demo, respostas para "não", prova de que funciona). Esta skill reúne sete guias que estavam dentro de `vendas-pipeline` (2026-10-20), onde ficavam fora do assunto: aquela skill trata de funil, qualificação e previsão.

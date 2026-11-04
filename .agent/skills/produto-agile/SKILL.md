@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: produto-agile
 description: Agile product management, Scrum practices, and team collaboration for iterative product development.
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Agile Product Management Skill
 
 Apply agile methodologies to product development and team collaboration. Master sprint planning, backlog management, and continuous improvement.

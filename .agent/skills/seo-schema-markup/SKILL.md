@@ -1,12 +1,15 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-schema-markup
 description: 'Use when the user asks to "add schema markup", "generate structured data", "JSON-LD", "rich snippets", "FAQ schema", "add FAQ rich results", "I want star ratings in Google", "product markup", or "recipe schema". Generates structured data markup (Schema.org JSON-LD) to enable rich results in search engines including FAQ snippets, How-To cards, Product listings, Reviews, and more. For meta tag optimization, see meta-tags-optimizer. For broader technical SEO, see seo-tecnico.'
+author: aaron-he-zhu & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: aaron-he-zhu & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Schema Markup Generator
 
 

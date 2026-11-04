@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: audiovisual-slidev
 description: Comprehensive guide for Slidev - a web-based presentation framework for developers. Covers Markdown syntax, layouts, components, animations, theming, and exporting. Use this skill when creating or working with developer presentations using Slidev.
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: slidev-presentations
 ---
-
 # Slidev
 
 ## When NOT to Use

@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: site-tailwind-design-system
 description: "Use para escrever o CÓDIGO de um design system ou de componentes com Tailwind CSS v4 e React 19: tokens com @theme, variantes com CVA, formulários, grid, animações nativas, modo escuro, migração v3 para v4; inclui trechos de HTML Tailwind para páginas de marketing (references/tailwind-patterns.md). NÃO use para decidir cores, fontes e identidade da marca (use brand-visual-direction e brand-design-system), para princípios visuais de página (use site-interface-de-conversao), para revisar conformidade de UI (use site-diretrizes-web-codigo) nem para desempenho React/Next.js (use site-react-desempenho)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Tailwind Design System (v4)
 
 Build production-ready design systems with Tailwind CSS v4, including CSS-first configuration, design tokens, component variants, responsive patterns, and accessibility.

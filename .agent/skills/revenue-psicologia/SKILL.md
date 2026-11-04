@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: revenue-psicologia
 description: "Use para aplicar psicologia do consumidor e economia comportamental a uma peça, oferta ou página: princípios de persuasão de Cialdini, vieses cognitivos (Kahneman e Thaler), modelo de comportamento de BJ Fogg, psicologia de preço, arquitetura de escolha e construção de confiança. Gatilhos: \"psicologia\", \"viés cognitivo\", \"gatilho mental\", \"prova social\", \"escassez\", \"ancoragem\", \"por que as pessoas compram\". NÃO use para auditar uma peça pelos 14 motores emocionais do Sexy Canvas (use revenue-sexy-canvas), para modelos mentais gerais de decisão de negócio (use revenue-modelos-mentais), para escrever a copy pronta (use copy-conversao) nem para auditar a conversão de uma página (use site-cro)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Psicologia de Marketing
 
 Reúne em um só lugar o que antes estava espalhado entre `growth-frameworks` e `revenue-gtm-e-posicionamento`: quatro guias sobre como as pessoas decidem e como isso vira marketing. O texto base dos guias é inglês.

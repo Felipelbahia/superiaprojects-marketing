@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-autoridade-e-backlinks
 description: "Use para analisar e conquistar autoridade de domínio e backlinks: avaliar o perfil de links, identificar links tóxicos, medir a autoridade do domínio (rubrica CITE), montar estratégia de link building e escrever e-mails de outreach e digital PR. Gatilhos: \"backlinks\", \"perfil de links\", \"link building\", \"autoridade de domínio\", \"links tóxicos\", \"outreach para links\". NÃO use para links internos e arquitetura do site (use seo-on-page), para auditoria técnica de rastreio (use seo-tecnico), para assessoria de imprensa e press release (use pr-assessoria-de-imprensa) nem para prospecção comercial por e-mail (use vendas-cold-email)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Autoridade e Backlinks
 
 Reúne os oito guias de links externos e autoridade que estavam espalhados entre `seo-on-page` e `seo-tecnico`. O texto base é inglês, exceto onde indicado.

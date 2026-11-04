@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: ads-criativos
 description: Estrategista e analista de criativos de alta conversão para mídia paga. Concebe, roteiriza e valida formatos em vídeo UGC, motion e estáticos, combate a fadiga de criativos (Creative Fatigue), analisa concorrentes (Ad Spy) e orquestra pipelines com IA generativa para anúncios.
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
   vertical: Advertising / Paid Media
 ---
-
 # Ad Creative Strategist: Engenharia de Criativos de Alta Performance
 
 O **Ad Creative Strategist** é a skill especializada no desenvolvimento, teste, análise e otimização contínua de peças criativas para tráfego pago (Meta Ads, TikTok Ads, YouTube Ads, LinkedIn Ads e Display). Em um ecossistema de anúncios dominado por automação e algoritmos de lances inteligentes (Advantage+, Performance Max), o **criativo é a principal alavanca de segmentação e diferenciação de custos (CPA/ROAS)**.

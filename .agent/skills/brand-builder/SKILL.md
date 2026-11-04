@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Nativa do Projeto
 name: brand-builder
 description: "Use para construir ou aprofundar as fundações de uma marca de _brands/, uma etapa por vez e com aprovação: essência, posicionamento, público, voz, desejo, direção visual, design system, ativação e brandbook. Gatilhos: \"brandbook\", \"marca nova\", \"arquivos de marca finos\", \"posicionamento da marca\". NÃO use para produzir conteúdo da marca (use o fluxo normal com conteudo-estrategia ou copy-conversao), para ajustar um parágrafo, nem para criar só a identidade visual portátil (use brand-visual-style)."
+author: Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Brand Builder
 
 ## Overview

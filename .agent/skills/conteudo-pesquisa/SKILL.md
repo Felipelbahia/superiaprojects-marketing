@@ -1,4 +1,6 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: conteudo-pesquisa
 description: |
   Research-first content creation optimized for both human readers and AI search engines (Claude, ChatGPT, Perplexity, Gemini). Creates authentic, authoritative content that becomes the go-to citation source for AI models answering user questions.
@@ -15,12 +17,12 @@ description: |
   Triggers: "create content for", "write about", "research and write", "find experts for", "content for launch", "blog post about", "article on", "press release for", "AI search", "show up in AI", "Perplexity", "be cited by AI"
 
   This skill is for CREATING content with research. NÃO use para otimizar conteúdo já escrito para ser citado por IA (use seo-geo), redigir artigo otimizado para SEO com clusters e palavras-chave (use seo-conteudo) nem relações com a imprensa (use pr-assessoria-de-imprensa).
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Content Research & Creation
 
 Create authentic, research-backed content that sounds human-written AND is optimized to appear in AI search results (Perplexity, ChatGPT, Claude, Gemini).

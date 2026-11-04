@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Nativa do Projeto
 name: pr-assessoria-de-imprensa
 description: "Use when planejar estratégias de imprensa, produzir pautas e press releases para veículos de comunicação, redigir pitches individualizados para jornalistas, estruturar Data PR com dados proprietários, conduzir newsjacking reativo de notícias quentes, preparar media training para entrevistas ou emitir notas oficiais e holding statements de gestão de crise, detectar sinais precoces de crise, coordenar a resposta e conduzir a recuperação de reputação. Triggers: \"assessoria de imprensa\", \"press release\", \"pitch para jornalista\", \"falar com repórter\", \"gancho de notícia\", \"disparar para a mídia\", \"divulgação na imprensa\", \"nota oficial\", \"comunicação de crise\", \"media kit\", \"clipping\", \"earned media\". NÃO use para posts de redes sociais (use social-estrategia) nem para backlinks e menções com foco em SEO (use seo-autoridade-e-backlinks)."
+author: Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Assessoria de Imprensa & Relações Públicas (Earned Media)
 
 ## Visão Geral & Filosofia Central

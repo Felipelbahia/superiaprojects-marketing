@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: revenue-modelos-mentais
 description: "Use quando uma decisão é difícil, cara ou difícil de desfazer e pede raciocínio estruturado: pensamento de segunda ordem, decisões reversíveis ou irreversíveis, minimização do arrependimento, primeiros princípios, inversão, seis chapéus, matriz de Eisenhower, pre-mortem de projeto ou lançamento, técnicas de solução de problemas e conselho de negócio por 9 lentes. Gatilhos: \"devo fazer X\", \"vale a pena\", \"qual o risco\", \"estou travado\", \"priorizar\", \"pivotar\", \"decisão estratégica\". NÃO use para métricas e estratégia de crescimento (use growth-frameworks), psicologia de quem compra (use revenue-psicologia), pre-mortem de uma previsão ou forecast (use revenue-premortem-previsao)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Modelos Mentais de Decisão
 
 Apoio ao raciocínio quando a decisão importa. Reúne 14 guias que antes estavam em `growth-frameworks` e `revenue-gtm-e-posicionamento`. O texto base dos guias é inglês, exceto onde indicado.

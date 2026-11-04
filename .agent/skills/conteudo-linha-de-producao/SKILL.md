@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: conteudo-linha-de-producao
 description: "Use when: orquestrar a linha de produção unificada de conteúdo de alta retenção e conversão para Reels, TikTok, Shorts e Carrosséis; conecta a marca ativa (_brands/), psicologia comportamental (revenue-sexy-canvas), mineração de dados (hook-mining), engenharia reversa (reel-analyzer e viral-carousel), geração de carrosséis via IA (social-carrossel e social-direcao-de-arte-ia), retenção visual (copy-hooks-video-curto), motores de mídia (Remotion, no projeto de edição de vídeo) e filtro anti-slop."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Content Factory — Esteira Unificada de Produção de Conteúdo
 
 > **Visão Geral:** O `conteudo-linha-de-producao` é o motor orquestrador do `0 Mkt`. Ele integra todas as skills analíticas, psicológicas e operacionais em uma linha de montagem de 8 etapas, transformando dados brutos de concorrentes e inteligência de marca em peças finais prontas para gravação ou renderização automatizada.

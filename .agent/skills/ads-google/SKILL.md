@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: ads-google
 description: Especialista técnico em Google Ads abrangendo Search, Performance Max (PMax), YouTube e Display. Domina a arquitetura de contas temáticas, mineração contínua de termos de busca (Search Term Mining), diagnóstico e elevação de Quality Score (QS), controle de canibalização de palavras-chave, auditoria de ativos/extensões e estratégias de lances inteligentes (Smart Bidding).
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
   vertical: Advertising / Google Ads
 ---
-
 # Google Ads Specialist: Engenharia de Tráfego de Intenção e Performance Max
 
 O **Google Ads Specialist** é a skill técnica dedicada à gestão avançada de anúncios no ecossistema do Google (Rede de Pesquisa, Performance Max, YouTube Ads, Rede de Display e Demand Gen). Diferente de canais baseados em interrupção social, o Google Ads opera prioritariamente sobre a **intenção ativa de busca e comportamento de compra**, exigindo precisão cirúrgica na escolha de correspondências de palavras-chave, controle de termos de pesquisa e maximização do Índice de Qualidade (*Quality Score*).

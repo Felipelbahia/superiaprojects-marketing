@@ -1,6 +1,9 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: brand-visual-style
 description: "Use para criar, extrair e aplicar um sistema visual portátil em um arquivo visual-style.md (cores, tipografia, layout, movimento e humor em um só arquivo que qualquer IA lê): criar do zero, extrair de um site, vídeo ou PDF de marca, aplicar em vídeo (HeyGen), slides HTML, Figma ou paper.design, ou consultar a galeria de estilos prontos (Suíço, Saul Bass, Game Boy etc.). Gatilhos: \"visual style\", \"estilo visual\", \"brand style\", \"style guide\". NÃO use para estratégia de marca, nome ou essência (use brand-builder), para decidir a direção visual da marca (use brand-visual-direction), para tokens e componentes de uma marca de _brands/ (use brand-design-system; o visual-style.md dela é exportado no passo 7b) nem para conceito de anúncio (use ads-criativos)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)

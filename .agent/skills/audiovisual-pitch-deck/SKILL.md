@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: audiovisual-pitch-deck
 description: Especialista em arquitetura, narrativa, storytelling financeiro e design de apresentações executivas (Pitch Decks para investidores no padrão Y Combinator e decks comerciais de alto impacto).
+author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # Pitch Deck Strategist - Diretrizes Operacionais
 
 Esta skill orienta a concepção, estrutura narrativa e redação de apresentações executivas para captação de recursos (*Fundraising Pitch Decks* nos padrões de aceleradoras como Y Combinator, Sequoia e Techstars) e apresentações institucionais/comerciais de vendas complexas em formato slide a slide.

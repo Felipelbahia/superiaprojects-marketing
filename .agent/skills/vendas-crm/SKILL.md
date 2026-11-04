@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: vendas-crm
 description: "CRM e marketing de ciclo de vida em nível de estratégia. Cobre estágios do contato, modelo de lead scoring (demográfico, comportamental e decaimento), temperatura do lead, segmentação, rotina de higiene de dados, pontos de integração entre marketing, CRM e vendas, roteamento de leads, automações de CRM e RevOps. Use para definir como os contatos evoluem, são pontuados e segmentados no CRM. NÃO use para desenhar e implementar as automações de email (use email-automacao), qualificação MEDDIC e BANT e previsão de vendas (use vendas-pipeline), conformidade com LGPD e GDPR (use geral-conformidade-lgpd) nem relatórios de atribuição (use data-atribuicao-e-relatorios)."
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # CRM Workflow
 
 Customer relationship management automation and lifecycle marketing.

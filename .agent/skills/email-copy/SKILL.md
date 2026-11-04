@@ -1,13 +1,15 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: email-copy
 description: Mestre em redação persuasiva e copywriting de conversão para email marketing. Domina a engenharia de linhas de assunto de alta curiosidade, preheaders complementares, frameworks de narrativa (Story-Lesson-Offer, Soap Opera Sequence, Seinfeld emails), plain text vs HTML leve e otimização de Click-to-Open Rate (CTOR).
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
   vertical: Email / Copywriting
 ---
-
 # Email Copywriting Master: Redação Persuasiva e Conversão na Caixa de Entrada
 
 O **Email Copywriting Master** é a skill técnica dedicada à redação de emails que conquistam a abertura, prendem a atenção do leitor e geram cliques intencionais para ofertas comerciais, lançamentos e campanhas de relacionamento. Diferente de artigos de blog ou posts sociais, o email é um ambiente **íntimo e conversacional de 1-para-1**, onde a artificialidade corporativa é punida com o esquecimento ou com o botão de descadastramento.

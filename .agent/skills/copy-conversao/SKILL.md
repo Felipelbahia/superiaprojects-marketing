@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: copy-conversao
 description: "Enterprise conversion copywriting, direct response methodologies, sales letters, CTA optimization, buyer psychology, and persuasion architecture based on Eugene Schwartz, Dan Kennedy, Gary Halbert, Donald Miller (StoryBrand), and Robert Cialdini. NÃO use para aplicar o método de um livro específico (use copy-metodos-classicos), para posicionamento e pesquisa de voz do cliente de SaaS (use copy-saas), para arquitetura de landing page seção a seção e auditoria de CRO (use copy-landing-page) nem para roteiro de VSL (use copy-vsl)."
+author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: copy-saas, copy-landing-page, copy-vsl, geral-anti-slop
 ---
-
 # Conversion Copywriting & Direct Response Architecture
 
 > Craft high-converting, scroll-stopping copy for sales letters, ads, landing pages, emails, and commercial offers. Combines foundational direct response psychology (Schwartz, Halbert, Kennedy) with contemporary persuasion frameworks (Cialdini, Heath, Miller) to turn passive readers into decisive buyers.
