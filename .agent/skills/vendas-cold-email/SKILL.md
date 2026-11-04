@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: vendas-cold-email
-description: Especialista em prospecção ativa B2B via cold email e cadências outbound. Domina a personalização em 4 níveis (icebreakers contextuais), estrutura de emails curtos de alto impacto, cadências de follow-up multitoque sem passivo-agressividade, CTAs de baixo atrito e infraestrutura de caixas secundárias. NÃO use para encontrar decisores, montar lista de leads, enriquecer contatos ou monitorar sinais de compra (use vendas-prospeccao-de-leads), nem para pontuar e rotear leads no CRM (use vendas-crm).
+description: Especialista em prospecção ativa B2B via cold email e cadências outbound. Domina a personalização em 4 níveis (icebreakers contextuais), estrutura de emails curtos de alto impacto, cadências de follow-up multitoque sem passivo-agressividade, CTAs de baixo atrito e infraestrutura de caixas secundárias. NÃO use para encontrar decisores, montar lista de leads, enriquecer contatos ou monitorar sinais de compra (use vendas-prospeccao-de-leads), nem para pontuar e rotear leads no CRM (use revenue-orquestracao-de-crm).
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

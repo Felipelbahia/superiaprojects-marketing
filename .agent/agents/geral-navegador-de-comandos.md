@@ -164,7 +164,7 @@ Opções:
 | Sequência de boas-vindas | skill `email-automacao` | Jornadas automáticas: boas-vindas, onboarding |
 | Nutrição de leads | skill `email-automacao` | Carrinho abandonado e reengajamento |
 | Assunto de e-mail | `/email-otimizacao-de-assunto` | Testa variações e prevê taxa de abertura |
-| Sequência no CRM | skill `vendas-crm` | Estágios do contato e lead scoring |
+| Sequência no CRM | skill `revenue-orquestracao-de-crm` | Estágios do contato e lead scoring |
 
 ### Vendas e leads
 | Intenção | Comando/skill | Descrição |

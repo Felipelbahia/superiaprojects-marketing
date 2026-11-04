@@ -331,7 +331,7 @@ Prospecção, funil comercial, CRM e materiais de venda.
 
 | Tipo | Nome | O que faz |
 |---|---|---|
-| Skill | [`vendas-crm`](skills/vendas-crm/SKILL.md) | Estágios do contato, lead scoring, roteamento e higiene de dados no CRM. |
+| Skill | [`revenue-orquestracao-de-crm`](skills/revenue-orquestracao-de-crm/SKILL.md) | Estágios do contato, lead scoring, roteamento e higiene de dados no CRM. |
 | Skill | [`vendas-metodologias-b2b`](skills/vendas-metodologias-b2b/SKILL.md) | Challenger Sale, SPIN, Sandler e negociação (Never Split the Difference). |
 | Skill | [`vendas-pipeline`](skills/vendas-pipeline/SKILL.md) | Qualificação (MEDDIC, BANT), previsão, risco de negócio, comissão e passagem para Sucesso do Cliente. |
 

@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: vendas-prospeccao-de-leads
-description: "Use para encontrar e preparar prospectos B2B antes do contato: achar decisores por cargo, porte e setor, montar lista de leads, enriquecer contatos (e-mail, telefone, tecnologia usada), conferir e-mails antes do envio e monitorar sinais de compra como rodada de investimento, vagas abertas e troca de tecnologia. Gatilhos: \"ache decisores\", \"lista de prospects\", \"pesquisa de leads\", \"enriquecer contatos\", \"sinais de compra\", \"quem está contratando\", \"Apollo\". NÃO use para escrever o e-mail frio ou a cadência (use vendas-cold-email), pontuar e rotear leads ou limpar o CRM (use vendas-crm), nem para qualificar um negócio com MEDDIC ou BANT (use vendas-pipeline)."
+description: "Use para encontrar e preparar prospectos B2B antes do contato: achar decisores por cargo, porte e setor, montar lista de leads, enriquecer contatos (e-mail, telefone, tecnologia usada), conferir e-mails antes do envio e monitorar sinais de compra como rodada de investimento, vagas abertas e troca de tecnologia. Gatilhos: \"ache decisores\", \"lista de prospects\", \"pesquisa de leads\", \"enriquecer contatos\", \"sinais de compra\", \"quem está contratando\", \"Apollo\". NÃO use para escrever o e-mail frio ou a cadência (use vendas-cold-email), pontuar e rotear leads ou limpar o CRM (use revenue-orquestracao-de-crm), nem para qualificar um negócio com MEDDIC ou BANT (use vendas-pipeline)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
@@ -33,7 +33,7 @@ Guia para a etapa que vem **antes** do e-mail frio: descobrir quem abordar, com 
 ## Fronteiras
 
 - Texto do e-mail, personalização, follow-up e infraestrutura de envio: [vendas-cold-email](../vendas-cold-email/SKILL.md).
-- Pontuação de lead, temperatura, roteamento e higiene de dados: [vendas-crm](../vendas-crm/SKILL.md).
+- Pontuação de lead, temperatura, roteamento e higiene de dados: [revenue-orquestracao-de-crm](../revenue-orquestracao-de-crm/SKILL.md).
 - Qualificação e previsão de negócios: [vendas-pipeline](../vendas-pipeline/SKILL.md).
 - Para partir só do seu produto e sugerir empresas-alvo com estratégia de contato, há também o workflow `/vendas-prospeccao-de-leads`.
 - Nunca entregue contato inventado. Dado que não veio de fonte ou ferramenta fica marcado como "não encontrado".

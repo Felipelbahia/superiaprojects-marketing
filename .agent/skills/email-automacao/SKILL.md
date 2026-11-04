@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: email-automacao
-description: Arquiteto de jornadas automatizadas de email e automações de ciclo de vida em CRMs (ActiveCampaign, HubSpot, Customer.io). Estrutura Welcome Series em 5 etapas, esteiras de onboarding e ativação de produto SaaS, fluxos de recuperação de carrinho abandonado, automações de reengajamento e Sunset Policy contra contatos inativos. NÃO use para estágios do contato, lead scoring e higiene de dados no CRM (use vendas-crm), copy de email (use email-copy), entregabilidade e DNS (use email-entregabilidade), prospecção fria (use vendas-cold-email) nem newsletters (use email-newsletter).
+description: Arquiteto de jornadas automatizadas de email e automações de ciclo de vida em CRMs (ActiveCampaign, HubSpot, Customer.io). Estrutura Welcome Series em 5 etapas, esteiras de onboarding e ativação de produto SaaS, fluxos de recuperação de carrinho abandonado, automações de reengajamento e Sunset Policy contra contatos inativos. NÃO use para estágios do contato, lead scoring e higiene de dados no CRM (use revenue-orquestracao-de-crm), copy de email (use email-copy), entregabilidade e DNS (use email-entregabilidade), prospecção fria (use vendas-cold-email) nem newsletters (use email-newsletter).
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
@@ -144,9 +144,10 @@ Os arquivos tratam das mesmas sequências com profundidade diferente (medido: ne
 | **Texto pronto de cada e-mail** | [`sequence-templates.md`](references/sequence-templates.md) | Boas-vindas, onboarding de teste, nutrição, reengajamento; inclui benchmarks e horários |
 | **Exemplo completo, de ponta a ponta** | [`welcome-sequence-template.md`](references/welcome-sequence-template.md) | 5 e-mails em 14 dias, teste A/B e métricas |
 | **Manual mestre e checklist de auditoria** | [`email-sequence.md`](references/email-sequence.md) | Longo (955 linhas); leia só a seção que precisa |
-| **Nutrição por temperatura do lead** | [`lead-nurturing-workflows.md`](references/lead-nurturing-workflows.md) | Liga com `vendas-crm` |
+| **Nutrição por temperatura do lead** | [`lead-nurturing-workflows.md`](references/lead-nurturing-workflows.md) | Liga com `revenue-orquestracao-de-crm` |
 | **Nutrição "recurso, caso, insight, convite"** | [`nurture-sequences.md`](references/nurture-sequences.md) | Texto em francês |
 | **Fluxo vindo de anúncio (Google e Meta)** | [`36-google-and-meta-email-sequence-writer.md`](references/36-google-and-meta-email-sequence-writer.md) | Nutrição de 5 dias |
+| **Roteiro guiado para montar a sequência do zero** (faz perguntas antes de entregar) | [`sequence.md`](references/sequence.md) | Tipo, tamanho e abordagem de conteúdo; texto base em inglês |
 
 Para assuntos e benchmarks de e-mail, veja a tabela "Qual abrir primeiro" em [`email-copy`](../email-copy/SKILL.md).
 
@@ -154,7 +155,7 @@ Para assuntos e benchmarks de e-mail, veja a tabela "Qual abrir primeiro" em [`e
 
 Roteiros que fazem perguntas ao usuário antes de entregar. O texto base é inglês.
 
-- **[lifecycle.md](references/lifecycle.md)** — Roteiro guiado para gerenciar as transições de estágio do ciclo de vida do contato.
+- **[sequence.md](references/sequence.md)** — Roteiro guiado para criar uma sequência de email do zero (tipo, tamanho, abordagem de conteúdo). Veja também a linha correspondente na tabela "Qual abrir primeiro" acima.
 
 ## Exemplos prontos
 

@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: growth-retencao-e-churn
-description: "Engineer high-converting retention engines, cancel flows, dynamic save offers, exit surveys, and dunning systems to slash voluntary and involuntary subscription churn. Also covers customer health scoring, churn prediction, expansion (upsell) signals, QBR (revisão trimestral) e renovação de contrato. NÃO use para estágios do contato e lead scoring no CRM (use vendas-crm) nem para atribuição de marketing (use data-atribuicao-e-relatorios)."
+description: "Engineer high-converting retention engines, cancel flows, dynamic save offers, exit surveys, and dunning systems to slash voluntary and involuntary subscription churn. Also covers customer health scoring, churn prediction, expansion (upsell) signals, QBR (revisão trimestral) e renovação de contrato. NÃO use para estágios do contato e lead scoring no CRM (use revenue-orquestracao-de-crm) nem para atribuição de marketing (use data-atribuicao-e-relatorios)."
 author: Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

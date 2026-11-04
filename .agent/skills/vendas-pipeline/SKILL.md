@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: vendas-pipeline
-description: Especialista em orquestração de pipeline comercial B2B, qualificação rigorosa (MEDDIC e BANT), previsão de receita (Forecasting), gestão de risco de negócios, preparação de reuniões de descoberta, passagem de bastão de Vendas para Sucesso do Cliente e comissionamento de vendas (OTE, aceleradores, cota). NÃO use para materiais de venda como deck, case, depoimento, script de demo, objeções e RFP (use vendas-materiais-de-venda), QBR e renovação de contrato (use growth-retencao-e-churn), pontuação de leads, higiene de CRM e RevOps (use vendas-crm), técnicas de conversação e negociação (use vendas-metodologias-b2b), cold email e cadências de prospecção (use vendas-cold-email), automação de email e réguas de nutrição (use email-automacao) nem atribuição de marketing (use data-atribuicao-e-relatorios).
+description: Especialista em orquestração de pipeline comercial B2B, qualificação rigorosa (MEDDIC e BANT), previsão de receita (Forecasting), gestão de risco de negócios, preparação de reuniões de descoberta, passagem de bastão de Vendas para Sucesso do Cliente e comissionamento de vendas (OTE, aceleradores, cota). NÃO use para materiais de venda como deck, case, depoimento, script de demo, objeções e RFP (use vendas-materiais-de-venda), QBR e renovação de contrato (use growth-retencao-e-churn), pontuação de leads, higiene de CRM e RevOps (use revenue-orquestracao-de-crm), técnicas de conversação e negociação (use vendas-metodologias-b2b), cold email e cadências de prospecção (use vendas-cold-email), automação de email e réguas de nutrição (use email-automacao) nem atribuição de marketing (use data-atribuicao-e-relatorios).
 author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
@@ -136,6 +136,6 @@ Aprofunde-se no acervo integrado presente em [`references/`](references/):
 
 - **Deck, one-pager, pitch, script de demo, mapa de objeções, case de sucesso, depoimento e resposta a RFP:** skill [vendas-materiais-de-venda](../vendas-materiais-de-venda/SKILL.md).
 - **QBR e renovação de contrato:** skill [growth-retencao-e-churn](../growth-retencao-e-churn/SKILL.md).
-- **Operação de CRM** (pontuação de leads, roteamento, higiene de dados, automações de CRM, RevOps): skill [vendas-crm](../vendas-crm/SKILL.md).
+- **Operação de CRM** (pontuação de leads, roteamento, higiene de dados, automações de CRM, RevOps): skill [revenue-orquestracao-de-crm](../revenue-orquestracao-de-crm/SKILL.md).
 - **Geração de leads, enriquecimento de bases e sinais de compra:** skill [vendas-prospeccao-de-leads](../vendas-prospeccao-de-leads/SKILL.md). Texto do e-mail frio e cadência: [vendas-cold-email](../vendas-cold-email/SKILL.md).
 - **Revisão de contratos:** skill [geral-conformidade-lgpd](../geral-conformidade-lgpd/SKILL.md).

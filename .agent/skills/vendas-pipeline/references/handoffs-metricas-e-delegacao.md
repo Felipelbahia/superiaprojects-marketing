@@ -4,7 +4,7 @@
 >
 > **Quando abrir este arquivo:** (1) definir o pacote e o prazo de passagem de **Vendas para Sucesso do Cliente** depois do fechamento; (2) registrar um negócio perdido com campos padronizados; (3) montar os indicadores de atividade, pipeline e resultado de vendas; (4) saber qual agente do projeto aciona cada tarefa comercial.
 >
-> **O que NÃO está aqui, de propósito:** as sequências de outreach (estão na `vendas-cold-email`), a estrutura de pitch deck (`audiovisual-pitch-deck`), os scripts de objeção (`objection-mapping.md`, na skill `vendas-materiais-de-venda`), o modelo de battlecard (`revenue-inteligencia-competitiva`), a tabela de temperatura do lead e os sinais de intenção (`lead-scoring.md` e `vendas-crm`), e a passagem de Marketing para Vendas com o prazo de MQL para SQL (`revops.md`). Todos já existem nesses lugares.
+> **O que NÃO está aqui, de propósito:** as sequências de outreach (estão na `vendas-cold-email`), a estrutura de pitch deck (`audiovisual-pitch-deck`), os scripts de objeção (`objection-mapping.md`, na skill `vendas-materiais-de-venda`), o modelo de battlecard (`revenue-inteligencia-competitiva`), a tabela de temperatura do lead e os sinais de intenção (`lead-scoring.md` e `revenue-orquestracao-de-crm`), e a passagem de Marketing para Vendas com o prazo de MQL para SQL (`revops.md`). Todos já existem nesses lugares.
 >
 > **Aviso:** o texto abaixo veio do kit original, em inglês e sem revisão. Os prazos (SLA) e as metas das tabelas são exemplos, não referência validada.
 

@@ -20,11 +20,11 @@ Você é o navegador e orquestrador das skills do hub Super IA Projects - Market
 - **seo** — busca orgânica: `seo-conteudo`, `seo-palavras-chave`, `seo-programatico`, `seo-autoridade-e-backlinks`, `seo-on-page`, `seo-schema-markup`, `seo-tecnico`, `seo-app-store`, `seo-geo`, `seo-podcast`, `seo-relatorio-de-desempenho`.
 - **ads** — mídia paga: `ads-google`, `ads-meta`, `ads-multiplataforma`, `ads-copy-de-anuncio`, `ads-criativos`, `ads-analise-de-desempenho`.
 - **email** — e-mail marketing: `email-copy`, `email-newsletter`, `email-automacao`, `email-entregabilidade`.
-- **vendas** — funil comercial: `vendas-cold-email`, `vendas-prospeccao-de-leads`, `vendas-crm`, `vendas-metodologias-b2b`, `vendas-pipeline`, `vendas-materiais-de-venda`.
+- **vendas** — funil comercial: `vendas-cold-email`, `vendas-prospeccao-de-leads`, `vendas-metodologias-b2b`, `vendas-pipeline`, `vendas-materiais-de-venda`.
 - **site** — sites e LPs: `site-arquitetura`, `site-auditoria-de-interface`, `site-interface-de-conversao`, `site-cro`, `site-diretrizes-web-codigo`, `site-react-composicao`, `site-react-desempenho`, `site-tailwind-design-system`.
 - **data** — dados e métricas: `data-web-ga4`, `data-atribuicao-e-relatorios`, `data-funil-e-coortes`.
 - **growth** — crescimento: `growth-experimentos-gtm`, `growth-frameworks`, `growth-testes-ab`, `growth-indicacao-e-afiliados`, `growth-retencao-e-churn`.
-- **revenue** — receita e estratégia: `revenue-campanhas`, `revenue-gtm-e-posicionamento`, `revenue-inteligencia-competitiva`, `revenue-oferta`, `revenue-preco`, `revenue-lancamento`, `revenue-lancamento-tecnico`, `revenue-modelos-mentais`, `revenue-premortem-previsao`, `revenue-psicologia`, `revenue-sexy-canvas`.
+- **revenue** — receita e estratégia: `revenue-campanhas`, `revenue-gtm-e-posicionamento`, `revenue-inteligencia-competitiva`, `revenue-oferta`, `revenue-preco`, `revenue-lancamento`, `revenue-lancamento-tecnico`, `revenue-modelos-mentais`, `revenue-premortem-previsao`, `revenue-psicologia`, `revenue-sexy-canvas`, `revenue-orquestracao-de-crm`.
 - **persona** — quem é o cliente: `persona-descoberta-de-clientes`, `persona-icp`.
 - **produto** — gestão de produto: `produto-agile`, `produto-prd`.
 - **audiovisual** — mídia e apresentações: `audiovisual-agentes-de-voz`, `audiovisual-podcast-e-audio`, `audiovisual-transcricao`, `audiovisual-imagem-flux-api`, `audiovisual-imagem-flux-prompts`, `audiovisual-apresentacoes-educacionais`, `audiovisual-pitch-deck`, `audiovisual-slidev`, `audiovisual-qr-code`.

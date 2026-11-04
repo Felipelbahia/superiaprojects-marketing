@@ -12,7 +12,7 @@ argument-hint: [funnel-name-or-url]
 
 **Standards**: Token efficiency, sacrifice grammar for concision, list unresolved questions at end.
 
-**Skills**: Activate `growth-frameworks`, `data-atribuicao-e-relatorios`, `vendas-crm` skills.
+**Skills**: Activate `growth-frameworks`, `data-atribuicao-e-relatorios`, `revenue-orquestracao-de-crm` skills.
 
 **Components**: Reference `./.claude/components/interactive-questions.md` and `./.claude/components/date-helpers.md`
 

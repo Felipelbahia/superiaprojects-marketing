@@ -1,8 +1,8 @@
 ---
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
-name: vendas-crm
-description: "CRM e marketing de ciclo de vida em nível de estratégia. Cobre estágios do contato, modelo de lead scoring (demográfico, comportamental e decaimento), temperatura do lead, segmentação, rotina de higiene de dados, pontos de integração entre marketing, CRM e vendas, roteamento de leads, automações de CRM e RevOps. Use para definir como os contatos evoluem, são pontuados e segmentados no CRM. NÃO use para desenhar e implementar as automações de email (use email-automacao), qualificação MEDDIC e BANT e previsão de vendas (use vendas-pipeline), conformidade com LGPD e GDPR (use geral-conformidade-lgpd) nem relatórios de atribuição (use data-atribuicao-e-relatorios)."
+name: revenue-orquestracao-de-crm
+description: "Orquestração de RevOps e CRM em nível de estratégia (não execução de ponta de vendas). Cobre estágios do contato, modelo de lead scoring (demográfico, comportamental e decaimento), temperatura do lead, segmentação, rotina de higiene de dados, pontos de integração entre marketing, CRM e vendas, roteamento de leads, automações de CRM e RevOps. Use para definir como os contatos evoluem, são pontuados e segmentados no CRM. NÃO use para desenhar e implementar as automações de email (use email-automacao), qualificação MEDDIC e BANT e previsão de vendas (use vendas-pipeline), prospecção e cadência de SDR/BDR (use vendas-prospeccao-de-leads), conformidade com LGPD e GDPR (use geral-conformidade-lgpd) nem relatórios de atribuição (use data-atribuicao-e-relatorios)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
@@ -301,3 +301,9 @@ Subscriber → Lead → MQL → SQL → Opportunity → Customer → Advocate
 - **[revops.md](references/revops.md)** — Alinhamento operacional entre Vendas, Marketing e Customer Success.
 - **[crm-automation-playbooks.md](references/crm-automation-playbooks.md)** — Playbooks de automação de CRM.
 - **[lead-routing-rules.md](references/lead-routing-rules.md)** — Regras de roteamento de leads.
+
+## Roteiro guiado (vindo do kit AgentKits)
+
+Roteiro que faz perguntas ao usuário antes de entregar. O texto base é inglês.
+
+- **[lifecycle.md](references/lifecycle.md)** — Roteiro guiado para avaliar o estágio atual do contato e gerenciar a transição para o próximo estágio do ciclo de vida (veio de `email-automacao`, onde estava fora de escopo).

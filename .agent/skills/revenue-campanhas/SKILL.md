@@ -162,7 +162,7 @@ Para destravar projetos ou campanhas estagnadas por excesso de opções, reuniõ
 
 **Fora do escopo (use a skill indicada):**
 - Gestão de anúncios pagos, lances e públicos: [ads-analise-de-desempenho](../ads-analise-de-desempenho/SKILL.md), [ads-google](../ads-google/SKILL.md), [ads-meta](../ads-meta/SKILL.md)
-- Implementação de CRM: [vendas-crm](../vendas-crm/SKILL.md)
+- Implementação de CRM: [revenue-orquestracao-de-crm](../revenue-orquestracao-de-crm/SKILL.md)
 - Identidade visual da marca: [brand-visual-direction](../brand-visual-direction/SKILL.md), [brand-design-system](../brand-design-system/SKILL.md)
 - Relações com a imprensa: [pr-assessoria-de-imprensa](../pr-assessoria-de-imprensa/SKILL.md)
 - Copy que não é de campanha: [copy-conversao](../copy-conversao/SKILL.md)
