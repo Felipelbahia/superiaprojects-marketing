@@ -1,13 +1,16 @@
 ---
+# Source: https://github.com/clawdb
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: revenue-inteligencia-competitiva
 description: "Strategic competitive intelligence, market landscaping, competitor teardowns, battlecard creation, moat analysis, win/loss research, and differentiation mapping."
+author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 complements: revenue-gtm-e-posicionamento, persona-icp, copy-conversao
 ---
-
 # Competitive Intelligence & Market Landscaping
 
 > Conduct rigorous competitor teardowns, build actionable sales battlecards, analyze defensible economic moats, and uncover strategic market whitespace to out-position rivals and win contested deals.
@@ -156,3 +159,20 @@ Roteiros que fazem perguntas ao usuário antes de entregar. O texto base é ingl
 - **[brand-monitor-api.md](references/brand-monitor-api.md)** — Monitoramento de menções à marca pela API Brand.dev; requer a API.
 - **[domain-research.md](references/domain-research.md)** — Pesquisa de dados WHOIS de domínios e listagens em marketplaces; requer a API.
 - **[gap-analysis-frameworks.md](references/gap-analysis-frameworks.md)** — Frameworks de análise de lacunas.
+
+## Scripts de cálculo
+
+Dois programas em Python escritos em 2026-11-03 (ver [THIRD_PARTY_NOTICE.md](scripts/THIRD_PARTY_NOTICE.md) — nenhum dos dois tinha origem real, eram citação fantasma em `/revenue-estrategia-pmm`). Rode a partir da raiz do projeto, com o ambiente `.venv` (precisa só de `click`):
+
+```bash
+# Snapshot e diff de página de concorrente (preço, mensagem) — complementa o roteiro manual de competitor-monitor.md
+.venv/bin/python .agent/skills/revenue-inteligencia-competitiva/scripts/competitor_tracker.py snapshot --url https://concorrente.com/precos --name acme
+.venv/bin/python .agent/skills/revenue-inteligencia-competitiva/scripts/competitor_tracker.py diff --name acme
+.venv/bin/python .agent/skills/revenue-inteligencia-competitiva/scripts/competitor_tracker.py check-all --config competidores.json
+
+# Win/loss: taxa de vitória por competidor, segmento e faixa de tamanho de negócio, com teste de significância
+.venv/bin/python .agent/skills/revenue-inteligencia-competitiva/scripts/win_loss_analyzer.py analyze --file negocios.csv
+```
+
+- `competitor_tracker.py` só lê HTML estático via HTTP (sem navegador headless) — página montada por JavaScript no cliente não aparece de verdade; use o roteiro de [competitor-monitor.md](references/competitor-monitor.md) nesse caso.
+- `win_loss_analyzer.py` espera um CSV com colunas `deal_id,outcome,reason,competitor,segment,deal_size,close_date` (`outcome` = `won`/`lost`); o teste de significância usa a mesma fórmula de duas proporções do script de [`growth-testes-ab`](../growth-testes-ab/SKILL.md), só marca diferença como significativa com 5 ou mais negócios no grupo.

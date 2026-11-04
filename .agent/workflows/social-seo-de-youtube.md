@@ -24,6 +24,9 @@ KEY INSIGHT: SEO gets you discovered, CTR+Retention determines success
 ## SEO Elements
 
 ### 1. Title Optimization
+
+> Para gerar e testar variações de título em si (CTR, curiosidade vs. clareza, TikTok incluso), use o workflow [`/social-otimizacao-de-titulo-de-video`](social-otimizacao-de-titulo-de-video.md) — esta seção foca no título dentro do pacote completo de SEO do YouTube (descrição, tags, capítulos).
+
 ```
 FORMULA: [Primary Keyword] + [Modifier] + [Benefit/Hook]
 

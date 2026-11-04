@@ -1,0 +1,3 @@
+`calculate_cac.py` tem origem no repositório `alirezarezvani/claude-skills` (GitHub, skill `marketing-demand-acquisition`, autor Alireza Rezvani), citado sem estar vendorizado no workflow `/growth-aquisicao-de-demanda` deste hub (achado da auditoria de integridade de workflows de 2026-11-03). Reescrito e testado em 2026-11-03, instalação autorizada pelo usuário na mesma data (regra 1.5 do CLAUDE.md).
+
+Alteração em relação ao original: a versão de origem não recebia dados por linha de comando — a lista de canais ficava fixa (hardcoded) dentro de `main()`, exigindo editar o arquivo antes de cada uso. Reescrito com `click`, 3 comandos (`channel`, `blended`, `benchmark`), `blended` aceita arquivo JSON ou stdin.

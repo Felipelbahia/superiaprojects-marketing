@@ -90,6 +90,7 @@ Conecte a direção conceitual às especificidades do canal escolhido:
 #### Se for Apresentação / Slides:
 - Proporção **16:9 widescreen**.
 - Regra de "1 ideia por slide", composição assimétrica com ponto focal claro e narrativa visual progressiva.
+- Se a narrativa do deck (arco, outline, notas do apresentador) ainda não estiver estruturada, rode antes o workflow [`/audiovisual-estrutura-de-apresentacao`](audiovisual-estrutura-de-apresentacao.md) — esta etapa cobre só a direção visual, não o texto.
 - Delegue o código para [`audiovisual-slidev`](file:///Users/macbookpro/Documents/IA%20Projects/_Plataforma/0%20Mkt/.agent/skills/audiovisual-slidev/SKILL.md).
 
 #### Se for Identidade Visual de Marca:

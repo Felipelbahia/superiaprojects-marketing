@@ -9,6 +9,8 @@ description: PostHog analytics, event tracking, feature flags, dashboards
 
 For implementing product analytics with PostHog - event tracking, user identification, feature flags, and project-specific dashboards.
 
+> Para a metodologia de métrica/funil/coorte em si (independente de ferramenta), use [`/data-analytics-de-produto`](data-analytics-de-produto.md) — este workflow aqui é a implementação específica do PostHog.
+
 **Sources:** [PostHog Docs](https://posthog.com/docs) | [Product Analytics](https://posthog.com/docs/product-analytics) | [Feature Flags](https://posthog.com/docs/feature-flags)
 
 ---

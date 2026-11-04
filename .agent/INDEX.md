@@ -15,7 +15,7 @@
 | [`brand`](#brand) | Identidade da marca: essência, público, voz, visual, nome e som. | 9 | 2 | 2 |
 | [`conteudo`](#conteudo) | O quê: planejar, pesquisar e produzir o conteúdo. Anda junto com Copy (o como). | 7 | 13 | 2 |
 | [`copy`](#copy) | O como: textos, métodos de persuasão e hooks que revisam e explicam o conteúdo. | 6 | 7 | 1 |
-| [`social`](#social) | Redes sociais, LinkedIn, carrossel, YouTube e arte para posts. | 5 | 12 | 1 |
+| [`social`](#social) | Redes sociais, LinkedIn, carrossel, YouTube e arte para posts. | 5 | 11 | 1 |
 | [`pr`](#pr) | Imprensa e reputação. | 1 | 0 | 1 |
 | [`seo`](#seo) | Busca orgânica, busca com IA (GEO), lojas de app e podcast. | 11 | 7 | 1 |
 | [`ads`](#ads) | Anúncios pagos: contas, criativos, texto e análise. | 6 | 2 | 1 |
@@ -26,10 +26,10 @@
 | [`growth`](#growth) | Crescimento: frameworks, experimentos, testes A/B, indicação e retenção. | 5 | 2 | 4 |
 | [`revenue`](#revenue) | Receita: campanhas, mercado, oferta, preço, lançamento e decisão. | 11 | 10 | 4 |
 | [`persona`](#persona) | Quem é o cliente: persona, ICP, pesquisa e descoberta. | 2 | 4 | 1 |
-| [`produto`](#produto) | Requisitos e gestão de produto. | 2 | 9 | 0 |
+| [`produto`](#produto) | Requisitos e gestão de produto. | 2 | 8 | 0 |
 | [`audiovisual`](#audiovisual) | Áudio, voz, imagem, apresentações e utilitários de mídia. | 9 | 13 | 2 |
-| [`geral`](#geral) | Vale para tudo: anti-slop, LGPD, rotinas e utilitários. | 2 | 15 | 6 |
-| **Total** | | **98** | **118** | **33** |
+| [`geral`](#geral) | Vale para tudo: anti-slop, LGPD, rotinas e utilitários. | 2 | 13 | 6 |
+| **Total** | | **97** | **114** | **33** |
 
 ## brand
 

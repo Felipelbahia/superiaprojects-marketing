@@ -7,6 +7,8 @@ description: Measure what matters with proper event tracking, funnels, cohorts, 
 
 Measure what matters and make data-driven decisions.
 
+> Para a implementação específica no PostHog (tracking de evento, feature flags, dashboards), use [`/data-posthog`](data-posthog.md) — este workflow aqui é a metodologia (funil, coorte, métrica), independente de ferramenta.
+
 ## North Star Metric
 
 **The ONE metric that represents customer value**

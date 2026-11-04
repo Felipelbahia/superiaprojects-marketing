@@ -47,11 +47,7 @@ SOM (Serviceable Obtainable Market):
 
 ### Competitive Intelligence Sources
 
-- **Public**: Website, pricing, blog, press
-- **Product**: Free trial, demo, screenshots
-- **Customers**: Win/loss interviews
-- **Community**: G2, Capterra, Reddit
-- **Industry**: Analyst reports, conferences
+> Fundido na auditoria de integridade de workflows de 2026-11-03: a lista completa de fontes (produto, website, entrevistas, vendas, review sites, vagas, filings, redes sociais, parceiros, relatórios de analista) e o acompanhamento contínuo de mudanças vivem na skill [`revenue-inteligencia-competitiva`](../skills/revenue-inteligencia-competitiva/SKILL.md) — duplicava o que já estava lá, inclusive em `/revenue-estrategia-pmm`. Para rastrear mudança de preço/mensagem de um concorrente específico, use o script `.venv/bin/python .agent/skills/revenue-inteligencia-competitiva/scripts/competitor_tracker.py`.
 
 ## Strategic Frameworks
 
@@ -79,28 +75,7 @@ OPPORTUNITIES      | THREATS
 
 ## Battlecards
 
-### Sales Battlecard Template
-
-```
-COMPETITOR: [Name]
-
-POSITIONING:
-"[Competitor] is [category] focused on [segment].
-We are [differentiator]."
-
-WIN THEMES:
-1. [Your advantage 1]
-2. [Your advantage 2]
-3. [Your advantage 3]
-
-OBJECTION HANDLING:
-Q: "Why not [Competitor]?"
-A: "[Competitor] is great for [X], but [your advantage]"
-
-GOTCHAS (Their weaknesses):
-- [Weakness 1]
-- [Weakness 2]
-```
+> Fundido na auditoria de integridade de workflows de 2026-11-03: o modelo completo de battlecard (overview, posicionamento, forças/fraquezas, quando ganhar/perder, talk tracks) vive em [`revenue-inteligencia-competitiva/references/battlecard-template.md`](../skills/revenue-inteligencia-competitiva/references/battlecard-template.md) — este bloco duplicava uma versão mais fina do mesmo template, repetida também em `/revenue-estrategia-pmm`. Use a versão da skill, que é a mais completa das três.
 
 ## Troubleshooting
 

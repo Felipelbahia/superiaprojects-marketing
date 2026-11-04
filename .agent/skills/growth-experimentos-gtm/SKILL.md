@@ -1,12 +1,14 @@
 ---
+# Repository: https://github.com/Felipelbahia/superiaprojects-marketing
+# Status: Customizada / Modificada localmente por Felipe Bahia
 name: growth-experimentos-gtm
 description: Biblioteca com 500+ experimentos de Go-to-Market para B2B (growth hacking, growth marketing, sales, PLG, ABM, pricing, retenção, expansão, GEO/AI search, founder-led, AI-native GTM) com hipótese, métrica e benchmark, baseada em autoridades do segmento (Kyle Poyar/Growth Unhinged, Tom Tunguz/Theory Ventures, Reforge, CXL/Speero, Clay, ChartMogul, McKinsey, Gartner, SaaStr, PricingSaaS). Use sempre que o usuário pedir ideias de experimentos B2B, growth experiments, testes A/B, hipóteses para destravar funil B2B, sugestões de outbound, ABM, PLG, SEO, GEO, pricing, sales methodologies, retenção, NRR, expansão, indicação, ou inspiração para conteúdo de growth. Trigger também ao detectar "experimentos", "testes", "ideias de growth", "como aumentar conversão/CAC/NRR/MRR", "playbook", "reduzir churn", "aumentar pipeline", ou pedidos de curadoria de táticas para SaaS, indústria, agro, enterprise, serviço B2B. NÃO use para estratégia geral de growth e métricas (use growth-frameworks), para rodar o teste A/B em si (use growth-testes-ab) nem para experimentos de B2C ou conteúdo de redes sociais.
+author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-
 # GT Growth Lab
 
 Biblioteca curada com **505 experimentos de Go-to-Market para B2B**. Cada experimento é entregue no formato hipótese + métrica + benchmark/fonte para ser executável imediatamente. Estruturada por estágio do funil B2B (Aquisição → Ativação → Receita → Adoção → Retenção → Expansão → Indicação) para encaixar em qualquer framework de revenue ou diagnóstico.
@@ -71,6 +73,20 @@ Ao receber um pedido, seguir esta ordem:
 5. **Perguntar 1-2 informações para refinar** (ICP, ticket médio, canal atual)
 
 **Não despejar 40 ideias de uma vez.** Trabalhar em batches de 5-10, deixar o usuário escolher direção e aprofundar.
+
+---
+
+## Scripts de cálculo
+
+Programa em Python que calcula CAC por canal e CAC blended (origem: `alirezarezvani/claude-skills`, reescrito em 2026-11-03 — ver [THIRD_PARTY_NOTICE.md](scripts/THIRD_PARTY_NOTICE.md)). Rode a partir da raiz do projeto, com o ambiente `.venv` (precisa só de `click`):
+
+```bash
+.venv/bin/python .agent/skills/growth-experimentos-gtm/scripts/calculate_cac.py channel --spend 15000 --customers 10 --name "LinkedIn Ads"
+.venv/bin/python .agent/skills/growth-experimentos-gtm/scripts/calculate_cac.py blended channels.json
+.venv/bin/python .agent/skills/growth-experimentos-gtm/scripts/calculate_cac.py benchmark --channel "Google Search"
+```
+
+`channels.json` é uma lista de `{"channel": ..., "spend": ..., "customers": ...}`; `blended` também aceita `-` para ler a lista do stdin. Para rodar o teste A/B em si (significância, tamanho de amostra), use o script da skill [`growth-testes-ab`](../growth-testes-ab/SKILL.md), não este.
 
 ---
 

@@ -7,6 +7,8 @@ description: Optimize video titles for maximum click-through rate (CTR) and YouT
 
 Create click-worthy titles that rank well and drive views.
 
+> Para o pacote completo de SEO do YouTube (descrição, tags, hashtags, capítulos), além do título, use [`/social-seo-de-youtube`](social-seo-de-youtube.md) — este workflow aqui foca só no título, inclusive para TikTok.
+
 ## Title Anatomy
 
 ```

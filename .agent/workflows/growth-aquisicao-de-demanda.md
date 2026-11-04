@@ -8,7 +8,6 @@ metadata:
   category: marketing
   domain: demand-generation
   updated: 2025-10-20
-  python-tools: calculate_cac.py
   tech-stack: HubSpot, LinkedIn-Ads, Google-Ads, Meta-Ads, SEO-tools
   target-market: B2B-SaaS, Series-A+
 ---
@@ -963,22 +962,12 @@ Optional:
 
 ## Resources
 
-### references/
+> Corrigido em 2026-11-03 (auditoria de integridade de workflows): esta seção listava `references/`, `scripts/` e `assets/` como se fossem uma pasta desta skill — nenhum desses arquivos nunca existiu neste repositório nem no repositório de origem (molde AgentKits importado sem adaptação). O playbook de HubSpot, templates de campanha, táticas internacionais e guia de atribuição já estão no corpo deste workflow (seções 1 a 8 acima); não há arquivo separado para linkar.
 
-- **hubspot-workflows.md** - Pre-built HubSpot workflow templates for lead scoring, nurture, assignment
-- **campaign-templates.md** - Ready-to-use campaign briefs for LinkedIn, Google, SEO
-- **international-playbooks.md** - Market-specific tactics for EU, US, Canada expansion
-- **attribution-guide.md** - Deep dive on multi-touch attribution setup and analysis
+### Cálculos
 
-### scripts/
-
-- **calculate_cac.py** - Calculate blended and channel-specific CAC
-- **experiment_calculator.py** - A/B test sample size and significance calculator
-
-### assets/
-
-- **campaign-brief-template.docx** - Editable campaign planning document
-- **dashboard-template.xlsx** - Pre-configured performance dashboard
+- **CAC por canal e CAC blended**: `.venv/bin/python .agent/skills/growth-experimentos-gtm/scripts/calculate_cac.py channel --spend <gasto> --customers <clientes> --name "<canal>"` (ou `blended <arquivo.json>` para vários canais de uma vez). Ver [growth-experimentos-gtm/SKILL.md](../skills/growth-experimentos-gtm/SKILL.md#scripts-de-cálculo).
+- **Tamanho de amostra e significância de teste A/B**: use o script da skill [`growth-testes-ab`](../skills/growth-testes-ab/SKILL.md#scripts-de-cálculo) — é o mesmo cálculo, não duplicar aqui.
 
 ---
 

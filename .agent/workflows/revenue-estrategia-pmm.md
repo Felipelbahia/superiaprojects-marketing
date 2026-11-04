@@ -353,89 +353,9 @@ LEVEL 4: Proof Points
 - Build in-house
 - Do nothing
 
-**Competitive Intelligence Sources**:
-1. **Product trials**: Sign up for competitor products, use actively
-2. **Website monitoring**: Track changes to pricing, messaging, features
-3. **Customer interviews**: Ask "What alternatives did you consider?"
-4. **Sales call recordings** (Gong/Chorus): Listen for competitor mentions
-5. **Review sites** (G2, Capterra): Read competitor reviews (pros/cons)
-6. **Job postings**: Competitor hiring = roadmap insights
-7. **Financial filings** (if public): Revenue, growth, strategy
-8. **Social media**: Follow competitor execs, product teams
-9. **Partner channels**: Talk to shared implementation partners
-10. **Industry reports**: Gartner, Forrester, IDC
+**Competitive Intelligence Sources e Battlecards:**
 
-### 3.2 Competitive Battlecards
-
-**Battlecard Template** (create one per competitor):
-
-```
-COMPETITOR: [Competitor A]
-
-OVERVIEW:
-- Founded: 2015
-- Funding: Series C, $75M raised
-- HQ: San Francisco
-- Size: 200 employees
-- Customers: 5,000+ companies
-- Pricing: $50-$500/user/month
-
-POSITIONING:
-- They say: "All-in-one platform for modern teams"
-- Reality: Broad but shallow, not deep in any use case
-
-KEY STRENGTHS (What They Do Well):
-1. Strong brand recognition (category leader)
-2. Large feature set (breadth over depth)
-3. Extensive integrations (2,000+ apps)
-
-KEY WEAKNESSES (Where They Fall Short):
-1. Complex UI (steep learning curve)
-2. Expensive (2x our price at scale)
-3. Poor support (low NPS in reviews)
-4. Legacy architecture (slow performance)
-
-OUR ADVANTAGES:
-1. 10x easier to use (time-to-value in minutes vs. days)
-2. 50% lower cost at 100+ users
-3. Superior performance (2x faster load times)
-4. White-glove onboarding (dedicated CSM)
-
-WHEN TO WIN:
-- Customer values ease of use over features
-- Budget-conscious (not enterprise)
-- Need fast time-to-value (<1 week)
-- Poor experience with competitor (switching)
-
-WHEN TO LOSE:
-- Enterprise (>5000 employees) with complex requirements
-- Need feature X that we don't have yet
-- Deep integration with competitor's ecosystem
-- Already invested heavily in competitor (sunk cost)
-
-TALK TRACKS:
-
-Objection: "We're already using [Competitor A]"
-Response: "That's great - many of our customers came from [Competitor A]. What prompted you to explore alternatives? [Listen for pain points] Typically teams switch to us because [ease of use / cost / performance]. Would it be helpful to see a side-by-side comparison?"
-
-Objection: "[Competitor A] has more features"
-Response: "You're right - they've been around longer and have a broader feature set. Here's what we found: most teams only use 20% of those features. Our customers love that we focus on doing [core use case] exceptionally well rather than trying to do everything. What features are most critical for your team?"
-
-PROOF POINTS:
-- Case study: "[Customer] switched from [Competitor A], reduced costs by 60%"
-- Review comparison: "[4.8 vs. 4.2 G2 rating in 'Ease of Use']"
-- Win rate: "35% win rate in competitive deals"
-
-COMPETITIVE LANDSCAPE:
-[Link to competitive positioning map]
-[Link to feature comparison matrix]
-```
-
-**Battlecard Distribution**:
-- Store in: Notion, Confluence, or sales enablement platform
-- Update frequency: Monthly (or when competitor launches major feature)
-- Access: Sales, CS, Product, Marketing teams
-- Training: Monthly competitive update calls with sales
+> Fundido na auditoria de integridade de workflows de 2026-11-03: a lista de fontes de inteligência competitiva e o template completo de battlecard (overview, posicionamento, forças/fraquezas, quando ganhar/perder, talk tracks, distribuição) duplicavam o que já existe, de forma mais completa, na skill [`revenue-inteligencia-competitiva`](../skills/revenue-inteligencia-competitiva/SKILL.md) — ver [5-Dimension Competitor Teardown Protocol](../skills/revenue-inteligencia-competitiva/SKILL.md#the-5-dimension-competitor-teardown-protocol) para as fontes, e [references/battlecard-template.md](../skills/revenue-inteligencia-competitiva/references/battlecard-template.md) para o template (a mesma versão também duplicava em `/revenue-analise-competitiva`). Para acompanhar mudança de preço/mensagem de um concorrente específico: `.venv/bin/python .agent/skills/revenue-inteligencia-competitiva/scripts/competitor_tracker.py`.
 
 ### 3.3 Win/Loss Analysis
 
@@ -477,6 +397,8 @@ COMPETITIVE LANDSCAPE:
 | Acme Corp | Won | Best product fit | Competitor A | No | No | No |
 | Beta Inc | Lost | Price | Competitor B | Yes | No | No |
 | Gamma LLC | Lost | Missing feature X | Built in-house | No | Yes | No |
+
+Exporte essa mesma tabela como CSV (colunas `deal_id,outcome,reason,competitor,segment,deal_size,close_date`) e rode `.venv/bin/python .agent/skills/revenue-inteligencia-competitiva/scripts/win_loss_analyzer.py analyze --file <arquivo>.csv` para taxa de vitória por competidor/segmento/faixa de negócio, com teste de significância — complementa, não substitui, as entrevistas qualitativas abaixo.
 
 **Monthly Insights Report**:
 ```
@@ -1139,24 +1061,14 @@ Headcount: +1 PMM, +1 Content Marketer
 
 ## Resources
 
-### references/
+> Corrigido em 2026-11-03 (auditoria de integridade de workflows): esta seção listava `references/`, `scripts/` e `assets/` como se fossem uma pasta desta skill — nenhum desses arquivos nunca existiu neste repositório nem no repositório de origem (molde AgentKits importado sem adaptação). Positioning, launch checklists, GTM internacional e templates de mensagem já estão no corpo deste workflow (seções 2, 4.3 e 5 acima).
 
-- **positioning-frameworks.md** - Detailed guide on April Dunford, Geoffrey Moore positioning methods
-- **launch-checklists.md** - Tier 1/2/3 launch checklists and templates
-- **international-gtm.md** - Market-by-market expansion playbooks (US, UK, DACH, France, Canada)
-- **messaging-templates.md** - Ready-to-use messaging frameworks for different personas
+### Cálculos e templates reais
 
-### scripts/
-
-- **competitor_tracker.py** - Track competitor website/pricing changes
-- **win_loss_analyzer.py** - Analyze win/loss interview data for trends
-
-### assets/
-
-- **sales-deck-template.pptx** - Editable master sales deck
-- **battlecard-template.docx** - Competitive battlecard template
-- **one-pager-template.pptx** - Product one-pager design template
-- **roi-calculator.xlsx** - ROI calculator spreadsheet
+- **Tracking de concorrente e análise de win/loss**: `.venv/bin/python .agent/skills/revenue-inteligencia-competitiva/scripts/competitor_tracker.py` e `win_loss_analyzer.py` — ver [revenue-inteligencia-competitiva/SKILL.md](../skills/revenue-inteligencia-competitiva/SKILL.md#scripts-de-cálculo).
+- **Battlecard**: [revenue-inteligencia-competitiva/references/battlecard-template.md](../skills/revenue-inteligencia-competitiva/references/battlecard-template.md) (texto, não `.docx`).
+- **Deck, one-pager e demais materiais de venda**: skill [`vendas-materiais-de-venda`](../skills/vendas-materiais-de-venda/SKILL.md) (texto estruturado, não `.pptx`).
+- **Calculadora de ROI**: workflow [`/data-calculo-de-roi`](data-calculo-de-roi.md) (não uma planilha `.xlsx`).
 
 ---
 
