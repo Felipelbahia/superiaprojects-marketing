@@ -13,7 +13,7 @@ allowed-tools: Read, Write, Edit, Bash
 ## 1. O que este workflow faz
 
 Compila a revisão da semana: métricas de desempenho, status das campanhas ativas, conteúdo publicado e pendente, e prioridades da semana seguinte. Ele verifica:
-1. Conteúdo publicado e em rascunho na pasta `content/<marca>/`.
+1. Conteúdo publicado e em rascunho na pasta definida pela regra de resolução da skill `geral-arquitetura-de-projeto` (`content/<marca>/` no 0 Mkt; `conteudos/` em projeto próprio).
 2. Tarefas e planos abertos em `.agent/plans/`.
 3. Status de campanhas ativas (tráfego pago, testes A/B, lançamentos).
 
@@ -69,4 +69,4 @@ Apresentar a revisão ao usuário e perguntar se quer já montar o planejamento 
 
 ## Onde salvar
 
-`content/<marca>/relatorios/AAAA-MM-DD - Revisao Semanal/relatorio.md` (regra 1.4 do `CLAUDE.md`).
+Seguir a regra de resolução de destino da skill `geral-arquitetura-de-projeto`: `content/<marca>/relatorios/AAAA-MM-DD - Revisao Semanal/relatorio.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/relatorios/AAAA-MM-DD - Revisao Semanal/relatorio.md` em projeto próprio.

@@ -28,9 +28,9 @@ Procedimento com **portões de aprovação**, para site de **mais de uma página
 | 8 | **Revisão de conversão** | `site-cro` nas páginas de conversão (home, oferta, preço, contato) | [site-cro](../skills/site-cro/SKILL.md) | Nota ≥ 8 |
 | 9 | **Entrega** | Relatório do que foi e do que **não** foi verificado. **Publicar e apontar domínio só se o usuário pedir** (Vercel) | — | — |
 
-## Onde salvar (regra 1.4)
+## Onde salvar
 
-`content/<marca>/site/AAAA-MM-DD - Nome da Demanda/`: `arquitetura.md`, `paginas/` (uma pasta por página, como no `build-landing-page`), código, `capturas/` e `relatorio.md`.
+Seguir a regra de resolução de destino da skill `geral-arquitetura-de-projeto`: `content/<marca>/site/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/site/AAAA-MM-DD - Nome da Demanda/` em projeto próprio. Dentro da pasta: `arquitetura.md`, `paginas/` (uma pasta por página, como no `build-landing-page`), código, `capturas/` e `relatorio.md`.
 
 ## Limites
 

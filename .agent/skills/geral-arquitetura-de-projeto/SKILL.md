@@ -15,7 +15,7 @@ metadata:
 **Princípio:** o lugar de cada peça é decidido **uma vez, por projeto**, num mapa de destinos que todas as skills leem antes de escrever. Skill nenhuma decide pasta por conta própria nem impõe a estrutura do 0 Mkt a um projeto que já tem a sua. Decisão registrada em `.agent/plans/arquitetura-de-pastas-das-pecas.md` (ADR-001).
 
 ## Princípio de separação `[usuário, 2026-10-23]`
-- **Repositório do mercado (`inteligencia/`)** `[usuário, 2026-10-23]`: **tendências, pesquisas, estudos, materiais de terceiros e análises de mercado** (com dados e cases do mercado e as fontes). **Não é onde se guardam os arquivos que a marca produz.** O monitoramento operacional (`5_monitoramento/`) fica ali por ora; **a parte de imprensa está em ajuste pelo usuário** (ver abaixo).
+- **Repositório do mercado (`inteligencia/`)** `[usuário, 2026-10-23]`: **tendências, pesquisas, estudos, materiais de terceiros e análises de mercado** (com dados e cases do mercado e as fontes). **Não é onde se guardam os arquivos que a marca produz.** O monitoramento operacional (`5_monitoramento/`) fica ali por ora; **a base de imprensa (jornalista, veículo, metodologia) só vive no Hub `Compartilhado/RSS Feed`** (ver abaixo).
 - **Produção (`conteudos/`, `assets/`)**: o que a marca cria e publica: assessoria de imprensa (pauta, pitch, release), roteiros de vídeo longo e curto, texto para blog, LinkedIn, carrosséis e posts, newsletter, e-mail, materiais promocionais, apresentações, relatórios de cliente ou semanais e o que mais o marketing produzir. (**Relatório de monitoramento** é dado do mercado e vai para `inteligencia/5_monitoramento/relatorios/`.) Arte final e imagens em `assets/`.
 - **Marca (`brand/`)**: regras e identidade.
 Skill que produz peça escreve em **produção**, nunca em `inteligencia/`; skill que coleta ou monitora escreve em `inteligencia/`.
@@ -26,8 +26,8 @@ Skill que produz peça escreve em **produção**, nunca em `inteligencia/`; skil
 - Qualquer skill de marca, conteúdo, imprensa ou monitoramento prestes a gravar arquivo.
 **Não usar** para arquitetura de software ou de site (ver `site-arquitetura`).
 
-## Assessoria de imprensa: em ajuste (pendência do usuário, 2026-10-23)
-A organização de imprensa é mais complexa e **será ajustada depois pelo usuário**; a skill de referência é `pr-assessoria-de-imprensa` (e este mapa). Já decidido: **pauta, pitch, release e seleção de jornalistas** são produção (`conteudos/imprensa/`); **clipping** (matérias em que a marca ou o porta-voz é citado pela imprensa) fica na **pasta de clipping dentro de assessoria de imprensa** (`conteudos/imprensa/clipping/`), e não em `inteligencia/`. A base de imprensa hoje em `inteligencia/2_imprensa_pr/` (mailing, guias, mapa de veículos) **será tratada em outro lugar**; não reorganizar até o ajuste. Painel: seção 7 de `.agent/plans/Reorganizacao de Skills Workflows e Agentes [TASK].md`.
+## Assessoria de imprensa: decidido (P6 do painel, 2026-11-05)
+A skill de referência é `pr-assessoria-de-imprensa` (e este mapa). **Pauta, pitch, release e seleção de jornalistas** são produção (`conteudos/imprensa/`); **clipping** (matérias em que a marca ou o porta-voz é citado pela imprensa) fica na **pasta de clipping dentro de assessoria de imprensa** (`conteudos/imprensa/clipping/`), e não em `inteligencia/`. **Jornalista, veículo e a metodologia da base (validação de e-mail, scraping/RSS) só vivem no Hub `Compartilhado/RSS Feed`**, nunca duplicados no projeto — consultar via `motores/jornalistas/consultar_hub.py`. O projeto guarda **referência de técnica** (ângulo de abordagem, templates de pitch, ganchos, matriz de newsjacking) em `conteudos/_base/referencias/`, identidade do porta-voz em `brand/`, e o **histórico do que foi feito** (campanha X enviada para Y jornalistas) em `inteligencia/2_imprensa_pr/envios/`. Painel: seção 7 de `.agent/plans/Reorganizacao de Skills Workflows e Agentes [TASK].md`.
 
 ## Onde mora o quê: skill ou documento do projeto `[usuário, 2026-10-23]`
 - **No documento do projeto** (`docs/mapa-de-destinos.md`): pastas, nomes de etapa, **fluxo de aprovação e portões por tipo**, nomes de arquivo. Mudou o arranjo? **Altera-se só o documento.**
@@ -35,11 +35,12 @@ A organização de imprensa é mais complexa e **será ajustada depois pelo usu�
 
 ## Regra de resolução (todas as skills seguem, nesta ordem)
 1. **Ler o mapa de destinos do projeto**: `docs/mapa-de-destinos.md` (ou na raiz, se não houver `docs/`).
-2. Se não houver mapa: procurar a convenção (`CLAUDE.md`, `STANDARDS.md` e as pastas existentes) e **propor o mapa ao usuário**, com a tabela preenchida pelo que existe; só gravar depois da confirmação.
-3. **Só em projeto novo, sem convenção**: criar a estrutura padrão (modo projeto, abaixo) e o mapa.
-4. **Marca hospedada no 0 Mkt** (modo 0 Mkt): `_brands/<marca>/` e `content/<marca>/<tipo>/AAAA-MM-DD - Nome da Demanda/`, como o `CLAUDE.md` do 0 Mkt manda.
-5. **Nunca gravar no Hub Central** (`Compartilhado/RSS Feed`): ele é fonte de leitura. Dado novo que deve voltar ao Hub passa pelo procedimento do próprio Hub, com confirmação do usuário.
-6. **Nunca mover arquivo existente** para encaixar na estrutura; mudança de lugar só com aprovação. Em conflito entre o mapa e uma regra de skill, **vale o mapa**.
+2. **Sem mapa, grave no padrão abaixo enquanto propõe o mapa ao usuário** (a ausência de mapa não bloqueia a entrega): marca hospedada no 0 Mkt → regra 5; projeto próprio → `conteudos/<tipo>/AAAA-MM-DD - Nome da Demanda/` na raiz do projeto. Proponha o mapa (convenção encontrada em `CLAUDE.md`, `STANDARDS.md` e pastas existentes) e só adote outra estrutura depois da confirmação do usuário.
+3. **Mono-marca vs. multi-marca/produto**: a maioria dos projetos tem uma marca ou produto só — a peça vai direto em `conteudos/<tipo>/...`, sem subpasta de marca. Só existe subpasta por marca/produto (`conteudos/<marca>/<tipo>/...` ou o nome que o mapa definir) quando o projeto de fato tiver mais de uma marca ou produto; confirme isso com o usuário antes de criar a subpasta — não crie "por padrão".
+4. **Só em projeto novo, sem convenção alguma**: criar a estrutura padrão (modo projeto, abaixo) e o mapa.
+5. **Marca hospedada no 0 Mkt** (modo 0 Mkt): `_brands/<marca>/` e `content/<marca>/<tipo>/AAAA-MM-DD - Nome da Demanda/`, como o `CLAUDE.md` do 0 Mkt manda (0 Mkt é sempre multi-marca por desenho, por isso sempre tem a subpasta `<marca>/`).
+6. **Nunca gravar no Hub Central** (`Compartilhado/RSS Feed`): ele é fonte de leitura. Dado novo que deve voltar ao Hub passa pelo procedimento do próprio Hub, com confirmação do usuário.
+7. **Nunca mover arquivo existente** para encaixar na estrutura; mudança de lugar só com aprovação. Em conflito entre o mapa e uma regra de skill, **vale o mapa**.
 
 ## Dois modos
 | Modo | Quando | Fundações da marca | Peças de conteúdo | Inventário de imagens |
@@ -53,8 +54,9 @@ Projeto novo usa o modo **Projeto**. A árvore completa, com a função de cada 
 |---|---|---|
 | Marca (`brand-builder` e sub-skills) | `brand/` e `brand/ativacao/`, `brand/logo/`, `brand/modelos/`, `brand/design-system/` | o próprio `brand/` |
 | Conteúdo (peças de qualquer tipo) | `conteudos/<tipo>/AAAA-MM-DD - Nome da Demanda/` e/ou a esteira (`1_a_aprovar` …), conforme o mapa | `brand/`, `conteudos/_base/`, `inteligencia/` |
-| Imprensa (`pr-assessoria-de-imprensa`): **pauta, pitch, release, seleção de jornalistas** | `conteudos/imprensa/AAAA-MM-DD - Nome/` (produção) | `brand/`, base `inteligencia/2_imprensa_pr/`, Hub (somente leitura) |
-| Imprensa: histórico de envios e relacionamento | `inteligencia/2_imprensa_pr/envios/` (registro/base) | |
+| Imprensa (`pr-assessoria-de-imprensa`): **pauta, pitch, release, seleção de jornalistas** | `conteudos/imprensa/AAAA-MM-DD - Nome/` (produção) | `brand/`, Hub `Compartilhado/RSS Feed` (somente leitura) |
+| Imprensa: histórico de envios e relacionamento | `inteligencia/2_imprensa_pr/envios/` (registro do que foi feito) | |
+| Imprensa: referência de técnica (ângulo de abordagem, templates, ganchos, newsjacking) | `conteudos/_base/referencias/` | Hub (somente leitura) |
 | Monitoramento | **regras** em `brand/ativacao/monitoramento.md` (fonte da verdade); **consultas, termos e relatórios** em `inteligencia/5_monitoramento/` | Hub (somente leitura), `brand/` |
 | Dados e estudos | `inteligencia/3_estudos_embasamento/` (registro de fontes, banco de cases) | fontes externas |
 | Imagens e arte | `assets/` | `brand/logo/`, `brand/modelos/` |
@@ -68,7 +70,8 @@ Projeto novo usa o modo **Projeto**. A árvore completa, com a função de cada 
 | Benchmark de canal (anexo da ativação) | `brand/ativacao/` |
 | Pauta, pitch, release e seleção de jornalistas (**produção**) | `conteudos/imprensa/` |
 | Clipping (matérias em que a marca ou o porta-voz foi citado) | `conteudos/imprensa/clipping/` |
-| Mailing, guias de voz, mapa de veículos, histórico de envios (base atual; **em ajuste pelo usuário**) | `inteligencia/2_imprensa_pr/` (não reorganizar até o ajuste) |
+| Histórico de envios de imprensa (campanha X enviada para Y jornalistas) | `inteligencia/2_imprensa_pr/envios/` |
+| Mailing, ficha/perfil de jornalista, mapa de veículos, metodologia de e-mail/scraping (**base — só no Hub, nunca duplicada no projeto**) | `Compartilhado/RSS Feed/bases/jornalistas/`, `bases/veiculos/veiculos.csv` |
 | Roteiros de vídeo longo e curto | `conteudos/video/` |
 | Blog, LinkedIn, carrossel e post, newsletter, e-mail, promocional, apresentação, relatório | `conteudos/blog/`, `linkedin/` (inclui carrossel de LinkedIn), `social/` (Instagram e demais redes), `newsletter/`, `email/`, `campaigns/`, `palestra/` (palestras), `apresentacoes/` (apresentação comercial), `reports/` (relatório de cliente ou semanal) |
 | Consultas de monitoramento, `termos.txt`, relatório de menções | `inteligencia/5_monitoramento/` |
@@ -98,3 +101,5 @@ Ler as pastas e as regras do projeto, montar o mapa com o que existe, apontar **
 | Duplicar a lista de veículos e jornalistas no projeto | Consultar o Hub (leitura) |
 | Regra de monitoramento em dois lugares | `brand/ativacao/monitoramento.md` manda; `5_monitoramento/` deriva dele |
 | Mover arquivo antigo "para organizar" | Mapear, nunca mover sem aprovação |
+| Criar subpasta de marca/produto num projeto mono-marca | Confirmar com o usuário quantas marcas/produtos existem; só criar subpasta quando houver mais de uma |
+| Não gravar porque "não achou o mapa" | Sem mapa, grave no padrão da regra 2 e proponha o mapa ao usuário; a ausência de mapa não bloqueia a entrega |

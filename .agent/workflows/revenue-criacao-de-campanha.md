@@ -88,7 +88,7 @@ Usar a skill `site-interface-de-conversao` para criar uma apresentação em um �
 
 Slides de conteúdo: título com nome da campanha, metas e KPIs, público-alvo, mensagens-chave, canais de marketing, cronograma, plano de conteúdo, métricas de sucesso, CTA/próximos passos.
 
-Salvar em `content/<marca>/campanha/AAAA-MM-DD - Nome da Demanda/apresentacao.html` (regra 1.4 do `CLAUDE.md`).
+Salvar seguindo a regra de resolução de destino da skill `geral-arquitetura-de-projeto`: `content/<marca>/campanha/AAAA-MM-DD - Nome da Demanda/apresentacao.html` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/campanha/AAAA-MM-DD - Nome da Demanda/apresentacao.html` em projeto próprio.
 
 ### 6.2 Visualizar localmente
 

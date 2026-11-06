@@ -51,7 +51,7 @@ Apresentar a proposta de plano:
 |---|---|---|---|
 | 1 | Mapeamento de contexto e personas | persona-descoberta-interativa | Alinhamento com brand-voice |
 | 2 | Redação da sequência de e-mails | email-orquestracao-de-campanhas | Filtro anti-slop mandatório |
-| 3 | Revisão e salvamento estruturado | file-creator | content/<marca>/email/ |
+| 3 | Revisão e salvamento estruturado | file-creator | destino da regra de resolução da skill `geral-arquitetura-de-projeto` |
 ```
 
 ### Fase 2: CONFIRM (Aprovação Humana)
@@ -71,7 +71,7 @@ Aguardar a validação do usuário antes de iniciar qualquer ação:
 
 ### Fase 4: QA (Controle de Qualidade)
 1. Validar se a entrega atende estritamente a "Definição de Pronto".
-2. Confirmar se os arquivos foram salvos na pasta padronizada: `content/<marca>/<tipo>/YYYY-MM-DD - Demanda/`.
+2. Confirmar se os arquivos foram salvos no destino da regra de resolução da skill `geral-arquitetura-de-projeto` (`content/<marca>/<tipo>/YYYY-MM-DD - Demanda/` no 0 Mkt; `conteudos/<tipo>/YYYY-MM-DD - Demanda/` em projeto próprio).
 
 ### Fase 5: REPORT (Relatório de Conclusão)
 Apresentar o relatório de fechamento com links clicáveis para os artefatos gerados.

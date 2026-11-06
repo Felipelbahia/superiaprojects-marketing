@@ -33,7 +33,7 @@ Reúne os guias de planejamento de conteúdo que estavam dentro de `conteudo-rea
 
 1. Leia a marca (`_brands/<marca>/`): voz, personas e pilares já definidos (regra 1.1 do projeto); não invente pilares novos sem confirmar.
 2. Parta do objetivo de negócio (inscrição, venda, autoridade) e só então escolha formatos e calendário.
-3. Salve o plano em `content/<marca>/<canal>/AAAA-MM-DD - Nome da Demanda/briefing.md`.
+3. Salve o plano seguindo a regra de resolução de destino da skill `geral-arquitetura-de-projeto` (lê `docs/mapa-de-destinos.md`; sem mapa, usa o padrão da própria skill — `content/<marca>/<canal>/AAAA-MM-DD - Nome da Demanda/briefing.md` no 0 Mkt, `conteudos/<canal>/AAAA-MM-DD - Nome da Demanda/briefing.md` em projeto próprio).
 
 ## Onde isso se conecta
 

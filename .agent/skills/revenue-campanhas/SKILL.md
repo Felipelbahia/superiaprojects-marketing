@@ -183,41 +183,41 @@ O texto base é inglês.
 
 ## Receitas por canal e formato
 
-Cada receita é a ordem de skills para um tipo de entrega. Antes de qualquer uma, leia a marca em `_brands/<marca>/` (regra 1.1 do projeto) e, no fim, passe o texto por `/geral-anti-slop` e salve em `content/<marca>/<canal>/AAAA-MM-DD - Nome da Demanda/` (regra 1.4).
+Cada receita é a ordem de skills para um tipo de entrega. Antes de qualquer uma, leia a marca em `_brands/<marca>/` (regra 1.1 do projeto) e, no fim, passe o texto por `/geral-anti-slop` e salve seguindo a regra de resolução de destino da skill `geral-arquitetura-de-projeto` (lê o mapa do projeto; sem mapa, `content/<marca>/<canal>/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt ou `conteudos/<canal>/AAAA-MM-DD - Nome da Demanda/` em projeto próprio).
 
 ### Receita 1: Carrossel de alta conversão (Instagram e LinkedIn)
 1. Marca: `brand-voice.md` e `content-pillars.md`.
 2. Psicologia: [revenue-sexy-canvas](../revenue-sexy-canvas/SKILL.md) (motores de Vaidade, Curiosidade e Preguiça).
 3. Roteiro lâmina a lâmina: [social-carrossel](../social-carrossel/SKILL.md): capa com gancho em caixa alta (até 20 palavras), pagamento imediato no slide 2 (até 25), "isca de salvamento" (checklist ou matriz) no slide 5 e um único CTA para DM no slide 6.
 4. Direção visual: [social-direcao-de-arte-ia](../social-direcao-de-arte-ia/SKILL.md).
-5. Salvar em `content/<marca>/social/`.
+5. Salvar na pasta do canal — ver a regra de resolução de destino acima.
 
 ### Receita 2: Reels, Shorts e TikTok com retenção
 1. Marca.
 2. Gancho dos 3 primeiros segundos: [copy-hooks-video-curto](../copy-hooks-video-curto/SKILL.md): 0,0 s elemento em movimento, 0,5 s primeira palavra sem enrolação, 1,2 s quebra de padrão com promessa e pagamento adiado.
 3. Engenharia reversa de um reel de referência: [reel-analyzer](../copy-hooks-video-curto/references/reel-analyzer.md).
 4. Geração e direção: ai-video-creator *(removido para o projeto de edição de vídeo)*. Montagem em código (Remotion) vive no projeto de edição de vídeo (`Compartilhado/Edição de Vídeo com IA`).
-5. Salvar em `content/<marca>/video/`.
+5. Salvar na pasta do canal — ver a regra de resolução de destino acima.
 
 ### Receita 3: Landing page de conversão
 1. Marca e persona: [persona-icp](../persona-icp/SKILL.md).
 2. Copy: [copy-landing-page](../copy-landing-page/SKILL.md).
 3. Atrito e conversão: [site-cro](../site-cro/SKILL.md).
 4. Design e interface: [site-interface-de-conversao](../site-interface-de-conversao/SKILL.md).
-5. Salvar em `content/<marca>/campaigns/`.
+5. Salvar na pasta do canal — ver a regra de resolução de destino acima.
 
-**Para entregar a página pronta** (marca, design a partir dos tokens, código com autorização, teste no navegador e revisão de conversão), use o workflow [site-construcao-de-landing-page](../../workflows/site-construcao-de-landing-page.md), conduzido pelo agente [site-construcao-web](../../agents/site-construcao-web.md); a página é salva em `content/<marca>/landing-pages/`. Site de várias páginas: [site-construcao-de-site](../../workflows/site-construcao-de-site.md) e a skill [site-arquitetura](../site-arquitetura/SKILL.md).
+**Para entregar a página pronta** (marca, design a partir dos tokens, código com autorização, teste no navegador e revisão de conversão), use o workflow [site-construcao-de-landing-page](../../workflows/site-construcao-de-landing-page.md), conduzido pelo agente [site-construcao-web](../../agents/site-construcao-web.md); a página é salva no destino da regra de resolução de `geral-arquitetura-de-projeto` (pasta de landing pages). Site de várias páginas: [site-construcao-de-site](../../workflows/site-construcao-de-site.md) e a skill [site-arquitetura](../site-arquitetura/SKILL.md).
 
 ### Receita 4: Sequência de nutrição e onboarding (e-mail)
 1. Marca.
 2. Arquitetura da jornada: [email-automacao](../email-automacao/SKILL.md).
 3. Redação: [email-copy](../email-copy/SKILL.md).
 4. Validação técnica (SPF, DKIM, DMARC): [email-entregabilidade](../email-entregabilidade/SKILL.md).
-5. Salvar em `content/<marca>/email/`.
+5. Salvar na pasta do canal — ver a regra de resolução de destino acima.
 
 ### Receita 5: Artigo de busca orgânica (SEO e GEO)
 1. Intenção de busca: [keyword-research-deep](../seo-palavras-chave/references/keyword-research-deep.md).
 2. Redação: [seo-conteudo](../seo-conteudo/SKILL.md).
 3. Schema e GEO: [seo-schema-markup](../seo-schema-markup/SKILL.md) e [seo-geo](../seo-geo/SKILL.md).
 4. Auditoria on-page: [seo-on-page](../seo-on-page/SKILL.md).
-5. Salvar em `content/<marca>/blog/`.
+5. Salvar na pasta do canal — ver a regra de resolução de destino acima.

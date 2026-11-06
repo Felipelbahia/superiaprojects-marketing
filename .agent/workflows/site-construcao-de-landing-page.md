@@ -28,9 +28,9 @@ Procedimento com **portões de aprovação**. Cada passo só começa depois do o
 | 8 | **Revisão de conversão** | Auditoria com nota ([homepage-audit](../skills/site-cro/references/homepage-audit.md); se a página vem de anúncio, [landing-page-audit](../skills/site-cro/references/landing-page-audit.md)) pelo agente `site-otimizacao-de-conversao`. Corrigir o que for nota baixa e repetir o passo 7 | [site-cro](../skills/site-cro/SKILL.md) | Nota ≥ 8 ou usuário aceita o resto |
 | 9 | **Entrega** | Relatório curto: o que foi feito, o que foi verificado **com evidência** e o que **não** foi (ex.: Safari iOS, leitor de tela, envio real do formulário, desempenho em rede lenta). Publicar (Vercel) **só se o usuário pedir** | — | — |
 
-## Onde salvar (regra 1.4)
+## Onde salvar
 
-`content/<marca>/landing-pages/AAAA-MM-DD - Nome da Demanda/` com `briefing.md`, `copy-opcao-1.md` (e `copy-opcao-2.md` se houver), `index.html` (ou os arquivos do componente), `capturas/` e `relatorio.md`. Nome da demanda com espaços, capitalizado.
+Seguir a regra de resolução de destino da skill `geral-arquitetura-de-projeto`: `content/<marca>/landing-pages/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/landing-pages/AAAA-MM-DD - Nome da Demanda/` em projeto próprio. Dentro da pasta: `briefing.md`, `copy-opcao-1.md` (e `copy-opcao-2.md` se houver), `index.html` (ou os arquivos do componente), `capturas/` e `relatorio.md`. Nome da demanda com espaços, capitalizado.
 
 ## Limites
 

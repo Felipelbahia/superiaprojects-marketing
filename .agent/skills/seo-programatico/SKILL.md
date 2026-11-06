@@ -26,7 +26,7 @@ Reúne os três guias de páginas em escala que estavam dentro de `seo-conteudo`
 1. Defina o padrão de busca (o que as pessoas procuram em escala) e confirme que há dado próprio para cada página; sem dado único, não faça.
 2. Escolha o modelo no `programmatic-seo-builder` e valide uma página-piloto antes de gerar o lote.
 3. Gere o schema com [seo-schema-markup](../seo-schema-markup/SKILL.md) e confira o rastreio e a indexação com [seo-tecnico](../seo-tecnico/SKILL.md).
-4. Texto entregue passa pelo fluxo de `/geral-anti-slop`; salve em `content/<marca>/blog/` ou na pasta do canal.
+4. Texto entregue passa pelo fluxo de `/geral-anti-slop`; salve seguindo a regra de resolução de destino da skill `geral-arquitetura-de-projeto` (pasta do canal, conforme o mapa do projeto ou o padrão sem mapa).
 
 ## Onde isso se conecta
 

@@ -30,7 +30,7 @@ Ver a descrição. Para uma **landing page única**, o mapa é trivial: vá dire
 3. **Desenhar a hierarquia** (regra dos 3 cliques, plano ou profundo) e o padrão de URLs em [site-architecture.md](references/site-architecture.md).
 4. **Definir navegação** (menu, rodapé, barra lateral, breadcrumbs, celular, o que evitar) em [navigation-patterns.md](references/navigation-patterns.md).
 5. **Desenhar o plano de links internos** (sem página órfã, âncora descritiva, hub e satélites).
-6. **Entregar** as cinco peças do `site-architecture.md`: árvore ASCII, sitemap visual em Mermaid ([modelos](references/mermaid-templates.md)), tabela de URLs, especificação de navegação e plano de links. Salvar em `content/<marca>/site/AAAA-MM-DD - Nome da Demanda/arquitetura.md`.
+6. **Entregar** as cinco peças do `site-architecture.md`: árvore ASCII, sitemap visual em Mermaid ([modelos](references/mermaid-templates.md)), tabela de URLs, especificação de navegação e plano de links. Salvar seguindo a regra de resolução de destino da skill `geral-arquitetura-de-projeto` (`content/<marca>/site/AAAA-MM-DD - Nome da Demanda/arquitetura.md` no 0 Mkt; `conteudos/site/AAAA-MM-DD - Nome da Demanda/arquitetura.md` em projeto próprio).
 
 ## Guias
 

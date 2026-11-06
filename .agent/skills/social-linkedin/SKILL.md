@@ -28,7 +28,7 @@ Reúne em um só lugar os quatro guias de LinkedIn que estavam dentro de `social
 2. Comece pelo perfil quando ele ainda não converte; sem perfil forte, o post não vira lead.
 3. Escolha um pilar de conteúdo e uma fórmula por vez.
 4. Texto entregue passa pelo fluxo de `/geral-anti-slop`.
-5. Salve o resultado em `content/<marca>/linkedin/AAAA-MM-DD - Nome da Demanda/`.
+5. Salve o resultado seguindo a regra de resolução de destino da skill `geral-arquitetura-de-projeto` (lê `docs/mapa-de-destinos.md`; sem mapa, usa o padrão da própria skill — `content/<marca>/linkedin/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt, `conteudos/linkedin/AAAA-MM-DD - Nome da Demanda/` em projeto próprio).
 
 ## Onde isso se conecta
 

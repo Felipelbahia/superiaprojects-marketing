@@ -194,15 +194,6 @@ Investment is strongly recommended because worst-case ROI (25%) is still profita
 
 ---
 
-## Integration with Other Skills
-
-This analyzer integrates with:
-- **market-strategy**: Calculate ROI for each expansion stage (Q13-Q16 Trojan Horse path)
-- **strategic-thinking**: Use SWOT/GAP analysis for qualitative investment context
-- **toss-patterns**: Calculate ROI for viral loop investments (Pattern 4), ecosystem expansion (Pattern 6)
-
----
-
 ## Next Steps
 
 **For Detailed Formulas**: See **REFERENCE.md** for NPV, LTV, CAC, cohort analysis, sensitivity analysis

@@ -153,7 +153,7 @@ Quando um agente do repositório precisar de fotos ou referências visuais para 
 3. **`social-calendario-e-distribuicao`**:
    - Combine `--aspect-ratio tall` para Stories/Reels e `--aspect-ratio square` para carrosséis de feed.
 4. **`conteudo-criacao-multiformato`**:
-   - Incorpore o markdown gerado diretamente no arquivo de post (`content/<marca>/<canal>/YYYY-MM-DD - Demanda/`), incluindo a imagem e os créditos no rodapé.
+   - Incorpore o markdown gerado diretamente no arquivo de post, no destino da regra de resolução da skill `geral-arquitetura-de-projeto` (`content/<marca>/<canal>/YYYY-MM-DD - Demanda/` no 0 Mkt; `conteudos/<canal>/YYYY-MM-DD - Demanda/` em projeto próprio), incluindo a imagem e os créditos no rodapé.
 
 ---
 
