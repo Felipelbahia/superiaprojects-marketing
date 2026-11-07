@@ -19,7 +19,7 @@ Before writing any copy, load context in this order:
 1. **Project Context**: Read `./README.md` for business goals and product info
 2. **Brand Guidelines**: Read the brand files in `_brands/<brand>/` (`brand-voice.md`, `style-guide.md`, and `brandbook.md` if it exists) for voice and tone
 3. **Skill Reference**: Load `.claude/skills/copy-conversao/references/copywriting.md` for frameworks
-4. **Templates**: Check `.claude/skills/copy-conversao/references/copywriting-frameworks.md` and `.claude/skills/copy-conversao/references/cta-writing.md` for headline/CTA formulas
+4. **Templates**: Check `.claude/skills/copy-conversao/references/copy-frameworks.md` and `.claude/skills/copy-conversao/references/cta-writing.md` for headline/CTA formulas
 5. **Existing Work**: Check `./docs/` and `./content/` for prior copy and campaigns
 
 ## Reasoning Process

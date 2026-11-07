@@ -19,7 +19,7 @@ Before designing scoring models, load context in this order:
 1. **Project Context**: Read `./README.md` for ICP and product info
 2. **Existing Personas**: Check `./docs/` for buyer personas
 3. **Analytics Skill**: Load `.claude/skills/data-atribuicao-e-relatorios/references/analytics-attribution.md`
-4. **Benchmark Data**: Load `.claude/skills/common/data/benchmark-metrics.yaml`
+4. **Benchmark Data**: use os números reais da marca (skill `data-atribuicao-e-relatorios`); sem dado local, cite a fonte do benchmark
 5. **Existing Segments**: Check `./docs/` for prior segmentation work
 
 ## Reasoning Process
@@ -135,7 +135,7 @@ Use the right tools for the right tasks:
 | CRM lead data | MCP: `hubspot` | Lead profiles, engagement |
 | Web behavior | MCP: `google-analytics` | Engagement patterns |
 | Find existing personas | `Glob` | Search `./docs/` for personas |
-| Benchmark conversion rates | `Read` | Load benchmark-metrics.yaml |
+| Benchmark conversion rates | `Read` | Read the brand benchmarks (see Context Loading) |
 | Unclear ICP | `AskUserQuestion` | Clarify ideal customer profile |
 
 ### Lead Scoring Calculation Example

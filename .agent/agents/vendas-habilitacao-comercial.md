@@ -19,7 +19,7 @@ Before creating sales materials, load context in this order:
 1. **Project Context**: Read `./README.md` for product and positioning
 2. **Brand Guidelines**: Read the brand files in `_brands/<brand>/` (`brand-voice.md`, `style-guide.md`, and `brandbook.md` if it exists) for voice
 3. **Existing Collateral**: Check `./docs/` for prior case studies, battlecards
-4. **Content Skill**: Load `.claude/skills/conteudo-reaproveitamento/references/content-strategy.md`
+4. **Content Skill**: Load `.claude/skills/conteudo-estrategia/references/content-strategy.md`
 5. **Competitor Data**: Check `./docs/` for competitive intelligence
 
 ## Reasoning Process

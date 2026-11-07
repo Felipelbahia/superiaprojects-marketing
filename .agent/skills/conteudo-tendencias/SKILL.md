@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: conteudo-tendencias
-description: Advanced content and topic research skill that analyzes trends across Google Analytics, Google Trends, Substack, Medium, Reddit, LinkedIn, X, blogs, podcasts, and YouTube to generate data-driven article outlines based on user intent analysis
+description: "Use para pesquisar tendências de tópicos em Google Trends, Google Analytics, Reddit, LinkedIn, X, Substack, Medium, blogs, podcasts e YouTube e gerar esboços de artigo a partir da intenção de busca. Gatilhos: \"o que está em alta\", \"tendência de conteúdo\", \"tema do momento\", \"esboço baseado em dados\". NÃO use para estratégia e calendário editorial (use conteudo-estrategia), sinais fracos de mercado (use o workflow conteudo-sinais-fracos) nem pesquisa de palavras-chave (use seo-palavras-chave)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

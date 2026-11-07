@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: growth-testes-ab
-description: Especialista em estratégia, estatística, desenho de hipóteses e governança de testes A/B, A/B/n e multivariados (MVT) para produtos digitais e páginas de conversão.
+description: "Use para desenhar a estratégia e a estatística de testes A/B, A/B/n e multivariados: hipóteses, tamanho de amostra, significância e governança do programa de testes. Gatilhos: \"teste A/B\", \"hipótese de teste\", \"significância\", \"MVT\". NÃO use para executar o passo a passo de um teste pontual (use o workflow growth-teste-ab), para auditar a página (use site-cro) nem para analisar o funil (use data-funil-e-coortes)."
 author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

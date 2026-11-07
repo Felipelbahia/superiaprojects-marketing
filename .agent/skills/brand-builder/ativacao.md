@@ -67,7 +67,7 @@ Perguntas:
 8. O que conta como menção positiva, neutra, negativa e crítica.
 9. Quem decide e em quanto tempo responder a cada nível.
 
-Onde fica `[ADR-001]`: as **regras** em `<raiz>/ativacao/monitoramento.md` (fonte da verdade); as **consultas, os termos e os relatórios** (só sob pedido) em `inteligencia/5_monitoramento/`, conforme o mapa de destinos. O Hub é só leitura; o Hub lê o `termos.txt` do projeto pelo argumento `--termos`. Veículos e jornalistas não são copiados.
+Onde fica `[ADR-001]`: as **regras** em `<raiz>/ativacao/monitoramento.md` (fonte da verdade); as **consultas, os termos e os relatórios** (só sob pedido) em `inteligencia/monitoramento/` (padrão; o mapa do projeto manda). O Hub é só leitura; o Hub lê o `termos.txt` do projeto pelo argumento `--termos`. Veículos e jornalistas não são copiados.
 
 **Termos em três arquivos de origem `[usuário, Futuro Mercado, 2026-10-23]`**, formato `termo|peso` (uma linha por termo): `termos-marca.txt` (nome, grafias, site, pessoas e vocabulário próprio; peso 3 para nome e pessoa, 1 a 2 para vocabulário), `termos-mercado.txt` (categoria, peso 2; assuntos associados, peso 1) e `termos-concorrentes.txt` (nomes, peso 2; pode ficar vazio, "a definir"). O `termos.txt` é a **junção** dos três (`cat termos-marca.txt termos-mercado.txt termos-concorrentes.txt > termos.txt`), é o único que o Hub lê e nunca se edita à mão. Palavra comum (ex.: "growth") traz ruído: peso mínimo e leitura com contexto.
 

@@ -18,9 +18,9 @@ You are an enterprise-grade marketing documentation specialist with deep experti
 Before any documentation work, load context in this order:
 1. **Project**: Read `./README.md` for project overview
 2. **Existing Docs**: Scan `./docs/` directory structure
-3. **Brand Skill**: Load `.claude/skills/brand-essence/references/brand-building.md`
-4. **Content Skill**: Load `.claude/skills/conteudo-reaproveitamento/references/content-strategy.md`
-5. **Templates**: Check `.claude/skills/schemas/output-schemas.yaml`
+3. **Brand Skill**: Load `.claude/skills/brand-essence/references/fundamentos-de-marca.md`
+4. **Content Skill**: Load `.claude/skills/conteudo-estrategia/references/content-strategy.md`
+5. **Templates**: modelos de destino em `docs/mapa-de-destinos.md` e skill `geral-arquitetura-de-projeto`
 
 ## Reasoning Process
 

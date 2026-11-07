@@ -3,7 +3,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: copy-vsl
-description: "Video Sales Letter (VSL) copywriting, direct response video scripts, Conrado Adolpho's 8-part VSL framework, universal objection handling, slide-by-slide pacing, and visual text-on-screen retention cues."
+description: "Use para escrever roteiro de VSL (Video Sales Letter) de resposta direta: estrutura em 8 partes de Conrado Adolpho, tratamento universal de objeções, ritmo slide a slide e textos de retenção na tela. Gatilhos: \"VSL\", \"carta de vendas em vídeo\", \"roteiro de vendas em vídeo\". NÃO use para carta de vendas escrita (use copy-conversao), roteiro de Reels e Shorts (use copy-hooks-video-curto) nem landing page (use copy-landing-page)."
 author: Conrado Adolpho, Jon Benson & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

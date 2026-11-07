@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: data-web-ga4
-description: Especialista em arquitetura de dados web, engenharia de tracking, implementação avançada de GA4, Google Tag Manager (Web e Server-Side), Consent Mode v2 e modelagem de eventos em BigQuery.
+description: "Use para arquitetar dados web e implementar tracking: GA4, Google Tag Manager (web e server-side), Consent Mode v2, dataLayer e modelagem de eventos em BigQuery. Gatilhos: \"GA4\", \"GTM\", \"dataLayer\", \"Consent Mode\", \"evento de conversão\". NÃO use para atribuição multi-canal e relatório executivo (use data-atribuicao-e-relatorios), coortes e funil (use data-funil-e-coortes) nem para UTM de campanha (use o workflow data-gerador-de-utm)."
 author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

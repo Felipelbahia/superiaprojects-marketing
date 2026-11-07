@@ -180,6 +180,7 @@ O texto base é inglês.
 - **[plan.md](references/plan.md)** — Roteiro guiado do kit AgentKits para criar o plano de uma campanha.
 - **[campaign-brief.md](references/campaign-brief.md)** — Modelo de brief de campanha.
 - **[campaign-playbooks.md](references/campaign-playbooks.md)** — Modelos testados para executar diferentes tipos de campanha.
+- **[modelo-campanha.md](references/modelo-campanha.md)** — Modelo do `campanha.md` (pontual e contínua), do `resultado.md` e da revisão periódica. Toda campanha nasce com o `campanha.md`, com o resultado esperado definido antes de começar.
 
 ## Receitas por canal e formato
 

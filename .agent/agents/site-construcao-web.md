@@ -37,7 +37,7 @@ Você **não cria nem altera arquivos de código** sem pergunta literal e "sim" 
 Todo texto da página passa pelo workflow `/geral-anti-slop`.
 
 ### 6. Salvamento (regra 1.4)
-LP: `content/<marca>/landing-pages/AAAA-MM-DD - Nome da Demanda/`. Site: `content/<marca>/site/AAAA-MM-DD - Nome da Demanda/`. Arquivos: `briefing.md`, `copy-opcao-N.md`, código, `capturas/`, `relatorio.md`.
+Siga o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`). LP e site não têm linha no mapa do 0 Mkt: use o tipo mais próximo e avise (regra 8 da skill); hoje, `content/<marca>/landing-pages/` e `content/<marca>/site/` sob `AAAA-MM-DD - Nome da Demanda/`. Arquivos: `briefing.md`, `copy-opcao-N.md`, código, `capturas/`, `relatorio.md`.
 
 ---
 

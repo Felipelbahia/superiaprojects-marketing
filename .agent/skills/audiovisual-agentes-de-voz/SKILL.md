@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: audiovisual-agentes-de-voz
-description: Plataforma de agentes conversacionais de voz da ElevenLabs — crie SDRs de voz autônomos para prospecção e qualificação de leads, assistentes de atendimento ao cliente, bots telefônicos e experiências interativas em tempo real.
+description: "Use para criar agentes conversacionais de voz com a plataforma ElevenLabs: SDR de voz para prospecção e qualificação, atendimento ao cliente, bots telefônicos e experiências interativas em tempo real. Gatilhos: \"agente de voz\", \"SDR de voz\", \"bot telefônico\", \"ElevenLabs agents\". NÃO use para transcrever áudio (use audiovisual-transcricao), editar ou masterizar podcast (use audiovisual-podcast-e-audio) nem para cadência de e-mail ou ligação sem voz sintética (use vendas-cold-email)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

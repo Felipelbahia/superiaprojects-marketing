@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: conteudo-briefing
-description: Generate comprehensive content briefs for writers, ensuring clarity, alignment, and strategic content creation across all formats.
+description: "Use para montar briefings de conteúdo completos para redatores, com objetivo, público, ângulo, estrutura e critérios de aprovação, em qualquer formato. Gatilhos: \"briefing de conteúdo\", \"brief para redator\", \"pauta para freela\". NÃO use para briefing com foco em SEO e palavras-chave (use o workflow conteudo-briefing-de-seo), para estratégia e calendário (use conteudo-estrategia) nem para escrever o texto (use conteudo-post-de-blog ou copy-conversao)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

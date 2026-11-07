@@ -2,8 +2,8 @@
 
 > Catálogo completo de Marketing integrado à base global de Engenharia Super IA Projects
 
-**Total Geral:** `691` recursos | **Skills:** `303` | **Workflows:** `225` | **Agentes:** `163`
-**Fontes Integradas:** `Super IA Marketing` (246) · `Super IA Projects` (445)
+**Total Geral:** `692` recursos | **Skills:** `304` | **Workflows:** `225` | **Agentes:** `163`
+**Fontes Integradas:** `Super IA Marketing` (246) · `Super IA Projects` (446)
 
 ---
 
@@ -731,7 +731,8 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Configuration](#configuration) (`1`)
 - [Similarity (Local)](#similarity-local) (`1` recursos)
   - [Search Patterns](#search-patterns) (`1`)
-- [Sip (Local)](#sip-local) (`5` recursos)
+- [Sip (Local)](#sip-local) (`6` recursos)
+  - [Astro](#astro) (`1`)
   - [Firecrawl](#firecrawl) (`1`)
   - [Imprensa](#imprensa) (`1`)
   - [Mautic](#mautic) (`1`)
@@ -942,14 +943,14 @@ Total de recursos nesta macro-área: `9`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="ads-copy-de-anuncio"></a>**`ads-copy-de-anuncio`** | `Skill` | `Super IA Marketing` | Redator especializado em copywriting de alta conversão para mídia paga e tráfego direto. Produz títulos e descrições para Google Search (RSA), textos primários curtos e longos para Meta Ads, roteiros dinâmicos para TikTok Ads e anúncios corporativos para LinkedIn Ads, com matriz multivariada de testes de copy. |
+| <a id="ads-copy-de-anuncio"></a>**`ads-copy-de-anuncio`** | `Skill` | `Super IA Marketing` | Use para escrever o texto dos anúncios pagos: títulos e descrições de Google Search (RSA), textos primários curtos e longos de Meta Ads, roteiros de TikTok Ads e anúncios de LinkedIn Ads, com matriz de testes de copy. Gatilhos: \"copy de anúncio\", \"RSA\", \"texto primário\", \"variações de anúncio\". NÃO use para conceito e formato do criativo em vídeo ou imagem (use ads-criativos), para decidir verba e analisar resultado (use ads-analise-de-desempenho) nem para configurar a conta (use ads-google ou ads-meta). |
 | <a id="ads-copy-de-anuncio"></a>**`/ads-copy-de-anuncio`** | `Workflow` | `Super IA Marketing` | Gere textos de anúncios de alta conversão para Google Ads, Meta (Facebook/Instagram), LinkedIn e TikTok. Cria múltiplas variações com testes A/B em mente. Inclui títulos, descrições, CTAs e formatos específicos da plataforma. Use ao criar anúncios, gerar variações de anúncios ou testar A/B o texto do anúncio. |
 
 ### <a id="criativos"></a>Criativos
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="ads-criativos"></a>**`ads-criativos`** | `Skill` | `Super IA Marketing` | Estrategista e analista de criativos de alta conversão para mídia paga. Concebe, roteiriza e valida formatos em vídeo UGC, motion e estáticos, combate a fadiga de criativos (Creative Fatigue), analisa concorrentes (Ad Spy) e orquestra pipelines com IA generativa para anúncios. |
+| <a id="ads-criativos"></a>**`ads-criativos`** | `Skill` | `Super IA Marketing` | Use para conceber, roteirizar e validar criativos de mídia paga (vídeo UGC, motion, estáticos), combater fadiga de criativo, analisar anúncios de concorrentes e montar pipelines de anúncio com IA generativa. Gatilhos: \"criativo de anúncio\", \"UGC\", \"fadiga de criativo\", \"ad spy\". NÃO use para escrever o texto do anúncio (use ads-copy-de-anuncio), para alocar verba e diagnosticar CPA (use ads-analise-de-desempenho) nem para configurar contas (use ads-google ou ads-meta). |
 
 ### <a id="extracao-de-anuncios-concorrentes"></a>Extracao De Anuncios Concorrentes
 
@@ -961,19 +962,19 @@ Total de recursos nesta macro-área: `9`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="ads-google"></a>**`ads-google`** | `Skill` | `Super IA Marketing` | Especialista técnico em Google Ads abrangendo Search, Performance Max (PMax), YouTube e Display. Domina a arquitetura de contas temáticas, mineração contínua de termos de busca (Search Term Mining), diagnóstico e elevação de Quality Score (QS), controle de canibalização de palavras-chave, auditorias de ativos/extensões e estratégias de lances inteligentes (Smart Bidding). |
+| <a id="ads-google"></a>**`ads-google`** | `Skill` | `Super IA Marketing` | Use para estruturar e otimizar contas de Google Ads (Search, Performance Max, YouTube, Display): arquitetura temática, mineração de termos de busca, Quality Score, canibalização de palavras-chave, extensões e lances inteligentes. Gatilhos: \"Google Ads\", \"PMax\", \"termos de busca\", \"Quality Score\", \"Smart Bidding\". NÃO use para Meta Ads (use ads-meta), LinkedIn, TikTok e Reddit (use ads-multiplataforma), texto do anúncio (use ads-copy-de-anuncio) nem para decidir verba entre canais (use ads-analise-de-desempenho). |
 
 ### <a id="meta"></a>Meta
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="ads-meta"></a>**`ads-meta`** | `Skill` | `Super IA Marketing` | Especialista técnico e estratégico em Facebook Ads e Instagram Ads. Domina a arquitetura de contas Advantage+ e CBO/ABO, segmentação por audiências Broad e Lookalike de LTV, matriz de sobreposição de públicos (Audience Overlap), rotas de retargeting por janelas de dias e controle de frequência. |
+| <a id="ads-meta"></a>**`ads-meta`** | `Skill` | `Super IA Marketing` | Use para estruturar e otimizar contas de Meta Ads (Facebook e Instagram): Advantage+, CBO e ABO, públicos Broad e Lookalike, sobreposição de públicos, retargeting por janela e controle de frequência. Gatilhos: \"Meta Ads\", \"Facebook Ads\", \"Instagram Ads\", \"lookalike\", \"CBO\". NÃO use para Google Ads (use ads-google), LinkedIn, TikTok e Reddit (use ads-multiplataforma), texto do anúncio (use ads-copy-de-anuncio) nem para decidir verba entre canais (use ads-analise-de-desempenho). |
 
 ### <a id="multiplataforma"></a>Multiplataforma
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="ads-multiplataforma"></a>**`ads-multiplataforma`** | `Skill` | `Super IA Marketing` | Estrategista de mídia paga para redes B2B e canais emergentes fora do duopólio tradicional. Domina LinkedIn Ads para Account-Based Marketing (ABM) e prospecção corporativa de alto ticket, TikTok Ads para vídeos verticais e retenção rápida, Reddit Ads para comunidades técnicas de nicho e especificações técnicas multiplataforma. |
+| <a id="ads-multiplataforma"></a>**`ads-multiplataforma`** | `Skill` | `Super IA Marketing` | Use para planejar mídia paga fora do Google e do Meta: LinkedIn Ads para ABM e prospecção B2B de ticket alto, TikTok Ads, Reddit Ads e especificações técnicas por plataforma. Gatilhos: \"LinkedIn Ads\", \"TikTok Ads\", \"Reddit Ads\", \"ABM pago\". NÃO use para Google Ads (use ads-google), Meta Ads (use ads-meta) nem para alocar verba entre canais (use ads-analise-de-desempenho). |
 
 ### <a id="trafego-pago"></a>Trafego Pago
 
@@ -1159,13 +1160,13 @@ Total de recursos nesta macro-área: `25`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="audiovisual-agentes-de-voz"></a>**`audiovisual-agentes-de-voz`** | `Skill` | `Super IA Marketing` | Plataforma de agentes conversacionais de voz da ElevenLabs — crie SDRs de voz autônomos para prospecção e qualificação de leads, assistentes de atendimento ao cliente, bots telefônicos e experiências interativas em tempo real. |
+| <a id="audiovisual-agentes-de-voz"></a>**`audiovisual-agentes-de-voz`** | `Skill` | `Super IA Marketing` | Use para criar agentes conversacionais de voz com a plataforma ElevenLabs: SDR de voz para prospecção e qualificação, atendimento ao cliente, bots telefônicos e experiências interativas em tempo real. Gatilhos: \"agente de voz\", \"SDR de voz\", \"bot telefônico\", \"ElevenLabs agents\". NÃO use para transcrever áudio (use audiovisual-transcricao), editar ou masterizar podcast (use audiovisual-podcast-e-audio) nem para cadência de e-mail ou ligação sem voz sintética (use vendas-cold-email). |
 
 ### <a id="apresentacoes-educacionais"></a>Apresentacoes Educacionais
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="audiovisual-apresentacoes-educacionais"></a>**`audiovisual-apresentacoes-educacionais`** | `Skill` | `Super IA Marketing` | Use para planejar, melhorar e validar apresentações de ensino: aula, treinamento, workshop, webinar e palestra, com ciência da aprendizagem (carga cognitiva, 12 princípios de Mayer, 9 eventos de Gagné, design C.R.A.P.) e acessibilidade (WCAG 2.1 AA). Gatilhos: \"slides de aula\", \"apresentação de treinamento\", \"workshop\", \"webinar\", \"slides que ensinam\", \"revisar meus slides\". NÃO use para pitch de investidor ou deck de venda (use audiovisual-pitch-deck), para slides de código em Markdown (use audiovisual-slidev) nem para roteiro de videoaula (use video-script-writer). |
+| <a id="audiovisual-apresentacoes-educacionais"></a>**`audiovisual-apresentacoes-educacionais`** | `Skill` | `Super IA Marketing` | Use para planejar, melhorar e validar apresentações de ensino: aula, treinamento, workshop, webinar e palestra, com ciência da aprendizagem (carga cognitiva, 12 princípios de Mayer, 9 eventos de Gagné, design C.R.A.P.) e acessibilidade (WCAG 2.1 AA). Gatilhos: \"slides de aula\", \"apresentação de treinamento\", \"workshop\", \"webinar\", \"slides que ensinam\", \"revisar meus slides\". NÃO use para pitch de investidor ou deck de venda (use audiovisual-pitch-deck), para slides de código em Markdown (use audiovisual-slidev) nem para roteiro de videoaula (use o workflow copy-roteiro-de-video). |
 
 ### <a id="arte-conceitual"></a>Arte Conceitual
 
@@ -1183,7 +1184,7 @@ Total de recursos nesta macro-área: `25`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="audiovisual-banco-de-midias-openverse"></a>**`audiovisual-banco-de-midias-openverse`** | `Skill` | `Super IA Marketing` | Busca de fotos, ilustrações, vetores, áudios e vídeos de domínio público e Creative Commons (CC0, CC-BY) na API do Openverse (WordPress/openverse) com fallback resiliente Wikimedia Commons e atribuição legal pronta. |
+| <a id="audiovisual-banco-de-midias-openverse"></a>**`audiovisual-banco-de-midias-openverse`** | `Skill` | `Super IA Marketing` | Use para buscar fotos, ilustrações, vetores, áudios e vídeos livres (domínio público e Creative Commons CC0 e CC-BY) na API do Openverse, com fallback no Wikimedia Commons e atribuição legal pronta. Gatilhos: \"imagem livre\", \"Creative Commons\", \"banco de imagens gratuito\", \"Openverse\". NÃO use para fotos de estoque do Pexels (use o workflow audiovisual-banco-de-imagens-pexels) nem para gerar imagem com IA (use audiovisual-imagem-flux-prompts). |
 
 ### <a id="criacao-de-pitch-deck"></a>Criacao De Pitch Deck
 
@@ -1207,13 +1208,13 @@ Total de recursos nesta macro-área: `25`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="audiovisual-imagem-flux-api"></a>**`audiovisual-imagem-flux-api`** | `Skill` | `Super IA Marketing` | Guia de integração da API BFL FLUX cobrindo endpoints, padrões de pesquisa assíncrona, limitação de taxa, tratamento de erros, webhooks e endpoints regionais com exemplos de código Python e TypeScript. |
+| <a id="audiovisual-imagem-flux-api"></a>**`audiovisual-imagem-flux-api`** | `Skill` | `Super IA Marketing` | Use para integrar a API da BFL (FLUX) em código: endpoints, polling assíncrono, limites de taxa, tratamento de erro, webhooks e endpoints regionais, com exemplos em Python e TypeScript. Gatilhos: \"FLUX API\", \"BFL API\", \"polling FLUX\", \"webhook FLUX\". NÃO use para escrever prompts de imagem (use audiovisual-imagem-flux-prompts). Gera código: só com autorização explícita (regra 1.5 do CLAUDE.md). |
 
 ### <a id="imagem-flux-prompts"></a>Imagem Flux Prompts
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="audiovisual-imagem-flux-prompts"></a>**`audiovisual-imagem-flux-prompts`** | `Skill` | `Super IA Marketing` | Guia completo para modelos de geração de imagens BFL FLUX. Abrange prompt, T2I, I2I, JSON estruturado, cores hexadecimais, tipografia, edição de múltiplas referências e práticas recomendadas específicas de modelo para famílias FLUX.2 e FLUX.1. |
+| <a id="audiovisual-imagem-flux-prompts"></a>**`audiovisual-imagem-flux-prompts`** | `Skill` | `Super IA Marketing` | Use para escrever prompts para os modelos de imagem FLUX.2 e FLUX.1 (BFL): texto para imagem, imagem para imagem, JSON estruturado, cores em hex, tipografia e edição com várias referências. Gatilhos: \"prompt FLUX\", \"gerar imagem com FLUX\", \"edição multi-referência\". NÃO use para integrar a API em código (use audiovisual-imagem-flux-api) nem para direção de arte e prompts em carrosséis (use social-direcao-de-arte-ia). |
 
 ### <a id="infografico"></a>Infografico
 
@@ -1243,13 +1244,13 @@ Total de recursos nesta macro-área: `25`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="audiovisual-pitch-deck"></a>**`audiovisual-pitch-deck`** | `Skill` | `Super IA Marketing` | Especialista em arquitetura, narrativa, storytelling financeiro e design de apresentações executivas (Pitch Decks para investidores no padrão Y Combinator e decks comerciais de alto impacto). |
+| <a id="audiovisual-pitch-deck"></a>**`audiovisual-pitch-deck`** | `Skill` | `Super IA Marketing` | Use para montar a narrativa e a estrutura de pitch decks para investidores (padrão Y Combinator) e decks comerciais de alto impacto, com storytelling financeiro e design executivo. Gatilhos: \"pitch deck\", \"deck de investidor\", \"rodada seed\", \"deck comercial\". NÃO use para slides de aula e treinamento (use audiovisual-apresentacoes-educacionais), para slides de código em Markdown (use audiovisual-slidev) nem para melhorar um slide isolado (use o workflow audiovisual-melhoria-de-slide). |
 
 ### <a id="podcast-e-audio"></a>Podcast E Audio
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="audiovisual-podcast-e-audio"></a>**`audiovisual-podcast-e-audio`** | `Skill` | `Super IA Marketing` | Especialista em pós-produção de áudio, mixagem e masterização de podcasts, conformidade ACX para audiobooks, transcrição com Whisper, direção de locução e sound design. Logo sonoro e identidade de áudio de marca ficam em brand-identidade-sonora. |
+| <a id="audiovisual-podcast-e-audio"></a>**`audiovisual-podcast-e-audio`** | `Skill` | `Super IA Marketing` | Use para pós-produção de áudio: edição, mixagem e masterização de podcasts, conformidade ACX de audiobooks, transcrição com Whisper, direção de locução e sound design. Gatilhos: \"masterizar podcast\", \"ACX\", \"audiobook\", \"locução\", \"limpar áudio\". NÃO use para logo sonoro e identidade de áudio da marca (use brand-identidade-sonora), para transcrição com ElevenLabs (use audiovisual-transcricao) nem para SEO de podcast (use seo-podcast). |
 
 ### <a id="producao-de-video"></a>Producao De Video
 
@@ -1785,7 +1786,7 @@ Total de recursos nesta macro-área: `22`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="conteudo-aprovacao"></a>**`/conteudo-aprovacao`** | `Workflow` | `Super IA Marketing` | Fluxo de trabalho de aprovação de conteúdo para colaboração em equipe |
+| <a id="conteudo-aprovacao"></a>**`/conteudo-aprovacao`** | `Workflow` | `Super IA Marketing` | Gera o fluxo de aprovação de uma peça de conteúdo (etapas, responsáveis, SLA e checklist por estágio). Use quando uma peça precisar passar por revisão antes de publicar. |
 
 ### <a id="brainstorm"></a>Brainstorm
 
@@ -1797,7 +1798,7 @@ Total de recursos nesta macro-área: `22`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="conteudo-briefing"></a>**`conteudo-briefing`** | `Skill` | `Super IA Marketing` | Gere resumos de conteúdo abrangentes para redatores, garantindo clareza, alinhamento e criação de conteúdo estratégico em todos os formatos. |
+| <a id="conteudo-briefing"></a>**`conteudo-briefing`** | `Skill` | `Super IA Marketing` | Use para montar briefings de conteúdo completos para redatores, com objetivo, público, ângulo, estrutura e critérios de aprovação, em qualquer formato. Gatilhos: \"briefing de conteúdo\", \"brief para redator\", \"pauta para freela\". NÃO use para briefing com foco em SEO e palavras-chave (use o workflow conteudo-briefing-de-seo), para estratégia e calendário (use conteudo-estrategia) nem para escrever o texto (use conteudo-post-de-blog ou copy-conversao). |
 | <a id="conteudo-briefing"></a>**`/conteudo-briefing`** | `Workflow` | `Super IA Marketing` | Gere resumos de conteúdo abrangentes para redatores, garantindo clareza, |
 
 ### <a id="briefing-de-seo"></a>Briefing De Seo
@@ -1880,7 +1881,7 @@ Total de recursos nesta macro-área: `22`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="conteudo-tendencias"></a>**`conteudo-tendencias`** | `Skill` | `Super IA Marketing` | Habilidade avançada de pesquisa de conteúdo e tópico que analisa tendências no Google Analytics, Google Trends, Substack, Medium, Reddit, LinkedIn, X, blogs, podcasts e YouTube para gerar esboços de artigos baseados em dados com base na análise da intenção do usuário |
+| <a id="conteudo-tendencias"></a>**`conteudo-tendencias`** | `Skill` | `Super IA Marketing` | Use para pesquisar tendências de tópicos em Google Trends, Google Analytics, Reddit, LinkedIn, X, Substack, Medium, blogs, podcasts e YouTube e gerar esboços de artigo a partir da intenção de busca. Gatilhos: \"o que está em alta\", \"tendência de conteúdo\", \"tema do momento\", \"esboço baseado em dados\". NÃO use para estratégia e calendário editorial (use conteudo-estrategia), sinais fracos de mercado (use o workflow conteudo-sinais-fracos) nem pesquisa de palavras-chave (use seo-palavras-chave). |
 | <a id="conteudo-tendencias"></a>**`/conteudo-tendencias`** | `Workflow` | `Super IA Marketing` | Habilidade avançada de pesquisa de conteúdo e tópico que analisa tendências em |
 
 ---
@@ -1991,7 +1992,7 @@ Total de recursos nesta macro-área: `14`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="copy-vsl"></a>**`copy-vsl`** | `Skill` | `Super IA Marketing` | Redação de cartas de vendas de vídeo (VSL), scripts de vídeo de resposta direta, estrutura VSL de 8 partes de Conrado Adolpho, tratamento universal de objeções, ritmo slide a slide e dicas visuais de retenção de texto na tela. |
+| <a id="copy-vsl"></a>**`copy-vsl`** | `Skill` | `Super IA Marketing` | Use para escrever roteiro de VSL (Video Sales Letter) de resposta direta: estrutura em 8 partes de Conrado Adolpho, tratamento universal de objeções, ritmo slide a slide e textos de retenção na tela. Gatilhos: \"VSL\", \"carta de vendas em vídeo\", \"roteiro de vendas em vídeo\". NÃO use para carta de vendas escrita (use copy-conversao), roteiro de Reels e Shorts (use copy-hooks-video-curto) nem landing page (use copy-landing-page). |
 
 ---
 
@@ -2129,7 +2130,7 @@ Total de recursos nesta macro-área: `19`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="data-funil-e-coortes"></a>**`data-funil-e-coortes`** | `Skill` | `Super IA Marketing` | Especialista em análise de queda de funil (drop-off), matriz de retenção por coortes, ativação de usuários, otimização de onboarding e CRO de paywalls. |
+| <a id="data-funil-e-coortes"></a>**`data-funil-e-coortes`** | `Skill` | `Super IA Marketing` | Use para analisar queda de funil (drop-off), retenção por coortes, ativação de usuários, onboarding e paywall em produtos digitais. Gatilhos: \"drop-off\", \"coorte\", \"ativação\", \"onboarding que não converte\", \"paywall\". NÃO use para tracking e GA4 (use data-web-ga4), atribuição e relatório executivo (use data-atribuicao-e-relatorios) nem para executar teste A/B (use growth-testes-ab). |
 
 ### <a id="gerador-de-utm"></a>Gerador De Utm
 
@@ -2171,7 +2172,7 @@ Total de recursos nesta macro-área: `19`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="data-revisao-mensal"></a>**`/data-revisao-mensal`** | `Workflow` | `Super IA Marketing` | Revisão mensal de análises e modelo de insights |
+| <a id="data-revisao-mensal"></a>**`/data-revisao-mensal`** | `Workflow` | `Super IA Marketing` | Gera a revisão analítica mensal (tráfego, conversão, desempenho de conteúdo e campanhas) com comparação ao mês anterior. Use para consolidar os aprendizados do mês e definir prioridades do próximo. |
 
 ### <a id="scientist"></a>Scientist
 
@@ -2189,7 +2190,7 @@ Total de recursos nesta macro-área: `19`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="data-web-ga4"></a>**`data-web-ga4`** | `Skill` | `Super IA Marketing` | Especialista em arquitetura de dados web, engenharia de rastreamento, implementação avançada de GA4, Google Tag Manager (Web e Server-Side), Consent Mode v2 e modelagem de eventos em BigQuery. |
+| <a id="data-web-ga4"></a>**`data-web-ga4`** | `Skill` | `Super IA Marketing` | Use para arquitetar dados web e implementar tracking: GA4, Google Tag Manager (web e server-side), Consent Mode v2, dataLayer e modelagem de eventos em BigQuery. Gatilhos: \"GA4\", \"GTM\", \"dataLayer\", \"Consent Mode\", \"evento de conversão\". NÃO use para atribuição multi-canal e relatório executivo (use data-atribuicao-e-relatorios), coortes e funil (use data-funil-e-coortes) nem para UTM de campanha (use o workflow data-gerador-de-utm). |
 
 ---
 
@@ -2567,13 +2568,13 @@ Total de recursos nesta macro-área: `8`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="email-copy"></a>**`email-copy`** | `Skill` | `Super IA Marketing` | Mestre em redação persuasiva e copywriting de conversão para email marketing. Domina a engenharia de linhas de assunto de alta curiosidade, preheaders complementares, frameworks de narrativa (Story-Lesson-Offer, Soap Opera Sequence, Seinfeld emails), plain text vs HTML leve e otimização de Click-to-Open Rate (CTOR). |
+| <a id="email-copy"></a>**`email-copy`** | `Skill` | `Super IA Marketing` | Use para escrever e-mails de marketing que convertem: linhas de assunto, preheaders, narrativas (Story-Lesson-Offer, Soap Opera, Seinfeld), texto puro versus HTML leve e otimização de CTOR. Gatilhos: \"assunto de e-mail\", \"copy de e-mail\", \"sequência de e-mails\". NÃO use para montar a automação e o fluxo (use email-automacao), para DNS e reputação de envio (use email-entregabilidade), para newsletter editorial (use email-newsletter) nem para cadência de prospecção fria (use vendas-cold-email). |
 
 ### <a id="entregabilidade"></a>Entregabilidade
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="email-entregabilidade"></a>**`email-entregabilidade`** | `Skill` | `Super IA Marketing` | Engenheiro de infraestrutura técnica e proteção de entrega de e-mail (Inbox Placement). Auditoria e configuração de registros de DNS (SPF, DKIM 2048-bit, DMARC com política p=reject, BIMI), gerenciamento de aquecimento gradual (Warm-up de 21 dias), higiene profunda de listas contra spam traps e monitora amigável no Google Postmaster Tools. |
+| <a id="email-entregabilidade"></a>**`email-entregabilidade`** | `Skill` | `Super IA Marketing` | Use para proteger a entregabilidade de e-mail (inbox placement): registros DNS (SPF, DKIM, DMARC, BIMI), aquecimento de domínio de 21 dias, higiene de lista contra spam traps e monitoramento de reputação no Google Postmaster. Gatilhos: \"caiu no spam\", \"SPF DKIM DMARC\", \"warm-up\", \"reputação de domínio\". NÃO use para escrever o e-mail (use email-copy) nem para montar sequências e automações (use email-automacao). |
 
 ### <a id="modelos"></a>Modelos
 
@@ -2585,7 +2586,7 @@ Total de recursos nesta macro-área: `8`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="email-newsletter"></a>**`email-newsletter`** | `Skill` | `Super IA Marketing` | Coach de redação que extrai conteúdo educacional de suas experiências diárias e o transforma em rascunhos de boletins informativos prontos para publicação, combinados com manuais editoriais, estratégias de crescimento de boletins informativos, estruturas de curadoria e modelos do setor (Tecnologia, Fintech, RH, Vendas, Operações). |
+| <a id="email-newsletter"></a>**`email-newsletter`** | `Skill` | `Super IA Marketing` | Use para transformar a experiência diária do autor em rascunhos de newsletter prontos para publicar, com playbooks editoriais, estratégias de crescimento, curadoria e modelos por setor (Tech, Fintech, RH, Vendas, Operações). Gatilhos: \"newsletter\", \"edição semanal\", \"crescer newsletter\". NÃO use para sequências de nutrição e automação (use email-automacao), para copy de e-mail promocional (use email-copy) nem para artigo de blog (use conteudo-post-de-blog). |
 | <a id="email-newsletter"></a>**`/email-newsletter`** | `Workflow` | `Super IA Marketing` | Treinador de redação que extrai conteúdo educacional de suas experiências diárias |
 
 ### <a id="orquestracao-de-campanhas"></a>Orquestracao De Campanhas
@@ -2905,7 +2906,7 @@ Total de recursos nesta macro-área: `23`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="geral-arquitetura-de-projeto"></a>**`geral-arquitetura-de-projeto`** | `Skill` | `Super IA Marketing` | Use ao criar ou reorganizar as pastas de um projeto de marketing, ao decidir onde uma peça (arquivo de marca, postagem, argumento de venda, relatório de monitoramento, ativo, dados, referência, plano) deve ser salva ou quando uma habilidade precisa do mapa de destino do projeto antes de escrever um arquivo. |
+| <a id="geral-arquitetura-de-projeto"></a>**`geral-arquitetura-de-projeto`** | `Skill` | `Super IA Marketing` | Use ao criar ou reorganizar as pastas de um projeto de marketing, ao decidir onde uma peça (arquivo de marca, estratégia, campanha, post, pitch de imprensa, relatório de monitoramento, ativo, dados, plano) deve ser salva, quando o projeto tiver mais de uma marca ou produto, ou quando uma habilidade precisar do mapa de destino do projeto antes de escrever um arquivo. |
 
 ### <a id="briefing-matinal"></a>Briefing Matinal
 
@@ -3205,13 +3206,13 @@ Total de recursos nesta macro-área: `11`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="growth-teste-ab"></a>**`/growth-teste-ab`** | `Workflow` | `Super IA Marketing` | Estrutura de teste A/B para otimização de marketing |
+| <a id="growth-teste-ab"></a>**`/growth-teste-ab`** | `Workflow` | `Super IA Marketing` | Gera o plano de um teste A/B de marketing (hipótese, variantes, critério estatístico e cronograma mínimo). Use quando for testar um elemento de e-mail, landing page, anúncio ou site. |
 
 ### <a id="testes-ab"></a>Testes Ab
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="growth-testes-ab"></a>**`growth-testes-ab`** | `Skill` | `Super IA Marketing` | Especialista em estratégia, estatística, desenho de hipóteses e governança de testes A/B, A/B/n e multivariados (MVT) para produtos digitais e páginas de conversão. |
+| <a id="growth-testes-ab"></a>**`growth-testes-ab`** | `Skill` | `Super IA Marketing` | Use para desenhar a estratégia e a estatística de testes A/B, A/B/n e multivariados: hipóteses, tamanho de amostra, significância e governança do programa de testes. Gatilhos: \"teste A/B\", \"hipótese de teste\", \"significância\", \"MVT\". NÃO use para executar o passo a passo de um teste pontual (use o workflow growth-teste-ab), para auditar a página (use site-cro) nem para analisar o funil (use data-funil-e-coortes). |
 
 ---
 
@@ -4237,7 +4238,7 @@ Total de recursos nesta macro-área: `10`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="produto-agile"></a>**`produto-agile`** | `Skill` | `Super IA Marketing` | Gerenciamento ágil de produtos, práticas Scrum e colaboração em equipe para desenvolvimento iterativo de produtos. |
+| <a id="produto-agile"></a>**`produto-agile`** | `Skill` | `Super IA Marketing` | Use para gestão ágil de produto: Scrum, rituais, backlog e colaboração do time em desenvolvimento iterativo. Gatilhos: \"Scrum\", \"backlog\", \"sprint\", \"cerimônias ágeis\". NÃO use para planejar uma sprint específica (use o workflow produto-planejamento-de-sprint), escrever PRD (use produto-prd) nem histórias de usuário (use o workflow produto-historias-de-usuario). |
 | <a id="produto-agile"></a>**`/produto-agile`** | `Workflow` | `Super IA Marketing` | Gerenciamento ágil de produtos, práticas Scrum e colaboração em equipe para |
 
 ### <a id="especificacao-de-funcionalidade"></a>Especificacao De Funcionalidade
@@ -4634,7 +4635,7 @@ Total de recursos nesta macro-área: `25`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="revenue-checklist-de-lancamento-de-campanha"></a>**`/revenue-checklist-de-lancamento-de-campanha`** | `Workflow` | `Super IA Marketing` | Lista de verificação da campanha de pré-lançamento para garantir que nada seja esquecido |
+| <a id="revenue-checklist-de-lancamento-de-campanha"></a>**`/revenue-checklist-de-lancamento-de-campanha`** | `Workflow` | `Super IA Marketing` | Gera o checklist de pré-lançamento de uma campanha, com cronograma T-14 a T+1 e matriz de sign-off. Use antes de colocar uma campanha no ar para garantir que nada ficou de fora. |
 
 ### <a id="criacao-de-campanha"></a>Criacao De Campanha
 
@@ -4652,13 +4653,13 @@ Total de recursos nesta macro-área: `25`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="revenue-gtm-e-posicionamento"></a>**`revenue-gtm-e-posicionamento`** | `Skill` | `Super IA Marketing` | Estratégia Go-To-Market (GTM), gerenciamento de marketing de produto (PMM), design de categoria, tela de proposta de valor, estrutura STP (segmentação, segmentação, posicionamento), análise pré-morte e orquestração de lançamento multifuncional. |
+| <a id="revenue-gtm-e-posicionamento"></a>**`revenue-gtm-e-posicionamento`** | `Skill` | `Super IA Marketing` | Use para estratégia de go-to-market e marketing de produto: posicionamento, Category Design, Value Proposition Canvas, STP (segmentação, alvo e posicionamento), pré-mortem e coordenação de lançamento entre áreas. Gatilhos: \"GTM\", \"posicionar produto\", \"proposta de valor\", \"STP\", \"categoria\". NÃO use para posicionamento e essência da marca (use brand-essence), plano de lançamento detalhado (use revenue-lancamento) nem análise de concorrentes (use revenue-inteligencia-competitiva). |
 
 ### <a id="inteligencia-competitiva"></a>Inteligencia Competitiva
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="revenue-inteligencia-competitiva"></a>**`revenue-inteligencia-competitiva`** | `Skill` | `Super IA Marketing` | Inteligência competitiva estratégica, paisagismo de mercado, desmontagem de concorrentes, criação de cartas de batalha, análise de fosso, pesquisa de vitórias/perdas e mapeamento de diferenciação. |
+| <a id="revenue-inteligencia-competitiva"></a>**`revenue-inteligencia-competitiva`** | `Skill` | `Super IA Marketing` | Use para inteligência competitiva estratégica: mapa de mercado, teardown de concorrente, battlecard, análise de fosso (moat), pesquisa win/loss e mapa de diferenciação. Gatilhos: \"analisar concorrente\", \"battlecard\", \"win/loss\", \"teardown\", \"diferenciação\". NÃO use para posicionar o próprio produto (use revenue-gtm-e-posicionamento), monitorar preço de concorrente (use o workflow revenue-monitoramento-de-preco-concorrente) nem anúncios de concorrentes (use o workflow ads-extracao-de-anuncios-concorrentes). |
 
 ### <a id="lancamento"></a>Lancamento
 
@@ -4991,7 +4992,7 @@ Total de recursos nesta macro-área: `31`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="seo-checklist-semanal"></a>**`/seo-checklist-semanal`** | `Workflow` | `Super IA Marketing` | Lista de verificação semanal de manutenção e otimização de SEO |
+| <a id="seo-checklist-semanal"></a>**`/seo-checklist-semanal`** | `Workflow` | `Super IA Marketing` | Gera o checklist semanal de manutenção e otimização de SEO. Use para organizar as tarefas de SEO da semana por dia (rankings, saúde técnica, conteúdo, link building, concorrência). |
 
 ### <a id="content-auditor"></a>Content Auditor
 
@@ -5087,7 +5088,7 @@ Total de recursos nesta macro-área: `31`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="seo-relatorio-de-desempenho"></a>**`seo-relatorio-de-desempenho`** | `Skill` | `Super IA Marketing` | Acompanhamento abrangente de desempenho de SEO e GEO, relatórios executivos, detecção de anomalias, alertas de volatilidade de classificação e análises de KPI no Google, Bing e mecanismos de pesquisa de IA generativos (Perplexity, SearchGPT, Claude, Gemini). |
+| <a id="seo-relatorio-de-desempenho"></a>**`seo-relatorio-de-desempenho`** | `Skill` | `Super IA Marketing` | Use para acompanhar e reportar o desempenho de SEO e GEO: relatório executivo, detecção de anomalias, alertas de volatilidade de ranking e KPIs no Google, Bing e buscadores de IA (Perplexity, SearchGPT, Claude, Gemini). Gatilhos: \"relatório de SEO\", \"queda de ranking\", \"tráfego orgânico caiu\", \"KPI de SEO\". NÃO use para dados brutos do Search Console (use o workflow seo-search-console), otimizar para ser citado por IA (use seo-geo) nem relatório de marketing geral (use data-atribuicao-e-relatorios). |
 
 ### <a id="schema-markup"></a>Schema Markup
 
@@ -5201,7 +5202,13 @@ Total de recursos nesta macro-área: `1`
 
 ## <a id="sip-local"></a>Sip (Local)
 
-Total de recursos nesta macro-área: `5`
+Total de recursos nesta macro-área: `6`
+
+### <a id="astro"></a>Astro
+
+| Recurso | Tipo | Origem | Descrição e Aplicação |
+| :--- | :--- | :--- | :--- |
+| <a id="sip-astro"></a>**`sip-astro`** | `Skill` | `Super IA Projects` | Use sempre que a tarefa atual envolver Astro (construir ou migrar um site, escolher um tema, integrações, SEO/GEO, implantação, formulários, análises, i18n, e-commerce, testes, atualizações, auditoria de pré-lançamento), mas o projeto ativo não possui habilidades Astro locais - ou seja, qualquer projeto diferente do próprio "SIP - Astro". Encaminha a tarefa para o centro central de conhecimento Astro em vez de improvisar a partir do conhecimento geral. |
 
 ### <a id="firecrawl"></a>Firecrawl
 
@@ -5249,7 +5256,7 @@ Total de recursos nesta macro-área: `14`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="site-auditoria-de-interface"></a>**`site-auditoria-de-interface`** | `Skill` | `Super IA Marketing` | Use ANTES de alterar uma página, seção ou componente que já existe (site, landing page, interface): lê o estado atual, inventaria o que há, checa redundância e só propõe lacunas reais, com prova. Gatilhos: \"melhorar a página\", \"mexer no layout\", \"adicionar uma seção\", \"redesenhar a home\", \"adicionar componente\", quando já existe código ou página publicada. NÃO use para criar uma página do zero (use build-landing-page), para auditar conversão (use site-cro), para desenhar a interface (use site-interface-de-conversao) nem para revisar conformidade de código de UI (use site-diretrizes-web-codigo). |
+| <a id="site-auditoria-de-interface"></a>**`site-auditoria-de-interface`** | `Skill` | `Super IA Marketing` | Use ANTES de alterar uma página, seção ou componente que já existe (site, landing page, interface): lê o estado atual, inventaria o que há, checa redundância e só propõe lacunas reais, com prova. Gatilhos: \"melhorar a página\", \"mexer no layout\", \"adicionar uma seção\", \"redesenhar a home\", \"adicionar componente\", quando já existe código ou página publicada. NÃO use para criar uma página do zero (use o workflow site-construcao-de-landing-page), para auditar conversão (use site-cro), para desenhar a interface (use site-interface-de-conversao) nem para revisar conformidade de código de UI (use site-diretrizes-web-codigo). |
 | <a id="site-auditoria-de-interface"></a>**`/site-auditoria-de-interface`** | `Workflow` | `Super IA Marketing` | Antes de alterar uma página, seção ou componente que já existe: lê o estado atual, inventaria o que há, checa redundância e só propõe lacunas reais, com prova. Não serve para criar página do zero nem para auditar conversão. |
 
 ### <a id="construcao-de-landing-page"></a>Construcao De Landing Page
@@ -5388,13 +5395,13 @@ Total de recursos nesta macro-área: `17`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="social-carrossel"></a>**`social-carrossel`** | `Skill` | `Super IA Marketing` | Planeja e redige copy lâmina a lâmina para carrosséis de Instagram e LinkedIn otimizados para renderização em modelos de imagem de IA. Aplica teto rígido de ~25 palavras de corpo por lâmina, gancho agressivo no slide 1, entrega de valor imediata no slide 2 (sem enrolação), 1 ideia por lâmina com metáfora visual tangível, slide de salvamento (Save-Bait) com checklist/matriz, frase screenshotable e modo de auditoria com scorecard de 7 regras. Conecta dinamicamente com as marcas de _brands/. |
+| <a id="social-carrossel"></a>**`social-carrossel`** | `Skill` | `Super IA Marketing` | Use para planejar e redigir carrosséis de Instagram e LinkedIn lâmina a lâmina, com teto de cerca de 25 palavras por lâmina, gancho forte no slide 1, valor no slide 2 e uma ideia com metáfora visual por lâmina, prontos para renderizar em modelos de imagem de IA. Gatilhos: \"carrossel\", \"lâminas\", \"slides do Instagram\". NÃO use para a direção de arte e prompts de imagem do carrossel (use social-direcao-de-arte-ia), para estratégia social (use social-estrategia) nem para post de LinkedIn em texto (use social-linkedin). |
 
 ### <a id="checklist-diario"></a>Checklist Diario
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="social-checklist-diario"></a>**`/social-checklist-diario`** | `Workflow` | `Super IA Marketing` | Lista de verificação diária de gerenciamento de mídia social |
+| <a id="social-checklist-diario"></a>**`/social-checklist-diario`** | `Workflow` | `Super IA Marketing` | Gera o checklist diário de gestão de redes sociais (comunidade, publicação, engajamento e métricas). Use para organizar a rotina diária de social media por bloco de tempo. |
 
 ### <a id="conceito-de-thumbnail"></a>Conceito De Thumbnail
 
@@ -5412,7 +5419,7 @@ Total de recursos nesta macro-área: `17`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="social-direcao-de-arte-ia"></a>**`social-direcao-de-arte-ia`** | `Skill` | `Super IA Marketing` | Direção de arte e injeção automática de Design System em prompts de modelos de imagem de IA (ChatGPT/GPT Image 2, FLUX, Midjourney) para carrosséis em proporção 4:5 (1080x1350). Implementa o Workflow do Slide Âncora (geração de 3 variantes do hook e do primeiro slide de valor; travamento do vencedor como imagem de referência anexada para clonar layout, paleta e consistência estética nas lâminas seguintes), checklist de qualidade de 7 pontos e conexão dinâmica com as marcas de _brands/. |
+| <a id="social-direcao-de-arte-ia"></a>**`social-direcao-de-arte-ia`** | `Skill` | `Super IA Marketing` | Use para dirigir a arte de carrosséis 4:5 (1080x1350) gerados por IA: injeção do design system da marca em prompts de ChatGPT/GPT Image, FLUX e Midjourney e fluxo do Slide Âncora (3 variantes do hook e travamento do vencedor como referência). Gatilhos: \"prompt de imagem do carrossel\", \"slide âncora\", \"arte do carrossel com IA\". NÃO use para escrever a copy das lâminas (use social-carrossel), para prompts FLUX avulsos (use audiovisual-imagem-flux-prompts) nem para decidir a direção visual da marca (use brand-visual-direction). |
 
 ### <a id="estrategia"></a>Estrategia
 
@@ -6022,7 +6029,7 @@ Total de recursos nesta macro-área: `14`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="vendas-metodologias-b2b"></a>**`vendas-metodologias-b2b`** | `Skill` | `Super IA Marketing` | Especialista em metodologias consagradas de vendas consultivas e negociação complexa B2B (Challenger Sale, SPIN Selling, Sandler System e Never Split the Difference). |
+| <a id="vendas-metodologias-b2b"></a>**`vendas-metodologias-b2b`** | `Skill` | `Super IA Marketing` | Use para aplicar metodologias de venda consultiva e negociação B2B complexa: Challenger Sale, SPIN Selling, Sandler System e Never Split the Difference. Gatilhos: \"SPIN\", \"Challenger\", \"Sandler\", \"negociação difícil\", \"venda consultiva\". NÃO use para gestão de pipeline e previsão (use vendas-pipeline), cadência de prospecção fria (use vendas-cold-email) nem material de venda (use vendas-materiais-de-venda). |
 
 ### <a id="personalizacao-em-escala"></a>Personalizacao Em Escala
 

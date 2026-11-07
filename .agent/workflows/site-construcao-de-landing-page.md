@@ -30,7 +30,7 @@ Procedimento com **portões de aprovação**. Cada passo só começa depois do o
 
 ## Onde salvar
 
-Seguir a regra de resolução de destino da skill `geral-arquitetura-de-projeto`: `content/<marca>/landing-pages/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/landing-pages/AAAA-MM-DD - Nome da Demanda/` em projeto próprio. Dentro da pasta: `briefing.md`, `copy-opcao-1.md` (e `copy-opcao-2.md` se houver), `index.html` (ou os arquivos do componente), `capturas/` e `relatorio.md`. Nome da demanda com espaços, capitalizado.
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `geral-arquitetura-de-projeto`). Esse tipo não tem linha no mapa do 0 Mkt: use o tipo mais próximo e avise (regra 8). Hoje: `content/<marca>/landing-pages/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/landing-pages/AAAA-MM-DD - Nome da Demanda/` em projeto próprio. Dentro da pasta: `briefing.md`, `copy-opcao-1.md` (e `copy-opcao-2.md` se houver), `index.html` (ou os arquivos do componente), `capturas/` e `relatorio.md`. Nome da demanda com espaços, capitalizado.
 
 ## Limites
 

@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: email-copy
-description: Mestre em redação persuasiva e copywriting de conversão para email marketing. Domina a engenharia de linhas de assunto de alta curiosidade, preheaders complementares, frameworks de narrativa (Story-Lesson-Offer, Soap Opera Sequence, Seinfeld emails), plain text vs HTML leve e otimização de Click-to-Open Rate (CTOR).
+description: "Use para escrever e-mails de marketing que convertem: linhas de assunto, preheaders, narrativas (Story-Lesson-Offer, Soap Opera, Seinfeld), texto puro versus HTML leve e otimização de CTOR. Gatilhos: \"assunto de e-mail\", \"copy de e-mail\", \"sequência de e-mails\". NÃO use para montar a automação e o fluxo (use email-automacao), para DNS e reputação de envio (use email-entregabilidade), para newsletter editorial (use email-newsletter) nem para cadência de prospecção fria (use vendas-cold-email)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

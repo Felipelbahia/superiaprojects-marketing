@@ -3,7 +3,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: revenue-inteligencia-competitiva
-description: "Strategic competitive intelligence, market landscaping, competitor teardowns, battlecard creation, moat analysis, win/loss research, and differentiation mapping."
+description: "Use para inteligência competitiva estratégica: mapa de mercado, teardown de concorrente, battlecard, análise de fosso (moat), pesquisa win/loss e mapa de diferenciação. Gatilhos: \"analisar concorrente\", \"battlecard\", \"win/loss\", \"teardown\", \"diferenciação\". NÃO use para posicionar o próprio produto (use revenue-gtm-e-posicionamento), monitorar preço de concorrente (use o workflow revenue-monitoramento-de-preco-concorrente) nem anúncios de concorrentes (use o workflow ads-extracao-de-anuncios-concorrentes)."
 author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

@@ -1,275 +1,146 @@
 ---
 name: growth-teste-ab
-description: A/B testing framework for marketing optimization
-version: "1.0.0"
-brand: AgentKits Marketing by AityTech
-argument-hint: "[test-type] [element-to-test]"
+description: Gera o plano de um teste A/B de marketing (hipótese, variantes, critério estatístico e cronograma mínimo). Use quando for testar um elemento de e-mail, landing page, anúncio ou site.
+allowed-tools: Read, Write, Edit, Bash
 ---
 
-## Prerequisites
+# Plano de Teste A/B
 
-Before running this command, ensure you have:
-- [ ] Test channel identified
-- [ ] Element to test chosen
-- [ ] Statistical rigor level determined
-
-## Context Loading
-
-Load these files first:
-1. `./README.md` - Product context
-2. `./docs/tests/` - Previous test results
-3. `.claude/skills/growth-testes-ab/references/ab-test-setup.md` - Testing frameworks
+> Workflow estruturado para planejar um teste A/B de marketing, no padrão do Hub Super IA Projects - Marketing `0 Mkt`.
 
 ---
 
-## Language & Quality Standards
+## 1. O que este workflow faz
 
-**CRITICAL**: Respond in the same language the user is using. If Vietnamese, respond in Vietnamese. If Spanish, respond in Spanish.
+Monta o plano de um teste A/B: hipótese, variantes, cálculo de rigor estatístico, checklist de execução e análise. Verifica:
 
-**Standards**: Token efficiency, sacrifice grammar for concision, list unresolved questions at end.
-
-**Skills**: Activate `data-atribuicao-e-relatorios`, `growth-frameworks` skills.
-
-**Components**: Reference `./.claude/components/interactive-questions.md`
+1. A marca, o canal (e-mail, landing page, anúncio, site) e o elemento a testar.
+2. Testes anteriores já registrados, se houver, para não repetir aprendizado.
+3. O nível de rigor estatístico necessário para a decisão.
 
 ---
 
-## Interactive Parameter Collection
+## 2. Como executar
 
-### Step 1: Ask Output Scope
-
-**Question:** "What level of A/B testing plan do you need?"
-**Header:** "Scope"
-**MultiSelect:** false
-
-**Options:**
-- **Basic** - Single test plan with checklist
-- **Recommended** - Full plan with variants
-- **Complete** - Framework with test library
-- **Custom** - I'll specify what I need
-
----
-
-### Step 2: Ask Test Channel
-
-**Question:** "What channel are you testing?"
-**Header:** "Channel"
-**MultiSelect:** false
-
-**Options:**
-- **Email** - Subject lines, content, CTAs
-- **Landing Page** - Headlines, forms, layout
-- **Ads** - Creative, copy, targeting
-- **Website** - UI elements, flows
-
----
-
-### Step 3: Ask Test Element
-
-**Question:** "What element will you test?"
-**Header:** "Element"
-**MultiSelect:** false
-
-**Options:**
-- **Headlines/Copy** - Text variations
-- **CTA** - Buttons, placement, text
-- **Visual** - Images, videos, layout
-- **Form/Flow** - Fields, steps, length
-
----
-
-### Step 4: Ask Statistical Rigor
-
-**Question:** "What level of statistical rigor?"
-**Header:** "Rigor"
-**MultiSelect:** false
-
-**Options:**
-- **Quick** - Directional insights (80% confidence)
-- **Standard** - Statistical significance (95%)
-- **Rigorous** - High confidence (99%)
-- **Enterprise** - Full sample size calculation
-
----
-
-### Step 5: Confirmation
-
-**Display summary:**
-
-```markdown
-## A/B Test Configuration
-
-| Parameter | Value |
-|-----------|-------|
-| Test Type | [description] |
-| Channel | [selected channel] |
-| Element | [selected element] |
-| Rigor | [selected rigor] |
-| Scope | [Basic/Recommended/Complete] |
+```
+/growth-teste-ab
+```
+Ou com parâmetros contextuais:
+```
+/growth-teste-ab --marca plus-pr --canal landing-page --elemento headline
 ```
 
-**Question:** "Create this A/B test plan?"
-**Header:** "Confirm"
-**MultiSelect:** false
-
-**Options:**
-- **Yes, create plan** - Start planning
-- **No, change settings** - Go back to modify
+Se faltar a marca, perguntar antes de seguir (regra 1.1 do `CLAUDE.md`).
 
 ---
 
-## Workflow
+## 3. Instruções de execução passo a passo
 
-1. **Hypothesis Development**
-   - Define problem statement
-   - Create hypothesis
-   - Set expected outcomes
+### Fase 1: Desenvolvimento da hipótese
+- [ ] Definir o problema
+- [ ] Criar a hipótese: "Se mudarmos [X], então [métrica Y] vai [aumentar/diminuir] porque [razão Z]"
+- [ ] Definir o resultado esperado
 
-2. **Test Design**
-   - Create control and variant
-   - Calculate sample size
-   - Set test duration
+### Fase 2: Desenho do teste
 
-3. **Execution Setup**
-   - Configure tracking
-   - Set up traffic split
-   - QA both variants
+| Variante | Descrição |
+|---|---|
+| A (controle) | [atual] |
+| B (teste) | [mudança] |
 
-4. **Analysis & Implementation**
-   - Verify statistical significance
-   - Document learnings
-   - Implement winner
+- [ ] Calcular o tamanho de amostra necessário
+- [ ] Definir a duração mínima do teste
 
----
+### Fase 3: Setup de execução
+- [ ] Configurar o rastreamento
+- [ ] Configurar a divisão de tráfego
+- [ ] QA das duas variantes
 
-## Agent Delegation
-
-| Task | Agent | Trigger |
-|------|-------|---------|
-| Hypothesis creation | `conteudo-brainstorm` | Test ideation |
-| Copy variants | `copy-redacao-publicitaria` | Content testing |
-| Analysis | `revenue-pesquisa-de-mercado` | Results review |
-| Recommendations | `revenue-planejamento-de-campanha` | Next steps |
+### Fase 4: Análise e implementação
+- [ ] Verificar significância estatística
+- [ ] Documentar os aprendizados
+- [ ] Implementar a variante vencedora
 
 ---
 
-## Output Format
+## Testes comuns por canal
 
-### Basic Scope
+**E-mail**
 
-```markdown
-## A/B Test Plan: [Test Name]
+| Elemento | Ideias de teste |
+|---|---|
+| Linha de assunto | Tamanho, personalização, emoji, urgência |
+| Preview text | Ganchos diferentes, CTAs |
+| Nome do remetente | Empresa vs. pessoa |
+| Horário de envio | Dia da semana, horário |
+| Botão de CTA | Cor, texto, posição |
 
-### Hypothesis
-"If we [change X], then [metric Y] will [increase/decrease] because [reason Z]."
+**Landing page**
 
-### Test Design
-| Variant | Description |
-|---------|-------------|
-| A (Control) | [Current] |
-| B (Test) | [Change] |
+| Elemento | Ideias de teste |
+|---|---|
+| Headline | Benefício vs. feature, pergunta vs. afirmação |
+| Imagem principal | Pessoas vs. produto, vídeo vs. imagem |
+| Botão de CTA | Cor, tamanho, texto, posição |
+| Tamanho do formulário | Campos obrigatórios, single-step vs. multi-step |
+| Prova social | Depoimentos, logos, números |
 
-### Pre-Test Checklist
-- [ ] Hypothesis documented
-- [ ] Variants created
-- [ ] Tracking verified
-- [ ] Sample size calculated
-```
+**Anúncio**
 
-### Recommended Scope
-
-[Include Basic + Full execution checklists + Results template + Common tests by channel + ICE prioritization]
-
-### Complete Scope
-
-[Include all + Testing rules + Test log template + Learnings library + Sample size calculator + Duration guidelines]
-
----
-
-## Common Tests by Channel
-
-### Email Tests
-| Element | Test Ideas |
-|---------|------------|
-| Subject line | Length, personalization, emoji, urgency |
-| Preview text | Different hooks, CTAs |
-| Sender name | Company vs person name |
-| Send time | Day of week, time of day |
-| CTA button | Color, text, placement |
-
-### Landing Page Tests
-| Element | Test Ideas |
-|---------|------------|
-| Headline | Benefit vs feature, question vs statement |
-| Hero image | People vs product, video vs image |
-| CTA button | Color, size, text, placement |
-| Form length | Fields required, single vs multi-step |
-| Social proof | Testimonials, logos, numbers |
-
-### Ad Tests
-| Element | Test Ideas |
-|---------|------------|
-| Headline | Different value props |
-| Description | Features vs benefits |
-| Image/video | Different visuals |
-| CTA | Different action words |
+| Elemento | Ideias de teste |
+|---|---|
+| Headline | Propostas de valor diferentes |
+| Descrição | Features vs. benefícios |
+| Imagem/vídeo | Visuais diferentes |
+| CTA | Verbos de ação diferentes |
 
 ---
 
-## Testing Prioritization (ICE Framework)
+## Priorização de testes (framework ICE)
 
-| Test Idea | Impact (1-10) | Confidence (1-10) | Ease (1-10) | ICE Score |
-|-----------|---------------|-------------------|-------------|-----------|
+| Ideia de teste | Impacto (1-10) | Confiança (1-10) | Facilidade (1-10) | Score ICE |
+|---|---|---|---|---|
 | | | | | |
 
-**ICE Score = (Impact + Confidence + Ease) / 3**
+**Score ICE = (Impacto + Confiança + Facilidade) / 3**
 
 ---
 
-## Testing Rules
+## Regras de teste
 
-### Do's
-- Test one variable at a time
-- Run until statistical significance
-- Document everything
-- Have clear hypothesis
-- Define metrics upfront
+**Fazer:**
+- Testar uma variável por vez
+- Rodar até atingir significância estatística
+- Documentar tudo
+- Ter hipótese clara
+- Definir métricas antes de começar
 
-### Don'ts
-- Don't stop tests early
-- Don't peek and decide
-- Don't test too many things
-- Don't ignore segment data
-- Don't forget to implement winners
+**Não fazer:**
+- Não parar o teste antes da hora
+- Não espiar os dados e decidir no meio do caminho
+- Não testar várias coisas ao mesmo tempo
+- Não ignorar dados por segmento
+- Não esquecer de implementar o vencedor
 
-### Minimum Test Duration
-- Email: 24-48 hours (full send)
-- Landing page: 2-4 weeks
-- Ads: 1-2 weeks minimum
-- Website: 2+ weeks
-
----
-
-## Pre-Delivery Validation
-
-Before delivering A/B testing framework:
-- [ ] Hypothesis documented
-- [ ] Variants clearly defined
-- [ ] Sample size calculated
-- [ ] Testing rules included
-- [ ] Analysis framework ready
+**Duração mínima recomendada:**
+- E-mail: 24-48h (envio completo)
+- Landing page: 2-4 semanas
+- Anúncios: 1-2 semanas no mínimo
+- Site: 2+ semanas
 
 ---
 
-## Output Location
+## Delegação de agentes
 
-Save test plan to: `./docs/testing/ab-[test-name]-[YYYY-MM-DD].md`
+| Tarefa | Agente | Gatilho |
+|---|---|---|
+| Criação de hipótese | `conteudo-brainstorm` | Ideação de teste |
+| Variantes de copy | `copy-redacao-publicitaria` | Teste de conteúdo |
+| Análise de resultado | `revenue-pesquisa-de-mercado` | Revisão de resultado |
+| Recomendações | `revenue-planejamento-de-campanha` | Próximos passos |
 
 ---
 
-## Next Steps
+## Onde salvar
 
-After A/B testing framework, consider:
-- `/test:ab-setup` - Plan specific test
-- `/cro:page` - Optimize page elements
-- `/analytics:funnel` - Analyze conversion funnel
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`). Sem mapa, grave no padrão direto, sem marca no caminho: `estrategia/campanhas/AAAA-MM-DD - Teste AB [Elemento]/plano-de-teste.md` (o mapa do 0 Mkt, multi-marca, usa `content/<marca>/estrategia/campanhas/AAAA-MM-DD - Teste AB [Elemento]/plano-de-teste.md`).

@@ -19,7 +19,7 @@ Before brainstorming, load context in this order:
 1. **Project Context**: Read `./README.md` for business goals and product info
 2. **Brand Guidelines**: Read the brand files in `_brands/<brand>/` (`brand-voice.md`, `style-guide.md`, and `brandbook.md` if it exists) for positioning constraints
 3. **Marketing Ideas**: Load `.claude/skills/growth-frameworks/references/marketing-ideas-collection.md` for 140+ tactics
-4. **Psychology**: Load `.claude/skills/revenue-gtm-e-posicionamento/references/marketing-psychology.md` for mental models
+4. **Psychology**: Load `.claude/skills/revenue-psicologia/references/marketing-psychology.md` for mental models
 5. **Existing Campaigns**: Check `./docs/` for prior campaign work and learnings
 
 ## Reasoning Process

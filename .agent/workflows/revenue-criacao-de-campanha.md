@@ -63,7 +63,13 @@ Create campaign assets:
 3. **Iterate**: Adjust based on data
 4. **Report**: Share learnings
 
+## Registrar a campanha (obrigatório)
+
+Ao aprovar o brief e a estratégia, crie o `campanha.md` pelo modelo `.agent/skills/revenue-campanhas/references/modelo-campanha.md` (pontual ou contínua), no destino do mapa de destinos do projeto. Preencha objetivo, prazo, etapas, canais e **resultado esperado com linha de base, critério de sucesso e de fracasso antes de produzir qualquer peça**. A campanha só sai de `rascunho` com a aprovação do dono. Ao encerrar, crie o `resultado.md` (ou as revisões periódicas, se for contínua).
+
 ## Output
+
+- `campanha.md` (objetivo, prazo, etapas, resultado esperado)
 
 - Campaign brief document
 - Content calendar
@@ -88,7 +94,7 @@ Usar a skill `site-interface-de-conversao` para criar uma apresentação em um �
 
 Slides de conteúdo: título com nome da campanha, metas e KPIs, público-alvo, mensagens-chave, canais de marketing, cronograma, plano de conteúdo, métricas de sucesso, CTA/próximos passos.
 
-Salvar seguindo a regra de resolução de destino da skill `geral-arquitetura-de-projeto`: `content/<marca>/campanha/AAAA-MM-DD - Nome da Demanda/apresentacao.html` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/campanha/AAAA-MM-DD - Nome da Demanda/apresentacao.html` em projeto próprio.
+Salvar seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`). Sem mapa, grave no padrão direto, sem marca no caminho: `estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/apresentacao.html` (o mapa do 0 Mkt, multi-marca, usa `content/<marca>/estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/apresentacao.html`). O plano da campanha é o `campanha.md` (modelo em `.agent/skills/revenue-campanhas/references/modelo-campanha.md`).
 
 ### 6.2 Visualizar localmente
 

@@ -54,8 +54,7 @@ Antes de redigir qualquer deck ou sequência de slides, valide:
 Todo texto de lâmina, headline e notas de orador DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`) antes da entrega final. Elimine adjetivos vazios como "solução holística e inovadora". Utilize afirmações concretas e dados demonstráveis.
 
 ### 4. Regras de Salvamento Estruturado
-Salve os projetos de apresentação no diretório:
-`content/<marca>/decks/YYYY-MM-DD - Nome da Apresentacao/`
+Salve os projetos de apresentação seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`), tipo de peça `apresentacoes` (no 0 Mkt, `content/<marca>/apresentacoes/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:
 - `pitch-deck.md` (ou `slides.md` para Slidev)
 - `speaker-notes.md` (Roteiro falado do apresentador slide a slide)
 - `investor-faq.md` (Principais objeções e dados de apoio)

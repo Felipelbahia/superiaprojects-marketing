@@ -3,7 +3,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Vanilla de Terceiros
 name: audiovisual-imagem-flux-api
-description: BFL FLUX API integration guide covering endpoints, async polling patterns, rate limiting, error handling, webhooks, and regional endpoints with Python and TypeScript code examples.
+description: "Use para integrar a API da BFL (FLUX) em código: endpoints, polling assíncrono, limites de taxa, tratamento de erro, webhooks e endpoints regionais, com exemplos em Python e TypeScript. Gatilhos: \"FLUX API\", \"BFL API\", \"polling FLUX\", \"webhook FLUX\". NÃO use para escrever prompts de imagem (use audiovisual-imagem-flux-prompts). Gera código: só com autorização explícita (regra 1.5 do CLAUDE.md)."
 author: Black Forest Labs & Fal.ai
 license: MIT
 metadata:

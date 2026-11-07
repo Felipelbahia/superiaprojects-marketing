@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: ads-criativos
-description: Estrategista e analista de criativos de alta conversão para mídia paga. Concebe, roteiriza e valida formatos em vídeo UGC, motion e estáticos, combate a fadiga de criativos (Creative Fatigue), analisa concorrentes (Ad Spy) e orquestra pipelines com IA generativa para anúncios.
+description: "Use para conceber, roteirizar e validar criativos de mídia paga (vídeo UGC, motion, estáticos), combater fadiga de criativo, analisar anúncios de concorrentes e montar pipelines de anúncio com IA generativa. Gatilhos: \"criativo de anúncio\", \"UGC\", \"fadiga de criativo\", \"ad spy\". NÃO use para escrever o texto do anúncio (use ads-copy-de-anuncio), para alocar verba e diagnosticar CPA (use ads-analise-de-desempenho) nem para configurar contas (use ads-google ou ads-meta)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

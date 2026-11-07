@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: vendas-metodologias-b2b
-description: Especialista em metodologias consagradas de vendas consultivas e negociação complexa B2B (Challenger Sale, SPIN Selling, Sandler System e Never Split the Difference).
+description: "Use para aplicar metodologias de venda consultiva e negociação B2B complexa: Challenger Sale, SPIN Selling, Sandler System e Never Split the Difference. Gatilhos: \"SPIN\", \"Challenger\", \"Sandler\", \"negociação difícil\", \"venda consultiva\". NÃO use para gestão de pipeline e previsão (use vendas-pipeline), cadência de prospecção fria (use vendas-cold-email) nem material de venda (use vendas-materiais-de-venda)."
 author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

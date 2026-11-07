@@ -34,8 +34,7 @@ Antes de redigir posts ou desenhar grades, confirme:
 Todo texto final de post, legenda ou lâmina de carrossel DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`).
 
 ### 4. Regras de Salvamento Estruturado
-Salve os conteúdos sociais no caminho:
-`content/<marca>/social/YYYY-MM-DD - Nome da Demanda/`
+Salve os conteúdos sociais seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`), tipo de peça `social` (no 0 Mkt, `content/<marca>/social/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:
 - `copy-opcao-1.md`
 - `copy-opcao-2.md`
 - `visual-briefing.md`

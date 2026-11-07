@@ -20,7 +20,7 @@ Before running this command, ensure:
 Load context in this order:
 1. **Project**: Read `./README.md` for product and audience context
 2. **Brand**: Read the brand files in `_brands/<brand>/` (`brand-voice.md`, `style-guide.md`, and `brandbook.md` if it exists) for positioning
-3. **Existing Plans**: Check `./plans/campaigns/` for prior campaign work
+3. **Existing Plans**: Check the campaign folders at the project's destination map (`docs/mapa-de-destinos.md`; default `estrategia/campanhas/`, with no brand in the path) for prior campaign work
 4. **Marketing Skill**: Load `.claude/skills/growth-frameworks/references/marketing-fundamentals.md`
 5. **Content Skill**: Load `.claude/skills/conteudo-reaproveitamento/references/content-strategy.md`
 6. **Analytics Skill**: Load `.claude/skills/data-atribuicao-e-relatorios/references/analytics-attribution.md`
@@ -253,7 +253,7 @@ NEXT_QUARTER_START=$(date -v+1m +%Y-%m-01 2>/dev/null || date -d "+1 month" +%Y-
 
 ## Output Location
 
-Save plan to: `./plans/campaigns/[campaign-name]/campaign-plan.md`
+Save plan following the project's destination map (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`). Without a map, use the direct default, with no brand in the path: `estrategia/campanhas/YYYY-MM-DD - [Campaign Name]/campanha.md` (the 0 Mkt map is multi-brand and uses `content/<brand>/estrategia/campanhas/…`).
 
 ---
 

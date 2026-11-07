@@ -101,7 +101,7 @@ Toda menção a `_brands/<marca>/` nesta skill e nas sub-skills (`brand-essence`
 | Marca hospedada no 0 Mkt | `0 Mkt/_brands/<marca>/` |
 | Marca com projeto próprio (ex.: WaiMonitor, migrado em 2026-10-17) | a pasta de marca do projeto, geralmente `<projeto>/brand/` |
 
-**Mapa de destinos** `[ADR-001]`: em projeto próprio, as skills leem `docs/mapa-de-destinos.md` antes de gravar (skill `geral-arquitetura-de-projeto`); se não existe, o Intake o propõe e cria com o usuário. Em projeto próprio, a ativação grava em `<raiz>/ativacao/`; o inventário de imagens fica em `<projeto>/assets/inventario.md`; as **regras** de monitoramento ficam em `<raiz>/ativacao/monitoramento.md` e as consultas, termos e relatórios em `inteligencia/5_monitoramento/`.
+**Mapa de destinos** `[ADR-001]`: em projeto próprio, as skills leem `docs/mapa-de-destinos.md` antes de gravar (skill `geral-arquitetura-de-projeto`); se não existe, o Intake o propõe e cria com o usuário. Em projeto próprio, a ativação grava em `<raiz>/ativacao/`; o inventário de imagens fica em `<projeto>/assets/inventario.md`; as **regras** de monitoramento ficam em `<raiz>/ativacao/monitoramento.md` e as consultas, termos e relatórios em `inteligencia/monitoramento/` (padrão; o mapa do projeto manda).
 
 Regras: não criar `_brands/<marca>/` no 0 Mkt para marca que já migrou; escrever fora do 0 Mkt só com confirmação do usuário; respeitar o CLAUDE.md do projeto de destino; as skills continuam no 0 Mkt e o projeto de destino as alcança pelo Protocolo de Fallback.
 

@@ -1,246 +1,101 @@
 ---
 name: data-revisao-mensal
-description: Monthly analytics review and insights template
-version: "1.0.0"
-brand: AgentKits Marketing by AityTech
-argument-hint: "[month-year] [client-or-brand]"
+description: Gera a revisão analítica mensal (tráfego, conversão, desempenho de conteúdo e campanhas) com comparação ao mês anterior. Use para consolidar os aprendizados do mês e definir prioridades do próximo.
+allowed-tools: Read, Write, Edit, Bash
 ---
 
-## Prerequisites
+# Revisão Analítica Mensal
 
-Before running this command, ensure you have:
-- [ ] Month and period defined
-- [ ] Access to analytics platforms
-- [ ] MCP configured: `google-analytics` (optional)
-
-## Context Loading
-
-Load these files first:
-1. `./README.md` - Product context
-2. `./docs/analytics/` - Previous analytics reviews
-3. `.claude/skills/data-atribuicao-e-relatorios/references/analytics-attribution.md` - Analytics frameworks
+> Workflow estruturado para a revisão mensal de analytics, no padrão do Hub Super IA Projects - Marketing `0 Mkt`.
 
 ---
 
-## Language & Quality Standards
+## 1. O que este workflow faz
 
-**CRITICAL**: Respond in the same language the user is using. If Vietnamese, respond in Vietnamese. If Spanish, respond in Spanish.
+Compila a análise do mês: tráfego por canal, funil de conversão, desempenho de conteúdo e campanhas, principais aprendizados e plano de ação para o mês seguinte. Verifica:
 
-**Standards**: Token efficiency, sacrifice grammar for concision, list unresolved questions at end.
-
-**Skills**: Activate `data-atribuicao-e-relatorios`, `growth-frameworks` skills.
-
-**Components**: Reference `./.claude/components/interactive-questions.md`
+1. A marca e o mês/período a revisar.
+2. Os dados disponíveis (Google Analytics, Search Console ou os relatórios já salvos em `content/<marca>/reports/`).
+3. O relatório do mês anterior, para a comparação MoM.
 
 ---
 
-## Interactive Parameter Collection
+## 2. Como executar
 
-### Step 1: Ask Output Scope
-
-**Question:** "What level of analytics review do you need?"
-**Header:** "Scope"
-**MultiSelect:** false
-
-**Options:**
-- **Basic** - Key metrics summary
-- **Recommended** - Full analysis with insights
-- **Complete** - Comprehensive with action plan
-- **Custom** - I'll specify focus areas
-
----
-
-### Step 2: Ask Review Focus
-
-**Question:** "Which areas should the review prioritize?"
-**Header:** "Focus"
-**MultiSelect:** true
-
-**Options:**
-- **Traffic & Acquisition** - Sources, channels
-- **Conversion & Funnel** - Leads, sales
-- **Content & Engagement** - Performance, time
-- **Campaigns & Spend** - ROI, efficiency
-
----
-
-### Step 3: Ask Comparison Period
-
-**Question:** "What comparison period?"
-**Header:** "Compare"
-**MultiSelect:** false
-
-**Options:**
-- **MoM** - Month over month
-- **YoY** - Year over year
-- **QoQ** - Quarter over quarter
-- **Custom** - Specific date range
-
----
-
-### Step 4: Ask Output Format
-
-**Question:** "How should insights be presented?"
-**Header:** "Format"
-**MultiSelect:** false
-
-**Options:**
-- **Executive** - High-level summary
-- **Detailed** - Full data with analysis
-- **Actionable** - Focus on next steps
-- **Report** - Client-ready document
-
----
-
-### Step 5: Confirmation
-
-**Display summary:**
-
-```markdown
-## Analytics Review Configuration
-
-| Parameter | Value |
-|-----------|-------|
-| Month/Period | [description] |
-| Focus Areas | [selected focus] |
-| Comparison | [selected comparison] |
-| Format | [selected format] |
-| Scope | [Basic/Recommended/Complete] |
+```
+/data-revisao-mensal
+```
+Ou com parâmetros contextuais:
+```
+/data-revisao-mensal --marca pr-pulse --mes 2026-10
 ```
 
-**Question:** "Generate this analytics review?"
-**Header:** "Confirm"
-**MultiSelect:** false
-
-**Options:**
-- **Yes, generate review** - Start analysis
-- **No, change settings** - Go back to modify
+Se faltar a marca, perguntar antes de seguir (regra 1.1 do `CLAUDE.md`).
 
 ---
 
-## Workflow
+## 3. Instruções de execução passo a passo
 
-1. **Data Collection**
-   - Export analytics data
-   - Pull channel metrics
-   - Gather conversion data
-   - Compile campaign results
+### Fase 1: Coleta de dados
+- [ ] Exportar os dados de analytics do período
+- [ ] Reunir métricas por canal (orgânico, pago, social, e-mail)
+- [ ] Reunir dados de conversão e funil
+- [ ] Compilar os resultados de campanhas ativas no mês
 
-2. **Analysis Framework**
-   - Traffic analysis
-   - Engagement metrics
-   - Conversion funnel
-   - Channel performance
+### Fase 2: Análise
 
-3. **Insight Generation**
-   - Identify wins and challenges
-   - Document learnings
-   - Set priorities
+**Análise de tráfego**
 
-4. **Action Planning**
-   - Next month priorities
-   - Optimization recommendations
-   - Resource needs
-
----
-
-## Agent Delegation
-
-| Task | Agent | Trigger |
-|------|-------|---------|
-| Data compilation | `revenue-pesquisa-de-mercado` | Monthly review |
-| Funnel analysis | `vendas-qualificacao-de-leads` | Conversion review |
-| Insights narrative | `copy-redacao-publicitaria` | Report writing |
-| Recommendations | `revenue-planejamento-de-campanha` | Strategy planning |
-
----
-
-## Output Format
-
-### Basic Scope
-
-```markdown
-## Monthly Analytics: [Month Year]
-
-### Traffic Summary
-| Source | Sessions | MoM |
-|--------|----------|-----|
-| Organic | | |
-| Paid | | |
-| Social | | |
-
-### Conversion Summary
-| Metric | Value | Target |
-|--------|-------|--------|
-| Leads | | |
-| Conv Rate | | |
-
-### Top 3 Insights
-1. [Insight]
-2. [Insight]
-3. [Insight]
-```
-
-### Recommended Scope
-
-[Include Basic + Full channel breakdown + Content performance + Campaign analysis + Scorecard]
-
-### Complete Scope
-
-[Include all + Detailed metrics tables + Year-over-year + Segment analysis + Action plan + Resource needs]
-
----
-
-## Analysis Framework
-
-### Traffic Analysis
-| Source | Sessions | % Total | MoM | YoY |
-|--------|----------|---------|-----|-----|
-| Organic Search | | | | |
-| Direct | | | | |
-| Paid Search | | | | |
+| Fonte | Sessões | % do total | MoM | YoY |
+|---|---|---|---|---|
+| Busca orgânica | | | | |
+| Direto | | | | |
+| Busca paga | | | | |
 | Social | | | | |
-| Email | | | | |
+| E-mail | | | | |
 | **Total** | | | | |
 
-### Conversion Analysis
-| Stage | Volume | Rate | MoM | Benchmark |
-|-------|--------|------|-----|-----------|
-| Visitors | | - | | |
+**Análise de conversão**
+
+| Estágio | Volume | Taxa | MoM | Benchmark |
+|---|---|---|---|---|
+| Visitantes | | - | | |
 | Leads | | % | | 3% |
 | MQLs | | % | | 20% |
 | SQLs | | % | | 30% |
-| Customers | | % | | 25% |
+| Clientes | | % | | 25% |
 
-### Scorecard
-| KPI | Target | Actual | Status | Trend |
-|-----|--------|--------|--------|-------|
-| Traffic | | | 🟢/🟡/🔴 | ↑/↓/→ |
+**Scorecard**
+
+| KPI | Meta | Real | Status | Tendência |
+|---|---|---|---|---|
+| Tráfego | | | 🟢/🟡/🔴 | ↑/↓/→ |
 | Leads | | | 🟢/🟡/🔴 | ↑/↓/→ |
-| Revenue | | | 🟢/🟡/🔴 | ↑/↓/→ |
+| Receita | | | 🟢/🟡/🔴 | ↑/↓/→ |
+
+### Fase 3: Geração de insights
+- [ ] Identificar vitórias e desafios do mês
+- [ ] Documentar aprendizados
+- [ ] Definir prioridades
+
+### Fase 4: Plano de ação
+- [ ] Prioridades do próximo mês
+- [ ] Recomendações de otimização
+- [ ] Necessidades de recurso (tempo, verba, ferramenta)
 
 ---
 
-## Pre-Delivery Validation
+## Delegação de agentes
 
-Before delivering analytics review:
-- [ ] All data from verified sources
-- [ ] Traffic and conversion analyzed
-- [ ] Top insights highlighted
-- [ ] Action items defined
-- [ ] Comparison period included
-
----
-
-## Output Location
-
-Save review to: `./docs/analytics/monthly-[month-year]-[YYYY-MM-DD].md`
+| Tarefa | Agente | Gatilho |
+|---|---|---|
+| Compilação de dados | `data-analise-de-desempenho` | Revisão mensal |
+| Análise de funil | `vendas-qualificacao-de-leads` | Revisão de conversão |
+| Narrativa dos insights | `copy-redacao-publicitaria` | Redação do relatório |
+| Recomendações | `revenue-planejamento-de-campanha` | Planejamento estratégico |
 
 ---
 
-## Next Steps
+## Onde salvar
 
-After analytics review, consider:
-- `/report:monthly` - Generate client report
-- `/ops:monthly` - Monthly operations review
-- `/analytics:funnel` - Deep funnel analysis
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `geral-arquitetura-de-projeto`), tipo de peça `reports`: `content/<marca>/reports/AAAA-MM-DD - Revisao Mensal [Mes-Ano]/relatorio.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/reports/AAAA-MM-DD - Revisao Mensal [Mes-Ano]/relatorio.md` em projeto próprio.

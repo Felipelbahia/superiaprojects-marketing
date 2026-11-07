@@ -1,266 +1,106 @@
 ---
 name: revenue-checklist-de-lancamento-de-campanha
-description: Pre-launch campaign checklist to ensure nothing is missed
-version: "1.0.0"
-brand: AgentKits Marketing by AityTech
-argument-hint: "[campaign-name] [launch-date]"
+description: Gera o checklist de pré-lançamento de uma campanha, com cronograma T-14 a T+1 e matriz de sign-off. Use antes de colocar uma campanha no ar para garantir que nada ficou de fora.
+allowed-tools: Read, Write, Edit, Bash
 ---
 
-## Prerequisites
+# Checklist de Lançamento de Campanha
 
-Before running this command, ensure you have:
-- [ ] Campaign name and launch date defined
-- [ ] Campaign type and channels known
-- [ ] Team roles assigned
-
-## Context Loading
-
-Load these files first:
-1. `./README.md` - Product context
-2. `./docs/campaigns/` - Campaign documentation
-3. `./plans/` - Active campaign plans
+> Workflow estruturado para o checklist de pré-lançamento de campanha, no padrão do Hub Super IA Projects - Marketing `0 Mkt`.
 
 ---
 
-## Language & Quality Standards
+## 1. O que este workflow faz
 
-**CRITICAL**: Respond in the same language the user is using. If Vietnamese, respond in Vietnamese. If Spanish, respond in Spanish.
-
-**Standards**: Token efficiency, sacrifice grammar for concision, list unresolved questions at end.
-
-**Skills**: Activate `growth-frameworks`, `data-atribuicao-e-relatorios` skills.
-
-**Components**: Reference `./.claude/components/interactive-questions.md`
+Monta o cronograma de preparação de uma campanha (estratégia, criativo, setup técnico, QA final, lançamento e primeiras 24h) e a matriz de sign-off por área. Verifica:
+1. A marca, o nome e a data de lançamento da campanha.
+2. O tipo de campanha e os canais envolvidos (e-mail, tráfego pago, landing page, social).
+3. O plano de campanha já existente, se houver (ver workflow `revenue-criacao-de-campanha`).
 
 ---
 
-## Interactive Parameter Collection
+## 2. Como executar
 
-### Step 1: Ask Output Scope
-
-**Question:** "What level of launch checklist do you need?"
-**Header:** "Scope"
-**MultiSelect:** false
-
-**Options:**
-- **Basic** - Essential checks only
-- **Recommended** - Full launch checklist
-- **Complete** - Comprehensive with sign-offs
-- **Custom** - I'll specify what I need
-
----
-
-### Step 2: Ask Campaign Type
-
-**Question:** "What type of campaign is this?"
-**Header:** "Type"
-**MultiSelect:** false
-
-**Options:**
-- **Product Launch** - New product/feature
-- **Lead Gen** - Lead generation campaign
-- **Brand Awareness** - Visibility campaign
-- **Promotional** - Sale or offer
-
----
-
-### Step 3: Ask Channels Involved
-
-**Question:** "Which channels are involved?"
-**Header:** "Channels"
-**MultiSelect:** true
-
-**Options:**
-- **Email** - Email marketing
-- **Paid Ads** - PPC, social ads
-- **Landing Pages** - Web pages
-- **Social** - Organic social media
-
----
-
-### Step 4: Ask Timeline
-
-**Question:** "How long until launch?"
-**Header:** "Timeline"
-**MultiSelect:** false
-
-**Options:**
-- **Rush** - Less than 3 days
-- **Standard** - 1-2 weeks
-- **Full** - 2+ weeks
-- **Extended** - Month+ planning
-
----
-
-### Step 5: Confirmation
-
-**Display summary:**
-
-```markdown
-## Campaign Launch Configuration
-
-| Parameter | Value |
-|-----------|-------|
-| Campaign | [description] |
-| Type | [selected type] |
-| Channels | [selected channels] |
-| Timeline | [selected timeline] |
-| Scope | [Basic/Recommended/Complete] |
+```
+/revenue-checklist-de-lancamento-de-campanha
+```
+Ou com parâmetros contextuais:
+```
+/revenue-checklist-de-lancamento-de-campanha --marca plus-pr --campanha "Lançamento Q1" --data 2026-12-01
 ```
 
-**Question:** "Create this launch checklist?"
-**Header:** "Confirm"
-**MultiSelect:** false
-
-**Options:**
-- **Yes, create checklist** - Start creation
-- **No, change settings** - Go back to modify
+Se faltar a marca, perguntar antes de seguir (regra 1.1 do `CLAUDE.md`).
 
 ---
 
-## Workflow
+## 3. Instruções de execução passo a passo
 
-1. **Strategy & Planning (T-14)**
-   - Define objectives and KPIs
-   - Finalize target audience
-   - Complete competitive check
-   - Align stakeholders
+### T-14 dias: Estratégia e planejamento
+- [ ] Objetivo da campanha definido (SMART)
+- [ ] Público-alvo documentado
+- [ ] Mensagens-chave finalizadas
+- [ ] Orçamento aprovado e alocado
+- [ ] Métricas de sucesso definidas
 
-2. **Content & Creative (T-7)**
-   - Landing page ready
-   - Copy and messaging finalized
-   - Visual assets prepared
-   - Legal review complete
+### T-7 dias: Conteúdo e criativo
+- [ ] Landing page no ar e com carregamento rápido
+- [ ] Responsividade mobile verificada
+- [ ] Formulário funcionando corretamente
+- [ ] Copy revisado (filtro anti-slop)
+- [ ] Assets visuais prontos
 
-3. **Technical Setup (T-3)**
-   - Tracking configured
-   - CRM lead flow tested
-   - Email automation ready
-   - Paid ads built
+### T-3 dias: Setup técnico
+- [ ] Metas de analytics configuradas
+- [ ] Rastreamento de conversão instalado (UTMs, pixels)
+- [ ] Fluxo de leads para o CRM testado
+- [ ] Automação de e-mail pronta
+- [ ] Anúncios montados e aprovados
 
-4. **Launch & Monitor (T-0)**
-   - Go live verification
-   - Initial monitoring
-   - Quick optimization
-   - Team standby
+### T-1 dia: QA final
+- [ ] Jornada completa do usuário testada
+- [ ] Todos os links verificados
+- [ ] Testado em múltiplos navegadores/dispositivos
+- [ ] Time de vendas alinhado
+- [ ] Plano de contingência pronto
 
----
+### T-0: Dia de lançamento
+- [ ] Checagem final dos sistemas
+- [ ] Ativação de todas as campanhas
+- [ ] Monitoramento de erros
+- [ ] Resposta ao engajamento inicial
 
-## Agent Delegation
-
-| Task | Agent | Trigger |
-|------|-------|---------|
-| Copy review | `copy-redacao-publicitaria` | Content QA |
-| Landing page | `growth-atracao-de-leads` | Page optimization |
-| Lead routing | `vendas-qualificacao-de-leads` | CRM setup |
-| Sales alignment | `vendas-habilitacao-comercial` | Handoff prep |
-
----
-
-## Output Format
-
-### Basic Scope
-
-```markdown
-## Campaign Launch: [Name]
-**Launch Date:** [Date]
-
-### Essential Checks
-- [ ] Objective defined
-- [ ] Landing page live
-- [ ] Tracking working
-- [ ] Form submitting to CRM
-- [ ] Emails scheduled
-- [ ] Ads approved
-```
-
-### Recommended Scope
-
-[Include Basic + Full timeline (T-14 to T+7) + Channel-specific checklists + Sign-off matrix]
-
-### Complete Scope
-
-[Include all + Emergency contacts + Backup plans + Post-launch review template + Metrics tracking]
+### T+1: Desempenho inicial
+- [ ] Revisão do desempenho da madrugada/primeiro dia
+- [ ] Checagem da qualidade dos leads
+- [ ] Ajuste de eventuais problemas
+- [ ] Otimização com base nos primeiros dados
 
 ---
 
-## Launch Timeline
+## Matriz de sign-off
 
-### T-14 Days: Strategy & Planning
-- [ ] Campaign objective clearly defined (SMART)
-- [ ] Target audience documented
-- [ ] Key messages finalized
-- [ ] Budget approved and allocated
-- [ ] Success metrics defined
-
-### T-7 Days: Content & Creative
-- [ ] Landing page live and loading fast
-- [ ] Mobile responsive verified
-- [ ] Form working correctly
-- [ ] Copy proofread
-- [ ] Visual assets ready
-
-### T-3 Days: Technical Setup
-- [ ] Analytics goals configured
-- [ ] Conversion tracking installed
-- [ ] CRM lead flow tested
-- [ ] Email automation ready
-- [ ] Ads built and approved
-
-### T-1 Day: Final QA
-- [ ] Complete user journey tested
-- [ ] All links verified
-- [ ] Cross-browser tested
-- [ ] Sales team briefed
-- [ ] Backup plans ready
-
-### T-0: Launch Day
-- [ ] Final systems check
-- [ ] Activate all campaigns
-- [ ] Monitor for errors
-- [ ] Respond to early engagement
-
-### T+1: Early Performance
-- [ ] Review overnight performance
-- [ ] Check lead quality
-- [ ] Address any issues
-- [ ] Optimize based on data
-
----
-
-## Sign-Off Matrix
-
-| Area | Owner | Approved | Date |
-|------|-------|----------|------|
-| Strategy | | ☐ | |
-| Creative | | ☐ | |
+| Área | Responsável | Aprovado | Data |
+|---|---|---|---|
+| Estratégia | | ☐ | |
+| Criativo | | ☐ | |
 | Copy | | ☐ | |
-| Technical | | ☐ | |
-| Legal | | ☐ | |
-| **Final Go** | | ☐ | |
+| Técnico | | ☐ | |
+| Jurídico | | ☐ | |
+| **Aprovação final** | | ☐ | |
 
 ---
 
-## Pre-Delivery Validation
+## Delegação de agentes
 
-Before delivering launch checklist:
-- [ ] All timeline phases covered
-- [ ] Channel-specific checks included
-- [ ] Sign-offs identified
-- [ ] Emergency contacts noted
-- [ ] Post-launch review planned
-
----
-
-## Output Location
-
-Save checklist to: `./docs/campaigns/launch-[campaign]-[YYYY-MM-DD].md`
+| Tarefa | Agente | Gatilho |
+|---|---|---|
+| Revisão de copy | `copy-redacao-publicitaria` | QA de conteúdo |
+| Otimização de landing page | `site-otimizacao-de-conversao` | Revisão da página |
+| Roteamento de leads | `vendas-qualificacao-de-leads` | Setup de CRM |
+| Alinhamento com vendas | `vendas-direcao-b2b` | Preparação de handoff |
 
 ---
 
-## Next Steps
+## Onde salvar
 
-After launch checklist, consider:
-- `/campaign:plan` - Create full campaign plan
-- `/campaign:brief` - Generate creative brief
-- `/campaign:analyze` - Post-launch analysis
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`). Sem mapa, grave no padrão direto, sem marca no caminho: `estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/checklist-lancamento.md` (o mapa do 0 Mkt, multi-marca, usa `content/<marca>/estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/checklist-lancamento.md`).

@@ -43,8 +43,8 @@ A2 e A3 só depois de A1. A4 não tem peça para auditar.
 - Não editar `_brands/` nem arquivos de código.
 
 ## Onde salvar
-Só se o usuário pedir ou se for entrega formal. Caminho padrão do projeto:
-`content/<marca>/<canal>/AAAA-MM-DD - Nome da Demanda/parecer-sexy-canvas.md`
+Só se o usuário pedir ou se for entrega formal. Siga o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`). Sem mapa, grave no padrão direto, sem marca no caminho:
+`conteudos/<canal>/AAAA-MM-DD - Nome da Demanda/parecer-sexy-canvas.md` (o mapa do 0 Mkt, multi-marca, usa `content/<marca>/<canal>/AAAA-MM-DD - Nome da Demanda/parecer-sexy-canvas.md`).
 Planos e auditorias analíticas do repositório vão em `.agent/plans/`.
 
 ## Handoff

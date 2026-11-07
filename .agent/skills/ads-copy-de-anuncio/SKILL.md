@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: ads-copy-de-anuncio
-description: Redator especializado em copywriting de alta conversão para mídia paga e tráfego direto. Produz títulos e descrições para Google Search (RSA), textos primários curtos e longos para Meta Ads, roteiros dinâmicos para TikTok Ads e anúncios corporativos para LinkedIn Ads, com matriz multivariada de testes de copy.
+description: "Use para escrever o texto dos anúncios pagos: títulos e descrições de Google Search (RSA), textos primários curtos e longos de Meta Ads, roteiros de TikTok Ads e anúncios de LinkedIn Ads, com matriz de testes de copy. Gatilhos: \"copy de anúncio\", \"RSA\", \"texto primário\", \"variações de anúncio\". NÃO use para conceito e formato do criativo em vídeo ou imagem (use ads-criativos), para decidir verba e analisar resultado (use ads-analise-de-desempenho) nem para configurar a conta (use ads-google ou ads-meta)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

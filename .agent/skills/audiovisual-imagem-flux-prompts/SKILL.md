@@ -3,7 +3,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: audiovisual-imagem-flux-prompts
-description: Comprehensive guide for BFL FLUX image generation models. Covers prompting, T2I, I2I, structured JSON, hex colors, typography, multi-reference editing, and model-specific best practices for FLUX.2 and FLUX.1 families.
+description: "Use para escrever prompts para os modelos de imagem FLUX.2 e FLUX.1 (BFL): texto para imagem, imagem para imagem, JSON estruturado, cores em hex, tipografia e edição com várias referências. Gatilhos: \"prompt FLUX\", \"gerar imagem com FLUX\", \"edição multi-referência\". NÃO use para integrar a API em código (use audiovisual-imagem-flux-api) nem para direção de arte e prompts em carrosséis (use social-direcao-de-arte-ia)."
 author: Black Forest Labs / Modificado por Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

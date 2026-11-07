@@ -1,256 +1,90 @@
 ---
 name: seo-checklist-semanal
-description: Weekly SEO maintenance and optimization checklist
-version: "1.0.0"
-brand: AgentKits Marketing by AityTech
-argument-hint: [website-or-domain]
+description: Gera o checklist semanal de manutenção e otimização de SEO. Use para organizar as tarefas de SEO da semana por dia (rankings, saúde técnica, conteúdo, link building, concorrência).
+allowed-tools: Read, Write, Edit, Bash
 ---
 
-## Prerequisites
+# Checklist Semanal de SEO
 
-Before running this command, ensure you have:
-- [ ] Website or domain identified
-- [ ] Access to SEO tools
-- [ ] MCP configured: `google-search-console`, `semrush` (optional)
-
-## Context Loading
-
-Load these files first:
-1. `./README.md` - Product context
-2. `./docs/seo/` - Previous SEO work
-3. `.claude/skills/seo-conteudo/references/write-content.md` - SEO frameworks
+> Workflow estruturado para a manutenção semanal de SEO, no padrão do Hub Super IA Projects - Marketing `0 Mkt`.
 
 ---
 
-## Language & Quality Standards
+## 1. O que este workflow faz
 
-**CRITICAL**: Respond in the same language the user is using. If Vietnamese, respond in Vietnamese. If Spanish, respond in Spanish.
-
-**Standards**: Token efficiency, sacrifice grammar for concision, list unresolved questions at end.
-
-**Skills**: Activate `seo-conteudo`, `growth-frameworks` skills.
-
-**Components**: Reference `./.claude/components/interactive-questions.md`
+Organiza as tarefas de SEO da semana em blocos diários e monta o painel de métricas para acompanhar a evolução. Verifica:
+1. A marca e o domínio/site em foco.
+2. Ferramentas de SEO disponíveis (Search Console, Ahrefs/Semrush, se configurados via MCP).
+3. Resultados da semana anterior, se houver relatório salvo em `content/<marca>/reports/` (0 Mkt) ou `conteudos/reports/` (projeto próprio).
 
 ---
 
-## Interactive Parameter Collection
+## 2. Como executar
 
-### Step 1: Ask Output Scope
-
-**Question:** "What level of SEO checklist do you need?"
-**Header:** "Scope"
-**MultiSelect:** false
-
-**Options:**
-- **Basic** - Essential weekly checks
-- **Recommended** - Full weekly review
-- **Complete** - Comprehensive with reporting
-- **Custom** - I'll specify focus areas
-
----
-
-### Step 2: Ask SEO Focus
-
-**Question:** "Which SEO areas need attention?"
-**Header:** "Focus"
-**MultiSelect:** true
-
-**Options:**
-- **Rankings** - Position tracking
-- **Technical** - Crawl, indexing, speed
-- **Content** - Optimization, updates
-- **Links** - Backlinks, internal links
-
----
-
-### Step 3: Ask Site Size
-
-**Question:** "What's the size of your site?"
-**Header:** "Size"
-**MultiSelect:** false
-
-**Options:**
-- **Small** - Under 50 pages
-- **Medium** - 50-500 pages
-- **Large** - 500+ pages
-- **Enterprise** - Multi-site
-
----
-
-### Step 4: Ask Reporting Needs
-
-**Question:** "What reporting is needed?"
-**Header:** "Reporting"
-**MultiSelect:** false
-
-**Options:**
-- **Personal** - Internal tracking only
-- **Team** - Weekly team updates
-- **Client** - Client-ready reports
-- **Executive** - Leadership summary
-
----
-
-### Step 5: Confirmation
-
-**Display summary:**
-
-```markdown
-## SEO Weekly Configuration
-
-| Parameter | Value |
-|-----------|-------|
-| Website | [description] |
-| Focus Areas | [selected focus] |
-| Site Size | [selected size] |
-| Reporting | [selected reporting] |
-| Scope | [Basic/Recommended/Complete] |
+```
+/seo-checklist-semanal
+```
+Ou com parâmetros contextuais:
+```
+/seo-checklist-semanal --marca pr-pulse --site pr-pulse.com
 ```
 
-**Question:** "Create this SEO checklist?"
-**Header:** "Confirm"
-**MultiSelect:** false
-
-**Options:**
-- **Yes, create checklist** - Start creation
-- **No, change settings** - Go back to modify
+Se faltar a marca, perguntar antes de seguir (regra 1.1 do `CLAUDE.md`).
 
 ---
 
-## Workflow
+## 3. Instruções de execução passo a passo
 
-1. **Monday: Performance Review**
-   - Rankings check
-   - Search Console review
-   - Traffic analysis
+### Segunda — Rankings e desempenho
+- [ ] Revisar Search Console (cliques, impressões, CTR)
+- [ ] Tirar snapshot do rastreamento de rankings
+- [ ] Analisar tendência de tráfego orgânico
 
-2. **Tuesday: Technical Health**
-   - Crawl errors
-   - Site health audit
-   - Core Web Vitals
+### Terça — Saúde técnica
+- [ ] Revisar relatório de cobertura/indexação
+- [ ] Checar erros de rastreamento
+- [ ] Verificar Core Web Vitals
 
-3. **Wednesday: Content Optimization**
-   - Content audit
-   - On-page updates
-   - Featured snippets
+### Quarta — Otimização de conteúdo
+- [ ] Identificar conteúdo com baixo desempenho
+- [ ] Otimizar 1-2 páginas (ver workflow `/seo-otimizacao-de-conteudo` e skill `seo-on-page`)
+- [ ] Mapear oportunidades de featured snippet
 
-4. **Thursday: Link Building**
-   - Backlink monitoring
-   - Outreach pipeline
-   - Internal linking
+### Quinta — Link building
+- [ ] Checar backlinks novos/perdidos
+- [ ] Disparar 3-5 e-mails de outreach
+- [ ] Atualizar linkagem interna
 
-5. **Friday: Competitor & Reporting**
-   - Competitor check
-   - Keyword research
-   - Weekly reporting
-
----
-
-## Agent Delegation
-
-| Task | Agent | Trigger |
-|------|-------|---------|
-| Keyword research | `growth-atracao-de-leads` | Content planning |
-| Technical audit | `growth-atracao-de-leads` | Site health |
-| Content gaps | `revenue-pesquisa-de-mercado` | Competitor analysis |
-| Performance analysis | `revenue-pesquisa-de-mercado` | Rankings review |
+### Sexta — Concorrência e relatório
+- [ ] Checar rankings dos concorrentes (ver workflow `/seo-analise-de-serp`)
+- [ ] Pesquisar novas oportunidades de palavra-chave
+- [ ] Compilar as métricas da semana
 
 ---
 
-## Output Format
+## Painel de métricas semanais
 
-### Basic Scope
-
-```markdown
-## SEO Weekly: Week of [Date]
-
-### Rankings Check
-- [ ] Export current rankings
-- [ ] Note changes (+/- 5 positions)
-- [ ] Investigate drops
-
-### Technical Check
-- [ ] Review crawl errors
-- [ ] Check site speed
-- [ ] Verify indexing
-
-### Content Actions
-- [ ] Optimize 1-2 pages
-- [ ] Update outdated content
-```
-
-### Recommended Scope
-
-[Include Basic + Full daily breakdown + Metrics dashboard + Quick wins tracker + Tools checklist]
-
-### Complete Scope
-
-[Include all + SEO health scorecard + Link building pipeline + Competitor monitoring + Weekly reporting template]
-
----
-
-## Weekly Schedule
-
-### Monday: Rankings & Performance
-- [ ] Search Console review (clicks, impressions, CTR)
-- [ ] Rankings tracker snapshot
-- [ ] Analytics organic traffic trend
-
-### Tuesday: Technical Health
-- [ ] Check Coverage report
-- [ ] Review crawl errors
-- [ ] Core Web Vitals check
-
-### Wednesday: Content Optimization
-- [ ] Identify underperforming content
-- [ ] Optimize 1-2 pages
-- [ ] Featured snippet opportunities
-
-### Thursday: Link Building
-- [ ] Check new/lost backlinks
-- [ ] Send 3-5 outreach emails
-- [ ] Internal linking updates
-
-### Friday: Competitor & Reporting
-- [ ] Competitor rankings check
-- [ ] Research new keyword opportunities
-- [ ] Compile weekly metrics
-
----
-
-## Weekly Metrics Dashboard
-
-| Metric | This Week | Last Week | Change | Target |
-|--------|-----------|-----------|--------|--------|
-| Organic Sessions | | | | |
-| Avg Position | | | | |
+| Métrica | Esta semana | Semana anterior | Variação | Meta |
+|---|---|---|---|---|
+| Sessões orgânicas | | | | |
+| Posição média | | | | |
 | CTR | | | | |
-| Keywords in Top 10 | | | | |
-| New Backlinks | | | | |
+| Palavras-chave no top 10 | | | | |
+| Backlinks novos | | | | |
 
 ---
 
-## Pre-Delivery Validation
+## Delegação de agentes
 
-Before delivering SEO checklist:
-- [ ] All daily tasks included
-- [ ] Metrics dashboard ready
-- [ ] Tool requirements listed
-- [ ] Reporting needs addressed
-- [ ] Weekly schedule complete
-
----
-
-## Output Location
-
-Save checklist to: `./docs/seo/weekly-[week]-[YYYY-MM-DD].md`
+| Tarefa | Agente | Gatilho |
+|---|---|---|
+| Pesquisa de palavras-chave | `growth-atracao-de-leads` | Planejamento de conteúdo |
+| Auditoria técnica | `seo-otimizacao-de-busca` | Saúde do site |
+| Análise de concorrência | `revenue-pesquisa-de-mercado` | Gaps de conteúdo |
+| Análise de desempenho | `data-analise-de-desempenho` | Revisão de rankings |
 
 ---
 
-## Next Steps
+## Onde salvar
 
-After SEO weekly checklist, consider:
-- `/seo:audit` - Comprehensive SEO audit
-- `/seo:keywords` - Keyword research
-- `/seo:optimize` - Content optimization
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `geral-arquitetura-de-projeto`), tipo de peça `reports`: `content/<marca>/reports/AAAA-MM-DD - Checklist SEO Semanal/checklist.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/reports/AAAA-MM-DD - Checklist SEO Semanal/checklist.md` em projeto próprio.

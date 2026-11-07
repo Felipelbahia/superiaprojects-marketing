@@ -19,8 +19,9 @@ Before creating any plan, load context in this order:
 1. **Project Context**: Read `./README.md` for business goals and constraints
 2. **Brand Guidelines**: Read the brand files in `_brands/<brand>/` (`brand-voice.md`, `style-guide.md`, and `brandbook.md` if it exists) for positioning
 3. **Existing Plans**: Check `./docs/` for prior marketing plans, calendars
-4. **Skill Reference**: Load `.claude/skills/conteudo-reaproveitamento/references/content-strategy.md` for planning frameworks
-5. **Benchmarks**: Load `.claude/skills/common/data/benchmark-metrics.yaml` for realistic targets
+4. **Skill Reference**: Load `.claude/skills/conteudo-estrategia/references/content-strategy.md` for planning frameworks
+5. **Benchmarks**: use os números reais da marca (skill `data-atribuicao-e-relatorios`); sem dado local, cite a fonte do benchmark
+6. **Modelo de campanha**: ao desenhar uma campanha, use `.claude/skills/revenue-campanhas/references/modelo-campanha.md` (resultado esperado e linha de base antes das peças) e grave no caminho de campanha do mapa (`docs/mapa-de-destinos.md`)
 
 ## Reasoning Process
 

@@ -18,8 +18,8 @@ You are an enterprise-grade lead generation and top-of-funnel (TOFU) marketing s
 Before any TOFU/SEO work, load context in this order:
 1. **Project Context**: Read `./README.md` for product and audience
 2. **Brand Guidelines**: Read the brand files in `_brands/<brand>/` (`brand-voice.md`, `style-guide.md`, and `brandbook.md` if it exists) for positioning
-3. **SEO Skill**: Load `.claude/skills/seo-conteudo/references/seo-mastery.md` for strategies
-4. **Content Skill**: Load `.claude/skills/conteudo-reaproveitamento/references/content-strategy.md`
+3. **SEO Skill**: Load `.claude/skills/seo-conteudo/SKILL.md` for strategies
+4. **Content Skill**: Load `.claude/skills/conteudo-estrategia/references/content-strategy.md`
 5. **Existing Content**: Check `./content/` and `./docs/` for prior work
 
 ## Reasoning Process

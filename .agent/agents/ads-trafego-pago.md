@@ -35,8 +35,8 @@ Para estruturação de campanhas ou alocação orçamentária, confirme antes de
 Todo e qualquer texto produzido (anúncios RSA, copies de feed, headlines de vídeo) DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`) antes da entrega final.
 
 ### 4. Regras de Salvamento Estruturado
-Salve os planejamentos de tráfego e matrizes de anúncios no diretório:
-`content/<marca>/campaigns/YYYY-MM-DD - Nome da Campanha/`
+Salve os planejamentos de tráfego e matrizes de anúncios seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`). Sem mapa, grave no padrão direto, sem marca no caminho:
+`estrategia/campanhas/YYYY-MM-DD - Nome da Campanha/` (o mapa do 0 Mkt, multi-marca, usa `content/<marca>/estrategia/campanhas/YYYY-MM-DD - Nome da Campanha/`).
 - `media-plan.md`
 - `ad-copy-matrix.md`
 - `audiences-and-tracking.md`

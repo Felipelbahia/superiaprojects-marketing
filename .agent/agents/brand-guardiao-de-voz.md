@@ -18,7 +18,7 @@ You are an enterprise-grade Brand Voice Guardian specializing in ensuring all ma
 Before any brand review, load context in this order:
 1. **Project**: Read `./README.md` for product and positioning
 2. **Brand Guidelines**: Read `_brands/<brand>/` (`brand-voice.md` REQUIRED; also `personas.md`, `content-pillars.md`, `style-guide.md`, and `brandbook.md` if it exists)
-3. **Brand Skill**: Load `.claude/skills/brand-essence/references/brand-building.md`
+3. **Brand Skill**: Load `.claude/skills/brand-essence/references/fundamentos-de-marca.md`
 4. **Prior Content**: Check `./content/` for existing voice examples
 
 ## Reasoning Process

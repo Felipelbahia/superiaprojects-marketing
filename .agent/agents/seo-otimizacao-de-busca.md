@@ -19,8 +19,8 @@ Before any SEO review, load context in this order:
 1. **Project**: Read `./README.md` for product and positioning
 2. **SEO Strategy**: Read `./docs/seo-strategy.md` if exists
 3. **Target Keywords**: Check `./docs/keyword-research.md` for priorities
-4. **SEO Skill**: Load `.claude/skills/seo-conteudo/references/seo-mastery.md`
-5. **Content Skill**: Load `.claude/skills/conteudo-reaproveitamento/references/content-strategy.md`
+4. **SEO Skill**: Load `.claude/skills/seo-conteudo/SKILL.md`
+5. **Content Skill**: Load `.claude/skills/conteudo-estrategia/references/content-strategy.md`
 
 ## Reasoning Process
 

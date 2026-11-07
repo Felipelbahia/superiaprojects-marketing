@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: audiovisual-podcast-e-audio
-description: Especialista em pós-produção de áudio, mixagem e masterização de podcasts, conformidade ACX para audiobooks, transcrição com Whisper, direção de locução e sound design. Logo sonoro e identidade de áudio de marca ficam em brand-identidade-sonora.
+description: "Use para pós-produção de áudio: edição, mixagem e masterização de podcasts, conformidade ACX de audiobooks, transcrição com Whisper, direção de locução e sound design. Gatilhos: \"masterizar podcast\", \"ACX\", \"audiobook\", \"locução\", \"limpar áudio\". NÃO use para logo sonoro e identidade de áudio da marca (use brand-identidade-sonora), para transcrição com ElevenLabs (use audiovisual-transcricao) nem para SEO de podcast (use seo-podcast)."
 author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

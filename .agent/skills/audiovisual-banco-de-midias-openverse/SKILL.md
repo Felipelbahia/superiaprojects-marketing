@@ -3,7 +3,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Nativa do Projeto
 name: audiovisual-banco-de-midias-openverse
-description: Busca de fotos, ilustrações, vetores, áudios e vídeos de domínio público e Creative Commons (CC0, CC-BY) na API do Openverse (WordPress/openverse) com fallback resiliente Wikimedia Commons e atribuição legal pronta.
+description: "Use para buscar fotos, ilustrações, vetores, áudios e vídeos livres (domínio público e Creative Commons CC0 e CC-BY) na API do Openverse, com fallback no Wikimedia Commons e atribuição legal pronta. Gatilhos: \"imagem livre\", \"Creative Commons\", \"banco de imagens gratuito\", \"Openverse\". NÃO use para fotos de estoque do Pexels (use o workflow audiovisual-banco-de-imagens-pexels) nem para gerar imagem com IA (use audiovisual-imagem-flux-prompts)."
 author: Felipe Bahia (0 Mkt)
 license: MIT
 metadata:

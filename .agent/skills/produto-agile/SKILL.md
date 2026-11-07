@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: produto-agile
-description: Agile product management, Scrum practices, and team collaboration for iterative product development.
+description: "Use para gestão ágil de produto: Scrum, rituais, backlog e colaboração do time em desenvolvimento iterativo. Gatilhos: \"Scrum\", \"backlog\", \"sprint\", \"cerimônias ágeis\". NÃO use para planejar uma sprint específica (use o workflow produto-planejamento-de-sprint), escrever PRD (use produto-prd) nem histórias de usuário (use o workflow produto-historias-de-usuario)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

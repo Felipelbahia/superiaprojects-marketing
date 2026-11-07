@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: ads-google
-description: Especialista técnico em Google Ads abrangendo Search, Performance Max (PMax), YouTube e Display. Domina a arquitetura de contas temáticas, mineração contínua de termos de busca (Search Term Mining), diagnóstico e elevação de Quality Score (QS), controle de canibalização de palavras-chave, auditoria de ativos/extensões e estratégias de lances inteligentes (Smart Bidding).
+description: "Use para estruturar e otimizar contas de Google Ads (Search, Performance Max, YouTube, Display): arquitetura temática, mineração de termos de busca, Quality Score, canibalização de palavras-chave, extensões e lances inteligentes. Gatilhos: \"Google Ads\", \"PMax\", \"termos de busca\", \"Quality Score\", \"Smart Bidding\". NÃO use para Meta Ads (use ads-meta), LinkedIn, TikTok e Reddit (use ads-multiplataforma), texto do anúncio (use ads-copy-de-anuncio) nem para decidir verba entre canais (use ads-analise-de-desempenho)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

@@ -32,16 +32,6 @@ metadata:
 **Why This Matters**: Most podcasts get discovered only through podcast apps. Adding SEO strategy opens an entirely new discovery channel—organic search—that compounds over time and costs nothing per visitor.
 
 
-## What Claude Does vs What You Decide
-
-| Claude Does | You Decide |
-|-------------|------------|
-| Structures production workflow | Final creative direction |
-| Suggests technical approaches | Equipment and tool choices |
-| Creates templates and checklists | Quality standards |
-| Identifies best practices | Brand/voice decisions |
-| Generates script outlines | Final script approval |
-
 ## What This Skill Does
 
 1. **Makes audio searchable** - Transcripts that Google can index
@@ -646,20 +636,6 @@ Select based on:
 - [Question people ask]
 - [Competitor content opportunity]
 ```
-
-## Skill Boundaries
-
-### What This Skill Does Well
-- Structuring audio production workflows
-- Providing technical guidance
-- Creating quality checklists
-- Suggesting creative approaches
-
-### What This Skill Cannot Do
-- Replace audio engineering expertise
-- Make subjective creative decisions
-- Access or edit audio files directly
-- Guarantee commercial success
 
 ## References
 

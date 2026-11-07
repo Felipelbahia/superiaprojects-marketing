@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: audiovisual-apresentacoes-educacionais
-description: "Use para planejar, melhorar e validar apresentações de ensino: aula, treinamento, workshop, webinar e palestra, com ciência da aprendizagem (carga cognitiva, 12 princípios de Mayer, 9 eventos de Gagné, design C.R.A.P.) e acessibilidade (WCAG 2.1 AA). Gatilhos: \"slides de aula\", \"apresentação de treinamento\", \"workshop\", \"webinar\", \"slides que ensinam\", \"revisar meus slides\". NÃO use para pitch de investidor ou deck de venda (use audiovisual-pitch-deck), para slides de código em Markdown (use audiovisual-slidev) nem para roteiro de videoaula (use video-script-writer)."
+description: "Use para planejar, melhorar e validar apresentações de ensino: aula, treinamento, workshop, webinar e palestra, com ciência da aprendizagem (carga cognitiva, 12 princípios de Mayer, 9 eventos de Gagné, design C.R.A.P.) e acessibilidade (WCAG 2.1 AA). Gatilhos: \"slides de aula\", \"apresentação de treinamento\", \"workshop\", \"webinar\", \"slides que ensinam\", \"revisar meus slides\". NÃO use para pitch de investidor ou deck de venda (use audiovisual-pitch-deck), para slides de código em Markdown (use audiovisual-slidev) nem para roteiro de videoaula (use o workflow copy-roteiro-de-video)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

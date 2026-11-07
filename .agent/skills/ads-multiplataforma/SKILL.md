@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: ads-multiplataforma
-description: Estrategista de mídia paga para redes B2B e canais emergentes fora do duopólio tradicional. Domina LinkedIn Ads para Account-Based Marketing (ABM) e prospecção corporativa de alto ticket, TikTok Ads para vídeos verticais e retenção rápida, Reddit Ads para comunidades técnicas de nicho e especificações técnicas multiplataforma.
+description: "Use para planejar mídia paga fora do Google e do Meta: LinkedIn Ads para ABM e prospecção B2B de ticket alto, TikTok Ads, Reddit Ads e especificações técnicas por plataforma. Gatilhos: \"LinkedIn Ads\", \"TikTok Ads\", \"Reddit Ads\", \"ABM pago\". NÃO use para Google Ads (use ads-google), Meta Ads (use ads-meta) nem para alocar verba entre canais (use ads-analise-de-desempenho)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

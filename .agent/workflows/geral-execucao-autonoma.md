@@ -44,7 +44,7 @@ Apresentar a proposta de plano:
 
 ### Definição de Pronto
 - [ ] Entregável 1 especificado e validado
-- [ ] Entregável 2 salvo no caminho correto em content/ ou .agent/plans/
+- [ ] Entregável 2 salvo no caminho do mapa de destinos (`docs/mapa-de-destinos.md`) ou em `.agent/plans/`
 
 ### Plano de Execução
 | # | Etapa | Skill / Ferramenta | Risco / Ponto Crítico |

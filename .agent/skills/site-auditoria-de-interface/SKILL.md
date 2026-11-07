@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: site-auditoria-de-interface
-description: "Use ANTES de alterar uma página, seção ou componente que já existe (site, landing page, interface): lê o estado atual, inventaria o que há, checa redundância e só propõe lacunas reais, com prova. Gatilhos: \"melhorar a página\", \"mexer no layout\", \"adicionar uma seção\", \"redesenhar a home\", \"adicionar componente\", quando já existe código ou página publicada. NÃO use para criar uma página do zero (use build-landing-page), para auditar conversão (use site-cro), para desenhar a interface (use site-interface-de-conversao) nem para revisar conformidade de código de UI (use site-diretrizes-web-codigo)."
+description: "Use ANTES de alterar uma página, seção ou componente que já existe (site, landing page, interface): lê o estado atual, inventaria o que há, checa redundância e só propõe lacunas reais, com prova. Gatilhos: \"melhorar a página\", \"mexer no layout\", \"adicionar uma seção\", \"redesenhar a home\", \"adicionar componente\", quando já existe código ou página publicada. NÃO use para criar uma página do zero (use o workflow site-construcao-de-landing-page), para auditar conversão (use site-cro), para desenhar a interface (use site-interface-de-conversao) nem para revisar conformidade de código de UI (use site-diretrizes-web-codigo)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

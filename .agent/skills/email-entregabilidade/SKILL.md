@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: email-entregabilidade
-description: Engenheiro de infraestrutura técnica e proteção de entregabilidade de email (Inbox Placement). Audita e configura registros de DNS (SPF, DKIM 2048-bit, DMARC com política p=reject, BIMI), gerencia aquecimento gradual (Warm-up de 21 dias), higiene profunda de listas contra spam traps e monitora reputação no Google Postmaster Tools.
+description: "Use para proteger a entregabilidade de e-mail (inbox placement): registros DNS (SPF, DKIM, DMARC, BIMI), aquecimento de domínio de 21 dias, higiene de lista contra spam traps e monitoramento de reputação no Google Postmaster. Gatilhos: \"caiu no spam\", \"SPF DKIM DMARC\", \"warm-up\", \"reputação de domínio\". NÃO use para escrever o e-mail (use email-copy) nem para montar sequências e automações (use email-automacao)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

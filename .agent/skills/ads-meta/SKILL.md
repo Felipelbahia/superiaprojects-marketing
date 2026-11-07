@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: ads-meta
-description: Especialista técnico e estratégico em Facebook Ads e Instagram Ads. Domina a arquitetura de contas Advantage+ e CBO/ABO, segmentação por audiências Broad e Lookalike de LTV, matriz de sobreposição de públicos (Audience Overlap), esteiras de retargeting por janelas de dias e controle de frequência.
+description: "Use para estruturar e otimizar contas de Meta Ads (Facebook e Instagram): Advantage+, CBO e ABO, públicos Broad e Lookalike, sobreposição de públicos, retargeting por janela e controle de frequência. Gatilhos: \"Meta Ads\", \"Facebook Ads\", \"Instagram Ads\", \"lookalike\", \"CBO\". NÃO use para Google Ads (use ads-google), LinkedIn, TikTok e Reddit (use ads-multiplataforma), texto do anúncio (use ads-copy-de-anuncio) nem para decidir verba entre canais (use ads-analise-de-desempenho)."
 author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

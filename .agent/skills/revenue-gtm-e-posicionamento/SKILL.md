@@ -3,7 +3,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: revenue-gtm-e-posicionamento
-description: "Go-To-Market (GTM) strategy, product marketing management (PMM), Category Design, Value Proposition Canvas, STP Framework (Segmentation, Targeting, Positioning), Pre-Mortem analysis, and cross-functional launch orchestration."
+description: "Use para estratégia de go-to-market e marketing de produto: posicionamento, Category Design, Value Proposition Canvas, STP (segmentação, alvo e posicionamento), pré-mortem e coordenação de lançamento entre áreas. Gatilhos: \"GTM\", \"posicionar produto\", \"proposta de valor\", \"STP\", \"categoria\". NÃO use para posicionamento e essência da marca (use brand-essence), plano de lançamento detalhado (use revenue-lancamento) nem análise de concorrentes (use revenue-inteligencia-competitiva)."
 author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: audiovisual-pitch-deck
-description: Especialista em arquitetura, narrativa, storytelling financeiro e design de apresentações executivas (Pitch Decks para investidores no padrão Y Combinator e decks comerciais de alto impacto).
+description: "Use para montar a narrativa e a estrutura de pitch decks para investidores (padrão Y Combinator) e decks comerciais de alto impacto, com storytelling financeiro e design executivo. Gatilhos: \"pitch deck\", \"deck de investidor\", \"rodada seed\", \"deck comercial\". NÃO use para slides de aula e treinamento (use audiovisual-apresentacoes-educacionais), para slides de código em Markdown (use audiovisual-slidev) nem para melhorar um slide isolado (use o workflow audiovisual-melhoria-de-slide)."
 author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

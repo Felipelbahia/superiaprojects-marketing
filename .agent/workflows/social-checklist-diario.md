@@ -1,266 +1,105 @@
 ---
 name: social-checklist-diario
-description: Daily social media management checklist
-version: "1.0.0"
-brand: AgentKits Marketing by AityTech
-argument-hint: "[platforms] [brand]"
+description: Gera o checklist diário de gestão de redes sociais (comunidade, publicação, engajamento e métricas). Use para organizar a rotina diária de social media por bloco de tempo.
+allowed-tools: Read, Write, Edit, Bash
 ---
 
-## Prerequisites
+# Checklist Diário de Social Media
 
-Before running this command, ensure you have:
-- [ ] Platforms to manage identified
-- [ ] Time budget determined
-- [ ] Brand voice guidelines available
-
-## Context Loading
-
-Load these files first:
-1. `./README.md` - Product context
-2. `./docs/social/` - Social media strategies
-3. `.claude/skills/social-estrategia/SKILL.md` - Social frameworks
+> Workflow estruturado para a rotina diária de gestão de redes sociais, no padrão do Hub Super IA Projects - Marketing `0 Mkt`.
 
 ---
 
-## Language & Quality Standards
+## 1. O que este workflow faz
 
-**CRITICAL**: Respond in the same language the user is using. If Vietnamese, respond in Vietnamese. If Spanish, respond in Spanish.
-
-**Standards**: Token efficiency, sacrifice grammar for concision, list unresolved questions at end.
-
-**Skills**: Activate `social-estrategia`, `growth-frameworks` skills.
-
-**Components**: Reference `./.claude/components/interactive-questions.md`
+Organiza a rotina diária de social media em blocos de tempo (manhã, meio-dia, tarde, fim do dia) e o painel de métricas da semana. Verifica:
+1. A marca e as plataformas geridas (Instagram, LinkedIn, TikTok etc.).
+2. O calendário editorial e os posts agendados em `content/<marca>/social/` ou `content/<marca>/linkedin/` (0 Mkt).
+3. Alertas de menção ou comentário pendente, se houver monitoramento ativo.
 
 ---
 
-## Interactive Parameter Collection
+## 2. Como executar
 
-### Step 1: Ask Output Scope
-
-**Question:** "What level of social checklist do you need?"
-**Header:** "Scope"
-**MultiSelect:** false
-
-**Options:**
-- **Basic** - Essential daily tasks
-- **Recommended** - Full daily workflow
-- **Complete** - Comprehensive with metrics
-- **Custom** - I'll specify what I need
-
----
-
-### Step 2: Ask Platforms
-
-**Question:** "Which platforms are you managing?"
-**Header:** "Platforms"
-**MultiSelect:** true
-
-**Options:**
-- **LinkedIn** - Professional network
-- **Twitter/X** - Real-time engagement
-- **Instagram** - Visual content
-- **TikTok** - Video content
-
----
-
-### Step 3: Ask Role
-
-**Question:** "What's your primary role?"
-**Header:** "Role"
-**MultiSelect:** false
-
-**Options:**
-- **Solo** - Managing everything alone
-- **Manager** - Overseeing team
-- **Creator** - Content focused
-- **Community** - Engagement focused
-
----
-
-### Step 4: Ask Time Budget
-
-**Question:** "How much time for social daily?"
-**Header:** "Time"
-**MultiSelect:** false
-
-**Options:**
-- **Minimal** - 30 min or less
-- **Standard** - 1-2 hours
-- **Full** - 2-4 hours
-- **Dedicated** - Full-time focus
-
----
-
-### Step 5: Confirmation
-
-**Display summary:**
-
-```markdown
-## Social Daily Configuration
-
-| Parameter | Value |
-|-----------|-------|
-| Brand | [description] |
-| Platforms | [selected platforms] |
-| Role | [selected role] |
-| Time Budget | [selected time] |
-| Scope | [Basic/Recommended/Complete] |
+```
+/social-checklist-diario
+```
+Ou com parâmetros contextuais:
+```
+/social-checklist-diario --marca experimentacao --plataformas instagram,linkedin
 ```
 
-**Question:** "Create this social checklist?"
-**Header:** "Confirm"
-**MultiSelect:** false
-
-**Options:**
-- **Yes, create checklist** - Start creation
-- **No, change settings** - Go back to modify
+Se faltar a marca, perguntar antes de seguir (regra 1.1 do `CLAUDE.md`).
 
 ---
 
-## Workflow
+## 3. Instruções de execução passo a passo
 
-1. **Morning: Community & Publishing**
-   - Check notifications
-   - Respond to comments/DMs
-   - Publish scheduled content
-   - Quick monitoring
+### Manhã (primeiros 30 min)
+**Gestão de comunidade (15 min)**
+- [ ] Checar notificações em todas as plataformas
+- [ ] Responder comentários das últimas 24h
+- [ ] Responder DMs (priorizar leads)
+- [ ] Endereçar reclamações, se houver
 
-2. **Midday: Engagement Window**
-   - Respond to new comments
-   - Proactive engagement
-   - Share third-party content
+**Publicação (10 min)**
+- [ ] Revisar posts agendados
+- [ ] Verificar links e mídia
+- [ ] Publicar conteúdo sensível ao tempo
 
-3. **Afternoon: Content Prep**
-   - Draft tomorrow's posts
-   - Prepare graphics
-   - Schedule content
+**Monitoramento rápido (5 min)**
+- [ ] Checar menções à marca
+- [ ] Anotar temas em alta
 
-4. **End of Day: Performance**
-   - Log key metrics
-   - Note learnings
-   - Prepare for tomorrow
+### Meio-dia (15 min)
+- [ ] Responder novos comentários
+- [ ] Engajar com 5-10 posts (influenciadores, clientes)
+- [ ] Compartilhar conteúdo de terceiros relevante
 
----
+### Tarde (15 min)
+- [ ] Rascunhar os posts de amanhã
+- [ ] Agendar conteúdo na ferramenta de scheduling
+- [ ] Checagem final de engajamento
 
-## Agent Delegation
-
-| Task | Agent | Trigger |
-|------|-------|---------|
-| Content ideas | `conteudo-brainstorm` | Content gaps |
-| Copy creation | `copy-redacao-publicitaria` | Post drafting |
-| Engagement strategy | `conteudo-brainstorm` | Community building |
-| Performance review | `revenue-pesquisa-de-mercado` | Daily metrics |
-
----
-
-## Output Format
-
-### Basic Scope
-
-```markdown
-## Social Daily: [Date]
-
-### Morning (15 min)
-- [ ] Check notifications
-- [ ] Respond to comments
-- [ ] Publish today's content
-
-### Midday (10 min)
-- [ ] Respond to new engagement
-- [ ] Engage with 5 posts
-
-### End of Day (10 min)
-- [ ] Log metrics
-- [ ] Schedule tomorrow
-```
-
-### Recommended Scope
-
-[Include Basic + Platform-specific tasks + Proactive outreach + Content prep + Weekly tracker]
-
-### Complete Scope
-
-[Include all + Full time blocks + Engagement quality guidelines + Response time goals + Best practices]
+### Fim do dia (10 min)
+- [ ] Registrar métricas: seguidores, engajamento, DMs
+- [ ] Anotar o melhor e o pior conteúdo do dia
+- [ ] Verificar o agendamento de amanhã
 
 ---
 
-## Daily Schedule
+## Metas de tempo de resposta
 
-### Morning (First 30 min)
-**Community Management (15 min)**
-- [ ] Check notifications across all platforms
-- [ ] Respond to comments from last 24 hours
-- [ ] Reply to DMs (prioritize leads)
-- [ ] Address any complaints
-
-**Content Publishing (10 min)**
-- [ ] Review scheduled posts
-- [ ] Verify links and media
-- [ ] Publish time-sensitive content
-
-**Quick Monitoring (5 min)**
-- [ ] Check brand mentions
-- [ ] Note trending topics
-
-### Midday (15 min)
-- [ ] Respond to new comments
-- [ ] Engage with 5-10 posts (influencers, customers)
-- [ ] Share valuable third-party content
-
-### Afternoon (15 min)
-- [ ] Draft tomorrow's posts
-- [ ] Queue content in scheduler
-- [ ] Final engagement check
-
-### End of Day (10 min)
-- [ ] Log metrics: followers, engagement, DMs
-- [ ] Note best/worst performing content
-- [ ] Verify tomorrow's schedule
+| Temperatura do lead | Tempo de resposta |
+|---|---|
+| Lead quente (70-100) | < 5 min |
+| Lead morno (50-69) | < 1 hora |
+| Reclamação de cliente | < 15 min |
+| Comentário geral | < 4 horas |
 
 ---
 
-## Response Time Goals
+## Painel de métricas semanais
 
-| Lead Temperature | Response Time |
-|------------------|---------------|
-| Hot leads (70-100) | < 5 min |
-| Warm leads (50-69) | < 1 hour |
-| Customer complaints | < 15 min |
-| General comments | < 4 hours |
-
----
-
-## Weekly Metrics Tracker
-
-| Metric | Mon | Tue | Wed | Thu | Fri | Avg |
-|--------|-----|-----|-----|-----|-----|-----|
-| New Followers | | | | | | |
-| Engagement Rate | | | | | | |
+| Métrica | Seg | Ter | Qua | Qui | Sex | Média |
+|---|---|---|---|---|---|---|
+| Novos seguidores | | | | | | |
+| Taxa de engajamento | | | | | | |
 | DMs | | | | | | |
 
 ---
 
-## Pre-Delivery Validation
+## Delegação de agentes
 
-Before delivering social daily checklist:
-- [ ] All time blocks covered
-- [ ] Platform-specific tasks included
-- [ ] Response time goals set
-- [ ] Metrics tracker included
-- [ ] Engagement guidelines clear
-
----
-
-## Output Location
-
-Save checklist to: `./docs/social/daily-[date]-[YYYY-MM-DD].md`
+| Tarefa | Agente | Gatilho |
+|---|---|---|
+| Ideias de conteúdo | `conteudo-brainstorm` | Gaps de conteúdo |
+| Criação de copy | `copy-redacao-publicitaria` | Rascunho de post |
+| Estratégia de engajamento | `social-calendario-e-distribuicao` | Construção de comunidade |
+| Revisão de desempenho | `data-analise-de-desempenho` | Métricas diárias |
 
 ---
 
-## Next Steps
+## Onde salvar
 
-After social daily checklist, consider:
-- `/social:schedule` - Create posting schedule
-- `/social:engage` - Develop engagement strategy
-- `/social:viral` - Create viral content
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `geral-arquitetura-de-projeto`), tipo de peça `reports`: `content/<marca>/reports/AAAA-MM-DD - Checklist Social Diario/checklist.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/reports/AAAA-MM-DD - Checklist Social Diario/checklist.md` em projeto próprio.

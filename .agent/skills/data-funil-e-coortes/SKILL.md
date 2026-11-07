@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: data-funil-e-coortes
-description: Especialista em análise de queda de funil (drop-off), matriz de retenção por coortes, ativação de usuários, otimização de onboarding e CRO de paywalls.
+description: "Use para analisar queda de funil (drop-off), retenção por coortes, ativação de usuários, onboarding e paywall em produtos digitais. Gatilhos: \"drop-off\", \"coorte\", \"ativação\", \"onboarding que não converte\", \"paywall\". NÃO use para tracking e GA4 (use data-web-ga4), atribuição e relatório executivo (use data-atribuicao-e-relatorios) nem para executar teste A/B (use growth-testes-ab)."
 author: Antigravity Kit (0 Mkt) & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

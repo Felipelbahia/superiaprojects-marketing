@@ -72,4 +72,4 @@ Apresentar a revisão ao usuário e perguntar quais metas do próximo mês entra
 
 ## Onde salvar
 
-Seguir a regra de resolução de destino da skill `geral-arquitetura-de-projeto`: `content/<marca>/relatorios/AAAA-MM - Revisao Mensal/relatorio.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/relatorios/AAAA-MM - Revisao Mensal/relatorio.md` em projeto próprio.
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `geral-arquitetura-de-projeto`), tipo de peça `reports`: `content/<marca>/reports/AAAA-MM - Revisao Mensal/relatorio.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/reports/AAAA-MM - Revisao Mensal/relatorio.md` em projeto próprio.

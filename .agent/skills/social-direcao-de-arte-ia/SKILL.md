@@ -2,7 +2,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Nativa do Projeto
 name: social-direcao-de-arte-ia
-description: "Direção de arte e injeção automática de Design System em prompts de modelos de imagem de IA (ChatGPT/GPT Image 2, FLUX, Midjourney) para carrosséis em proporção 4:5 (1080x1350). Implementa o Workflow do Slide Âncora (geração de 3 variantes do hook e do primeiro slide de valor; travamento do vencedor como imagem de referência anexada para clonar layout, paleta e consistência estética nas lâminas seguintes), checklist de qualidade de 7 pontos e conexão dinâmica com as marcas de _brands/."
+description: "Use para dirigir a arte de carrosséis 4:5 (1080x1350) gerados por IA: injeção do design system da marca em prompts de ChatGPT/GPT Image, FLUX e Midjourney e fluxo do Slide Âncora (3 variantes do hook e travamento do vencedor como referência). Gatilhos: \"prompt de imagem do carrossel\", \"slide âncora\", \"arte do carrossel com IA\". NÃO use para escrever a copy das lâminas (use social-carrossel), para prompts FLUX avulsos (use audiovisual-imagem-flux-prompts) nem para decidir a direção visual da marca (use brand-visual-direction)."
 author: Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

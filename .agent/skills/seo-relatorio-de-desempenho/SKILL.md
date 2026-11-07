@@ -3,7 +3,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-relatorio-de-desempenho
-description: "Comprehensive SEO & GEO performance tracking, executive reporting, anomaly detection, ranking volatility alerts, and KPI analytics across Google, Bing, and generative AI search engines (Perplexity, SearchGPT, Claude, Gemini)."
+description: "Use para acompanhar e reportar o desempenho de SEO e GEO: relatório executivo, detecção de anomalias, alertas de volatilidade de ranking e KPIs no Google, Bing e buscadores de IA (Perplexity, SearchGPT, Claude, Gemini). Gatilhos: \"relatório de SEO\", \"queda de ranking\", \"tráfego orgânico caiu\", \"KPI de SEO\". NÃO use para dados brutos do Search Console (use o workflow seo-search-console), otimizar para ser citado por IA (use seo-geo) nem relatório de marketing geral (use data-atribuicao-e-relatorios)."
 author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:

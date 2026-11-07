@@ -69,4 +69,4 @@ Apresentar a revisão ao usuário e perguntar se quer já montar o planejamento 
 
 ## Onde salvar
 
-Seguir a regra de resolução de destino da skill `geral-arquitetura-de-projeto`: `content/<marca>/relatorios/AAAA-MM-DD - Revisao Semanal/relatorio.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/relatorios/AAAA-MM-DD - Revisao Semanal/relatorio.md` em projeto próprio.
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `geral-arquitetura-de-projeto`), tipo de peça `reports`: `content/<marca>/reports/AAAA-MM-DD - Revisao Semanal/relatorio.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/reports/AAAA-MM-DD - Revisao Semanal/relatorio.md` em projeto próprio.

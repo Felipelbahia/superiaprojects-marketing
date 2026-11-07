@@ -1,257 +1,94 @@
 ---
 name: conteudo-aprovacao
-description: Content approval workflow for team collaboration
-version: "1.0.0"
-brand: AgentKits Marketing by AityTech
-argument-hint: "[content-type] [approvers]"
+description: Gera o fluxo de aprovação de uma peça de conteúdo (etapas, responsáveis, SLA e checklist por estágio). Use quando uma peça precisar passar por revisão antes de publicar.
+allowed-tools: Read, Write, Edit, Bash
 ---
 
-## Prerequisites
+# Aprovação de Conteúdo
 
-Before running this command, ensure you have:
-- [ ] Content type defined
-- [ ] Team structure known
-- [ ] Compliance requirements understood
-
-## Context Loading
-
-Load these files first:
-1. `./README.md` - Product context
-2. `./docs/brand/` - Brand guidelines
-3. `./docs/workflows/` - Existing workflows
+> Workflow estruturado para definir e acompanhar o fluxo de aprovação de uma peça de conteúdo, no padrão do Hub Super IA Projects - Marketing `0 Mkt`.
 
 ---
 
-## Language & Quality Standards
+## 1. O que este workflow faz
 
-**CRITICAL**: Respond in the same language the user is using. If Vietnamese, respond in Vietnamese. If Spanish, respond in Spanish.
-
-**Standards**: Token efficiency, sacrifice grammar for concision, list unresolved questions at end.
-
-**Skills**: Activate `conteudo-reaproveitamento`, `growth-frameworks` skills.
-
-**Components**: Reference `./.claude/components/interactive-questions.md`
+Monta o fluxo de aprovação de uma peça (post, e-mail, landing page, blog etc.): estágios, responsáveis por revisão, SLA por tipo de conteúdo e checklist de cada etapa. Verifica:
+1. A marca e o tipo de conteúdo em questão.
+2. A pasta da peça, seguindo a regra de resolução da skill `geral-arquitetura-de-projeto` (`content/<marca>/<tipo>/` no 0 Mkt; `conteudos/<tipo>/` em projeto próprio).
+3. Se já existe um fluxo de aprovação padrão registrado no mapa de destinos do projeto (`docs/mapa-de-destinos.md`), reaproveitar; senão, propor o abaixo.
 
 ---
 
-## Interactive Parameter Collection
+## 2. Como executar
 
-### Step 1: Ask Output Scope
-
-**Question:** "What level of approval workflow do you need?"
-**Header:** "Scope"
-**MultiSelect:** false
-
-**Options:**
-- **Basic** - Simple workflow stages
-- **Recommended** - Full workflow with checklists
-- **Complete** - Enterprise with escalation
-- **Custom** - I'll specify requirements
-
----
-
-### Step 2: Ask Content Type
-
-**Question:** "What type of content needs approval?"
-**Header:** "Content"
-**MultiSelect:** false
-
-**Options:**
-- **Blog/Article** - Written content
-- **Social Post** - Social media content
-- **Email** - Email campaigns
-- **Landing Page** - Web pages
-
----
-
-### Step 3: Ask Team Size
-
-**Question:** "What's your team size and structure?"
-**Header:** "Team"
-**MultiSelect:** false
-
-**Options:**
-- **Solo** - Self-review only
-- **Small** - 2-3 reviewers
-- **Medium** - Multiple roles involved
-- **Enterprise** - Full department
-
----
-
-### Step 4: Ask Compliance Needs
-
-**Question:** "What compliance requirements apply?"
-**Header:** "Compliance"
-**MultiSelect:** true
-
-**Options:**
-- **Brand** - Voice and style
-- **SEO** - Search optimization
-- **Legal** - Claims and disclaimers
-- **Accessibility** - A11y standards
-
----
-
-### Step 5: Confirmation
-
-**Display summary:**
-
-```markdown
-## Content Approval Configuration
-
-| Parameter | Value |
-|-----------|-------|
-| Content Type | [description] |
-| Team Size | [selected team] |
-| Compliance | [selected compliance] |
-| Scope | [Basic/Recommended/Complete] |
+```
+/conteudo-aprovacao
+```
+Ou com parâmetros contextuais:
+```
+/conteudo-aprovacao --marca plus-pr --tipo blog
 ```
 
-**Question:** "Create this approval workflow?"
-**Header:** "Confirm"
-**MultiSelect:** false
-
-**Options:**
-- **Yes, create workflow** - Start creation
-- **No, change settings** - Go back to modify
+Se faltar a marca, perguntar antes de seguir (regra 1.1 do `CLAUDE.md`).
 
 ---
 
-## Workflow
+## 3. Instruções de execução passo a passo
 
-1. **Draft Creation**
-   - Creator completes content
-   - Self-review checklist
-   - Submit for review
+### Fase 1: Rascunho
+- [ ] Brief entendido e público-alvo definido
+- [ ] Mensagens-chave incluídas
+- [ ] Palavras-chave de SEO incorporadas (se aplicável)
+- [ ] CTA claro
+- [ ] Autorrevisão concluída
 
-2. **Review Process**
-   - Content review
-   - SEO review
-   - Legal review (if needed)
-   - Feedback provided
+### Fase 2: Revisão
+**Revisor de conteúdo:**
+- [ ] Precisão factual
+- [ ] Consistência com o tom de voz da marca (`brand-voice.md`)
+- [ ] Gramática e ortografia
+- [ ] Fluxo lógico
 
-3. **Revisions**
-   - Address feedback
-   - Update version
-   - Request re-review
+**Revisor de SEO** (quando aplicável):
+- [ ] Posicionamento da palavra-chave principal
+- [ ] Estrutura de títulos
+- [ ] Meta tags otimizadas
 
-4. **Approval & Publish**
-   - Final sign-off
-   - Schedule content
-   - Publish and verify
+### Fase 3: Ajustes
+- [ ] Endereçar os pontos obrigatórios ("Must Fix")
+- [ ] Considerar as sugestões ("Should Fix")
+- [ ] Atualizar a versão do arquivo (ver regra de não sobrescrever versões — salvar como nova versão, não editar a anterior)
 
----
-
-## Agent Delegation
-
-| Task | Agent | Trigger |
-|------|-------|---------|
-| Content creation | `copy-redacao-publicitaria` | Draft stage |
-| SEO review | `growth-atracao-de-leads` | Optimization |
-| Quality check | `revenue-pesquisa-de-mercado` | Fact verification |
-| Final polish | `copy-redacao-publicitaria` | Revisions |
+### Fase 4: Aprovação e publicação
+- [ ] Todo o feedback endereçado
+- [ ] Padrões de qualidade atendidos (anti-slop, regra 1.3 do `CLAUDE.md`)
+- [ ] Sign-off final
+- [ ] Agendado/publicado
 
 ---
 
-## Output Format
+## Matriz de tipo de conteúdo
 
-### Basic Scope
-
-```markdown
-## Content Approval Workflow
-
-### Stages
-Draft → Review → Revisions → Approval → Publish
-
-### Stage Checklist
-**Draft:**
-- [ ] Content complete
-- [ ] Self-reviewed
-
-**Review:**
-- [ ] Feedback provided
-- [ ] Revisions requested
-
-**Approval:**
-- [ ] Sign-off received
-- [ ] Scheduled
-```
-
-### Recommended Scope
-
-[Include Basic + Full stage checklists + Reviewer roles + SLA table + Feedback format]
-
-### Complete Scope
-
-[Include all + Escalation process + Quality standards + Content type matrix + Version control]
+| Tipo | Revisores | Aprovação | SLA |
+|---|---|---|---|
+| Blog | Conteúdo + SEO | Responsável de marketing | 3 dias |
+| Post social | Conteúdo | Responsável de social | Mesmo dia |
+| E-mail | Conteúdo + Jurídico (se houver claim) | Responsável de e-mail | 2 dias |
+| Landing page | Conteúdo + SEO + Jurídico (se houver claim) | Responsável de marketing | 5 dias |
 
 ---
 
-## Workflow Stages
+## Delegação de agentes
 
-### Stage 1: Draft Creation
-- [ ] Brief reviewed and understood
-- [ ] Target audience defined
-- [ ] Key messages included
-- [ ] SEO keywords incorporated
-- [ ] CTA clear and compelling
-- [ ] Self-review complete
-
-### Stage 2: Review Process
-**Content Reviewer:**
-- [ ] Accuracy and factual correctness
-- [ ] Brand voice consistency
-- [ ] Grammar and spelling
-- [ ] Logical flow
-
-**SEO Reviewer:**
-- [ ] Primary keyword placement
-- [ ] Header structure
-- [ ] Meta tags optimized
-
-### Stage 3: Revisions
-- [ ] Address all "Must Fix" items
-- [ ] Consider "Should Fix" suggestions
-- [ ] Update version number
-
-### Stage 4: Final Approval
-- [ ] All feedback addressed
-- [ ] Quality standards met
-- [ ] Ready for publication
+| Tarefa | Agente | Gatilho |
+|---|---|---|
+| Criação de conteúdo | `copy-redacao-publicitaria` / `conteudo-criacao-multiformato` | Estágio de rascunho |
+| Revisão de SEO | `seo-otimizacao-de-busca` | Otimização |
+| Revisão de tom de marca | `brand-guardiao-de-voz` | Consistência de voz |
+| Polimento final | `copy-redacao-publicitaria` | Ajustes |
 
 ---
 
-## Content Types & Requirements
+## Onde salvar
 
-| Type | Reviewers | Approval | SLA |
-|------|-----------|----------|-----|
-| Blog Post | Content + SEO | Marketing Lead | 3 days |
-| Social Post | Content | Social Manager | Same day |
-| Email | Content + Legal | Email Manager | 2 days |
-| Landing Page | Content + SEO + Legal | Marketing Lead | 5 days |
-
----
-
-## Pre-Delivery Validation
-
-Before delivering approval workflow:
-- [ ] All stages defined
-- [ ] Reviewer roles assigned
-- [ ] SLAs documented
-- [ ] Escalation path clear
-- [ ] Quality standards included
-
----
-
-## Output Location
-
-Save workflow to: `./docs/workflows/approval-[content-type]-[YYYY-MM-DD].md`
-
----
-
-## Next Steps
-
-After approval workflow, consider:
-- `/content:blog` - Create content using workflow
-- `/brand:voice` - Define brand voice guidelines
-- `/geral-gestao-de-documentacao` - Document management
+O fluxo de aprovação em si não gera um arquivo novo por padrão — ele acompanha a peça que já está sendo produzida, na pasta definida pela regra de resolução da skill `geral-arquitetura-de-projeto` (`content/<marca>/<tipo>/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt). Se o usuário pedir um checklist de aprovação como arquivo separado, salvar como `aprovacao.md` dentro dessa mesma pasta.

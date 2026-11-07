@@ -1,7 +1,7 @@
 # 🏷️ Estrutura de Marcas (`_brands/`)
 
 Este diretório armazena a identidade de cada marca utilizada pelos agentes autônomos de marketing.
-> **Lembrete de Isolamento:** Aqui vive apenas a **identidade** da marca (estratégia, tom e personas). Todo conteúdo produzido pelos agentes deve ser salvo na pasta de entregas: `content/<marca>/<canal>/` (isolada do Git público via `.gitignore`).
+> **Lembrete de Isolamento:** Aqui vive apenas a **identidade** da marca (estratégia, tom e personas). Todo conteúdo produzido pelos agentes deve ser salvo onde o mapa de destinos manda (`docs/mapa-de-destinos.md`), em `content/<marca>/…` (isolada do Git público via `.gitignore`).
 
 ---
 

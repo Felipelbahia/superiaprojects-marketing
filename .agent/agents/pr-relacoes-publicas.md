@@ -54,10 +54,9 @@ Antes de redigir qualquer comunicado ou plano de assessoria, valide:
 Todo material jornalístico (press release, pitch, Q&A de crise) DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`) antes da entrega final. Releases com jargões corporativos vazios, hipérboles sensacionalistas ou tom promocional barato são sumariamente descartados por jornalistas sérios. O texto deve ser sóbrio, objetivo e factual.
 
 ### 4. Regras de Salvamento Estruturado
-Salve os materiais de relações públicas no diretório:
-`content/<marca>/pr/YYYY-MM-DD - Nome da Pauta/`
-- `press-release.md`
-- `media-pitch-options.md` (Versões de pitch curto para email e WhatsApp)
+Salve os materiais de relações públicas seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`): assessoria de imprensa vai em `imprensa/AAAA-MM-DD - Nome/` (no 0 Mkt, `content/<marca>/imprensa/…`). Arquivos da pasta:
+- `release.md`
+- `pauta/pauta-principal.md` e `pitch/` (um pitch por ângulo; versões curtas para e-mail e WhatsApp)
 - `faq-porta-voz.md` (Perguntas e respostas para entrevistas)
 
 ---
