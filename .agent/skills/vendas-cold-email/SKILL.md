@@ -115,6 +115,8 @@ Esta skill preserva e se apoia nos guias especializados contidos na subpasta [`r
 | [`outbound-sequencer.md`](references/outbound-sequencer.md) | Mapeamento de regras de transição de status, cadências multicanal (Email + LinkedIn) e automações. |
 | [`follow-up-sequences.md`](references/follow-up-sequences.md) | Biblioteca de roteiros de follow-up para contatos que abriram e não responderam. |
 | [`personalization.md`](references/personalization.md) | Metodologia para personalização dinâmica em escala através de variáveis contextuais. |
+| [`sequencias-de-email-frio.md`](references/sequencias-de-email-frio.md) | Modelos e roteiros estruturados de sequências de e-mail frio por estágio e segmento. |
+| [`outreach.md`](references/outreach.md) | Princípios e boas práticas de abordagem outbound direta e cadências. |
 
 ## Outras referências
 
