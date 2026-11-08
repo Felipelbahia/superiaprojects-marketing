@@ -5208,7 +5208,7 @@ Total de recursos nesta macro-área: `6`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="sip-astro"></a>**`sip-astro`** | `Skill` | `Super IA Projects` | Use sempre que a tarefa atual envolver Astro (construir ou migrar um site, escolher um tema, integrações, SEO/GEO, implantação, formulários, análises, i18n, e-commerce, testes, atualizações, auditoria de pré-lançamento), mas o projeto ativo não possui habilidades Astro locais - ou seja, qualquer projeto diferente do próprio "SIP - Astro". Encaminha a tarefa para o centro central de conhecimento Astro em vez de improvisar a partir do conhecimento geral. |
+| <a id="sip-astro"></a>**`sip-astro`** | `Skill` | `Super IA Projects` | Use sempre que a tarefa atual envolver Astro (construir ou migrar um site, escolher um tema, integrações, SEO/GEO, implantação, formulários, análises, i18n, e-commerce, testes, atualizações, auditoria de pré-lançamento), mas o projeto ativo não possui habilidades Astro locais - ou seja, qualquer projeto diferente do próprio "SIP - Astro". Encaminha a tarefa para o centro central de conhecimento Astro em vez de improvisar a partir do conhecimento geral. Use também quando o usuário perguntar "existe algo de astro pra isso", "tem habilidade de astro no hub" ou nomear explicitamente as habilidades do Astro em um projeto que não seja o hub. |
 
 ### <a id="firecrawl"></a>Firecrawl
 

@@ -21,6 +21,7 @@ Atualizado em AAAA-MM-DD. Se este mapa divergir de uma regra de skill, **vale es
 | Peça de conteúdo por tipo (blog, linkedin, social, newsletter, video…) | conteudos/{tipo}/AAAA-MM-DD - Nome da Demanda/ | projeto | `briefing.md`, `draft.md`; campo `campanha:` | |
 | Fluxo de aprovação | <ver "Respostas" abaixo> | projeto | | opção 0 usa o campo `status:`; A/B/C usam as pastas da esteira |
 | Assessoria de imprensa: pauta (pasta com ângulos), pitch por ângulo, release, jornalistas | imprensa/AAAA-MM-DD - Nome/ | projeto | `pauta/pauta-principal.md`, `pauta/angulo-<tema>.md`, `pitch/`, `release.md`, `jornalistas.md` | |
+| Vendas: cadência outbound, playbook de discovery, governança de negócio | vendas/AAAA-MM-DD - Nome da Demanda/ | projeto | `cadencia-outbound.md`, `playbook-discovery.md`, `deal-governance.md` | pasta de raiz, como imprensa/ |
 | Controle de envio de imprensa | imprensa/envios.md | projeto | uma linha por envio | status enviado → respondeu → publicou → sem retorno |
 | Clipping | imprensa/clipping/ | projeto | `AAAA-MM-DD_<veiculo>_<tema>.md` | |
 | Peças publicadas (registro) | conteudos/publicados.md | projeto | | |

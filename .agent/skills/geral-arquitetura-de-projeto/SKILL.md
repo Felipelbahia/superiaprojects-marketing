@@ -28,12 +28,13 @@ metadata:
 | `brand/` | Regras e identidade da marca | voz, personas, pilares, kit visual, regras de monitoramento |
 | `estrategia/` | Planejamento: direção geral e campanhas | estratégia geral, calendários, `campanhas/` |
 | `imprensa/` | **Assessoria de imprensa** (produção com ciclo próprio): pauta, pitch, release, seleção de jornalistas, controle de envio, clipping | `imprensa/AAAA-MM-DD - Nome/`, `envios.md`, `clipping/` |
+| `vendas/` | **Vendas** (produção com ciclo próprio, na raiz em projeto novo): cadência outbound, playbook de discovery, governança de negócio | `vendas/AAAA-MM-DD - Nome da Demanda/` |
 | `conteudos/` | **Produção**: o que a marca cria e publica | roteiro, post, newsletter, e-mail, relatório de cliente |
 | `inteligencia/` | **Repositório do mercado**: tendências, pesquisas, estudos, materiais de terceiros, monitoramento. Não guarda o que a marca produz | radar, estudos e cases com fonte, relatório de menções |
 | `referencias/` | Referências **do projeto** que influenciam todo o conteúdo | rubrica, perfil e voz, formatos, hooks e iscas já adaptados à marca |
 | `assets/` | Arte final e imagens, com inventário | |
 
-Skill que produz peça escreve em `conteudos/`, `imprensa/` ou `assets/`, nunca em `inteligencia/`. Skill que coleta ou monitora escreve em `inteligencia/`. Registro do que a marca fez (envio de pitch, publicação) é produção: fica em `imprensa/` ou `conteudos/`. A esteira de aprovação vale para `conteudos/`; a imprensa tem o ciclo próprio do `envios.md`.
+Skill que produz peça escreve em `conteudos/`, `imprensa/`, `vendas/` ou `assets/`, nunca em `inteligencia/`. Skill que coleta ou monitora escreve em `inteligencia/`. Registro do que a marca fez (envio de pitch, publicação) é produção: fica em `imprensa/` ou `conteudos/`. A esteira de aprovação vale para `conteudos/`; a imprensa tem o ciclo próprio do `envios.md`.
 
 **Nomes de pasta sem número**, exceto onde o número indica sequência de verdade (a esteira de aprovação: `1_a_aprovar → 4_revisar_ajustar`).
 
@@ -66,7 +67,7 @@ Skill de referência: `pr-assessoria-de-imprensa` (e este mapa).
 2. **Sem mapa, crie o mapa mínimo antes de gravar a primeira peça** (sem bloquear a entrega). (a) O projeto tem convenção visível (`CLAUDE.md`, `STANDARDS.md`, pastas existentes)? O mapa documenta o que já existe, sem mover nada, e a peça vai nessa convenção. (b) Não tem nada? Faça **uma só pergunta**, "há mais de uma marca ou produto?", e crie `docs/mapa-de-destinos.md` pelo modelo, com a árvore padrão (`references/arvore-padrao.md`), **sem marca no caminho** (o padrão é mono-marca) e fluxo de aprovação sem esteira (opção 0). Se o usuário não responder ou disser "tanto faz", assuma mono-marca e registre na seção "Respostas" do mapa que foi suposição. Fora do 0 Mkt, confirme com o usuário antes de criar o arquivo; se ele não puder responder agora, grave no padrão e crie o mapa mínimo mesmo assim. Só adote outra estrutura depois da confirmação dele.
 3. **Mono-marca vs. multi-marca/produto**: nunca assuma. Se o mapa não responde, **pergunte** (conversa de criação, abaixo) antes de criar qualquer subpasta de marca ou produto.
 4. **Só em projeto novo, sem convenção alguma**: conduzir a conversa de criação, criar a estrutura padrão (modo projeto) e o mapa.
-5. **Marca hospedada no 0 Mkt** (modo 0 Mkt): o `docs/mapa-de-destinos.md` do 0 Mkt manda: identidade em `_brands/<marca>/`, output em `content/<marca>/…` (peças em `<tipo>/`, estratégia e campanhas em `estrategia/`, imprensa em `imprensa/`). 0 Mkt é multi-marca por desenho, por isso sempre tem a subpasta `<marca>/`; a regra 1.4 do `CLAUDE.md` do 0 Mkt delega ao mapa.
+5. **Marca hospedada no 0 Mkt** (modo 0 Mkt): o `docs/mapa-de-destinos.md` do 0 Mkt manda: identidade em `_brands/<marca>/`, output em `content/<marca>/…` (peças em `<tipo>/`, estratégia e campanhas em `estrategia/`, imprensa em `imprensa/`, vendas em `vendas/`, **dentro de `content/<marca>/`**: no 0 Mkt, vendas fica sob `content/<marca>/vendas/` e não na raiz; em projeto novo, `vendas/` é pasta de raiz, como `imprensa/`). 0 Mkt é multi-marca por desenho, por isso sempre tem a subpasta `<marca>/`; a regra 1.4 do `CLAUDE.md` do 0 Mkt delega ao mapa.
 6. **Nunca gravar no Hub Central** (`Compartilhado/RSS Feed`): ele é fonte de leitura. Dado novo que deve voltar ao Hub passa pelo procedimento do próprio Hub, com confirmação do usuário.
 7. **Nunca mover arquivo existente** para encaixar na estrutura; mudança de lugar só com aprovação. Em conflito entre o mapa e uma regra de skill, **vale o mapa** (o mapa não vale sobre o `CLAUDE.md` do projeto, que manda nele; por isso o `CLAUDE.md` deve delegar ao mapa).
 8. **Mapa incompleto ou desatualizado:** tipo de peça que não está no mapa → use o tipo mais próximo, grave e avise o usuário para acrescentar a linha (não pare a entrega). Pasta que o mapa cita e não existe → crie só essa pasta. Árvore real diferente do mapa → avise e siga o mapa. Criar pasta de tipo nova fora do mapa só com aviso.
@@ -97,6 +98,7 @@ Em multi-marca, use o caminho completo que o mapa traz, com placeholders (por ex
 | Estratégia e campanha (`revenue-campanhas`, `conteudo-estrategia`) | `estrategia/`, `estrategia/campanhas/AAAA-MM-DD - Nome/` | `brand/`, `inteligencia/` |
 | Conteúdo (peças de qualquer tipo) | `conteudos/<tipo>/AAAA-MM-DD - Nome da Demanda/` e/ou a esteira (`1_a_aprovar` …), conforme o mapa | `brand/`, `estrategia/`, `inteligencia/` |
 | Imprensa (`pr-assessoria-de-imprensa`): pauta, pitch, release, seleção de jornalistas, controle de envio, clipping | `imprensa/` | `brand/`, Hub `Compartilhado/RSS Feed` (somente leitura) |
+| Vendas (`vendas-direcao-b2b`, `vendas-metodologias-b2b`, `vendas-cold-email`): cadência outbound, playbook de discovery, governança de negócio | `vendas/AAAA-MM-DD - Nome da Demanda/` | `brand/`, `inteligencia/` |
 | Monitoramento | **regras** em `brand/ativacao/monitoramento.md` (fonte da verdade); **consultas, termos e relatórios** em `inteligencia/monitoramento/` | Hub (somente leitura), `brand/` |
 | Dados e estudos | `inteligencia/estudos/` (registro de fontes, banco de cases) | fontes externas |
 | Imagens e arte | `assets/` | `brand/logo/`, `brand/modelos/` |
@@ -111,6 +113,7 @@ Em multi-marca, use o caminho completo que o mapa traz, com placeholders (por ex
 | Técnica de redação (hooks, retenção, formatos, newsjacking) | dentro da skill do assunto, nunca no projeto |
 | Benchmark de canal (anexo da ativação) | `brand/ativacao/` |
 | Pauta (pasta com ângulos), pitch, release e seleção de jornalistas | `imprensa/AAAA-MM-DD - Nome/` |
+| Vendas: cadência outbound, playbook de discovery, governança de negócio | `vendas/AAAA-MM-DD - Nome da Demanda/` (`cadencia-outbound.md`, `playbook-discovery.md`, `deal-governance.md`) |
 | Controle de envio de imprensa | `imprensa/envios.md` |
 | Clipping | `imprensa/clipping/` |
 | Mailing, ficha de jornalista, mapa de veículos, metodologia de e-mail/scraping (**só no Hub**) | `Compartilhado/RSS Feed/bases/jornalistas/`, `bases/veiculos/veiculos.csv` |

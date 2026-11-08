@@ -22,6 +22,8 @@ Baseada no projeto Futuro Mercado (Marketing - FM), que a testou, com os ajustes
 │   ├── AAAA-MM-DD - Nome/            # pauta/ (pauta-principal.md + angulo-<tema>.md), pitch/ (um por ângulo), release.md, jornalistas.md
 │   ├── envios.md                     # controle de envio: enviado → respondeu → publicou → sem retorno
 │   └── clipping/
+├── vendas/                           # VENDAS (produção com ciclo próprio, na raiz)
+│   └── AAAA-MM-DD - Nome da Demanda/ # cadencia-outbound.md, playbook-discovery.md, deal-governance.md
 ├── conteudos/                        # PRODUÇÃO: o que a marca cria e guarda
 │   ├── <tipo>/AAAA-MM-DD - Nome da Demanda/   # video, blog, linkedin, social, newsletter, email, palestra/apresentacoes, reports
 │   ├── (fluxo de aprovação — perguntar sempre, padrão é NÃO ter esteira; ver skill, seção "Fluxo de aprovação")
@@ -49,6 +51,7 @@ Não existem `conteudos/_base/` nem `inteligencia/2_imprensa_pr/`. Técnica de r
 - Peça de conteúdo: `AAAA-MM-DD_<canal>_<tema-curto>.md` (metadados no topo, conforme `STANDARDS.md`; `campanha:` quando a peça serve a uma campanha).
 - Arquivos de apoio da peça (briefing visual, blueprint, roteiro): ao lado da peça, com o mesmo prefixo: `AAAA-MM-DD_<canal>_<tema-curto>_briefing-visual.md`. Pasta por demanda usa `AAAA-MM-DD - Nome da Demanda` (com espaços e hífen), igual nos dois modos; arquivo de peça solta da esteira usa `AAAA-MM-DD_<canal>_<tema-curto>.md` ou o código do calendário (`D01_LI.md`).
 - Peça por tipo: `conteudos/<tipo>/AAAA-MM-DD - Nome da Demanda/` com `briefing.md`, `draft.md` e os arquivos do tipo. Vídeo: `roteiro-longo.md` ou `roteiro-curto.md`.
+- Vendas: `vendas/AAAA-MM-DD - Nome da Demanda/` com `cadencia-outbound.md`, `playbook-discovery.md`, `deal-governance.md` (só os que a demanda pede).
 - Assessoria de imprensa: `imprensa/AAAA-MM-DD - Nome/` com `pauta/` (`pauta-principal.md` + `angulo-<tema>.md`), `pitch/` (um por ângulo), `release.md`, `jornalistas.md`.
 - Campanha: `estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/campanha.md`; `resultado.md` nasce no encerramento.
 - Imagem: `uso_assunto_AAAA-MM-DD_v1.ext`. Versão nova de documento de marca: arquivo `-vN`, o anterior fica.
@@ -62,4 +65,4 @@ Produção em `imprensa/`. **Controle de envio** em `imprensa/envios.md` (coluna
 - Relatório só quando solicitado: `inteligencia/monitoramento/relatorios/AAAA-MM-DD_<tema>.md`.
 
 ## Modo 0 Mkt (marca hospedada no 0 Mkt)
-O 0 Mkt tem mapa próprio (`docs/mapa-de-destinos.md`), que a regra 1.4 do `CLAUDE.md` manda seguir. Identidade em `_brands/<marca>/` (e `ativos/inventario.md`); output em `content/<marca>/`: peças em `<tipo>/AAAA-MM-DD - Nome da Demanda/`, estratégia e campanhas em `estrategia/` (`estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/`), imprensa em `imprensa/` (com `envios.md` e `clipping/`). Monitoramento, estudos e tendências: ver o mapa (a confirmar).
+O 0 Mkt tem mapa próprio (`docs/mapa-de-destinos.md`), que a regra 1.4 do `CLAUDE.md` manda seguir. Identidade em `_brands/<marca>/` (e `ativos/inventario.md`); output em `content/<marca>/`: peças em `<tipo>/AAAA-MM-DD - Nome da Demanda/`, estratégia e campanhas em `estrategia/` (`estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/`), imprensa em `imprensa/` (com `envios.md` e `clipping/`), vendas em `content/<marca>/vendas/AAAA-MM-DD - Nome da Demanda/` (**no 0 Mkt, vendas fica dentro de `content/<marca>/`; só em projeto novo ela é pasta de raiz**). Monitoramento, estudos e tendências: ver o mapa (a confirmar).
