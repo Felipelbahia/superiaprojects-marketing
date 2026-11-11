@@ -8,7 +8,7 @@ author: Felipe Bahia (0 Mkt)
 license: MIT
 metadata:
   author: Felipe Bahia (0 Mkt)
-  version: 1.1.0
+  version: 1.2.0
   vertical: Audiovisual & Conteúdo
 complements: audiovisual-podcast-e-audio, audiovisual-imagem-flux-api, conteudo-pesquisa, ads-criativos, social-carrossel
 ---
@@ -71,10 +71,11 @@ python3 .agent/skills/audiovisual-banco-de-midias-openverse/scripts/search_openv
 python3 .agent/skills/audiovisual-banco-de-midias-openverse/scripts/search_openverse.py --query "technology cloud" --category illustration -n 3
 ```
 
-### 5. Domínio Público Absoluto (CC0 / PDM - Zero Atribuição Necessária)
+### 5. Domínio Público (CC0 / PDM)
 ```bash
-python3 .agent/skills/audiovisual-banco-de-midias-openverse/scripts/search_openverse.py --query "vintage botanical" --license cc0 -n 3
+python3 .agent/skills/audiovisual-banco-de-midias-openverse/scripts/search_openverse.py --query "vintage botanical" --commercial -n 3
 ```
+A flag `--commercial` deixa passar CC0, PDM, CC BY e CC BY-SA. Para a intenção de domínio público, confira o campo de licença de cada resultado: só CC0 e PDM dispensam crédito.
 
 ### 6. Vídeos Livres e Motion Graphics (CC0 / Creative Commons)
 ```bash
@@ -96,25 +97,65 @@ python3 .agent/skills/audiovisual-banco-de-midias-openverse/scripts/search_openv
 python3 .agent/skills/audiovisual-banco-de-midias-openverse/scripts/search_openverse.py --query "nature sunset" --commercial -n 3 --download-dir "content/downloads/sunset"
 ```
 
+### 10. Pessoa nomeada direto no Wikimedia Commons
+```bash
+python3 .agent/skills/audiovisual-banco-de-midias-openverse/scripts/search_openverse.py --commons -q "Marie Curie" --format summary
+```
+
+### 11. Metadados de um arquivo específico do Commons (autor, licença, URL do original)
+```bash
+python3 .agent/skills/audiovisual-banco-de-midias-openverse/scripts/search_openverse.py --commons-file "File:Marie Curie c. 1920s.jpg" --format json
+```
+
+### 12. Capa de blog (16:9, comercial, largura mínima de 1200 px)
+```bash
+python3 .agent/skills/audiovisual-banco-de-midias-openverse/scripts/search_openverse.py -q "city skyline at dusk" --commercial --aspect-ratio wide --min-width 1200
+```
+
 ---
 
 ## 📋 Parâmetros e Filtros Disponíveis
 
 | Parâmetro | Valores / Exemplos | Descrição & Caso de Uso |
 | :--- | :--- | :--- |
-| `--query`, `-q` | `"minimalist workspace"` | **(Obrigatório)** Palavra-chave da busca (recomenda-se inglês para maior volume). |
-| `--type` | `image` (padrão), `audio` | Escolhe entre catálogo de imagens ou faixas de áudio. |
+| Parâmetro | Valores / Exemplos | Descrição & Caso de Uso |
+| :--- | :--- | :--- |
+| `--query`, `-q` | `"minimalist workspace"` | Palavra-chave da busca (recomenda-se inglês para maior volume). Obrigatória, exceto com `--commons-file`. |
+| `--type` | `image` (padrão), `audio`, `video` | Escolhe entre fotos e ilustrações, faixas de áudio ou vídeos. |
 | `--commercial` | Flag booleana | Garante apenas mídias liberadas para fins comerciais (elimina licenças Não-Comerciais `NC`). |
-| `--modify` | Flag booleana | Garante licenças que permitem modificações/recortes (elimina licenças `ND`). |
-| `--license` | `cc0`, `pdm`, `by`, `by-sa`, `by-nc` | Filtra por código estrito de licença Creative Commons. |
-| `--aspect-ratio` | `tall`, `wide`, `square` | `tall` (Stories/Reels 9:16), `wide` (Banners/YT 16:9), `square` (Feed 1:1). |
-| `--category` | Imagem: `photograph`, `illustration`, `digitized_art`<br>Áudio: `music`, `sound_effect`, `podcast` | Segmenta o estilo visual ou o gênero de áudio desejado. |
-| `--extension` | `jpg`, `png`, `svg` (imagem) / `mp3`, `wav`, `ogg` (áudio) | Formato do arquivo (ex: `svg` para ícones vetoriais). |
-| `--size` | `small`, `medium`, `large` | Filtra pelo tamanho/resolução da imagem. |
-| `--source`, `--provider` | `wikimedia`, `flickr`, `smithsonian`, `rawpixel`, etc. | Filtra acervos de museus e provedores específicos. |
-| `--page-size`, `-n` | Inteiro (1 a 50, padrão: 5) | Número de mídias retornadas na consulta. |
-| `--format` | `markdown` (padrão), `json`, `summary` | Formato da resposta no terminal/chat. |
-| `--download-dir` | Caminho de pasta (ex: `content/...`) | Faz o download dos arquivos em alta resolução para a pasta indicada. |
+| `--aspect-ratio` | `tall`, `wide`, `square` | `tall` (Stories/Reels 9:16), `wide` (Banners/YT 16:9), `square` (Feed 1:1). Vale também no fallback do Commons e com `--commons`. |
+| `--category` | Imagem: `photograph`, `illustration`, `digitized_art`<br>Áudio: `music`, `sound_effect` | Segmenta o estilo visual ou o gênero de áudio desejado. |
+| `--extension` | `jpg`, `png`, `svg` (imagem) / `mp3`, `ogg`, `wav` (áudio) | Formato do arquivo (ex: `svg` para ícones vetoriais). |
+| `--page-size`, `-n` | Inteiro (padrão: 3) | Número de mídias retornadas na consulta. |
+| `--format` | `markdown` (padrão), `json`, `summary` | `json` imprime só JSON no stdout (avisos vão para o stderr). `summary` mostra uma linha por item. |
+| `--download-dir` | Caminho de pasta (ex: `content/...`) | Baixa o original em alta resolução, confere o tipo real pelos bytes e corrige a extensão (um `.jpg` que veio em WebP vira `.webp`). |
+| `--commons` | Flag booleana | Pula o Openverse e busca direto no Wikimedia Commons. Útil para nomes de pessoas (ver seção própria). |
+| `--commons-file` | `"File:<nome>"` | Mostra os metadados de um arquivo específico do Commons: autor, licença, tamanho e URL do original. |
+| `--min-width` | Inteiro em px (ex: `1200`) | Descarta itens com largura menor que o valor indicado. |
+| `--help`, `-h` | Flag booleana | Mostra a ajuda do script e sai. |
+
+---
+
+## 🔎 Busca por pessoa nomeada (Commons direto)
+
+O Openverse não indexa todos os arquivos do Wikimedia Commons. Quando o termo é o nome de uma pessoa pública, a busca no Openverse costuma trazer fotos de eventos ligados ao assunto, e não retratos da pessoa. Nesse caso, o caminho mais curto é pular o Openverse e buscar direto no Commons.
+
+1. **Busque pelo nome** com `--commons -q "<nome>"` (exemplo 10 acima). O resultado lista os títulos de arquivo encontrados.
+2. **Escolha o título** que mais se parece com o retrato que você precisa (por exemplo, `File:Marie Curie c. 1920s.jpg`) e rode `--commons-file "File:<nome>"` (exemplo 11). Ele devolve o autor (`Artist`), a licença (`LicenseShortName`), o tamanho e a URL do original.
+
+Sem o script, a mesma consulta funciona pela API do Commons:
+
+Busca de arquivos (troque `<termo>` pelo nome):
+```
+https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srsearch=Marie%20Curie&format=json
+```
+
+Metadados de um arquivo (troque `<nome>` pelo título, com espaços trocados por `_`):
+```
+https://commons.wikimedia.org/w/api.php?action=query&titles=File:Marie_Curie_c._1920s.jpg&prop=imageinfo&iiprop=url|size|extmetadata&format=json
+```
+
+Os campos `Artist` e `LicenseShortName` ficam dentro de `extmetadata`. O campo `Artist` vem em HTML, com tags como `<a>` e `<bdi>`. Limpe essas tags antes de usar o nome no crédito.
 
 ---
 
@@ -142,6 +183,18 @@ graph TD
 
 ---
 
+## 🖼️ Escolha da imagem para capa (recomendações)
+
+Estas recomendações saíram de um caso real, com capas de blog sobre temas sensíveis. Pese cada uma caso a caso. Não são regras fixas.
+
+- **Rosto em tema sensível.** Em post sobre violência, golpe ou segurança, costuma valer evitar foto com rosto identificável de pessoa comum, porque a imagem pode sugerir que ela é vítima ou agressora. Mãos, objetos, multidões sem destaque ou a própria pessoa retratada no texto tendem a funcionar melhor.
+- **Arquivo pequeno.** Uma imagem de 143×201 px não serve de capa 16:9. Vale buscar outra com `--min-width 1200` ou usar um placeholder.
+- **Recorte e crédito.** Recortar é permitido em CC BY e CC BY-SA. Nesses casos, convém que o crédito diga que a imagem foi recortada, por exemplo: "… CC BY 2.0, recortada". Em CC BY-ND, o recorte pode contar como adaptação, que a licença não permite; na dúvida, prefira a imagem inteira.
+- **Formato real.** Confira o formato do arquivo baixado com `file <arquivo>`. Em um caso real, um `.jpg` do rawpixel chegou em WebP. O `--download-dir` já corrige a extensão, e o `file` confirma o resultado.
+- **Prancha de candidatas.** Monte uma prancha com as opções para escolher pelo conteúdo, e não só pela licença. Com ImageMagick (`brew install imagemagick`): `montage *.jpg -tile 3x -geometry 400x225+8+8 prancha.jpg`. Ajuste o glob se houver arquivos `.webp`. Com Node, o `sharp` faz a mesma montagem com `composite`. O script não ganha dependência nova para isso.
+
+---
+
 ## 🤖 Integração com Agentes de Marketing
 
 Quando um agente do repositório precisar de fotos ou referências visuais para um conteúdo:
@@ -159,7 +212,7 @@ Quando um agente do repositório precisar de fotos ou referências visuais para 
 
 ## 🔧 Arquitetura do Helper (`scripts/search_openverse.py`)
 
-- **Resiliência e Fallback Local**: A API pública do Openverse pode sofrer com latências no backend Elasticsearch ao calcular agregações em 800M+ registros. O script helper implementa timeout inteligente de 8 segundos com **fallback transparente** para filtragem em memória cliente e acionamento da API da Wikimedia Commons (maior provedor do Openverse), garantindo que o agente nunca fique bloqueado.
+- **Resiliência e Fallback Local**: A API pública do Openverse pode sofrer com latências no backend Elasticsearch ao calcular agregações em 800M+ registros. O script helper implementa timeout inteligente de 8 segundos com **fallback transparente** para filtragem em memória cliente e acionamento da API da Wikimedia Commons (maior provedor do Openverse), garantindo que o agente nunca fique bloqueado. O fallback do Commons respeita `--aspect-ratio` e `--min-width`. Com `--format json`, o stdout fica limpo para pipelines, e os avisos vão para o stderr.
 - **Zero Instalações**: Não requer `pip install requests` nem dependências de terceiros; roda nativamente com `urllib.request` e `json` do Python 3.
 
 ---
