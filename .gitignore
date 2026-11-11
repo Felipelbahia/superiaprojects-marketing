@@ -59,3 +59,9 @@ memory.md
 /.agent/rules/
 /.claude/CLAUDE.md
 /.cursorrules
+
+# Registro local de projetos consumidores do SIP - Marketing (paths absolutos desta maquina)
+instalacoes/
+
+# Inbox de contribuicoes de outros projetos (local; pode citar projetos e contextos de clientes)
+/inbox/
