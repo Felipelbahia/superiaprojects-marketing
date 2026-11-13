@@ -117,7 +117,7 @@ Conforme o formato da peça:
    - Eliminar termos proibidos ("portanto", "crucial", "revolucionário", "no cenário atual", "além disso", "desvendar", "mergulhar").
    - Garantir cadência natural de fala brasileira.
 2. **Salvamento Padronizado:**
-   - **Antes de gravar, siga a regra de resolução de destino da skill `geral-arquitetura-de-projeto`** (lê `docs/mapa-de-destinos.md`; sem mapa, usa o padrão da própria skill — `content/<marca>/<tipo-de-conteudo>/YYYY-MM-DD - Nome da Demanda/` no 0 Mkt, `conteudos/<tipo-de-conteudo>/YYYY-MM-DD - Nome da Demanda/` em projeto próprio).
+   - **Antes de gravar, siga a regra de resolução de destino da skill `mapa-de-destinos`** (lê `docs/mapa-de-destinos.md`; sem mapa, usa o padrão da própria skill — `content/<marca>/<tipo-de-conteudo>/YYYY-MM-DD - Nome da Demanda/` no 0 Mkt, `conteudos/<tipo-de-conteudo>/YYYY-MM-DD - Nome da Demanda/` em projeto próprio).
    - Salvar os arquivos:
      - `roteiro.md` ou `copy-opcao-1.md`
      - `briefing-visual.md`

@@ -1,6 +1,6 @@
 # Mapa de destinos: 0 Mkt
 Estrutura: multi-marca por desenho (cada marca hospedada tem a sua subpasta). Modo: 0 Mkt.
-Atualizado em 2026-11-07 (linhas `vendas` e `design` acrescentadas após a auditoria de padrão). Se este mapa divergir de uma regra de skill, **vale este mapa**. Pasta nova, ou tipo de peça que não está aqui, entra aqui antes de ser usada. Regras de resolução, mapa incompleto e conversa de criação: skill `geral-arquitetura-de-projeto`.
+Atualizado em 2026-11-07 (linhas `vendas` e `design` acrescentadas após a auditoria de padrão). Se este mapa divergir de uma regra de skill, **vale este mapa**. Pasta nova, ou tipo de peça que não está aqui, entra aqui antes de ser usada. Regras de resolução, mapa incompleto e conversa de criação: skill `mapa-de-destinos`.
 
 `{marca}` é o nome da pasta em `_brands/`. `{tipo}` é o tipo de peça (blog, linkedin, social, newsletter, email, video, palestra, apresentacoes, reports, vendas, design). Hoje não há marca ativa: `_brands/` só tem o `brand-template/`.
 
@@ -29,7 +29,7 @@ Atualizado em 2026-11-07 (linhas `vendas` e `design` acrescentadas após a audit
 2. Tipo de peça que não está aqui: use o tipo mais próximo, grave e avise o usuário para acrescentar a linha.
 3. Pasta que o mapa cita e não existe: crie só essa pasta.
 4. Nunca mova nem apague arquivo existente para encaixar na estrutura; mudança de lugar só com aprovação.
-5. Nunca grave no Hub Central. Em dúvida que este mapa não resolve, consulte a skill `geral-arquitetura-de-projeto`.
+5. Nunca grave no Hub Central. Em dúvida que este mapa não resolve, consulte a skill `mapa-de-destinos`.
 
 ## Respostas da conversa de criação
 | Pergunta | Resposta | Data |

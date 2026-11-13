@@ -30,7 +30,11 @@ movida ou removida por ele antes de instalar o resolver.
    de cada; o resolver manda ler cada um por caminho absoluto.
 
 3. Confirme com `ls -la` os dois symlinks e que o SKILL.md do resolver é legível
-   através de cada um.
+   através de cada um. Depois, na raiz
+   deste projeto, rode
+   `python3 "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Padrões/.agent/scripts/sync_entrypoints.py" --check`:
+   tem de sair com 0. Se acusar erro de link ou skill do hub, pare e relate
+   (não apague links para "limpar" o aviso).
 
 4. Ajuste o .gitignore deste projeto (crie a seção se não existir) com estas duas
    linhas (symlinks com path absoluto desta máquina, não portáveis entre clones):
@@ -52,10 +56,11 @@ movida ou removida por ele antes de instalar o resolver.
    - Skill: sip-marketing (redirecionador; skills, agents e workflows são lidos por caminho absoluto, não instalados)
    - Agents: nenhum (lidos no hub)
    - Workflows: nenhum (lidos no hub)
+   - Para atualizar: cole de novo "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/prompts/instalar-skill-sip-marketing.md"
 
 7. Se este projeto produz peças de marca e ainda não tem `docs/mapa-de-destinos.md`,
    avise o usuário: as skills do hub gravam conforme o mapa do projeto consumidor
-   (ver skill `geral-arquitetura-de-projeto` no hub). Não crie o mapa sem ele pedir.
+   (ver skill `mapa-de-destinos` no kit). Não crie o mapa sem ele pedir.
 ```
 
 ## Por que o padrão duplo e por que só o resolver

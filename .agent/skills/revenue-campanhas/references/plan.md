@@ -253,7 +253,7 @@ NEXT_QUARTER_START=$(date -v+1m +%Y-%m-01 2>/dev/null || date -d "+1 month" +%Y-
 
 ## Output Location
 
-Save plan following the project's destination map (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`). Without a map, use the direct default, with no brand in the path: `estrategia/campanhas/YYYY-MM-DD - [Campaign Name]/campanha.md` (the 0 Mkt map is multi-brand and uses `content/<brand>/estrategia/campanhas/…`).
+Save plan following the project's destination map (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`). Without a map, use the direct default, with no brand in the path: `estrategia/campanhas/YYYY-MM-DD - [Campaign Name]/campanha.md` (the 0 Mkt map is multi-brand and uses `content/<brand>/estrategia/campanhas/…`).
 
 ---
 

@@ -20,7 +20,7 @@ Leitura de arquivo fora do diretório de trabalho pode pedir aprovação do usu�
 As skills do hub foram escritas para o 0 Mkt, que guarda marcas em `_brands/<marca>/` e grava saídas conforme `docs/mapa-de-destinos.md` **dele**. Num projeto consumidor:
 
 - **Marca:** use os arquivos de marca do próprio projeto (voz, personas, pilares, guia de estilo). Se o projeto não tiver e o pedido não disser qual marca, pergunte antes de escrever. Não leia `_brands/` do hub como se fosse a marca do projeto.
-- **Onde gravar:** siga o `docs/mapa-de-destinos.md` do projeto consumidor. Se ele não existir, siga a skill `geral-arquitetura-de-projeto` do hub (cria o mapa mínimo). **Nunca grave peça, plano ou rascunho dentro do hub.**
+- **Onde gravar:** siga o `docs/mapa-de-destinos.md` do projeto consumidor. Se ele não existir, siga a skill `mapa-de-destinos` (via `sip-geral`) (cria o mapa mínimo). **Nunca grave peça, plano ou rascunho dentro do hub.**
 - **Anti-slop:** todo texto entregue passa pela skill `geral-anti-slop` do hub antes de sair.
 
 ## Passo 2 — classifique a tarefa
@@ -148,7 +148,6 @@ Total: 99 skills.
 | Skill | Use quando |
 | --- | --- |
 | `geral-anti-slop` | Detects and removes AI writing patterns from text. Use when polishing drafts, cleaning AI-generated content, or ensuring writing sounds authentically human. Invoke with "run through slop detector", "clean this up", or "remove AI fingerprints". |
-| `geral-arquitetura-de-projeto` | Use when creating or reorganizing a marketing project's folders, when deciding where a piece (brand file, strategy, campaign, post, press pitch, monitoring report, asset, data, plan) must be saved, when the project has more than one brand or product, or when a skill needs the project's destination map before writing a file. |
 | `geral-conformidade-lgpd` | Use para conformidade de marketing digital: LGPD e GDPR, consentimento (Consent Mode v2), formulários de captura, revisão de contratos, NDAs de influenciadores e análise de termos de uso. É triagem para orientar o trabalho de marketing; a decisão jurídica final é de advogado. Gatilhos: \"LGPD\", \"GDPR\", \"consentimento\", \"política de privacidade\", \"NDA\", \"contrato de influenciador\". |
 
 ### growth
@@ -214,6 +213,12 @@ Total: 99 skills.
 | `seo-schema-markup` | Use when the user asks to "add schema markup", "generate structured data", "JSON-LD", "rich snippets", "FAQ schema", "add FAQ rich results", "I want star ratings in Google", "product markup", or "recipe schema". Generates structured data markup (Schema.org JSON-LD) to enable rich results in search engines including FAQ snippets, How-To cards, Product listings, Reviews, and more. For meta tag optimization, see meta-tags-optimizer. For broader technical SEO, see seo-tecnico. |
 | `seo-tecnico` | Use when performing technical SEO audits, diagnosing crawling or indexing issues, auditing Core Web Vitals (LCP, INP, CLS), configuring robots.txt (including AI crawlers like GPTBot), validating XML sitemaps, fixing HTTP status codes, or diagnosing site speed drops. Do NOT use for backlinks or link building (use seo-autoridade-e-backlinks). |
 
+### sip
+
+| Skill | Use quando |
+| --- | --- |
+| `sip-geral` | Use when the current task involves general software engineering, architecture, backend, frontend, mobile, database, testing, security, DevOps, AI/ML or development workflows (spec, planning, execution-loop, TDD, debugging) in any project other than "SIP - Geral" (0 Padrões) itself, or when the user asks "existe algo no 0 Padrões pra isso", "tem skill/agent/workflow pra isso no hub geral", "consulta o SIP - Geral", or names a 0 Padrões skill, agent or workflow explicitly in a consumer project. |
+
 ### site
 
 | Skill | Use quando |
@@ -256,8 +261,21 @@ Total: 99 skills.
 Caso contrário, nunca edite essas pastas do hub a partir de um projeto consumidor: elas são lidas por caminho absoluto por todo projeto que consome o hub, e uma edição sem curadoria propagaria na hora. Em vez disso:
 
 1. Leia o formato em `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/inbox/README.md"`.
-2. Crie um arquivo em `/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/inbox/` seguindo esse formato.
+2. Crie `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/inbox/NNN-<assunto>.md"` (próximo número livre da pasta,
+   contando `inbox/arquivo/`) com todas as seções do formato, escrito para quem
+   nunca viu a conversa.
 3. Avise o usuário que a contribuição ficou pendente de revisão.
+
+## Atualização
+
+- Última atualização do hub: 2026-11-11 (o dono do hub muda esta data sempre
+  que esta skill, um agent, um workflow ou a estrutura do hub mudar).
+- Para atualizar a instalação num projeto (pegar agents/workflows novos,
+  refazer links): cole de novo o prompt
+  `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/prompts/instalar-skill-sip-marketing.md"` numa sessão daquele projeto.
+- A data em que **cada projeto** instalou ou atualizou fica no
+  `.agent/SIPS-CONSUMIDOS.md` dele. Se for anterior à data acima, ofereça
+  rodar o prompt.
 
 ## Se nada bater
 

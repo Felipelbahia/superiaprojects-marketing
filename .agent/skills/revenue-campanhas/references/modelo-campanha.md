@@ -4,7 +4,7 @@ Uma campanha é uma estratégia com foco específico e, quando pontual, prazo de
 
 ## Onde gravar
 
-No caminho de campanha do mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`). Sem mapa, o padrão direto, sem marca no caminho, é `estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/`. O mapa do 0 Mkt, multi-marca, usa `content/<marca>/estrategia/campanhas/…`.
+No caminho de campanha do mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`). Sem mapa, o padrão direto, sem marca no caminho, é `estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/`. O mapa do 0 Mkt, multi-marca, usa `content/<marca>/estrategia/campanhas/…`.
 
 Arquivos da pasta:
 

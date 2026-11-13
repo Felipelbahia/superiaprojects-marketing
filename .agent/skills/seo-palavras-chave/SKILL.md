@@ -29,7 +29,7 @@ Reúne os seis guias de pesquisa de palavras-chave que estavam dentro de `seo-co
 1. Parta da marca e da persona (`_brands/<marca>/`) e do pilar de conteúdo, não de uma lista solta de termos.
 2. Classifique a intenção antes de escolher o formato do conteúdo.
 3. Entregue a lista priorizada com intenção, tema do cluster e a página que vai atender cada termo.
-4. Salve seguindo a regra de resolução de destino da skill `geral-arquitetura-de-projeto` (`content/<marca>/blog/AAAA-MM-DD - Nome da Demanda/briefing.md` no 0 Mkt; `conteudos/blog/AAAA-MM-DD - Nome da Demanda/briefing.md` em projeto próprio).
+4. Salve seguindo a regra de resolução de destino da skill `mapa-de-destinos` (`content/<marca>/blog/AAAA-MM-DD - Nome da Demanda/briefing.md` no 0 Mkt; `conteudos/blog/AAAA-MM-DD - Nome da Demanda/briefing.md` em projeto próprio).
 
 ## Onde isso se conecta
 

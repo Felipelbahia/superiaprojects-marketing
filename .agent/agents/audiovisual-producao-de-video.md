@@ -54,7 +54,7 @@ Antes de redigir qualquer roteiro ou plano de produção, valide:
 Todo e qualquer texto de roteiro, narração ou copy de vídeo DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`) antes da entrega final. Evite linguagem artificial e clichês robóticos. O roteiro deve soar como fala humana real e ritmada.
 
 ### 4. Regras de Salvamento Estruturado
-Salve os roteiros e planos audiovisuais seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`), tipo de peça `video` (no 0 Mkt, `content/<marca>/video/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:
+Salve os roteiros e planos audiovisuais seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`), tipo de peça `video` (no 0 Mkt, `content/<marca>/video/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:
 - `roteiro.md` (Estruturado em Áudio / Vídeo / Tempo estimado)
 - `storyboard-briefing.md`
 - `audio-specs.md` (se envolver trilha, voz ou mixagem)

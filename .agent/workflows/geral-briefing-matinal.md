@@ -37,7 +37,7 @@ Ou com parâmetros contextuais:
 ### FASE 1: Coleta & Triagem de Contexto
 1. Verificar a data atual do sistema.
 2. Identificar a marca em foco (ou varrer as marcas ativas em `_brands/` se for um briefing geral).
-3. Verificar a pasta de conteúdo definida pela regra de resolução da skill `geral-arquitetura-de-projeto` (`content/<marca>/` no 0 Mkt; `conteudos/` em projeto próprio) para identificar:
+3. Verificar a pasta de conteúdo definida pela regra de resolução da skill `mapa-de-destinos` (`content/<marca>/` no 0 Mkt; `conteudos/` em projeto próprio) para identificar:
    - Posts com rascunhos criados nos últimos 7 dias.
    - Entregas programadas ou aprovações pendentes.
 4. Verificar `.agent/plans/` para tarefas abertas (`[TASK]`, `[PLAN]`).

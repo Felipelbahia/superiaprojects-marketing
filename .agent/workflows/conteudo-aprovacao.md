@@ -14,7 +14,7 @@ allowed-tools: Read, Write, Edit, Bash
 
 Monta o fluxo de aprovação de uma peça (post, e-mail, landing page, blog etc.): estágios, responsáveis por revisão, SLA por tipo de conteúdo e checklist de cada etapa. Verifica:
 1. A marca e o tipo de conteúdo em questão.
-2. A pasta da peça, seguindo a regra de resolução da skill `geral-arquitetura-de-projeto` (`content/<marca>/<tipo>/` no 0 Mkt; `conteudos/<tipo>/` em projeto próprio).
+2. A pasta da peça, seguindo a regra de resolução da skill `mapa-de-destinos` (`content/<marca>/<tipo>/` no 0 Mkt; `conteudos/<tipo>/` em projeto próprio).
 3. Se já existe um fluxo de aprovação padrão registrado no mapa de destinos do projeto (`docs/mapa-de-destinos.md`), reaproveitar; senão, propor o abaixo.
 
 ---
@@ -91,4 +91,4 @@ Se faltar a marca, perguntar antes de seguir (regra 1.1 do `CLAUDE.md`).
 
 ## Onde salvar
 
-O fluxo de aprovação em si não gera um arquivo novo por padrão — ele acompanha a peça que já está sendo produzida, na pasta definida pela regra de resolução da skill `geral-arquitetura-de-projeto` (`content/<marca>/<tipo>/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt). Se o usuário pedir um checklist de aprovação como arquivo separado, salvar como `aprovacao.md` dentro dessa mesma pasta.
+O fluxo de aprovação em si não gera um arquivo novo por padrão — ele acompanha a peça que já está sendo produzida, na pasta definida pela regra de resolução da skill `mapa-de-destinos` (`content/<marca>/<tipo>/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt). Se o usuário pedir um checklist de aprovação como arquivo separado, salvar como `aprovacao.md` dentro dessa mesma pasta.

@@ -87,4 +87,4 @@ Se faltar a marca, perguntar antes de seguir (regra 1.1 do `CLAUDE.md`).
 
 ## Onde salvar
 
-Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `geral-arquitetura-de-projeto`), tipo de peça `reports`: `content/<marca>/reports/AAAA-MM-DD - Checklist SEO Semanal/checklist.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/reports/AAAA-MM-DD - Checklist SEO Semanal/checklist.md` em projeto próprio.
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `mapa-de-destinos`), tipo de peça `reports`: `content/<marca>/reports/AAAA-MM-DD - Checklist SEO Semanal/checklist.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/reports/AAAA-MM-DD - Checklist SEO Semanal/checklist.md` em projeto próprio.

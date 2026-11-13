@@ -103,4 +103,4 @@ Se faltar a marca, perguntar antes de seguir (regra 1.1 do `CLAUDE.md`).
 
 ## Onde salvar
 
-Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`). Sem mapa, grave no padrão direto, sem marca no caminho: `estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/checklist-lancamento.md` (o mapa do 0 Mkt, multi-marca, usa `content/<marca>/estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/checklist-lancamento.md`).
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`). Sem mapa, grave no padrão direto, sem marca no caminho: `estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/checklist-lancamento.md` (o mapa do 0 Mkt, multi-marca, usa `content/<marca>/estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/checklist-lancamento.md`).

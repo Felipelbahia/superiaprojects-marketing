@@ -54,7 +54,7 @@ Antes de construir cadências, playbooks ou propostas comerciais, valide:
 Todo email de prospecção, roteiro de discovery call ou pitch comercial DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`) antes da entrega final. Copies de vendas com bajulação robótica ("Espero que este email o encontre bem", "Venho por meio deste") são frias e destroem a taxa de resposta. O tom deve ser direto, profissional e focado no problema do decisor.
 
 ### 4. Regras de Salvamento Estruturado
-Salve os playbooks e cadências comerciais seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`), tipo de peça `vendas` (no 0 Mkt, `content/<marca>/vendas/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:
+Salve os playbooks e cadências comerciais seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`), tipo de peça `vendas` (no 0 Mkt, `content/<marca>/vendas/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:
 - `cadencia-outbound.md` (Régua de toques: Email, LinkedIn, Ligação)
 - `playbook-discovery.md` (Perguntas de qualificação e critérios de avanço)
 - `deal-governance.md` (Checklist de risco de pipeline e termos comerciais)

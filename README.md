@@ -75,7 +75,7 @@ Personas focadas em verticais de marketing que atuam silenciosamente conforme a 
 | **`audiovisual-*`** | Mídia Rica, Apresentações & Áudio | `audiovisual-pitch-deck`, `audiovisual-slidev`, `audiovisual-podcast-e-audio`, `audiovisual-agentes-de-voz` |
 | **`site-*`** | Páginas de Conversão & Web | `site-cro`, `site-interface-de-conversao`, `site-arquitetura`, `site-tailwind-design-system` |
 | **`data-*`** | Atribuição & Análise de Dados | `data-funil-e-coortes`, `data-atribuicao-e-relatorios`, `data-web-ga4` |
-| **`geral-*`** | Governança & Qualidade | `geral-anti-slop`, `geral-arquitetura-de-projeto`, `geral-conformidade-lgpd` |
+| **`geral-*`** | Governança & Qualidade | `geral-anti-slop`, `geral-conformidade-lgpd` |
 
 ---
 

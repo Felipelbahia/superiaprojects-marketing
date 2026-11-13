@@ -184,7 +184,7 @@ O texto base é inglês.
 
 ## Receitas por canal e formato
 
-Cada receita é a ordem de skills para um tipo de entrega. Antes de qualquer uma, leia a marca em `_brands/<marca>/` (regra 1.1 do projeto) e, no fim, passe o texto por `/geral-anti-slop` e salve seguindo a regra de resolução de destino da skill `geral-arquitetura-de-projeto` (lê o mapa do projeto; sem mapa, `content/<marca>/<canal>/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt ou `conteudos/<canal>/AAAA-MM-DD - Nome da Demanda/` em projeto próprio).
+Cada receita é a ordem de skills para um tipo de entrega. Antes de qualquer uma, leia a marca em `_brands/<marca>/` (regra 1.1 do projeto) e, no fim, passe o texto por `/geral-anti-slop` e salve seguindo a regra de resolução de destino da skill `mapa-de-destinos` (lê o mapa do projeto; sem mapa, `content/<marca>/<canal>/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt ou `conteudos/<canal>/AAAA-MM-DD - Nome da Demanda/` em projeto próprio).
 
 ### Receita 1: Carrossel de alta conversão (Instagram e LinkedIn)
 1. Marca: `brand-voice.md` e `content-pillars.md`.
@@ -207,7 +207,7 @@ Cada receita é a ordem de skills para um tipo de entrega. Antes de qualquer uma
 4. Design e interface: [site-interface-de-conversao](../site-interface-de-conversao/SKILL.md).
 5. Salvar na pasta do canal — ver a regra de resolução de destino acima.
 
-**Para entregar a página pronta** (marca, design a partir dos tokens, código com autorização, teste no navegador e revisão de conversão), use o workflow [site-construcao-de-landing-page](../../workflows/site-construcao-de-landing-page.md), conduzido pelo agente [site-construcao-web](../../agents/site-construcao-web.md); a página é salva no destino da regra de resolução de `geral-arquitetura-de-projeto` (pasta de landing pages). Site de várias páginas: [site-construcao-de-site](../../workflows/site-construcao-de-site.md) e a skill [site-arquitetura](../site-arquitetura/SKILL.md).
+**Para entregar a página pronta** (marca, design a partir dos tokens, código com autorização, teste no navegador e revisão de conversão), use o workflow [site-construcao-de-landing-page](../../workflows/site-construcao-de-landing-page.md), conduzido pelo agente [site-construcao-web](../../agents/site-construcao-web.md); a página é salva no destino da regra de resolução de `mapa-de-destinos` (pasta de landing pages). Site de várias páginas: [site-construcao-de-site](../../workflows/site-construcao-de-site.md) e a skill [site-arquitetura](../site-arquitetura/SKILL.md).
 
 ### Receita 4: Sequência de nutrição e onboarding (e-mail)
 1. Marca.

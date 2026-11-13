@@ -154,7 +154,7 @@ Leia a marca pela **raiz da marca**: `_brands/<marca>/` quando a marca é hosped
 - **Monitoramento da marca:** as regras (grafias, pessoas, termos de risco, classificação, níveis de alerta) estão em `<raiz>/ativacao/monitoramento.md`; use-as, não recrie.
 
 ## Onde salvar as saídas (ADR-001)
-**Antes de gravar, leia o mapa de destinos do projeto** (`docs/mapa-de-destinos.md`, skill `geral-arquitetura-de-projeto`). A skill não fixa pasta por conta própria. Padrão do modo Projeto e do modo 0 Mkt: `references/destino-das-saidas.md`. O **Hub Central é somente leitura**; se o `CLAUDE.md` do projeto citar um caminho que não existe na árvore (por exemplo `./pautas/`), aplique o mapa e **avise o usuário** da inconsistência.
+**Antes de gravar, leia o mapa de destinos do projeto** (`docs/mapa-de-destinos.md`, skill `mapa-de-destinos`). A skill não fixa pasta por conta própria. Padrão do modo Projeto e do modo 0 Mkt: `references/destino-das-saidas.md`. O **Hub Central é somente leitura**; se o `CLAUDE.md` do projeto citar um caminho que não existe na árvore (por exemplo `./pautas/`), aplique o mapa e **avise o usuário** da inconsistência.
 
 ## Checklist de Qualidade Pré-Disparo
 

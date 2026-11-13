@@ -15,7 +15,7 @@ Formatos de pergunta: ver `question-formats.md`. Marcas de proveniência: ver `S
   5. Restrições: o que já está decidido e não se mexe (nome, cores, logo, jurídico).
   6. ~~Escopo do brandbook~~ (removido em 2026-10-27): o brandbook tem sempre a estrutura completa e a etapa 7c é sempre feita (`brandbook-e-ativos.md`, seção 2).
   **Abertura de cada etapa, em qualquer profundidade `[usuário, 2026-10-27]`:** perguntar "quer responder as perguntas desta etapa, ou prefere que eu proponha e você aprova?", com recomendação. Se o usuário pedir "a partir de agora, proponha você", valer para as próximas etapas. O que o modelo propôs vai `[derivado]` e entra em lacunas. Registrar perguntas e respostas (ou a decisão de propor) em `_respostas/respostas-do-usuario/`.
-  7. **Mapa de destinos do projeto** (`docs/mapa-de-destinos.md`, skill `geral-arquitetura-de-projeto`): se o projeto é próprio e não tem mapa, propor e criar com o usuário antes da etapa 1; se a marca é hospedada no 0 Mkt, registrar "modo 0 Mkt".
+  7. **Mapa de destinos do projeto** (`docs/mapa-de-destinos.md`, skill `mapa-de-destinos`): se o projeto é próprio e não tem mapa, propor e criar com o usuário antes da etapa 1; se a marca é hospedada no 0 Mkt, registrar "modo 0 Mkt".
 - **Saída:** `00-intake.md` com resumo, modo, profundidade, usos, restrições e a tabela de estado das etapas.
 - **Aprovação:** usuário confirma o resumo. Em modo estender, listar o que foi lido e o que está fino.
 

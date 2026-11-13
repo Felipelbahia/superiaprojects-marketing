@@ -13,7 +13,7 @@ allowed-tools: Read, Write, Edit, Bash
 ## 1. O que este workflow faz
 
 Compila a revisão mensal de marketing: métricas do mês (com comparação mês a mês e ano a ano), desempenho do funil, análise por canal e metas do próximo mês. Ele verifica:
-1. Métricas de campanhas e conteúdo na pasta definida pela regra de resolução da skill `geral-arquitetura-de-projeto` (`content/<marca>/` no 0 Mkt; `conteudos/` em projeto próprio).
+1. Métricas de campanhas e conteúdo na pasta definida pela regra de resolução da skill `mapa-de-destinos` (`content/<marca>/` no 0 Mkt; `conteudos/` em projeto próprio).
 2. Dados em `.agent/plans/` sobre tarefas e campanhas do mês.
 3. Benchmarks já registrados (se houver) para comparar o desempenho.
 
@@ -72,4 +72,4 @@ Apresentar a revisão ao usuário e perguntar quais metas do próximo mês entra
 
 ## Onde salvar
 
-Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `geral-arquitetura-de-projeto`), tipo de peça `reports`: `content/<marca>/reports/AAAA-MM - Revisao Mensal/relatorio.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/reports/AAAA-MM - Revisao Mensal/relatorio.md` em projeto próprio.
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `mapa-de-destinos`), tipo de peça `reports`: `content/<marca>/reports/AAAA-MM - Revisao Mensal/relatorio.md` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/reports/AAAA-MM - Revisao Mensal/relatorio.md` em projeto próprio.

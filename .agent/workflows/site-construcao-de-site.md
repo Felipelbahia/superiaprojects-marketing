@@ -30,7 +30,7 @@ Procedimento com **portões de aprovação**, para site de **mais de uma página
 
 ## Onde salvar
 
-Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `geral-arquitetura-de-projeto`). Esse tipo não tem linha no mapa do 0 Mkt: use o tipo mais próximo e avise (regra 8). Hoje: `content/<marca>/site/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/site/AAAA-MM-DD - Nome da Demanda/` em projeto próprio. Dentro da pasta: `arquitetura.md`, `paginas/` (uma pasta por página, como no `build-landing-page`), código, `capturas/` e `relatorio.md`.
+Seguir o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; regra de resolução da skill `mapa-de-destinos`). Esse tipo não tem linha no mapa do 0 Mkt: use o tipo mais próximo e avise (regra 8). Hoje: `content/<marca>/site/AAAA-MM-DD - Nome da Demanda/` no 0 Mkt (regra 1.4 do `CLAUDE.md`); `conteudos/site/AAAA-MM-DD - Nome da Demanda/` em projeto próprio. Dentro da pasta: `arquitetura.md`, `paginas/` (uma pasta por página, como no `build-landing-page`), código, `capturas/` e `relatorio.md`.
 
 ## Limites
 

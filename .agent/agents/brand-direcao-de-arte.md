@@ -105,7 +105,7 @@ Você mobiliza ativamente as skills especializadas do ecossistema Super IA Proje
 
 ## 📁 Regras de Salvamento de Output
 
-Salve as peças conceituais e briefings de direção de arte seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `geral-arquitetura-de-projeto`), tipo de peça `design` (no 0 Mkt, `content/<marca>/design/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:
+Salve as peças conceituais e briefings de direção de arte seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`), tipo de peça `design` (no 0 Mkt, `content/<marca>/design/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:
 - `direcao-de-arte.md` (Conceito, 3 vias, paleta, tipografia, grid e autocrítica)
 - `prompts-ia.md` (Prompts para Midjourney, Flux, ChatGPT e SD)
 - `briefing-layout.md` (se aplicável para equipe externa ou desenvolvedores)

@@ -28,7 +28,6 @@ FELIPE_SOLO = {
     'brand-builder',
     'brand-visual-direction',
     'geral-anti-slop',
-    'geral-arquitetura-de-projeto',
     'pr-assessoria-de-imprensa',
     'revenue-lancamento',
     'revenue-sexy-canvas',

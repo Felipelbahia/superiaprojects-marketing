@@ -1,6 +1,6 @@
 # Destino das saídas da assessoria de imprensa
 
-Regra geral: **o mapa de destinos do projeto manda** (`docs/mapa-de-destinos.md`), inclusive pastas, etapas e fluxo de aprovação; **mudou o arranjo, altera-se só o mapa, não esta skill**. Se o projeto tem mapa, siga-o. **Sem mapa, grave no padrão direto (coluna sem marca no caminho, que é o padrão mono-marca)** e proponha o mapa ao usuário (skill `geral-arquitetura-de-projeto`).
+Regra geral: **o mapa de destinos do projeto manda** (`docs/mapa-de-destinos.md`), inclusive pastas, etapas e fluxo de aprovação; **mudou o arranjo, altera-se só o mapa, não esta skill**. Se o projeto tem mapa, siga-o. **Sem mapa, grave no padrão direto (coluna sem marca no caminho, que é o padrão mono-marca)** e proponha o mapa ao usuário (skill `mapa-de-destinos`).
 
 **Princípio:** tudo o que a assessoria produz e registra vai para a produção, em `imprensa/` (pauta, pitch, release, jornalistas, controle de envio, clipping). `inteligencia/` é o repositório do mercado e só recebe monitoramento, estudos e tendências. **Jornalista, veículo e a metodologia da base (validação de e-mail, scraping/RSS) só vivem no Hub `Compartilhado/RSS Feed`, nunca duplicados no projeto** — consultar via `motores/jornalistas/consultar_hub.py`, nunca copiar. **A técnica de redação não mora no projeto: está nesta skill**, em `story-angles.md` (ângulos editoriais), `newsjacking.md` (matriz de newsjacking), `journalist-pitching.md` (abordagem e pitch) e `press-release-templates.md` (templates).
 

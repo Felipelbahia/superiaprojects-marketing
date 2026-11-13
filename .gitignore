@@ -60,8 +60,13 @@ memory.md
 /.claude/CLAUDE.md
 /.cursorrules
 
-# Registro local de projetos consumidores do SIP - Marketing (paths absolutos desta maquina)
-instalacoes/
+# Conteúdo local do hub: contribuições pendentes e registro de consumidores
+# (caminhos absolutos de outros projetos; não é conhecimento de domínio)
+inbox/*
+!inbox/README.md
+instalacoes/*
+!instalacoes/README.md
 
-# Inbox de contribuicoes de outros projetos (local; pode citar projetos e contextos de clientes)
-/inbox/
+# Symlinks do sip-geral (caminho absoluto desta máquina)
+.agent/skills/sip-geral
+.claude/skills/sip-geral

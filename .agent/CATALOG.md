@@ -2,8 +2,8 @@
 
 > Catálogo completo de Marketing integrado à base global de Engenharia 0 Padrões
 
-**Total Geral:** `695` recursos | **Skills:** `307` | **Workflows:** `225` | **Agentes:** `163`
-**Fontes Integradas:** `0 Mkt` (247) · `0 Padrões` (448)
+**Total Geral:** `698` recursos | **Skills:** `310` | **Workflows:** `225` | **Agentes:** `163`
+**Fontes Integradas:** `0 Mkt` (247) · `0 Padrões` (451)
 
 ---
 
@@ -32,21 +32,21 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Pipelines de Dados & Transformação](#pipelines-de-dados--transformação) (`2`)
 - [Arquitetura de Software & Engenharia](#arquitetura-de-software--engenharia) (`42` recursos)
   - [Padrões Arquiteturais & Boas Práticas](#padrões-arquiteturais--boas-práticas) (`42`)
-- [Backend & APIs](#backend--apis) (`20` recursos)
-  - [Design & Integração de APIs (REST / GraphQL)](#design--integração-de-apis-rest--graphql) (`11`)
+- [Backend & APIs](#backend--apis) (`21` recursos)
+  - [Design & Integração de APIs (REST / GraphQL)](#design--integração-de-apis-rest--graphql) (`12`)
   - [Node.js, Go & Microsserviços](#nodejs-go--microsserviços) (`2`)
   - [Python & Backends de Alta Performance](#python--backends-de-alta-performance) (`5`)
   - [Serviços de Autenticação & Pagamentos](#serviços-de-autenticação--pagamentos) (`2`)
 - [Database & Storage](#database--storage) (`6` recursos)
   - [Bancos Relacionais (PostgreSQL & SQL)](#bancos-relacionais-postgresql--sql) (`3`)
   - [Modelagem & Migrações de Banco](#modelagem--migrações-de-banco) (`3`)
-- [DevOps & Cloud Infra](#devops--cloud-infra) (`65` recursos)
+- [DevOps & Cloud Infra](#devops--cloud-infra) (`64` recursos)
   - [Infraestrutura como Código (Terraform / Cloud)](#infraestrutura-como-código-terraform--cloud) (`3`)
   - [Orquestração Kubernetes & Contêineres](#orquestração-kubernetes--contêineres) (`2`)
-  - [Pipelines de CI/CD & Deploy Contínuo](#pipelines-de-cicd--deploy-contínuo) (`60`)
-- [Frontend & UI/UX](#frontend--uiux) (`212` recursos)
+  - [Pipelines de CI/CD & Deploy Contínuo](#pipelines-de-cicd--deploy-contínuo) (`59`)
+- [Frontend & UI/UX](#frontend--uiux) (`215` recursos)
   - [Acessibilidade Web (A11y & WCAG)](#acessibilidade-web-a11y--wcag) (`4`)
-  - [Componentes de Interface & Interação](#componentes-de-interface--interação) (`186`)
+  - [Componentes de Interface & Interação](#componentes-de-interface--interação) (`189`)
   - [Design Systems & Estilização Moderna](#design-systems--estilização-moderna) (`10`)
   - [Frameworks Web Modernos (React & Next.js)](#frameworks-web-modernos-react--nextjs) (`12`)
 - [Gestão de Produtos e Projetos](#gestão-de-produtos-e-projetos) (`16` recursos)
@@ -149,7 +149,7 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Roteiro Mais Falado](#roteiro-mais-falado) (`1`)
   - [Saas](#saas) (`2`)
   - [Vsl](#vsl) (`1`)
-- [data (Inteligência de Dados)](#data-inteligência-de-dados) (`13` recursos)
+- [data (Inteligência de Dados)](#data-inteligência-de-dados) (`14` recursos)
   - [Analise De Desempenho](#analise-de-desempenho) (`1`)
   - [Analise De Funil](#analise-de-funil) (`1`)
   - [Analytics De Produto](#analytics-de-produto) (`1`)
@@ -159,6 +159,7 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Funil E Coortes](#funil-e-coortes) (`1`)
   - [Gerador De Utm](#gerador-de-utm) (`1`)
   - [Interpretacao De Analytics](#interpretacao-de-analytics) (`1`)
+  - [Métricas e Atribuição](#métricas-e-atribuição) (`1`)
   - [Posthog](#posthog) (`1`)
   - [Relatorio Executivo](#relatorio-executivo) (`1`)
   - [Revisao Mensal](#revisao-mensal) (`1`)
@@ -171,9 +172,8 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Newsletter](#newsletter) (`2`)
   - [Orquestracao De Campanhas](#orquestracao-de-campanhas) (`1`)
   - [Otimizacao De Assunto](#otimizacao-de-assunto) (`1`)
-- [geral (Geral & Governança)](#geral-geral--governança) (`24` recursos)
+- [geral (Geral & Governança)](#geral-geral--governança) (`23` recursos)
   - [Anti Slop](#anti-slop) (`2`)
-  - [Arquitetura De Projeto](#arquitetura-de-projeto) (`1`)
   - [Briefing Matinal](#briefing-matinal) (`1`)
   - [Conformidade Lgpd](#conformidade-lgpd) (`1`)
   - [Coordenacao De Campanhas](#coordenacao-de-campanhas) (`1`)
@@ -401,13 +401,14 @@ Total de recursos nesta macro-área: `42`
 
 ## <a id="backend--apis"></a>Backend & APIs
 
-Total de recursos nesta macro-área: `20`
+Total de recursos nesta macro-área: `21`
 
 ### <a id="design--integração-de-apis-rest--graphql"></a>Design & Integração de APIs (REST / GraphQL)
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
 | <a id="claude-code-review"></a>**`claude-code-review`** | `Skill` | `0 Padrões` | Use ao configurar, ajustar ou executar o Claude Code Review (revisão gerenciada do GitHub PR, REVIEW.md, @claude review) ou o comando local /code-review, quando as descobertas da revisão são barulhentas, ausentes ou caras, ou ao restringir mesclagens na gravidade da revisão automatizada. Também para revisão de PR automatizada e solicitações de ultrareview. |
+| <a id="github-publisher"></a>**`github-publisher`** | `Skill` | `0 Padrões` | Use quando o usuário solicitar para publicar, fazer upload ou enviar uma pasta local ou projeto para o GitHub pela primeira vez, criar um novo repositório GitHub a partir de código existente, ou "subir o projeto pro GitHub" / "criar repositório", e quando um repositório estiver prestes a ser compartilhado (tornado público, um colaborador adicionado, o link enviado para alguém) - inclusive quando disserem que já está limpo ou que estão com pressa. |
 | <a id="launch-readiness"></a>**`launch-readiness`** | `Skill` | `0 Padrões` | Use quando um aplicativo ou site construído com IA está prestes a ser publicado ou lançado, ou o usuário solicita uma verificação de pré-lançamento, go-live ou "antes de lançamento" além da segurança do código - capacidade de entrega de e-mail, envio de loja de aplicativos, risco de chatbot, kill switch e limites de gastos, links quebrados, exposição legal e de privacidade. |
 | <a id="openapi-spec-generation"></a>**`openapi-spec-generation`** | `Skill` | `0 Padrões` | Gere e mantenha especificações OpenAPI 3.1 a partir de código, especificações de design inicial e padrões de validação. Use ao criar documentação de API, gerar SDKs ou garantir a conformidade do contrato de API. |
 | <a id="sip-firecrawl"></a>**`sip-firecrawl`** | `Skill` | `0 Padrões` | Use whenever the current task involves Firecrawl (web scraping, crawling, mapping, search, structured extraction, browser interaction, monitoring, lead gen, SEO audits, etc.) but the active project has no local Firecrawl skills — i.e. any project other than "SIP - Firecrawl" (Firecrawl - local) itself. Routes the task to the central Firecrawl knowledge hub instead of improvising from general knowledge. Also use when the user asks "existe algo de firecrawl pra isso", "tem skill de scraping no hub", "consulta o SIP - Firecrawl", or names Firecrawl explicitly in a project that isn't it. Este stub existe para que IAs que não leem `.claude/skills/` (Google Antigravity/Gemini, Cursor) ainda encontrem este nome via Regra 4 (Fallback Resolution Protocol) — o Claude Code já tem acesso direto via `.claude/skills/sip-firecrawl`. |
@@ -469,7 +470,7 @@ Total de recursos nesta macro-área: `6`
 
 ## <a id="devops--cloud-infra"></a>DevOps & Cloud Infra
 
-Total de recursos nesta macro-área: `65`
+Total de recursos nesta macro-área: `64`
 
 ### <a id="infraestrutura-como-código-terraform--cloud"></a>Infraestrutura como Código (Terraform / Cloud)
 
@@ -495,7 +496,6 @@ Total de recursos nesta macro-área: `65`
 | <a id="dependency-upgrade"></a>**`dependency-upgrade`** | `Skill` | `0 Padrões` | Gerencie atualizações de versões de dependências importantes com análise de compatibilidade, implementação gradual e testes abrangentes. Use ao atualizar versões da estrutura, atualizar dependências principais ou gerenciar alterações significativas em bibliotecas. |
 | <a id="finishing-a-development-branch"></a>**`finishing-a-development-branch`** | `Skill` | `0 Padrões` | Use quando a implementação for concluída, todos os testes forem aprovados e você precisar decidir como integrar o trabalho |
 | <a id="gdpr-data-handling"></a>**`gdpr-data-handling`** | `Skill` | `0 Padrões` | Implemente o tratamento de dados em conformidade com o GDPR com gerenciamento de consentimento, direitos do titular dos dados e privacidade desde o projeto. Use ao criar sistemas que processem dados pessoais da UE, implementando controles de privacidade ou conduzindo análises de conformidade com o GDPR. |
-| <a id="github-publisher"></a>**`github-publisher`** | `Skill` | `0 Padrões` | Use quando o usuário solicitar para publicar, fazer upload ou enviar uma pasta local ou projeto para o GitHub pela primeira vez, criar um novo repositório GitHub a partir de código existente ou "subir o projeto pro GitHub" / "criar repositório" - inclusive quando disserem que já está limpo ou que estão com pressa. |
 | <a id="grafana-dashboards"></a>**`grafana-dashboards`** | `Skill` | `0 Padrões` | Crie e gerencie painéis de produção do Grafana para visualização em tempo real de métricas de sistemas e aplicativos. Use ao criar painéis de monitoramento, visualizar métricas ou criar interfaces de observabilidade operacional. |
 | <a id="incident-runbook-templates"></a>**`incident-runbook-templates`** | `Skill` | `0 Padrões` | Crie runbooks estruturados de resposta a incidentes com procedimentos passo a passo, caminhos de escalonamento e ações de recuperação. Use ao criar runbooks, responder a incidentes ou estabelecer procedimentos de resposta a incidentes. |
 | <a id="interaction-design"></a>**`interaction-design`** | `Skill` | `0 Padrões` | Projete e implemente microinterações, design de movimento, transições e padrões de feedback do usuário. Use ao adicionar polimento às interações da IU, implementar estados de carregamento ou criar experiências de usuário agradáveis. |
@@ -555,7 +555,7 @@ Total de recursos nesta macro-área: `65`
 
 ## <a id="frontend--uiux"></a>Frontend & UI/UX
 
-Total de recursos nesta macro-área: `212`
+Total de recursos nesta macro-área: `215`
 
 ### <a id="acessibilidade-web-a11y--wcag"></a>Acessibilidade Web (A11y & WCAG)
 
@@ -586,6 +586,7 @@ Total de recursos nesta macro-área: `212`
 | <a id="code-review-excellence"></a>**`code-review-excellence`** | `Skill` | `0 Padrões` | Domine práticas eficazes de revisão de código para fornecer feedback construtivo, detectar bugs antecipadamente e promover o compartilhamento de conhecimento, mantendo o moral da equipe. Use ao revisar solicitações pull, estabelecer padrões de revisão ou orientar desenvolvedores. |
 | <a id="cqrs-implementation"></a>**`cqrs-implementation`** | `Skill` | `0 Padrões` | Implemente a segregação de responsabilidade de consulta de comando para arquiteturas escaláveis. Use ao separar modelos de leitura e gravação, otimizar o desempenho de consultas ou criar sistemas com origem em eventos. |
 | <a id="dbt-transformation-patterns"></a>**`dbt-transformation-patterns`** | `Skill` | `0 Padrões` | Domine dbt (ferramenta de construção de dados) para engenharia analítica com organização de modelos, testes, documentação e estratégias incrementais. Use ao construir transformações de dados, criar modelos de dados ou implementar práticas recomendadas de engenharia analítica. |
+| <a id="deliverable-verification"></a>**`deliverable-verification`** | `Skill` | `0 Padrões` | Use quando um documento, relatório ou diagnóstico é classificado em um controle de qualidade de ciclo de execução, quando uma entrega é montada a partir de várias partes ou registros (descobertas, perguntas, pendências), ao adicionar uma peça, descoberta ou ID a tal entrega ou quando um arquivo diz que foi gerado e não deve ser editado manualmente. |
 | <a id="deployment-pipeline-design"></a>**`deployment-pipeline-design`** | `Skill` | `0 Padrões` | Projete pipelines de CI/CD de vários estágios com portas de aprovação, verificações de segurança e orquestração de implantação. Use ao arquitetar fluxos de trabalho de implantação, configurar a entrega contínua ou implementar práticas de GitOps. |
 | <a id="deployment-procedures"></a>**`deployment-procedures`** | `Skill` | `0 Padrões` | Princípios de implantação da produção e tomada de decisão. Fluxos de trabalho de implantação seguros, estratégias de reversão e verificação. Ensina a pensar, não a scripts. |
 | <a id="distributed-tracing"></a>**`distributed-tracing`** | `Skill` | `0 Padrões` | Implemente rastreamento distribuído com Jaeger e Tempo para rastrear solicitações em microsserviços e identificar gargalos de desempenho. Use ao depurar microsserviços, analisar fluxos de solicitação ou implementar observabilidade para sistemas distribuídos. |
@@ -609,6 +610,7 @@ Total de recursos nesta macro-área: `212`
 | <a id="k8s-security-policies"></a>**`k8s-security-policies`** | `Skill` | `0 Padrões` | Implemente políticas de segurança do Kubernetes, incluindo NetworkPolicy, PodSecurityPolicy e RBAC, para segurança de nível de produção. Use ao proteger clusters Kubernetes, implementar isolamento de rede ou impor padrões de segurança de pod. |
 | <a id="landing-page-copy-optimizer"></a>**`landing-page-copy-optimizer`** | `Skill` | `0 Padrões` | Analise e otimize o texto da landing page usando a metodologia de posicionamento de April Dunford. Use quando o usuário quiser avaliar a cópia da página de destino SaaS, melhorar as mensagens com foco na conversão, aplicar uma estrutura de posicionamento (alternativas competitivas, recursos exclusivos, temas de valor, clientes-alvo, categoria de mercado) ou gerar prompts para ferramentas de codificação de vibração (Replit, Lovable). Aciona solicitações como "analisar minha página de destino", "melhorar a cópia do meu site", "ajuda com posicionamento", "otimizar minha página SaaS" ou quando o usuário compartilha o URL de uma página de destino para revisão. |
 | <a id="langchain-architecture"></a>**`langchain-architecture`** | `Skill` | `0 Padrões` | Projete aplicativos LLM usando LangChain 1.x e LangGraph para agentes, memória e integração de ferramentas. Use ao construir aplicativos LangChain, implementar agentes de IA ou criar fluxos de trabalho LLM complexos. |
+| <a id="mapa-de-destinos"></a>**`mapa-de-destinos`** | `Skill` | `0 Padrões` | Utilize quando estiver prestes a salvar uma entrega que não seja código-fonte (relatório, documento, conteúdo, campanha, material de imprensa, exportação de dados, exportação de fluxo de trabalho, estudo) e o projeto não tenha local documentado para isso, ao criar ou alinhar um projeto, quando um projeto ganha mais de uma marca ou produto, ou quando alguém pergunta para onde deve ir um tipo de arquivo. |
 | <a id="mcp-builder"></a>**`mcp-builder`** | `Skill` | `0 Padrões` | Princípios de construção de servidores MCP (Model Context Protocol). Design de ferramentas, padrões de recursos, melhores práticas. |
 | <a id="memory-forensics"></a>**`memory-forensics`** | `Skill` | `0 Padrões` | Domine técnicas forenses de memória, incluindo aquisição de memória, análise de processos e extração de artefatos usando Volatilidade e ferramentas relacionadas. Use ao analisar despejos de memória, investigar incidentes ou realizar análises de malware a partir de capturas de RAM. |
 | <a id="microservices-patterns"></a>**`microservices-patterns`** | `Skill` | `0 Padrões` | Projete arquiteturas de microsserviços com limites de serviço, comunicação orientada a eventos e padrões de resiliência. Use ao construir sistemas distribuídos, decompor monólitos ou implementar microsserviços. |
@@ -636,6 +638,7 @@ Total de recursos nesta macro-área: `212`
 | <a id="service-mesh-observability"></a>**`service-mesh-observability`** | `Skill` | `0 Padrões` | Implemente observabilidade abrangente para malhas de serviço, incluindo rastreamento distribuído, métricas e visualização. Use ao configurar o monitoramento de malha, depurar problemas de latência ou implementar SLOs para comunicação de serviço. |
 | <a id="similarity-search-patterns"></a>**`similarity-search-patterns`** | `Skill` | `0 Padrões` | Implemente uma pesquisa eficiente de similaridade com bancos de dados vetoriais. Use ao criar pesquisa semântica, implementar consultas de vizinhos mais próximos ou otimizar o desempenho de recuperação. |
 | <a id="sip-astro"></a>**`sip-astro`** | `Skill` | `0 Padrões` | Use sempre que a tarefa atual envolver Astro (construir ou migrar um site, escolher um tema, integrações, SEO/GEO, implantação, formulários, análises, i18n, e-commerce, testes, atualizações, auditoria de pré-lançamento), mas o projeto ativo não possui habilidades Astro locais - ou seja, qualquer projeto diferente do próprio "SIP - Astro". Encaminha a tarefa para o centro central de conhecimento Astro em vez de improvisar a partir do conhecimento geral. Use também quando o usuário perguntar "existe algo de astro pra isso", "tem habilidade de astro no hub" ou nomear explicitamente as habilidades do Astro em um projeto que não seja o hub. |
+| <a id="sip-geral"></a>**`sip-geral`** | `Skill` | `0 Padrões` | Use when the current task involves general software engineering, architecture, backend, frontend, mobile, database, testing, security, DevOps, AI/ML or development workflows (spec, planning, execution-loop, TDD, debugging) in any project other than "SIP - Geral" (0 Padrões) itself, or when the user asks "existe algo no 0 Padrões pra isso", "tem skill/agent/workflow pra isso no hub geral", "consulta o SIP - Geral", or names a 0 Padrões skill, agent or workflow explicitly in a consumer project. |
 | <a id="sip-marketing"></a>**`sip-marketing`** | `Skill` | `0 Padrões` | Use sempre que a tarefa atual envolver marketing, conteúdo, copywriting, branding, mídia social, SEO, anúncios pagos, e-mail, RP, crescimento, capacitação de vendas ou análise de marketing, mas o projeto ativo não tiver habilidades de marketing local - ou seja, qualquer projeto que não seja o próprio "SIP - Marketing" (0 Mkt). Encaminha a tarefa para o centro central de conhecimento de marketing, em vez de improvisar a partir do conhecimento geral. Use também quando o usuário perguntar "existe algo de marketing pra isso", "tem habilidade de marketing no hub", "consulta o SIP - Marketing", ou nomear explicitamente uma habilidade, agente ou fluxo de trabalho 0 Mkt em um projeto que não é o hub. |
 | <a id="startup-financial-modeling"></a>**`startup-financial-modeling`** | `Skill` | `0 Padrões` | Essa habilidade deve ser usada quando o usuário pede para "criar projeções financeiras", "construir um modelo financeiro", "prever receita", "calcular taxa de consumo", "estimar pista", "modelar fluxo de caixa" ou solicitar planejamento financeiro de 3 a 5 anos para uma startup. |
 | <a id="stripe-integration"></a>**`stripe-integration`** | `Skill` | `0 Padrões` | Implemente o processamento de pagamentos Stripe para fluxos de pagamento robustos e compatíveis com PCI, incluindo checkout, assinaturas e webhooks. Use ao integrar pagamentos Stripe, criar sistemas de assinatura ou implementar fluxos de checkout seguros. |
@@ -1479,7 +1482,7 @@ Total de recursos nesta macro-área: `14`
 
 ## <a id="data-inteligência-de-dados"></a>data (Inteligência de Dados)
 
-Total de recursos nesta macro-área: `13`
+Total de recursos nesta macro-área: `14`
 
 ### <a id="analise-de-desempenho"></a>Analise De Desempenho
 
@@ -1534,6 +1537,12 @@ Total de recursos nesta macro-área: `13`
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
 | <a id="data-interpretacao-de-analytics"></a>**`/data-interpretacao-de-analytics`** | `Workflow` | `0 Mkt` | Interprete dados GA4 e GSC com benchmarks, indicadores de status e insights acionáveis |
+
+### <a id="métricas-e-atribuição"></a>Métricas e Atribuição
+
+| Recurso | Tipo | Origem | Descrição e Aplicação |
+| :--- | :--- | :--- | :--- |
+| <a id="sip-geral"></a>**`sip-geral`** | `Skill` | `0 Mkt` | Use when the current task involves general software engineering, architecture, backend, frontend, mobile, database, testing, security, DevOps, AI/ML or development workflows (spec, planning, execution-loop, TDD, debugging) in any project other than "SIP - Geral" (0 Padrões) itself, or when the user asks "existe algo no 0 Padrões pra isso", "tem skill/agent/workflow pra isso no hub geral", "consulta o SIP - Geral", or names a 0 Padrões skill, agent or workflow explicitly in a consumer project. |
 
 ### <a id="posthog"></a>Posthog
 
@@ -1612,7 +1621,7 @@ Total de recursos nesta macro-área: `8`
 
 ## <a id="geral-geral--governança"></a>geral (Geral & Governança)
 
-Total de recursos nesta macro-área: `24`
+Total de recursos nesta macro-área: `23`
 
 ### <a id="anti-slop"></a>Anti Slop
 
@@ -1620,12 +1629,6 @@ Total de recursos nesta macro-área: `24`
 | :--- | :--- | :--- | :--- |
 | <a id="geral-anti-slop"></a>**`geral-anti-slop`** | `Skill` | `0 Mkt` | Detecta e remove padrões de escrita de IA do texto. Use ao aprimorar rascunhos, limpar conteúdo gerado por IA ou garantir que a escrita pareça autenticamente humana. Invoque com "passar pelo detector de resíduos", "limpar" ou "remover impressões digitais de IA". |
 | <a id="geral-anti-slop"></a>**`/geral-anti-slop`** | `Workflow` | `0 Mkt` | Detecta e remove padrões de escrita de IA do texto. Use ao polir |
-
-### <a id="arquitetura-de-projeto"></a>Arquitetura De Projeto
-
-| Recurso | Tipo | Origem | Descrição e Aplicação |
-| :--- | :--- | :--- | :--- |
-| <a id="geral-arquitetura-de-projeto"></a>**`geral-arquitetura-de-projeto`** | `Skill` | `0 Mkt` | Use ao criar ou reorganizar as pastas de um projeto de marketing, ao decidir onde uma peça (arquivo de marca, estratégia, campanha, post, pitch de imprensa, relatório de monitoramento, ativo, dados, plano) deve ser salva, quando o projeto tiver mais de uma marca ou produto, ou quando uma habilidade precisar do mapa de destino do projeto antes de escrever um arquivo. |
 
 ### <a id="briefing-matinal"></a>Briefing Matinal
 

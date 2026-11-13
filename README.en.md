@@ -75,7 +75,7 @@ Domain personas that automatically activate based on request intent:
 | **`audiovisual-*`** | Rich Media, Decks & Audio | `audiovisual-pitch-deck`, `audiovisual-slidev`, `audiovisual-podcast-e-audio`, `audiovisual-agentes-de-voz` |
 | **`site-*`** | Conversion Pages & Web Architecture | `site-cro`, `site-interface-de-conversao`, `site-arquitetura`, `site-tailwind-design-system` |
 | **`data-*`** | Attribution & Marketing Analytics | `data-funil-e-coortes`, `data-atribuicao-e-relatorios`, `data-web-ga4` |
-| **`geral-*`** | Quality & Governance | `geral-anti-slop`, `geral-arquitetura-de-projeto`, `geral-conformidade-lgpd` |
+| **`geral-*`** | Quality & Governance | `geral-anti-slop`, `geral-conformidade-lgpd` |
 
 ---
 
