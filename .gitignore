@@ -70,3 +70,7 @@ instalacoes/*
 # Symlinks do sip-geral (caminho absoluto desta máquina)
 .agent/skills/sip-geral
 .claude/skills/sip-geral
+
+# Variantes de .env (regras do kit, prompt 01)
+*.env
+!*.env.example

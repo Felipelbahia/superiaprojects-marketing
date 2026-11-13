@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# Versioned pre-commit hook for 0 Mkt (SIP - Marketing): fast, deterministic checks only (a few seconds).
+# Activate once per clone: git config core.hooksPath .githooks
+# The checks run the kit's scripts (0 Padrões); on a machine without the kit they are skipped with a notice.
+set -u
+cd "$(git rev-parse --show-toplevel)" || exit 1
+KIT="/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Padrões/.agent/scripts"
+if [ ! -d "$KIT" ]; then
+  echo "pre-commit: kit scripts not found at $KIT; checks skipped" >&2
+  exit 0
+fi
+
+failed=0
+run_check() {
+  local label="$1"; shift
+  local out
+  if ! out=$("$@" 2>&1); then
+    echo "pre-commit: $label failed" >&2
+    echo "$out" >&2
+    failed=1
+  fi
+}
+
+run_check "rule-file parity (sync_rules.py --check)" python3 "$KIT/sync_rules.py" --check
+run_check "AI entrypoints (sync_entrypoints.py --check)" python3 "$KIT/sync_entrypoints.py" --check
+run_check "SIP hub (check_sip_hub.py)" python3 "$KIT/check_sip_hub.py" . sip-marketing
+
+if [ "$failed" -ne 0 ]; then
+  echo "pre-commit: commit refused. Fix the items above (sync_rules.py, sync_entrypoints.py, build_sip_index.py --hub .)." >&2
+  exit 1
+fi
+exit 0
