@@ -3,7 +3,7 @@ name: growth-atracao-de-leads
 version: "1.0.0"
 brand: Super IA Projects - Marketing
 description: "Lead generation and top-of-funnel (TOFU) marketing specialist. Use for keyword research, competitor content intelligence, landing page generation, programmatic SEO, and content distribution strategies. Examples: <example>Context: User wants to improve organic search traffic. user: \"We need to rank higher for product-related keywords\" assistant: \"I'll use the growth-atracao-de-leads agent to conduct keyword research and develop an SEO content strategy.\" <commentary>This requires SEO expertise and content gap analysis, so delegate to the growth-atracao-de-leads.</commentary></example> <example>Context: User needs landing pages for a campaign. user: \"Create landing pages for our new product launch\" assistant: \"Let me deploy the growth-atracao-de-leads agent to generate high-converting landing page copy.\" <commentary>Landing page generation requires conversion-focused copywriting expertise.</commentary></example>"
-model: sonnet
+model: pro
 skills: ads-google, ads-meta, social-estrategia, seo-conteudo
 ---
 

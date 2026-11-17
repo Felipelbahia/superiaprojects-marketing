@@ -23,6 +23,49 @@ O script `./install.sh`:
 
 ---
 
+## 🖥️ 1.1. Como rodar em outra máquina
+
+Este hub é um repositório de Markdown (skills, agentes, workflows) com alguns scripts Python. Não há build nem servidor: "rodar" significa deixar o catálogo e os links dos agentes consistentes e, se for usar as skills de arquivo (pptx, xlsx, QR code), instalar as bibliotecas Python.
+
+**Pré-requisitos**
+
+| Item | Versão | Para que serve |
+|---|---|---|
+| Python | 3.14 recomendado (fixada em `.python-version`); mínimo 3.10 | scripts em `.agent/scripts/` |
+| Git | qualquer recente | clonar o repositório |
+| Claude Code, Antigravity ou Cursor | opcional | só para operar o hub com IA |
+
+O Python 3.9 que vem no macOS roda o sincronizador de links, mas **quebra** `assemble_rules.py` e `check_local_rules.py` (sintaxe do 3.10+). Instale um mais novo em python.org ou com `brew install python@3.14`.
+
+**Passo a passo (copie e cole)**
+
+```bash
+git clone https://github.com/Felipelbahia/superiaprojects-marketing.git
+cd superiaprojects-marketing
+cp .env.example .env                      # preencha só as chaves que for usar
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt  # versões fixas, instalação reprodutível
+python3 .agent/scripts/sync_entrypoints.py
+python3 .agent/scripts/sync_entrypoints.py --check
+```
+
+**Deu certo quando** o último comando imprime `OK: all AI entrypoints in sync and valid` e o `.venv/bin/python -c "import pptx, PIL, xlsxwriter, lxml, click"` não mostra erro.
+
+**Problemas comuns**
+
+| Sintoma | Causa | Solução |
+|---|---|---|
+| `TypeError: unsupported operand type(s) for \|` | Python 3.9 ou mais antigo rodando `assemble_rules.py` ou `check_local_rules.py` | conferir `python3 --version`, instalar a 3.10+ e recriar o `.venv` com ela |
+| `ModuleNotFoundError: pptx` (ou PIL, xlsxwriter) | libs não instaladas | `.venv/bin/pip install -r requirements.txt` |
+| Skill não aparece no Claude Code | links `.claude/` desatualizados | `python3 .agent/scripts/sync_entrypoints.py` |
+| `pre-commit: kit scripts not found` | máquina sem o kit `0 Padrões` | é só um aviso, o commit segue; para ativar as checagens, clone o kit e ajuste `KIT` em `.githooks/pre-commit` |
+| Hook de commit não roda | hooks não ativados no clone | `git config core.hooksPath .githooks` |
+| Chave de API ausente | `.env` não criado | `cp .env.example .env` e preencher a chave da plataforma usada |
+
+**Pastas de IA não são pré-requisito.** `.agent/`, `.claude/`, `.cursor/`, `CLAUDE.md`, `AGENTS.md` e `.cursorrules` são ferramenta local de quem opera o hub com IA. Os documentos em Markdown podem ser lidos e usados sem nenhuma delas, e o `.env` nunca é versionado.
+
+---
+
 ## 🔌 2. Servidores MCP Recomendados para Marketing
 
 O Model Context Protocol (MCP) expande a capacidade dos agentes autônomos com leitura da web, documentação e sincronização em tempo real.
@@ -128,7 +171,7 @@ export SUPER_IA_PROJECTS_PATH="$HOME/superiaprojects"
 export MARKETING_HUB_PATH="$HOME/superiaprojects-marketing"
 ```
 
-E no arquivo de regras do seu projeto ativo (`CLAUDE.md` ou `GEMINI.md`), inclua a diretriz de busca hierárquica:
+E no arquivo de regras do seu projeto ativo (`CLAUDE.md` ou `AGENTS.md`), inclua a diretriz de busca hierárquica:
 
 ```markdown
 ### Protocolo de Fallback

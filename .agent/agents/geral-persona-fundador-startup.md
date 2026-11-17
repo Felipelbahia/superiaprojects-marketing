@@ -3,7 +3,7 @@ name: geral-persona-fundador-startup
 version: "1.0.0"
 brand: Super IA Projects - Marketing
 description: "Startup founder persona reviewer (28yo, early-stage founder). Use for reviewing content from the perspective of a young startup founder. Evaluates content for speed, growth hacking, virality potential, founder-market fit, and scrappy execution. Examples: <example>Context: User created startup marketing content. user: \"Review this from a startup founder's perspective\" assistant: \"I'll use the geral-persona-fundador-startup agent to evaluate from a founder's viewpoint—growth potential, speed to market, and resource constraints.\" <commentary>Startup founder perspective focuses on rapid growth and scrappy execution.</commentary></example>"
-model: sonnet
+model: pro
 skills: revenue-gtm-e-posicionamento, audiovisual-pitch-deck, vendas-metodologias-b2b, revenue-premortem-previsao
 ---
 

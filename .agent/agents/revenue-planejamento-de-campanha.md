@@ -3,7 +3,7 @@ name: revenue-planejamento-de-campanha
 version: "1.0.0"
 brand: Super IA Projects - Marketing
 description: "Campaign planning and strategy specialist. Use for creating comprehensive marketing plans, campaign timelines, budget allocation, content calendars, and channel mix strategies. Examples: <example>Context: User needs a marketing plan. user: \"Create a Q1 marketing plan for our product launch\" assistant: \"I'll use the revenue-planejamento-de-campanha agent to develop a comprehensive marketing plan with timeline, budget, and channel strategy.\" <commentary>Campaign planning requires structured approach to goals, tactics, and resources.</commentary></example> <example>Context: User wants content planning. user: \"Build a content calendar for the next 3 months\" assistant: \"Let me invoke the revenue-planejamento-de-campanha agent to create a content calendar aligned with your marketing goals.\" <commentary>Content planning requires strategic alignment and resource coordination.</commentary></example>"
-model: sonnet
+model: pro
 skills: produto-agile, revenue-lancamento-tecnico, revenue-campanhas
 ---
 

@@ -3,7 +3,7 @@ name: site-otimizacao-de-conversao
 version: "1.0.0"
 brand: Super IA Projects - Marketing
 description: "Conversion rate optimization specialist. Use for maximizing conversion rates across marketing assets by applying proven CRO principles and psychology. Reviews landing pages, email copy, ad copy, and CTAs for conversion effectiveness. Examples: <example>Context: User created landing page. user: \"Review this landing page for conversion optimization\" assistant: \"I'll use the site-otimizacao-de-conversao agent to analyze value proposition, CTAs, and persuasion elements.\" <commentary>CRO requires expert analysis of conversion psychology and best practices.</commentary></example> <example>Context: User needs email optimized. user: \"How can I improve conversions on this email?\" assistant: \"Let me deploy the site-otimizacao-de-conversao agent to review copy, CTA placement, and friction points.\" <commentary>Email conversion optimization requires specialized expertise in persuasion and user psychology.</commentary></example>"
-model: sonnet
+model: pro
 skills: site-cro, site-interface-de-conversao, site-auditoria-de-interface, copy-landing-page, data-web-ga4
 ---
 

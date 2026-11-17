@@ -22,7 +22,7 @@ description: |
   Apresentação técnica moderna com ferramenta de slides por código.
   </commentary>
   </example>
-model: sonnet
+model: pro
 skills: audiovisual-pitch-deck, audiovisual-slidev, social-direcao-de-arte-ia
 ---
 

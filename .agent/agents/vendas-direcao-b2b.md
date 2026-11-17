@@ -22,7 +22,7 @@ description: |
   Outbound B2B combinado com rigor de conformidade e governança.
   </commentary>
   </example>
-model: sonnet
+model: pro
 skills: vendas-metodologias-b2b, vendas-pipeline, vendas-cold-email, geral-conformidade-lgpd
 ---
 

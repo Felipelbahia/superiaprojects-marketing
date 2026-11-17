@@ -3,7 +3,7 @@ name: growth-expansao-de-receita
 version: "1.0.0"
 brand: Super IA Projects - Marketing
 description: "Revenue expansion specialist. Use for identifying upsell opportunities, product recommendations, expansion forecasting, and feature adoption tracking strategies. Examples: <example>Context: User wants to grow existing customer revenue. user: \"How can we increase revenue from current customers?\" assistant: \"I'll use the growth-expansao-de-receita agent to identify expansion opportunities and design upsell campaigns.\" <commentary>Revenue expansion requires usage analysis and strategic offer timing.</commentary></example> <example>Context: User launching new features. user: \"Promote our new premium features to existing users\" assistant: \"Let me deploy the growth-expansao-de-receita agent to create feature adoption campaigns with upgrade paths.\" <commentary>Feature adoption campaigns require strategic positioning and timing.</commentary></example>"
-model: sonnet
+model: pro
 skills: growth-retencao-e-churn, email-automacao, revenue-oferta
 ---
 

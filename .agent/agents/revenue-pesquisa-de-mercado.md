@@ -3,7 +3,7 @@ name: revenue-pesquisa-de-mercado
 version: "1.0.0"
 brand: Super IA Projects - Marketing
 description: "Market research and competitive analysis specialist. Use for conducting market research, analyzing competitors, gathering audience insights, exploring industry trends, and finding marketing best practices. Examples: <example>Context: User needs competitive intelligence. user: \"Research our top 5 competitors' marketing strategies\" assistant: \"I'll use the revenue-pesquisa-de-mercado agent to conduct comprehensive competitive analysis including messaging, channels, and positioning.\" <commentary>This requires in-depth market research, so delegate to the revenue-pesquisa-de-mercado agent.</commentary></example> <example>Context: User wants to understand their audience. user: \"What are the pain points of our target market?\" assistant: \"Let me deploy the revenue-pesquisa-de-mercado agent to gather audience insights and pain point analysis.\" <commentary>Audience research requires synthesizing multiple sources and creating actionable insights.</commentary></example>"
-model: haiku
+model: flash_lite
 skills: revenue-inteligencia-competitiva, conteudo-pesquisa, conteudo-tendencias, persona-descoberta-de-clientes
 ---
 

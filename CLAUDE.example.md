@@ -7,7 +7,7 @@ trigger: always_on
 > **INSTRUÇÃO DE CONFIGURAÇÃO (TEMPLATE):**
 > Este arquivo é o modelo de regras do **Super IA Projects - Marketing**, a extensão oficial para Marketing, Growth, Copywriting, SEO e Ads.
 > Para ativá-lo no seu ambiente de trabalho:
-> 1. Copie este arquivo para a raiz do seu repositório como `CLAUDE.md` (e/ou `GEMINI.md` e `AGENTS.md`):
+> 1. Copie este arquivo para a raiz do seu repositório como `CLAUDE.md` e `AGENTS.md`:
 >    ```bash
 >    cp CLAUDE.example.md CLAUDE.md
 >    ```
@@ -59,10 +59,9 @@ Todo conteúdo final produzido deve ser organizado e salvo na pasta de entregas:
 
 ### 2.2. Paridade Dual Multi-IA (Dual Rules Parity)
 - **Paridade 100% Obrigatória:** Os arquivos de regras devem permanecer 100% idênticos em todas as portas de entrada:
-  - Claude Code: `./CLAUDE.md` e `./.claude/CLAUDE.md`
-  - Google Antigravity / Gemini: `./GEMINI.md` e `./.agent/rules/GEMINI.md`
+  - Claude Code: `./CLAUDE.md` (ou `./.claude/CLAUDE.md`, nunca os dois)
+  - Google Antigravity e outros agentes: `./AGENTS.md`
   - Cursor: `./.cursorrules`
-  - Outros agentes: `./AGENTS.md` e `./.agent/rules/AGENTS.md`
 - **Sincronização:** O script `.agent/scripts/sync_rules.py` garante sincronia automática entre todos os arquivos de regras.
 
 ### 2.3. Descoberta de Skills, Agentes e Workflows

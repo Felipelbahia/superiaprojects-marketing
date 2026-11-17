@@ -40,7 +40,7 @@ O **Super IA Projects - Marketing** resolve isso fornecendo uma arquitetura indu
 - 🎯 **33 Agentes Especialistas de Domínio:** Direção de Arte com IA, Copywriting de Conversão, Tráfego Pago (Meta/Google), SEO Técnico, PR/Imprensa, Neuromarketing Sexy Canvas, B2B Sales e Growth.
 - 🧩 **98 Skills Procedurais em 17 Verticais:** Metodologias práticas, scripts de cálculo estatístico (Testes A/B, Funil, Coortes) e frameworks de redação de alta retenção.
 - ⚡ **114 Workflows Executáveis:** Comandos rápidos `/slash` para Claude Code e Cursor (planejamento de campanhas, carrosséis, LPs, roteiros de vídeo e auditorias).
-- 🔄 **Paridade Dual Multi-IA:** Regras 100% idênticas sincronizadas automaticamente entre `CLAUDE.md`, `GEMINI.md` e `.cursorrules`.
+- 🔄 **Paridade Dual Multi-IA:** Regras 100% idênticas sincronizadas automaticamente entre `CLAUDE.md`, `AGENTS.md` e `.cursorrules`.
 
 ---
 
@@ -136,7 +136,7 @@ O ecossistema se integra nativamente a servidores MCP para leitura profunda de m
 - **`stitch`**: Prototipagem e telas de Landing Pages de alta conversão.
 - **`chrome-devtools`**: Auditoria de Core Web Vitals e atrito em páginas de vendas.
 
-👉 *Consulte o [**Guia Completo de Setup (SETUP.md)**](SETUP.md) para configurações passo a passo e modelos prontos em [`mcp.example.json`](mcp.example.json).*
+👉 *Consulte o [**Guia Completo de Setup (SETUP.md)**](SETUP.md) para configurações passo a passo (inclui a seção **Como rodar em outra máquina**) e modelos prontos em [`mcp.example.json`](mcp.example.json).*
 
 ---
 

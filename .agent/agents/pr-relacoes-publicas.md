@@ -22,7 +22,7 @@ description: |
   Estratégia de pitching para veículos de alta relevância com foco em autoridade institucional.
   </commentary>
   </example>
-model: sonnet
+model: pro
 skills: pr-assessoria-de-imprensa, brand-builder, brand-voice-messaging
 ---
 

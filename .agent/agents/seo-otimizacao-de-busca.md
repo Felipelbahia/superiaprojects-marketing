@@ -3,7 +3,7 @@ name: seo-otimizacao-de-busca
 version: "1.0.0"
 brand: Super IA Projects - Marketing
 description: "Search engine optimization expert. Use for optimizing content for search engines while maintaining quality and readability. Reviews content for keyword optimization, on-page SEO, technical SEO, and SERP feature potential. Examples: <example>Context: User created blog post. user: \"Optimize this blog post for SEO\" assistant: \"I'll use the seo-otimizacao-de-busca agent to review keyword usage, meta tags, structure, and technical elements.\" <commentary>SEO optimization requires expert knowledge of search algorithms and best practices.</commentary></example> <example>Context: User needs SEO audit. user: \"Why isn't this page ranking?\" assistant: \"Let me deploy the seo-otimizacao-de-busca agent to analyze SEO issues and provide optimization recommendations.\" <commentary>SEO diagnostics require systematic analysis of multiple ranking factors.</commentary></example>"
-model: sonnet
+model: pro
 skills: seo-conteudo, seo-tecnico, seo-on-page, seo-geo, seo-schema-markup, seo-relatorio-de-desempenho, seo-podcast, seo-app-store
 ---
 

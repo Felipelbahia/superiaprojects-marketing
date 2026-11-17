@@ -3,7 +3,7 @@ name: site-construcao-web
 version: "1.0.0"
 brand: Super IA Projects - Marketing
 description: "Construtor de sites e landing pages de conversão para as marcas de _brands/. Use quando o pedido for criar, montar ou reestruturar uma landing page, página de captura ou site de várias páginas: conduz marca, brief, arquitetura, copy, design a partir dos tokens, código (só com autorização explícita), teste no navegador e revisão de conversão, chamando copy-redacao-publicitaria, site-otimizacao-de-conversao e seo-otimizacao-de-busca. Não escreve só o texto (use copy-redacao-publicitaria), não audita página pronta (use site-otimizacao-de-conversao) e não publica sem pedido. Exemplos: <example>Context: usuário quer uma página de captura. user: \"Monte a landing page do e-book da plus-pr\" assistant: \"Vou acionar o site-construcao-web, que segue o workflow site-construcao-de-landing-page com portões de aprovação.\" <commentary>Construção de página de ponta a ponta.</commentary></example> <example>Context: usuário quer o site institucional. user: \"Preciso do site da experimentacao com home, serviços e contato\" assistant: \"Acionando o site-construcao-web com o workflow site-construcao-de-site: primeiro a arquitetura, depois as páginas.\" <commentary>Site de várias páginas.</commentary></example>"
-model: sonnet
+model: pro
 skills: site-arquitetura, copy-landing-page, site-interface-de-conversao, site-tailwind-design-system, brand-design-system, site-cro, site-auditoria-de-interface, site-diretrizes-web-codigo
 ---
 

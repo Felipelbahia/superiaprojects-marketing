@@ -3,7 +3,7 @@ name: persona-descoberta-interativa
 version: "1.0.0"
 brand: Super IA Projects - Marketing
 description: "Interactive customer persona discovery agent. Use when you need to build detailed customer profiles through conversation. Asks strategic questions with smart options, collects answers progressively, and constructs comprehensive buyer personas. Examples: <example>Context: User wants to understand their customer. user: \"Help me understand who my ideal customer is\" assistant: \"I'll use the persona-descoberta-interativa agent to conduct an interactive discovery session and build your customer profile.\" <commentary>Building personas requires progressive questioning and synthesis.</commentary></example>"
-model: sonnet
+model: pro
 skills: persona-icp, brand-audience, persona-descoberta-de-clientes
 ---
 

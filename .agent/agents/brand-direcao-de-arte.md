@@ -22,7 +22,7 @@ description: |
   Demanda de engenharia estética de prompts de IA generativa com rigor de diretor de arte.
   </commentary>
   </example>
-model: sonnet
+model: pro
 skills: brand-visual-direction, brand-design-system, social-direcao-de-arte-ia, site-interface-de-conversao, audiovisual-imagem-flux-prompts
 ---
 

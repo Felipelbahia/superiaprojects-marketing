@@ -22,7 +22,7 @@ description: |
   Demanda de direct response audiovisual e narrativa persuasiva de alta conversão.
   </commentary>
   </example>
-model: sonnet
+model: pro
 skills: copy-hooks-video-curto, copy-vsl, audiovisual-podcast-e-audio, social-youtube-para-notas, brand-identidade-sonora
 ---
 

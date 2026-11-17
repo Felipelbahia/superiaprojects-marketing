@@ -40,7 +40,7 @@ Marketing production with autonomous AI agents often suffers from chronic failur
 - 🎯 **33 Domain Specialist Agents:** AI Art Direction, Conversion Copywriting, Paid Traffic (Meta/Google), Technical SEO, PR/Press, Sexy Canvas Neuromarketing, B2B Sales, and Growth.
 - 🧩 **98 Modular Procedural Skills across 17 Verticals:** Practical methodologies, statistical calculation scripts (A/B testing, funnel analysis, cohort retention), and high-retention frameworks.
 - ⚡ **114 Executable Workflows:** Fast `/slash` commands for Claude Code and Cursor (campaign planning, carousels, sales pages, video scripts, and tone audits).
-- 🔄 **Multi-AI Dual Rules Parity:** 100% identical rules automatically maintained between `CLAUDE.md`, `GEMINI.md`, and `.cursorrules`.
+- 🔄 **Multi-AI Dual Rules Parity:** 100% identical rules automatically maintained between `CLAUDE.md`, `AGENTS.md`, and `.cursorrules`.
 
 ---
 
@@ -136,7 +136,7 @@ The ecosystem integrates with Model Context Protocol (MCP) servers for real-time
 - **`stitch`**: UI prototyping and conversion-optimized Landing Page layouts.
 - **`chrome-devtools`**: Core Web Vitals (CWV) and page speed audits for sales pages.
 
-👉 *See the [**Setup Guide (SETUP.md)**](SETUP.md) for full configuration details and [`mcp.example.json`](mcp.example.json).*
+👉 *See the [**Setup Guide (SETUP.md)**](SETUP.md) for full configuration details (includes a **Como rodar em outra máquina** section in Portuguese: prerequisites, copy-paste steps, success check) and [`mcp.example.json`](mcp.example.json).*
 
 ---
 
