@@ -14,7 +14,7 @@ metadata:
 
 ## 🛠️ 1. O Script Local `mine_hooks.py`
 
-A skill é alimentada pelo script Python local localizado em `.agent/skills/hook-mining/scripts/mine_hooks.py`.
+A skill é alimentada pelo script Python local localizado em `.agent/skills/copy-hooks-video-curto/scripts/mine_hooks.py` (só biblioteca padrão do Python).
 
 ### Capacidades do Script:
 - **Detecção de Colunas Heterogêneas:** Identifica automaticamente variações de cabeçalhos de ganchos (`hook`, `titulo`, `title`, `caption`, `texto`, `legenda`, `headline`, `post`) e de métricas (`views`, `visualizacoes`, `visualizações`, `metric`, `score`, `engajamento`, `likes`, `alcance`).
@@ -27,13 +27,13 @@ A skill é alimentada pelo script Python local localizado em `.agent/skills/hook
 
 ```bash
 # 1. Executar selftest (validação da lógica de parsing e regex)
-python3 .agent/skills/hook-mining/scripts/mine_hooks.py --selftest
+python3 .agent/skills/copy-hooks-video-curto/scripts/mine_hooks.py --selftest
 
 # 2. Minerar um CSV completo
-python3 .agent/skills/hook-mining/scripts/mine_hooks.py caminho/do/arquivo.csv
+python3 .agent/skills/copy-hooks-video-curto/scripts/mine_hooks.py caminho/do/arquivo.csv
 
 # 3. Minerar apenas o Top N de melhor performance
-python3 .agent/skills/hook-mining/scripts/mine_hooks.py caminho/do/arquivo.csv --top 30
+python3 .agent/skills/copy-hooks-video-curto/scripts/mine_hooks.py caminho/do/arquivo.csv --top 30
 ```
 
 ---
@@ -57,7 +57,7 @@ titulo,visualizacoes
 ```
 Em seguida, execute o minerador:
 ```bash
-python3 .agent/skills/hook-mining/scripts/mine_hooks.py concorrente_shorts.csv --top 25
+python3 .agent/skills/copy-hooks-video-curto/scripts/mine_hooks.py concorrente_shorts.csv --top 25
 ```
 
 ### Tática B: Pesquisa de Dores e Dúvidas no Reddit via Firecrawl MCP
@@ -74,7 +74,7 @@ Ao auditar ou minerar ganchos das marcas proprietárias em `_brands/`:
 2. Exporte a planilha de postagens dos últimos 90 dias em formato `.csv`.
 3. Passe a planilha diretamente no `mine_hooks.py`:
    ```bash
-   python3 .agent/skills/hook-mining/scripts/mine_hooks.py relatorio_meta.csv --top 20
+   python3 .agent/skills/copy-hooks-video-curto/scripts/mine_hooks.py relatorio_meta.csv --top 20
    ```
 
 ---

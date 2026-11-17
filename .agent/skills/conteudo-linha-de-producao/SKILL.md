@@ -54,7 +54,7 @@ metadata:
 Escolha a rota de inteligência conforme a demanda:
 - **Rota A — Mineração de Ganchos (`hook-mining`):**
   - Extrair títulos de concorrentes via `yt-dlp` (`yt-dlp --flat-playlist --print "%(title)s,%(view_count)s" <url> > shorts.csv`).
-  - Executar `python3 .agent/skills/hook-mining/scripts/mine_hooks.py shorts.csv --top 20`.
+  - Executar `python3 .agent/skills/copy-hooks-video-curto/scripts/mine_hooks.py shorts.csv --top 20`.
   - Selecionar os 3 padrões mais frequentes (ex: `contrarian`, `secret-gap`, `result-proof`) e aplicar o framework de remix trocando as variáveis para a marca ativa.
 - **Rota B — Engenharia Reversa de Vídeo (`reel-analyzer`):**
   - Desmontar um vídeo concorrente de alta performance em 5 camadas (Hook, Beats, Pacing, Técnica Visual e Remake Blueprint).
