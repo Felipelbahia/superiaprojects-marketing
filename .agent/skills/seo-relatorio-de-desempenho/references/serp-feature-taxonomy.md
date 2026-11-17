@@ -16,7 +16,7 @@ SERP features fall into five broad categories:
 |----------|---------|--------------|
 | **Knowledge Features** | Knowledge Panel, AI Overview, Featured Snippet | Content quality + structured data |
 | **Engagement Features** | People Also Ask, Related Searches, Things to Know | Content relevance + question coverage |
-| **Rich Results** | FAQ, How-To, Review Stars, Recipe, Event, Product | Schema markup + content format |
+| **Rich Results** | Review Stars, Recipe, Event, Product (FAQ and How-To were retired) | Schema markup + content format |
 | **Media Features** | Image Pack, Video Carousel, Web Stories | Media optimization + hosting platform |
 | **Commerce Features** | Shopping Results, Local Pack, Ads | Merchant feeds + Google Business Profile + ad spend |
 
@@ -32,7 +32,7 @@ SERP features fall into five broad categories:
 
 | Sub-type | Format | Typical Trigger | Example Query |
 |---------|--------|----------------|---------------|
-| Paragraph | 40-60 word text block | "What is", "Why is", definitions | "what is domain authority" |
+| Paragraph | Text block, typically 40-60 words (house reference) | "What is", "Why is", definitions | "what is domain authority" |
 | Ordered List | Numbered steps | "How to", process queries | "how to submit a sitemap" |
 | Unordered List | Bulleted list | "Types of", "best", collections | "types of schema markup" |
 | Table | Data in rows/columns | Comparison, data, pricing | "HTTP status codes list" |
@@ -43,7 +43,7 @@ SERP features fall into five broad categories:
 1. **Identify snippet-eligible keywords** -- Check if a snippet already exists for your target keyword
 2. **Match the existing format** -- If current snippet is a list, create a list; if paragraph, write a concise paragraph
 3. **Place the answer immediately after the triggering heading** -- Use H2/H3 with the target question, then answer directly below
-4. **Keep paragraph snippets to 40-60 words** -- Concise, complete answers win
+4. **Keep paragraph snippets to 40-60 words (house heuristic; Google gives no length)** -- Concise, complete answers are easier to extract
 5. **Use proper HTML structure** -- Ordered lists use `<ol>`, tables use `<table>`, not just visual formatting
 6. **Include the target query in the heading** -- The H2/H3 should closely match the search query
 7. **Provide context after the snippet answer** -- Elaborate below to demonstrate depth
@@ -68,8 +68,8 @@ SERP features fall into five broad categories:
 
 1. **Mine PAA questions for content ideas** -- Each PAA question is a validated search query
 2. **Answer PAA questions within your content** -- Use the exact question as an H2 or H3
-3. **Keep answers concise (40-60 words)** -- PAA answers are short excerpts
-4. **Use FAQ schema markup** -- Increases eligibility for PAA and FAQ rich results
+3. **Keep answers concise (40-60 words, house heuristic)** -- PAA answers are short excerpts
+4. **Keep each question as a heading with the answer right below** -- FAQ rich results were retired on 2026-05-07; Google makes no statement that FAQ schema raises PAA eligibility
 5. **Create dedicated FAQ sections** -- Group 5-10 related questions at the end of articles
 6. **Target the cascade** -- When users click one PAA, new questions appear; cover those too
 
@@ -270,8 +270,8 @@ These features depend on specific structured data markup:
 
 | Rich Result | Schema Required | Content Type | Visual Impact |
 |------------|----------------|-------------|--------------|
-| FAQ | FAQPage | FAQ sections on any page | Expandable Q&A below listing |
-| How-To | HowTo | Step-by-step instructions | Steps with optional images |
+| FAQ (retired 2026-05-07) | FAQPage | Optional markup | No rich result in Google |
+| How-To (retired 2023) | HowTo | Optional markup | No rich result in Google |
 | Review Stars | Review / AggregateRating | Product/service reviews | Star rating in snippet |
 | Recipe | Recipe | Food/cooking content | Image, cook time, calories |
 | Event | Event | Event listings | Date, location, price |
@@ -332,7 +332,7 @@ Not all SERP features deserve equal attention. Prioritize based on your content 
 | People Also Ask | Medium-High | Low-Medium | FAQ-rich content |
 | Video Carousel | High | High (video production) | Tutorial/how-to content |
 | Local Pack | Very High (local) | Medium | Local businesses |
-| Rich Results (FAQ) | Medium | Low | Any content with Q&A |
+| Rich Results (FAQ) | retired on 2026-05-07: do not pursue | n/a | n/a |
 | Rich Results (Review) | Medium-High | Low-Medium | Product/service reviews |
 | Image Pack | Medium | Low-Medium | Visual content creators |
 | Shopping Results | Very High (ecommerce) | Medium | Product sellers |

@@ -20,7 +20,7 @@ Complete glossary of SEO and GEO key performance indicators with calculation for
 **Interpretation:**
 - Growing organic sessions with stable conversion rate = SEO strategy is working.
 - Growing sessions but declining conversions = traffic quality issue; check keyword targeting.
-- Flat sessions despite new content = content not ranking or cannibalizing existing pages.
+- Flat sessions despite new content = content not ranking or cannibalizing existing pages (ver [canibalização](../../seo-on-page/references/canibalizacao-de-palavras-chave.md)).
 
 ---
 

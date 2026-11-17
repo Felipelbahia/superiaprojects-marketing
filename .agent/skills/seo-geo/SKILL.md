@@ -3,7 +3,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-geo
-description: "Use when optimizing content for Generative Engine Optimization (GEO), AI citations, Perplexity, Google AI Overviews, SearchGPT, Claude, or Gemini; making brand content quotable by LLMs; or establishing entity authority in Knowledge Graphs. Do NOT use for creating new content from scratch with research and expert quotes (use conteudo-pesquisa), for keyword-driven SEO articles (use seo-conteudo) or for structured data markup (use seo-schema-markup)."
+description: "Use when optimizing content for Generative Engine Optimization (GEO), AI citations, Perplexity, Google AI Overviews, SearchGPT, Claude, or Gemini; making brand content quotable by LLMs; or establishing entity authority in Knowledge Graphs; also to run the geo_checker.py sweep (JSON-LD, author, date, H2) over a folder of HTML/JSX/TSX pages before publishing. Do NOT use for title, meta description, Open Graph or H1 checks (use the seo_checker.py sweep in seo-tecnico), for creating new content from scratch with research and expert quotes (use conteudo-pesquisa), for keyword-driven SEO articles (use seo-conteudo) or for structured data markup (use seo-schema-markup)."
 author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
@@ -84,7 +84,7 @@ Ensure AI systems know *who* you are, *what* you do, and *why* you are an author
 *See [references/entity-optimizer.md](references/entity-optimizer.md) and [references/knowledge-graph-guide.md](references/knowledge-graph-guide.md).*
 
 ### Step 2: Inject Direct Answers (BLUF)
-- Place direct answers within the **first 50-70 words** beneath each H2 heading.
+- Place a 40-60-word direct answer immediately beneath each H2 heading (it ends inside the first 50-70 words of the section; the 50-70 is where the answer sits, not its length).
 - Avoid preamble phrases (*"In this section, we will explore..."* or *"It is important to remember that..."*).
 - Formulate H2 headers as natural user questions (*"What is the recommended size for a print QR code?"*).
 
@@ -142,6 +142,29 @@ Use this scorecard before publishing content designed for AI visibility:
 
 ---
 
+## Verificação mecânica de páginas (varredura)
+
+Antes de aplicar o checklist acima à mão, e antes de publicar site ou landing page que precisa ser citada por IA, rode o script que varre a pasta e lista, por arquivo, o que falta:
+
+```bash
+python3 .agent/skills/seo-geo/scripts/geo_checker.py <pasta-ou-arquivo>
+```
+
+| Obrigatório (a página reprova sem) | Só informativo (nunca reprova) |
+|---|---|
+| JSON-LD (`application/ld+json`) | Bloco de FAQ |
+| Autoria (campo `author`, `rel="author"`, byline) | Schema de Organization, Person ou Brand |
+| Data de publicação ou atualização | Listas e tabelas |
+| Pelo menos dois H2 | |
+
+- Lê `.html`, `.htm`, `.jsx` e `.tsx`. **Não lê Markdown.**
+- Só confere presença. Fonte dos dados, resposta direta, qualidade e `sameAs` ficam no checklist de prontidão desta skill, aplicado por uma pessoa.
+- Código de saída `0` = passou, `1` = há falhas. Python 3.9 ou mais novo, sem instalar nada. Cole a saída no relatório de entrega.
+- Roda junto com o `seo_checker.py` de [seo-tecnico](../seo-tecnico/SKILL.md): um cobre title, meta, Open Graph, H1 e `alt`; este cobre dados estruturados, autoria, data e H2. O H1 é conferido só pelo `seo_checker.py`.
+- Origem: `geo-fundamentals` do 0 Padrões (2026-11-17). O original dava uma nota em % que escondia páginas ruins (uma página a 20% e outra a 100% saía "Good", código 0) e usava frases em inglês como teste; esta versão reprova por arquivo e não depende do idioma.
+
+---
+
 ## Guias por pergunta
 
 Os guias estão em [`references/`](references/). O texto base é inglês, exceto onde indicado.
@@ -161,6 +184,7 @@ Os guias estão em [`references/`](references/). O texto base é inglês, exceto
 - [knowledge-graph-guide.md](references/knowledge-graph-guide.md) — Como construir e ligar relações semânticas entre entidades.
 
 ### Auditar
+- [regras-de-referencia-google.md](../seo-on-page/references/regras-de-referencia-google.md) — Fonte única dos números e limites que as skills de SEO repetem (título, meta description, tamanho de resposta, densidade, FAQ e HowTo aposentados, Core Web Vitals, sitemap, robots.txt), com citação do Google e data de consulta.
 - [core-eeat-benchmark.md](references/core-eeat-benchmark.md) — Benchmark de qualidade de conteúdo com 80 itens (precisão, confiança, expertise).
 - [ai-discoverability-audit-v2.md](references/ai-discoverability-audit-v2.md) — "Signal Audit" em 6 seções, versão 2 de outro autor (Brian Wagner). Direito de uso confirmado pelo usuário.
 

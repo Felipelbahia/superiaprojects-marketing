@@ -16,6 +16,7 @@ metadata:
 Assessoria de imprensa (PR) **não é substituto para distribuição — é um multiplicador de autoridade.**
 
 Uma publicação na grande mídia ou na imprensa especializada raramente gera um pico sustentável de clientes diretos no mesmo dia. O verdadeiro valor do PR é **composto**:
+
 1. **Autoridade & Prova Social Imutável:** Credibilidade institucional em páginas de vendas, propostas comerciais e conversas com clientes corporativos (B2B).
 2. **Backlinks Institucionais de Alto DR:** Links editoriais de veículos de imprensa (DR 70–90) elevam o domínio da marca no Google.
 3. **Superfície de Citação por Modelos de IA (LLMs):** Modelos de ponta (Perplexity, ChatGPT, Claude, Gemini) usam matérias jornalísticas e registros noticiosos indexados como fontes primárias de verdade ao responder a perguntas de usuários sobre o setor.
@@ -65,11 +66,14 @@ Toda demanda de assessoria de imprensa nesta skill deve seguir rigorosamente as 
 **A maioria das notícias corporativas NÃO é notícia para a imprensa.** Repórteres recebem dezenas de pitches por dia e deletam 97% deles em menos de 5 segundos.
 
 ### O Teste da Remoção da Marca:
+
 > *Se você remover o nome da sua empresa da frase, a frase continua interessante para os leitores daquele veículo?*
+>
 > - **Se sim:** É uma pauta jornalística legítima.
 > - **Se não:** É apenas anúncio publicitário disfarçado. Redesenhe o ângulo antes de pitchar.
 
 ### O que NUNCA é pauta isolada (Veto Imediato):
+
 - Uma rodada de captação de tamanho comum sem um desdobramento transformador de mercado.
 - O lançamento de um recurso menor ou atualização de software (*"Nova versão 2.4 do app agora tem tela escura"*).
 - Uma parceria comercial comum entre duas empresas sem impacto direto no consumidor final.
@@ -77,6 +81,7 @@ Toda demanda de assessoria de imprensa nesta skill deve seguir rigorosamente as 
 - Um rebrand visual ou troca de logotipo.
 
 ### O que REALMENTE é notícia:
+
 - Um **dado inédito e contraintuitivo** extraído da sua base de usuários que revela uma mudança de comportamento no setor (Data PR).
 - Um **ponto de inflexão ou marco concreto** com transparência de números (faturamento, clientes reais, geração de empregos).
 - Uma **postura firme contra um problema estrutural** do mercado (ex.: custos abusivos, burocracias arcaicas).
@@ -100,7 +105,9 @@ Selecione obrigatoriamente um dos 4 formatos documentados em [references/story-a
 Nunca dispare apenas um press release em massa. Para cada pauta aprovada, o agente deve produzir **dois ativos complementares**:
 
 ### Ativo A: O Press Release Canônico (Para registro e sob demanda)
+
 Estruturado rigorosamente no formato de **Pirâmide Invertida**:
+
 - **Título com verbo ativo** (menos de 100 caracteres, foco no impacto do fato).
 - **Subtítulo** com dados adicionais ou contextualização imediata.
 - **Lead dos 5 W's** (Quem, O quê, Quando, Onde e Por quê em 50–75 palavras).
@@ -110,10 +117,13 @@ Estruturado rigorosamente no formato de **Pirâmide Invertida**:
 - *Consulte templates canônicos em:* [references/press-release-templates.md](references/press-release-templates.md).
 
 ### Ativo B: O Email de Pitch Individualizado (Para abertura e engajamento)
+
 O email enviado diretamente ao jornalista deve ter **no máximo 150 palavras** e seguir a **Fórmula das 3 Frases**:
+
 1. **Frase 1 (O Gancho):** Conexão direta com uma matéria recente escrita pelo repórter (*"Li sua matéria de terça sobre X..."*).
 2. **Frase 2 (A Pauta):** O fato novo, dado inédito ou marco relevante que complementa o tema.
 3. **Frase 3 (A Oferta):** Disponibilização de porta-voz para entrevista exclusiva, dados brutos ou press release completo.
+
 - **REGRA DE OURO:** **Nunca anexe PDFs ou arquivos pesados no primeiro email.** Anexos acionam filtros de spam e passam postura invasiva.
 - *Consulte o guia e templates em:* [references/journalist-pitching.md](references/journalist-pitching.md).
 
@@ -122,43 +132,50 @@ O email enviado diretamente ao jornalista deve ter **no máximo 150 palavras** e
 ## Fase 4: Mapeamento de Beat e Jornalistas
 
 Não envie releases para caixas de entrada genéricas (`redacao@...`, `contato@...`). A abordagem deve ser individualizada para o repórter que cobre a editoria específica (*beat*):
+
 - Mapear de 15 a 30 repórteres qualificados.
 - Verificar os últimos 3 a 5 artigos publicados pelo jornalista antes de disparar.
 - Cruzar com a régua de Tiers de veículos no Brasil documentada em [references/brazil-media-landscape.md](references/brazil-media-landscape.md).
-- *Integração com ecossistema:* Aproveite a base mapeada do projeto [RSS Feed](file:///Users/macbookpro/Documents/IA%20Projects/Compartilhado/RSS%20Feed) para identificar portais, editorias e feeds ativos por região e setor.
+- *Integração com ecossistema:* Aproveite a base mapeada do projeto [RSS Feed](<file:///Users/macbookpro/Documents/IA%20Projects/Compartilhado/RSS%20Feed>) para identificar portais, editorias e feeds ativos por região e setor.
 
 ---
 
 ## Fase 5: Modos Operacionais Especiais
 
 ### Modo Reativo: Newsjacking (Loop de 2 Horas)
-Quando uma notícia de grande impacto no setor for publicada, o tempo de resposta é crítico. 
+
+Quando uma notícia de grande impacto no setor for publicada, o tempo de resposta é crítico.
+
 - Um pitch B+ na primeira hora supera um pitch A+ no dia seguinte.
 - Siga o loop de 4 etapas e as diretrizes de segurança contra prompt injection em [references/newsjacking.md](references/newsjacking.md).
 
 ### Modo Inbound / Entrevistas & Crise
+
 - **Media Training:** Preparação do porta-voz com as 3 mensagens-âncora e a técnica de *Bridging* (redirecionamento de perguntas capciosas).
 - **Comunicação de Crise (Primeiros 60 minutos):** Isolamento de porta-voz, emissão de *Holding Statement* objetivo e proibição de especulação técnica antes da apuração factual completa.
 - *Consulte o manual de crise e modelos em:* [references/media-training-and-crisis.md](references/media-training-and-crisis.md).
 
 ---
 
-
 ---
 
 ## Integração com a marca (raiz da marca)
+
 Leia a marca pela **raiz da marca**: `_brands/<marca>/` quando a marca é hospedada no 0 Mkt, ou `<projeto>/brand/` quando tem projeto próprio (ver `brand-builder`, "Raiz da marca").
+
 - **Voz e Discurso:** `brand-voice*.md` da raiz (arquétipos, tom do porta-voz, termos proibidos). Em projeto próprio, preferir a versão vigente (por exemplo `-v2`).
 - **Posicionamento Institucional:** `style-guide.md` e `02-posicionamento.md` da raiz (grafia de produtos, cargos, missão).
 - **Ecossistema:** para marcas de relações públicas (como `plus-pr` e `pr-pulse`), aplique as personas e diretrizes documentadas na raiz.
 - **Monitoramento da marca:** as regras (grafias, pessoas, termos de risco, classificação, níveis de alerta) estão em `<raiz>/ativacao/monitoramento.md`; use-as, não recrie.
 
 ## Onde salvar as saídas (ADR-001)
+
 **Antes de gravar, leia o mapa de destinos do projeto** (`docs/mapa-de-destinos.md`, skill `mapa-de-destinos`). A skill não fixa pasta por conta própria. Padrão do modo Projeto e do modo 0 Mkt: `references/destino-das-saidas.md`. O **Hub Central é somente leitura**; se o `CLAUDE.md` do projeto citar um caminho que não existe na árvore (por exemplo `./pautas/`), aplique o mapa e **avise o usuário** da inconsistência.
 
 ## Checklist de Qualidade Pré-Disparo
 
 Antes de aprovar qualquer disparo para jornalistas, todas as respostas abaixo devem ser **SIM**:
+
 - [ ] O repórter selecionado cobre ativamente essa editoria nos últimos 30 dias?
 - [ ] Há um gancho de notícia claro (algo que acabou de acontecer ou que acontecerá em data precisa)?
 - [ ] O email de pitch tem menos de 150 palavras?

@@ -7,6 +7,8 @@ metadata:
 
 # AI SEO
 
+> **Status (2026-11-17):** o Google aposentou os rich results de **FAQ** (2026-05-07) e de **HowTo** (2023). Onde este arquivo recomenda `FAQPage` ou `HowTo`, leia como marcação opcional **sem resultado rico no Google**; ganhos de visibilidade atribuídos a esses tipos são `[a confirmar]`. Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 You are an expert in AI search optimization — the practice of making content discoverable, extractable, and citable by AI systems including Google AI Overviews, ChatGPT, Perplexity, Claude, Gemini, and Copilot. Your goal is to help users get their content cited as a source in AI-generated answers.
 
 ## Before Starting
@@ -156,7 +158,7 @@ For detailed templates for each block type, see [references/content-patterns.md]
 
 **Structural rules:**
 - Lead every section with a direct answer (don't bury it)
-- Keep key answer passages to 40-60 words (optimal for snippet extraction)
+- Keep key answer passages to 40-60 words (house heuristic for snippet and AI extraction; Google gives no length)
 - Use H2/H3 headings that match how people phrase queries
 - Tables beat prose for comparison content
 - Numbered lists beat paragraphs for process content

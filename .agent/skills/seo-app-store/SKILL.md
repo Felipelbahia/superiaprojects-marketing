@@ -35,7 +35,7 @@ ASO = Visibilidade Orgânica (Search + Browse) × Taxa de Conversão da Ficha (C
 | **App Name / Title** | 30 caracteres (Peso algorítmico máximo) | 30 caracteres (Peso algorítmico máximo) |
 | **Subtitle / Short Description** | 30 caracteres (Peso algorítmico muito alto) | 80 caracteres (Indexado e visível acima da dobra) |
 | **Keyword Field Privado** | 100 caracteres separados por vírgula (Oculto) | Não existe campo oculto dedicado |
-| **Long Description** | 4.000 caracteres (**NÃO indexada** para busca!) | 4.000 caracteres (**Altamente indexada**; densidade de 2% a 3%) |
+| **Long Description** | 4.000 caracteres (**NÃO indexada** para busca!) | 4.000 caracteres (**Altamente indexada**; densidade de 2% a 3%, `[a confirmar: heurística de ASO]`) |
 | **Promotional Text** | 170 caracteres (Editável sem nova release) | Não possui campo equivalente direto |
 | **Package Name / URL Slug** | Imutável (Definido pelo Apple ID) | `package_name` indexa keywords permanentemente! |
 | **Visual First Impression** | Primeiros 3 screenshots em modo retrato | Primeiro screenshot ou vídeo landscape + cards |
@@ -51,9 +51,9 @@ ASO = Visibilidade Orgânica (Search + Browse) × Taxa de Conversão da Ficha (C
 3. **Sem Plurais Redundantes:** O algoritmo da Apple normalmente reconhece variações singulares/plurais em inglês e espanhol (para o português, priorize a versão com maior volume de busca).
 4. **Sem Nomes de Concorrentes Protegidos:** Marcas registradas de terceiros levam a rejeição na App Store Review.
 
-### Matriz de Densidade para Google Play Store
+### Matriz de Densidade para Google Play Store `[a confirmar: heurística de ASO, sem fonte oficial]`
 - **Volume Ótimo de Menções:** 4 a 6 repetições da palavra-chave foco ao longo dos 4.000 caracteres da descrição longa.
-- **Evitar Keyword Stuffing:** Densidade acima de 3,5% gera penalização algorítmica e rebaixamento de rank.
+- **Evitar Keyword Stuffing:** Densidade acima de 3,5% gera penalização algorítmica e rebaixamento de rank. `[a confirmar: heurística de ASO, sem fonte oficial da Apple ou do Google Play]`
 - **Posicionamento Estratégico:** Inclua as 3 keywords primárias no primeiro parágrafo (primeiras 150 palavras) e no último parágrafo de fechamento.
 
 ---
@@ -148,7 +148,7 @@ A tabela abaixo lista os guias integrados disponíveis para aprofundamento opera
 - [ ] O App Name contém o nome da marca + a principal keyword funcional com alto volume de busca?
 - [ ] O Subtitle / Short Description complementa sem repetir palavras do título?
 - [ ] O campo de keywords do iOS utiliza todas as 100 posições sem espaços extras?
-- [ ] A descrição longa do Google Play contém os termos sem ultrapassar 3% de densidade?
+- [ ] A descrição longa do Google Play contém os termos sem ultrapassar 3% de densidade? `[a confirmar: heurística de ASO]`
 - [ ] Os 3 primeiros screenshots mostram a dor principal resolvida com títulos de fácil leitura?
 - [ ] A nota média consolidada está acima de 4.3 estrelas nas duas lojas?
 - [ ] As Custom Product Pages estão alinhadas com as campanhas de tráfego pago ativo?

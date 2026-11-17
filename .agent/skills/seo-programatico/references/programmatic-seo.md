@@ -578,6 +578,7 @@ Related: [Service] in [Nearby Cities]
 - "Doorway pages" that just redirect
 
 ### Keyword Cannibalization
+Diagnóstico e resolução: [canibalização](../../seo-on-page/references/canibalizacao-de-palavras-chave.md).
 - Multiple pages targeting same keyword
 - No clear hierarchy
 - Competing with yourself

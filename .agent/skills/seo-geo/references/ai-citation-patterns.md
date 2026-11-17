@@ -1,5 +1,7 @@
 # AI Citation Patterns
 
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 How different AI systems select and cite content. Understanding these patterns helps optimize content for AI visibility.
 
 ## Google AI Overviews
@@ -214,7 +216,7 @@ Question-answer formats match AI query patterns.
 ```markdown
 ### [Question matching common query]?
 
-[Direct answer in 40-60 words]
+[Direct answer in 40-60 words (house heuristic)]
 
 [Optional supporting detail]
 ```
@@ -289,7 +291,7 @@ Curated lists with brief explanations.
 > Top on-page SEO factors:
 > - **Title tags**: Most important on-page element; include primary keyword within first 60 characters
 > - **Header tags**: Structure content hierarchically; use one H1, multiple H2s for main sections
-> - **Meta descriptions**: Don't directly impact rankings but affect CTR; keep under 160 characters
+> - **Meta descriptions**: Don't directly impact rankings but affect CTR; keep to about 155 characters or less (display reference)
 > - **URL structure**: Use descriptive, keyword-rich URLs without unnecessary parameters
 
 **Why it works**: Scannable, specific, actionable.

@@ -259,6 +259,8 @@ Before implementing schema, understand:
 ```
 
 ### FAQPage
+
+> **Status em 2026-11-17:** o Google aposentou o rich result de FAQ (2026-05-07). A marcação abaixo continua válida no Schema.org, mas **não gera resultado rico no Google**. Ver [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
 **Use for**: Pages with frequently asked questions
 
 **Required properties**:
@@ -290,6 +292,8 @@ Before implementing schema, understand:
 ```
 
 ### HowTo
+
+> **Status em 2026-11-17:** o Google aposentou o rich result de HowTo (2023). A marcação abaixo continua válida no Schema.org, mas **não gera resultado rico no Google**. Ver [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
 **Use for**: Instructional content, tutorials
 
 **Required properties**:

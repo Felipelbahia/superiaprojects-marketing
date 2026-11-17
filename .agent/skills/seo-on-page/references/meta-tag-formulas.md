@@ -1,5 +1,7 @@
 # Meta Tag Formulas Reference
 
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](regras-de-referencia-google.md).
+
 Extended title tag formulas, meta description templates, A/B testing methodology, seasonal patterns, CTR benchmarks, and multi-language optimization guidance.
 
 ---
@@ -109,7 +111,7 @@ Extended title tag formulas, meta description templates, A/B testing methodology
 
 | # | Template | Character Count |
 |---|----------|-----------------|
-| 12 | [Service] in [City] by [Brand]. [Experience] years of experience. [N]-star rated. [CTA] — call [phone] today. | ~150-160 |
+| 12 | [Service] in [City] by [Brand]. [Experience] years of experience. [N]-star rated. [CTA] — call [phone] today. | ~130-155 |
 | 13 | Need [service] in [location]? [Brand] offers [differentiator]. [Guarantee]. Book your [offer] now. | ~140-155 |
 
 ---
@@ -269,7 +271,7 @@ Keep the core title evergreen but append a freshness signal:
 | Principle | Detail |
 |-----------|--------|
 | Localize the CTA | "Learn more" may not translate well; use culturally appropriate CTAs |
-| Adjust character targets | For CJK, aim for 70-80 characters; for Latin-script languages, 150-160 |
+| Adjust character targets | For CJK, aim for 70-80 characters; for Latin-script languages, 130-155 |
 | Use local proof points | Reference local statistics, regulations, or market leaders |
 | Test SERP rendering | Use Google's SERP preview in the target locale to check truncation |
 | Separate hreflang tags | Ensure each language version has the correct hreflang annotation |
@@ -312,7 +314,7 @@ Keep the core title evergreen but append a freshness signal:
 | Too generic ("Home", "Welcome") | Zero CTR differentiation | Write a benefit-driven title |
 | All caps | Looks spammy; may be rewritten | Use title case or sentence case |
 | Missing primary keyword | Misses ranking signal | Include target keyword naturally |
-| Duplicate titles across pages | Cannibalization; Google may pick wrong page | Unique title per page |
+| Duplicate titles across pages | Cannibalization; Google may pick wrong page (ver [canibalização](canibalizacao-de-palavras-chave.md)) | Unique title per page |
 | Brand name first (non-branded query) | Wastes prime keyword space | Put brand at end after pipe |
 | No emotional hook | Blends in with competitors | Add one power word or number |
 | Exceeding 60 characters | Key info truncated in SERP | Front-load; keep under 60 chars |

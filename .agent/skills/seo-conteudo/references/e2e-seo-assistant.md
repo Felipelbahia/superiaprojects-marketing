@@ -7,6 +7,8 @@ metadata:
 
 # E2E SEO Assistant
 
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 Complete SEO workflow from audit to content brief in one pass.
 
 ## Process
@@ -208,7 +210,7 @@ Complete SEO workflow from audit to content brief in one pass.
 **Target Keyword**: employee onboarding software
 **Secondary Keywords**: onboarding software for small business, best onboarding tools, HR onboarding platform
 **Search Intent**: Commercial investigation (comparing options)
-**Target Word Count**: 2,500-3,000 words (competitors average 2,200)
+**Target Word Count**: 2,500-3,000 words (`[exemplo]`: competitors average 2,200)
 
 **Suggested Title**: Best Employee Onboarding Software (2025) - Top 10 Compared
 **Meta Description**: Compare the best employee onboarding software for 2025. Features, pricing, and pros/cons for HR teams at SMBs and enterprises.

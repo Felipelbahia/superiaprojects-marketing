@@ -203,7 +203,9 @@ Complete reference for validating, testing, and troubleshooting structured data.
 
 ## Google Rich Result Eligibility Requirements
 
-### FAQ Rich Results
+### FAQ Rich Results (retired)
+
+> Google retired the FAQ rich result on 2026-05-07 (restricted to government and health sites since 2023). The checklist below is now only a content-quality guide, not an eligibility test.
 
 **Eligibility checklist**:
 - [ ] Minimum 2 Q&A pairs
@@ -220,7 +222,9 @@ Complete reference for validating, testing, and troubleshooting structured data.
 - Product/service comparisons that are promotional
 - User-generated Q&A (use QAPage instead)
 
-### How-To Rich Results
+### How-To Rich Results (retired)
+
+> Google retired How-To rich results in 2023 (desktop on 2023-09-14). The checklist below is now only a content-quality guide, not an eligibility test.
 
 **Eligibility checklist**:
 - [ ] Minimum 2 steps with clear instructions

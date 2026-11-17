@@ -156,7 +156,7 @@ Structure the content for effortless reading and skimmability:
 
 Headlines make or break organic CTR:
 
-1. **Title Tag Structure**: `Primary Keyword - Secondary Hook | Brand` (keep under 60 characters).
+1. **Title Tag Structure**: `Primary Keyword - Secondary Hook | Brand` (keep under 60 characters; house reference).
 2. **Proven CTR Formula Types**:
    - **The Complete Guide**: *"UTM Tracking: The Complete Guide for 2026 Marketers"*
    - **The Actionable How-To**: *"How to Build a Topic Cluster in 5 Steps (With Templates)"*
@@ -173,7 +173,7 @@ Headlines make or break organic CTR:
 When scaling content across hundreds of templated landing pages (e.g., location pages, tool integrations, comparison matrices):
 
 - Ensure programmatic templates deliver **unique value per page** (not just search-and-replace variables).
-- Enforce minimum word count and dynamic data points per generated page.
+- Enforce unique value and dynamic data points per generated page (a minimum word count is a house quality threshold against thin pages, not a Google rule).
 - Audit indexation health and avoid thin-content penalties.
 
 
@@ -232,6 +232,8 @@ The following comprehensive guides are bundled in the `references/` directory of
 ## Referências adicionais
 
 - [e2e-seo-assistant.md](references/e2e-seo-assistant.md) — Fluxo completo de SEO a partir de um site e palavras-chave: auditoria técnica, lacunas de conteúdo, oportunidades de backlink, correções on-page e briefs.
+- [regras-de-referencia-google.md](../seo-on-page/references/regras-de-referencia-google.md) — Fonte única dos números e limites que as skills de SEO repetem (título, meta description, tamanho de resposta, densidade, FAQ e HowTo aposentados, Core Web Vitals, sitemap, robots.txt), com citação do Google e data de consulta.
+- [featured-snippets-e-paa.md](references/featured-snippets-e-paa.md) — Como formatar trechos para featured snippet e "As pessoas também perguntam": formato por tipo de pergunta, exemplo antes/depois e cuidados.
 - [local-seo.md](references/local-seo.md) — Otimização para busca local.
 - [original-reference.md](references/original-reference.md) — Guia original completo desta skill (758 linhas), de antes da condensação do `SKILL.md`.
 

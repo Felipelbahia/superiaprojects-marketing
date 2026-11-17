@@ -17,7 +17,7 @@ Detailed scoring criteria for each of the 8 audit sections. Use this rubric to e
 |-----------|--------|-------------|
 | Keyword presence | 3 | Primary keyword appears in title |
 | Keyword position | 2 | Primary keyword in first half of title |
-| Length optimization | 2 | Between 50-60 characters |
+| Length optimization | 2 | Between 50-60 characters (house heuristic, not a Google rule) |
 | Uniqueness | 2 | Title is unique across the site |
 | Compelling copy | 2 | Includes benefit, modifier, or hook |
 | Intent match | 2 | Title matches search intent accurately |
@@ -52,7 +52,7 @@ Detailed scoring criteria for each of the 8 audit sections. Use this rubric to e
 | Criterion | Points | Requirement |
 |-----------|--------|-------------|
 | Keyword inclusion | 1 | Primary keyword appears naturally |
-| Length optimization | 1 | Between 150-160 characters |
+| Length optimization | 1 | Between 130-155 characters (house heuristic, not a Google rule) |
 | Call-to-action | 1 | Contains explicit or implicit CTA |
 | Unique description | 1 | Not duplicated from other pages |
 | Accurate summary | 1 | Accurately describes page content |
@@ -134,6 +134,8 @@ H2: More Information
 
 ### Content Length Benchmarks (for "Sufficient length" criterion)
 
+> House heuristic for scoring, **not a Google factor**: Google states there is no word count target (see [regras-de-referencia-google.md](regras-de-referencia-google.md)). Use it to spot thin pages, never to pad text.
+
 | Query Type | Minimum for 4/4 | Minimum for 3/4 | Minimum for 2/4 | Below 1/4 |
 |-----------|-----------------|-----------------|-----------------|-----------|
 | Informational | 1,500+ words | 1,000-1,499 | 500-999 | <500 |
@@ -176,35 +178,36 @@ H2: More Information
 | Keyword in title | 2 | Primary keyword in title tag |
 | Keyword in H1 | 2 | Primary keyword in H1 |
 | Keyword in first 100 words | 2 | Primary keyword appears early in content |
-| Keyword density (0.5-2.5%) | 2 | Natural density, not stuffed, not too sparse |
+| Natural keyword use | 2 | Appears where it makes sense; no forced repetition (no official density target) |
 | Secondary keywords present | 2 | 2-3 secondary/related keywords used |
 | LSI/semantic terms | 2 | Related terms and synonyms present |
 | Keyword in URL | 1 | Primary keyword in URL slug |
 | Keyword in image alt text | 1 | At least one image alt contains keyword naturally |
 | Keyword in meta description | 1 | Primary keyword in meta description |
 
-### Keyword Density Guidelines
+### Keyword Use Guidelines
 
-| Density | Score Impact | Assessment |
+Google publishes no ideal keyword density (see [regras-de-referencia-google.md](regras-de-referencia-google.md)). Score by reading the text, not by a percentage:
+
+| Reading | Score Impact | Assessment |
 |---------|-------------|-----------|
-| 0.5-1.0% | Full points | Natural, well-integrated |
-| 1.0-2.0% | Full points | Acceptable, slightly keyword-focused |
-| 2.0-2.5% | -1 point | Borderline, review for naturalness |
-| 2.5-3.0% | -2 points | Over-optimized, needs reduction |
-| >3.0% | 0 points for density | Keyword stuffing, immediate fix needed |
-| <0.5% | -1 point | Under-optimized, add more natural usage |
+| Natural, well-integrated | Full points | Reads well aloud |
+| Repetition is noticeable but readable | -1 point | Review for naturalness |
+| Forced repetition, awkward variations | -2 points | Over-optimized, needs reduction |
+| Keyword stuffing | 0 points for this item | Immediate fix needed |
+| Primary keyword missing from title, H1 or opening | -1 point | Add it where it fits naturally |
 
 ### Calibration Examples
 
 **Score 15/15 (Excellent)**:
 - "keyword research" in title (position 1), H1, first sentence, URL slug, 1 image alt
-- Density: 1.2% across 2,000 words (24 occurrences, well-distributed)
+- Use: 24 occurrences across 2,000 words, well-distributed and natural
 - Secondary keywords: "keyword tool", "search volume", "keyword difficulty" all present
 - LSI terms: "SEO", "search terms", "Google", "organic traffic", "SERP" present
 
 **Score 9/15 (Needs Work)**:
 - Keyword in title and H1, but not in first 100 words
-- Density: 0.3% (too sparse for a 2,000-word article)
+- Use: 6 occurrences across 2,000 words (too sparse for the topic)
 - Missing secondary keywords
 - No LSI/semantic terms beyond the primary keyword
 
@@ -293,7 +296,7 @@ H2: More Information
 | Mobile-friendly | 2 | Passes mobile-friendly test, responsive layout |
 | Page speed (LCP) | 2 | LCP ≤2.5s on mobile |
 | HTTPS | 1 | Page served over HTTPS with valid certificate |
-| Schema markup | 1 | Appropriate schema type implemented (Article, FAQ, HowTo, etc.) |
+| Schema markup | 1 | Appropriate schema type implemented (Article, Product, Organization, etc.; FAQ and HowTo are optional, no Google rich result) |
 
 ### URL Quality Guidelines
 

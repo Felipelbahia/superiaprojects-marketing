@@ -2,6 +2,8 @@
 
 Markdown templates for common SEO content types. Customize section headings and content while maintaining the structural framework.
 
+> The word counts and the 40-60-word answer lengths below are house planning targets, **not a Google requirement** (Google states there is no word count target; see [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md)). Let the search intent decide the length.
+
 ## Blog Post (Informational)
 
 **Target word count**: 1,200-1,800 words
@@ -765,7 +767,7 @@ This is the most comprehensive guide to [topic] on the web. You'll learn everyth
 ## FAQ Page
 
 **Target word count**: 1,000-1,500 words
-**Primary goal**: Answer common questions, rank for question queries, enable FAQ rich results
+**Primary goal**: Answer common questions, rank for question queries, feed snippets and AI answers (Google retired FAQ rich results on 2026-05-07)
 
 ```markdown
 # [Topic]: Frequently Asked Questions
@@ -853,7 +855,7 @@ This is the most comprehensive guide to [topic] on the web. You'll learn everyth
 [Contact information or link to contact page]
 ```
 
-**Schema markup**: Add FAQPage schema to enable rich results
+**Schema markup**: FAQPage is optional: Google retired FAQ rich results on 2026-05-07, so the markup has no visible effect there
 **Internal links**: Link to detailed guides for complex answers
 **Keywords**: Include question keywords naturally
 
@@ -871,5 +873,5 @@ For any template:
 - [ ] Create GEO-optimized definition blocks
 - [ ] Add FAQ section for featured snippet opportunities
 - [ ] Include relevant images with descriptive alt text
-- [ ] Write compelling meta description (150-160 chars)
-- [ ] Optimize title tag (50-60 chars with primary keyword)
+- [ ] Write compelling meta description (130-155 chars, house reference)
+- [ ] Optimize title tag (50-60 chars, house reference, with primary keyword)

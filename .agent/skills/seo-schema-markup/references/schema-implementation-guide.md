@@ -1,5 +1,7 @@
 # Schema Markup Implementation Guide
 
+> **Status (2026-11-17):** o Google aposentou os rich results de **FAQ** (2026-05-07) e de **HowTo** (2023). Onde este arquivo recomenda `FAQPage` ou `HowTo`, leia como marcação opcional **sem resultado rico no Google**; ganhos de visibilidade atribuídos a esses tipos são `[a confirmar]`. Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 Based on research from [Schema.org](https://schema.org/), [Google Search Central](https://developers.google.com/search/docs/appearance/structured-data), [Moz](https://moz.com/learn/seo/schema-structured-data).
 
 ---
@@ -35,8 +37,8 @@ Structured data vocabulary that helps search engines understand content and disp
 | Rich Result | Schema Required |
 |-------------|-----------------|
 | Review stars | Product + AggregateRating |
-| FAQ accordion | FAQPage |
-| How-to steps | HowTo |
+| FAQ accordion (retired 2026-05-07) | FAQPage (no Google rich result) |
+| How-to steps (retired 2023) | HowTo (no Google rich result) |
 | Product info | Product + Offer |
 | Event listing | Event |
 | Recipe card | Recipe |

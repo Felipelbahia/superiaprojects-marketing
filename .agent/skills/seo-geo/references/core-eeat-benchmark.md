@@ -1,5 +1,7 @@
 # CORE-EEAT Content Benchmark — Skills Reference
 
+> **Status (2026-11-17):** o Google aposentou os rich results de **FAQ** (2026-05-07) e de **HowTo** (2023). Onde este arquivo recomenda `FAQPage` ou `HowTo`, leia como marcação opcional **sem resultado rico no Google**; ganhos de visibilidade atribuídos a esses tipos são `[a confirmar]`. Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 > Based on [CORE-EEAT Content Benchmark](https://github.com/aaron-he-zhu/core-eeat-content-benchmark) **v3.0**
 >
 > This file is a reference adaptation for the SEO & GEO Skills Library. For the full benchmark with detailed examples, see the source repository.

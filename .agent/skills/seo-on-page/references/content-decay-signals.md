@@ -311,7 +311,7 @@ Not all decaying content should be refreshed. Use this checklist to decide when 
 - [ ] No backlinks worth preserving
 - [ ] Content never ranked well even when fresh
 - [ ] Cost to refresh exceeds projected 12-month value recovery
-- [ ] Content cannibalizes a better-performing page on the same topic
+- [ ] Content cannibalizes a better-performing page on the same topic (diagnóstico e decisão: [canibalização](canibalizacao-de-palavras-chave.md))
 
 ### Retirement Options
 

@@ -147,7 +147,7 @@ When a user requests content refresh help:
 
    **Refresh Strategy**: Focus on 🔴 dimensions first, then 🟡.
 
-   _For full 80-item audit, use [content-quality-auditor](../../cross-cutting/content-quality-auditor/)_
+   _For full 80-item audit, use [content-quality-auditor](content-quality-auditor.md)_
    ```
 
 2. **Identify Content Refresh Candidates**
@@ -362,7 +362,7 @@ When a user requests content refresh help:
    
    ### [Question matching PAA/common query]?
    
-   [Direct answer in 40-60 words, optimized for featured snippets]
+   [Direct answer in 40-60 words (house heuristic), optimized for featured snippets]
    
    ### [Question 2]?
    
@@ -598,7 +598,7 @@ When a user requests content refresh help:
 3. **Add affiliate disclosure and FAQ section** (~200 words)
    - Add disclosure statement below introduction: "This post contains affiliate links. See our editorial policy."
    - Add FAQ with 4 questions targeting People Also Ask (e.g., "What is the cheapest cloud hosting?", "Is cloud hosting faster than shared hosting?")
-   - Implement FAQ schema markup for rich result eligibility
+   - FAQ schema is optional (Google retired FAQ rich results on 2026-05-07); keep the Q&A content itself
 
 4. **Fix broken links and update internal links** (~15 min)
    - Replace 3 broken outbound links with current provider URLs

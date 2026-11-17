@@ -1,5 +1,7 @@
 # Topic Cluster Templates
 
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 Planning worksheets, architecture patterns, and measurement frameworks for building topic clusters that establish topical authority and drive organic traffic.
 
 ## Overview

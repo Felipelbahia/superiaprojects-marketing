@@ -3,7 +3,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-tecnico
-description: "Use when performing technical SEO audits, diagnosing crawling or indexing issues, auditing Core Web Vitals (LCP, INP, CLS), configuring robots.txt (including AI crawlers like GPTBot), validating XML sitemaps, fixing HTTP status codes, or diagnosing site speed drops. Do NOT use for backlinks or link building (use seo-autoridade-e-backlinks)."
+description: "Use when performing technical SEO audits, diagnosing crawling or indexing issues, auditing Core Web Vitals (LCP, INP, CLS), configuring robots.txt (including AI crawlers like GPTBot), validating XML sitemaps, fixing HTTP status codes, or diagnosing site speed drops; also to run the seo_checker.py sweep (title, meta description, Open Graph, H1, image alt) over a folder of HTML/JSX/TSX pages before publishing a site or landing page. Do NOT use for backlinks or link building (use seo-autoridade-e-backlinks), for manual content and on-page quality audits (use seo-on-page) or for AI-citation readiness (use seo-geo)."
 author: aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
@@ -91,6 +91,7 @@ Being crawlable does not guarantee proper indexation:
    - Prevent duplicate content across parameter URLs, sorting variations, and HTTP/HTTPS mirrors.
    - Every indexable page must contain a self-referencing canonical tag:
      `<link rel="canonical" href="https://example.com/canonical-url/">`
+   - Canonical não resolve canibalização entre páginas de intenção diferente: ver [canibalização](../seo-on-page/references/canibalizacao-de-palavras-chave.md).
 
 ---
 
@@ -153,6 +154,31 @@ Run through this diagnostic checklist on every technical inspection:
 
 ---
 
+## Verificação mecânica de páginas (varredura)
+
+Antes da auditoria manual, e antes de publicar landing page ou site, rode o script que varre a pasta inteira e lista, por arquivo, o que falta:
+
+```bash
+python3 .agent/skills/seo-tecnico/scripts/seo_checker.py <pasta-ou-arquivo>
+```
+
+| Confere | Falha quando |
+|---|---|
+| `<title>` | ausente ou vazio |
+| Meta description | ausente |
+| Open Graph | nenhuma tag `og:` |
+| H1 | ausente ou mais de um |
+| Imagens | sem `alt` (alt vazio é avisado: só vale para imagem decorativa) |
+
+- Lê `.html`, `.htm`, `.jsx` e `.tsx`. **Não lê Markdown**: post de blog e copy seguem o checklist de [seo-on-page](../seo-on-page/SKILL.md) e o workflow `conteudo-pre-publicacao`.
+- Só confere presença. Tamanho de título, qualidade da descrição, canonical, viewport e `lang` ficam para a auditoria do [seo-on-page](../seo-on-page/SKILL.md), nas páginas que falharem ou nas mais importantes.
+- Código de saída `0` = passou, `1` = há falhas. Roda em Python 3.9 ou mais novo, sem instalar nada.
+- Cole a saída do comando no relatório de entrega: sem a saída, o passo não conta como feito.
+- Para prontidão de citação por IA (JSON-LD, autoria, data), há o irmão [geo_checker.py](../seo-geo/SKILL.md) em `seo-geo`.
+- Origem: veio do `seo-fundamentals` do 0 Padrões (2026-11-17), com ajustes: lista todos os arquivos, não ignora páginas por nome (`services.html`), testes de title e Open Graph mais rígidos.
+
+---
+
 ## Reference Materials
 
 The following in-depth technical guides are bundled in the `references/` directory:
@@ -172,6 +198,7 @@ The following in-depth technical guides are bundled in the `references/` directo
 
 ## Referências adicionais
 
+- [regras-de-referencia-google.md](../seo-on-page/references/regras-de-referencia-google.md) — Fonte única dos números e limites que as skills de SEO repetem (título, meta description, tamanho de resposta, densidade, FAQ e HowTo aposentados, Core Web Vitals, sitemap, robots.txt), com citação do Google e data de consulta.
 - [dataforseo-api.md](references/dataforseo-api.md) — API DataForSEO para SERP, palavras-chave, backlinks e análise on-page (requer a API).
 - [entity-signal-checklist.md](references/entity-signal-checklist.md) — Checklist de sinais de entidade por prioridade e método de verificação, para auditoria sistemática.
 - [google-search-console.md](references/google-search-console.md) — Uso do Google Search Console para monitorar desempenho e indexação.

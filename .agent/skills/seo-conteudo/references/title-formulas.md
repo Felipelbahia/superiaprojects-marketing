@@ -1,6 +1,8 @@
 # Title and Headline Formulas
 
-Proven title structures that drive clicks and rankings. All formulas target 50-60 characters for optimal SERP display.
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
+Proven title structures that drive clicks and rankings. All formulas target 50-60 characters (house display reference; Google sets no title length limit, see [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md)).
 
 ## Numbered List Formulas
 
@@ -251,9 +253,9 @@ Proven title structures that drive clicks and rankings. All formulas target 50-6
 ## Title Length Guidelines
 
 ### Google SERP
-- **Optimal**: 50-60 characters
-- **Maximum**: ~70 characters before truncation
-- **Mobile**: ~55 characters (truncates earlier)
+- **House reference**: 50-60 characters
+- **Upper limit seen in practice**: ~70 characters before truncation `[a confirmar]` (Google sets no limit)
+- **Mobile**: ~55 characters (truncates earlier) `[a confirmar]`
 
 ### Social Media
 - **Twitter/X**: 70-100 characters for best engagement

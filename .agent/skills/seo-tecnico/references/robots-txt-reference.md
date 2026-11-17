@@ -393,7 +393,7 @@ Check file is:
 - Plain text format
 - UTF-8 encoded
 - Located at root domain
-- No more than 500KB (Google limit)
+- No more than 500 KiB (Google limit)
 
 ### Common Testing Scenarios
 
@@ -641,7 +641,7 @@ Before deploying:
 - [ ] Not blocking content you want indexed
 - [ ] Trailing slashes used correctly for directories
 - [ ] Wildcard patterns tested
-- [ ] File size under 500KB
+- [ ] File size under 500 KiB
 
 ---
 

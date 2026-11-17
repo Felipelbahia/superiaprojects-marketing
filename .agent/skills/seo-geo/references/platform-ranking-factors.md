@@ -1,5 +1,7 @@
 # How Each AI Platform Picks Sources
 
+> **Status (2026-11-17):** o Google aposentou os rich results de **FAQ** (2026-05-07) e de **HowTo** (2023). Onde este arquivo recomenda `FAQPage` ou `HowTo`, leia como marcação opcional **sem resultado rico no Google**; ganhos de visibilidade atribuídos a esses tipos são `[a confirmar]`. Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 Each AI search platform has its own search index, ranking logic, and content preferences. This guide covers what matters for getting cited on each one.
 
 Sources cited throughout: Princeton GEO study (KDD 2024), SE Ranking domain authority study, ZipTie content-answer fit analysis.
@@ -27,7 +29,7 @@ Google AI Overviews pull from Google's own index and lean heavily on E-E-A-T sig
 **Importantly, AI Overviews don't just recycle the traditional Top 10.** Only about 15% of AI Overview sources overlap with conventional organic results. Pages that wouldn't crack page 1 in traditional search can still get cited if they have strong structured data and clear, extractable answers.
 
 **What to focus on:**
-- Schema markup is the single biggest lever — Article, FAQPage, HowTo, and Product schemas give AI Overviews structured context to work with (30-40% visibility boost)
+- Schema markup is the single biggest lever — Article, FAQPage, HowTo, and Product schemas give AI Overviews structured context to work with (30-40% visibility boost is `[a confirmar]`, no source; FAQPage and HowTo have no Google rich result)
 - Build topical authority through content clusters with strong internal linking
 - Include named, sourced citations in your content (not just claims)
 - Author bios with real credentials matter — E-E-A-T is weighted heavily

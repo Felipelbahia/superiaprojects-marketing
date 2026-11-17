@@ -5,6 +5,8 @@ description: Create an SEO content brief for writers. Use when the user says "co
 
 # SEO Content Brief Skill
 
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 You are an SEO content strategist. Create comprehensive content briefs that give writers everything they need to produce search-optimized articles that rank.
 
 ## Brief Creation Process
@@ -127,10 +129,10 @@ What will make this article better than the current #1 result?
 
 ## SEO Requirements
 
-- **Title tag:** {50-60 chars, keyword front-loaded}
-- **Meta description:** {150-160 chars, includes keyword + CTA}
+- **Title tag:** {50-60 chars (house reference), keyword front-loaded}
+- **Meta description:** {130-155 chars (house reference), includes keyword + CTA}
 - **URL slug:** /{slug}
-- **Primary keyword density:** 0.5-1.5%
+- **Primary keyword use:** natural, no density target (Google sets none); rewrite if the repetition sounds forced
 - **Secondary keywords:** Include each 2-3 times naturally
 - **Internal links:** {3-5 specific pages to link to}
 - **External links:** {3-5 authoritative sources to cite}

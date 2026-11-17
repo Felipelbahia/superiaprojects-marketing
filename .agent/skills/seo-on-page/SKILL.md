@@ -45,12 +45,12 @@ Activate this skill when:
 The title tag remains the single most influential on-page SEO signal:
 
 - **Title Tag Rules**:
-  - Length: 50-60 characters (580 pixels max to prevent truncation in SERPs).
+  - Length: 50-60 characters (display reference; Google sets no limit, see references/regras-de-referencia-google.md; the old 580-pixel figure is `[a confirmar]`).
   - Primary keyword placed as close to the beginning as natural.
   - Value proposition or secondary hook included (*"With Templates"*, *"Complete 2026 Guide"*).
   - Brand name appended at the end separated by a pipe (`|`) or dash (`-`).
 - **Meta Description Rules**:
-  - Length: 130-155 characters (960 pixels max).
+  - Length: 130-155 characters (display reference; Google sets no limit, see references/regras-de-referencia-google.md).
   - Summarizes the core answer or benefit; contains target keyword naturally.
   - Includes a clear call-to-action (CTA) encouraging clicks.
 
@@ -122,8 +122,8 @@ Use this standardized evaluation rubric to score any URL:
 
 1. TITLES & METAS (20 pts):
    [ ] Title contains primary keyword near front (5 pts)
-   [ ] Title length is 50-60 chars, compelling CTR hook (5 pts)
-   [ ] Meta description is 130-155 chars with actionable CTA (5 pts)
+   [ ] Title length is 50-60 chars (house reference), compelling CTR hook (5 pts)
+   [ ] Meta description is 130-155 chars (house reference) with actionable CTA (5 pts)
    [ ] Clean, short, hyphenated URL slug containing keyword (5 pts)
 
 2. CONTENT STRUCTURE & READABILITY (25 pts):
@@ -174,7 +174,7 @@ The following in-depth reference guides are bundled in the `references/` directo
 ## Related Skills
 
 - **`seo-conteudo`** — Creation of new search-optimized articles and cluster pages.
-- **`seo-tecnico`** — Crawlability, robots.txt, CWV, and status code debugging.
+- **`seo-tecnico`** — Crawlability, robots.txt, CWV, and status code debugging. Also holds the `seo_checker.py` sweep (title, meta, Open Graph, H1, alt) to run over a whole folder of pages before this manual audit.
 - **`seo-geo`** — Optimization for AI citations and LLM search answer engines.
 - **`seo-schema-markup`** — Structured data (Schema.org) for rich snippet qualification.
 
@@ -182,6 +182,8 @@ The following in-depth reference guides are bundled in the `references/` directo
 
 - [meta-tag-formulas.md](references/meta-tag-formulas.md) — Fórmulas de title tag e modelos de meta description, metodologia de teste A/B, padrões sazonais, benchmarks de CTR e otimização multilíngue.
 - [meta-tags-optimizer.md](references/meta-tags-optimizer.md) — Otimização de title tag, meta description e Open Graph para melhorar CTR e a pré-visualização em redes sociais.
+- [regras-de-referencia-google.md](references/regras-de-referencia-google.md) — Fonte única dos números e limites que as skills de SEO repetem (título, meta description, tamanho de resposta, densidade, FAQ e HowTo aposentados, Core Web Vitals, sitemap, robots.txt), com citação do Google e data de consulta.
+- [canibalizacao-de-palavras-chave.md](references/canibalizacao-de-palavras-chave.md) — Duas páginas disputando a mesma busca: diagnóstico (mapa palavra-chave → URL, Search Console), decisão (consolidar, diferenciar, ajustar, canonical) e prevenção.
 - [original-reference.md](references/original-reference.md) — Guia original completo desta skill (770 linhas), de antes da condensação do `SKILL.md`.
 
 ## Para onde foram os outros assuntos

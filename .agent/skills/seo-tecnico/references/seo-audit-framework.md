@@ -162,7 +162,7 @@ Many CMS plugins (AIOSEO, Yoast, RankMath) inject JSON-LD via client-side JavaSc
 **Check for:**
 - Unique titles for each page
 - Primary keyword near beginning
-- 50-60 characters (visible in SERP)
+- 50-60 characters (house display reference; Google sets no limit)
 - Compelling and click-worthy
 - Brand name placement (end, usually)
 
@@ -177,7 +177,7 @@ Many CMS plugins (AIOSEO, Yoast, RankMath) inject JSON-LD via client-side JavaSc
 
 **Check for:**
 - Unique descriptions per page
-- 150-160 characters
+- 130-155 characters (house display reference; Google sets no limit)
 - Includes primary keyword
 - Clear value proposition
 - Call to action
@@ -255,7 +255,7 @@ Many CMS plugins (AIOSEO, Yoast, RankMath) inject JSON-LD via client-side JavaSc
 **Site-Wide**
 - Keyword mapping document
 - No major gaps in coverage
-- No keyword cannibalization
+- No keyword cannibalization (como diagnosticar e resolver: [canibalização](../../seo-on-page/references/canibalizacao-de-palavras-chave.md))
 - Logical topical clusters
 
 ---

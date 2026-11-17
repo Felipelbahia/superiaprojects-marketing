@@ -57,7 +57,7 @@ Earning featured snippets requires strategic formatting and direct answers to se
 
 1. **Identify snippet opportunities**: Use tools like Semrush or Ahrefs to find keywords where competitors have snippets you could capture.
 2. **Match the snippet format**: Analyze whether the current snippet is a paragraph, list, or table, and format your content accordingly.
-3. **Answer the question directly**: Provide a clear, concise answer (40-60 words for paragraph snippets) immediately after the question heading.
+3. **Answer the question directly**: Provide a clear, concise answer (40-60 words for paragraph snippets; house heuristic, Google gives no length) immediately after the question heading.
 4. **Add supporting context**: Expand on your answer with examples, data, and expert insights in the following paragraphs.
 5. **Use proper heading structure**: Place your target question as an H2 or H3, with the answer immediately following.
 
@@ -130,7 +130,7 @@ Use for topic pages with multiple common questions. Essential for FAQ schema.
 - Use natural question phrasing ("How do I..." not "How does one...")
 - Include question words: what, how, why, when, where, who, which
 - Match "People Also Ask" queries from search results
-- Keep answers between 50-100 words
+- Keep answers to 40-60 words (house heuristic; Google gives no length, see seo-on-page/references/regras-de-referencia-google.md)
 
 ### Listicle Block
 
@@ -168,7 +168,7 @@ Statistics increase AI citation rates by 15-30%. Always include sources.
 [Claim statement]. According to [Source/Organization], [specific statistic with number and timeframe]. [Context for why this matters].
 ```
 
-**Example:**
+**Example** (`[exemplo, sem fonte]`: the numbers below only illustrate the format and are not real data):
 ```markdown
 Mobile optimization is no longer optional for SEO success. According to Google's 2024 Core Web Vitals report, 70% of web traffic now comes from mobile devices, and pages failing mobile usability standards see 24% higher bounce rates. This makes mobile-first indexing a critical ranking factor.
 ```
@@ -209,7 +209,7 @@ Create quotable, standalone statements that AI can extract directly.
 
 **Example:**
 ```markdown
-**Ideal blog post length for SEO**: The optimal length for SEO blog posts is 1,500-2,500 words for competitive topics. This range allows comprehensive topic coverage while maintaining reader engagement. HubSpot research shows long-form content earns 77% more backlinks than short articles, directly impacting search rankings.
+**Ideal blog post length for SEO** (`[exemplo, sem fonte]`: Google sets no word-count target, so treat the numbers and the HubSpot claim below as illustration only): The optimal length for SEO blog posts is 1,500-2,500 words for competitive topics. This range allows comprehensive topic coverage while maintaining reader engagement. HubSpot research shows long-form content earns 77% more backlinks than short articles, directly impacting search rankings.
 ```
 
 ### Evidence Sandwich Block
@@ -278,7 +278,7 @@ Voice queries are conversational and question-based. Optimize for these patterns
 - "Who is..."
 
 ### Voice-Optimized Answer Structure
-- Lead with direct answer (under 30 words ideal)
+- Lead with the direct answer in the first sentence (40-60 words in total; house heuristic)
 - Use natural, conversational language
 - Avoid jargon unless targeting expert audience
 - Include local context where relevant

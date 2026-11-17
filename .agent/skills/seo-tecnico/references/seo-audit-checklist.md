@@ -75,14 +75,14 @@ Organic traffic quality impacts lead scoring:
 | Metric | Good | Needs Work | Poor |
 |--------|------|------------|------|
 | LCP | <2.5s | 2.5-4s | >4s |
-| FID | <100ms | 100-300ms | >300ms |
+| INP | ≤200ms | 200-500ms [a confirmar] | >500ms [a confirmar] |
 | CLS | <0.1 | 0.1-0.25 | >0.25 |
 
 **Common Fixes**:
 | Issue | Solution |
 |-------|----------|
 | Slow LCP | Optimize images, lazy load below fold |
-| High FID | Defer non-critical JS, code splitting |
+| High INP | Defer non-critical JS, code splitting |
 | Bad CLS | Set image dimensions, avoid dynamic content |
 
 ### Mobile-Friendliness
@@ -107,7 +107,7 @@ Organic traffic quality impacts lead scoring:
 
 | Criteria | Check |
 |----------|-------|
-| Length | 50-60 characters |
+| Length | 50-60 characters (house reference; Google sets no limit) |
 | Keyword | Primary keyword near front |
 | Unique | No duplicates across site |
 | Compelling | Click-worthy, not stuffed |
@@ -123,7 +123,7 @@ Organic traffic quality impacts lead scoring:
 
 | Criteria | Check |
 |----------|-------|
-| Length | 150-160 characters |
+| Length | 130-155 characters (house reference; Google sets no limit) |
 | CTA | Includes call-to-action |
 | Unique | No duplicates |
 | Keyword | Contains target keyword |
@@ -140,9 +140,9 @@ Organic traffic quality impacts lead scoring:
 
 | Factor | Target |
 |--------|--------|
-| Word count | 1500+ for competitive terms |
-| Keyword density | 1-2% natural |
-| Readability | Grade 8 or below |
+| Word count | No target (Google sets none); cover the topic fully |
+| Keyword use | Natural; no density target |
+| Readability | Grade 8 or below (house heuristic) |
 | Freshness | Updated within 12 months |
 | Multimedia | Images, video where relevant |
 

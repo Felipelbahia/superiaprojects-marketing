@@ -7,6 +7,10 @@ metadata:
 
 # Programmatic SEO Builder
 
+> **Status (2026-11-17):** o Google aposentou os rich results de **FAQ** (2026-05-07) e de **HowTo** (2023). Onde este arquivo recomenda `FAQPage` ou `HowTo`, leia como marcação opcional **sem resultado rico no Google**; ganhos de visibilidade atribuídos a esses tipos são `[a confirmar]`. Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 Design scalable page templates that rank without appearing thin or auto-generated.
 
 ## Process
@@ -73,7 +77,7 @@ Hub Page: "Marketing Tools" (comprehensive guide)
 ## Thin Content Avoidance
 
 ### Minimum Requirements
-- **Word count**: 300-500 words unique content per page
+- **Word count**: 300-500 words unique content per page (house minimum against thin pages, not a Google rule)
 - **Unique sections**: 2-3 sections beyond templated structure
 - **Intent match**: Specific answer to the search query
 - **Variable depth**: Context added, not just name-swapping
@@ -249,7 +253,7 @@ Discover the best [software] for [industry] in [year]. Compare top [X] options w
 - [ ] Buying guide section tailored to industry workflow
 
 ### Thin Content Safeguards
-- Minimum word count: 1,500 words
+- Minimum word count: 1,500 words (house quality threshold against thin pages, not a Google rule)
 - Required unique sections: Introduction, Buying Guide, FAQ
 - Each tool must have industry-specific recommendation paragraph
 ```

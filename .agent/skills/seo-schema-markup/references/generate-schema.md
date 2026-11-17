@@ -8,6 +8,8 @@ argument-hint: "<schema type> for <content description>"
 
 Generates valid **Schema.org JSON-LD** structured data markup to enhance search visibility and enable rich results.
 
+> **Status em 2026-11-17:** os tipos `FAQ` e `HowTo` geram marcação válida, mas o Google aposentou os dois rich results (FAQ em 2026-05-07, HowTo em 2023). Ver [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 ## Usage
 
 ```

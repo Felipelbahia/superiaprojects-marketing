@@ -1,5 +1,7 @@
 # Link Architecture Patterns
 
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](regras-de-referencia-google.md).
+
 Detailed architecture models with implementation guides, migration strategies, and measurement frameworks for internal linking optimization.
 
 ## Architecture Model Deep Dives

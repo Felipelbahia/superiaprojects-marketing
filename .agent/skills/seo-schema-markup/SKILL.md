@@ -3,7 +3,7 @@
 # Repository: https://github.com/Felipelbahia/superiaprojects-marketing
 # Status: Customizada / Modificada localmente por Felipe Bahia
 name: seo-schema-markup
-description: 'Use when the user asks to "add schema markup", "generate structured data", "JSON-LD", "rich snippets", "FAQ schema", "add FAQ rich results", "I want star ratings in Google", "product markup", or "recipe schema". Generates structured data markup (Schema.org JSON-LD) to enable rich results in search engines including FAQ snippets, How-To cards, Product listings, Reviews, and more. For meta tag optimization, see meta-tags-optimizer. For broader technical SEO, see seo-tecnico.'
+description: 'Use when the user asks to "add schema markup", "generate structured data", "JSON-LD", "rich snippets", "FAQ schema", "I want star ratings in Google", "product markup", or "recipe schema". Generates structured data markup (Schema.org JSON-LD) to enable rich results where Google still shows them (Product, Review, Article and others). FAQ and How-To rich results were retired (see seo-on-page/references/regras-de-referencia-google.md). For meta tag optimization, see meta-tags-optimizer. For broader technical SEO, see seo-tecnico.'
 author: aaron-he-zhu & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
@@ -32,10 +32,12 @@ metadata:
 
 This skill creates Schema.org structured data markup in JSON-LD format to help search engines understand your content and enable rich results in SERPs.
 
+> **Status em 2026-11-17:** o Google aposentou o rich result de **FAQ** (a partir de 2026-05-07) e o de **HowTo** (2023). Os modelos `FAQPage` e `HowTo` abaixo continuam sendo marcação válida do Schema.org, mas **não geram resultado rico no Google**; não prometa isso ao cliente. Marcação sem uso não causa problema e não precisa ser removida. Fonte e citações: [regras-de-referencia-google.md](../seo-on-page/references/regras-de-referencia-google.md).
+
 ## When to Use This Skill
 
-- Adding FAQ schema for expanded SERP presence
-- Creating How-To schema for step-by-step content
+- Adding FAQ schema as optional markup (no Google rich result since 2026-05-07)
+- Creating How-To schema as optional markup (no Google rich result since 2023)
 - Adding Product schema for e-commerce pages
 - Implementing Article schema for blog posts
 - Adding Local Business schema for location pages
@@ -132,8 +134,8 @@ When a user requests schema markup:
    
    | Rich Result Type | Eligibility | Impact |
    |------------------|-------------|--------|
-   | FAQ | ✅/❌ | High - Expands SERP presence |
-   | How-To | ✅/❌ | Medium - Shows steps in SERP |
+   | FAQ | ❌ (retired 2026-05-07) | No rich result in Google |
+   | How-To | ❌ (retired 2023) | No rich result in Google |
    | Product | ✅/❌ | High - Shows price, availability |
    | Review | ✅/❌ | High - Shows star ratings |
    | Article | ✅/❌ | Medium - Shows publish date, author |
@@ -700,11 +702,11 @@ Learn SEO from scratch with our comprehensive guide...
 
 | Your Content | Primary Schema | Add If Applicable | Rich Result Eligibility |
 |-------------|---------------|-------------------|----------------------|
-| Blog post / article | Article | FAQ, HowTo, Speakable | Article carousel, FAQ rich result |
+| Blog post / article | Article | FAQ, HowTo, Speakable | Article carousel (FAQ/HowTo: no rich result) |
 | Product page | Product | Review, Offer, AggregateRating | Product snippet with price/rating |
 | Service page | Service | FAQ, LocalBusiness | Service snippet |
-| How-to guide | HowTo | Article, FAQ | How-to rich result with steps |
-| FAQ page | FAQPage | Article | FAQ accordion in SERP |
+| How-to guide | HowTo | Article, FAQ | None (HowTo rich result retired in 2023) |
+| FAQ page | FAQPage | Article | None (FAQ rich result retired on 2026-05-07) |
 | Recipe | Recipe | Video, AggregateRating | Recipe carousel |
 | Event | Event | Offer, Organization | Event snippet with date/location |
 | Video | VideoObject | Article | Video carousel, key moments |
@@ -734,7 +736,7 @@ Learn SEO from scratch with our comprehensive guide...
 | Priority | Schema Types | Why |
 |----------|-------------|-----|
 | P0 -- Always | Organization, BreadcrumbList, WebSite (SearchAction) | Foundation for all sites |
-| P1 -- Content | Article, FAQPage, HowTo | Direct rich result eligibility |
+| P1 -- Content | Article (FAQPage and HowTo are optional) | FAQ and HowTo only describe the content; no Google rich result |
 | P2 -- Commercial | Product, Review, AggregateRating, Offer | Revenue-impacting rich results |
 | P3 -- Authority | Person, SameAs, Speakable | E-E-A-T signals, AI citation |
 | P4 -- Specialized | Industry-specific types | Niche rich results |

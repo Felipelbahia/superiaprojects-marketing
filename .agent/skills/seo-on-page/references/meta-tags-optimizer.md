@@ -31,6 +31,8 @@ metadata:
 
 # Meta Tags Optimizer
 
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](regras-de-referencia-google.md).
+
 
 > **[SEO & GEO Skills Library](https://skills.sh/aaron-he-zhu/seo-geo-claude-skills)** · 20 skills for SEO + GEO · Install all: `npx skills add aaron-he-zhu/seo-geo-claude-skills`
 
@@ -135,7 +137,7 @@ When a user requests meta tag optimization:
    ### Title Tag Optimization
    
    **Requirements**:
-   - Length: 50-60 characters (displays fully in SERP)
+   - Length: 50-60 characters (house display reference; Google sets no limit)
    - Include primary keyword (preferably near front)
    - Make it compelling and click-worthy
    - Match search intent
@@ -181,7 +183,7 @@ When a user requests meta tag optimization:
    ### Meta Description Optimization
    
    **Requirements**:
-   - Length: 150-160 characters (displays fully in SERP)
+   - Length: 130-155 characters (display reference; Google sets no limit)
    - Include primary keyword naturally
    - Include clear call-to-action
    - Match page content accurately
@@ -293,7 +295,7 @@ When a user requests meta tag optimization:
    ```
    
    **Twitter-Specific Considerations**:
-   - Shorter titles work better (under 70 chars)
+   - Shorter titles work better (under 70 chars) `[a confirmar]`
    - Include @mentions if relevant
    - Hashtag-relevant terms can help discovery
    - Test with Twitter Card Validator
@@ -432,8 +434,8 @@ When a user requests meta tag optimization:
 - [ ] Unique value proposition articulated
 
 ### Output Validation
-- [ ] Title length 50-60 characters (displays fully in SERP)
-- [ ] Meta description length 150-160 characters
+- [ ] Title length 50-60 characters (display reference; Google sets no limit)
+- [ ] Meta description length 130-155 characters
 - [ ] Primary keyword appears in both title and description
 - [ ] Open Graph image specified (1200x630px recommended)
 - [ ] All HTML syntax valid (no unclosed quotes or tags)
@@ -452,15 +454,15 @@ When a user requests meta tag optimization:
 ```html
 <title>How to Start a Podcast in [current year]: Complete Beginner's Guide</title>
 ```
-**Length**: ~55 characters ✅
+**Length**: ~57 characters with the year filled in ✅
 **Keyword**: "how to start a podcast" at front ✅
 **Power Words**: "Complete", "Beginner's" ✅
 
 ### Meta Description
 ```html
-<meta name="description" content="Learn how to start a podcast in [current year] with our step-by-step guide. Covers equipment, hosting, recording, and launching your first episode. Start podcasting today!">
+<meta name="description" content="Learn how to start a podcast in [current year]: equipment, hosting, recording and your first episode. Step-by-step guide. Start podcasting today!">
 ```
-**Length**: ~163 characters ✅
+**Length**: 145 characters ✅
 **Keyword**: Included naturally ✅
 **CTA**: "Start podcasting today!" ✅
 
@@ -469,7 +471,7 @@ When a user requests meta tag optimization:
 ```html
 <!-- Primary Meta Tags -->
 <title>How to Start a Podcast in [current year]: Complete Beginner's Guide</title>
-<meta name="description" content="Learn how to start a podcast in [current year] with our step-by-step guide. Covers equipment, hosting, recording, and launching your first episode. Start podcasting today!">
+<meta name="description" content="Learn how to start a podcast in [current year]: equipment, hosting, recording and your first episode. Step-by-step guide. Start podcasting today!">
 <link rel="canonical" href="https://yoursite.com/how-to-start-a-podcast/">
 
 <!-- Open Graph / Facebook -->
@@ -574,6 +576,8 @@ When a user requests meta tag optimization:
 
 ### Title Tag Length Optimization
 
+> Display heuristics from market practice, **not Google rules**: Google sets no title length limit (see [regras-de-referencia-google.md](regras-de-referencia-google.md)). The character thresholds in this table are `[a confirmar]`.
+
 | Length Range | SERP Behavior | Recommendation |
 |-------------|--------------|----------------|
 | <30 characters | May appear thin | Expand with modifier or brand |
@@ -593,7 +597,7 @@ When a user requests meta tag optimization:
 | **D**esire | Show benefit | "...used by top-ranking sites to increase traffic by 200%." |
 | **A**ction | CTA | "Read the full guide now." |
 
-**Full Example**: "Want to double your organic traffic? This guide covers 15 proven SEO strategies used by top-ranking sites to increase traffic by 200%. Read the full guide now." (158 chars)
+**Full Example**: "Want to double your organic traffic? This guide covers 15 SEO strategies that top-ranking sites use. Read the full guide now." (125 chars)
 
 ### PAS Framework
 
@@ -624,7 +628,7 @@ When a user requests meta tag optimization:
 | Current year | +10-15% | "Best SEO Tools 2026" |
 | Power words | +12% | See Power Words table above |
 | Match search intent | +15-25% | Align title with SERP expectations |
-| Rich results (schema) | +30% | FAQ, HowTo, Review stars |
+| Rich results (schema) | [sem fonte] | FAQ and HowTo rich results were retired; check Google's docs for the types still shown |
 
 ## Open Graph Best Practices by Platform
 

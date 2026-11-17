@@ -1,5 +1,7 @@
 # Quotable Content Examples
 
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 Before/after examples of content optimized for AI citation. Each example shows the transformation from generic to quotable.
 
 ## Example 1: Definition Block
@@ -246,7 +248,7 @@ Before/after examples of content optimized for AI citation. Each example shows t
 >
 > 1. **Title tags** - Most important on-page element; include primary keyword within first 60 characters. Title tags directly influence both rankings and CTR.
 >
-> 2. **Content quality and depth** - Comprehensive content (1,500+ words for competitive keywords) outranks thin content. Focus on topical authority over keyword density.
+> 2. **Content quality and depth** - Comprehensive content outranks thin content. Focus on topical authority over keyword density.
 >
 > 3. **Header structure (H1-H6)** - Use one H1 with primary keyword, multiple H2s for main sections. Proper hierarchy helps search engines understand content structure.
 >
@@ -333,7 +335,7 @@ Before/after examples of content optimized for AI citation. Each example shows t
 > | Metric | Measures | Good Score | Impact |
 > |--------|----------|------------|--------|
 > | **LCP (Largest Contentful Paint)** | Loading performance | <2.5 seconds | How quickly main content appears |
-> | **FID (First Input Delay)** | Interactivity | <100 milliseconds | How quickly page responds to user input |
+> | **INP (Interaction to Next Paint)** | Interactivity | ≤200 milliseconds | How quickly page responds to user input |
 > | **CLS (Cumulative Layout Shift)** | Visual stability | <0.1 | How much content shifts during loading |
 >
 > According to Google's 2024 documentation, pages meeting all three thresholds rank higher and receive 24% more clicks than pages failing these metrics. Core Web Vitals became an official ranking factor in June 2021 as part of Google's Page Experience update.

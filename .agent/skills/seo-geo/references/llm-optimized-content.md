@@ -10,6 +10,8 @@ metadata:
 
 # LLM-Optimized Content & GEO
 
+> **Nota (2026-11-17):** tamanhos de título, meta description, resposta curta e contagem de palavras neste arquivo são **referências da casa**, não regras do Google (o Google não define esses limites). Valores e fontes: [regras-de-referencia-google.md](../../seo-on-page/references/regras-de-referencia-google.md).
+
 > Create content optimized for AI-powered search using Generative Engine Optimization (GEO) principles.
 
 ## Purpose
@@ -156,7 +158,7 @@ for the prospect.
 ### 5. Optimal Length & Depth
 
 **Data:**
-- Articles 2000-3000 words = sweet spot for GEO
+- Articles 2000-3000 words = sweet spot for GEO `[a confirmar]` (house heuristic; Google sets no word-count target)
 - But: Quality > Quantity
 - Depth on ONE subject > Overview of several
 
@@ -318,7 +320,7 @@ For any topic, consider addressing:
 - [ ] Visible publication/update date
 
 ### Length
-- [ ] 2000-3000 words for main subject
+- [ ] 2000-3000 words for main subject `[a confirmar]` (house heuristic)
 - [ ] Depth > Overview
 - [ ] Each section developed
 

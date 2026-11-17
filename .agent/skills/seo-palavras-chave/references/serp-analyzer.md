@@ -111,7 +111,6 @@ Document every SERP feature present for this keyword:
 | News Results | Yes/No | {sources} | {assessment} |
 | Sitelinks | Yes/No | {domain} | - |
 | Reviews/Stars | Yes/No | {domains} | {assessment} |
-| FAQ Rich Results | Yes/No | {domains} | {assessment} |
 | Breadcrumbs | Yes/No | {domains} | - |
 
 **SERP Intent Signal Analysis:**
