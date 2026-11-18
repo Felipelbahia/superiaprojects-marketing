@@ -85,21 +85,21 @@ Conecte a direção conceitual às especificidades do canal escolhido:
 #### Se for Post / Carrossel para Instagram/LinkedIn:
 - Proporção estrita **4:5 (1080x1350)** para máxima ocupação de tela no feed mobile.
 - Estrutura lâmina a lâmina: Hook (Capa) → Problema → Slide Âncora (Slide 2 de valor) → Desdobramentos → CTA de fechamento.
-- Aplique as regras da skill [`social-direcao-de-arte-ia`](file:///Users/macbookpro/Documents/IA%20Projects/_Plataforma/0%20Mkt/.agent/skills/social-direcao-de-arte-ia/SKILL.md) (Slide Âncora e margens de 8% a 10%).
+- Aplique as regras da skill [`social-direcao-de-arte-ia`](../skills/social-direcao-de-arte-ia/SKILL.md) (Slide Âncora e margens de 8% a 10%).
 
 #### Se for Apresentação / Slides:
 - Proporção **16:9 widescreen**.
 - Regra de "1 ideia por slide", composição assimétrica com ponto focal claro e narrativa visual progressiva.
 - Se a narrativa do deck (arco, outline, notas do apresentador) ainda não estiver estruturada, rode antes o workflow [`/audiovisual-estrutura-de-apresentacao`](audiovisual-estrutura-de-apresentacao.md) — esta etapa cobre só a direção visual, não o texto.
-- Delegue o código para [`audiovisual-slidev`](file:///Users/macbookpro/Documents/IA%20Projects/_Plataforma/0%20Mkt/.agent/skills/audiovisual-slidev/SKILL.md).
+- Delegue o código para [`audiovisual-slidev`](../skills/audiovisual-slidev/SKILL.md).
 
 #### Se for Identidade Visual de Marca:
 - Conceito central, arquétipo, universo visual, diretrizes de aplicação em claro e escuro.
-- Gere obrigatoriamente a amostra em HTML conforme a skill [`brand-visual-direction`](file:///Users/macbookpro/Documents/IA%20Projects/_Plataforma/0%20Mkt/.agent/skills/brand-visual-direction/SKILL.md).
+- Gere obrigatoriamente a amostra em HTML conforme a skill [`brand-visual-direction`](../skills/brand-visual-direction/SKILL.md).
 
 #### Se for Landing Page / Web:
 - Hierarquia da dobra superior (*above the fold*): Headline de valor, sub-headline, prova social e CTA primário de alto contraste.
-- Conecte com a skill [`site-interface-de-conversao`](file:///Users/macbookpro/Documents/IA%20Projects/_Plataforma/0%20Mkt/.agent/skills/site-interface-de-conversao/SKILL.md).
+- Conecte com a skill [`site-interface-de-conversao`](../skills/site-interface-de-conversao/SKILL.md).
 
 ---
 

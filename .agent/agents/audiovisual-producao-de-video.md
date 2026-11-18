@@ -87,7 +87,7 @@ Você mobiliza ativamente as skills de mídia e audiovisual do ecossistema:
 
 ## Skills usadas (caminho completo)
 
-Este agente existe no 0 Mkt e no projeto de edição de vídeo (`Compartilhado/Edição de Vídeo com IA`). As skills ficam onde indicado; use o caminho completo.
+Este agente existe no 0 Mkt e no projeto de edição de vídeo (`Compartilhado/Edição de Vídeo com IA`). As skills ficam onde indicado; use o caminho completo. `<EDICAO_VIDEO>` é a pasta do projeto de edição de vídeo nesta máquina (pergunte ao usuário se não souber).
 
 | Skill | Caminho | Para quê |
 |---|---|---|
@@ -96,9 +96,9 @@ Este agente existe no 0 Mkt e no projeto de edição de vídeo (`Compartilhado/E
 | `social-youtube-para-notas` | `./.agent/skills/social-youtube-para-notas/SKILL.md` | baixar e transcrever YouTube |
 | `audiovisual-podcast-e-audio` | `./.agent/skills/audiovisual-podcast-e-audio/SKILL.md` | áudio e podcast (existe também no projeto de vídeo) |
 | `brand-identidade-sonora` | `./.agent/skills/brand-identidade-sonora/SKILL.md` | identidade sonora (existe também no projeto de vídeo) |
-| `ai-video-creator` | `/Users/macbookpro/Documents/IA Projects/Compartilhado/Edição de Vídeo com IA/.agent/skills/ai-video-creator/SKILL.md` | direção e prompts de vídeo com IA |
-| `media-processing` | `/Users/macbookpro/Documents/IA Projects/Compartilhado/Edição de Vídeo com IA/.agent/skills/media-processing/SKILL.md` | FFmpeg e ImageMagick |
-| `elevenlabs` | `/Users/macbookpro/Documents/IA Projects/Compartilhado/Edição de Vídeo com IA/.agent/skills/elevenlabs/SKILL.md` | voz, efeitos e música |
-| `remotion` | `/Users/macbookpro/Documents/IA Projects/Compartilhado/Edição de Vídeo com IA/.agent/skills/remotion/SKILL.md` | vídeo programático em React |
-| `gsap` | `/Users/macbookpro/Documents/IA Projects/Compartilhado/Edição de Vídeo com IA/.agent/skills/gsap/SKILL.md` | animação web |
-| `threejs-fundamentals` | `/Users/macbookpro/Documents/IA Projects/Compartilhado/Edição de Vídeo com IA/.agent/skills/threejs-fundamentals/SKILL.md` | 3D na web (família `threejs-*`) |
+| `ai-video-creator` | `<EDICAO_VIDEO>/.agent/skills/ai-video-creator/SKILL.md` | direção e prompts de vídeo com IA |
+| `media-processing` | `<EDICAO_VIDEO>/.agent/skills/media-processing/SKILL.md` | FFmpeg e ImageMagick |
+| `elevenlabs` | `<EDICAO_VIDEO>/.agent/skills/elevenlabs/SKILL.md` | voz, efeitos e música |
+| `remotion` | `<EDICAO_VIDEO>/.agent/skills/remotion/SKILL.md` | vídeo programático em React |
+| `gsap` | `<EDICAO_VIDEO>/.agent/skills/gsap/SKILL.md` | animação web |
+| `threejs-fundamentals` | `<EDICAO_VIDEO>/.agent/skills/threejs-fundamentals/SKILL.md` | 3D na web (família `threejs-*`) |

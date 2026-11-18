@@ -1,3 +1,15 @@
+// Paths in the data are relative to the project root (catalog.html lives in <root>/.agent/).
+// Resolve them here, on the viewer's own machine, so the data carries no machine-specific path.
+function resolveAbs(p) {
+  if (!p) return '';
+  if (/^(\/|[A-Za-z]:[\\/])/.test(p)) return p;
+  try { return decodeURIComponent(new URL('../' + p, location.href).pathname).replace(/^\/([A-Za-z]:)/, '$1'); } catch (e) { return p; }
+}
+function resolveHref(p) {
+  if (!p) return '#';
+  if (/^(\/|[A-Za-z]:[\\/])/.test(p)) return 'file://' + p;
+  try { return new URL('../' + p, location.href).href; } catch (e) { return '#'; }
+}
 // Centralized Catalog Application (Zero-Sync Runtime Engine)
 // Single Source of Truth: 0 Padrões/.agent/catalog-app.js
 if (window.__CATALOG_APP_INITIALIZED__) {
@@ -294,7 +306,7 @@ if (window.__CATALOG_APP_INITIALIZED__) {
       document.getElementById('modalCategory').textContent = item.category;
       document.getElementById('modalSubcategory').textContent = item.subcategory;
       document.getElementById('modalDesc').textContent = item.desc;
-      document.getElementById('modalPath').textContent = item.abs_path || item.path;
+      document.getElementById('modalPath').textContent = resolveAbs(item.abs_path) || item.path;
       document.getElementById('modalContent').textContent = item.content || "(Sem conteúdo adicional registrado)";
 
       // Badges
@@ -334,7 +346,7 @@ if (window.__CATALOG_APP_INITIALIZED__) {
                 <span>${f.rel_path}</span>
               </div>
               <div class="ref-actions">
-                <a class="ref-open-link" href="file://${f.abs_path}" target="_blank" title="Abrir arquivo externo" onclick="event.stopPropagation()">↗ Abrir</a>
+                <a class="ref-open-link" href="${resolveHref(f.abs_path)}" target="_blank" title="Abrir arquivo externo" onclick="event.stopPropagation()">↗ Abrir</a>
                 <span class="collapsible-chevron">▾</span>
               </div>
             `;
@@ -351,7 +363,7 @@ if (window.__CATALOG_APP_INITIALIZED__) {
             det.appendChild(body);
             li.appendChild(det);
           } else {
-            li.innerHTML = `<a class="file-link" href="file://${f.abs_path}" target="_blank">📄 ${f.rel_path} <span style="margin-left:auto; opacity:0.6;">↗</span></a>`;
+            li.innerHTML = `<a class="file-link" href="${resolveHref(f.abs_path)}" target="_blank">📄 ${f.rel_path} <span style="margin-left:auto; opacity:0.6;">↗</span></a>`;
           }
           filesList.appendChild(li);
         });
@@ -385,7 +397,7 @@ if (window.__CATALOG_APP_INITIALIZED__) {
     // Ações de Cópia
     document.getElementById('btnCopyPath').onclick = () => {
       if (currentSelectedItem) {
-        navigator.clipboard.writeText(currentSelectedItem.abs_path || currentSelectedItem.path);
+        navigator.clipboard.writeText(resolveAbs(currentSelectedItem.abs_path) || currentSelectedItem.path);
         alert('Caminho copiado com sucesso!');
       }
     };
@@ -395,7 +407,7 @@ if (window.__CATALOG_APP_INITIALIZED__) {
         let usage = '';
         if (currentSelectedItem.kind === 'Workflow') usage = currentSelectedItem.name;
         else if (currentSelectedItem.kind === 'Agent') usage = currentSelectedItem.name;
-        else usage = `ln -s "${currentSelectedItem.abs_path}" .claude/skills/${currentSelectedItem.name}`;
+        else usage = `ln -s "${resolveAbs(currentSelectedItem.abs_path)}" .claude/skills/${currentSelectedItem.name}`;
         navigator.clipboard.writeText(usage);
         alert(`Invocação copiada: ${usage}`);
       }

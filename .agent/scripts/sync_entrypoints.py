@@ -21,6 +21,7 @@ Only symlinks are ever created or removed; a real file or folder in a target is 
 import argparse
 import os
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -132,6 +133,29 @@ def hub_skill_names(agent: Path) -> set[str]:
     return names
 
 
+def is_junction(path: Path) -> bool:
+    check = getattr(os.path, "isjunction", None)
+    return bool(check and check(path))
+
+
+def make_link(link: Path, rel: str, src: Path) -> str:
+    """Create the symlink. On Windows without symlink privilege (WinError 1314) fall back to a
+    junction (folders, no privilege needed) or a plain copy (files). Returns how it was linked."""
+    try:
+        link.symlink_to(rel)
+        return "linked"
+    except OSError:
+        if os.name != "nt":
+            raise
+    if src.is_dir():
+        done = subprocess.run(["cmd", "/c", "mklink", "/J", str(link), str(src.resolve())], capture_output=True, text=True)
+        if done.returncode == 0:
+            return "linked (junction; enable Windows Developer Mode for real symlinks)"
+        raise OSError(f"cannot link {link}: {done.stderr.strip() or done.stdout.strip()}")
+    shutil.copy2(src, link)
+    return "copied (no symlink privilege; re-run this script after hub updates; enable Windows Developer Mode for real symlinks)"
+
+
 def sync_links(check_only: bool) -> list[str]:
     problems = []
     for kind_dir, kind, target_rel in LINKS:
@@ -194,6 +218,19 @@ def sync_links(check_only: bool) -> list[str]:
             if link.is_symlink() and link.exists():
                 problems.append(f"symlink points elsewhere, left untouched: {target_rel}/{name} -> {os.readlink(link)}")
                 continue
+            if os.name == "nt" and link.exists() and not link.is_symlink():
+                # Windows fallback results: a junction to the source folder, or a copy of the source file.
+                if kind == "dir" and is_junction(link) and link.resolve() == s.resolve():
+                    continue
+                if kind == "file" and link.is_file() and not (is_claude_agent and link.read_text(encoding="utf-8", errors="ignore").startswith(GENERATED_AGENT_HEADER_PREFIX)):
+                    if link.read_bytes() == s.read_bytes():
+                        continue
+                    if check_only:
+                        problems.append(f"out of date copy: {target_rel}/{name}")
+                    else:
+                        shutil.copy2(s, link)
+                        print(f"  updated copy {target_rel}/{name}")
+                    continue
             if link.exists():
                 if is_claude_agent and link.is_file() and not link.is_symlink():
                     first_line = link.read_text(encoding="utf-8", errors="ignore").splitlines()[0] if link.stat().st_size > 0 else ""
@@ -214,8 +251,8 @@ def sync_links(check_only: bool) -> list[str]:
             else:
                 if link.is_symlink():
                     link.unlink()
-                link.symlink_to(rel)
-                print(f"  linked {target_rel}/{name}")
+                how = make_link(link, rel, s)
+                print(f"  {how} {target_rel}/{name}")
         if target.is_dir():
             for existing in target.iterdir():
                 if existing.name in wanted:

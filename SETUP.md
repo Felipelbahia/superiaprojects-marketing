@@ -58,7 +58,7 @@ python3 .agent/scripts/sync_entrypoints.py --check
 | `TypeError: unsupported operand type(s) for \|` | Python 3.9 ou mais antigo rodando `assemble_rules.py` ou `check_local_rules.py` | conferir `python3 --version`, instalar a 3.10+ e recriar o `.venv` com ela |
 | `ModuleNotFoundError: pptx` (ou PIL, xlsxwriter) | libs não instaladas | `.venv/bin/pip install -r requirements.txt` |
 | Skill não aparece no Claude Code | links `.claude/` desatualizados | `python3 .agent/scripts/sync_entrypoints.py` |
-| `pre-commit: kit scripts not found` | máquina sem o kit `0 Padrões` | é só um aviso, o commit segue; para ativar as checagens, clone o kit e ajuste `KIT` em `.githooks/pre-commit` |
+| `pre-commit: kit scripts not found` | máquina sem o kit `0 Padrões` | é só um aviso, o commit segue; para ativar as checagens, instale o `0 Padrões` ao lado deste projeto (ou aponte `SUPER_IA_PROJECTS_PATH` para ele) |
 | Hook de commit não roda | hooks não ativados no clone | `git config core.hooksPath .githooks` |
 | Chave de API ausente | `.env` não criado | `cp .env.example .env` e preencher a chave da plataforma usada |
 

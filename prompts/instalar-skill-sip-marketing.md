@@ -1,5 +1,6 @@
 # Prompt: Instalar/Atualizar o acesso ao hub "SIP - Marketing" em outro projeto
 
+Funciona em macOS, Windows e Linux (o prompt detecta o sistema e pergunta onde está a pasta do hub).
 Cole isto numa sessão do Claude Code dentro do projeto que precisa consultar o
 hub central de marketing (SIP - Marketing). Instala sempre o resolver e, dos
 agents e workflows do hub, só os que você escolher (o prompt mostra as tabelas e pergunta):
@@ -14,7 +15,31 @@ hub) e um symlink relativo em .claude/ (pro symlink local em .agent/) — isso d
 acesso tanto ao Claude Code quanto a Google Antigravity/Gemini/Cursor, que leem
 .agent/ direto e não dependem do stub global do 0 Padrões.
 
-REGRA PARA TODO SYMLINK DESTE PROMPT: crie sempre com `ln -sfn <destino> <link>` (nunca
+PASSO 0 (antes de tudo): descubra o sistema e o hub.
+   a) Sistema: rode `uname -s 2>/dev/null || echo %OS%`. Darwin = macOS; Linux = Linux;
+      Windows_NT ou MINGW/MSYS/CYGWIN = Windows. Anuncie o resultado numa linha.
+      Em Windows use `python` onde este prompt diz <PY>; em macOS/Linux use `python3`.
+   b) Hub (<HUB>): é a pasta do repositório "0 Mkt" nesta máquina. Procure, nesta ordem:
+      a variável de ambiente MARKETING_HUB_PATH; o caminho do manifesto
+      .agent/SIPS-CONSUMIDOS.md deste projeto (linha "Hub:"), se existir; senão
+      PERGUNTE-ME o caminho da pasta "0 Mkt". Só aceite se existir
+      <HUB>/.agent/skills/sip-marketing/SKILL.md. Nunca assuma o caminho de outra máquina
+      (o de quem criou o prompt), e nunca escreva o caminho de outro usuário em arquivo
+      algum. Se eu não tiver o repositório, pare e me peça para cloná-lo antes.
+   c0) Pré-requisito: o hub "0 Padrões" (kit base) deve estar instalado ANTES deste. Confira se
+      existe a pasta irmã de <HUB> chamada "0 Padrões" (ou SUPER_IA_PROJECTS_PATH) com
+      .agent/scripts/sync_entrypoints.py. Se não existir, pare e me avise para instalar o
+      0 Padrões primeiro; não improvise.
+   c) Links: no macOS/Linux use `ln -sfn` (regra abaixo). No Windows:
+      1º tente `New-Item -ItemType SymbolicLink` (ou `mklink`); se der WinError 1314 /
+      "privilégio não mantido", NÃO pare: para PASTAS use junction (`mklink /J <link>
+      <destino>`, sem privilégio de administrador); para ARQUIVOS (agents/workflows)
+      copie o arquivo e registre no manifesto "modo: cópia (sem symlink)" — avise que,
+      nesse caso, atualizações do hub exigem colar este prompt de novo. Sugira também ativar
+      o Modo Desenvolvedor do Windows para ter symlink de verdade.
+      Caminhos no Windows: use barras normais ou aspas; <HUB> pode ter espaço e acento.
+
+REGRA PARA TODO SYMLINK DESTE PROMPT (macOS/Linux; Windows: ver 0c): crie sempre com `ln -sfn <destino> <link>` (nunca
 só com `-s`). `-f` recria um link velho/quebrado; `-n` impede que, se <link> já for um
 symlink para uma pasta, o novo link seja criado DENTRO dessa pasta (poluiria o hub).
 Antes de criar, confira <link> com `test -L` e `readlink`:
@@ -28,7 +53,7 @@ Antes de criar, confira <link> com `test -L` e `readlink`:
   (passo 10); um item pulado entra em "Vistos no hub" e não em "Agents"/"Workflows",
   e só volta a ser oferecido se eu pedir para mudar a escolha.
 REGRA PARA TODA REMOÇÃO DESTE PROMPT: só remova um <link> que seja symlink (`test -L`)
-E cujo destino aponte para dentro de "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt". Leia o destino com `readlink`
+E cujo destino aponte para dentro de "<HUB>". Leia o destino com `readlink`
 SEM `-f` (com `-f`, um link quebrado sai com erro no macOS): link de .agent/ tem o
 caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o link de
 .agent/ de mesmo nome, então confira esse. Nunca remova arquivo ou pasta real.
@@ -36,7 +61,7 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
 1. Skill resolver (obrigatório):
    - Crie a pasta .agent/skills/ se ela não existir.
    - Crie (ou recrie) o symlink absoluto com `ln -sfn`:
-     .agent/skills/sip-marketing -> "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/skills/sip-marketing"
+     .agent/skills/sip-marketing -> "<HUB>/.agent/skills/sip-marketing"
    - Crie a pasta .claude/skills/ se ela não existir.
    - Crie o symlink relativo com `ln -sfn` (pro symlink acima, não direto pro hub):
      .claude/skills/sip-marketing -> ../../.agent/skills/sip-marketing
@@ -48,7 +73,7 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
 
 3. Escolha de agents e workflows:
    - Leia as tabelas "Agents do hub" e "Workflows do hub" em
-     "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/skills/sip-marketing/SKILL.md" (nome + "use quando").
+     "<HUB>/.agent/skills/sip-marketing/SKILL.md" (nome + "use quando").
    - Leia a entrada deste hub em .agent/SIPS-CONSUMIDOS.md, se existir:
      "Agents"/"Workflows" (escolhidos) e "Vistos no hub" (oferecidos antes).
    - Primeira instalação (sem entrada): mostre as duas tabelas e pergunte
@@ -64,9 +89,9 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
    - Tabelas vazias: pule este passo e os passos 4 e 5 sem erro.
 
 4. Instale só o escolhido (seguindo a regra de symlink acima):
-   - Cada agent <nome>: .agent/agents/<nome>.md -> "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/agents/<nome>.md"
+   - Cada agent <nome>: .agent/agents/<nome>.md -> "<HUB>/.agent/agents/<nome>.md"
      (absoluto) e .claude/agents/<nome>.md -> ../../.agent/agents/<nome>.md (relativo).
-   - Cada workflow <nome>: .agent/workflows/<nome>.md -> "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/workflows/<nome>.md"
+   - Cada workflow <nome>: .agent/workflows/<nome>.md -> "<HUB>/.agent/workflows/<nome>.md"
      (absoluto), e .claude/commands/<nome>.md e .cursor/commands/<nome>.md ->
      ../../.agent/workflows/<nome>.md (relativos).
    - Crie as pastas que faltarem.
@@ -78,7 +103,7 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
 6. Confirme com `ls -la` cada symlink criado (os de .agent/ E os de .claude/)
    e que o .md correspondente é legível através de cada um. Depois, na raiz
    deste projeto, rode
-   `python3 "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Padrões/.agent/scripts/sync_entrypoints.py" --check`:
+   `<PY> "<HUB>/.agent/scripts/sync_entrypoints.py" --check`:
    tem de sair com 0. Se acusar erro de link ou skill do hub, pare e relate
    (não apague links para "limpar" o aviso).
 7. Não copie conteúdo de nenhum desses arquivos para este projeto — mantenha
@@ -94,8 +119,8 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
    — são symlinks com path absoluto desta máquina, não portáveis entre clones.
 9. Registre esta instalação no hub (bookkeeping, não é conteúdo de domínio —
    pode escrever direto, sem passar pelo inbox):
-   - Veja o formato em "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/instalacoes/README.md".
-   - Crie ou atualize "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/instalacoes/<nome-deste-projeto>.md" com:
+   - Veja o formato em "<HUB>/instalacoes/README.md".
+   - Crie ou atualize "<HUB>/instalacoes/<nome-deste-projeto>.md" com:
      nome e caminho absoluto deste projeto, data de hoje, e os recursos
      instalados (skill sempre; agents/workflows escolhidos, ou "nenhum").
 10. Atualize o manifesto local deste projeto, `.agent/SIPS-CONSUMIDOS.md`
@@ -105,14 +130,14 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
    - Formato de cada entrada (uma por SIP instalado neste projeto):
      ```markdown
      ## SIP - Marketing (`sip-marketing`)
-     - Hub: /Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt
+     - Hub: <HUB>
      - Instalado/atualizado em: AAAA-MM-DD
      - Skill: sip-marketing
      - Agents: <escolhidos, ou "nenhum">
      - Workflows: <escolhidos, ou "nenhum">
      - Vistos no hub: agents <todos os nomes da tabela hoje>; workflows <idem>
      - Conflitos: <"nome: pulado" | "nome: meu arquivo renomeado para <novo>" | "nome: substituído (meu em <link>.bak-AAAA-MM-DD)", ou "nenhum">
-     - Para atualizar: cole de novo "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/prompts/instalar-skill-sip-marketing.md"
+     - Para atualizar: cole de novo "<HUB>/prompts/instalar-skill-sip-marketing.md"
      ```
    - "Vistos no hub" é o que permite, na próxima vez, perguntar só os novos.
    - Se o arquivo já tiver uma entrada pra este hub (de uma instalação
@@ -121,7 +146,7 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
 
 ## Por que o padrão duplo (symlink de symlink) e não um só
 
-A fonte de verdade de cada recurso fica no hub (`/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/skills/`,
+A fonte de verdade de cada recurso fica no hub (`<HUB>/.agent/skills/`,
 `.agent/agents/`, `.agent/workflows/`). O symlink absoluto em `.agent/` deste
 projeto aponta direto pro hub; o symlink relativo em `.claude/` aponta pro
 symlink local em `.agent/`, não direto pro hub. Essa cadeia de dois symlinks
@@ -154,12 +179,12 @@ quem instalou via este prompt não depende dele.
 ## Via de volta: contribuir com o hub
 
 A skill instalada também sabe devolver conhecimento ao hub — nunca edita os
-arquivos compartilhados direto, só deixa um arquivo em `/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/inbox/`
+arquivos compartilhados direto, só deixa um arquivo em `<HUB>/inbox/`
 para revisão manual. Ver `inbox/README.md` no hub para o formato esperado.
 
 ## Registro desta instalação no hub
 
-Este prompt também registra quem instalou, em `/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/instalacoes/`
+Este prompt também registra quem instalou, em `<HUB>/instalacoes/`
 (ver `instalacoes/README.md` no hub) — isto não é conteúdo de domínio, é
 bookkeeping de quem consome o hub, então pode ser escrito direto, sem passar
 pelo inbox. Serve pro dono do hub saber, quando mudar algo, quais projetos

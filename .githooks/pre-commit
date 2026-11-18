@@ -1,15 +1,12 @@
 #!/usr/bin/env bash
 # Versioned pre-commit hook for 0 Mkt (SIP - Marketing): fast, deterministic checks only (a few seconds).
 # Activate once per clone: git config core.hooksPath .githooks
-# The checks run the kit's scripts (0 Padrões); on a machine without the kit they are skipped with a notice.
+# The kit checks run the scripts of 0 Padrões (next to this repo, or SUPER_IA_PROJECTS_PATH); without the kit they are skipped with a notice.
+# The personal-path check is local to this repo and always runs.
 set -u
 cd "$(git rev-parse --show-toplevel)" || exit 1
-KIT="/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Padrões/.agent/scripts"
-if [ ! -d "$KIT" ]; then
-  echo "pre-commit: kit scripts not found at $KIT; checks skipped" >&2
-  exit 0
-fi
-
+PY="python3"; command -v python3 >/dev/null 2>&1 || PY="python"
+KIT="${SUPER_IA_PROJECTS_PATH:-$(cd .. 2>/dev/null && pwd)/0 Padrões}/.agent/scripts"
 failed=0
 run_check() {
   local label="$1"; shift
@@ -21,9 +18,14 @@ run_check() {
   fi
 }
 
-run_check "rule-file parity (sync_rules.py --check)" python3 "$KIT/sync_rules.py" --check
-run_check "AI entrypoints (sync_entrypoints.py --check)" python3 "$KIT/sync_entrypoints.py" --check
-run_check "SIP hub (check_sip_hub.py)" python3 "$KIT/check_sip_hub.py" . sip-marketing
+run_check "personal paths (check_personal_paths.py)" "$PY" .agent/scripts/check_personal_paths.py --staged
+if [ -d "$KIT" ]; then
+  run_check "rule-file parity (sync_rules.py --check)" "$PY" "$KIT/sync_rules.py" --check
+  run_check "AI entrypoints (sync_entrypoints.py --check)" "$PY" "$KIT/sync_entrypoints.py" --check
+  run_check "SIP hub (check_sip_hub.py)" "$PY" "$KIT/check_sip_hub.py" . sip-marketing
+else
+  echo "pre-commit: kit scripts not found at $KIT; kit checks skipped" >&2
+fi
 
 if [ "$failed" -ne 0 ]; then
   echo "pre-commit: commit refused. Fix the items above (sync_rules.py, sync_entrypoints.py, build_sip_index.py --hub .)." >&2

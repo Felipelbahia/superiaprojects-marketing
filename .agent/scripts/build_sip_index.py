@@ -10,12 +10,15 @@ Usage (from the hub root):
     python3 .agent/scripts/build_sip_index.py --check  # exit 1 if a table is stale
 """
 
+import os
 import subprocess
 import sys
 from pathlib import Path
 
-KIT_GENERATOR = Path("/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Padrões/.agent/scripts/build_sip_index.py")
 HUB = Path(__file__).resolve().parent.parent.parent
+# Kit location: env SUPER_IA_PROJECTS_PATH, else the "0 Padrões" folder next to this hub.
+KIT_DIR = Path(os.environ.get("SUPER_IA_PROJECTS_PATH", str(HUB.parent / "0 Padrões")))
+KIT_GENERATOR = KIT_DIR / ".agent" / "scripts" / "build_sip_index.py"
 
 
 def main() -> int:

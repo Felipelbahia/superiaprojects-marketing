@@ -74,3 +74,6 @@ instalacoes/*
 # Variantes de .env (regras do kit, prompt 01)
 *.env
 !*.env.example
+
+# Manifesto local de SIPs (guarda o caminho real desta máquina; não versionar)
+.agent/SIPS-CONSUMIDOS.md

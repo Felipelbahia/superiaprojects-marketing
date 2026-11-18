@@ -26,7 +26,9 @@ from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
 CWD = Path.cwd().resolve()
-GLOBAL_PADROES_DIR = Path(os.environ.get("SUPER_IA_PROJECTS_PATH", "/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Padrões"))
+_HUB_ROOT = Path(__file__).resolve().parent.parent.parent
+# Kit location: env SUPER_IA_PROJECTS_PATH, else the "0 Padrões" folder next to this hub (no machine-specific path).
+GLOBAL_PADROES_DIR = Path(os.environ.get("SUPER_IA_PROJECTS_PATH", str(_HUB_ROOT.parent / "0 Padrões"))).resolve()
 GLOBAL_MKT_DIR = Path(os.environ.get("MARKETING_HUB_PATH", str(CWD)))
 
 SCRIPTS_DIR = Path(__file__).resolve().parent
@@ -80,6 +82,23 @@ ESSENTIAL_RESOURCES = [
     ("project-defines", "Skill", "Super IA Projects", "Governança documental de projetos governados por pasta _projectdefines/."),
 ]
 
+def rel_to_cwd(p: Path) -> str:
+    """Path relative to the project root being built, so the data holds no machine-specific path.
+    catalog-app.js turns it back into a real path in the viewer's browser."""
+    try:
+        return Path(os.path.relpath(p.resolve(), CWD)).as_posix()
+    except ValueError:  # other drive on Windows
+        return p.name
+
+
+_HOME_PATH = re.compile(r"(?:/Users/[^/\s\"`<>]+|[A-Za-z]:[\\\\/]+Users[\\\\/]+[^\\\\/\s\"`<>]+)(?=[/\\\\])")
+
+
+def scrub(text: str) -> str:
+    """Drop the machine owner's home folder from embedded file content (the catalog is published)."""
+    return _HOME_PATH.sub("<HOME>", text)
+
+
 def load_cache() -> dict:
     if CACHE_FILE.exists():
         try:
@@ -89,8 +108,11 @@ def load_cache() -> dict:
     return {}
 
 def save_cache(cache: dict):
-    SCRIPTS_DIR.mkdir(parents=True, exist_ok=True)
-    CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+    try:
+        SCRIPTS_DIR.mkdir(parents=True, exist_ok=True)
+        CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+    except OSError as exc:  # the catalog is already written; a cache failure must not abort the run
+        print(f"⚠️ Cache de traduções não salvo ({CACHE_FILE}): {exc}")
 
 def is_portuguese(text: str) -> bool:
     pt_words = {"para", "com", "não", "quando", "este", "esta", "usar", "use", "crie", "como", "está", "estão", "desenvolvimento", "equipe", "recursos", "especialista", "análise", "relatórios", "geração", "estratégia", "padrões", "criação", "produção"}
@@ -374,7 +396,7 @@ def scan_agent_dir(agent_dir: Path, source_name: str, cache: dict, project_name:
                 text_exts = {".md", ".txt", ".py", ".sh", ".bash", ".js", ".ts", ".json", ".yaml", ".yml", ".html", ".css", ".sql", ".csv", ".toml", ".ini", ".env"}
                 other_files = []
                 for p in sorted(skill_dir.glob("**/*")):
-                    if p.is_file() and p.name != "SKILL.md" and not p.name.startswith("."):
+                    if p.is_file() and p.name != "SKILL.md" and not p.name.startswith(".") and "__pycache__" not in p.parts and p.suffix.lower() != ".pyc":
                         try:
                             rel = str(p.relative_to(skill_dir))
                             f_content = ""
@@ -386,7 +408,7 @@ def scan_agent_dir(agent_dir: Path, source_name: str, cache: dict, project_name:
                             other_files.append({
                                 "name": p.name,
                                 "rel_path": rel,
-                                "abs_path": str(p.resolve()),
+                                "abs_path": rel_to_cwd(p),
                                 "content": f_content
                             })
                         except Exception:
@@ -398,7 +420,7 @@ def scan_agent_dir(agent_dir: Path, source_name: str, cache: dict, project_name:
                     "source": source_name,
                     "desc_en": desc,
                     "path": f".agent/skills/{name}/SKILL.md",
-                    "abs_path": str(skill_file.resolve()),
+                    "abs_path": rel_to_cwd(skill_file),
                     "content": content[:12000],
                     "files": other_files,
                     "_meta": meta
@@ -424,7 +446,7 @@ def scan_agent_dir(agent_dir: Path, source_name: str, cache: dict, project_name:
                 "source": source_name,
                 "desc_en": desc,
                 "path": f".agent/workflows/{wf_file.name}",
-                "abs_path": str(wf_file.resolve()),
+                "abs_path": rel_to_cwd(wf_file),
                 "content": content[:12000],
                 "files": [],
                 "_meta": meta
@@ -450,7 +472,7 @@ def scan_agent_dir(agent_dir: Path, source_name: str, cache: dict, project_name:
                 "source": source_name,
                 "desc_en": desc,
                 "path": f".agent/agents/{ag_file.name}",
-                "abs_path": str(ag_file.resolve()),
+                "abs_path": rel_to_cwd(ag_file),
                 "content": content[:12000],
                 "files": [],
                 "_meta": meta
@@ -579,7 +601,7 @@ def generate_html_dashboard(items: list[dict], title: str, subtitle: str) -> str
             "files": it.get("files", [])
         })
 
-    raw_json = json.dumps(clean_items, ensure_ascii=False)
+    raw_json = scrub(json.dumps(clean_items, ensure_ascii=False))
     # CRÍTICO: Sanitização anti-quebra de tag de script no HTML
     safe_json = raw_json.replace("</script>", "<\\/script>").replace("<!--", "<\\!--")
     
@@ -593,8 +615,7 @@ def generate_html_dashboard(items: list[dict], title: str, subtitle: str) -> str
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <!-- CSS da Aplicação: 1º Mestre Central (Zero-Sync Runtime), 2º Fallback Local -->
-  <link rel="stylesheet" href="file:///Users/macbookpro/Documents/IA Projects/_Plataforma/0 Padrões/.agent/catalog-app.css">
+  <!-- CSS da Aplicação: cópia local (sincronizada do kit pelo gerador) -->
   <link rel="stylesheet" href="./catalog-app.css">
 </head>
 <body>
@@ -752,13 +773,10 @@ def generate_html_dashboard(items: list[dict], title: str, subtitle: str) -> str
     window.EMBEDDED_CATALOG_DATA = {safe_json};
   </script>
 
-  <!-- Dynamic Loader Scripts (Tentam carregar dados ao vivo das 3 bases) -->
-  <script src="file:///Users/macbookpro/Documents/IA Projects/_Plataforma/0 Padrões/.agent/catalog-data.js"></script>
-  <script src="file:///Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/catalog-data.js"></script>
+  <!-- Dynamic Loader Scripts (carrega os dados locais) -->
   <script src="./catalog-data.js"></script>
 
-  <!-- JS da Aplicação: 1º Mestre Central (Zero-Sync Runtime), 2º Fallback Local -->
-  <script src="file:///Users/macbookpro/Documents/IA Projects/_Plataforma/0 Padrões/.agent/catalog-app.js"></script>
+  <!-- JS da Aplicação: cópia local (sincronizada do kit pelo gerador) -->
   <script src="./catalog-app.js"></script>
 </body>
 </html>
@@ -787,7 +805,7 @@ def build_for_target(target_dir: Path, source_name: str, cache: dict, is_primary
         "items": local_items
     }
     
-    raw_js = json.dumps(js_payload, ensure_ascii=False, indent=2)
+    raw_js = scrub(json.dumps(js_payload, ensure_ascii=False, indent=2))
     safe_js = raw_js.replace("</script>", "<\\/script>").replace("<!--", "<\\!--")
     js_content = f"window.{var_name} = {safe_js};\n"
     data_js_path.write_text(js_content, encoding="utf-8")

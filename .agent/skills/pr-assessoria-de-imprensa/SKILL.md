@@ -136,7 +136,7 @@ Não envie releases para caixas de entrada genéricas (`redacao@...`, `contato@.
 - Mapear de 15 a 30 repórteres qualificados.
 - Verificar os últimos 3 a 5 artigos publicados pelo jornalista antes de disparar.
 - Cruzar com a régua de Tiers de veículos no Brasil documentada em [references/brazil-media-landscape.md](references/brazil-media-landscape.md).
-- *Integração com ecossistema:* Aproveite a base mapeada do projeto [RSS Feed](<file:///Users/macbookpro/Documents/IA%20Projects/Compartilhado/RSS%20Feed>) para identificar portais, editorias e feeds ativos por região e setor.
+- *Integração com ecossistema:* Aproveite a base mapeada do projeto [RSS Feed]((pasta do projeto RSS Feed, ao lado dos demais projetos)) para identificar portais, editorias e feeds ativos por região e setor.
 
 ---
 

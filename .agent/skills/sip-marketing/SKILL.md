@@ -7,13 +7,15 @@ description: Use whenever the current task involves marketing, content, copywrit
 
 ## Por que isso existe
 
-O projeto `SIP - Marketing` (`/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt`) é a referência central de marketing: skills especialistas (lista gerada abaixo), agents de marketing em `.agent/agents/` e workflows `/comando` em `.agent/workflows/`. Esse conhecimento só é descoberto automaticamente dentro do próprio hub.
+O projeto `SIP - Marketing` (`<HUB>`) é a referência central de marketing: skills especialistas (lista gerada abaixo), agents de marketing em `.agent/agents/` e workflows `/comando` em `.agent/workflows/`. Esse conhecimento só é descoberto automaticamente dentro do próprio hub.
 
 **Esta skill é um redirecionador:** o projeto consumidor instala só ela (um symlink). Ela não ensina marketing; leva até quem ensina. Skills, agents e workflows ficam no hub e são lidos **por caminho absoluto**. Não symlinke nem copie nenhum deles para o projeto.
 
 ## Passo 0 — acesso ao caminho
 
-Leitura de arquivo fora do diretório de trabalho pode pedir aprovação do usuário na primeira vez. Isso é esperado. Sempre use o caminho absoluto entre aspas: `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt"`.
+`<HUB>` é a pasta deste hub (repositório "0 Mkt") nesta máquina. Descubra-a assim: variável de ambiente `MARKETING_HUB_PATH`; senão a linha `Hub:` da entrada "SIP - Marketing" em `.agent/SIPS-CONSUMIDOS.md` do projeto; senão pergunte ao usuário e confirme que existe `<HUB>/.agent/skills/sip-marketing/SKILL.md`. Nunca use o caminho de outra máquina.
+
+Leitura de arquivo fora do diretório de trabalho pode pedir aprovação do usuário na primeira vez. Isso é esperado. Sempre use o caminho absoluto de `<HUB>` entre aspas: `"<HUB>"`.
 
 ## Passo 1 — marca e destino ficam no projeto consumidor
 
@@ -35,21 +37,21 @@ As skills do hub foram escritas para o 0 Mkt, que guarda marcas em `_brands/<mar
 ## Modo consulta (padrão — prefira este)
 
 1. Ache a skill na tabela abaixo pela coluna "Use quando".
-2. Leia só o `SKILL.md` dela: `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/skills/<nome>/SKILL.md"`. Abra `references/` da skill só se o `SKILL.md` mandar.
+2. Leia só o `SKILL.md` dela: `"<HUB>/.agent/skills/<nome>/SKILL.md"`. Abra `references/` da skill só se o `SKILL.md` mandar.
 3. Aplique o conteúdo inline. Avise o usuário em uma linha que a resposta veio do hub `SIP - Marketing`, não de conhecimento genérico.
 
 ## Modo dispatch (só para construções grandes)
 
 Não existe invocação nativa de agente cross-projeto no Claude Code. Disparar um agent do hub é montar um subagente genérico (`Agent`, `subagent_type: "general-purpose"`) com a persona colada no prompt:
 
-1. Liste `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/agents/"` e escolha o agent cujo nome bate com a tarefa (ex.: `copy-redacao-publicitaria`, `social-calendario-e-distribuicao`, `pr-relacoes-publicas`).
+1. Liste `"<HUB>/.agent/agents/"` e escolha o agent cujo nome bate com a tarefa (ex.: `copy-redacao-publicitaria`, `social-calendario-e-distribuicao`, `pr-relacoes-publicas`).
 2. Leia o `.md` inteiro do agent e as skills que ele cita no frontmatter `skills:`.
 3. Chame `Agent` com a persona + a tarefa + o caminho da marca e do mapa de destinos **do projeto consumidor**.
 4. Revise o resultado com `geral-anti-slop` antes de entregar.
 
 ## Skills do hub
 
-Arquivo: `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/skills/<nome>/SKILL.md"`.
+Arquivo: `"<HUB>/.agent/skills/<nome>/SKILL.md"`.
 
 <!-- skills:start group=prefix (gerado por build_sip_index.py — não edite à mão) -->
 
@@ -242,7 +244,7 @@ Total: 98.
 
 ## Agents do hub
 
-Arquivo: `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/agents/<nome>.md"`. Um agent da tabela é a
+Arquivo: `"<HUB>/.agent/agents/<nome>.md"`. Um agent da tabela é a
 persona preferida pro Modo dispatch acima: leia o `.md` inteiro (name +
 description + corpo) antes de montar o subagente. Se este projeto escolheu
 instalá-lo, ele também está em `.claude/agents/<nome>.md` (mesmo conteúdo).
@@ -291,7 +293,7 @@ Total: 33.
 
 ## Workflows do hub
 
-Arquivo: `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/.agent/workflows/<nome>.md"`. Um workflow é um
+Arquivo: `"<HUB>/.agent/workflows/<nome>.md"`. Um workflow é um
 procedimento `/nome`: se o pedido bate com uma linha da tabela, leia o `.md`
 e siga o procedimento; não invente um `/comando` que não está na tabela. Se
 este projeto escolheu instalá-lo, ele também aparece como `/nome` nativo.
@@ -431,8 +433,8 @@ disser que vai usá-lo com frequência neste projeto. Não instale por conta pr�
 
 Caso contrário, nunca edite essas pastas do hub a partir de um projeto consumidor: elas são lidas por caminho absoluto por todo projeto que consome o hub, e uma edição sem curadoria propagaria na hora. Em vez disso:
 
-1. Leia o formato em `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/inbox/README.md"`.
-2. Crie `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/inbox/NNN-<assunto>.md"` (próximo número livre da pasta,
+1. Leia o formato em `"<HUB>/inbox/README.md"`.
+2. Crie `"<HUB>/inbox/NNN-<assunto>.md"` (próximo número livre da pasta,
    contando `inbox/arquivo/`) com todas as seções do formato, escrito para quem
    nunca viu a conversa.
 3. Avise o usuário que a contribuição ficou pendente de revisão.
@@ -443,7 +445,7 @@ Caso contrário, nunca edite essas pastas do hub a partir de um projeto consumid
   que esta skill, um agent, um workflow ou a estrutura do hub mudar).
 - Para atualizar a instalação num projeto (refazer links, escolher entre os
   agents/workflows novos do hub, mudar a escolha): cole de novo o prompt
-  `"/Users/macbookpro/Documents/IA Projects/_Plataforma/0 Mkt/prompts/instalar-skill-sip-marketing.md"` numa sessão daquele projeto.
+  `"<HUB>/prompts/instalar-skill-sip-marketing.md"` numa sessão daquele projeto.
 - A data em que **cada projeto** instalou ou atualizou fica no
   `.agent/SIPS-CONSUMIDOS.md` dele. Se for anterior à data acima, ofereça
   rodar o prompt.

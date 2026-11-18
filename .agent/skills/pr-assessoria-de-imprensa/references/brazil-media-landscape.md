@@ -54,10 +54,10 @@ Formatos de mídia moderna que geram alta taxa de citação por modelos de intel
 
 ## 2. Integração com a Base do Projeto `RSS Feed`
 
-O nosso ecossistema conta com o projeto interno **[RSS Feed](file:///Users/macbookpro/Documents/IA%20Projects/Compartilhado/RSS%20Feed)**, que monitora continuamente mais de 290 veículos e portais de notícias no Brasil.
+O nosso ecossistema conta com o projeto interno **[RSS Feed](pasta do projeto RSS Feed, ao lado dos demais projetos)**, que monitora continuamente mais de 290 veículos e portais de notícias no Brasil.
 
 Ao preparar uma lista de disparos ou monitorar temas para pautas:
-1. Consulte o arquivo [fontes_noticias_brasil.csv](file:///Users/macbookpro/Documents/IA%20Projects/Compartilhado/RSS%20Feed/fontes_noticias_brasil.csv) para identificar:
+1. Consulte o arquivo [fontes_noticias_brasil.csv](`<RSS_FEED>/fontes_noticias_brasil.csv`) para identificar:
    - Veículos locais por UF (São Paulo, Rio de Janeiro, Minas Gerais, Sul, Nordeste, Centro-Oeste).
    - Editorias mapeadas e links diretos dos portais.
 2. Utilize os dados de clipping para verificar quais veículos estão cobrindo os tópicos relacionados à sua marca.

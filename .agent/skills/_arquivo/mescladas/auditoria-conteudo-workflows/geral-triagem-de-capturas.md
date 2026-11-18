@@ -28,11 +28,11 @@ No passive filing. Every capture becomes a decision point.
 ## Paths
 
 ```
-Inbox:      /Users/eddale/Documents/COPYobsidian/MAGI/Zettelkasten/Inbox/
-Processed:  /Users/eddale/Documents/COPYobsidian/MAGI/Zettelkasten/Inbox/Processed/
-Daily note: /Users/eddale/Documents/COPYobsidian/MAGI/Zettelkasten/YYYY-MM-DD.md
-Projects:   /Users/eddale/Documents/COPYobsidian/MAGI/Zettelkasten/PROJECT - *.md
-Contacts:   /Users/eddale/Documents/COPYobsidian/MAGI/Zettelkasten/CONTACT - *.md
+Inbox:      <COFRE_OBSIDIAN>/Zettelkasten/Inbox/
+Processed:  <COFRE_OBSIDIAN>/Zettelkasten/Inbox/Processed/
+Daily note: <COFRE_OBSIDIAN>/Zettelkasten/YYYY-MM-DD.md
+Projects:   <COFRE_OBSIDIAN>/Zettelkasten/PROJECT - *.md
+Contacts:   <COFRE_OBSIDIAN>/Zettelkasten/CONTACT - *.md
 ```
 
 ---
@@ -57,7 +57,7 @@ Tasks go to Ready section only - Captures section is for document links.
 **Important:** Only check files directly in Inbox/, NOT subdirectories.
 
 ```bash
-ls /Users/eddale/Documents/COPYobsidian/MAGI/Zettelkasten/Inbox/*.md 2>/dev/null
+ls <COFRE_OBSIDIAN>/Zettelkasten/Inbox/*.md 2>/dev/null
 ```
 
 If no files found: Report "No captures waiting" and stop.
@@ -68,7 +68,7 @@ If files found: Continue to Step 2.
 Pull active project names from mission-context skill AND:
 
 ```
-Glob: /Users/eddale/Documents/COPYobsidian/MAGI/Zettelkasten/PROJECT - *.md
+Glob: <COFRE_OBSIDIAN>/Zettelkasten/PROJECT - *.md
 ```
 
 Build a list of project names for matching.
@@ -203,7 +203,7 @@ If a capture has no URL but references external content, note this: `(source nee
 
 For each item routed to Ready:
 1. Open today's daily note at:
-   `/Users/eddale/Documents/COPYobsidian/MAGI/Zettelkasten/YYYY-MM-DD.md`
+   `<COFRE_OBSIDIAN>/Zettelkasten/YYYY-MM-DD.md`
 2. Find the `## Ready` section
 3. Use Edit tool to append the task in the format shown above
 4. **Do NOT add to `## Captures`** - that section is for document links only
