@@ -96,11 +96,17 @@ def is_hub_skill_link(link: Path, name: str) -> bool:
 
     0 Padrões keeps a real stub in .agent/skills/sip-<x> and links .claude/skills/sip-<x> to the hub
     resolver on purpose (projetos/_sips.md, "Exceção: 0 Padrões não usa o padrão duplo").
+    The hub keeps the resolver at `<hub>/prompts/resolver/<name>` (new layout) or `<hub>/.agent/skills/<name>` (legacy).
     """
     if not link.is_symlink() or not link.exists():
         return False
     return any(
-        t.name == name and t.parent.name == "skills" and t.parent.parent.name == ".agent" and (t / "SKILL.md").is_file()
+        t.name == name
+        and (t / "SKILL.md").is_file()
+        and (
+            (t.parent.name == "skills" and t.parent.parent.name == ".agent")
+            or (t.parent.name == "resolver" and t.parent.parent.name == "prompts")
+        )
         for t in link_targets(link)
     )
 

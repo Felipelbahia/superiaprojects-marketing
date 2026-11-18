@@ -1,0 +1,35 @@
+# site
+
+Sites e landing pages: arquitetura, CRO, interface de conversão, construção, auditoria de interface, React e Tailwind.
+
+> Gerado por build_sip_index.py. Não edite à mão. Skill: `"<HUB>/.agent/skills/<nome>/SKILL.md"`; agent: `"<HUB>/.agent/agents/<nome>.md"`; workflow: `"<HUB>/.agent/workflows/<nome>.md"`.
+
+## Skills (8)
+
+| Skill | Use quando |
+| --- | --- |
+| `site-arquitetura` | Use para planejar ou reestruturar a estrutura de um site: hierarquia de páginas, mapa do site (sitemap visual), padrão de URLs, menu, rodapé, breadcrumbs, navegação no celular e plano de links internos. Traz modelos prontos por tipo de site (SaaS, blog, e-commerce, documentação, híbrido, negócio local). Gatilhos: "estrutura do site", "mapa do site", "arquitetura de informação", "menu do site", "URLs", "breadcrumb", "links internos", "planejar o site". |
+| `site-auditoria-de-interface` | Use ANTES de alterar uma página, seção ou componente que já existe (site, landing page, interface): lê o estado atual, inventaria o que há, checa redundância e só propõe lacunas reais, com prova. Gatilhos: "melhorar a página", "mexer no layout", "adicionar uma seção", "redesenhar a home", "adicionar componente", quando já existe código ou página publicada. |
+| `site-cro` | Use para auditar e otimizar a conversão de uma página que já existe (landing page, home, preços, formulário, popup, cadastro): modelo LIFT, auditoria com nota, casamento anúncio × página, checklist de 15 pontos e ideias de teste. Gatilhos: "a página não converte", "auditoria de CRO", "revisar a landing", "otimizar formulário", "popup de saída", "atrito no cadastro". |
+| `site-diretrizes-web-codigo` | Use para revisar CÓDIGO de interface contra as Web Interface Guidelines da Vercel (acessibilidade, UX, boas práticas), com saída terse em arquivo:linha. Busca a lista atual online a cada uso: precisa de acesso à internet. Gatilhos: "revise minha UI", "cheque acessibilidade do código", "audite o design do site". |
+| `site-interface-de-conversao` | Use para desenhar a interface de uma página ou site de conversão: hierarquia visual, cor e contraste (60-30-10, WCAG AA), tipografia, espaçamento, componentes, movimento, versão para celular e checklist de acessibilidade. Gatilhos: "design da landing page", "hierarquia visual", "paleta e contraste", "layout", "UI", "UX", "acessibilidade". |
+| `site-react-composicao` | Use ao refatorar componentes React com excesso de props booleanas, ao montar bibliotecas de componentes flexíveis ou projetar APIs reutilizáveis (componentes compostos, render props, context providers, mudanças do React 19). |
+| `site-react-desempenho` | Use ao escrever, revisar ou refatorar CÓDIGO React e Next.js para desempenho (cascatas de requisições, tamanho do bundle, servidor, re-renderizações, hidratação), com 66 regras da Vercel por prioridade. |
+| `site-tailwind-design-system` | Use para escrever o CÓDIGO de um design system ou de componentes com Tailwind CSS v4 e React 19: tokens com @theme, variantes com CVA, formulários, grid, animações nativas, modo escuro, migração v3 para v4; inclui trechos de HTML Tailwind para páginas de marketing (references/tailwind-patterns.md). |
+
+## Agents (2)
+
+| Agent | Use quando |
+| --- | --- |
+| `site-construcao-web` | Construtor de sites e landing pages de conversão para as marcas de _brands/. Use quando o pedido for criar, montar ou reestruturar uma landing page, página de captura ou site de várias páginas: conduz marca, brief, arquitetura, copy, design a partir dos tokens, código (só com autorização explícita), teste no navegador e revisão de conversão, chamando copy-redacao-publicitaria, site-otimizacao-de-conversao e seo-otimizacao-de-busca. Não escreve só o texto (use copy-redacao-publicitaria), não audita página pronta (use site-otimizacao-de-conversao) e não publica sem pedido. Exemplos: <example>Context: usuário quer uma página de captura. user: "Monte a landing page do e-book da plus-pr" assistant: "Vou acionar o site-construcao-web, que segue o workflow site-construcao-de-landing-page com portões de aprovação." <commentary>Construção de página de ponta a ponta.</commentary></example> <example>Context: usuário quer o site institucional. user: "Preciso do site da experimentacao com home, serviços e contato" assistant: "Acionando o site-construcao-web com o workflow site-construcao-de-site: primeiro a arquitetura, depois as páginas." <commentary>Site de várias páginas.</commentary></example> |
+| `site-otimizacao-de-conversao` | Conversion rate optimization specialist. Use for maximizing conversion rates across marketing assets by applying proven CRO principles and psychology. Reviews landing pages, email copy, ad copy, and CTAs for conversion effectiveness. Examples: <example>Context: User created landing page. user: "Review this landing page for conversion optimization" assistant: "I'll use the site-otimizacao-de-conversao agent to analyze value proposition, CTAs, and persuasion elements." <commentary>CRO requires expert analysis of conversion psychology and best practices.</commentary></example> <example>Context: User needs email optimized. user: "How can I improve conversions on this email?" assistant: "Let me deploy the site-otimizacao-de-conversao agent to review copy, CTA placement, and friction points." <commentary>Email conversion optimization requires specialized expertise in persuasion and user psychology.</commentary></example> |
+
+## Workflows (4)
+
+| Workflow | Use quando |
+| --- | --- |
+| `/site-auditoria-de-interface` | Antes de alterar uma página, seção ou componente que já existe: lê o estado atual, inventaria o que há, checa redundância e só propõe lacunas reais, com prova. Não serve para criar página do zero nem para auditar conversão. |
+| `/site-construcao-de-landing-page` | Constrói uma landing page de conversão de ponta a ponta para uma marca de _brands/: brief, estrutura, copy (com filtro anti-slop), design a partir dos tokens da marca, código (só com autorização explícita), teste no navegador e revisão de conversão. Gatilhos: "crie a landing page", "monte a página de captura", "construa a LP", "página de vendas pronta". Para só o texto use /landing-page; para site com várias páginas use /build-site. |
+| `/site-construcao-de-site` | Constrói um site de várias páginas para uma marca de _brands/: arquitetura (mapa, URLs, menu), design system a partir dos tokens da marca, páginas na ordem de importância (cada uma pelo /build-landing-page), SEO técnico básico e teste no navegador. Gatilhos: "crie o site", "monte o site institucional", "site de várias páginas", "reestruture o site". Para uma única página use /build-landing-page. |
+| `/site-injecao-de-cta-astro` | Insere blocos de CTA (newsletter, produto, isca digital) em posts de um site Astro, com posição inteligente, pontuação de relevância feita pelo próprio agente, pré-visualização obrigatória e reversão por git. Sem programas: o agente lê e edita os arquivos de conteúdo do site. Gatilhos: "adicione CTA nos posts", "inserir inscrição na newsletter nos artigos", "promova o produto nos posts do blog Astro". |
+

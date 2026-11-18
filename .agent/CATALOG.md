@@ -2,8 +2,8 @@
 
 > Catálogo completo de Marketing integrado à base global de Engenharia Super IA Projects
 
-**Total Geral:** `687` recursos | **Skills:** `310` | **Workflows:** `225` | **Agentes:** `152`
-**Fontes Integradas:** `Super IA Marketing` (247) · `Super IA Projects` (440)
+**Total Geral:** `685` recursos | **Skills:** `308` | **Workflows:** `225` | **Agentes:** `152`
+**Fontes Integradas:** `Super IA Marketing` (246) · `Super IA Projects` (439)
 
 ---
 
@@ -723,12 +723,12 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Configuration](#configuration) (`1`)
 - [Similarity (Local)](#similarity-local) (`1` recursos)
   - [Search Patterns](#search-patterns) (`1`)
-- [Sip (Local)](#sip-local) (`10` recursos)
+- [Sip (Local)](#sip-local) (`8` recursos)
   - [Astro](#astro) (`1`)
   - [Firecrawl](#firecrawl) (`1`)
-  - [Geral](#geral) (`2`)
+  - [Geral](#geral) (`1`)
   - [Imprensa](#imprensa) (`1`)
-  - [Marketing](#marketing) (`2`)
+  - [Marketing](#marketing) (`1`)
   - [Mautic](#mautic) (`1`)
   - [N8N](#n8n) (`1`)
   - [Trends Previsao Demanda](#trends-previsao-demanda) (`1`)
@@ -5149,7 +5149,7 @@ Total de recursos nesta macro-área: `1`
 
 ## <a id="sip-local"></a>Sip (Local)
 
-Total de recursos nesta macro-área: `10`
+Total de recursos nesta macro-área: `8`
 
 ### <a id="astro"></a>Astro
 
@@ -5168,7 +5168,6 @@ Total de recursos nesta macro-área: `10`
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
 | <a id="sip-geral"></a>**`sip-geral`** | `Skill` | `Super IA Marketing` | Use when the current task involves general software engineering, architecture, backend, frontend, mobile, database, testing, security, DevOps, AI/ML or development workflows (spec, planning, execution-loop, TDD, debugging) in any project other than "SIP - Geral" (0 Padrões) itself, or when the user asks "existe algo no 0 Padrões pra isso", "tem skill/agent/workflow pra isso no hub geral", "consulta o SIP - Geral", or names a 0 Padrões skill, agent or workflow explicitly in a consumer project. |
-| <a id="sip-geral"></a>**`sip-geral`** | `Skill` | `Super IA Projects` | Use when the current task involves general software engineering, architecture, backend, frontend, mobile, database, testing, security, DevOps, AI/ML or development workflows (spec, planning, execution-loop, TDD, debugging) in any project other than "SIP - Geral" (0 Padrões) itself, or when the user asks "existe algo no 0 Padrões pra isso", "tem skill/agent/workflow pra isso no hub geral", "consulta o SIP - Geral", or names a 0 Padrões skill, agent or workflow explicitly in a consumer project. |
 
 ### <a id="imprensa"></a>Imprensa
 
@@ -5180,7 +5179,6 @@ Total de recursos nesta macro-área: `10`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="sip-marketing"></a>**`sip-marketing`** | `Skill` | `Super IA Marketing` | Use sempre que a tarefa atual envolver marketing, conteúdo, copywriting, branding, mídia social, SEO, anúncios pagos, e-mail, RP, crescimento, capacitação de vendas ou análise de marketing, mas o projeto ativo não tiver habilidades de marketing local - ou seja, qualquer projeto que não seja o próprio "SIP - Marketing" (0 Mkt). Encaminha a tarefa para o centro central de conhecimento de marketing, em vez de improvisar a partir do conhecimento geral. Use também quando o usuário perguntar "existe algo de marketing pra isso", "tem habilidade de marketing no hub", "consulta o SIP - Marketing", ou nomear explicitamente uma habilidade, agente ou fluxo de trabalho 0 Mkt em um projeto que não é o hub. |
 | <a id="sip-marketing"></a>**`sip-marketing`** | `Skill` | `Super IA Projects` | Use sempre que a tarefa atual envolver marketing, conteúdo, copywriting, branding, mídia social, SEO, anúncios pagos, e-mail, RP, crescimento, capacitação de vendas ou análise de marketing, mas o projeto ativo não tiver habilidades de marketing local - ou seja, qualquer projeto que não seja o próprio "SIP - Marketing" (0 Mkt). Encaminha a tarefa para o centro central de conhecimento de marketing, em vez de improvisar a partir do conhecimento geral. Use também quando o usuário perguntar "existe algo de marketing pra isso", "tem habilidade de marketing no hub", "consulta o SIP - Marketing", ou nomear explicitamente uma habilidade, agente ou fluxo de trabalho 0 Mkt em um projeto que não é o hub. |
 
 ### <a id="mautic"></a>Mautic

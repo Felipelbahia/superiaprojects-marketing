@@ -1,0 +1,124 @@
+{
+  "verticais": [
+    {
+      "nome": "ads",
+      "quando": "Campanhas pagas (Google, Meta, multiplataforma), criativos, copy de anúncio, análise de desempenho e extração de anúncios de concorrentes.",
+      "match": [
+        "ads-*"
+      ]
+    },
+    {
+      "nome": "audiovisual",
+      "quando": "Vídeo, roteiro técnico, voz, podcast, apresentações e decks (Slidev, pitch deck), imagens por IA, infográfico, QR code, transcrição e legenda.",
+      "match": [
+        "audiovisual-*"
+      ]
+    },
+    {
+      "nome": "brand",
+      "quando": "Marca: essência, voz, naming, identidade visual e sonora, paleta, design system e direção criativa.",
+      "match": [
+        "brand-*",
+        "design-*"
+      ]
+    },
+    {
+      "nome": "conteudo",
+      "quando": "Estratégia e produção de conteúdo: briefing, blog, pesquisa, tendências, reaproveitamento, aprovação e pré-publicação.",
+      "match": [
+        "conteudo-*"
+      ]
+    },
+    {
+      "nome": "copy",
+      "quando": "Copy que converte: landing page, VSL, hooks de vídeo curto, roteiros, SaaS e métodos clássicos.",
+      "match": [
+        "copy-*"
+      ]
+    },
+    {
+      "nome": "data",
+      "quando": "Métricas e análise: GA4, funil e coortes, atribuição, UTM, ROI, relatórios e revisão mensal.",
+      "match": [
+        "data-*"
+      ]
+    },
+    {
+      "nome": "email",
+      "quando": "E-mail marketing: copy, newsletter, automação, assunto, modelos e entregabilidade.",
+      "match": [
+        "email-*"
+      ]
+    },
+    {
+      "nome": "geral",
+      "quando": "Apoio transversal: anti-slop, briefing e planejamento, verificação de fatos, priorização, postmortem, diagramas, LGPD e navegador de skills.",
+      "match": [
+        "geral-*"
+      ]
+    },
+    {
+      "nome": "growth",
+      "quando": "Crescimento: aquisição, experimentos e testes A/B, retenção e churn, indicação e afiliados, GTM.",
+      "match": [
+        "growth-*"
+      ]
+    },
+    {
+      "nome": "persona",
+      "quando": "Público: ICP, personas, descoberta e entrevistas com clientes, análise de feedback.",
+      "match": [
+        "persona-*"
+      ]
+    },
+    {
+      "nome": "pr",
+      "quando": "Assessoria de imprensa, relações públicas, press releases e pitches de mídia.",
+      "match": [
+        "pr-*"
+      ]
+    },
+    {
+      "nome": "produto",
+      "quando": "Produto: PRD, requisitos, user stories, roadmap, sprint e especificação de funcionalidade.",
+      "match": [
+        "produto-*"
+      ]
+    },
+    {
+      "nome": "revenue",
+      "quando": "Estratégia de receita: campanhas, lançamento, oferta, preço, posicionamento, inteligência competitiva, psicologia e Sexy Canvas.",
+      "match": [
+        "revenue-*"
+      ]
+    },
+    {
+      "nome": "seo",
+      "quando": "Busca orgânica: palavras-chave, on-page, técnico, schema, GEO, backlinks, SEO programático, app store e relatórios.",
+      "match": [
+        "seo-*"
+      ]
+    },
+    {
+      "nome": "site",
+      "quando": "Sites e landing pages: arquitetura, CRO, interface de conversão, construção, auditoria de interface, React e Tailwind.",
+      "match": [
+        "site-*"
+      ]
+    },
+    {
+      "nome": "social",
+      "quando": "Redes sociais: estratégia, carrossel, LinkedIn, Instagram, YouTube, thumbnails e análise de desempenho.",
+      "match": [
+        "social-*"
+      ]
+    },
+    {
+      "nome": "vendas",
+      "quando": "Vendas B2B: prospecção, cold email, pipeline, metodologias, materiais e personalização em escala.",
+      "match": [
+        "vendas-*"
+      ]
+    }
+  ]
+}

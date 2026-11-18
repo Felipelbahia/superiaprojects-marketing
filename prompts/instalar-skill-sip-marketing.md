@@ -23,7 +23,7 @@ PASSO 0 (antes de tudo): descubra o sistema e o hub.
       a variável de ambiente MARKETING_HUB_PATH; o caminho do manifesto
       .agent/SIPS-CONSUMIDOS.md deste projeto (linha "Hub:"), se existir; senão
       PERGUNTE-ME o caminho da pasta "0 Mkt". Só aceite se existir
-      <HUB>/.agent/skills/sip-marketing/SKILL.md. Nunca assuma o caminho de outra máquina
+      <HUB>/prompts/resolver/sip-marketing/SKILL.md. Nunca assuma o caminho de outra máquina
       (o de quem criou o prompt), e nunca escreva o caminho de outro usuário em arquivo
       algum. Se eu não tiver o repositório, pare e me peça para cloná-lo antes.
    c0) Pré-requisito: o hub "0 Padrões" (kit base) deve estar instalado ANTES deste. Confira se
@@ -61,7 +61,7 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
 1. Skill resolver (obrigatório):
    - Crie a pasta .agent/skills/ se ela não existir.
    - Crie (ou recrie) o symlink absoluto com `ln -sfn`:
-     .agent/skills/sip-marketing -> "<HUB>/.agent/skills/sip-marketing"
+     .agent/skills/sip-marketing -> "<HUB>/prompts/resolver/sip-marketing"
    - Crie a pasta .claude/skills/ se ela não existir.
    - Crie o symlink relativo com `ln -sfn` (pro symlink acima, não direto pro hub):
      .claude/skills/sip-marketing -> ../../.agent/skills/sip-marketing
@@ -72,8 +72,10 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
    no .gitignore. Skills especialistas não são mais instaladas.
 
 3. Escolha de agents e workflows:
-   - Leia as tabelas "Agents do hub" e "Workflows do hub" em
-     "<HUB>/.agent/skills/sip-marketing/SKILL.md" (nome + "use quando").
+   - Leia as seções "Agents" e "Workflows" de cada arquivo de
+     "<HUB>/prompts/resolver/sip-marketing/verticais/" (nome + "use quando").
+     Instalações antigas apontavam para ".agent/skills/sip-marketing" do hub: esse
+     caminho não existe mais, o link acima o substitui (recrie-o com `ln -sfn`).
    - Leia a entrada deste hub em .agent/SIPS-CONSUMIDOS.md, se existir:
      "Agents"/"Workflows" (escolhidos) e "Vistos no hub" (oferecidos antes).
    - Primeira instalação (sem entrada): mostre as duas tabelas e pergunte
