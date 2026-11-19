@@ -2,8 +2,8 @@
 
 > Catálogo completo de Marketing integrado à base global de Engenharia Super IA Projects
 
-**Total Geral:** `685` recursos | **Skills:** `308` | **Workflows:** `225` | **Agentes:** `152`
-**Fontes Integradas:** `Super IA Marketing` (246) · `Super IA Projects` (439)
+**Total Geral:** `687` recursos | **Skills:** `310` | **Workflows:** `225` | **Agentes:** `152`
+**Fontes Integradas:** `Super IA Marketing` (247) · `Super IA Projects` (440)
 
 ---
 
@@ -93,6 +93,8 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Traducao De Legenda](#traducao-de-legenda) (`1`)
   - [Transcricao](#transcricao) (`1`)
   - [Video Para Gif](#video-para-gif) (`1`)
+- [Auditing (Local)](#auditing-local) (`1` recursos)
+  - [Memory Usage](#memory-usage) (`1`)
 - [Auth (Local)](#auth-local) (`1` recursos)
   - [Implementation Patterns](#implementation-patterns) (`1`)
 - [Backend (Local)](#backend-local) (`3` recursos)
@@ -665,6 +667,8 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
 - [Risk (Local)](#risk-local) (`2` recursos)
   - [Manager](#manager) (`1`)
   - [Metrics Calculation](#metrics-calculation) (`1`)
+- [Roteiro (Local)](#roteiro-local) (`1` recursos)
+  - [Tiktok 60S Noticia](#tiktok-60s-noticia) (`1`)
 - [Ruby (Local)](#ruby-local) (`1` recursos)
   - [Pro](#pro) (`1`)
 - [Rust (Local)](#rust-local) (`3` recursos)
@@ -1302,6 +1306,18 @@ Total de recursos nesta macro-área: `25`
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
 | <a id="audiovisual-video-para-gif"></a>**`/audiovisual-video-para-gif`** | `Workflow` | `Super IA Marketing` | Converta videoclipes em GIFs otimizados com controle de velocidade, corte, sobreposições de texto e otimização de tamanho de arquivo. Crie GIFs perfeitos para mídias sociais, documentação e apresentações. |
+
+---
+
+## <a id="auditing-local"></a>Auditing (Local)
+
+Total de recursos nesta macro-área: `1`
+
+### <a id="memory-usage"></a>Memory Usage
+
+| Recurso | Tipo | Origem | Descrição e Aplicação |
+| :--- | :--- | :--- | :--- |
+| <a id="auditing-memory-usage"></a>**`auditing-memory-usage`** | `Skill` | `Super IA Projects` | Use quando o proprietário disser que o Mac ou um aplicativo parece pesado, lento ou com muita memória, a memória swap ou compactada está alta após horas de uso do IDE, processos órfãos de Antigravity, Gemini, Claude, Kilo ou codex se acumulam, a memória continua crescendo ou pede para verificar o código de um projeto em busca de vazamentos de memória ou uso desnecessário de memória. |
 
 ---
 
@@ -4799,6 +4815,18 @@ Total de recursos nesta macro-área: `2`
 
 ---
 
+## <a id="roteiro-local"></a>Roteiro (Local)
+
+Total de recursos nesta macro-área: `1`
+
+### <a id="tiktok-60s-noticia"></a>Tiktok 60S Noticia
+
+| Recurso | Tipo | Origem | Descrição e Aplicação |
+| :--- | :--- | :--- | :--- |
+| <a id="roteiro-tiktok-60s-noticia"></a>**`roteiro-tiktok-60s-noticia`** | `Skill` | `Super IA Marketing` | Use when escrever o roteiro de um vídeo curto de 60s (TikTok, Reels, Shorts) a partir de uma ou mais matérias jornalísticas, principalmente de tema sensível (violência, crime, saúde, luto), em série com briefing já respondido. Também quando precisar mapear loops abertos e fechados num vídeo curto, ou pontuar o hook de um vídeo de notícia. |
+
+---
+
 ## <a id="ruby-local"></a>Ruby (Local)
 
 Total de recursos nesta macro-área: `1`
@@ -5167,7 +5195,7 @@ Total de recursos nesta macro-área: `8`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="sip-geral"></a>**`sip-geral`** | `Skill` | `Super IA Marketing` | Use when the current task involves general software engineering, architecture, backend, frontend, mobile, database, testing, security, DevOps, AI/ML or development workflows (spec, planning, execution-loop, TDD, debugging) in any project other than "SIP - Geral" (0 Padrões) itself, or when the user asks "existe algo no 0 Padrões pra isso", "tem skill/agent/workflow pra isso no hub geral", "consulta o SIP - Geral", or names a 0 Padrões skill, agent or workflow explicitly in a consumer project. |
+| <a id="sip-geral"></a>**`sip-geral`** | `Skill` | `Super IA Marketing` | Use when the current task involves general software engineering, architecture, backend, frontend, mobile, database, testing, security, DevOps, AI/ML or development workflows (spec, planning, execution-loop, TDD, debugging) in any project other than "SIP - Geral" (0 Padrões) itself, or when the user asks "existe algo no 0 Padrões pra isso", "tem skill/agent/workflow pra isso no hub geral", "consulta o SIP - Geral", or names a 0 Padrões skill, agent or workflow explicitly in a consumer project, or when the project rules (CLAUDE.md / AGENTS.md) cite a skill, agent or workflow by name (for example session-handoff, brainstorming, execution-loop) that is missing from the available skills list: search here before saying it does not exist. |
 
 ### <a id="imprensa"></a>Imprensa
 
