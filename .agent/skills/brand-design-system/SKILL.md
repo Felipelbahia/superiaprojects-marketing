@@ -64,6 +64,8 @@ DS_BRAND_DIR=<pasta da marca> DS_LOGO_DIR=<pasta com logo.svg e logo-light.svg> 
 DS_VOICE_FILE=brand-voice.md python3 -I scripts/build_design_system.py
 ```
 
+**Fontes para web (separado do gerador):** `scripts/brand_webfonts.py` baixa só fonte de licença aberta, copia a fonte licenciada que o dono já tem, e escreve `design-system/fonts/fonts.css` e `LICENCAS.md` com a pilha de reserva do campo `reserva` do manifesto ou, sem ele, a do `tokens.json`. Uso e regras: `../brand-builder/references/identidade-e-ativos/03-tipografia.md` (seção "Arquivos de fonte para web").
+
 Para outra marca: copiar os dois arquivos para o scratchpad, editar, rodar, verificar (`references/verificacao.md`). O modo de usar em uma marca nova é editar os tokens e os blocos `BRAND-SPECIFIC`, não editar a skill. Reprodutibilidade provada: reproduziu byte a byte o design system do WaiMonitor.
 
 ## Saídas

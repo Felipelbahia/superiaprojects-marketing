@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <title>Molde: cabecalho de e-mail 1200x400 (exibido a 600x200)</title>
+  <style>
+    /* TROQUE as cores e a fonte pelos valores de design-system/tokens.json da marca */
+    .bg{fill:#FFFFFF} .ink{fill:#161B20} .accent{fill:#1B6EF3} .muted{fill:#525C64} .line{stroke:#CFC5B8;fill:none}
+    .t{font-family:Arial,Helvetica,sans-serif}
+    .h{font-weight:700} .k{letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+    .slot{fill:none;stroke:#8A939B;stroke-width:3;stroke-dasharray:14 10}
+    .gd{fill:none;stroke:#E0218A;stroke-width:3;stroke-dasharray:18 10}
+    .gl{fill:#E0218A;font:700 22px Arial,sans-serif}
+  </style>
+  <rect class="bg" width="1200" height="400"/>
+  <rect class="accent" x="0" y="0" width="1200" height="12"/>
+  <g id="logo-slot" transform="translate(60 60)"><!-- SUBSTITUA este grupo pelo logo da marca (SVG mestre) -->
+    <rect class="slot" width="260" height="90" rx="12"/>
+    <text class="t muted" x="130" y="55" font-size="28" text-anchor="middle">LOGO</text>
+  </g>
+  <g class="t h ink" font-size="64">
+    <text x="60" y="260">{{titulo linha 1}}</text>
+    <text x="60" y="335">{{titulo linha 2}}</text>
+  </g>
+  <text class="t k muted" x="1140" y="110" font-size="26" text-anchor="end">{{edicao}}</text>
+  <g id="guides" display="none"><rect class="gd" x="300" y="0" width="600" height="400"/><text class="gl" x="310" y="30">metade central: mensagem principal</text></g>
+</svg>

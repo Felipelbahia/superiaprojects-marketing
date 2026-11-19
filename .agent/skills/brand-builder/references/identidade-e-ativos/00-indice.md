@@ -15,6 +15,7 @@ Use quando o usuário pedir brandbook Recomendado ou Completo (ver `../../brandb
 | 3 | [03-tipografia.md](03-tipografia.md) | Famílias, hierarquia, licença, substituição, uso em tela e impressão | escrito |
 | 4 | [04-imagem.md](04-imagem.md) | Fotografia, ilustração, ícones, padrões, tratamento, o que nunca mostrar | escrito |
 | 5 | [05-aplicacoes.md](05-aplicacoes.md) | Digital (site, e-mail, redes, anúncios), impressos, apresentações, embalagem, vídeo | escrito |
+| 5a | [05a-moldes-de-canais.md](05a-moldes-de-canais.md) | Moldes SVG de Instagram, LinkedIn, e-mail e YouTube: medidas com fonte, margens, limites de texto, como usar e exportar | escrito |
 | 6 | [06-governanca-e-auditoria.md](06-governanca-e-auditoria.md) | Quem aprova, violações, controle de versão, auditoria de pontos de contato, atualizar x refazer a marca | escrito |
 
 ## Como este guia se encaixa no fluxo

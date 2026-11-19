@@ -6,6 +6,8 @@ Usage (standard library only, Python 3.9+):
   python3 brand_html.py check  <brand_root>   # stale HTML, missing files, unclassified .md (exit 1 on problems)
   python3 brand_html.py gaps   <brand_root>   # print every "Lacunas"/"Known Gaps" section of the registered files
   python3 brand_html.py sync   <brand_root>   # build + check in one step (run after editing any .md; exit 1 on problems)
+  python3 brand_html.py pdf    <brand_root> [--chrome <path>] [--out <file>]
+                                              # print the current Markdown to one A4 PDF (needs Chrome, Chromium or Edge)
 
 The registry is <brand_root>/versoes.json (see brandbook-e-ativos.md). Markdown stays the
 source of truth; the HTML is generated and must never be edited by hand.
@@ -18,7 +20,7 @@ import sys
 from urllib.parse import quote
 
 HTML_DIR = "_html"
-SKIP_DIRS = {"_respostas", HTML_DIR, "logo", "modelos", "audiovisual-looks", "pdf", "png", "favicon", "imagens"}
+SKIP_DIRS = {"_respostas", HTML_DIR, "logo", "modelos", "audiovisual-looks", "pdf", "png", "favicon", "imagens", "fonts"}
 
 
 # ---------------------------------------------------------------- inline
@@ -351,7 +353,124 @@ def gaps(root):
                 i += 1
 
 
+# ---------------------------------------------------------------- PDF
+# Idea adapted from the Brandfy "guia-pdf" skill (Promovaweb, AGPL-3.0): the PDF is a print of the
+# canonical Markdown, never an independent document. Code and CSS here are written from scratch.
+PRINT_CSS = """@page{size:A4;margin:18mm 16mm}
+body{font-size:10.5pt;background:#fff}main{max-width:none;padding:0}
+.cover{break-after:page;min-height:235mm;display:flex;flex-direction:column;justify-content:center}
+.cover h1{font-size:2.6rem;margin:0 0 .3em}.cover p{color:%(apoio)s}
+.toc{break-after:page}.toc ul{list-style:none;padding:0}.toc li{margin:.5em 0;font-size:1.05rem}
+.doc{break-before:page}
+h1,h2,h3,h4{break-after:avoid}table,pre,blockquote,tr{break-inside:avoid}
+th,td{overflow-wrap:anywhere}.tw{overflow:visible}pre{white-space:pre-wrap}
+a{color:inherit;text-decoration:none;border-bottom:1px solid %(destaque)s}.toc a{border:0}"""
+
+
+def pdf(root, chrome=None, out=None):
+    """Print the current Markdown of the brand (registry order) to one A4 PDF through headless Chrome."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import brand_chrome
+    from pathlib import Path
+    from datetime import date
+
+    reg = load_registry(root)
+    root = os.path.abspath(root)
+    docs = []
+    for md_rel, status, item in entries(reg):
+        if status != "vigente":
+            continue
+        if os.path.exists(os.path.join(root, md_rel)):
+            docs.append((md_rel, item))
+        else:
+            print("FALTA O MD (fica fora do PDF):", md_rel)
+    if not docs:
+        print("Nada para imprimir: nenhum arquivo vigente existe em %s" % root)
+        return 1
+    ids = {md: "s-%d" % n for n, (md, _) in enumerate(docs, 1)}
+
+    def make_resolve(md_rel):
+        def resolve(href):
+            if re.match(r"^(https?:|mailto:|#)", href):
+                return href
+            target, _, frag = href.split(" ")[0].partition("#")
+            abs_t = os.path.normpath(os.path.join(root, os.path.dirname(md_rel), target))
+            rel = os.path.relpath(abs_t, root)
+            if rel in ids:
+                return "#" + ids[rel]
+            if os.path.exists(abs_t):
+                return Path(abs_t).as_uri()
+            return target
+        return resolve
+
+    sections, toc = [], []
+    for md_rel, item in docs:
+        with open(os.path.join(root, md_rel), encoding="utf-8") as f:
+            body, title = convert(f.read(), make_resolve(md_rel))
+        sections.append('<section class="doc" id="%s">%s</section>' % (ids[md_rel], body))
+        toc.append('<li><a href="#%s">%s</a></li>' % (ids[md_rel], html.escape(item.get("titulo") or title or md_rel)))
+    theme = dict(THEME_DEFAULT, **reg.get("tema", {}))
+    fonts = reg.get("fontes_google", "")
+    link = '<link rel="stylesheet" href="%s">' % html.escape(fonts) if fonts else ""
+    brand = reg.get("marca", "") or os.path.basename(root)
+    page_html = ('<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>%s</title>%s<style>%s\n%s</style></head><body><main>'
+                 '<div class="cover"><h1>%s</h1><p>Manual da marca · %s</p></div>'
+                 '<nav class="toc"><h2>Sumário</h2><ul>%s</ul></nav>%s</main></body></html>') % (
+        html.escape(brand), link, CSS % theme, PRINT_CSS % theme, html.escape(brand),
+        date.today().strftime("%d/%m/%Y"), "".join(toc), "\n".join(sections))
+    html_dir = os.path.join(root, HTML_DIR)
+    os.makedirs(html_dir, exist_ok=True)
+    html_path = os.path.join(html_dir, "manual-para-pdf.html")
+    with open(html_path, "w", encoding="utf-8") as f:
+        f.write(page_html)
+
+    slug = re.sub(r"[^a-z0-9]+", "-", brand.lower()).strip("-") or "marca"
+    out_path = os.path.abspath(out) if out else os.path.join(root, "pdf", "%s-manual.pdf" % slug)
+    if not out_path.startswith(root + os.sep):
+        print("A saída precisa ficar dentro da pasta da marca (%s)." % root)
+        return 2
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    try:
+        browser = brand_chrome.find_chrome(chrome)
+    except brand_chrome.ChromeNotFound as e:
+        print(e)
+        return 1
+    if os.path.exists(out_path):
+        os.remove(out_path)
+    try:
+        res = brand_chrome.run_headless(browser, ["--no-pdf-header-footer", "--virtual-time-budget=10000",
+                                                  "--print-to-pdf=%s" % out_path, brand_chrome.file_url(html_path)])
+    except RuntimeError as e:
+        print(e)
+        return 1
+    if not os.path.exists(out_path) or os.path.getsize(out_path) == 0:
+        print("O navegador não gerou o PDF (código %s). Saída: %s" % (res.returncode, res.stderr.decode("utf-8", "replace")[-400:]))
+        return 1
+    with open(out_path, "rb") as f:
+        data = f.read()
+    if not data.startswith(b"%PDF"):
+        print("O arquivo gerado não é um PDF válido:", out_path)
+        return 1
+    pages = len(re.findall(rb"/Type\s*/Page(?![s\w])", data))
+    print("PDF gerado: %s (%d página(s), %d KB, %d arquivo(s) do registro)" % (out_path, pages, len(data) // 1024, len(docs)))
+    autoral = [md for md, _ in docs if md in reg.get("html_autoral", {})]
+    if autoral:
+        print("AVISO: o PDF imprime o texto destes arquivos, sem a amostra visual do HTML autoral: %s" % ", ".join(autoral))
+    return 0
+
+
 def main(argv):
+    if len(argv) >= 3 and argv[1] == "pdf":
+        opts = {"--chrome": None, "--out": None}
+        rest = argv[3:]
+        while rest:
+            if rest[0] in opts and len(rest) >= 2:
+                opts[rest[0]] = rest[1]
+                rest = rest[2:]
+            else:
+                print(__doc__)
+                return 2
+        return pdf(argv[2], chrome=opts["--chrome"], out=opts["--out"])
     if len(argv) != 3 or argv[1] not in ("build", "check", "gaps", "sync"):
         print(__doc__)
         return 2

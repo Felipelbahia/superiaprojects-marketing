@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1440" width="2560" height="1440">
+  <title>Molde: YouTube, banner do canal 2560x1440</title>
+  <style>
+    /* TROQUE as cores e a fonte pelos valores de design-system/tokens.json da marca */
+    .bg{fill:#FFFFFF} .ink{fill:#161B20} .accent{fill:#1B6EF3} .muted{fill:#525C64} .line{stroke:#CFC5B8;fill:none}
+    .t{font-family:Arial,Helvetica,sans-serif}
+    .h{font-weight:700} .k{letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+    .slot{fill:none;stroke:#8A939B;stroke-width:3;stroke-dasharray:14 10}
+    .gd{fill:none;stroke:#E0218A;stroke-width:3;stroke-dasharray:18 10}
+    .gl{fill:#E0218A;font:700 22px Arial,sans-serif}
+  </style>
+  <rect class="bg" width="2560" height="1440"/>
+  <g class="t h ink" font-size="110">
+    <text x="548" y="678">{{nome ou promessa}}</text>
+  </g>
+  <text class="t muted" x="548" y="778" font-size="52">{{apoio}}</text>
+  <g id="logo-slot" transform="translate(1672 781)"><!-- SUBSTITUA este grupo pelo logo da marca (SVG mestre) -->
+    <rect class="slot" width="340" height="110" rx="12"/>
+    <text class="t muted" x="170" y="65" font-size="28" text-anchor="middle">LOGO</text>
+  </g>
+  <g id="guides" display="none"><rect class="gd" x="508" y="508" width="1544" height="423"/><text class="gl" x="508" y="494">zona segura ~1544x423 (proporcional a 1235x338 do tamanho minimo)</text></g>
+</svg>

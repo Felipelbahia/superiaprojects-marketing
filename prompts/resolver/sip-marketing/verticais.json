@@ -33,7 +33,8 @@
       "nome": "copy",
       "quando": "Copy que converte: landing page, VSL, hooks de vídeo curto, roteiros, SaaS e métodos clássicos.",
       "match": [
-        "copy-*"
+        "copy-*",
+        "roteiro-tiktok-60s-noticia"
       ]
     },
     {

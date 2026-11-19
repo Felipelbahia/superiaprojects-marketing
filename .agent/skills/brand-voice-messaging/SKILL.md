@@ -34,6 +34,7 @@ Etapa 4 do `brand-builder`. Produz `brand-voice.md` e `content-pillars.md` com *
 | 5 | Vocabulário permitido e proibido, e "O que NÃO comunicar" | rodada 4 |
 | 6 | Pilares de conteúdo | `references/pilares.md` |
 | 6b | Casa de mensagens: promessa, proposições, provas e mensagem por persona (saída `mensagens.md`) | `references/casa-de-mensagens.md` |
+| 6c | **Opcional** (perguntar antes, regra 10): assinatura da marca (slogan), ou a decisão de não ter um; registrada em `mensagens.md` | `references/slogan.md` |
 | 7 | Redigir, rodar `/geral-anti-slop`, mostrar, aprovar | |
 
 Profundidade curta: passos 1, 2, 5 e 6, com 2 a 3 rodadas. Longa: todos, mais as frases-exemplo geradas para três canais.
@@ -117,6 +118,7 @@ Toda voz de marca deve ser calibrada numericamente de 1 a 5 em cinco eixos funda
 - [references/roteiro-voz.md](references/roteiro-voz.md): questionário e rodadas de escalas A/B
 - [references/pilares.md](references/pilares.md): metodologia de estruturação de pilares de conteúdo
 - [references/casa-de-mensagens.md](references/casa-de-mensagens.md): o que a marca diz (promessa, proposições de valor, provas, mensagem por persona), com teste de roteiro de marca e de aderência
+- [references/slogan.md](references/slogan.md): assinatura da marca (slogan), opcional: quando recomendar "sem slogan", filtro de corte, oito testes e registro em `mensagens.md`
 - [references/brand-voice-extractor.md](references/brand-voice-extractor.md): extrair, construir e auditar voz (guia único, com portões de amostra, validação A/B e auditoria de frase)
 - [references/brand-voice.md](references/brand-voice.md): voz preservada ao escrever com IA (rascunho primeiro, 3 perguntas do leitor, marcadores de texto genérico)
 - [references/voice-tone.md](references/voice-tone.md): tom por situação e canal, escopos de entrega do guia, playbooks, mensagem por persona e terminologia

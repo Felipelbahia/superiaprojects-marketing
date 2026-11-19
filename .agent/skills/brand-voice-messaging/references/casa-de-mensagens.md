@@ -88,6 +88,7 @@ Estado: rascunho | aprovado em AAAA-MM-DD
 ## Mensagem por persona: principal / apoio / prova / objeção
 ## Roteiro de marca (7 partes, resumo)
 ## Limites (liga ao "O que NÃO comunicar")
+## Assinatura (slogan): opcional; versão principal ou "sem slogan" e o motivo (ver `slogan.md`)
 ## Lacunas
 ```
 

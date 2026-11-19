@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <title>Molde: Instagram, miolo de carrossel 1080x1350</title>
+  <style>
+    /* TROQUE as cores e a fonte pelos valores de design-system/tokens.json da marca */
+    .bg{fill:#FFFFFF} .ink{fill:#161B20} .accent{fill:#1B6EF3} .muted{fill:#525C64} .line{stroke:#CFC5B8;fill:none}
+    .t{font-family:Arial,Helvetica,sans-serif}
+    .h{font-weight:700} .k{letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+    .slot{fill:none;stroke:#8A939B;stroke-width:3;stroke-dasharray:14 10}
+    .gd{fill:none;stroke:#E0218A;stroke-width:3;stroke-dasharray:18 10}
+    .gl{fill:#E0218A;font:700 22px Arial,sans-serif}
+  </style>
+  <rect class="bg" width="1080" height="1350"/>
+  <text class="t h accent" x="90" y="300" font-size="150">{{numero}}</text>
+  <g class="t h ink" font-size="68">
+    <text x="90" y="470">{{titulo linha 1}}</text>
+    <text x="90" y="552">{{titulo linha 2}}</text>
+    <text x="90" y="634">{{titulo linha 3}}</text>
+  </g>
+  <line class="line" x1="90" y1="700" x2="990" y2="700" stroke-width="3"/>
+  <g class="t muted" font-size="40">
+    <text x="90" y="790">{{corpo linha 1}}</text>
+    <text x="90" y="850">{{corpo linha 2}}</text>
+    <text x="90" y="910">{{corpo linha 3}}</text>
+    <text x="90" y="970">{{corpo linha 4}}</text>
+  </g>
+  <g id="logo-slot" transform="translate(90 1150)"><!-- SUBSTITUA este grupo pelo logo da marca (SVG mestre) -->
+    <rect class="slot" width="260" height="90" rx="12"/>
+    <text class="t muted" x="130" y="55" font-size="28" text-anchor="middle">LOGO</text>
+  </g>
+  <text class="t muted" x="990" y="1210" font-size="32" text-anchor="end">{{n}}/{{total}}</text>
+  <g id="guides" display="none"><!-- guias: ver o molde da capa -->
+    <rect class="gd" x="90" y="90" width="900" height="1170"/>
+    <line class="gd" x1="33.75" y1="0" x2="33.75" y2="1350"/><line class="gd" x1="1046.25" y1="0" x2="1046.25" y2="1350"/>
+  </g>
+</svg>

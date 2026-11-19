@@ -53,7 +53,7 @@ Agent ou workflow que o projeto não instalou: use-o assim mesmo, pelo caminho a
 
 <!-- indice:start dir=verticais (gerado por build_sip_index.py — não edite à mão) -->
 
-Total: 98 skills, 33 agents, 114 workflows.
+Total: 99 skills, 33 agents, 114 workflows.
 
 | Vertical | Use quando | Skills | Agents | Workflows | Arquivo |
 | --- | --- | --- | --- | --- | --- |
@@ -61,7 +61,7 @@ Total: 98 skills, 33 agents, 114 workflows.
 | `audiovisual` | Vídeo, roteiro técnico, voz, podcast, apresentações e decks (Slidev, pitch deck), imagens por IA, infográfico, QR code, transcrição e legenda. | 10 | 2 | 13 | `verticais/audiovisual.md` |
 | `brand` | Marca: essência, voz, naming, identidade visual e sonora, paleta, design system e direção criativa. | 9 | 2 | 2 | `verticais/brand.md` |
 | `conteudo` | Estratégia e produção de conteúdo: briefing, blog, pesquisa, tendências, reaproveitamento, aprovação e pré-publicação. | 7 | 2 | 13 | `verticais/conteudo.md` |
-| `copy` | Copy que converte: landing page, VSL, hooks de vídeo curto, roteiros, SaaS e métodos clássicos. | 6 | 1 | 7 | `verticais/copy.md` |
+| `copy` | Copy que converte: landing page, VSL, hooks de vídeo curto, roteiros, SaaS e métodos clássicos. | 7 | 1 | 7 | `verticais/copy.md` |
 | `data` | Métricas e análise: GA4, funil e coortes, atribuição, UTM, ROI, relatórios e revisão mensal. | 3 | 1 | 9 | `verticais/data.md` |
 | `email` | E-mail marketing: copy, newsletter, automação, assunto, modelos e entregabilidade. | 4 | 1 | 3 | `verticais/email.md` |
 | `geral` | Apoio transversal: anti-slop, briefing e planejamento, verificação de fatos, priorização, postmortem, diagramas, LGPD e navegador de skills. | 2 | 7 | 13 | `verticais/geral.md` |

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <title>Molde: YouTube, miniatura 1280x720 (exportar em 3840x2160)</title>
+  <style>
+    /* TROQUE as cores e a fonte pelos valores de design-system/tokens.json da marca */
+    .bg{fill:#FFFFFF} .ink{fill:#161B20} .accent{fill:#1B6EF3} .muted{fill:#525C64} .line{stroke:#CFC5B8;fill:none}
+    .t{font-family:Arial,Helvetica,sans-serif}
+    .h{font-weight:700} .k{letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+    .slot{fill:none;stroke:#8A939B;stroke-width:3;stroke-dasharray:14 10}
+    .gd{fill:none;stroke:#E0218A;stroke-width:3;stroke-dasharray:18 10}
+    .gl{fill:#E0218A;font:700 22px Arial,sans-serif}
+  </style>
+  <rect class="bg" width="1280" height="720"/>
+  <rect class="accent" x="0" y="0" width="24" height="720"/>
+  <g class="t h ink" font-size="120">
+    <text x="90" y="250">{{palavra-chave linha 1}}</text>
+    <text x="90" y="390">{{palavra-chave linha 2}}</text>
+  </g>
+  <text class="t muted" x="90" y="480" font-size="48">{{apoio}}</text>
+  <g id="logo-slot" transform="translate(90 560)"><!-- SUBSTITUA este grupo pelo logo da marca (SVG mestre) -->
+    <rect class="slot" width="240" height="80" rx="12"/>
+    <text class="t muted" x="120" y="50" font-size="28" text-anchor="middle">LOGO</text>
+  </g>
+  <g id="imagem-slot"><rect class="slot" x="800" y="120" width="400" height="480" rx="16"/><text class="t muted" x="1000" y="370" font-size="32" text-anchor="middle">ROSTO OU OBJETO</text></g>
+  <g id="guides" display="none"><rect class="gd" x="64" y="64" width="1152" height="592"/><text class="gl" x="74" y="54">zona segura 64 px</text></g>
+</svg>

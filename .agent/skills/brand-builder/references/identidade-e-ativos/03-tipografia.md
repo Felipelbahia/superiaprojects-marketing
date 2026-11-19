@@ -65,6 +65,36 @@ O guia da Anthropic é um exemplo de como registrar: títulos em Poppins com res
 
 Registrar tudo no inventário (`../../brandbook-e-ativos.md`, seção 6): arquivo, versão, licença, validade, quem é o dono.
 
+### Arquivos de fonte para web (script)
+
+A escala (tamanho, linha, peso) continua no `tokens.json`. O que faltava era o **arquivo da fonte** e o `@font-face`. Quando a marca decidiu por fonte própria, o `brand-design-system/scripts/brand_webfonts.py` cuida disso a partir de um manifesto `design-system/fonts.json` que o dono aprova:
+
+```bash
+# a partir da pasta do brand-builder
+python3 ../brand-design-system/scripts/brand_webfonts.py build <raiz da marca>   # baixa ou copia, gera fonts.css e LICENCAS.md
+python3 ../brand-design-system/scripts/brand_webfonts.py check <raiz da marca>
+```
+
+Exemplo mínimo de `design-system/fonts.json` (uma fonte de licença aberta, baixada por https com a versão fixa na URL):
+
+```json
+{"familias": [{"familia": "Inter", "papel": "sans",
+  "arquivos": [{"peso": "400", "estilo": "normal",
+    "url": "https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.8/files/inter-latin-400-normal.woff2",
+    "licenca": "OFL-1.1", "autoria": "The Inter Project Authors",
+    "fonte_da_licenca": "https://github.com/rsms/inter/blob/master/LICENSE.txt"}]}]}
+```
+
+Na primeira rodada o script avisa o SHA-256 que registrou; copiar para o campo `sha256` trava a versão. O texto integral da licença (OFL.txt) não é baixado pelo script: guardar à parte e citar o endereço em `fonte_da_licenca`.
+
+- **Cada arquivo traz no manifesto:** família, peso, estilo, `url` (https) ou `arquivo` (dentro da pasta da marca), licença, autoria, onde a licença está escrita e, de preferência, o SHA-256 (sem ele o script registra o hash e avisa).
+- **Só licença aberta é baixada:** `OFL-1.1`, `Apache-2.0` e `UFL-1.0`. Qualquer outra (paga, desconhecida) nunca é baixada. Se o dono já colocou o arquivo licenciado na pasta da marca, o css aponta para ele com um aviso para conferir o escopo da licença (web, app, impressão); sem arquivo, só a variável de reserva é escrita.
+- **Saída** em `design-system/fonts/`: os arquivos, `fonts.css` (`font-display: swap` e uma variável por papel presente no manifesto: `--font-sans`, `--font-serif`, `--font-mono` ou `--font-display`) e `LICENCAS.md`, que alimenta o inventário. A pilha de reserva vem do campo `reserva` da família; sem ele, do `font-sans` (ou `font-mono`, no papel mono) do `tokens.json`; sem `tokens.json`, de uma pilha de sistema embutida no script. Duas famílias com o mesmo papel: só a primeira define a variável.
+- **Cuidados do script:** aceita só `woff2`, `woff`, `ttf` e `otf`, confere o cabeçalho do arquivo, limita o **download** a 8 MB (arquivo local não tem esse limite), só lê arquivo local de dentro da pasta da marca, grava apenas em `design-system/fonts/` e trata o arquivo como dado, nunca como código.
+- **Padrão continua sendo a pilha de sistema** (3.2). Rodar o script só depois da decisão do dono e do teste com texto em português (3.6).
+
+*Ideia adaptada da skill `tipografia-web` do Brandfy (Promovaweb, AGPL-3.0); código e texto reescritos aqui.*
+
 ## 3.6 Português e acentuação
 
 Marca brasileira: **testar a fonte com texto em português antes de aprovar**. Conferir ç, ã, õ, á, é, í, ó, ú, â, ê, ô, à, ü e as aspas e travessões, em todos os pesos que serão usados. Fonte sem os caracteres cai na reserva no meio da palavra e quebra a marca.

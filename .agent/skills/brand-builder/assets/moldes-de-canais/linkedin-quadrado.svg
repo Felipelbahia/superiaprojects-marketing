@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <title>Molde: LinkedIn, imagem quadrada 1200x1200</title>
+  <style>
+    /* TROQUE as cores e a fonte pelos valores de design-system/tokens.json da marca */
+    .bg{fill:#FFFFFF} .ink{fill:#161B20} .accent{fill:#1B6EF3} .muted{fill:#525C64} .line{stroke:#CFC5B8;fill:none}
+    .t{font-family:Arial,Helvetica,sans-serif}
+    .h{font-weight:700} .k{letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+    .slot{fill:none;stroke:#8A939B;stroke-width:3;stroke-dasharray:14 10}
+    .gd{fill:none;stroke:#E0218A;stroke-width:3;stroke-dasharray:18 10}
+    .gl{fill:#E0218A;font:700 22px Arial,sans-serif}
+  </style>
+  <rect class="bg" width="1200" height="1200"/>
+  <rect class="accent" x="100" y="100" width="12" height="220"/>
+  <g class="t h ink" font-size="84">
+    <text x="150" y="190">{{titulo linha 1}}</text>
+    <text x="150" y="290">{{titulo linha 2}}</text>
+    <text x="150" y="390">{{titulo linha 3}}</text>
+  </g>
+  <g class="t muted" font-size="40">
+    <text x="150" y="560">{{apoio linha 1}}</text>
+    <text x="150" y="620">{{apoio linha 2}}</text>
+  </g>
+  <g id="logo-slot" transform="translate(100 1000)"><!-- SUBSTITUA este grupo pelo logo da marca (SVG mestre) -->
+    <rect class="slot" width="300" height="100" rx="12"/>
+    <text class="t muted" x="150" y="60" font-size="28" text-anchor="middle">LOGO</text>
+  </g>
+  <text class="t muted" x="1100" y="1060" font-size="32" text-anchor="end">{{assinatura}}</text>
+  <g id="guides" display="none"><rect class="gd" x="100" y="100" width="1000" height="1000"/><text class="gl" x="110" y="90">margem 100 px</text></g>
+</svg>

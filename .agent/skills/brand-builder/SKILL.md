@@ -89,6 +89,8 @@ Na profundidade longa, as etapas 4, 6 e 8 passam por um **portão de desejo** op
 | Agentes de revisão da marca (`brand-guardiao-de-voz-<Marca>`, `brand-identity-guardian-<Marca>`), criados e **personalizados na hora** | `agentes-de-revisao.md` |
 | Regras de uso do logo, cor para impressão (CMYK, Pantone), tipografia, imagem, aplicações e governança de ativos (guia por capítulos; começar pelo índice) | `references/identidade-e-ativos/00-indice.md` |
 | Etapa 9: brandbook único (profundidade curta ou longa), perguntas de configuração e gestão de ativos (inventário, organização, auditoria, governança) | `brandbook-e-ativos.md` |
+| Moldes de canais (Instagram, LinkedIn, e-mail, YouTube): medidas com fonte, limites de texto, SVG prontos e exportação | `references/identidade-e-ativos/05a-moldes-de-canais.md` e `assets/moldes-de-canais/` |
+| Gerar arquivos: PNG, favicon e manifesto do logo; arquivos de fonte para web; manual em PDF | `scripts/brand_logo_assets.py` (`01-logo.md`), `../brand-design-system/scripts/brand_webfonts.py` (`03-tipografia.md`), `scripts/brand_html.py pdf` (`brandbook-e-ativos.md`, seção 10.2). Autoteste dos scripts, sem rede: `python3 -B scripts/selftest_marca.py` |
 | Skills a reaproveitar por referência | final do `catalog.md` |
 | Modelo de guia de identidade aplicada (cores, fontes e regras de uso de uma marca real; não é a nossa) | `references/brand-guidelines-anthropic.md` e `../brand-voice-messaging/references/agentkits-brand-voice-guidelines.md` |
 

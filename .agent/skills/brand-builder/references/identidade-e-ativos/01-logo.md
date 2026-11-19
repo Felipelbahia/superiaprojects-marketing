@@ -81,6 +81,26 @@ Entregar o logo em um conjunto organizado. Formatos e quando usar:
 
 Nomear de forma consistente (marca, versão, cor, formato), por exemplo `marca_principal_colorido.svg`, `marca_simbolo_reverso.png`. Registrar no inventário de ativos (ver `../../brandbook-e-ativos.md`, seção 6) com local, formato e dono.
 
+### Gerar PNG, favicon e manifesto com o script
+
+Quando os SVG mestres estão em `logo/svg/` na raiz da marca, o `scripts/brand_logo_assets.py` (na pasta do `brand-builder`) faz o resto:
+
+```bash
+python3 scripts/brand_logo_assets.py export <raiz da marca>   # gera logo/png, logo/favicon e logo/manifest.json
+python3 scripts/brand_logo_assets.py check  <raiz da marca>   # confere os arquivos contra o manifesto
+```
+
+| O que sai | Regra |
+|---|---|
+| PNG do logo completo | Fundo transparente, 512, 1024 e 2048 px de largura, na proporção do SVG |
+| PNG do símbolo | Quadrado, 16, 32, 48, 180, 192 e 512 px. O script trata como símbolo todo arquivo com `simbolo`, `símbolo`, `symbol`, `icone`, `ícone`, `icon`, `avatar` ou `favicon` no nome |
+| `favicon.ico` | 16, 32 e 48 px, a partir do símbolo "colorido": o que não tem no nome `reverso`, `reverse`, `light`, `dark`, `branco`, `white`, `negativo`, `claro`, `escuro`, `mono`, `monocrom`, `preto`, `black` ou `1cor`. Sem símbolo colorido, usa o primeiro símbolo e avisa |
+| `manifest.json` | Uma entrada por arquivo gerado, com o uso dele (logo, ícone ou favicon), o caminho, o formato, as dimensões e o hash SHA-256, mais o hash do SVG que o originou |
+
+O que o script **não** faz: não altera o SVG mestre, não cria variante que falta (avisa: reversa, monocromática, símbolo, logo completo) e não corrige o desenho. Rodar de novo refaz só o que mudou. Se o SVG tiver `<text>`, o aviso lembra de converter o texto em curvas antes (senão a fonte precisa estar instalada na máquina). Precisa de Chrome, Chromium ou Edge; o caminho pode ser dado com `--chrome` ou pela variável `BRAND_CHROME`. Testado no macOS: o código procura o navegador também nos locais usuais do Windows e do Linux, mas ainda não foi executado ali. Os tamanhos de ícone seguem o conjunto acima; para uma plataforma que peça outro, conferir a documentação dela e ajustar as constantes no início do script. Conferir o resultado a olho (borda, transparência, leitura em 16 px) antes de entregar.
+
+*Ideia adaptada da skill `ativos-logo` do Brandfy (Promovaweb, AGPL-3.0); código e texto reescritos aqui.*
+
 ## 1.7 Briefing de logo (quando a marca não tem)
 
 Nenhuma skill do repositório desenha logo. Para quem vai desenhar (designer, agência, ferramenta), entregar um briefing curto, montado a partir das etapas já aprovadas:

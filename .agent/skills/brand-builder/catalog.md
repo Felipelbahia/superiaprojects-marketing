@@ -6,7 +6,7 @@ Formatos de pergunta: ver `question-formats.md`. Marcas de proveniência: ver `S
 
 ## 0. Intake
 
-- **Entrada:** pasta `_brands/<marca>/` inteira, se existir. Se o projeto já tem contexto de produto (ficha do projeto em `0 Padrões/projetos/` ou o documento de contexto de `revenue-gtm-e-posicionamento`, referência `product-marketing-context.md`), ler antes de perguntar para não repetir pergunta ao usuário.
+- **Entrada:** pasta `_brands/<marca>/` inteira, se existir. Se o projeto já tem contexto de produto (ficha do projeto em `0 Padrões/projetos/` ou o documento de contexto de `revenue-gtm-e-posicionamento`, referência `product-marketing-context.md`), ler antes de perguntar para não repetir pergunta ao usuário. Se existir um `MVP.md` (gerado pelo MVPFy) ou um PRD, ler também como **rascunho**: o que vier dali entra rotulado `[derivado]` e o usuário confirma; preço, nome provisório, slogan sugerido e personalidade recomendada nesses documentos são hipóteses, nunca decisão aprovada. Ideia adaptada da skill `mvp` do Brandfy (Promovaweb, AGPL-3.0); sem ponte automática nem dependência do MVPFy.
 - **Coleta:** chat, 5 perguntas.
   1. Nome e uma frase do que é (produto, serviço, pessoa, mídia).
   2. Modo: **nova** (nada existe), **estender** (há arquivos a respeitar) ou **refazer** (usuário quer recomeçar; vira `-v2`, nunca apaga).
@@ -45,6 +45,7 @@ Formatos de pergunta: ver `question-formats.md`. Marcas de proveniência: ver `S
 - **Entrada:** 01, 02, personas, `brand-voice.md` e `content-pillars.md` existentes.
 - **Coleta:** chat, com escalas e A/B; reação a frases-exemplo.
 - **Saída:** `brand-voice.md` (traços, escalas, exemplos certo/errado, "O que NÃO comunicar", vocabulário permitido e proibido), `content-pillars.md` (3 a 5 pilares com ângulo, formato e prova) e, **sempre, em qualquer profundidade**, `mensagens.md` (casa de mensagens: promessa, proposições, provas, mensagem por persona; com "informação insuficiente" onde faltar base; ver `../brand-voice-messaging/references/casa-de-mensagens.md`).
+- **Assinatura (slogan), opcional (passo 6c):** perguntar antes se o usuário quer; a decisão "sem slogan" também vale e fica registrada em `mensagens.md` (`../brand-voice-messaging/references/slogan.md`).
 - **Aprovação:** cada traço de voz tem uma frase certa e uma errada; cada pilar liga a uma dor de persona.
 - **Portão de desejo (opcional, profundidade longa):** auditar 5 frases-exemplo e as proposições de `mensagens.md` com a lente de texto do Sexy Canvas e o teste de apelo (`desejo.md`).
 
@@ -79,6 +80,7 @@ Regras de **uso** da identidade, que o design system (etapa 7) não cobre: logo,
 - **Quando entra:** sempre, em qualquer profundidade (decisão do usuário, 2026-10-27); em marca que já tem logo mas nenhuma regra de uso; entrega de arquivos a gráfica ou agência; peças fora da marca circulando.
 - **Entrada:** `06-direcao-visual.md`, `design-system/tokens.json` e `DESIGN.md` aprovados, `style-guide.md` (vence em conflito), logo e arquivos que o usuário já tem.
 - **Coleta:** chat, um capítulo por rodada (logo, cor, tipografia, imagem, aplicações, governança). Valores de tela vêm do `tokens.json`; **CMYK e Pantone nunca saem de fórmula**: ficam "a definir" com responsável.
+- **Moldes de canais (opcional, depois das aplicações):** arquivos-base SVG de Instagram, LinkedIn, e-mail e YouTube com medidas conferidas (`references/identidade-e-ativos/05a-moldes-de-canais.md`); esta parte é **opcional** dentro da etapa 7c (que continua obrigatória); como toda parte opcional, pergunta antes se o usuário quer (regra 10).
 - **Saída:** `identidade-e-ativos.md` na raiz da marca (nome proposto), com uma seção por capítulo e as lacunas declaradas. Inventário de ativos, quando pedido, conforme `brandbook-e-ativos.md`.
 - **Aprovação:** item 16 de `qa-rubric.md`.
 

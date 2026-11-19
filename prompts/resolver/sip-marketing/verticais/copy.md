@@ -4,7 +4,7 @@ Copy que converte: landing page, VSL, hooks de vídeo curto, roteiros, SaaS e m�
 
 > Gerado por build_sip_index.py. Não edite à mão. Skill: `"<HUB>/.agent/skills/<nome>/SKILL.md"`; agent: `"<HUB>/.agent/agents/<nome>.md"`; workflow: `"<HUB>/.agent/workflows/<nome>.md"`.
 
-## Skills (6)
+## Skills (7)
 
 | Skill | Use quando |
 | --- | --- |
@@ -14,6 +14,7 @@ Copy que converte: landing page, VSL, hooks de vídeo curto, roteiros, SaaS e m�
 | `copy-metodos-classicos` | Use para aplicar o método de um livro clássico de copywriting, persuasão e marketing a uma peça ou estratégia: Gary Halbert (Boron Letters), David Ogilvy, Eugene Schwartz (5 níveis de consciência), Dan Kennedy, Russell Brunson (Expert Secrets), Heath (Made to Stick), Seth Godin (Permission Marketing e Purple Cow) e StoryBrand. Gatilhos: "nível de consciência", "método Halbert", "estilo Ogilvy", "StoryBrand", "copy de resposta direta", "ideia que gruda". |
 | `copy-saas` | Copywriter de SaaS e startups focado em posicionamento, mensagem e pesquisa de voz do cliente (VOC), com um fluxo de 10 fases para criar uma landing page. Use para definir posicionamento e proposta de valor, montar a hierarquia de mensagem, minerar a linguagem do cliente e planejar o processo de uma landing page de SaaS. |
 | `copy-vsl` | Use para escrever roteiro de VSL (Video Sales Letter) de resposta direta: estrutura em 8 partes de Conrado Adolpho, tratamento universal de objeções, ritmo slide a slide e textos de retenção na tela. Gatilhos: "VSL", "carta de vendas em vídeo", "roteiro de vendas em vídeo". |
+| `roteiro-tiktok-60s-noticia` | Use when escrever o roteiro de um vídeo curto de 60s (TikTok, Reels, Shorts) a partir de uma ou mais matérias jornalísticas, principalmente de tema sensível (violência, crime, saúde, luto), em série com briefing já respondido. Também quando precisar mapear loops abertos e fechados num vídeo curto, ou pontuar o hook de um vídeo de notícia. |
 
 ## Agents (1)
 
