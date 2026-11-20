@@ -1817,7 +1817,7 @@ Total de recursos nesta macro-área: `22`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="conteudo-brainstorm"></a>**`@conteudo-brainstorm`** | `Agent` | `Super IA Marketing` | Especialista em idealização de campanhas e conceito criativo. Use para debater ideias de campanha, avaliar abordagens de marketing, desenvolver ângulos de mensagens e debater decisões criativas antes da execução. Exemplos: <exemplo>Contexto: o usuário deseja ideias de campanha. usuário: \"Precisamos de conceitos criativos para o lançamento de nosso produto\" assistente: \"Deixe-me usar o agente conteudo-brainstorm para explorar ângulos de campanha e conceitos criativos para o lançamento." usuário: \"Devemos nos concentrar em marketing de conteúdo ou anúncios pagos?\" assistente: \"Envolverei o agente de brainstorming para analisar ambas as abordagens e recomendar a melhor estratégia." <commentary>As decisões estratégicas exigem a avaliação de compensações e a consideração de vários fatores.</commentary></example> |
+| <a id="conteudo-brainstorm"></a>**`@conteudo-brainstorm`** | `Agent` | `Super IA Marketing` | Especialista em idealização de campanhas e conceito criativo. Opera por meio do Processo de Brainstorm Estruturado de 5 Portas, gerando artefatos brainstorm.md validados com fontes datadas e matrizes de hipóteses. Use para debater ideias de campanha, avaliar abordagens de marketing, desenvolver ângulos de mensagens e debater decisões criativas antes da execução. |
 
 ### <a id="briefing"></a>Briefing
 

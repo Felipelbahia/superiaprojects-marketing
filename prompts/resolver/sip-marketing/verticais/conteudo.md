@@ -20,7 +20,7 @@ Estratégia e produção de conteúdo: briefing, blog, pesquisa, tendências, re
 
 | Agent | Use quando |
 | --- | --- |
-| `conteudo-brainstorm` | Campaign ideation and creative concept specialist. Use for brainstorming campaign ideas, evaluating marketing approaches, developing messaging angles, and debating creative decisions before execution. Examples: <example>Context: User wants campaign ideas. user: "We need creative concepts for our product launch" assistant: "Let me use the conteudo-brainstorm agent to explore campaign angles and creative concepts for the launch." <commentary>Campaign ideation requires exploring multiple creative approaches, so delegate to the conteudo-brainstorm.</commentary></example> <example>Context: User is choosing between marketing approaches. user: "Should we focus on content marketing or paid ads?" assistant: "I'll engage the conteudo-brainstorm agent to analyze both approaches and recommend the best strategy." <commentary>Strategic decisions require evaluating trade-offs and considering multiple factors.</commentary></example> |
+| `conteudo-brainstorm` | Campaign ideation and creative concept specialist. Operates via the 5-Gate Structured Brainstorm Process, generating validated brainstorm.md artifacts with dated sources and hypothesis matrices. Use for brainstorming campaign ideas, evaluating marketing approaches, developing messaging angles, and debating creative decisions before execution. |
 | `conteudo-criacao-multiformato` | Content creation specialist for all marketing content types. |
 
 ## Workflows (13)

@@ -21,11 +21,13 @@ author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
-  version: 1.0.0
+  version: 1.1.0
 ---
 # Content Research & Creation
 
 Create authentic, research-backed content that sounds human-written AND is optimized to appear in AI search results (Perplexity, ChatGPT, Claude, Gemini).
+
+**Crédito de Origem:** Conceitos de processo de ideação com portões de qualidade e modelo de artefato vivo adaptados a partir de `promovaweb/inboundfy` (licença AGPL-3.0), redigidos com estrutura e regras autorais exclusivas do ecossistema Super IA Projects `0 Mkt`.
 
 ## Core Workflow
 
@@ -420,9 +422,20 @@ Before publishing, verify AI-readiness:
 ## Content Type References
 
 For format-specific guidance, see:
+- [references/processo-de-brainstorm-estruturado.md](references/processo-de-brainstorm-estruturado.md) - Processo de brainstorm em 5 portões operacionais, regras de corte e devolução cirúrgica
+- [references/templates/brainstorm.md](references/templates/brainstorm.md) - Template canônico do artefato vivo `brainstorm.md` (tese, fatos vs hipóteses, matriz de suposições)
 - [references/blog-posts.md](references/blog-posts.md) - Long-form article patterns
 - [references/press-releases.md](references/press-releases.md) - PR and announcements
 - [references/ai-search-optimization.md](references/ai-search-optimization.md) - Deep dive on AIO tactics
+
+---
+
+## Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.1.0 | 2026-11-20 | Processo de brainstorm estruturado em 5 portões em `processo-de-brainstorm-estruturado.md` e template do artefato vivo `brainstorm.md` em `references/templates/brainstorm.md` (inbox 2038); crédito conceitual a `promovaweb/inboundfy` |
+| 1.0.0 | 2026-10-18 | Versão inicial da skill |
 
 ## Quick Reference: AI Phrases to Avoid
 

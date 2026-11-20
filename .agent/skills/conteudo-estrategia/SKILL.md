@@ -7,7 +7,7 @@ author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
-  version: 1.0.0
+  version: 1.1.0
 ---
 # Estratégia de Conteúdo
 
@@ -17,6 +17,7 @@ Reúne os guias de planejamento de conteúdo que estavam dentro de `conteudo-rea
 
 | Preciso de... | Leia |
 |---|---|
+| Ideação estruturada e validação de tese com 5 portões | [processo-de-brainstorm-estruturado.md](../conteudo-pesquisa/references/processo-de-brainstorm-estruturado.md) e template [brainstorm.md](../conteudo-pesquisa/references/templates/brainstorm.md) |
 | Montar a estratégia do zero: objetivos, público, canais e métricas | [content-strategy.md](references/content-strategy.md) e o roteiro completo [content-strategy-playbook.md](references/content-strategy-playbook.md) |
 | Visão de marketing de conteúdo: frameworks de copy, storytelling e distribuição | [content-marketing.md](references/content-marketing.md) |
 | Definir 3 a 5 pilares editoriais | [content-pillars.md](references/content-pillars.md) |
@@ -37,6 +38,16 @@ Reúne os guias de planejamento de conteúdo que estavam dentro de `conteudo-rea
 
 ## Onde isso se conecta
 
+- Ideação e pesquisa estruturada com portões: [conteudo-pesquisa](../conteudo-pesquisa/SKILL.md).
 - Transformar um conteúdo em vários: [conteudo-reaproveitamento](../conteudo-reaproveitamento/SKILL.md).
 - Palavras-chave e clusters: [seo-palavras-chave](../seo-palavras-chave/SKILL.md).
 - Campanhas e receitas por canal: [revenue-campanhas](../revenue-campanhas/SKILL.md).
+
+---
+
+## Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.1.0 | 2026-11-20 | Integração com processo estruturado de brainstorm em 5 portões e template canônico `brainstorm.md` de `conteudo-pesquisa` (inbox 2038) |
+| 1.0.0 | 2026-10-18 | Versão inicial da skill |

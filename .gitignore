@@ -77,3 +77,23 @@ instalacoes/*
 
 # Manifesto local de SIPs (guarda o caminho real desta máquina; não versionar)
 .agent/SIPS-CONSUMIDOS.md
+
+# núcleo do SIP - Geral (caminho absoluto desta máquina)
+.agent/skills/execution-loop
+.claude/skills/execution-loop
+.agent/skills/brainstorming
+.claude/skills/brainstorming
+.agent/skills/writing-skills
+.claude/skills/writing-skills
+.agent/skills/session-handoff
+.claude/skills/session-handoff
+.agent/skills/verification-before-completion
+.claude/skills/verification-before-completion
+.agent/skills/spec-writing
+.claude/skills/spec-writing
+.agent/skills/plan-writing
+.claude/skills/plan-writing
+.agent/skills/executing-plans
+.claude/skills/executing-plans
+.agent/skills/systematic-debugging
+.claude/skills/systematic-debugging
