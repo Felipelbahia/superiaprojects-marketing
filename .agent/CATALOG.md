@@ -1809,7 +1809,7 @@ Total de recursos nesta macro-área: `22`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="conteudo-aprovacao"></a>**`/conteudo-aprovacao`** | `Workflow` | `Super IA Marketing` | Gera o fluxo de aprovação de uma peça de conteúdo (etapas, responsáveis, SLA e checklist por estágio). Use quando uma peça precisar passar por revisão antes de publicar. |
+| <a id="conteudo-aprovacao"></a>**`/conteudo-aprovacao`** | `Workflow` | `Super IA Marketing` | Gera o fluxo de aprovação de uma peça de conteúdo (etapas, responsáveis, SLA, parecer em 5 campos e releitura integral na v2). Use quando uma peça precisar passar por revisão antes de publicar. |
 
 ### <a id="brainstorm"></a>Brainstorm
 

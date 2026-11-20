@@ -7,7 +7,7 @@ author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
-  version: 1.0.0
+  version: 1.1.0
 ---
 # Brand Voice & Messaging
 
@@ -35,7 +35,7 @@ Etapa 4 do `brand-builder`. Produz `brand-voice.md` e `content-pillars.md` com *
 | 6 | Pilares de conteúdo | `references/pilares.md` |
 | 6b | Casa de mensagens: promessa, proposições, provas e mensagem por persona (saída `mensagens.md`) | `references/casa-de-mensagens.md` |
 | 6c | **Opcional** (perguntar antes, regra 10): assinatura da marca (slogan), ou a decisão de não ter um; registrada em `mensagens.md` | `references/slogan.md` |
-| 7 | Redigir, rodar `/geral-anti-slop`, mostrar, aprovar | |
+| 7 | Redigir, rodar `/geral-anti-slop`, validar via ciclo formal, mostrar, aprovar | `references/ciclo-de-validacao-de-pecas.md` |
 
 Profundidade curta: passos 1, 2, 5 e 6, com 2 a 3 rodadas. Longa: todos, mais as frases-exemplo geradas para três canais.
 
@@ -124,3 +124,13 @@ Toda voz de marca deve ser calibrada numericamente de 1 a 5 em cinco eixos funda
 - [references/voice-tone.md](references/voice-tone.md): tom por situação e canal, escopos de entrega do guia, playbooks, mensagem por persona e terminologia
 - [references/sample-output-brand-voice.md](references/sample-output-brand-voice.md): exemplo de perfil de voz extraído de LinkedIn, e-mail e site
 - [references/agentkits-brand-voice-guidelines.md](references/agentkits-brand-voice-guidelines.md): **exemplo preenchido** do guia de voz de outra marca (AgentKits); não é método nem a nossa voz, serve de modelo de formato
+- [references/ciclo-de-validacao-de-pecas.md](references/ciclo-de-validacao-de-pecas.md): ciclo formal de validação de peças de conteúdo, parecer de reprovação em 5 campos, releitura integral na v2 e governança de aprendizado com 4 alcances e 4 estados
+
+---
+
+## Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.1.0 | 2026-11-20 | Ciclo formal de validação de peças de conteúdo em `ciclo-de-validacao-de-pecas.md` (parecer de 5 campos, separação produtora x revisora, releitura integral na v2 e governança de aprendizado com alcance/estados no template `_brands/brand-template/aprendizado.md`) (inbox 2037); crédito conceitual a `promovaweb/inboundfy` |
+| 1.0.0 | 2026-10-18 | Versão inicial da skill |

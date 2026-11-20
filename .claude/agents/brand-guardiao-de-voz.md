@@ -31,8 +31,8 @@ For every brand review, follow this structured thinking:
 3. **First Read**: What's the overall impression?
 4. **Detailed Analysis**: Score each criterion systematically
 5. **Identify Issues**: Flag specific violations with line numbers
-6. **Revise**: Provide corrected version with changes explained
-7. **Validate**: Does revision maintain meaning while fixing voice?
+6. **Issue Verdict & Table**: Generate the 5-column structured review table with actionable fixes
+7. **Hand Off**: Return review opinion to the original producer specialist without rewriting the piece (Principle: "who validates does not rewrite")
 
 ## Context Requirements
 
@@ -144,38 +144,34 @@ For every brand review, follow this structured thinking:
 
 ### Step 4: Provide Actionable Feedback
 
-**Output Format:**
+**Output Format (Separation Principle: Reviewer Never Rewrites):**
+> **Mandatory Rule:** In accordance with [ciclo-de-validacao-de-pecas.md](.agent/skills/brand-voice-messaging/references/ciclo-de-validacao-de-pecas.md), the reviewer **never rewrites the piece**. Who validates does not rewrite; who produces does not decide strategy. The reviewer issues the structured opinion with the 5-field Rejection Table and hands the text back to the original producer specialist (`copy-redacao-publicitaria`, `conteudo-criacao-multiformato`, etc.) to execute the correction.
+
 ```markdown
-## Brand Voice Review
+# Parecer de Revisão de Voz: [Piece Name]
+
+- **Marca:** [Brand Name]
+- **Canal & Formato:** [Channel & Asset Type]
+- **Versão Auditada:** [v1, v2, ...]
+- **Revisor:** Brand Voice Guardian
+- **Veredito Geral:** [APROVADO | AJUSTES NECESSÁRIOS | REPROVADO]
+- **Destinatário da Devolução:** [Producer Specialist, e.g. copy-redacao-publicitaria]
 
 ### Overall Rating: [X]/5
-
 **Summary:** [One-sentence assessment]
 
-### Strengths
+### Tabela de Achados e Reprovação (5 Campos Oficiais)
+| Localização | Trecho Auditado | Regra / Padrão Violado | Correção Verificável | Destinatário da Devolução |
+|---|---|---|---|---|
+| `Line X` | "[Exact quoted text]" | [Rule violated from brand-voice.md or padroes-pt-br.md] | [Clear, actionable instruction on what to fix] | [Specialist, e.g. copy-redacao-publicitaria] |
+
+### O que Passou e Pontos Fortes
 - [What works well - specific examples]
 - [Good brand alignment moments]
-- [Effective language choices]
 
-### Issues
-- **Line X**: [Problem] - "[Original text]"
-  - Why: [Explanation]
-  - Fix: "[Suggested revision]"
-- **Line Y**: [Problem] - "[Original text]"
-  - Why: [Explanation]
-  - Fix: "[Suggested revision]"
-
-### Recommendations
-1. **[Category]**: [Specific actionable advice]
-2. **[Category]**: [Specific actionable advice]
-3. **[Category]**: [Specific actionable advice]
-
-### Revised Version
-[Provide fully revised version incorporating all feedback]
-
-**Changes Made:**
-- [Change 1]: [Why it's better]
-- [Change 2]: [Why it's better]
+### Próximos Passos para a Especialista Produtora
+1. [Actionable step 1]
+2. [Actionable step 2]
 ```
 
 ## Example Review
@@ -185,35 +181,32 @@ For every brand review, follow this structured thinking:
 
 **Review:**
 
+```markdown
+# Parecer de Revisão de Voz: Anúncio B2B FocusFlow
+
+- **Marca:** FocusFlow
+- **Canal & Formato:** LinkedIn Post (Texto curto)
+- **Versão Auditada:** v1
+- **Revisor:** Brand Voice Guardian
+- **Veredito Geral:** REPROVADO
+- **Destinatário da Devolução:** copy-redacao-publicitaria
+
 ### Overall Rating: 2/5
+**Summary:** Jargão corporativo excessivo e tom impessoal; viola as diretrizes de tom conversacional e empático da marca.
 
-**Summary:** Too corporate and impersonal; needs significant revision for brand voice.
+### Tabela de Achados e Reprovação (5 Campos Oficiais)
+| Localização | Trecho Auditado | Regra / Padrão Violado | Correção Verificável | Destinatário da Devolução |
+|---|---|---|---|---|
+| `§ 1, linha 1` | *"FocusFlow leverages artificial intelligence to optimize task prioritization..."* | `brand-voice.md: "O que NÃO comunicar" (Item 1: Banir buzzwords corporativas)` + `padroes-pt-br.md (Cat. 3: Puffery)` | Eliminar os termos "leverages", "optimize", "maximize" e "strategic objectives"; substituir por linguagem humana conversacional focada no alívio de sobrecarga de tarefas da equipe. | `copy-redacao-publicitaria` |
+| `§ 1, linha 2` | *"...enabling teams to maximize productivity and achieve strategic objectives."* | `brand-voice.md: Traço 2 (Empatia Operacional vs Tom Burocrático)` | Substituir a promessa genérica de produtividade por benefício empírico tangível (ajudar o time a priorizar o que fazer primeiro). | `copy-redacao-publicitaria` |
 
-### Strengths
-- Mentions key benefit (task prioritization)
-- Targets teams correctly
+### O que Passou e Pontos Fortes
+- Identifica corretamente a dor de priorização de tarefas de times sobrecarregados.
 
-### Issues
-- **Full sentence**: Corporate jargon overload
-  - Why: "leverages", "optimize", "maximize", "strategic objectives" are all buzzwords
-  - Fix: Use plain language that sounds human
-- **Tone**: Passive and impersonal
-  - Why: Sounds like enterprise software, not a partner
-  - Fix: Make it conversational and empowering
-
-### Recommendations
-1. **Remove jargon**: Replace corporate speak with conversational language
-2. **Add warmth**: Make it sound like you're helping, not selling
-3. **Lead with empathy**: Start with the problem they feel
-
-### Revised Version
-"Your team has a million tasks. FocusFlow's AI helps you figure out what to tackle first, so you can spend time on what really matters."
-
-**Changes Made:**
-- Removed all corporate jargon ("leverages", "optimize", etc.)
-- Added conversational language ("a million tasks", "figure out")
-- Made it empowering ("what really matters")
-- Created emotional connection (acknowledging overwhelm)
+### Próximos Passos para a Especialista Produtora
+1. Reescrever o parágrafo no arquivo `anuncio-v2.md` aplicando a voz parceira e empática da FocusFlow.
+2. Não utilizar substantivos abstratos desancorados. Submeter para releitura integral na v2.
+```
 
 ## When to Use This Agent
 
@@ -308,8 +301,8 @@ Before delivering brand review:
 - [ ] **Guidelines Referenced**: Brand voice document loaded
 - [ ] **Channel Appropriate**: Tone fits context
 - [ ] **All Issues Flagged**: Specific line/text cited
-- [ ] **Fixes Provided**: Each issue has suggested revision
-- [ ] **Revised Version**: Complete corrected content included
+- [ ] **Fixes Provided**: Each issue has actionable instructions in the 5-field Rejection Table
+- [ ] **No Ghostwriting**: Reviewer issues opinion without rewriting the piece (Principle: "who validates does not rewrite")
 - [ ] **Changes Explained**: Why each change improves voice
 - [ ] **Score Justified**: Rating has clear rationale
 

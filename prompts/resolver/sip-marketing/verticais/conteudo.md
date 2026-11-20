@@ -27,7 +27,7 @@ Estratégia e produção de conteúdo: briefing, blog, pesquisa, tendências, re
 
 | Workflow | Use quando |
 | --- | --- |
-| `/conteudo-aprovacao` | Gera o fluxo de aprovação de uma peça de conteúdo (etapas, responsáveis, SLA e checklist por estágio). Use quando uma peça precisar passar por revisão antes de publicar. |
+| `/conteudo-aprovacao` | Gera o fluxo de aprovação de uma peça de conteúdo (etapas, responsáveis, SLA, parecer em 5 campos e releitura integral na v2). Use quando uma peça precisar passar por revisão antes de publicar. |
 | `/conteudo-briefing` | Generate comprehensive content briefs for writers, ensuring clarity, |
 | `/conteudo-briefing-de-seo` | Content brief template and creation methodology for SEO-optimized content. Use when preparing briefs for writers or planning new content pieces. |
 | `/conteudo-escrita-colaborativa` | Assists in writing high-quality content by conducting research, adding citations, improving hooks, iterating on outlines, and providing real-time feedback on each section. Transforms your writing process from solo effort to collaborative partnership. |
