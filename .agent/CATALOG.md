@@ -2,8 +2,8 @@
 
 > Catálogo completo de Marketing integrado à base global de Engenharia Super IA Projects
 
-**Total Geral:** `687` recursos | **Skills:** `310` | **Workflows:** `225` | **Agentes:** `152`
-**Fontes Integradas:** `Super IA Marketing` (247) · `Super IA Projects` (440)
+**Total Geral:** `696` recursos | **Skills:** `319` | **Workflows:** `225` | **Agentes:** `152`
+**Fontes Integradas:** `Super IA Marketing` (256) · `Super IA Projects` (440)
 
 ---
 
@@ -13,11 +13,11 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
 
 | Recurso | Tipo | Origem | Papel / O que faz | Link Direto |
 | :--- | :--- | :--- | :--- | :--- |
-| **`execution-loop`** | `Skill` | `Super IA Projects` | Ciclo Espec → Plan → Execução → QA (nota 0-10) → Debug para builds e mudanças significativas. | [Acessar](#execution-loop) |
+| **`execution-loop`** | `Skill` | `Super IA Marketing` | Ciclo Espec → Plan → Execução → QA (nota 0-10) → Debug para builds e mudanças significativas. | [Acessar](#execution-loop) |
 | **`skill-resolver`** | `Skill` | `Super IA Projects` | Procedimento inteligente de busca e resolução de skills no ecossistema. | [Acessar](#skill-resolver) |
-| **`spec-writing`** | `Skill` | `Super IA Projects` | Criação de especificação escrita estruturada antes do início do planejamento ou código. | [Acessar](#spec-writing) |
-| **`session-handoff`** | `Skill` | `Super IA Projects` | Documentação do trabalho da sessão para continuidade fluida em sessões futuras. | [Acessar](#session-handoff) |
-| **`writing-skills`** | `Skill` | `Super IA Projects` | Criação e edição de qualquer skill aplicando TDD a documentação e symlinks. | [Acessar](#writing-skills) |
+| **`spec-writing`** | `Skill` | `Super IA Marketing` | Criação de especificação escrita estruturada antes do início do planejamento ou código. | [Acessar](#spec-writing) |
+| **`session-handoff`** | `Skill` | `Super IA Marketing` | Documentação do trabalho da sessão para continuidade fluida em sessões futuras. | [Acessar](#session-handoff) |
+| **`writing-skills`** | `Skill` | `Super IA Marketing` | Criação e edição de qualquer skill aplicando TDD a documentação e symlinks. | [Acessar](#writing-skills) |
 | **`clean-code`** | `Skill` | `Super IA Projects` | Diretrizes obrigatórias de código limpo, sem over-engineering e com testes. | [Acessar](#clean-code) |
 | **`project-initializer`** | `Skill` | `Super IA Projects` | Fluxo de 5 fases para inicialização de projetos do zero com paridade dual. | [Acessar](#project-initializer) |
 | **`project-defines`** | `Skill` | `Super IA Projects` | Governança documental de projetos governados por pasta _projectdefines/. | [Acessar](#project-defines) |
@@ -327,10 +327,10 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Store Design](#store-design) (`1`)
 - [Execute (Local)](#execute-local) (`1` recursos)
   - [Plan](#plan) (`1`)
-- [Executing (Local)](#executing-local) (`1` recursos)
-  - [Plans](#plans) (`1`)
-- [Execution (Local)](#execution-local) (`1` recursos)
-  - [Loop](#loop) (`1`)
+- [Executing (Local)](#executing-local) (`2` recursos)
+  - [Plans](#plans) (`2`)
+- [Execution (Local)](#execution-local) (`2` recursos)
+  - [Loop](#loop) (`2`)
 - [Explorer (Local)](#explorer-local) (`1` recursos)
   - [Agent](#agent) (`1`)
 - [Fastapi (Local)](#fastapi-local) (`2` recursos)
@@ -566,8 +566,8 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Icp](#icp) (`1`)
 - [Php (Local)](#php-local) (`1` recursos)
   - [Pro](#pro) (`1`)
-- [Plan (Local)](#plan-local) (`1` recursos)
-  - [Writing](#writing) (`1`)
+- [Plan (Local)](#plan-local) (`2` recursos)
+  - [Writing](#writing) (`2`)
 - [Ponytail (Local)](#ponytail-local) (`2` recursos)
   - [Audit](#audit) (`1`)
   - [Review](#review) (`1`)
@@ -628,6 +628,8 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [State Management](#state-management) (`1`)
 - [Receiving (Local)](#receiving-local) (`1` recursos)
   - [Code Review](#code-review) (`1`)
+- [Recursos Próprios (0 Mkt)](#recursos-próprios-0-mkt) (`1` recursos)
+  - [Funcionalidades Locais](#funcionalidades-locais) (`1`)
 - [Recursos Próprios (Super IA Projects)](#recursos-próprios-super-ia-projects) (`47` recursos)
   - [Funcionalidades Locais](#funcionalidades-locais) (`47`)
 - [Red (Local)](#red-local) (`1` recursos)
@@ -721,8 +723,8 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
 - [Service (Local)](#service-local) (`2` recursos)
   - [Mesh Expert](#mesh-expert) (`1`)
   - [Mesh Observability](#mesh-observability) (`1`)
-- [Session (Local)](#session-local) (`1` recursos)
-  - [Handoff](#handoff) (`1`)
+- [Session (Local)](#session-local) (`2` recursos)
+  - [Handoff](#handoff) (`2`)
 - [Shellcheck (Local)](#shellcheck-local) (`1` recursos)
   - [Configuration](#configuration) (`1`)
 - [Similarity (Local)](#similarity-local) (`1` recursos)
@@ -779,8 +781,8 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Security](#security) (`1`)
 - [Spark (Local)](#spark-local) (`1` recursos)
   - [Optimization](#optimization) (`1`)
-- [Spec (Local)](#spec-local) (`1` recursos)
-  - [Writing](#writing) (`1`)
+- [Spec (Local)](#spec-local) (`2` recursos)
+  - [Writing](#writing) (`2`)
 - [Sql (Local)](#sql-local) (`3` recursos)
   - [Migrations](#migrations) (`1`)
   - [Optimization Patterns](#optimization-patterns) (`1`)
@@ -799,8 +801,8 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Driven Development](#driven-development) (`1`)
 - [Superiaprojects (Local)](#superiaprojects-local) (`1` recursos)
   - [Criar Sip](#criar-sip) (`1`)
-- [Systematic (Local)](#systematic-local) (`1` recursos)
-  - [Debugging](#debugging) (`1`)
+- [Systematic (Local)](#systematic-local) (`2` recursos)
+  - [Debugging](#debugging) (`2`)
 - [Tailwind (Local)](#tailwind-local) (`2` recursos)
   - [Design System](#design-system) (`1`)
   - [Patterns](#patterns) (`1`)
@@ -872,8 +874,8 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Pitch De Patrocinio](#pitch-de-patrocinio) (`1`)
   - [Prospeccao De Leads](#prospeccao-de-leads) (`2`)
   - [Qualificacao De Leads](#qualificacao-de-leads) (`1`)
-- [Verification (Local)](#verification-local) (`1` recursos)
-  - [Before Completion](#before-completion) (`1`)
+- [Verification (Local)](#verification-local) (`2` recursos)
+  - [Before Completion](#before-completion) (`2`)
 - [Vibecoding (Local)](#vibecoding-local) (`1` recursos)
   - [Security Audit](#security-audit) (`1`)
 - [Visual (Local)](#visual-local) (`1` recursos)
@@ -895,10 +897,10 @@ Estes recursos regem os processos de desenvolvimento, resolução de skills e go
   - [Patterns](#patterns) (`1`)
 - [Write (Local)](#write-local) (`1` recursos)
   - [Plan](#plan) (`1`)
-- [Writing (Local)](#writing-local) (`3` recursos)
+- [Writing (Local)](#writing-local) (`4` recursos)
   - [Agents](#agents) (`1`)
   - [Plans](#plans) (`1`)
-  - [Skills](#skills) (`1`)
+  - [Skills](#skills) (`2`)
 - [Xss (Local)](#xss-local) (`1` recursos)
   - [Scan](#scan) (`1`)
 
@@ -2724,24 +2726,26 @@ Total de recursos nesta macro-área: `1`
 
 ## <a id="executing-local"></a>Executing (Local)
 
-Total de recursos nesta macro-área: `1`
+Total de recursos nesta macro-área: `2`
 
 ### <a id="plans"></a>Plans
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
+| <a id="executing-plans"></a>**`executing-plans`** | `Skill` | `Super IA Marketing` | Use ao executar um plano de implementação na sessão atual como o próprio implementador — seu parceiro humano escolheu a execução em linha ou nenhuma ferramenta de subagente está disponível |
 | <a id="executing-plans"></a>**`executing-plans`** | `Skill` | `Super IA Projects` | Use ao executar um plano de implementação na sessão atual como o próprio implementador — seu parceiro humano escolheu a execução em linha ou nenhuma ferramenta de subagente está disponível |
 
 ---
 
 ## <a id="execution-local"></a>Execution (Local)
 
-Total de recursos nesta macro-área: `1`
+Total de recursos nesta macro-área: `2`
 
 ### <a id="loop"></a>Loop
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
+| <a id="execution-loop"></a>**`execution-loop`** | `Skill` | `Super IA Marketing` | Use ao iniciar um novo recurso não trivial, construção, refatoração ou mudança significativa que precise de um ciclo de desenvolvimento documentado e com controle de qualidade — também chamado de "Loop de Execução" — antes de escrever o código de implementação. |
 | <a id="execution-loop"></a>**`execution-loop`** | `Skill` | `Super IA Projects` | Use ao iniciar um novo recurso não trivial, construção, refatoração ou mudança significativa que precise de um ciclo de desenvolvimento documentado e com controle de qualidade — também chamado de "Loop de Execução" — antes de escrever o código de implementação. |
 
 ---
@@ -4159,12 +4163,13 @@ Total de recursos nesta macro-área: `1`
 
 ## <a id="plan-local"></a>Plan (Local)
 
-Total de recursos nesta macro-área: `1`
+Total de recursos nesta macro-área: `2`
 
 ### <a id="writing"></a>Writing
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
+| <a id="plan-writing"></a>**`plan-writing`** | `Skill` | `Super IA Marketing` | Planejamento de tarefas estruturado com detalhamentos, dependências e critérios de verificação claros. Use ao implementar recursos, refatorar ou qualquer trabalho de várias etapas. |
 | <a id="plan-writing"></a>**`plan-writing`** | `Skill` | `Super IA Projects` | Planejamento de tarefas estruturado com detalhamentos, dependências e critérios de verificação claros. Use ao implementar recursos, refatorar ou qualquer trabalho de várias etapas. |
 
 ---
@@ -4528,6 +4533,18 @@ Total de recursos nesta macro-área: `1`
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
 | <a id="receiving-code-review"></a>**`receiving-code-review`** | `Skill` | `Super IA Projects` | Use ao receber feedback de revisão de código, antes de implementar sugestões, especialmente se o feedback parecer pouco claro ou tecnicamente questionável - requer rigor técnico e verificação, não acordo performativo ou implementação cega |
+
+---
+
+## <a id="recursos-próprios-0-mkt"></a>Recursos Próprios (0 Mkt)
+
+Total de recursos nesta macro-área: `1`
+
+### <a id="funcionalidades-locais"></a>Funcionalidades Locais
+
+| Recurso | Tipo | Origem | Descrição e Aplicação |
+| :--- | :--- | :--- | :--- |
+| <a id="brainstorming"></a>**`brainstorming`** | `Skill` | `Super IA Marketing` | Use quando estiver prestes a criar recursos, construir componentes, adicionar funcionalidades, modificar comportamento ou planejar algo novo, no software ou fora dele, e quando uma solicitação for complexa, vaga ou pouco clara - o Portão Socrático, antes de qualquer uso ou implementação de ferramenta |
 
 ---
 
@@ -5141,12 +5158,13 @@ Total de recursos nesta macro-área: `2`
 
 ## <a id="session-local"></a>Session (Local)
 
-Total de recursos nesta macro-área: `1`
+Total de recursos nesta macro-área: `2`
 
 ### <a id="handoff"></a>Handoff
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
+| <a id="session-handoff"></a>**`session-handoff`** | `Skill` | `Super IA Marketing` | Use ao encerrar uma sessão com trabalho inacabado que outra sessão precisará continuar ou ao iniciar uma sessão que retoma a transferência de outra pessoa (ou do seu próprio passado) — captura o status da tarefa, as decisões, os aprendizados e as próximas etapas sem perder o contexto. |
 | <a id="session-handoff"></a>**`session-handoff`** | `Skill` | `Super IA Projects` | Use ao encerrar uma sessão com trabalho inacabado que outra sessão precisará continuar ou ao iniciar uma sessão que retoma a transferência de outra pessoa (ou do seu próprio passado) — captura o status da tarefa, as decisões, os aprendizados e as próximas etapas sem perder o contexto. |
 
 ---
@@ -5322,7 +5340,7 @@ Total de recursos nesta macro-área: `1`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="skill-resolver"></a>**`skill-resolver`** | `Skill` | `Super IA Projects` | Use whenever a capability seems relevant to the current task but no matching skill appears in the currently loaded skills list — this is common in Antigravity Kit projects (any repo with a .agent/skills/ directory, or a CLAUDE.md/AGENTS.md that references "0 Padrões"), because Claude Code only auto-discovers SKILL.md files under .claude/skills/ and ~/.claude/skills/, never under .agent/skills/. Also use when the user names a skill by name that doesn't show up in the listing, or asks things like "existe skill pra isso", "do we have a skill for X", "check 0 Padrões for a skill". Searches the project's own .agent/skills/ (and .agents/skills/ for older, unmigrated setups), then the global library at 0 Padrões/.agent/skills/, then 0 Mkt/ for marketing, SEO, copywriting or growth topics. |
+| <a id="skill-resolver"></a>**`skill-resolver`** | `Skill` | `Super IA Projects` | Use whenever a capability seems relevant to the current task but no matching skill appears in the currently loaded skills list, or the Skill tool answers "Unknown skill" for a skill the project rules name — common in Antigravity Kit projects (any repo with a .agent/skills/ directory, or a CLAUDE.md/AGENTS.md that references "0 Padrões"), because Claude Code only auto-discovers SKILL.md files under .claude/skills/ and ~/.claude/skills/, never under .agent/skills/ or inside a hub. Also use when the user names a skill that doesn't show up in the listing, or asks "existe skill pra isso", "do we have a skill for X", "check 0 Padrões for a skill". Runs resolve_skill.py, which searches the project, the SIP hubs it consumes and the kit. This is the fallback for projects with no SIP installed; where `sip-geral` is installed, its resolver covers the same ground. |
 
 ---
 
@@ -5491,12 +5509,13 @@ Total de recursos nesta macro-área: `1`
 
 ## <a id="spec-local"></a>Spec (Local)
 
-Total de recursos nesta macro-área: `1`
+Total de recursos nesta macro-área: `2`
 
 ### <a id="writing"></a>Writing
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
+| <a id="spec-writing"></a>**`spec-writing`** | `Skill` | `Super IA Marketing` | Use quando um recurso ou mudança precisar de uma especificação escrita – problema, solução, histórias de usuários, decisões – antes do início do planejamento ou implementação, transformando o que já foi discutido em um documento concreto em vez de um entendimento compartilhado implícito. |
 | <a id="spec-writing"></a>**`spec-writing`** | `Skill` | `Super IA Projects` | Use quando um recurso ou mudança precisar de uma especificação escrita – problema, solução, histórias de usuários, decisões – antes do início do planejamento ou implementação, transformando o que já foi discutido em um documento concreto em vez de um entendimento compartilhado implícito. |
 
 ---
@@ -5611,12 +5630,13 @@ Total de recursos nesta macro-área: `1`
 
 ## <a id="systematic-local"></a>Systematic (Local)
 
-Total de recursos nesta macro-área: `1`
+Total de recursos nesta macro-área: `2`
 
 ### <a id="debugging"></a>Debugging
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
+| <a id="systematic-debugging"></a>**`systematic-debugging`** | `Skill` | `Super IA Marketing` | Use ao encontrar qualquer bug, falha de teste ou comportamento inesperado, antes de propor correções |
 | <a id="systematic-debugging"></a>**`systematic-debugging`** | `Skill` | `Super IA Projects` | Use ao encontrar qualquer bug, falha de teste ou comportamento inesperado, antes de propor correções |
 
 ---
@@ -6053,12 +6073,13 @@ Total de recursos nesta macro-área: `14`
 
 ## <a id="verification-local"></a>Verification (Local)
 
-Total de recursos nesta macro-área: `1`
+Total de recursos nesta macro-área: `2`
 
 ### <a id="before-completion"></a>Before Completion
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
+| <a id="verification-before-completion"></a>**`verification-before-completion`** | `Skill` | `Super IA Marketing` | Use quando estiver prestes a declarar que o trabalho foi concluído, corrigido ou aprovado, antes de confirmar ou criar PRs - requer a execução de comandos de verificação e a confirmação da saída antes de fazer qualquer declaração de sucesso; evidência antes de afirmações sempre |
 | <a id="verification-before-completion"></a>**`verification-before-completion`** | `Skill` | `Super IA Projects` | Use quando estiver prestes a declarar que o trabalho foi concluído, corrigido ou aprovado, antes de confirmar ou criar PRs - requer a execução de comandos de verificação e a confirmação da saída antes de fazer qualquer declaração de sucesso; evidência antes de afirmações sempre |
 
 ---
@@ -6191,7 +6212,7 @@ Total de recursos nesta macro-área: `1`
 
 ## <a id="writing-local"></a>Writing (Local)
 
-Total de recursos nesta macro-área: `3`
+Total de recursos nesta macro-área: `4`
 
 ### <a id="agents"></a>Agents
 
@@ -6209,6 +6230,7 @@ Total de recursos nesta macro-área: `3`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
+| <a id="writing-skills"></a>**`writing-skills`** | `Skill` | `Super IA Marketing` | Use ao criar novas habilidades, editar habilidades existentes ou verificar o funcionamento das habilidades antes da implantação |
 | <a id="writing-skills"></a>**`writing-skills`** | `Skill` | `Super IA Projects` | Use ao criar novas habilidades, editar habilidades existentes ou verificar o funcionamento das habilidades antes da implantação |
 
 ---

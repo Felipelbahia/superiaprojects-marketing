@@ -7,11 +7,12 @@ author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: Antigravity Multi-IA Hub & Felipe Bahia (Futuro Mercado)
-  version: 1.0.0
+  version: 1.1.0
 ---
 # Content Factory — Esteira Unificada de Produção de Conteúdo
 
 > **Visão Geral:** O `conteudo-linha-de-producao` é o motor orquestrador do `0 Mkt`. Ele integra todas as skills analíticas, psicológicas e operacionais em uma linha de montagem de 8 etapas, transformando dados brutos de concorrentes e inteligência de marca em peças finais prontas para gravação ou renderização automatizada.
+> *Crédito Conceitual:* Conceitos de ciclo de artefatos e pipeline editorial adaptados de `promovaweb/inboundfy` (licença AGPL-3.0) com redação autoral e padrões exclusivos do ecossistema `0 Mkt`.
 
 ---
 
@@ -111,15 +112,19 @@ Conforme o formato da peça:
 
 ---
 
-### Etapa 8: Auditoria Anti-Slop Obrigatória & Salvamento de Output
+### Etapa 8: Auditoria Anti-Slop Obrigatória, Contrato de Artefato & Salvamento
 1. **Passagem pelo `/geral-anti-slop`:**
    - Submeter o roteiro/copy às regras de `.agent/workflows/geral-anti-slop.md` e à skill [`geral-anti-slop`](../geral-anti-slop/SKILL.md).
    - Aplicar o catálogo de 9 categorias de vícios em português ([`padroes-pt-br.md`](../geral-anti-slop/references/padroes-pt-br.md)) e a anatomia do parágrafo humano ([`escrita-humana-e-gramatica-pt-br.md`](../geral-anti-slop/references/escrita-humana-e-gramatica-pt-br.md)).
    - Garantir cadência natural de fala brasileira.
-2. **Salvamento Padronizado:**
+2. **Contrato de Artefato e Metadados Obrigatórios:**
+   - Toda peça gerada deve conter o cabeçalho padronizado e obedecer ao ciclo de 6 estados (`rascunho → em revisao → aprovado → agendado → no ar → arquivado`) detalhados em [`contrato-de-artefatos-e-estados.md`](references/contrato-de-artefatos-e-estados.md).
+   - Peças aprovadas nunca são sobrescritas; alterações posteriores invalidam a aprovação e exigem geração de novo arquivo `-v2.md` com status `em revisao`.
+3. **Salvamento Padronizado e Idempotência:**
    - **Antes de gravar, siga a regra de resolução de destino da skill `mapa-de-destinos`** (lê `docs/mapa-de-destinos.md`; sem mapa, usa o padrão da própria skill — `content/<marca>/<tipo-de-conteudo>/YYYY-MM-DD - Nome da Demanda/` no 0 Mkt, `conteudos/<tipo-de-conteudo>/YYYY-MM-DD - Nome da Demanda/` em projeto próprio).
+   - Preservar arquivos brutos originais e peças previamente aprovadas durante reentradas no fluxo.
    - Salvar os arquivos:
-     - `roteiro.md` ou `copy-opcao-1.md`
+     - `roteiro.md` ou `copy-opcao-1.md` (com cabeçalho oficial)
      - `briefing-visual.md`
      - `blueprint-reverso.md` (se originado de concorrente)
 
@@ -134,5 +139,6 @@ Ou selecionando o agente `conteudo-criacao-multiformato` e aplicando o fluxo aci
 
 ## Outras referências
 
+- **[contrato-de-artefatos-e-estados.md](references/contrato-de-artefatos-e-estados.md)** — Contrato formal de cabeçalho, ciclo de 6 estados, invalidação por edição e idempotência editorial.
 - **[content-calendar-template.md](references/content-calendar-template.md)** — Modelo de calendário de conteúdo por campanha ou mês.
 - **[product-update-example.md](references/product-update-example.md)** — Exemplo de conteúdo de atualização de produto.

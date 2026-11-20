@@ -71,10 +71,11 @@ Quando houver não-conformidade, preencher obrigatoriamente:
    - **Passe 2 (Sentido e Integridade):** O revisor relê a peça inteira do começo ao fim para garantir que a edição local não quebrou a coesão, não alterou a tese central e não introduziu novos desvios.
 
 ### Fase 4: Aprovação Final, Governança e Publicação
-- [ ] Veredito formal `APROVADO` emitido pelo revisor;
+- [ ] Veredito formal `APROVADO` emitido pelo revisor com indicação estrita da versão exata aprovada (ex.: `versao_aprovada: v1`);
+- [ ] **Regra de Invalidação por Edição:** Qualquer alteração textual posterior à aprovação invalida imediatamente o parecer favorável. O arquivo aprovado permanece inalterado e as modificações devem ser salvas em novo arquivo (`conteudo-v2.md`) com `estado: em revisao`, conforme [contrato-de-artefatos-e-estados.md](.agent/skills/conteudo-linha-de-producao/references/contrato-de-artefatos-e-estados.md);
 - [ ] Feedbacks e preferências do usuário durante o ciclo registrados em `_brands/<marca>/aprendizado.md` com ID, alcance (`peça`, `canal`, `persona`, `projeto`) e estado (`proposta`, `confirmada`);
 - [ ] Regras confirmadas de alcance global promovidas para `brand-voice.md`;
-- [ ] Peça liberada para agendamento ou publicação imediata.
+- [ ] Peça liberada para transição para `agendado` ou publicação imediata (`no ar`).
 
 ---
 

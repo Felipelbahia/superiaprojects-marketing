@@ -11,10 +11,10 @@ Atualizado em 2026-11-07 (linhas `vendas` e `design` acrescentadas após a audit
 | Estratégia geral | `content/{marca}/estrategia/estrategia-geral.md` | marca | | |
 | Calendários | `content/{marca}/estrategia/calendarios/` | marca | | |
 | Campanha (plano, meta, resultado) | `content/{marca}/estrategia/campanhas/AAAA-MM-DD - Nome da Campanha/` | marca | `campanha.md`, `checklist-lancamento.md`, `apresentacao.html`, `resultado.md` | resultado esperado definido antes de começar; as peças ficam em `content/{marca}/{tipo}/`. Campanha contínua é permitida (`tipo: continua`, sem `fim:`) |
-| Peça de conteúdo por tipo | `content/{marca}/{tipo}/AAAA-MM-DD - Nome da Demanda/` | marca | `copy-opcao-1.md`, `copy-opcao-2.md`, `briefing.md`, `draft.md`; campo `campanha:` quando serve a uma campanha | |
+| Peça de conteúdo por tipo | `content/{marca}/{tipo}/AAAA-MM-DD - Nome da Demanda/` | marca | `copy-opcao-1.md`, `copy-opcao-2.md`, `briefing.md`, `draft.md`; metadados obrigatórios no cabeçalho (`marca`, `canal`, `persona`, `origem_briefing`, `fontes_lidas`, `estado`, `versao_aprovada`, `proxima_acao`) | ciclo de estados: `rascunho → em revisao → aprovado → agendado → no ar → arquivado`; edição em peça aprovada gera `v2` e invalida aprovação |
 | Playbook, cadência e material comercial | `content/{marca}/vendas/AAAA-MM-DD - Nome da Demanda/` | marca | `cadencia-outbound.md`, `playbook-discovery.md`, `deal-governance.md` | tipo `vendas` (agente `vendas-direcao-b2b`) |
 | Direção de arte e briefing visual | `content/{marca}/design/AAAA-MM-DD - Nome da Demanda/` | marca | `direcao-de-arte.md`, `prompts-ia.md`, `briefing-layout.md` | tipo `design` (agente `brand-direcao-de-arte`); arte final fica em `assets/` |
-| Fluxo de aprovação | sem esteira | marca | campo `status:` nos metadados da peça | ver "Respostas" |
+| Fluxo de aprovação | sem esteira | marca | campo `estado:` e `versao_aprovada:` nos metadados da peça | ver "Respostas" e `contrato-de-artefatos-e-estados.md` |
 | Assessoria de imprensa: pauta (pasta com ângulos), pitch por ângulo, release, jornalistas | `content/{marca}/imprensa/AAAA-MM-DD - Nome/` | marca | `pauta/pauta-principal.md`, `pauta/angulo-<tema>.md`, `pitch/`, `release.md`, `jornalistas.md` | base de jornalistas só no Hub (leitura) |
 | Controle de envio de imprensa | `content/{marca}/imprensa/envios.md` | marca | uma linha por envio | status enviado → respondeu → publicou → sem retorno |
 | Clipping | `content/{marca}/imprensa/clipping/` | marca | `AAAA-MM-DD_<veiculo>_<tema>.md` | |
