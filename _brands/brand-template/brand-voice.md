@@ -39,3 +39,23 @@
 - ❌ Clichês de IA: *"revolucionário"*, *"crucial"*, *"no cenário atual"*, *"mergulhe nesta jornada"*, *"desvendar"*, *"portanto"*, *"divisor de águas"*.
 - ❌ Promessas milagrosas sem dados de suporte ou prazos irreais.
 - ❌ Tom excessivamente professoral ou corporativista vazio.
+
+---
+
+## 5. Afirmações que Exigem Confirmação Humana
+
+> Determinadas declarações não podem ser geradas autonomamente por agentes de IA sem validação fática e chancela do responsável legal ou técnico competente.
+
+- **Garantias Financeiras ou Promessas de ROI:** qualquer menção a ganhos monetários específicos, percentuais exatos de retorno sobre investimento ou prazos de enriquecimento exige validação da liderança financeira.
+- **Alegações Regulatórias, Jurídicas ou de Conformidade:** citações de conformidade plena (ex.: *"100% aderente à LGPD"*, *"certificado ISO"*) exigem confirmação do departamento jurídico.
+- **Estatísticas e Métricas de Mercado Atribuídas a Terceiros:** pesquisas e percentuais do setor devem ser acompanhados da fonte original primária e data de acesso, sob pena de bloqueio.
+- **Afirmações de Saúde, Bem-estar ou Segurança:** qualquer menção com impacto físico, médico ou psicológico direto exige parecer de especialista responsável.
+
+---
+
+## 6. Restrições Específicas por Canal e Audiência
+
+- **Comunicação Institucional e Relações com Investidores:** proibido o uso de humor irônico, memes ou gírias efêmeras.
+- **Anúncios Pagos Patrocinados (Tráfego Pago):** proibido citar nomes de concorrentes diretos de forma difamatória ou depreciativa; utilizar apenas comparações estruturais e respeitosas.
+- **Suporte ao Cliente e Comunicação de Crise:** adotar postura 100% empática, sem desculpas evasivas ou jargões defensivos.
+- **Comunicação B2B com Executivos (C-Level):** ir direto ao resultado e impacto de negócio; eliminar enrolações e introduções redundantes.

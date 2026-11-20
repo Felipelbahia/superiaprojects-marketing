@@ -3047,7 +3047,7 @@ Total de recursos nesta macro-área: `22`
 
 | Recurso | Tipo | Origem | Descrição e Aplicação |
 | :--- | :--- | :--- | :--- |
-| <a id="geral-verificacao-de-fatos"></a>**`/geral-verificacao-de-fatos`** | `Workflow` | `Super IA Marketing` | Verifica afirmações factuais em documentos usando pesquisa na web e fontes oficiais e, em seguida, propõe correções com confirmação do usuário. Use quando o usuário solicitar verificação de fatos, verificação de informações, validação de reivindicações, verificação de precisão ou atualização de informações desatualizadas em documentos. Suporta especificações de modelo de IA, documentação técnica, estatísticas e declarações factuais gerais. |
+| <a id="geral-verificacao-de-fatos"></a>**`/geral-verificacao-de-fatos`** | `Workflow` | `Super IA Marketing` | Verifica afirmações factuais em documentos usando pesquisa na web e fontes oficiais, aplica a hierarquia de precedência de fonte de 5 níveis, bloqueia conflitos factuais para evitar resolução silenciosa de IA e propõe correções com confirmação do usuário. Use quando o usuário solicitar verificação de fatos, verificação de informações, validação de afirmações, verificação de precisão ou resolução de fontes conflitantes em documentos. |
 
 ---
 
