@@ -8,7 +8,7 @@ author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
 license: MIT
 metadata:
   author: ClawFu, aaron-he-zhu & Antigravity Kit & Felipe Bahia (Futuro Mercado)
-  version: 1.0.0
+  version: 1.1.0
 complements: seo-conteudo, conteudo-post-de-blog, social-estrategia, geral-anti-slop
 ---
 # Content Repurposer & Multiplication Engine
@@ -74,29 +74,44 @@ When building cornerstone assets to dominate a topic cluster:
 
 ---
 
-## Transcript Transmutation Framework
+## Saneamento de Material Bruto (Transcrições e Áudios)
 
-When converting spoken transcripts (podcasts, customer interviews, video recordings) into written content:
+Ao processar material oral bruto (gravações de reuniões, entrevistas, podcasts e vídeos), aplique o protocolo de **[`references/saneamento-de-material-bruto.md`](references/saneamento-de-material-bruto.md)**:
 
-1. **Strip Conversational Debris**: Remove verbal pauses ("um", "you know"), repeated thoughts, and colloquial tangents.
-2. **Extract the Core Thesis**: Identify the single strongest insight or framework introduced in the conversation.
-3. **Impose Visual Hierarchy**: Re-anchor the dialogue into clear H2/H3 subheads, bulleted takeaways, and summary callouts.
-4. **Preserve Authentic Voice**: Retain the speaker's original metaphors, specific analogies, and personality traits while elevating sentence clarity.
+1. **A Regra de Ouro: Limpar Não É Reescrever:** O saneamento limita-se à higienização mecânica da fala (remover "tipo assim", "né", "ééé", falsos inícios e pontuar frases). É terminantemente proibido parafrasear, adotar jargão corporativo estéril ou alterar a linha de raciocínio e os atritos do autor.
+2. **Correção Técnica Rastreável:** Corrija grafias fonéticas corrompidas de termos conhecidos (ex.: *"Cubernétis"* -> `Kubernetes`), registrando a intervenção no relatório.
+3. **Marcadores de Incerteza:** Nunca invente falas em trechos abafados ou inaudíveis. Use rigorosamente `[inaudível]`, `[trecho incerto: contexto]` ou `[termo técnico a confirmar: termo]`.
+4. **Governança de Dados Sensíveis:** Faturamento, nomes de clientes e segredos de negócio recebem a marcação `[dado sensível: requer permissão]` e são alertados no relatório.
+5. **Relatório de Saneamento Obrigatório (4 Colunas):** Toda saída saneada inclui tabela de intervenções: `Trecho Original da Transcrição | Trecho Saneado | Tipo de Intervenção | Justificativa Operacional`.
 
 ---
 
-## Repurposing Quality Gate
+## Matriz de Reaproveitamento e Fluxo de Base Editorial
 
+A multiplicação 1-para-Muitos é orquestrada pela metodologia de **[`references/matriz-de-reaproveitamento.md`](references/matriz-de-reaproveitamento.md)**:
+
+1. **Matriz de Reaproveitamento Estruturada (8 Colunas):** Cada derivado deve mapear `Canal Ativo`, `Formato e Dimensão`, `Persona-Alvo`, `Dúvida / Dor Específica`, `Ângulo Editorial Nativo`, `Fato / Âncora / Timestamp`, `Permissão de Dados Sensíveis` e `Prioridade Justificada`.
+2. **Fluxo "Da Transcrição à Base Editorial" (5 Etapas):**
+   - **Etapa 1:** Material Bruto Imutável (`bruto.md`).
+   - **Etapa 2:** Saneamento com Relatório de Limpeza (`saneado.md`).
+   - **Etapa 3:** Perguntas de Permissão e Validação de Dados Sensíveis.
+   - **Etapa 4:** FAQ Rastreável por Linha e Timestamp.
+   - **Etapa 5:** Base Editorial separando Fatos Observáveis de Interpretações/Opiniões.
+
+---
+
+## Repurposing Quality Gate (Hard Gate Bloqueante)
+
+Antes de aprovar ou despachar qualquer conjunto de peças derivadas, execute a auditoria de conformidade:
+
+### Hard Gate contra Reaproveitamento Mecânico
 ```
-EXTRACTION RIGOR:
-□ Core message of the original piece is preserved without distortion
-□ The derivative asset is natively adapted to the target channel (not a lazy copy-paste)
-□ Contextual references to the original audio/video/article are included when relevant
-
-INDEPENDENCE & VALUE:
-□ Each derivative asset stands alone as a valuable insight without requiring the source
-□ Specific actionable steps or data points are retained in every micro-post
-□ Tone matches the brand guidelines and passes the geral-anti-slop filter
+[ ] DIFERENCIAÇÃO DE ÂNGULO: Cada canal aborda o tema sob um recorte psicológico e editorial próprio.
+    -> REPROVADO se o mesmo roteiro linear ou a mesma ordem de tópicos for apenas fatiada entre redes.
+[ ] ADAPTAÇÃO NATIVA DE FORMATO: Respeita as dinâmicas de retenção de cada plataforma (visual, debate, vídeo).
+[ ] RASTREABILIDADE FACTUAL: Cada afirmação tem âncora e timestamp na transcrição saneada original.
+[ ] COERÊNCIA DO CONJUNTO: Zero contradições entre peças de canais distintos e saturação temporal evitada.
+[ ] GOVERNANÇA E SIGILO: Dados sensíveis foram formalmente liberados ou convertidos em casos anônimos.
 ```
 
 ---
@@ -105,6 +120,8 @@ INDEPENDENCE & VALUE:
 
 The following in-depth guides are bundled in the `references/` directory:
 
+- **[saneamento-de-material-bruto.md](references/saneamento-de-material-bruto.md)** — Protocolo de higienização de transcrições sem reescrever, marcadores e relatório de 4 colunas.
+- **[matriz-de-reaproveitamento.md](references/matriz-de-reaproveitamento.md)** — Matriz 1-para-Muitos estruturada (8 colunas), Hard Gate contra reaproveitamento mecânico e fluxo de 5 etapas da base editorial.
 - **[content-repurposing.md](references/content-repurposing.md)** — Core repurposing matrix and multi-format extraction workflows.
 - **[transcription-to-content.md](references/transcription-to-content.md)** — Step-by-step transcript cleanup, quoting, and article restructuring.
 - **[repurpose.md](references/repurpose.md)** — Tactical asset multiplication blueprints across channels.
@@ -137,3 +154,12 @@ Roteiros que fazem perguntas ao usuário antes de entregar. O texto base é ingl
 - **Redação de blog** (`write-blog`, `blog-template`, `content-writing`): [conteudo-post-de-blog](../conteudo-post-de-blog/SKILL.md). **Páginas de concorrentes:** [revenue-inteligencia-competitiva](../revenue-inteligencia-competitiva/SKILL.md). **Skyscraper (link building):** [seo-autoridade-e-backlinks](../seo-autoridade-e-backlinks/SKILL.md).
 - **Guia rápido da apresentação educativa:** voltou para [audiovisual-pitch-deck](../audiovisual-pitch-deck/SKILL.md), a que ele pertence.
 - **Cheat sheets duplicados:** arquivados em `.agent/skills/_arquivo/mescladas/r12-copy/`.
+
+---
+
+## Version History
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.1.0 | 2026-11-20 | Saneamento fiel sem paráfrase com relatório de 4 colunas (`saneamento-de-material-bruto.md`), matriz 1-para-muitos estruturada com 8 colunas (`matriz-de-reaproveitamento.md`), Hard Gate bloqueante contra reaproveitamento mecânico e fluxo de 5 etapas da base editorial (inbox 2034); crédito conceitual formal a `promovaweb/inboundfy` |
+| 1.0.0 | 2026-03-01 | Versão inicial importada do kit AgentKits |
