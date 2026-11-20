@@ -113,8 +113,8 @@ Conforme o formato da peça:
 
 ### Etapa 8: Auditoria Anti-Slop Obrigatória & Salvamento de Output
 1. **Passagem pelo `/geral-anti-slop`:**
-   - Submeter o roteiro/copy às regras de `.agent/workflows/geral-anti-slop.md`.
-   - Eliminar termos proibidos ("portanto", "crucial", "revolucionário", "no cenário atual", "além disso", "desvendar", "mergulhar").
+   - Submeter o roteiro/copy às regras de `.agent/workflows/geral-anti-slop.md` e à skill [`geral-anti-slop`](../geral-anti-slop/SKILL.md).
+   - Aplicar o catálogo de 9 categorias de vícios em português ([`padroes-pt-br.md`](../geral-anti-slop/references/padroes-pt-br.md)) e a anatomia do parágrafo humano ([`escrita-humana-e-gramatica-pt-br.md`](../geral-anti-slop/references/escrita-humana-e-gramatica-pt-br.md)).
    - Garantir cadência natural de fala brasileira.
 2. **Salvamento Padronizado:**
    - **Antes de gravar, siga a regra de resolução de destino da skill `mapa-de-destinos`** (lê `docs/mapa-de-destinos.md`; sem mapa, usa o padrão da própria skill — `content/<marca>/<tipo-de-conteudo>/YYYY-MM-DD - Nome da Demanda/` no 0 Mkt, `conteudos/<tipo-de-conteudo>/YYYY-MM-DD - Nome da Demanda/` em projeto próprio).

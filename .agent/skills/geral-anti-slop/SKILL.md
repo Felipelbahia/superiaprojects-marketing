@@ -9,26 +9,50 @@ metadata:
   author: Felipe Bahia (Futuro Mercado)
   version: 1.0.0
 ---
-# AI Slop Detector
+# AI Slop Detector & Escrita Humana
 
 ## What This Does
-Takes any text and rewrites it to remove common AI writing patterns, making it sound authentically human. Returns only the cleaned final version.
+Identifica e remove vícios de escrita de modelos de linguagem (IA), garantindo texto substantivo, ancorado em fatos concretos e alinhado à norma culta do português do Brasil (ou inglês). Opera em dois modos: **Reescrita/Limpeza Direta** e **Auditoria por Trecho com Parecer**.
 
 ## When to Use
-- After generating any AI-assisted content
-- Before publishing newsletters, articles, or social posts
-- When text feels "too polished" or generic
-- As a final quality gate in any writing workflow
+- Após gerar qualquer rascunho com assistência de IA
+- Antes de publicar ou enviar newsletters, artigos, landing pages ou posts sociais
+- Quando o texto soar excessivamente polido, artificial, didático demais ou vazio
+- Como portão de qualidade mandatório (*quality gate*) em pipelines de conteúdo (marcos `brief`, `rascunho` e `final`)
 
-## Instructions
+---
 
-Execute these steps NOW on the text provided:
+## Modos de Operação
 
-1. **Scan** the text for patterns listed below
-2. **Rewrite** each flagged section using the suggested fixes
-3. **Output** the cleaned text immediately - no preamble, no explanation
+### Modo 1: Reescrita / Limpeza Direta (Padrão para Chamadas Rápidas)
+1. **Varre** o texto contra o catálogo de padrões em inglês e o catálogo em português ([`references/padroes-pt-br.md`](references/padroes-pt-br.md)).
+2. **Reescreve** cada trecho viciado aplicando proposições afirmativas diretas e a anatomia do parágrafo humano ([`references/escrita-humana-e-gramatica-pt-br.md`](references/escrita-humana-e-gramatica-pt-br.md)).
+3. **Preserva** termos técnicos legítimos (*webhook*, *worker*, *deploy*), conectores causais reais (*Portanto* quando há inferência lógica verdadeira) e a cadência autêntica da marca.
+4. **Regra de Não-Invenção:** Se o texto de entrada não possui métricas ou datas exatas, **jamais invente números**. Use marcadores como `[a confirmar: métrica real]` para orientar o autor.
+5. **Saída:** Retorna o texto limpo pronto para uso imediato.
 
-The input text is everything that preceded this skill's invocation. Process it now.
+### Modo 2: Auditoria e Parecer por Trecho (Para Revisão e Portões de Qualidade)
+Acionado quando o usuário ou o fluxo pede "auditoria", "parecer", "revisão anti-slop" ou em marcos formais de produção:
+1. **Emite cabeçalho:** Marco (`brief`, `rascunho` ou `final`), ciclo, modo, arquivo de entrada e veredito do Hard Gate (`APROVADO`, `AJUSTES NECESSÁRIOS` ou `REPROVADO`).
+2. **Tabela de Achados (5 Colunas):**
+   - `Local e Trecho Auditado | Categoria do Padrão | Regra / Justificativa | Diagnóstico / Efeito | Ação Recomendada`
+3. **Hard Gate:**
+   - `APROVADO`: Zero padrões de slop e zero erros de norma culta.
+   - `AJUSTES NECESSÁRIOS`: Até 3 desvios pontuais sanáveis sem reestruturação da tese.
+   - `REPROVADO`: Múltiplos vícios combinados, promessas sem mecanismo ou erros gramaticais graves.
+4. **Casos limpos / Falso positivo:** Se o texto já estiver limpo, concreto e fundamentado, declare explicitamente `APROVADO` e mantenha o texto sem alterações cosméticas forçadas.
+
+---
+
+## Marcos no Ciclo Editorial
+
+| Etapa Editorial | Insumo Analisado | Foco da Auditoria Anti-Slop | Ação em Caso de Desvio |
+|---|---|---|---|
+| **`brief`** | Briefing / Pauta | Evitar ângulos genéricos, promessas vazias e jargão mercadológico antes da escrita | Ajustar a tese e exigir caso concreto |
+| **`rascunho`** | Outline / Primeira seção | Detectar aberturas clichês, contrastes artificiais e perguntas retóricas antes de expandir | Reescrever o parágrafo de abertura |
+| **`final`** | Peça completa finalizada | Revisão integral (texto, títulos, CTAs, norma culta em PT-BR e não-invenção) | Emitir parecer de 5 colunas ou texto limpo |
+
+---
 
 ---
 
@@ -282,12 +306,15 @@ Return only the cleaned text. No preamble, no explanation of changes, no "Here's
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.3.0 | 2026-11-20 | Suporte nativo a PT-BR: referências `padroes-pt-br.md` e `escrita-humana-e-gramatica-pt-br.md`; dois modos (Reescrita direta e Auditoria por trecho em 5 colunas com Hard Gate); marcos `brief`, `rascunho` e `final`; regra de não-invenção; calibração contra falso positivo e crédito conceitual a `promovaweb/inboundfy` |
 | 1.2.0 | 2026-01-17 | Added throat-clearing, emphasis crutches, dramatic fragmentation; expanded word substitutions (+10 words); 13-point checklist |
 | 1.1.0 | 2026-01-15 | Directive instructions for immediate execution, positive framing, skill chaining section |
 | 1.0.0 | 2026-01-01 | Initial creation from Write with AI prompt |
 
 ## Outras referências
 
-- **[de-ai-ify-patterns.md](references/de-ai-ify-patterns.md)** — Padrões para remover jargão de IA e devolver voz humana ao texto.
-- **[guide.md](references/guide.md)** — Guia de como o detector funciona.
-- **[roadmap.md](references/roadmap.md)** — Roteiro de evolução do detector.
+- **[`references/padroes-pt-br.md`](references/padroes-pt-br.md)** — As 9 categorias de padrões de IA em português do Brasil, regra de agrupamento/muleta, tabela de 5 colunas e 4 casos de regressão.
+- **[`references/escrita-humana-e-gramatica-pt-br.md`](references/escrita-humana-e-gramatica-pt-br.md)** — Anatomia do parágrafo humano (7 elementos), progressão como incidente real, sinais a preservar, casos antes/depois e checklist de norma culta (vírgula, crase, concordância, regência).
+- **[`references/de-ai-ify-patterns.md`](references/de-ai-ify-patterns.md)** — Padrões para remover jargão de IA e devolver voz humana ao texto (em inglês).
+- **[`references/guide.md`](references/guide.md)** — Guia de como o detector funciona.
+- **[`references/roadmap.md`](references/roadmap.md)** — Roteiro de evolução do detector.

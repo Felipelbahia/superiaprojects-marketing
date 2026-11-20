@@ -179,7 +179,7 @@ Ao auditar carrosséis existentes, gere o scorecard abaixo antes de apresentar o
 ## 🚫 Filtro Anti-Slop Obrigatório
 
 Antes de aprovar qualquer copy:
-- Elimine termos clichês de IA: "no cenário atual", "crucial", "revolucionário", "mergulhar", "desvendar", "portanto", "além disso", "como um divisor de águas".
+- Aplique o catálogo de padrões em português da skill [`geral-anti-slop`](../geral-anti-slop/SKILL.md) (ver [`padroes-pt-br.md`](../geral-anti-slop/references/padroes-pt-br.md)), eliminando aberturas clichês, contrastes artificiais, elogios vazios e trincas genéricas.
 - Escreva com a cadência oral do profissional brasileiro: direto, substantivo, sem adjetivação inflada.
 - Respeite as proibições específicas da marca ativa registradas em seu `brand-voice.md`.
 
