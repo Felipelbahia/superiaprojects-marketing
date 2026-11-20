@@ -38,7 +38,7 @@ Elimine completamente defaults visuais genéricos. Os parâmetros de design são
 
 | Token de Design | Diretriz Técnica Padrão 0 Mkt | Adaptação Dinâmica por Marca |
 |---|---|---|
-| **Proporção & Formato** | `4:5 portrait social slide, 1080x1350` | Fixo para Instagram/LinkedIn. Garante ocupação máxima de tela no feed mobile sem cortes indesejados. A medida do Instagram vem de guias de terceiros (`[a confirmar]` na ajuda da Meta); margens e moldes SVG: `../brand-builder/references/identidade-e-ativos/05a-moldes-de-canais.md`. |
+| **Proporção & Formato** | `4:5 portrait social slide, 1080x1350` | Fixo para Instagram/LinkedIn. Garante ocupação máxima de tela no feed mobile sem cortes indesejados. A faixa de proporção aceita vem da ajuda do Instagram (largura até 1080 px, de 1,91:1 a 3:4); 1080×1350 está dentro dela, e a escolha desse tamanho é de guias de terceiros; margens e moldes SVG: `../brand-builder/references/identidade-e-ativos/05a-moldes-de-canais.md`. |
 | **Grid & Margens** | Margens generosas (~8% a 10% em todos os lados). Respiro obrigatório. Nenhum elemento encosta na borda. | Respeitado em 100% dos prompts. Espaço em branco é funcionalidade, não desperdício. |
 | **Hierarquia Visual** | O TÍTULO é o elemento dominante (3x a 5x maior que o corpo). Legível na miniatura do feed. | Tamanho tipográfico dominante para o título; corpo e diagramas secundários. |
 | **Tipografia** | Sem fontes decorativas ou manuscritas. Caixa alta bold no título; sans limpa no corpo. | Definida pelo `style-guide.md` da marca (ex: Inter / SF Pro para tech; Helvetica Neue Condensed para dados). |
