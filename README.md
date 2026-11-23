@@ -44,6 +44,10 @@ O **Super IA Projects - Marketing** resolve isso fornecendo uma arquitetura indu
 
 ---
 
+> 📖 **Guia Prático de Uso:** Consulte o [Guia de Exemplos de Pedidos e Fluxos Ponta a Ponta](docs/exemplos-de-pedidos.md) para ver a anatomia de um bom pedido, catálogo de prompts por área e portas de entrada dos 4 grandes fluxos operacionais (Lançamento, SEO, Vendas B2B e Dados).
+
+---
+
 ## 📦 O que está incluído
 
 <!-- kit-counts:start -->

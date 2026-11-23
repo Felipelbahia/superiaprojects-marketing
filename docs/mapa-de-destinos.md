@@ -21,6 +21,7 @@ Atualizado em 2026-11-07 (linhas `vendas` e `design` acrescentadas após a audit
 | Monitoramento (consultas, termos, relatório) | `content/{marca}/inteligencia/monitoramento/` | marca | | substitui o antigo `content/{marca}/monitoramento/` |
 | Estudos, dados, cases, registro de fontes | `content/{marca}/inteligencia/estudos/` | marca | | |
 | Tendências | `content/{marca}/inteligencia/tendencias/` | marca | | |
+| Documentação e guias do hub | `docs/` | hub | `mapa-de-destinos.md`, `exemplos-de-pedidos.md` | guias operacionais de uso, mapa e fluxos ponta a ponta |
 | Planos e log de execução | `.agents/plans/` | projeto | `{Nome da Tarefa} [PLAN].md`, `[TASK].md`, `[WALKTHROUGH].md` | |
 | Hub Central | `Compartilhado/RSS Feed` | — | | **somente leitura** |
 
