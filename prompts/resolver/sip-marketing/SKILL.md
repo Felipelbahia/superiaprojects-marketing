@@ -89,9 +89,12 @@ Caso contrário, nunca edite essas pastas a partir de um projeto consumidor: ela
 
 ## Atualização
 
-- Última atualização do hub: 2026-11-18 (o dono do hub muda esta data sempre que esta skill, um agent, um workflow ou a estrutura do hub mudar).
+- Última atualização do hub: 2026-11-23 (o dono do hub muda esta data sempre que esta skill, um agent, um workflow ou a estrutura do hub mudar).
 - Para atualizar a instalação num projeto (refazer links, escolher entre os agents/workflows novos): cole de novo o prompt `"<HUB>/prompts/instalar-skill-sip-marketing.md"` numa sessão daquele projeto.
 - A data em que **cada projeto** instalou ou atualizou fica no `.agents/SIPS-CONSUMIDOS.md` dele. Se for anterior à data acima, ofereça rodar o prompt.
+- **Propagar para todos os consumidores (dono do hub):** depois de mudar este hub, rode o comando abaixo (simulação por padrão; `--apply` grava). Ele lê `"<HUB>/instalacoes/"`, refaz links quebrados, atualiza a data do manifesto de cada projeto e o registro em `instalacoes/` (pulado no projeto com conflito) e deixa agents/workflows novos como nota na `inbox/` do projeto (nunca instala sozinho). Se o dono pedir "propaga" / "atualiza todos os consumidores" estando neste hub, é este comando:
+  `python3 "<KIT>/.agents/scripts/propagar_sip.py" "<HUB>"`
+  (ou no ambiente do dono: `python3 "/Users/<seu-usuario>/Documents/IA Projects/_Plataforma/0 Padrões/.agents/scripts/propagar_sip.py" "<HUB>"`; acrescente `--apply` depois de ver a simulação, e `--scan "<pasta dos projetos>"` para achar consumidores que não estão registrados).
 
 ## Se nada bater
 
