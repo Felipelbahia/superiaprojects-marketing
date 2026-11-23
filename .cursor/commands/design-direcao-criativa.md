@@ -1,1 +1,1 @@
-../../.agent/workflows/design-direcao-criativa.md
+../../.agents/workflows/design-direcao-criativa.md

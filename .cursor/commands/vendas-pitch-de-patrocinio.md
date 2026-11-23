@@ -1,1 +1,1 @@
-../../.agent/workflows/vendas-pitch-de-patrocinio.md
+../../.agents/workflows/vendas-pitch-de-patrocinio.md

@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-mapa-de-stakeholders.md
+../../.agents/workflows/geral-mapa-de-stakeholders.md

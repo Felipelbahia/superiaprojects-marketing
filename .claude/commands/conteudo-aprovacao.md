@@ -1,1 +1,1 @@
-../../.agent/workflows/conteudo-aprovacao.md
+../../.agents/workflows/conteudo-aprovacao.md

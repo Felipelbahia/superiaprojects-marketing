@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/social-calendario-e-distribuicao.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/social-calendario-e-distribuicao.md (model: sonnet) -->
 ---
 name: social-calendario-e-distribuicao
 version: "1.0.0"
@@ -32,7 +32,7 @@ Antes de redigir posts ou desenhar grades, confirme:
 4. **Pilar de Conteúdo:** Alinhamento estrito com os pilares editoriais da marca.
 
 ### 3. Filtro Anti-Slop de IA Mandatório
-Todo texto final de post, legenda ou lâmina de carrossel DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`).
+Todo texto final de post, legenda ou lâmina de carrossel DEVE passar pelo workflow `/geral-anti-slop` (`.agents/workflows/geral-anti-slop.md`).
 
 ### 4. Regras de Salvamento Estruturado
 Salve os conteúdos sociais seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`), tipo de peça `social` (no 0 Mkt, `content/<marca>/social/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:

@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/brand-direcao-de-arte.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/brand-direcao-de-arte.md (model: sonnet) -->
 ---
 name: brand-direcao-de-arte
 version: "1.0.0"

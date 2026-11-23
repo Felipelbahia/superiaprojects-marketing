@@ -1,1 +1,1 @@
-../../.agent/workflows/social-instagram-api.md
+../../.agents/workflows/social-instagram-api.md

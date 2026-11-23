@@ -1,1 +1,1 @@
-../../.agent/workflows/copy-avaliacao-de-hook.md
+../../.agents/workflows/copy-avaliacao-de-hook.md

@@ -1,1 +1,1 @@
-../../.agent/workflows/persona-criacao-de-persona.md
+../../.agents/workflows/persona-criacao-de-persona.md

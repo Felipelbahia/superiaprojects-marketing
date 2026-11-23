@@ -1,1 +1,1 @@
-../../.agent/workflows/produto-levantamento-de-requisitos.md
+../../.agents/workflows/produto-levantamento-de-requisitos.md

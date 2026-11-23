@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-briefing-matinal.md
+../../.agents/workflows/geral-briefing-matinal.md

@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/geral-persona-fundador-startup.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/geral-persona-fundador-startup.md (model: sonnet) -->
 ---
 name: geral-persona-fundador-startup
 version: "1.0.0"

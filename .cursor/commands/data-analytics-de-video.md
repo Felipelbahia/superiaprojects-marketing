@@ -1,1 +1,1 @@
-../../.agent/workflows/data-analytics-de-video.md
+../../.agents/workflows/data-analytics-de-video.md

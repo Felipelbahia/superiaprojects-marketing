@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/vendas-habilitacao-comercial.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/vendas-habilitacao-comercial.md (model: sonnet) -->
 ---
 name: vendas-habilitacao-comercial
 version: "1.0.0"

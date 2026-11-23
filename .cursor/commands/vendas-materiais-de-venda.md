@@ -1,1 +1,1 @@
-../../.agent/workflows/vendas-materiais-de-venda.md
+../../.agents/workflows/vendas-materiais-de-venda.md

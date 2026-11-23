@@ -1,1 +1,1 @@
-../../.agent/workflows/revenue-monitoramento-de-preco-concorrente.md
+../../.agents/workflows/revenue-monitoramento-de-preco-concorrente.md

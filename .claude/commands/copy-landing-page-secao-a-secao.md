@@ -1,1 +1,1 @@
-../../.agent/workflows/copy-landing-page-secao-a-secao.md
+../../.agents/workflows/copy-landing-page-secao-a-secao.md

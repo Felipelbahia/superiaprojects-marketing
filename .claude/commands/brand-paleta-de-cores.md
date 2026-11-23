@@ -1,1 +1,1 @@
-../../.agent/workflows/brand-paleta-de-cores.md
+../../.agents/workflows/brand-paleta-de-cores.md

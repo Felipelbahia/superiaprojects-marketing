@@ -1,1 +1,1 @@
-../../.agent/workflows/audiovisual-video-para-gif.md
+../../.agents/workflows/audiovisual-video-para-gif.md

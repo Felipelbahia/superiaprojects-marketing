@@ -1,1 +1,1 @@
-../../.agent/workflows/audiovisual-nano-banana-pro.md
+../../.agents/workflows/audiovisual-nano-banana-pro.md

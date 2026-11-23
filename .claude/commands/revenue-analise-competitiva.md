@@ -1,1 +1,1 @@
-../../.agent/workflows/revenue-analise-competitiva.md
+../../.agents/workflows/revenue-analise-competitiva.md

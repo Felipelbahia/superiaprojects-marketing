@@ -1,1 +1,1 @@
-../../.agent/workflows/vendas-cold-email.md
+../../.agents/workflows/vendas-cold-email.md

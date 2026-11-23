@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/ads-trafego-pago.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/ads-trafego-pago.md (model: sonnet) -->
 ---
 name: ads-trafego-pago
 version: "1.0.0"
@@ -33,7 +33,7 @@ Para estruturação de campanhas ou alocação orçamentária, confirme antes de
 4. **Pilar de Conteúdo:** Alinhamento com a mensagem da marca.
 
 ### 3. Filtro Anti-Slop de IA Mandatório
-Todo e qualquer texto produzido (anúncios RSA, copies de feed, headlines de vídeo) DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`) antes da entrega final.
+Todo e qualquer texto produzido (anúncios RSA, copies de feed, headlines de vídeo) DEVE passar pelo workflow `/geral-anti-slop` (`.agents/workflows/geral-anti-slop.md`) antes da entrega final.
 
 ### 4. Regras de Salvamento Estruturado
 Salve os planejamentos de tráfego e matrizes de anúncios seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`). Sem mapa, grave no padrão direto, sem marca no caminho:

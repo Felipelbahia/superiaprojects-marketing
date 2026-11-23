@@ -1,1 +1,1 @@
-../../.agent/workflows/revenue-criacao-de-campanha.md
+../../.agents/workflows/revenue-criacao-de-campanha.md

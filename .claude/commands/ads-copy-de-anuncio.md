@@ -1,1 +1,1 @@
-../../.agent/workflows/ads-copy-de-anuncio.md
+../../.agents/workflows/ads-copy-de-anuncio.md

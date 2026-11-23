@@ -1,1 +1,1 @@
-../../.agent/workflows/growth-aquisicao-de-demanda.md
+../../.agents/workflows/growth-aquisicao-de-demanda.md

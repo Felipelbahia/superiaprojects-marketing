@@ -1,1 +1,1 @@
-../../.agent/workflows/copy-roteiro-de-video.md
+../../.agents/workflows/copy-roteiro-de-video.md

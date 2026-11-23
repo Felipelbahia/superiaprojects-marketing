@@ -1,1 +1,1 @@
-../../.agent/workflows/seo-api-de-busca.md
+../../.agents/workflows/seo-api-de-busca.md

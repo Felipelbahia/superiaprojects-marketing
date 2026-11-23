@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/revenue-pesquisa-de-mercado.md (model: haiku) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/revenue-pesquisa-de-mercado.md (model: haiku) -->
 ---
 name: revenue-pesquisa-de-mercado
 version: "1.0.0"

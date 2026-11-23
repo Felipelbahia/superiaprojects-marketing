@@ -1,1 +1,1 @@
-../../.agent/workflows/conteudo-estrategia.md
+../../.agents/workflows/conteudo-estrategia.md

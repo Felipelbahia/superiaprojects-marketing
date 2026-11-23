@@ -1,1 +1,1 @@
-../../.agent/workflows/conteudo-reaproveitamento.md
+../../.agents/workflows/conteudo-reaproveitamento.md

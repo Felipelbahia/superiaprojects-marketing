@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/conteudo-brainstorm.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/conteudo-brainstorm.md (model: sonnet) -->
 ---
 name: conteudo-brainstorm
 version: "1.1.0"

@@ -1,1 +1,1 @@
-../../.agent/workflows/audiovisual-estrutura-de-apresentacao.md
+../../.agents/workflows/audiovisual-estrutura-de-apresentacao.md

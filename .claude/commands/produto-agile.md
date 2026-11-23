@@ -1,1 +1,1 @@
-../../.agent/workflows/produto-agile.md
+../../.agents/workflows/produto-agile.md

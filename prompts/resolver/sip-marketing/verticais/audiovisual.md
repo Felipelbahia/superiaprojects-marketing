@@ -2,7 +2,7 @@
 
 Vídeo, roteiro técnico, voz, podcast, apresentações e decks (Slidev, pitch deck), imagens por IA, infográfico, QR code, transcrição e legenda.
 
-> Gerado por build_sip_index.py. Não edite à mão. Skill: `"<HUB>/.agent/skills/<nome>/SKILL.md"`; agent: `"<HUB>/.agent/agents/<nome>.md"`; workflow: `"<HUB>/.agent/workflows/<nome>.md"`.
+> Gerado por build_sip_index.py. Não edite à mão. Skill: `"<HUB>/.agents/skills/<nome>/SKILL.md"`; agent: `"<HUB>/.agents/agents/<nome>.md"`; workflow: `"<HUB>/.agents/workflows/<nome>.md"`.
 
 ## Skills (10)
 

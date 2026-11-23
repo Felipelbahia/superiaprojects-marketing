@@ -1,1 +1,1 @@
-../../.agent/workflows/audiovisual-arte-conceitual.md
+../../.agents/workflows/audiovisual-arte-conceitual.md

@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/geral-persona-solopreneur.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/geral-persona-solopreneur.md (model: sonnet) -->
 ---
 name: geral-persona-solopreneur
 version: "1.0.0"

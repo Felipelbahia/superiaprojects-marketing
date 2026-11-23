@@ -1,1 +1,1 @@
-../../.agent/workflows/revenue-campanhas.md
+../../.agents/workflows/revenue-campanhas.md

@@ -1,1 +1,1 @@
-../../.agent/workflows/growth-teste-ab.md
+../../.agents/workflows/growth-teste-ab.md

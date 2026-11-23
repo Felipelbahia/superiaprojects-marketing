@@ -1,1 +1,1 @@
-../../.agent/workflows/copy-roteiro-mais-falado.md
+../../.agents/workflows/copy-roteiro-mais-falado.md

@@ -1,1 +1,1 @@
-../../.agent/workflows/data-interpretacao-de-analytics.md
+../../.agents/workflows/data-interpretacao-de-analytics.md

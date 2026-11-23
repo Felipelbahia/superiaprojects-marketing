@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/vendas-qualificacao-de-leads.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/vendas-qualificacao-de-leads.md (model: sonnet) -->
 ---
 name: vendas-qualificacao-de-leads
 version: "1.0.0"

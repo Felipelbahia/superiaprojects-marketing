@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/brand-guardiao-de-voz.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/brand-guardiao-de-voz.md (model: sonnet) -->
 ---
 name: brand-guardiao-de-voz
 version: "1.0.0"
@@ -145,7 +145,7 @@ For every brand review, follow this structured thinking:
 ### Step 4: Provide Actionable Feedback
 
 **Output Format (Separation Principle: Reviewer Never Rewrites):**
-> **Mandatory Rule:** In accordance with [ciclo-de-validacao-de-pecas.md](.agent/skills/brand-voice-messaging/references/ciclo-de-validacao-de-pecas.md), the reviewer **never rewrites the piece**. Who validates does not rewrite; who produces does not decide strategy. The reviewer issues the structured opinion with the 5-field Rejection Table and hands the text back to the original producer specialist (`copy-redacao-publicitaria`, `conteudo-criacao-multiformato`, etc.) to execute the correction.
+> **Mandatory Rule:** In accordance with [ciclo-de-validacao-de-pecas.md](.agents/skills/brand-voice-messaging/references/ciclo-de-validacao-de-pecas.md), the reviewer **never rewrites the piece**. Who validates does not rewrite; who produces does not decide strategy. The reviewer issues the structured opinion with the 5-field Rejection Table and hands the text back to the original producer specialist (`copy-redacao-publicitaria`, `conteudo-criacao-multiformato`, etc.) to execute the correction.
 
 ```markdown
 # Parecer de Revisão de Voz: [Piece Name]

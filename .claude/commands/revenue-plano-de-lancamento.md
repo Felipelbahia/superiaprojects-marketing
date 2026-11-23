@@ -1,1 +1,1 @@
-../../.agent/workflows/revenue-plano-de-lancamento.md
+../../.agents/workflows/revenue-plano-de-lancamento.md

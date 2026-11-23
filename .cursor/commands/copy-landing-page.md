@@ -1,1 +1,1 @@
-../../.agent/workflows/copy-landing-page.md
+../../.agents/workflows/copy-landing-page.md

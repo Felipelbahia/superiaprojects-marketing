@@ -62,17 +62,17 @@ Todo conteúdo final produzido deve ser organizado e salvo na pasta de entregas:
   - Claude Code: `./CLAUDE.md` (ou `./.claude/CLAUDE.md`, nunca os dois)
   - Google Antigravity e outros agentes: `./AGENTS.md`
   - Cursor: `./.cursorrules`
-- **Sincronização:** O script `.agent/scripts/sync_rules.py` garante sincronia automática entre todos os arquivos de regras.
+- **Sincronização:** O script `.agents/scripts/sync_rules.py` garante sincronia automática entre todos os arquivos de regras.
 
 ### 2.3. Descoberta de Skills, Agentes e Workflows
-- **Claude Code & Cursor:** Symlinks automáticos em `.claude/skills/`, `.claude/agents/`, `.claude/commands/` e `.cursor/commands/` apontam para a fonte única da verdade em `.agent/`.
-- **Sincronização de Entrypoints:** Execute `python3 .agent/scripts/sync_entrypoints.py` para sincronizar os links automaticamente.
+- **Claude Code & Cursor:** Symlinks automáticos em `.claude/skills/`, `.claude/agents/`, `.claude/commands/` e `.cursor/commands/` apontam para a fonte única da verdade em `.agents/`.
+- **Sincronização de Entrypoints:** Execute `python3 .agents/scripts/sync_entrypoints.py` para sincronizar os links automaticamente.
 
 ### 2.4. Protocolo de Resolução Fallback
 Quando uma skill ou workflow não for encontrado no workspace local:
-1. **1ª Prioridade (Projeto Local):** Buscar em `./.agent/skills/` (98 skills integradas).
-2. **2ª Prioridade (Base Global Super IA Projects):** Buscar na base geral `<SUPER_IA_PROJECTS_PATH>/.agent/skills/`.
-3. **3ª Prioridade (Hub Global de Marketing):** Buscar em `<MARKETING_HUB_PATH>/.agent/skills/`.
+1. **1ª Prioridade (Projeto Local):** Buscar em `./.agents/skills/` (98 skills integradas).
+2. **2ª Prioridade (Base Global Super IA Projects):** Buscar na base geral `<SUPER_IA_PROJECTS_PATH>/.agents/skills/`.
+3. **3ª Prioridade (Hub Global de Marketing):** Buscar em `<MARKETING_HUB_PATH>/.agents/skills/`.
 
 ---
 
@@ -89,7 +89,7 @@ Para demandas complexas (campanhas completas, lançamentos, novas marcas ou posi
 
 ## 🤖 4. ROTEAMENTO DE AGENTES ESPECIALISTAS (33 AGENTES)
 
-O ecossistema conta com 33 agentes especializados em `.agent/agents/` cobrindo 17 verticais de marketing:
+O ecossistema conta com 33 agentes especializados em `.agents/agents/` cobrindo 17 verticais de marketing:
 
 | Especialidade | Agente Principal | Principais Entregáveis |
 | :--- | :--- | :--- |

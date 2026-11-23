@@ -1,1 +1,1 @@
-../../.agent/workflows/seo-otimizacao-de-conteudo.md
+../../.agents/workflows/seo-otimizacao-de-conteudo.md

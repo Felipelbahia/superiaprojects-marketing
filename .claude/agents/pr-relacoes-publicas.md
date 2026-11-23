@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/pr-relacoes-publicas.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/pr-relacoes-publicas.md (model: sonnet) -->
 ---
 name: pr-relacoes-publicas
 version: "1.0.0"
@@ -52,7 +52,7 @@ Antes de redigir qualquer comunicado ou plano de assessoria, valide:
 4. **Alinhamento Institucional:** Como a pauta reforça o posicionamento de longo prazo da marca.
 
 ### 3. Filtro Anti-Slop de IA Mandatório
-Todo material jornalístico (press release, pitch, Q&A de crise) DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`) antes da entrega final. Releases com jargões corporativos vazios, hipérboles sensacionalistas ou tom promocional barato são sumariamente descartados por jornalistas sérios. O texto deve ser sóbrio, objetivo e factual.
+Todo material jornalístico (press release, pitch, Q&A de crise) DEVE passar pelo workflow `/geral-anti-slop` (`.agents/workflows/geral-anti-slop.md`) antes da entrega final. Releases com jargões corporativos vazios, hipérboles sensacionalistas ou tom promocional barato são sumariamente descartados por jornalistas sérios. O texto deve ser sóbrio, objetivo e factual.
 
 ### 4. Regras de Salvamento Estruturado
 Salve os materiais de relações públicas seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`): assessoria de imprensa vai em `imprensa/AAAA-MM-DD - Nome/` (no 0 Mkt, `content/<marca>/imprensa/…`). Arquivos da pasta:

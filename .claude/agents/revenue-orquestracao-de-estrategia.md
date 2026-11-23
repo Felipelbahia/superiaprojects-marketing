@@ -1,1 +1,1 @@
-../../.agent/agents/revenue-orquestracao-de-estrategia.md
+../../.agents/agents/revenue-orquestracao-de-estrategia.md

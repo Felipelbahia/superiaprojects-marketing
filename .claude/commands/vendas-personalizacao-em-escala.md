@@ -1,1 +1,1 @@
-../../.agent/workflows/vendas-personalizacao-em-escala.md
+../../.agents/workflows/vendas-personalizacao-em-escala.md

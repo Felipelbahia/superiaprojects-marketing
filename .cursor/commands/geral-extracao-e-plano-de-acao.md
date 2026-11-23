@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-extracao-e-plano-de-acao.md
+../../.agents/workflows/geral-extracao-e-plano-de-acao.md

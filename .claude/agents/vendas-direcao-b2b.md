@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/vendas-direcao-b2b.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/vendas-direcao-b2b.md (model: sonnet) -->
 ---
 name: vendas-direcao-b2b
 version: "1.0.0"
@@ -52,7 +52,7 @@ Antes de construir cadências, playbooks ou propostas comerciais, valide:
 4. **Governança & Compliance:** Há necessidade de cláusulas de proteção de dados (LGPD/GDPR), SLA ou NDAs?
 
 ### 3. Filtro Anti-Slop de IA Mandatório
-Todo email de prospecção, roteiro de discovery call ou pitch comercial DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`) antes da entrega final. Copies de vendas com bajulação robótica ("Espero que este email o encontre bem", "Venho por meio deste") são frias e destroem a taxa de resposta. O tom deve ser direto, profissional e focado no problema do decisor.
+Todo email de prospecção, roteiro de discovery call ou pitch comercial DEVE passar pelo workflow `/geral-anti-slop` (`.agents/workflows/geral-anti-slop.md`) antes da entrega final. Copies de vendas com bajulação robótica ("Espero que este email o encontre bem", "Venho por meio deste") são frias e destroem a taxa de resposta. O tom deve ser direto, profissional e focado no problema do decisor.
 
 ### 4. Regras de Salvamento Estruturado
 Salve os playbooks e cadências comerciais seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`), tipo de peça `vendas` (no 0 Mkt, `content/<marca>/vendas/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:

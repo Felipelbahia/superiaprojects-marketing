@@ -1,1 +1,1 @@
-../../.agent/workflows/data-analise-de-funil.md
+../../.agents/workflows/data-analise-de-funil.md

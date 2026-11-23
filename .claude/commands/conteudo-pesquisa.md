@@ -1,1 +1,1 @@
-../../.agent/workflows/conteudo-pesquisa.md
+../../.agents/workflows/conteudo-pesquisa.md

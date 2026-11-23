@@ -1,1 +1,1 @@
-../../.agent/workflows/audiovisual-storyline-mckinsey.md
+../../.agents/workflows/audiovisual-storyline-mckinsey.md

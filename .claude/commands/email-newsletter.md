@@ -1,1 +1,1 @@
-../../.agent/workflows/email-newsletter.md
+../../.agents/workflows/email-newsletter.md

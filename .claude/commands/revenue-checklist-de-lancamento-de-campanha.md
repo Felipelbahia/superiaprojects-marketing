@@ -1,1 +1,1 @@
-../../.agent/workflows/revenue-checklist-de-lancamento-de-campanha.md
+../../.agents/workflows/revenue-checklist-de-lancamento-de-campanha.md

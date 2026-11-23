@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-execucao-autonoma.md
+../../.agents/workflows/geral-execucao-autonoma.md

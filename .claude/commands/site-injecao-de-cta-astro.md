@@ -1,1 +1,1 @@
-../../.agent/workflows/site-injecao-de-cta-astro.md
+../../.agents/workflows/site-injecao-de-cta-astro.md

@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-diagrama-mermaid.md
+../../.agents/workflows/geral-diagrama-mermaid.md

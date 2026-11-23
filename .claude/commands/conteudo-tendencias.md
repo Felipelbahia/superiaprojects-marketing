@@ -1,1 +1,1 @@
-../../.agent/workflows/conteudo-tendencias.md
+../../.agents/workflows/conteudo-tendencias.md

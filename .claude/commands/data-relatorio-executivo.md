@@ -1,1 +1,1 @@
-../../.agent/workflows/data-relatorio-executivo.md
+../../.agents/workflows/data-relatorio-executivo.md

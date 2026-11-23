@@ -1,1 +1,1 @@
-../../.agent/workflows/persona-gerador-de-icp.md
+../../.agents/workflows/persona-gerador-de-icp.md

@@ -1,1 +1,1 @@
-../../.agent/workflows/revenue-preco.md
+../../.agents/workflows/revenue-preco.md

@@ -1,1 +1,1 @@
-../../.agent/workflows/audiovisual-melhoria-de-slide.md
+../../.agents/workflows/audiovisual-melhoria-de-slide.md

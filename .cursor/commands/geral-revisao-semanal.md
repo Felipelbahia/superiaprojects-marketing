@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-revisao-semanal.md
+../../.agents/workflows/geral-revisao-semanal.md

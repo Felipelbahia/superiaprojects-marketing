@@ -1,1 +1,1 @@
-../../.agent/workflows/conteudo-temas-e-plugins.md
+../../.agents/workflows/conteudo-temas-e-plugins.md

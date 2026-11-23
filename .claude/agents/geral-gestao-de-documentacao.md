@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/geral-gestao-de-documentacao.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/geral-gestao-de-documentacao.md (model: sonnet) -->
 ---
 name: geral-gestao-de-documentacao
 version: "1.0.0"

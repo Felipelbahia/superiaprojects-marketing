@@ -1,1 +1,1 @@
-../../.agent/workflows/site-construcao-de-landing-page.md
+../../.agents/workflows/site-construcao-de-landing-page.md

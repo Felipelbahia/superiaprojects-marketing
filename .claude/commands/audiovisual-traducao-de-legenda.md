@@ -1,1 +1,1 @@
-../../.agent/workflows/audiovisual-traducao-de-legenda.md
+../../.agents/workflows/audiovisual-traducao-de-legenda.md

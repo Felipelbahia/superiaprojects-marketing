@@ -10,10 +10,10 @@ Instale/atualize o acesso ao hub central SIP - Marketing (marketing) neste proje
 O que entra: o resolver sip-marketing sempre; agents e workflows do hub só os que eu
 escolher; skills especialistas do hub nunca (o resolver as acha pela tabela e
 as lê por caminho absoluto).
-Padrão duplo: cada recurso instalado ganha um symlink absoluto em .agent/ (pro
-hub) e um symlink relativo em .claude/ (pro symlink local em .agent/) — isso dá
+Padrão duplo: cada recurso instalado ganha um symlink absoluto em .agents/ (pro
+hub) e um symlink relativo em .claude/ (pro symlink local em .agents/) — isso dá
 acesso tanto ao Claude Code quanto a Google Antigravity/Gemini/Cursor, que leem
-.agent/ direto e não dependem do stub global do 0 Padrões.
+.agents/ direto e não dependem do stub global do 0 Padrões.
 
 PASSO 0 (antes de tudo): descubra o sistema e o hub.
    a) Sistema: rode `uname -s 2>/dev/null || echo %OS%`. Darwin = macOS; Linux = Linux;
@@ -21,14 +21,14 @@ PASSO 0 (antes de tudo): descubra o sistema e o hub.
       Em Windows use `python` onde este prompt diz <PY>; em macOS/Linux use `python3`.
    b) Hub (<HUB>): é a pasta do repositório "0 Mkt" nesta máquina. Procure, nesta ordem:
       a variável de ambiente MARKETING_HUB_PATH; o caminho do manifesto
-      .agent/SIPS-CONSUMIDOS.md deste projeto (linha "Hub:"), se existir; senão
+      .agents/SIPS-CONSUMIDOS.md deste projeto (linha "Hub:"), se existir; senão
       PERGUNTE-ME o caminho da pasta "0 Mkt". Só aceite se existir
       <HUB>/prompts/resolver/sip-marketing/SKILL.md. Nunca assuma o caminho de outra máquina
       (o de quem criou o prompt), e nunca escreva o caminho de outro usuário em arquivo
       algum. Se eu não tiver o repositório, pare e me peça para cloná-lo antes.
    c0) Pré-requisito: o hub "0 Padrões" (kit base) deve estar instalado ANTES deste. Confira se
       existe a pasta irmã de <HUB> chamada "0 Padrões" (ou SUPER_IA_PROJECTS_PATH) com
-      .agent/scripts/sync_entrypoints.py. Se não existir, pare e me avise para instalar o
+      .agents/scripts/sync_entrypoints.py. Se não existir, pare e me avise para instalar o
       0 Padrões primeiro; não improvise.
    c) Links: no macOS/Linux use `ln -sfn` (regra abaixo). No Windows:
       1º tente `New-Item -ItemType SymbolicLink` (ou `mklink`); se der WinError 1314 /
@@ -54,34 +54,34 @@ Antes de criar, confira <link> com `test -L` e `readlink`:
   e só volta a ser oferecido se eu pedir para mudar a escolha.
 REGRA PARA TODA REMOÇÃO DESTE PROMPT: só remova um <link> que seja symlink (`test -L`)
 E cujo destino aponte para dentro de "<HUB>". Leia o destino com `readlink`
-SEM `-f` (com `-f`, um link quebrado sai com erro no macOS): link de .agent/ tem o
+SEM `-f` (com `-f`, um link quebrado sai com erro no macOS): link de .agents/ tem o
 caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o link de
-.agent/ de mesmo nome, então confira esse. Nunca remova arquivo ou pasta real.
+.agents/ de mesmo nome, então confira esse. Nunca remova arquivo ou pasta real.
 
 1. Skill resolver (obrigatório):
-   - Crie a pasta .agent/skills/ se ela não existir.
+   - Crie a pasta .agents/skills/ se ela não existir.
    - Crie (ou recrie) o symlink absoluto com `ln -sfn`:
-     .agent/skills/sip-marketing -> "<HUB>/prompts/resolver/sip-marketing"
+     .agents/skills/sip-marketing -> "<HUB>/prompts/resolver/sip-marketing"
    - Crie a pasta .claude/skills/ se ela não existir.
    - Crie o symlink relativo com `ln -sfn` (pro symlink acima, não direto pro hub):
-     .claude/skills/sip-marketing -> ../../.agent/skills/sip-marketing
+     .claude/skills/sip-marketing -> ../../.agents/skills/sip-marketing
 
 2. Migração (instalações antigas): remova, seguindo a regra de remoção, todo
-   symlink em .agent/skills/ e .claude/skills/ que aponte para uma skill
+   symlink em .agents/skills/ e .claude/skills/ que aponte para uma skill
    especialista do hub (qualquer uma que não seja sip-marketing), e a entrada dele
    no .gitignore. Skills especialistas não são mais instaladas.
 
 3. Escolha de agents e workflows:
    - Leia as seções "Agents" e "Workflows" de cada arquivo de
      "<HUB>/prompts/resolver/sip-marketing/verticais/" (nome + "use quando").
-     Instalações antigas apontavam para ".agent/skills/sip-marketing" do hub: esse
+     Instalações antigas apontavam para ".agents/skills/sip-marketing" do hub: esse
      caminho não existe mais, o link acima o substitui (recrie-o com `ln -sfn`).
-   - Leia a entrada deste hub em .agent/SIPS-CONSUMIDOS.md, se existir:
+   - Leia a entrada deste hub em .agents/SIPS-CONSUMIDOS.md, se existir:
      "Agents"/"Workflows" (escolhidos) e "Vistos no hub" (oferecidos antes).
    - Primeira instalação (sem entrada): mostre as duas tabelas e pergunte
      "Quais instalar? nenhum / todos / lista de nomes". Sem resposta = nenhum.
    - Instalação antiga sem entrada no manifesto, mas com symlinks deste hub já
-     em .agent/agents/, .claude/agents/, .agent/workflows/ ou .claude/commands/:
+     em .agents/agents/, .claude/agents/, .agents/workflows/ ou .claude/commands/:
      mostre as tabelas com esses itens já marcados e pergunte "manter esta
      escolha, mudar, ou nenhum?". Sem resposta = manter (nunca remova sem resposta).
    - Reinstalação: mantenha a escolha anterior sem perguntar de novo. Pergunte
@@ -91,32 +91,32 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
    - Tabelas vazias: pule este passo e os passos 4 e 5 sem erro.
 
 4. Instale só o escolhido (seguindo a regra de symlink acima):
-   - Cada agent <nome>: .agent/agents/<nome>.md -> "<HUB>/.agent/agents/<nome>.md"
-     (absoluto) e .claude/agents/<nome>.md -> ../../.agent/agents/<nome>.md (relativo).
-   - Cada workflow <nome>: .agent/workflows/<nome>.md -> "<HUB>/.agent/workflows/<nome>.md"
+   - Cada agent <nome>: .agents/agents/<nome>.md -> "<HUB>/.agents/agents/<nome>.md"
+     (absoluto) e .claude/agents/<nome>.md -> ../../.agents/agents/<nome>.md (relativo).
+   - Cada workflow <nome>: .agents/workflows/<nome>.md -> "<HUB>/.agents/workflows/<nome>.md"
      (absoluto), e .claude/commands/<nome>.md e .cursor/commands/<nome>.md ->
-     ../../.agent/workflows/<nome>.md (relativos).
+     ../../.agents/workflows/<nome>.md (relativos).
    - Crie as pastas que faltarem.
 
 5. Remova o que saiu da escolha (seguindo a regra de remoção): symlinks de
    agents/workflows deste hub que não estão mais escolhidos, ou cujo arquivo
    sumiu do hub (link quebrado), e as entradas deles no .gitignore.
 
-6. Confirme com `ls -la` cada symlink criado (os de .agent/ E os de .claude/)
+6. Confirme com `ls -la` cada symlink criado (os de .agents/ E os de .claude/)
    e que o .md correspondente é legível através de cada um. Depois, na raiz
    deste projeto, rode
-   `<PY> "<HUB>/.agent/scripts/sync_entrypoints.py" --check`:
+   `<PY> "<HUB>/.agents/scripts/sync_entrypoints.py" --check`:
    tem de sair com 0. Se acusar erro de link ou skill do hub, pare e relate
    (não apague links para "limpar" o aviso).
 7. Não copie conteúdo de nenhum desses arquivos para este projeto — mantenha
    tudo como symlink, para herdar atualizações futuras do hub automaticamente.
 8. Adicione ao .gitignore deste projeto (crie a seção se não existir) uma linha
    por symlink instalado, nunca um curinga do prefixo do domínio:
-   .agent/skills/sip-marketing
+   .agents/skills/sip-marketing
    .claude/skills/sip-marketing
    (e, para cada agent/workflow instalado no passo 4, os caminhos
-   .agent/agents/<nome>.md, .claude/agents/<nome>.md,
-   .agent/workflows/<nome>.md, .claude/commands/<nome>.md,
+   .agents/agents/<nome>.md, .claude/agents/<nome>.md,
+   .agents/workflows/<nome>.md, .claude/commands/<nome>.md,
    .cursor/commands/<nome>.md correspondentes)
    — são symlinks com path absoluto desta máquina, não portáveis entre clones.
 9. Registre esta instalação no hub (bookkeeping, não é conteúdo de domínio —
@@ -125,7 +125,7 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
    - Crie ou atualize "<HUB>/instalacoes/<nome-deste-projeto>.md" com:
      nome e caminho absoluto deste projeto, data de hoje, e os recursos
      instalados (skill sempre; agents/workflows escolhidos, ou "nenhum").
-10. Atualize o manifesto local deste projeto, `.agent/SIPS-CONSUMIDOS.md`
+10. Atualize o manifesto local deste projeto, `.agents/SIPS-CONSUMIDOS.md`
    (crie se não existir — contrapartida local do registro do passo 9: lá o
    hub sabe quem consome; aqui o projeto sabe o que consome, sem precisar
    abrir .gitignore ou seguir symlink pra descobrir):
@@ -148,29 +148,29 @@ caminho absoluto do hub; link relativo de .claude/ ou .cursor/ aponta para o lin
 
 ## Por que o padrão duplo (symlink de symlink) e não um só
 
-A fonte de verdade de cada recurso fica no hub (`<HUB>/.agent/skills/`,
-`.agent/agents/`, `.agent/workflows/`). O symlink absoluto em `.agent/` deste
+A fonte de verdade de cada recurso fica no hub (`<HUB>/.agents/skills/`,
+`.agents/agents/`, `.agents/workflows/`). O symlink absoluto em `.agents/` deste
 projeto aponta direto pro hub; o symlink relativo em `.claude/` aponta pro
-symlink local em `.agent/`, não direto pro hub. Essa cadeia de dois symlinks
+symlink local em `.agents/`, não direto pro hub. Essa cadeia de dois symlinks
 (em vez de um só direto em `.claude/`) existe porque **Claude Code e as
 outras IAs leem pastas diferentes**: Claude Code só descobre
 `.claude/skills/`/`.claude/agents/`/`.claude/commands/`; Google
-Antigravity/Gemini/Cursor só leem `.agent/skills/`/`.agent/agents/`/
-`.agent/workflows/` direto (via Regra 4, 1ª prioridade: skills locais do
+Antigravity/Gemini/Cursor só leem `.agents/skills/`/`.agents/agents/`/
+`.agents/workflows/` direto (via Regra 4, 1ª prioridade: skills locais do
 próprio projeto). Um symlink só em `.claude/` (direto pro hub) atende só o
 Claude Code — pra essas outras IAs acharem o recurso neste projeto
-específico, ele precisa também existir em `.agent/`. Atualizações futuras no
+específico, ele precisa também existir em `.agents/`. Atualizações futuras no
 hub já refletem aqui automaticamente nos dois — exceto se um symlink quebrar
 (hub movido ou arquivo renomeado), caso em que basta colar o prompt outra
 vez, ou se o hub adicionar um agent/workflow novo depois da instalação, caso
 em que rodar o prompt de novo pergunta só sobre os novos (a escolha anterior
-fica registrada em `.agent/SIPS-CONSUMIDOS.md`, linha "Vistos no hub").
+fica registrada em `.agents/SIPS-CONSUMIDOS.md`, linha "Vistos no hub").
 
 ## Para outras IAs (Google Antigravity / Gemini / Cursor)
 
 Com o padrão duplo acima, essas IAs já encontram o resolver e os
-agents/workflows escolhidos **direto neste projeto** (via `.agent/skills/`,
-`.agent/agents/`, `.agent/workflows/`), sem depender do stub global do
+agents/workflows escolhidos **direto neste projeto** (via `.agents/skills/`,
+`.agents/agents/`, `.agents/workflows/`), sem depender do stub global do
 `0 Padrões` nem da Regra 4 (Fallback Resolution Protocol) — a 1ª prioridade
 da Regra 4 já é "skills locais do próprio projeto", que é exatamente o que
 os passos 1 e 4 criaram aqui. O que não foi escolhido elas acham pelas
@@ -195,7 +195,7 @@ projeto por projeto.
 
 ## Manifesto local neste projeto
 
-Este prompt também atualiza `.agent/SIPS-CONSUMIDOS.md` **neste projeto**
+Este prompt também atualiza `.agents/SIPS-CONSUMIDOS.md` **neste projeto**
 (contrapartida local do registro acima: lá o hub sabe quem o consome; aqui
 o projeto sabe o que consome). Sem esse manifesto, a única forma de saber
 que este projeto depende de um SIP é abrir o `.gitignore` ou seguir cada

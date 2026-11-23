@@ -1,1 +1,1 @@
-../../.agent/workflows/site-auditoria-de-interface.md
+../../.agents/workflows/site-auditoria-de-interface.md

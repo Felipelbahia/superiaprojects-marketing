@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/revenue-planejamento-de-campanha.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/revenue-planejamento-de-campanha.md (model: sonnet) -->
 ---
 name: revenue-planejamento-de-campanha
 version: "1.0.0"

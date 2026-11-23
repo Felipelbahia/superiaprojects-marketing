@@ -1,1 +1,1 @@
-../../.agent/workflows/social-otimizacao-de-post-linkedin.md
+../../.agents/workflows/social-otimizacao-de-post-linkedin.md

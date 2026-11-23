@@ -35,4 +35,4 @@ Cada subpasta de marca deve conter os pilares fundamentais de governança:
    cp -r _brands/brand-template _brands/minha-marca
    ```
 2. Edite os arquivos em `_brands/minha-marca/` com as informações do seu negócio.
-3. (Opcional) A skill `brand-builder` (`.agent/skills/brand-builder/SKILL.md`) conduz uma entrevista socrática para preencher esses arquivos do zero.
+3. (Opcional) A skill `brand-builder` (`.agents/skills/brand-builder/SKILL.md`) conduz uma entrevista socrática para preencher esses arquivos do zero.

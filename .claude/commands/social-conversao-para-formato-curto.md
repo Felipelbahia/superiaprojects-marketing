@@ -1,1 +1,1 @@
-../../.agent/workflows/social-conversao-para-formato-curto.md
+../../.agents/workflows/social-conversao-para-formato-curto.md

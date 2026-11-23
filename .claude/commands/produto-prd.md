@@ -1,1 +1,1 @@
-../../.agent/workflows/produto-prd.md
+../../.agents/workflows/produto-prd.md

@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/copy-redacao-publicitaria.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/copy-redacao-publicitaria.md (model: sonnet) -->
 ---
 name: copy-redacao-publicitaria
 version: "1.0.0"

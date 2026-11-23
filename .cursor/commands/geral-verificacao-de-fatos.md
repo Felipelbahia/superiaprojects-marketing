@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-verificacao-de-fatos.md
+../../.agents/workflows/geral-verificacao-de-fatos.md

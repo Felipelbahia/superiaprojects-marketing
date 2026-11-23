@@ -1,1 +1,1 @@
-../../.agent/workflows/seo-checklist-semanal.md
+../../.agents/workflows/seo-checklist-semanal.md

@@ -1,1 +1,1 @@
-../../.agent/workflows/produto-historias-de-usuario.md
+../../.agents/workflows/produto-historias-de-usuario.md

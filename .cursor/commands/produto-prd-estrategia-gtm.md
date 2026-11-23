@@ -1,1 +1,1 @@
-../../.agent/workflows/produto-prd-estrategia-gtm.md
+../../.agents/workflows/produto-prd-estrategia-gtm.md

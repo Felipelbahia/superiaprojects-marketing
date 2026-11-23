@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-revisao-mensal.md
+../../.agents/workflows/geral-revisao-mensal.md

@@ -1,1 +1,1 @@
-../../.agent/workflows/persona-entrevistas-de-descoberta.md
+../../.agents/workflows/persona-entrevistas-de-descoberta.md

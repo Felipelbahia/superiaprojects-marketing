@@ -1,1 +1,1 @@
-../../.agent/workflows/social-leitura-de-post-twitter.md
+../../.agents/workflows/social-leitura-de-post-twitter.md

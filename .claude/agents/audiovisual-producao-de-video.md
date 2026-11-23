@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/audiovisual-producao-de-video.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/audiovisual-producao-de-video.md (model: sonnet) -->
 ---
 name: audiovisual-producao-de-video
 version: "1.0.0"
@@ -52,7 +52,7 @@ Antes de redigir qualquer roteiro ou plano de produção, valide:
 4. **Alinhamento de Marca:** Pilar temático correspondente.
 
 ### 3. Filtro Anti-Slop de IA Mandatório
-Todo e qualquer texto de roteiro, narração ou copy de vídeo DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`) antes da entrega final. Evite linguagem artificial e clichês robóticos. O roteiro deve soar como fala humana real e ritmada.
+Todo e qualquer texto de roteiro, narração ou copy de vídeo DEVE passar pelo workflow `/geral-anti-slop` (`.agents/workflows/geral-anti-slop.md`) antes da entrega final. Evite linguagem artificial e clichês robóticos. O roteiro deve soar como fala humana real e ritmada.
 
 ### 4. Regras de Salvamento Estruturado
 Salve os roteiros e planos audiovisuais seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`), tipo de peça `video` (no 0 Mkt, `content/<marca>/video/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:
@@ -92,14 +92,14 @@ Este agente existe no 0 Mkt e no projeto de edição de vídeo (`Compartilhado/E
 
 | Skill | Caminho | Para quê |
 |---|---|---|
-| `copy-hooks-video-curto` | `./.agent/skills/copy-hooks-video-curto/SKILL.md` | ganchos e retenção de vídeo curto |
-| `copy-vsl` | `./.agent/skills/copy-vsl/SKILL.md` | VSL e direct response |
-| `social-youtube-para-notas` | `./.agent/skills/social-youtube-para-notas/SKILL.md` | baixar e transcrever YouTube |
-| `audiovisual-podcast-e-audio` | `./.agent/skills/audiovisual-podcast-e-audio/SKILL.md` | áudio e podcast (existe também no projeto de vídeo) |
-| `brand-identidade-sonora` | `./.agent/skills/brand-identidade-sonora/SKILL.md` | identidade sonora (existe também no projeto de vídeo) |
-| `ai-video-creator` | `<EDICAO_VIDEO>/.agent/skills/ai-video-creator/SKILL.md` | direção e prompts de vídeo com IA |
-| `media-processing` | `<EDICAO_VIDEO>/.agent/skills/media-processing/SKILL.md` | FFmpeg e ImageMagick |
-| `elevenlabs` | `<EDICAO_VIDEO>/.agent/skills/elevenlabs/SKILL.md` | voz, efeitos e música |
-| `remotion` | `<EDICAO_VIDEO>/.agent/skills/remotion/SKILL.md` | vídeo programático em React |
-| `gsap` | `<EDICAO_VIDEO>/.agent/skills/gsap/SKILL.md` | animação web |
-| `threejs-fundamentals` | `<EDICAO_VIDEO>/.agent/skills/threejs-fundamentals/SKILL.md` | 3D na web (família `threejs-*`) |
+| `copy-hooks-video-curto` | `./.agents/skills/copy-hooks-video-curto/SKILL.md` | ganchos e retenção de vídeo curto |
+| `copy-vsl` | `./.agents/skills/copy-vsl/SKILL.md` | VSL e direct response |
+| `social-youtube-para-notas` | `./.agents/skills/social-youtube-para-notas/SKILL.md` | baixar e transcrever YouTube |
+| `audiovisual-podcast-e-audio` | `./.agents/skills/audiovisual-podcast-e-audio/SKILL.md` | áudio e podcast (existe também no projeto de vídeo) |
+| `brand-identidade-sonora` | `./.agents/skills/brand-identidade-sonora/SKILL.md` | identidade sonora (existe também no projeto de vídeo) |
+| `ai-video-creator` | `<EDICAO_VIDEO>/.agents/skills/ai-video-creator/SKILL.md` | direção e prompts de vídeo com IA |
+| `media-processing` | `<EDICAO_VIDEO>/.agents/skills/media-processing/SKILL.md` | FFmpeg e ImageMagick |
+| `elevenlabs` | `<EDICAO_VIDEO>/.agents/skills/elevenlabs/SKILL.md` | voz, efeitos e música |
+| `remotion` | `<EDICAO_VIDEO>/.agents/skills/remotion/SKILL.md` | vídeo programático em React |
+| `gsap` | `<EDICAO_VIDEO>/.agents/skills/gsap/SKILL.md` | animação web |
+| `threejs-fundamentals` | `<EDICAO_VIDEO>/.agents/skills/threejs-fundamentals/SKILL.md` | 3D na web (família `threejs-*`) |

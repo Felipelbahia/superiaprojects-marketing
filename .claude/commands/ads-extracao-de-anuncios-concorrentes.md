@@ -1,1 +1,1 @@
-../../.agent/workflows/ads-extracao-de-anuncios-concorrentes.md
+../../.agents/workflows/ads-extracao-de-anuncios-concorrentes.md

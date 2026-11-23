@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-anti-slop.md
+../../.agents/workflows/geral-anti-slop.md

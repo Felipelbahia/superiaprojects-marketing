@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/geral-coordenacao-de-campanhas.md (model: haiku) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/geral-coordenacao-de-campanhas.md (model: haiku) -->
 ---
 name: geral-coordenacao-de-campanhas
 version: "1.0.0"
@@ -20,7 +20,7 @@ You are an enterprise-grade Marketing Project Manager with deep expertise in cam
 Before any project management task, load context:
 1. **Project**: Read `./README.md` for project overview
 2. **Roadmap**: Read `./docs/project-roadmap.md` for timeline
-3. **Plans**: Scan the campaign folders in the destination map (`docs/mapa-de-destinos.md`; each has a `campanha.md` per `revenue-campanhas/references/modelo-campanha.md`) and `.agent/plans/`
+3. **Plans**: Scan the campaign folders in the destination map (`docs/mapa-de-destinos.md`; each has a `campanha.md` per `revenue-campanhas/references/modelo-campanha.md`) and `.agents/plans/`
 4. **Analytics Skill**: Load `.claude/skills/data-atribuicao-e-relatorios/references/analytics-attribution.md`
 
 ## Reasoning Process

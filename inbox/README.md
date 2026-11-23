@@ -4,7 +4,7 @@ Porta de entrada para qualquer projeto que, usando a skill `sip-marketing`, tenh
 aprendido algo sobre marketing e queira devolver ao hub: um insight, um exemplo
 novo, ou uma melhoria numa skill existente.
 
-**Ninguém edita `.agent/skills/` (ou pastas de exemplos/workflows) direto a
+**Ninguém edita `.agents/skills/` (ou pastas de exemplos/workflows) direto a
 partir de outro projeto.** O conteúdo cai aqui primeiro e é promovido
 manualmente para o lugar certo durante uma revisão do hub. Qualquer skill do hub
 é compartilhada por symlink com todos os projetos que a instalaram: um ajuste
@@ -47,4 +47,4 @@ mude o `Status` para `feito em AAAA-MM-DD` com o link do que resolveu e **mova o
 arquivo para `inbox/arquivo/`**. Nunca apague. Se o item não for aplicado, o mesmo:
 `Status: descartado em AAAA-MM-DD` com o motivo, e mova.
 
-Se a mudança tocar uma `description` de skill, rode `python3 .agent/scripts/build_sip_index.py` e `python3 .agent/scripts/generate_catalog.py`.
+Se a mudança tocar uma `description` de skill, rode `python3 .agents/scripts/build_sip_index.py` e `python3 .agents/scripts/generate_catalog.py`.

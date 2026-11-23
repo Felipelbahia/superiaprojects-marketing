@@ -43,8 +43,8 @@ inputs/
 Inputs/
 
 # Planos e histórico de execução de agentes locais
-.agent/plans/
-.agent/vendor/
+.agents/plans/
+.agents/vendor/
 plans/
 execution-loops/
 handoffs/
@@ -56,7 +56,7 @@ memory.md
 /CLAUDE.md
 /GEMINI.md
 /AGENTS.md
-/.agent/rules/
+/.agents/rules/
 /.claude/CLAUDE.md
 /.cursorrules
 
@@ -68,7 +68,7 @@ instalacoes/*
 !instalacoes/README.md
 
 # Symlinks do sip-geral (caminho absoluto desta máquina)
-.agent/skills/sip-geral
+.agents/skills/sip-geral
 .claude/skills/sip-geral
 
 # Variantes de .env (regras do kit, prompt 01)
@@ -76,24 +76,24 @@ instalacoes/*
 !*.env.example
 
 # Manifesto local de SIPs (guarda o caminho real desta máquina; não versionar)
-.agent/SIPS-CONSUMIDOS.md
+.agents/SIPS-CONSUMIDOS.md
 
 # núcleo do SIP - Geral (caminho absoluto desta máquina)
-.agent/skills/execution-loop
+.agents/skills/execution-loop
 .claude/skills/execution-loop
-.agent/skills/brainstorming
+.agents/skills/brainstorming
 .claude/skills/brainstorming
-.agent/skills/writing-skills
+.agents/skills/writing-skills
 .claude/skills/writing-skills
-.agent/skills/session-handoff
+.agents/skills/session-handoff
 .claude/skills/session-handoff
-.agent/skills/verification-before-completion
+.agents/skills/verification-before-completion
 .claude/skills/verification-before-completion
-.agent/skills/spec-writing
+.agents/skills/spec-writing
 .claude/skills/spec-writing
-.agent/skills/plan-writing
+.agents/skills/plan-writing
 .claude/skills/plan-writing
-.agent/skills/executing-plans
+.agents/skills/executing-plans
 .claude/skills/executing-plans
-.agent/skills/systematic-debugging
+.agents/skills/systematic-debugging
 .claude/skills/systematic-debugging

@@ -31,7 +31,7 @@ Este hub é um repositório de Markdown (skills, agentes, workflows) com alguns 
 
 | Item | Versão | Para que serve |
 |---|---|---|
-| Python | 3.14 recomendado (fixada em `.python-version`); mínimo 3.10 | scripts em `.agent/scripts/` |
+| Python | 3.14 recomendado (fixada em `.python-version`); mínimo 3.10 | scripts em `.agents/scripts/` |
 | Git | qualquer recente | clonar o repositório |
 | Claude Code, Antigravity ou Cursor | opcional | só para operar o hub com IA |
 
@@ -45,8 +45,8 @@ cd superiaprojects-marketing
 cp .env.example .env                      # preencha só as chaves que for usar
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt  # versões fixas, instalação reprodutível
-python3 .agent/scripts/sync_entrypoints.py
-python3 .agent/scripts/sync_entrypoints.py --check
+python3 .agents/scripts/sync_entrypoints.py
+python3 .agents/scripts/sync_entrypoints.py --check
 ```
 
 **Deu certo quando** o último comando imprime `OK: all AI entrypoints in sync and valid` e o `.venv/bin/python -c "import pptx, PIL, xlsxwriter, lxml, click"` não mostra erro.
@@ -57,12 +57,12 @@ python3 .agent/scripts/sync_entrypoints.py --check
 |---|---|---|
 | `TypeError: unsupported operand type(s) for \|` | Python 3.9 ou mais antigo rodando `assemble_rules.py` ou `check_local_rules.py` | conferir `python3 --version`, instalar a 3.10+ e recriar o `.venv` com ela |
 | `ModuleNotFoundError: pptx` (ou PIL, xlsxwriter) | libs não instaladas | `.venv/bin/pip install -r requirements.txt` |
-| Skill não aparece no Claude Code | links `.claude/` desatualizados | `python3 .agent/scripts/sync_entrypoints.py` |
+| Skill não aparece no Claude Code | links `.claude/` desatualizados | `python3 .agents/scripts/sync_entrypoints.py` |
 | `pre-commit: kit scripts not found` | máquina sem o kit `0 Padrões` | é só um aviso, o commit segue; para ativar as checagens, instale o `0 Padrões` ao lado deste projeto (ou aponte `SUPER_IA_PROJECTS_PATH` para ele) |
 | Hook de commit não roda | hooks não ativados no clone | `git config core.hooksPath .githooks` |
 | Chave de API ausente | `.env` não criado | `cp .env.example .env` e preencher a chave da plataforma usada |
 
-**Pastas de IA não são pré-requisito.** `.agent/`, `.claude/`, `.cursor/`, `CLAUDE.md`, `AGENTS.md` e `.cursorrules` são ferramenta local de quem opera o hub com IA. Os documentos em Markdown podem ser lidos e usados sem nenhuma delas, e o `.env` nunca é versionado.
+**Pastas de IA não são pré-requisito.** `.agents/`, `.claude/`, `.cursor/`, `CLAUDE.md`, `AGENTS.md` e `.cursorrules` são ferramenta local de quem opera o hub com IA. Os documentos em Markdown podem ser lidos e usados sem nenhuma delas, e o `.env` nunca é versionado.
 
 ---
 
@@ -175,9 +175,9 @@ E no arquivo de regras do seu projeto ativo (`CLAUDE.md` ou `AGENTS.md`), inclua
 
 ```markdown
 ### Protocolo de Fallback
-1. 1ª Prioridade: `./.agent/skills/` (projeto local)
-2. 2ª Prioridade (Engenharia): `~/superiaprojects/.agent/skills/`
-3. 3ª Prioridade (Marketing & Growth): `~/superiaprojects-marketing/.agent/skills/`
+1. 1ª Prioridade: `./.agents/skills/` (projeto local)
+2. 2ª Prioridade (Engenharia): `~/superiaprojects/.agents/skills/`
+3. 3ª Prioridade (Marketing & Growth): `~/superiaprojects-marketing/.agents/skills/`
 ```
 
 Com essa estrutura, qualquer agente de IA que você abrir em qualquer repositório da sua máquina terá acesso instantâneo a todo o conhecimento técnico e comercial do ecossistema.

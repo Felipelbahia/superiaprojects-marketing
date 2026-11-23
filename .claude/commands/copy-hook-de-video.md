@@ -1,1 +1,1 @@
-../../.agent/workflows/copy-hook-de-video.md
+../../.agents/workflows/copy-hook-de-video.md

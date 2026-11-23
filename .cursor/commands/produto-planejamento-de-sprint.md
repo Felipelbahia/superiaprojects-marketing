@@ -1,1 +1,1 @@
-../../.agent/workflows/produto-planejamento-de-sprint.md
+../../.agents/workflows/produto-planejamento-de-sprint.md

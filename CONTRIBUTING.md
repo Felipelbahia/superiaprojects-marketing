@@ -25,7 +25,7 @@ Seguimos a metodologia **TDD para Conteúdo e Procedimentos**:
 
 ### 1. Criar a pasta da Skill
 ```bash
-mkdir -p .agent/skills/minha-skill/references
+mkdir -p .agents/skills/minha-skill/references
 ```
 
 ### 2. Criar o arquivo `SKILL.md`
@@ -34,7 +34,7 @@ Escreva a documentação procedural contendo instruções diretas para o agente,
 ### 3. Sincronizar Entrypoints Multi-IA
 Após adicionar qualquer skill, persona de agente ou comando de workflow:
 ```bash
-python3 .agent/scripts/sync_entrypoints.py
+python3 .agents/scripts/sync_entrypoints.py
 ```
 Isso criará automaticamente os symlinks necessários para o **Claude Code** (`.claude/skills/`) e para o **Cursor** (`.cursor/commands/`).
 
@@ -43,7 +43,7 @@ Isso criará automaticamente os symlinks necessários para o **Claude Code** (`.
 ## 📋 Como Submeter Pull Requests
 
 1. Crie uma branch para a sua feature: `git checkout -b feature/minha-skill-de-mkt`
-2. Valide os links e frontmatter: `python3 .agent/scripts/sync_entrypoints.py --check`
+2. Valide os links e frontmatter: `python3 .agents/scripts/sync_entrypoints.py --check`
 3. Envie o PR descrevendo o canal atendido, referências bibliográficas e exemplos práticos de uso.
 
 ---

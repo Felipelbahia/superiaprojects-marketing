@@ -1,1 +1,1 @@
-../../.agent/workflows/conteudo-kit-de-podcast.md
+../../.agents/workflows/conteudo-kit-de-podcast.md

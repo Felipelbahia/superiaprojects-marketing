@@ -1,1 +1,1 @@
-../../.agent/workflows/vendas-cold-email-multicanal.md
+../../.agents/workflows/vendas-cold-email-multicanal.md

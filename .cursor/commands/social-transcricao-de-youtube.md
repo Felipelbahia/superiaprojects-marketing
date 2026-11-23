@@ -1,1 +1,1 @@
-../../.agent/workflows/social-transcricao-de-youtube.md
+../../.agents/workflows/social-transcricao-de-youtube.md

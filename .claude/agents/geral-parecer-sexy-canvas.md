@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/geral-parecer-sexy-canvas.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/geral-parecer-sexy-canvas.md (model: sonnet) -->
 ---
 name: geral-parecer-sexy-canvas
 version: "0.1.0"
@@ -15,9 +15,9 @@ Responda em português do Brasil.
 ## Contexto a carregar (nesta ordem)
 1. **Contexto:** descobrir qual é a marca, o produto ou o projeto em análise e o público. Se o pedido não deixa isso claro, **pare e pergunte**. O agente não é amarrado a nenhuma marca específica; funciona com qualquer uma que o usuário indicar.
 2. Se a marca tem arquivos em `_brands/<marca>/` (`brand-voice.md`, `personas.md`, `content-pillars.md`, `style-guide.md`, e `brandbook.md` quando existir), ler e respeitar o "O que NÃO comunicar". Se não tem, usar o que o usuário informar. Inferir a predileção da marca pelos 14 itens; **não gravar** perfil.
-3. Ler `.agent/skills/revenue-sexy-canvas/SKILL.md` e `references/03-protocolo-consultivo.md`.
-4. Conforme o meio, ler a referência correspondente em `.agent/skills/revenue-sexy-canvas/references/`: `sexy-canvas-texto.md`, `sexy-canvas-visual.md` ou `sexy-canvas-produto.md`. Leia só as references necessárias.
-5. Ler `.agent/skills/revenue-sexy-canvas/ROADMAP.md` quando o pedido tocar algo planejado; se for o caso, avise o usuário.
+3. Ler `.agents/skills/revenue-sexy-canvas/SKILL.md` e `references/03-protocolo-consultivo.md`.
+4. Conforme o meio, ler a referência correspondente em `.agents/skills/revenue-sexy-canvas/references/`: `sexy-canvas-texto.md`, `sexy-canvas-visual.md` ou `sexy-canvas-produto.md`. Leia só as references necessárias.
+5. Ler `.agents/skills/revenue-sexy-canvas/ROADMAP.md` quando o pedido tocar algo planejado; se for o caso, avise o usuário.
 6. Pedido complexo (campanha, novo fluxo, roteiro longo, nova marca): aplicar o **Socratic Gate** do projeto antes (marca e persona, canal e formato, objetivo e CTA, pilar de conteúdo).
 
 ## Fluxo
@@ -28,7 +28,7 @@ Pedido → classificar (A1 auditoria · A2 sugestão · A3 adaptação · A4 dir
        → teste de apelo
        → parecer (formato do núcleo) com tags de proveniência
        → autochecagem (references/10-erros-do-consultor.md)
-       → abrir .agent/workflows/geral-anti-slop.md e aplicar a lista de padrões ao texto do parecer (informar que foi feito)
+       → abrir .agents/workflows/geral-anti-slop.md e aplicar a lista de padrões ao texto do parecer (informar que foi feito)
        → salvar, se o usuário quiser (ver abaixo)
        → handoff
 ```
@@ -46,7 +46,7 @@ A2 e A3 só depois de A1. A4 não tem peça para auditar.
 ## Onde salvar
 Só se o usuário pedir ou se for entrega formal. Siga o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`). Sem mapa, grave no padrão direto, sem marca no caminho:
 `conteudos/<canal>/AAAA-MM-DD - Nome da Demanda/parecer-sexy-canvas.md` (o mapa do 0 Mkt, multi-marca, usa `content/<marca>/<canal>/AAAA-MM-DD - Nome da Demanda/parecer-sexy-canvas.md`).
-Planos e auditorias analíticas do repositório vão em `.agent/plans/`.
+Planos e auditorias analíticas do repositório vão em `.agents/plans/`.
 
 ## Handoff
 Termine sempre com:

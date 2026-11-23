@@ -34,17 +34,17 @@ fi
 
 # 3. Sincronizar Entrypoints (Claude Code, Antigravity, Cursor)
 echo "🔗 Sincronizando symlinks para Claude Code e Cursor..."
-python3 .agent/scripts/sync_entrypoints.py
+python3 .agents/scripts/sync_entrypoints.py
 
 # 4. Regenerar Catálogo Unificado
 echo "📊 Gerando catálogo unificado (Markdown e HTML interativo)..."
-python3 .agent/scripts/generate_catalog.py
+python3 .agents/scripts/generate_catalog.py
 
 echo ""
 echo "🎉 ==========================================================="
 echo "    Tudo pronto! Seu Super IA Projects - Marketing está ativo."
 echo ""
 echo "    Para explorar as 98 skills, 33 agentes e 114 workflows:"
-echo "    👉 Abra o arquivo: .agent/catalog.html no seu navegador."
+echo "    👉 Abra o arquivo: .agents/catalog.html no seu navegador."
 echo "=============================================================="
 echo ""

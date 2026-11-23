@@ -1,1 +1,1 @@
-../../.agent/workflows/persona-analise-de-feedback.md
+../../.agents/workflows/persona-analise-de-feedback.md

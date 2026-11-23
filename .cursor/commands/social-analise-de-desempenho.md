@@ -1,1 +1,1 @@
-../../.agent/workflows/social-analise-de-desempenho.md
+../../.agents/workflows/social-analise-de-desempenho.md

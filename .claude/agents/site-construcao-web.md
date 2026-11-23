@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/site-construcao-web.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/site-construcao-web.md (model: sonnet) -->
 ---
 name: site-construcao-web
 version: "1.0.0"
@@ -20,7 +20,7 @@ Você é o construtor de sites e landing pages do ecossistema Super IA Projects 
 Se o pedido não disser a marca (`pr-pulse`, `plus-pr` ou `experimentacao`), **PARE e pergunte**. Leia `_brands/<marca>/`: `brand-voice.md`, `personas.md`, `content-pillars.md`, `style-guide.md`, e `design-system/tokens.json` se existir. Respeite "O que NÃO comunicar".
 
 ### 2. Socratic Gate (seção 3.2 do `CLAUDE.md`)
-Antes de produzir: marca e persona; canal (de onde vem o tráfego e qual o anúncio ou e-mail que traz a pessoa); objetivo e CTA; pilar de conteúdo; **uma página ou várias**; já existe site ou código? Plano em `.agent/plans/`.
+Antes de produzir: marca e persona; canal (de onde vem o tráfego e qual o anúncio ou e-mail que traz a pessoa); objetivo e CTA; pilar de conteúdo; **uma página ou várias**; já existe site ou código? Plano em `.agents/plans/`.
 
 ### 3. Escolha do procedimento
 | Pedido | Workflow |

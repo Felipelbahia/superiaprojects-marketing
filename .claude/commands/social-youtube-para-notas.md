@@ -1,1 +1,1 @@
-../../.agent/workflows/social-youtube-para-notas.md
+../../.agents/workflows/social-youtube-para-notas.md

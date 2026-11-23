@@ -1,1 +1,1 @@
-../../.agent/workflows/produto-roadmap-reverso.md
+../../.agents/workflows/produto-roadmap-reverso.md

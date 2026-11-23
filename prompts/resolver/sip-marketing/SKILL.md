@@ -7,13 +7,13 @@ description: Use whenever the current task involves marketing, content, copywrit
 
 ## Por que isso existe
 
-O projeto `SIP - Marketing` (`<HUB>`) é a referência central de marketing: skills especialistas em `.agent/skills/`, agents em `.agent/agents/` e workflows `/comando` em `.agent/workflows/`. Esse conhecimento só é descoberto automaticamente dentro do próprio hub.
+O projeto `SIP - Marketing` (`<HUB>`) é a referência central de marketing: skills especialistas em `.agents/skills/`, agents em `.agents/agents/` e workflows `/comando` em `.agents/workflows/`. Esse conhecimento só é descoberto automaticamente dentro do próprio hub.
 
 **Esta skill é um redirecionador:** o projeto consumidor instala só ela (um symlink). Ela não ensina marketing; leva até quem ensina. Skills, agents e workflows ficam no hub e são lidos **por caminho absoluto**. Não symlinke nem copie nenhum deles para o projeto.
 
 ## Passo 0 — acesso ao caminho
 
-`<HUB>` é a pasta deste hub (repositório "0 Mkt") nesta máquina. Descubra-a assim: variável de ambiente `MARKETING_HUB_PATH`; senão a linha `Hub:` da entrada "SIP - Marketing" em `.agent/SIPS-CONSUMIDOS.md` do projeto; senão pergunte ao usuário e confirme que existe `<HUB>/prompts/resolver/sip-marketing/SKILL.md`. Nunca use o caminho de outra máquina. Leitura fora do diretório de trabalho pode pedir aprovação na primeira vez; use sempre o caminho absoluto entre aspas: `"<HUB>"`.
+`<HUB>` é a pasta deste hub (repositório "0 Mkt") nesta máquina. Descubra-a assim: variável de ambiente `MARKETING_HUB_PATH`; senão a linha `Hub:` da entrada "SIP - Marketing" em `.agents/SIPS-CONSUMIDOS.md` do projeto; senão pergunte ao usuário e confirme que existe `<HUB>/prompts/resolver/sip-marketing/SKILL.md`. Nunca use o caminho de outra máquina. Leitura fora do diretório de trabalho pode pedir aprovação na primeira vez; use sempre o caminho absoluto entre aspas: `"<HUB>"`.
 
 ## Passo 1 — marca e destino ficam no projeto consumidor
 
@@ -29,21 +29,21 @@ As skills do hub foram escritas para o 0 Mkt, que guarda marcas em `_brands/<mar
 | --- | --- |
 | **Consulta pontual** (como escrever X, qual estrutura para Y) | **Modo consulta** (abaixo). |
 | **Peça ou campanha grande / multi-arquivo** | **Modo dispatch** (abaixo). |
-| **Procedimento com nome** ("tem um /comando pra isso?") | Ache o workflow na vertical e leia `"<HUB>/.agent/workflows/<nome>.md"`. |
+| **Procedimento com nome** ("tem um /comando pra isso?") | Ache o workflow na vertical e leia `"<HUB>/.agents/workflows/<nome>.md"`. |
 | **Não sabe qual vertical** | Leia o workflow `geral-navegador-de-skills` ou o agent `geral-navegador-de-comandos` do hub. |
 
 ## Modo consulta (padrão — prefira este)
 
 1. Ache a vertical na tabela do índice abaixo pela coluna "Use quando".
 2. Leia só o arquivo dela: `"<HUB>/prompts/resolver/sip-marketing/verticais/<vertical>.md"`. Ali estão as skills, agents e workflows daquela área, cada um com o seu "Use quando". Sem certeza da vertical: `grep -ril "<palavra>" "<HUB>/prompts/resolver/sip-marketing/verticais/"`.
-3. Leia só o `SKILL.md` da skill escolhida: `"<HUB>/.agent/skills/<nome>/SKILL.md"`. Abra `references/` dela só se o `SKILL.md` mandar.
+3. Leia só o `SKILL.md` da skill escolhida: `"<HUB>/.agents/skills/<nome>/SKILL.md"`. Abra `references/` dela só se o `SKILL.md` mandar.
 4. Aplique inline e avise em uma linha que a resposta veio do hub `SIP - Marketing`, não de conhecimento genérico.
 
 ## Modo dispatch (só para construções grandes)
 
 Não existe invocação nativa de agente cross-projeto no Claude Code. Disparar um agent do hub é montar um subagente genérico (`Agent`, `subagent_type: "general-purpose"`) com a persona colada no prompt:
 
-1. Ache o agent na vertical da tarefa (seção Agents do arquivo dela) e leia `"<HUB>/.agent/agents/<nome>.md"` inteiro, mais as skills do frontmatter `skills:`.
+1. Ache o agent na vertical da tarefa (seção Agents do arquivo dela) e leia `"<HUB>/.agents/agents/<nome>.md"` inteiro, mais as skills do frontmatter `skills:`.
 2. Chame `Agent` com a persona + a tarefa + o caminho da marca e do mapa de destinos **do projeto consumidor**.
 3. Revise o resultado com `geral-anti-slop` antes de entregar.
 
@@ -79,7 +79,7 @@ Total: 99 skills, 33 agents, 114 workflows.
 
 ## Modo contribuição (devolver conhecimento ao hub)
 
-**Exceção primeiro:** se o dono do hub pediu a mudança nesta conversa, edite `.agent/skills/`, `.agent/agents/` ou `.agent/workflows/` do hub direto.
+**Exceção primeiro:** se o dono do hub pediu a mudança nesta conversa, edite `.agents/skills/`, `.agents/agents/` ou `.agents/workflows/` do hub direto.
 
 Caso contrário, nunca edite essas pastas a partir de um projeto consumidor: elas são lidas por caminho absoluto por todos os consumidores e uma edição sem curadoria propagaria na hora. Em vez disso:
 
@@ -91,7 +91,7 @@ Caso contrário, nunca edite essas pastas a partir de um projeto consumidor: ela
 
 - Última atualização do hub: 2026-11-18 (o dono do hub muda esta data sempre que esta skill, um agent, um workflow ou a estrutura do hub mudar).
 - Para atualizar a instalação num projeto (refazer links, escolher entre os agents/workflows novos): cole de novo o prompt `"<HUB>/prompts/instalar-skill-sip-marketing.md"` numa sessão daquele projeto.
-- A data em que **cada projeto** instalou ou atualizou fica no `.agent/SIPS-CONSUMIDOS.md` dele. Se for anterior à data acima, ofereça rodar o prompt.
+- A data em que **cada projeto** instalou ou atualizou fica no `.agents/SIPS-CONSUMIDOS.md` dele. Se for anterior à data acima, ofereça rodar o prompt.
 
 ## Se nada bater
 

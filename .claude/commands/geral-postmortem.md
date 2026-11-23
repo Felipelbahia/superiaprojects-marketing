@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-postmortem.md
+../../.agents/workflows/geral-postmortem.md

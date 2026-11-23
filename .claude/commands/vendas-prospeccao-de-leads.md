@@ -1,1 +1,1 @@
-../../.agent/workflows/vendas-prospeccao-de-leads.md
+../../.agents/workflows/vendas-prospeccao-de-leads.md

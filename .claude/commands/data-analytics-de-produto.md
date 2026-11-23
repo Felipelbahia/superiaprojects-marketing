@@ -1,1 +1,1 @@
-../../.agent/workflows/data-analytics-de-produto.md
+../../.agents/workflows/data-analytics-de-produto.md

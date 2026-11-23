@@ -22,8 +22,8 @@ jobs:
 
       - name: Check Multi-AI Entrypoints (Symlinks & Frontmatter)
         run: |
-          python3 .agent/scripts/sync_entrypoints.py --check
+          python3 .agents/scripts/sync_entrypoints.py --check
 
       - name: Test Catalog Generation
         run: |
-          python3 .agent/scripts/generate_catalog.py
+          python3 .agents/scripts/generate_catalog.py

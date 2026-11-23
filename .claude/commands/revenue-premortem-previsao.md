@@ -1,1 +1,1 @@
-../../.agent/workflows/revenue-premortem-previsao.md
+../../.agents/workflows/revenue-premortem-previsao.md

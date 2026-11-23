@@ -1,1 +1,1 @@
-../../.agent/workflows/revenue-lancamento-tecnico.md
+../../.agents/workflows/revenue-lancamento-tecnico.md

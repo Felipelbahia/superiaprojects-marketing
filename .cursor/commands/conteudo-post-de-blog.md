@@ -1,1 +1,1 @@
-../../.agent/workflows/conteudo-post-de-blog.md
+../../.agents/workflows/conteudo-post-de-blog.md

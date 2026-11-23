@@ -1,1 +1,1 @@
-../../.agent/workflows/revenue-estrategia-pmm.md
+../../.agents/workflows/revenue-estrategia-pmm.md

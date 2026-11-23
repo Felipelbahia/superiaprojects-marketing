@@ -1,1 +1,1 @@
-../../.agent/workflows/conteudo-briefing.md
+../../.agents/workflows/conteudo-briefing.md

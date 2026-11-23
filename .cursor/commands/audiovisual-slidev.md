@@ -1,1 +1,1 @@
-../../.agent/workflows/audiovisual-slidev.md
+../../.agents/workflows/audiovisual-slidev.md

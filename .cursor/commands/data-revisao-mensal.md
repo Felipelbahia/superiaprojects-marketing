@@ -1,1 +1,1 @@
-../../.agent/workflows/data-revisao-mensal.md
+../../.agents/workflows/data-revisao-mensal.md

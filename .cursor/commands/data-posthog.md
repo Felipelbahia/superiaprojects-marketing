@@ -1,1 +1,1 @@
-../../.agent/workflows/data-posthog.md
+../../.agents/workflows/data-posthog.md

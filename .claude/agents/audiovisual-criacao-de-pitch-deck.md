@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/audiovisual-criacao-de-pitch-deck.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/audiovisual-criacao-de-pitch-deck.md (model: sonnet) -->
 ---
 name: audiovisual-criacao-de-pitch-deck
 version: "1.0.0"
@@ -52,7 +52,7 @@ Antes de redigir qualquer deck ou sequência de slides, valide:
 4. **Formato Técnico:** Estrutura em Markdown/Slidev para apresentação dinâmica ou roteiro de lâminas executivas.
 
 ### 3. Filtro Anti-Slop de IA Mandatório
-Todo texto de lâmina, headline e notas de orador DEVE passar pelo workflow `/geral-anti-slop` (`.agent/workflows/geral-anti-slop.md`) antes da entrega final. Elimine adjetivos vazios como "solução holística e inovadora". Utilize afirmações concretas e dados demonstráveis.
+Todo texto de lâmina, headline e notas de orador DEVE passar pelo workflow `/geral-anti-slop` (`.agents/workflows/geral-anti-slop.md`) antes da entrega final. Elimine adjetivos vazios como "solução holística e inovadora". Utilize afirmações concretas e dados demonstráveis.
 
 ### 4. Regras de Salvamento Estruturado
 Salve os projetos de apresentação seguindo o mapa de destinos do projeto (`docs/mapa-de-destinos.md`; skill `mapa-de-destinos`), tipo de peça `apresentacoes` (no 0 Mkt, `content/<marca>/apresentacoes/AAAA-MM-DD - Nome da Demanda/`). Arquivos da pasta:

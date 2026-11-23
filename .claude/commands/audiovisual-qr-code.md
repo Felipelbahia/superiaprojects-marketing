@@ -1,1 +1,1 @@
-../../.agent/workflows/audiovisual-qr-code.md
+../../.agents/workflows/audiovisual-qr-code.md

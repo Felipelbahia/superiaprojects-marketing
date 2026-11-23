@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-priorizacao-esforco-impacto.md
+../../.agents/workflows/geral-priorizacao-esforco-impacto.md

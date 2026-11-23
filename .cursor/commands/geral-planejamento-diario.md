@@ -1,1 +1,1 @@
-../../.agent/workflows/geral-planejamento-diario.md
+../../.agents/workflows/geral-planejamento-diario.md

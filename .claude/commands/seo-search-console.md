@@ -1,1 +1,1 @@
-../../.agent/workflows/seo-search-console.md
+../../.agents/workflows/seo-search-console.md

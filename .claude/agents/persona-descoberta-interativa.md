@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/persona-descoberta-interativa.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/persona-descoberta-interativa.md (model: sonnet) -->
 ---
 name: persona-descoberta-interativa
 version: "1.0.0"

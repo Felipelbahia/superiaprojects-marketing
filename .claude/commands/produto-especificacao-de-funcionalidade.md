@@ -1,1 +1,1 @@
-../../.agent/workflows/produto-especificacao-de-funcionalidade.md
+../../.agents/workflows/produto-especificacao-de-funcionalidade.md

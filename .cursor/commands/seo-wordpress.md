@@ -1,1 +1,1 @@
-../../.agent/workflows/seo-wordpress.md
+../../.agents/workflows/seo-wordpress.md

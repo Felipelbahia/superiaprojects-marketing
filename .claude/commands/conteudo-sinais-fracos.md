@@ -1,1 +1,1 @@
-../../.agent/workflows/conteudo-sinais-fracos.md
+../../.agents/workflows/conteudo-sinais-fracos.md

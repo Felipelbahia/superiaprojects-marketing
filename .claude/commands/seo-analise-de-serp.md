@@ -1,1 +1,1 @@
-../../.agent/workflows/seo-analise-de-serp.md
+../../.agents/workflows/seo-analise-de-serp.md

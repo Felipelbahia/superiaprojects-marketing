@@ -1,4 +1,4 @@
-<!-- antigravity-kit:generated from ../../.agent/agents/email-orquestracao-de-campanhas.md (model: sonnet) -->
+<!-- antigravity-kit:generated from ../../.agents/agents/email-orquestracao-de-campanhas.md (model: sonnet) -->
 ---
 name: email-orquestracao-de-campanhas
 version: "1.0.0"

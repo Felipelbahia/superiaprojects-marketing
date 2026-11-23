@@ -1,1 +1,1 @@
-../../.agent/workflows/audiovisual-infografico.md
+../../.agents/workflows/audiovisual-infografico.md

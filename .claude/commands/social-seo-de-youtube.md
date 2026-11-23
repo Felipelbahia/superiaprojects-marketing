@@ -1,1 +1,1 @@
-../../.agent/workflows/social-seo-de-youtube.md
+../../.agents/workflows/social-seo-de-youtube.md
