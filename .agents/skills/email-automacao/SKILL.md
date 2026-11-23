@@ -133,6 +133,7 @@ Esta skill preserva e se apoia no acervo de guias especializados contidos na sub
 | [`customer-io.md`](references/customer-io.md) | Guia de integração do Customer.io: autenticação, identificar cliente, enviar evento, disparar broadcast, e-mail transacional, SDK JavaScript e limites de taxa. |
 | [`activecampaign.md`](references/activecampaign.md) | Guia completo de recursos, pipelines, negócios (deals), tags e webhooks no ActiveCampaign. |
 | [`36-google-and-meta-email-sequence-writer.md`](references/36-google-and-meta-email-sequence-writer.md) | Roteiro de transição de leads adquiridos via tráfego pago para esteiras de nutrição por email. |
+| [`sms-whatsapp-marketing.md`](references/sms-whatsapp-marketing.md) | Mensageria direta (SMS e WhatsApp) integrada a ciclo de vida: opt-in LGPD, limites de frequência, custos e recuperação de checkout. |
 
 ## Qual abrir primeiro (sequências que aparecem em vários arquivos)
 
@@ -148,6 +149,7 @@ Os arquivos tratam das mesmas sequências com profundidade diferente (medido: ne
 | **Nutrição "recurso, caso, insight, convite"** | [`nurture-sequences.md`](references/nurture-sequences.md) | Texto em francês |
 | **Fluxo vindo de anúncio (Google e Meta)** | [`36-google-and-meta-email-sequence-writer.md`](references/36-google-and-meta-email-sequence-writer.md) | Nutrição de 5 dias |
 | **Roteiro guiado para montar a sequência do zero** (faz perguntas antes de entregar) | [`sequence.md`](references/sequence.md) | Tipo, tamanho e abordagem de conteúdo; texto base em inglês |
+| **SMS e WhatsApp de marketing** | [`sms-whatsapp-marketing.md`](references/sms-whatsapp-marketing.md) | Permissão por canal, limites de caracteres, custos, templates e LGPD |
 
 Para assuntos e benchmarks de e-mail, veja a tabela "Qual abrir primeiro" em [`email-copy`](../email-copy/SKILL.md).
 

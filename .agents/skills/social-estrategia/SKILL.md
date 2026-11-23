@@ -105,9 +105,10 @@ Os guias estão em [`references/`](references/). O texto base é inglês, exceto
 - [tweet-draft-reviewer.md](references/tweet-draft-reviewer.md) — Revisa rascunhos de tweet contra 8 regras de voz e dá nota.
 - [social-card-gen.md](references/social-card-gen.md) — Variantes de post por plataforma a partir de uma única fonte.
 
-### Engajamento e viralização
+### Engajamento, viralização e comunidade
 - [engagement-tactics.md](references/engagement-tactics.md) — Táticas de engajamento e conversa.
 - [viral-mechanics.md](references/viral-mechanics.md) — Gatilhos emocionais e mecânicas de compartilhamento.
+- [comunidade-e-rituais.md](references/comunidade-e-rituais.md) — Gestão de comunidades proprietárias (WhatsApp, Discord, Slack): onboarding dos primeiros 7 dias, rituais semanais, moderação e métricas P2P.
 
 ### Ouvir o público e parcerias
 - [social-listening.md](references/social-listening.md) — Monitorar menções, sentimento e conversas sobre a marca.
@@ -116,6 +117,7 @@ Os guias estão em [`references/`](references/). O texto base é inglês, exceto
 ### Por plataforma
 | Plataforma | Onde ir |
 |---|---|
+| Comunidade e grupos proprietários | [comunidade-e-rituais.md](references/comunidade-e-rituais.md) |
 | LinkedIn | Skill [social-linkedin](../social-linkedin/SKILL.md); anúncios em [ads-multiplataforma](../ads-multiplataforma/SKILL.md) |
 | X (Twitter) | [thread-writer.md](references/thread-writer.md) e [tweet-draft-reviewer.md](references/tweet-draft-reviewer.md) |
 | Reddit | [reddit-marketing-playbook.md](references/reddit-marketing-playbook.md) e [reddit-insights-mcp.md](references/reddit-insights-mcp.md) (pesquisa por MCP) |

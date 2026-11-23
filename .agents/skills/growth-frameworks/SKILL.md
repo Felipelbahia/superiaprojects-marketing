@@ -112,6 +112,7 @@ Aprofunde-se nos manuais da subpasta [`references/`](references/):
 | [`demand-gen.md`](references/demand-gen.md) | Geração de demanda ativa vs captura de demanda, canais de distribuição e programas de autoridade. |
 | [`distribution-engine.md`](references/distribution-engine.md) | Construção de motores de distribuição proprietários e parcerias estratégicas. |
 | [`lean-canvas.md`](references/lean-canvas.md) | Modelagem de negócio em 1 página: problema, segmento de clientes, proposta de valor e canal. |
+| [`diretorios-e-marketplaces.md`](references/diretorios-e-marketplaces.md) | Aquisição e autoridade em diretórios: kit de cadastro, Product Hunt, G2, Capterra e coleta ética de reviews. |
 
 ## Referências adicionais
 
@@ -120,6 +121,7 @@ Aprofunde-se nos manuais da subpasta [`references/`](references/):
 - [marketing-strategy-essentials.md](references/marketing-strategy-essentials.md) — Essenciais de estratégia de marketing (HubSpot, Gartner, McKinsey).
 - [marketing-tactics-library.md](references/marketing-tactics-library.md) — Biblioteca de táticas (GrowthHackers, Demand Curve, Reforge).
 - [marketing-ideas-collection.md](references/marketing-ideas-collection.md) — Ideias de marketing e crescimento para SaaS.
+- [diretorios-e-marketplaces.md](references/diretorios-e-marketplaces.md) — Playbook de submissão e tração em diretórios de software (Product Hunt, G2, Capterra, AlternativeTo).
 
 **Escala**
 - [scale-game-framework.md](references/scale-game-framework.md) — Como a estratégia de marketing se comporta em escala.
