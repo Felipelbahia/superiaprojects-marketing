@@ -37,7 +37,7 @@ except Exception:
 SKIP_DIRS = {
     "node_modules", ".next", "dist", "build", ".git", ".github", "__pycache__",
     ".vscode", ".idea", "coverage", "test", "tests", "__tests__", "spec",
-    "docs", "documentation", ".venv", ".agent", ".claude",
+    "docs", "documentation", ".venv", ".agents", ".claude",
 }
 SKIP_PATTERNS = [
     "config", "setup", "util", "helper", "hook", "context", "store",

@@ -419,7 +419,7 @@ def scan_agent_dir(agent_dir: Path, source_name: str, cache: dict, project_name:
                     "kind": "Skill",
                     "source": source_name,
                     "desc_en": desc,
-                    "path": f".agent/skills/{name}/SKILL.md",
+                    "path": f".agents/skills/{name}/SKILL.md",
                     "abs_path": rel_to_cwd(skill_file),
                     "content": content[:12000],
                     "files": other_files,
@@ -445,7 +445,7 @@ def scan_agent_dir(agent_dir: Path, source_name: str, cache: dict, project_name:
                 "kind": "Workflow",
                 "source": source_name,
                 "desc_en": desc,
-                "path": f".agent/workflows/{wf_file.name}",
+                "path": f".agents/workflows/{wf_file.name}",
                 "abs_path": rel_to_cwd(wf_file),
                 "content": content[:12000],
                 "files": [],
@@ -471,7 +471,7 @@ def scan_agent_dir(agent_dir: Path, source_name: str, cache: dict, project_name:
                 "kind": "Agent",
                 "source": source_name,
                 "desc_en": desc,
-                "path": f".agent/agents/{ag_file.name}",
+                "path": f".agents/agents/{ag_file.name}",
                 "abs_path": rel_to_cwd(ag_file),
                 "content": content[:12000],
                 "files": [],
@@ -785,7 +785,7 @@ def generate_html_dashboard(items: list[dict], title: str, subtitle: str) -> str
 
 
 def build_for_target(target_dir: Path, source_name: str, cache: dict, is_primary_global: bool = False):
-    agent_dir = target_dir / ".agent"
+    agent_dir = target_dir / ".agents"
     if not agent_dir.is_dir():
         print(f"Aviso: Diretório {agent_dir} não encontrado.")
         return
@@ -815,23 +815,23 @@ def build_for_target(target_dir: Path, source_name: str, cache: dict, is_primary
     combined_items = list(local_items)
     
     if "Projects" in source_name or "Padrões" in source_name:
-        if (GLOBAL_MKT_DIR / ".agent").is_dir():
-            mkt_items = scan_agent_dir(GLOBAL_MKT_DIR / ".agent", "Super IA Marketing", cache, project_name="Super IA Marketing")
+        if (GLOBAL_MKT_DIR / ".agents").is_dir():
+            mkt_items = scan_agent_dir(GLOBAL_MKT_DIR / ".agents", "Super IA Marketing", cache, project_name="Super IA Marketing")
             combined_items.extend(mkt_items)
             title = "Super IA Projects — Catálogo Geral Unificado da Plataforma"
             subtitle = "Índice central de todas as Skills, Workflows e Agentes da Plataforma (Engenharia + Marketing)"
     elif "Marketing" in source_name or "Mkt" in source_name:
-        if (GLOBAL_PADROES_DIR / ".agent").is_dir():
-            padroes_items = scan_agent_dir(GLOBAL_PADROES_DIR / ".agent", "Super IA Projects", cache, project_name="Super IA Projects")
+        if (GLOBAL_PADROES_DIR / ".agents").is_dir():
+            padroes_items = scan_agent_dir(GLOBAL_PADROES_DIR / ".agents", "Super IA Projects", cache, project_name="Super IA Projects")
             combined_items.extend(padroes_items)
             title = "Super IA Projects - Marketing — Catálogo Integrado de Marketing, Growth e Vendas"
             subtitle = "Catálogo completo de Marketing integrado à base global de Engenharia Super IA Projects"
     else:
-        if (GLOBAL_PADROES_DIR / ".agent").is_dir():
-            padroes_items = scan_agent_dir(GLOBAL_PADROES_DIR / ".agent", "Super IA Projects", cache, project_name="Super IA Projects")
+        if (GLOBAL_PADROES_DIR / ".agents").is_dir():
+            padroes_items = scan_agent_dir(GLOBAL_PADROES_DIR / ".agents", "Super IA Projects", cache, project_name="Super IA Projects")
             combined_items.extend(padroes_items)
-        if (GLOBAL_MKT_DIR / ".agent").is_dir():
-            mkt_items = scan_agent_dir(GLOBAL_MKT_DIR / ".agent", "Super IA Marketing", cache, project_name="Super IA Marketing")
+        if (GLOBAL_MKT_DIR / ".agents").is_dir():
+            mkt_items = scan_agent_dir(GLOBAL_MKT_DIR / ".agents", "Super IA Marketing", cache, project_name="Super IA Marketing")
             combined_items.extend(mkt_items)
         title = f"{target_dir.name} — Catálogo Geral de Skills & Recursos"
         subtitle = f"Catálogo local de {target_dir.name} integrado ao ecossistema Super IA Projects"
@@ -843,8 +843,8 @@ def build_for_target(target_dir: Path, source_name: str, cache: dict, is_primary
     print(f"✅ Gerado CATALOG.md: {md_path.relative_to(target_dir)} ({len(combined_items)} recursos)")
 
     # Garante fallback local de catalog-app.css e catalog-app.js no projeto alvo
-    central_css = GLOBAL_PADROES_DIR / ".agent" / "catalog-app.css"
-    central_js = GLOBAL_PADROES_DIR / ".agent" / "catalog-app.js"
+    central_css = GLOBAL_PADROES_DIR / ".agents" / "catalog-app.css"
+    central_js = GLOBAL_PADROES_DIR / ".agents" / "catalog-app.js"
     target_css = agent_dir / "catalog-app.css"
     target_js = agent_dir / "catalog-app.js"
 
@@ -870,7 +870,7 @@ def main():
         build_for_target(GLOBAL_PADROES_DIR, "Super IA Projects", cache, is_primary_global=True)
         if GLOBAL_MKT_DIR.exists():
             build_for_target(GLOBAL_MKT_DIR, "Super IA Marketing", cache, is_primary_global=True)
-            idx = GLOBAL_MKT_DIR / ".agent" / "INDEX.md"
+            idx = GLOBAL_MKT_DIR / ".agents" / "INDEX.md"
             if idx.exists():
                 cat_ref = "# Índice de Skills, Workflows e Agentes (Redirecionamento)\n\n> O catálogo consolidado agora vive em [CATALOG.md](CATALOG.md) e no dashboard interativo [catalog.html](catalog.html).\n"
                 orig = idx.read_text(encoding="utf-8")

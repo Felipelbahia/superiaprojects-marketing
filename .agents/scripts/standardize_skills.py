@@ -64,7 +64,7 @@ PURE_VENDORS = {
 }
 
 ROOT = Path.cwd()
-SKILLS_DIR = ROOT / ".agent" / "skills"
+SKILLS_DIR = ROOT / ".agents" / "skills"
 
 
 def get_repo_url() -> str:

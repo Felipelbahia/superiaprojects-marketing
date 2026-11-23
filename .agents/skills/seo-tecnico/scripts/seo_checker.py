@@ -32,7 +32,7 @@ except Exception:
 SKIP_DIRS = {
     "node_modules", ".next", "dist", "build", ".git", ".github", "__pycache__",
     ".vscode", ".idea", "coverage", "test", "tests", "__tests__", "spec",
-    "docs", "documentation", "examples", ".venv", ".agent", ".claude",
+    "docs", "documentation", "examples", ".venv", ".agents", ".claude",
 }
 
 # Only for JSX/TSX: files that are code, not pages. HTML files are always pages.
