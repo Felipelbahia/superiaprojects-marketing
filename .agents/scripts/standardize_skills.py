@@ -106,7 +106,7 @@ def process_skill(skill_dir: Path, repo_url: str):
         return False
 
     content = skill_file.read_text(encoding="utf-8")
-    m = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", content, re.DOTALL)
+    m = re.match(r"^---\s*\n(.*?)\n---[ \t]*\n(.*)$", content, re.DOTALL)
     if not m:
         print(f"⚠️  Sem frontmatter delimitado por ---: {skill_dir.name}")
         return False
@@ -132,6 +132,14 @@ def process_skill(skill_dir: Path, repo_url: str):
     complements_m = re.search(r"^complements:\s*(.+)$", fm_raw, re.M)
     complements = complements_m.group(1).strip() if complements_m else None
 
+    # Preservar o que já foi escrito à mão: versão, # Source e # Status
+    version_m = re.search(r"^\s+version:\s*(.+)$", fm_raw, re.M)
+    version = version_m.group(1).strip().strip("\"'") if version_m else "1.0.0"
+    src_m = re.search(r"^#\s*Source:\s*(.+)$", fm_raw, re.M)
+    existing_source = src_m.group(1).strip() if src_m else None
+    status_m = re.search(r"^#\s*Status:\s*(.+)$", fm_raw, re.M)
+    existing_status = status_m.group(1).strip() if status_m else None
+
     # Determinar status, source e author final
     if skill_dir.name in FELIPE_SOLO:
         status = "Nativa do Projeto"
@@ -143,10 +151,12 @@ def process_skill(skill_dir: Path, repo_url: str):
         source = vendor_info['source']
         final_author = vendor_info['author']
     else:
-        status = "Customizada / Modificada localmente por Felipe Bahia"
-        source = determine_source(skill_dir.name, existing_author)
-        clean_author = re.sub(r"\s*&\s*Felipe Bahia.*", "", existing_author).strip()
-        final_author = f"{clean_author} & Felipe Bahia (Futuro Mercado)"
+        status = existing_status or "Customizada / Modificada localmente por Felipe Bahia"
+        source = existing_source or determine_source(skill_dir.name, existing_author)
+        if "felipe bahia" in existing_author.lower():
+            final_author = existing_author
+        else:
+            final_author = f"{existing_author} & Felipe Bahia (Futuro Mercado)"
 
     # Construir novas linhas de frontmatter
     new_fm_lines = ["---"]
@@ -160,7 +170,7 @@ def process_skill(skill_dir: Path, repo_url: str):
     new_fm_lines.append("license: MIT")
     new_fm_lines.append("metadata:")
     new_fm_lines.append(f"  author: {final_author}")
-    new_fm_lines.append("  version: 1.0.0")
+    new_fm_lines.append(f"  version: {version}")
     if vertical:
         new_fm_lines.append(f"  vertical: {vertical}")
     if complements:

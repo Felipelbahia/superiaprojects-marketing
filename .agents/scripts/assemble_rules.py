@@ -3,10 +3,10 @@
 assemble_rules.py - Build a project's rules file from the kit's rule modules.
 
 Usage (from the project root):
-  python3 <kit>/.agent/scripts/assemble_rules.py --modules core,sip-access,code --title "My Project" [--out CLAUDE.md]
-  python3 <kit>/.agent/scripts/assemble_rules.py --list
+  python3 <kit>/.agents/scripts/assemble_rules.py --modules core,sip-access,code --title "My Project" [--out CLAUDE.md]
+  python3 <kit>/.agents/scripts/assemble_rules.py --list
 
-Modules live in .agent/skills/project-initializer/modules/<name>.md. They are concatenated in a
+Modules live in .agents/skills/project-initializer/modules/<name>.md. They are concatenated in a
 fixed order (never the order given) and every "## " heading outside code fences is numbered.
 Re-running over a file it assembled keeps the project's ## Project, ## Stack and ## Local rules blocks
 and moves other hand-written sections into ## Local rules. In ## Project, the first top-level "- Modules:" line

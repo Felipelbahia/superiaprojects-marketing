@@ -2,32 +2,37 @@
 """
 sync_entrypoints.py - Multi-AI discovery sync and validation.
 
-Source of truth is `.agent/` (Google Antigravity reads it natively). Other AIs only
+Source of truth is `.agents/` (Google Antigravity reads it natively). Other AIs only
 see what is exposed in their own folders, so this script keeps those as SYMLINKS:
 
-    .agent/skills/<n>/        -> .claude/skills/<n>
-    .agent/agents/<n>.md      -> .claude/agents/<n>.md      (Claude Code; Cursor also reads it)
-    .agent/workflows/<n>.md   -> .claude/commands/<n>.md    (Claude Code slash commands)
+    .agents/skills/<n>/        -> .claude/skills/<n>
+    .agents/agents/<n>.md      -> .claude/agents/<n>.md      (Claude Code; Cursor also reads it)
+    .agents/workflows/<n>.md   -> .claude/commands/<n>.md    (Claude Code slash commands)
                               -> .cursor/commands/<n>.md    (Cursor)
 
 Usage (run from the project root):
-    python .agent/scripts/sync_entrypoints.py              # create/repair symlinks, then validate
-    python .agent/scripts/sync_entrypoints.py --check      # validate only, exit 1 on errors
-    python .agent/scripts/sync_entrypoints.py --write-docs # refresh counts block in ARCHITECTURE.md/README.md
+    python .agents/scripts/sync_entrypoints.py              # create/repair symlinks, then validate
+    python .agents/scripts/sync_entrypoints.py --check      # validate only, exit 1 on errors
+    python .agents/scripts/sync_entrypoints.py --write-docs # refresh counts block in ARCHITECTURE.md/README.md
 
 Only symlinks are ever created or removed; a real file or folder in a target is reported, never touched.
+
+Windows: when the OS denies symlinks (WinError 1314: no Developer Mode / admin), folders fall back to
+directory junctions and files to managed copies (see linkutil.py). Copies are refreshed on every sync.
 """
 
 import argparse
 import os
 import re
-import shutil
 import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import linkutil  # noqa: E402
+
 ROOT = Path.cwd()
-AGENT = ROOT / ".agent"
+AGENT = ROOT / ".agents"
 
 # (source dir, kind, target dir, relative prefix from target dir back to project root)
 LINKS = [
@@ -57,7 +62,7 @@ GENERATED_AGENT_HEADER_PREFIX = "<!-- antigravity-kit:generated"
 def convert_agent_for_claude(src_path: Path, target_model: str) -> str:
     text = src_path.read_text(encoding="utf-8")
     converted = re.sub(r"^model:[ \t]*.*$", f"model: {target_model}", text, flags=re.M)
-    header = f"<!-- antigravity-kit:generated from ../../.agent/agents/{src_path.name} (model: {target_model}) -->\n"
+    header = f"<!-- antigravity-kit:generated from ../../.agents/agents/{src_path.name} (model: {target_model}) -->\n"
     return header + converted
 
 
@@ -84,19 +89,31 @@ def brain_errors(name: str, autonomy: str) -> list[str]:
         errors.append(f"agent {name} has invalid autonomy {autonomy!r} (use one of: {', '.join(AUTONOMY_LEVELS)})")
     brain = AGENT / "agents" / "agents_brains" / name
     if not brain.is_dir():
-        return [*errors, f"agent {name} has no brain: missing .agent/agents/agents_brains/{name}/"]
+        return [*errors, f"agent {name} has no brain: missing .agents/agents/agents_brains/{name}/"]
     errors += [f"agent {name} brain misses {item}" for item in BRAIN_FILES if not (brain / item).is_file()]
     if not (brain / "inbox").is_dir():
         errors.append(f"agent {name} brain misses inbox/")
     return errors
 
 
-def is_hub_skill_link(link: Path, name: str) -> bool:
-    """A skill link that goes straight to the same-named skill in another .agent/ tree (a SIP hub).
+def tool_errors(path: Path, name: str, tools: str) -> list[str]:
+    """Every tool in `tools` must be named in a step: the body without the Limites section."""
+    text = path.read_text(encoding="utf-8", errors="ignore")
+    body = re.sub(r"\A---\n.*?\n---\n?", "", text, count=1, flags=re.S)
+    body = re.sub(r"^## Limites\b.*?(?=^## |\Z)", "", body, flags=re.S | re.M)
+    errors = []
+    for tool in re.split(r"[,\s]+", tools):
+        if tool and not re.search(rf"(?<![A-Za-z0-9_]){re.escape(tool)}(?![A-Za-z0-9_])", body):
+            errors.append(f"agent {name} tool {tool} is not cited in any step (remove it from tools or use it in Processo)")
+    return errors
 
-    0 Padrões keeps a real stub in .agent/skills/sip-<x> and links .claude/skills/sip-<x> to the hub
+
+def is_hub_skill_link(link: Path, name: str) -> bool:
+    """A skill link that goes straight to the same-named skill in another .agents/ tree (a SIP hub).
+
+    0 Padrões keeps a real stub in .agents/skills/sip-<x> and links .claude/skills/sip-<x> to the hub
     resolver on purpose (projetos/_sips.md, "Exceção: 0 Padrões não usa o padrão duplo").
-    The hub keeps the resolver at `<hub>/prompts/resolver/<name>` (new layout) or `<hub>/.agent/skills/<name>` (legacy).
+    The hub keeps the resolver at `<hub>/prompts/resolver/<name>` (new layout) or `<hub>/.agents/skills/<name>` (legacy).
     """
     if not link.is_symlink() or not link.exists():
         return False
@@ -104,7 +121,7 @@ def is_hub_skill_link(link: Path, name: str) -> bool:
         t.name == name
         and (t / "SKILL.md").is_file()
         and (
-            (t.parent.name == "skills" and t.parent.parent.name == ".agent")
+            (t.parent.name == "skills" and t.parent.parent.name in linkutil.AGENT_DIRS)
             or (t.parent.name == "resolver" and t.parent.parent.name == "prompts")
         )
         for t in link_targets(link)
@@ -131,35 +148,12 @@ def hub_skill_names(agent: Path) -> set[str]:
     names = set()
     for t in link_targets(agent):
         agent_dir = t.parent.parent
-        if t.parent.name != "agents" or agent_dir.name != ".agent" or agent_dir.resolve() == AGENT.resolve():
+        if t.parent.name != "agents" or agent_dir.name not in linkutil.AGENT_DIRS or agent_dir.resolve() == AGENT.resolve():
             continue
         hub_skills = agent_dir / "skills"
         if hub_skills.is_dir():
             names |= {p.name for p in hub_skills.iterdir() if (p / "SKILL.md").exists()}
     return names
-
-
-def is_junction(path: Path) -> bool:
-    check = getattr(os.path, "isjunction", None)
-    return bool(check and check(path))
-
-
-def make_link(link: Path, rel: str, src: Path) -> str:
-    """Create the symlink. On Windows without symlink privilege (WinError 1314) fall back to a
-    junction (folders, no privilege needed) or a plain copy (files). Returns how it was linked."""
-    try:
-        link.symlink_to(rel)
-        return "linked"
-    except OSError:
-        if os.name != "nt":
-            raise
-    if src.is_dir():
-        done = subprocess.run(["cmd", "/c", "mklink", "/J", str(link), str(src.resolve())], capture_output=True, text=True)
-        if done.returncode == 0:
-            return "linked (junction; enable Windows Developer Mode for real symlinks)"
-        raise OSError(f"cannot link {link}: {done.stderr.strip() or done.stdout.strip()}")
-    shutil.copy2(src, link)
-    return "copied (no symlink privilege; re-run this script after hub updates; enable Windows Developer Mode for real symlinks)"
 
 
 def sync_links(check_only: bool) -> list[str]:
@@ -174,7 +168,7 @@ def sync_links(check_only: bool) -> list[str]:
         depth = len(Path(target_rel).parts)
         wanted = {}
         for s in srcs:
-            wanted[s.name] = os.path.join(*([".."] * depth), ".agent", kind_dir, s.name)
+            wanted[s.name] = os.path.join(*([".."] * depth), ".agents", kind_dir, s.name)
         for s in srcs:
             name = s.name
             rel = wanted[name]
@@ -219,24 +213,21 @@ def sync_links(check_only: bool) -> list[str]:
 
             if link.is_symlink() and os.readlink(link) == rel and link.exists():
                 continue
+            state = linkutil.managed_state(link, s, target)
+            if state == "ok":
+                continue
+            if state == "stale":
+                if check_only:
+                    problems.append(f"out of date copy (symlinks unavailable): {target_rel}/{name}")
+                else:
+                    linkutil.refresh_copy(link, s, target)
+                    print(f"  refreshed copy {target_rel}/{name}")
+                continue
             if kind == "dir" and is_hub_skill_link(link, name):
                 continue
             if link.is_symlink() and link.exists():
                 problems.append(f"symlink points elsewhere, left untouched: {target_rel}/{name} -> {os.readlink(link)}")
                 continue
-            if os.name == "nt" and link.exists() and not link.is_symlink():
-                # Windows fallback results: a junction to the source folder, or a copy of the source file.
-                if kind == "dir" and is_junction(link) and link.resolve() == s.resolve():
-                    continue
-                if kind == "file" and link.is_file() and not (is_claude_agent and link.read_text(encoding="utf-8", errors="ignore").startswith(GENERATED_AGENT_HEADER_PREFIX)):
-                    if link.read_bytes() == s.read_bytes():
-                        continue
-                    if check_only:
-                        problems.append(f"out of date copy: {target_rel}/{name}")
-                    else:
-                        shutil.copy2(s, link)
-                        print(f"  updated copy {target_rel}/{name}")
-                    continue
             if link.exists():
                 if is_claude_agent and link.is_file() and not link.is_symlink():
                     first_line = link.read_text(encoding="utf-8", errors="ignore").splitlines()[0] if link.stat().st_size > 0 else ""
@@ -245,7 +236,7 @@ def sync_links(check_only: bool) -> list[str]:
                             problems.append(f"generated file should be symlink for inherit model: {target_rel}/{name}")
                             continue
                         link.unlink()
-                        link.symlink_to(rel)
+                        linkutil.make_link(link, rel, s, target)
                         print(f"  converted back to symlink {target_rel}/{name}")
                         continue
                 problems.append(f"REAL (not symlink) in {target_rel}: {name} - resolve by hand")
@@ -257,15 +248,24 @@ def sync_links(check_only: bool) -> list[str]:
             else:
                 if link.is_symlink():
                     link.unlink()
-                how = make_link(link, rel, s)
-                print(f"  {how} {target_rel}/{name}")
+                how = linkutil.make_link(link, rel, s, target)
+                suffix = "" if how == "symlink" else f" ({how}: symlinks not allowed here)"
+                print(f"  linked {target_rel}/{name}{suffix}")
         if target.is_dir():
+            for name in linkutil.managed_orphans(target, wanted):
+                if check_only:
+                    problems.append(f"orphan copy: {target_rel}/{name}")
+                else:
+                    linkutil.remove_managed(target, name)
+                    print(f"  removed orphan copy {target_rel}/{name}")
             for existing in target.iterdir():
+                if existing.name == linkutil.MANIFEST:
+                    continue
                 if existing.name in wanted:
                     continue
                 if existing.is_symlink():
-                    raw = os.readlink(existing)
-                    ours = (not os.path.isabs(raw) and raw.startswith("../") and "/.agent/" in raw) and not existing.exists()
+                    raw = os.readlink(existing).replace("\\", "/")  # Windows returns backslashes
+                    ours = (not os.path.isabs(raw) and raw.startswith("../") and ("/.agents/" in raw or "/.agent/" in raw)) and not existing.exists()
                     if not ours:
                         continue  # only dangling links we could have created; absolute/foreign links are never removed
                     if check_only:
@@ -301,6 +301,7 @@ def validate() -> tuple[list[str], dict]:
             errors.append(f"agent without description: {a.name}")
         if "autonomy" in fm:
             errors += brain_errors(a.stem, fm["autonomy"])
+            errors += tool_errors(a, a.stem, fm.get("tools", ""))
         known = skill_names | hub_skill_names(a)
         for ref in re.split(r"[,\s]+", fm.get("skills", "")):
             if ref and ref.split("/")[0] not in known:
@@ -311,7 +312,7 @@ def validate() -> tuple[list[str], dict]:
             errors.append(f"workflow without description: {w.name}")
     checklist = AGENT / "scripts" / "checklist.py"
     if checklist.exists():
-        for rel in re.findall(r'"(\.agent/skills/[^"]+\.py)"', checklist.read_text(encoding="utf-8")):
+        for rel in re.findall(r'"(\.agents/skills/[^"]+\.py)"', checklist.read_text(encoding="utf-8")):
             if not (ROOT / rel).exists():
                 errors.append(f"checklist.py points to missing script: {rel}")
     scripts = sorted(p for p in AGENT.glob("skills/*/scripts/*") if p.is_file() and p.name != "__pycache__")
@@ -324,7 +325,7 @@ def write_docs(counts: dict) -> None:
         f"{COUNT_START}\n"
         f"**{counts['agents']} agents** · **{counts['skills']} skills** · **{counts['workflows']} workflows** · "
         f"**{counts['skill_scripts']} scripts inside skills** "
-        f"(generated by `.agent/scripts/sync_entrypoints.py --write-docs`)\n"
+        f"(generated by `.agents/scripts/sync_entrypoints.py --write-docs`)\n"
         f"{COUNT_END}"
     )
     for doc in (AGENT / "ARCHITECTURE.md", ROOT / "README.md"):
@@ -348,7 +349,7 @@ def main() -> int:
     args = ap.parse_args()
 
     if not AGENT.is_dir():
-        print("No .agent/ folder in the current directory.")
+        print("No .agents/ folder in the current directory.")
         return 1
     problems = sync_links(check_only=args.check)
     errors, counts = validate()

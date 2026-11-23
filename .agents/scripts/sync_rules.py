@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
 sync_rules.py - keeps the project's rule files identical.
-Usage: python3 .agent/scripts/sync_rules.py [--check | --clean-legacy]
+Usage: python3 .agents/scripts/sync_rules.py [--check | --clean-legacy]
   (no flag)       copy the most recently edited rule file to the others
   --check         read-only, exit 1 if out of parity
-  --clean-legacy  offer to delete the old GEMINI.md and .agent/rules/ copies (asks first)
+  --clean-legacy  offer to delete the old GEMINI.md and .agents/rules/ copies (asks first)
 
 Standard: CLAUDE.md (Claude Code) and AGENTS.md (Antigravity and other tools) at the project root, identical.
 .cursorrules and .claude/CLAUDE.md follow the same text only when they already exist; they are never created.
-GEMINI.md and .agent/rules/ are legacy: never written, never used as the source, removed only after a yes.
+GEMINI.md and .agents/rules/ are legacy: never written, never used as the source, removed only after a yes.
 """
 
 import sys
@@ -16,7 +16,7 @@ from pathlib import Path
 
 STANDARD = ["CLAUDE.md", "AGENTS.md"]
 OPTIONAL = [".cursorrules", ".claude/CLAUDE.md"]  # Claude Code loads ./CLAUDE.md and ./.claude/CLAUDE.md both
-LEGACY = ["GEMINI.md", ".agent/rules/CLAUDE.md", ".agent/rules/GEMINI.md", ".agent/rules/AGENTS.md"]
+LEGACY = ["GEMINI.md", ".agents/rules/CLAUDE.md", ".agents/rules/GEMINI.md", ".agents/rules/AGENTS.md"]
 NAMES = ("GEMINI.md", "CLAUDE.md", "AGENTS.md", ".cursorrules")
 
 
@@ -42,7 +42,7 @@ def warn_legacy(root: Path) -> None:
         print("⚠️  Legacy rule files (no longer synced):")
         for p in legacy:
             print(f"   - {p.relative_to(root)}")
-        print("   Remove them (asks first): python3 .agent/scripts/sync_rules.py --clean-legacy")
+        print("   Remove them (asks first): python3 .agents/scripts/sync_rules.py --clean-legacy")
 
 
 def clean_legacy(root: Path, source_text: str) -> None:
@@ -68,7 +68,7 @@ def clean_legacy(root: Path, source_text: str) -> None:
         p.unlink()
         print(f"🗑️  Deleted: {p.relative_to(root)}")
     try:
-        (root / ".agent" / "rules").rmdir()  # only succeeds when empty
+        (root / ".agents" / "rules").rmdir()  # only succeeds when empty
     except OSError:
         pass
 
@@ -101,7 +101,7 @@ def main():
             print(f"❌ Rule files out of parity with {newest.relative_to(root)}:")
             for p in diverged:
                 print(f"   - {p.relative_to(root)}")
-            print("   Fix: python3 .agent/scripts/sync_rules.py")
+            print("   Fix: python3 .agents/scripts/sync_rules.py")
             sys.exit(1)
         print(f"✅ Parity OK ({len(sources)} rule files)")
         warn_legacy(root)

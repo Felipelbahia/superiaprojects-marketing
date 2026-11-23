@@ -5,8 +5,8 @@ This repo is public: paths like /Users/<name>/..., C:\\Users\\<name>\\... or fil
 installs on other machines and leak who built it.
 
 Usage (from the project root):
-    python3 .agent/scripts/check_personal_paths.py          # scan every tracked file, exit 1 on hits
-    python3 .agent/scripts/check_personal_paths.py --staged # scan only staged files (pre-commit)
+    python3 .agents/scripts/check_personal_paths.py          # scan every tracked file, exit 1 on hits
+    python3 .agents/scripts/check_personal_paths.py --staged # scan only staged files (pre-commit)
 """
 
 import re
