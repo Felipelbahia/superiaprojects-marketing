@@ -313,6 +313,10 @@ Return only the cleaned text. No preamble, no explanation of changes, no "Here's
 
 ## Outras referências
 
+- **[`references/relatorio-reprovacao-aprovacao-modelo.md`](references/relatorio-reprovacao-aprovacao-modelo.md)** — Modelo canônico de relatório de validação em dois passes (literal e semântico), tabela de hard gate e liberação final.
+- **[`references/par-antes-depois-linkedin.md`](references/par-antes-depois-linkedin.md)** — Exemplo resolvido de post no LinkedIn: versão com violações propositais, relatório de achados e versão corrigida baseada em incidente real.
+- **[`references/par-antes-depois-blog.md`](references/par-antes-depois-blog.md)** — Exemplo resolvido de artigo de blog: eliminação de abertura histórico-enciclopédica e resumo circular prematuro.
+- **[`references/caso-blog-estrutura-semantica.md`](references/caso-blog-estrutura-semantica.md)** — Caso resolvido de reprovação semântica profunda (molde repetitivo e simetria artificial) e refatoração por mecanismo.
 - **[`references/padroes-pt-br.md`](references/padroes-pt-br.md)** — As 9 categorias de padrões de IA em português do Brasil, regra de agrupamento/muleta, tabela de 5 colunas e 4 casos de regressão.
 - **[`references/escrita-humana-e-gramatica-pt-br.md`](references/escrita-humana-e-gramatica-pt-br.md)** — Anatomia do parágrafo humano (7 elementos), progressão como incidente real, sinais a preservar, casos antes/depois e checklist de norma culta (vírgula, crase, concordância, regência).
 - **[`references/de-ai-ify-patterns.md`](references/de-ai-ify-patterns.md)** — Padrões para remover jargão de IA e devolver voz humana ao texto (em inglês).

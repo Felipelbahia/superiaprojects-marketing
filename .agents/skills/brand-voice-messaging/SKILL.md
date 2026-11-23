@@ -54,6 +54,13 @@ Profundidade curta: passos 1, 2, 5 e 6, com 2 a 3 rodadas. Longa: todos, mais as
 8. **Depoimentos Literais e Consentimento:** depoimentos devem reproduzir aspas exatas sem embelezamento da IA e só podem ser veiculados nos canais onde houver autorização explícita registrada na matriz de consentimento.
 9. Texto passa pelo `/geral-anti-slop`.
 
+## Exemplo Resolvido de Referência (Marca Fictícia)
+
+Para consultar um gabarito canônico preenchido de ponta a ponta com marca fictícia própria em PT-BR (Lúmina Gestão), consulte a pasta:
+- [`references/marca-ficticia-exemplo/brand-voice.md`](references/marca-ficticia-exemplo/brand-voice.md) — Manual conciso de tom de voz, vocabulário e blacklist.
+- [`references/marca-ficticia-exemplo/glossario.md`](references/marca-ficticia-exemplo/glossario.md) — Glossário técnico e termos que não se traduzem.
+- [`references/marca-ficticia-exemplo/depoimento-consentimento.md`](references/marca-ficticia-exemplo/depoimento-consentimento.md) — Registro canônico de depoimento com matriz de consentimento por canal.
+
 ## Saída: `brand-voice.md`
 
 ```

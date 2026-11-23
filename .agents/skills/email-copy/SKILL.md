@@ -145,6 +145,7 @@ Os arquivos abaixo tratam dos mesmos assuntos com redações diferentes (medido:
 | **Assuntos de e-mail (exemplos por tipo de envio)** | [`email-subject-lines.md`](references/email-subject-lines.md) | Fórmulas e palavras de poder em [`email-writing-guide.md`](references/email-writing-guide.md); e-mail frio em [`subject-lines.md`](../vendas-cold-email/references/subject-lines.md) |
 | **Benchmarks de e-mail (abertura, clique, descadastro)** | Tabela por tipo e métricas em [`email-marketing-playbook.md`](references/email-marketing-playbook.md), mais a seção "Benchmarks" por setor ao final de [`email-marketing-bible.md`](references/email-marketing-bible.md) | E-mail frio: [`benchmarks.md`](../vendas-cold-email/references/benchmarks.md) |
 | **Estratégia geral de campanha** | [`email-marketing.md`](references/email-marketing.md) (curto, bom para começar) | [`email-marketing-bible.md`](references/email-marketing-bible.md) para o aprofundamento |
+| **Ficha de oferta confirmada e validação comercial** | [`caso-email-ficha-oferta.md`](references/caso-email-ficha-oferta.md) | Exemplo resolvido de e-mail confrontado contra ficha oficial de preços, reprovação e versão aprovada |
 | **Escrever um e-mail do zero (briefing, tom, exemplos)** | [`email-writing-guide.md`](references/email-writing-guide.md) | — |
 | **Sequências (boas-vindas, nutrição, reengajamento)** | Ver a tabela em [`email-automacao`](../email-automacao/SKILL.md) | — |
 

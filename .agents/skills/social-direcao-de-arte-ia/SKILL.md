@@ -119,7 +119,10 @@ Execute este checklist em cada lâmina gerada antes de aprovar a publicação:
 
 ---
 
-## 🛠️ Guia de Integração com Ferramentas
+## 🛠️ Guia de Integração e Exemplos de Validação
 
 Para detalhes operacionais sobre como plugar este workflow no ChatGPT (GPT Image 2), Midjourney (`--sref`/`--cref`) ou APIs do FLUX, consulte o guia completo em:
-[carousel-pipeline-guide.md](references/carousel-pipeline-guide.md).
+- [carousel-pipeline-guide.md](references/carousel-pipeline-guide.md).
+
+Para consultar um exemplo resolvido de auditoria visual de feed (dimensões 4:5, hexadecimais de paleta, zona segura e contraste WCAG), consulte:
+- [caso-validacao-visual-feed.md](references/caso-validacao-visual-feed.md).

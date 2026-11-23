@@ -42,6 +42,7 @@ Reúne os guias de planejamento de conteúdo que estavam dentro de `conteudo-rea
 - Transformar um conteúdo em vários: [conteudo-reaproveitamento](../conteudo-reaproveitamento/SKILL.md).
 - Palavras-chave e clusters: [seo-palavras-chave](../seo-palavras-chave/SKILL.md).
 - Campanhas e receitas por canal: [revenue-campanhas](../revenue-campanhas/SKILL.md).
+- Exemplo resolvido de ponta a ponta (Brainstorm, Brief com restrição herdada e Auditoria final de entrega): [`references/caso-brainstorm-brief-auditoria.md`](references/caso-brainstorm-brief-auditoria.md).
 
 ---
 
@@ -49,5 +50,6 @@ Reúne os guias de planejamento de conteúdo que estavam dentro de `conteudo-rea
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.2.0 | 2026-11-23 | Adiciona exemplo resolvido de brainstorm, brief exemplar e auditoria final contra critérios contáveis (inbox 2042) |
 | 1.1.0 | 2026-11-20 | Integração com processo estruturado de brainstorm em 5 portões e template canônico `brainstorm.md` de `conteudo-pesquisa` (inbox 2038) |
 | 1.0.0 | 2026-10-18 | Versão inicial da skill |

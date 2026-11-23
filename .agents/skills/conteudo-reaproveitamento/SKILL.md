@@ -83,6 +83,7 @@ Ao processar material oral bruto (gravações de reuniões, entrevistas, podcast
 3. **Marcadores de Incerteza:** Nunca invente falas em trechos abafados ou inaudíveis. Use rigorosamente `[inaudível]`, `[trecho incerto: contexto]` ou `[termo técnico a confirmar: termo]`.
 4. **Governança de Dados Sensíveis:** Faturamento, nomes de clientes e segredos de negócio recebem a marcação `[dado sensível: requer permissão]` e são alertados no relatório.
 5. **Relatório de Saneamento Obrigatório (4 Colunas):** Toda saída saneada inclui tabela de intervenções: `Trecho Original da Transcrição | Trecho Saneado | Tipo de Intervenção | Justificativa Operacional`.
+6. **Exemplo Resolvido de Saneamento e Acervo:** Consulte [`references/caso-saneamento-reaproveitamento.md`](references/caso-saneamento-reaproveitamento.md) para ver a transcrição bruta preservada, o relatório em 3 blocos (*corrigido*, *preservado*, *pendências*), a base limpa e o plano de oportunidades com matriz e corte justificado.
 
 ---
 
